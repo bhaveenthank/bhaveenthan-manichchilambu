@@ -1,0 +1,53 @@
+# Tier 0 entity seeds. Written by reading the text, every name below was grepped in the corpus.
+#   names    : proper names, safe anywhere
+#   epithets : titles and descriptions that only count inside the listed cantos,
+#              because the same word points at different people elsewhere
+# review: "draft" until a Tamil scholar signs it off. Do not change that by hand unless someone did.
+- {id: kannagi, cls: Person, en: Kannagi, epics: [SIL, MAN], names: [கண்ணகி, கண்ணகியார்], epithets: {SIL-20: [மடக்கொடி, ஒள்ளிழை, தேமொழி], SIL-21: [மாபத்தினி, பொற்றொடி, விளங்கிழை], SIL-23: [மாபத் தினி, பத்தினி, பீடுகெழு நங்கை], MAN-26: [பத்தினிக் கடவுள்]}}
+- {id: kovalan, cls: Person, en: Kovalan, epics: [SIL, MAN], names: [கோவலன், கோவலற், கோவலனும்], epithets: {MAN-26: [கோவலன்]}}
+- {id: madhavi, cls: Person, en: Madhavi, epics: [SIL, MAN], names: [மாதவி], epithets: {}}
+- {id: manimekalai, cls: Person, en: Manimekalai, epics: [SIL, MAN], names: [மணிமேகலை], epithets: {MAN-18: [ஆய் இழை], MAN-20: [ஆய் இழை, மெல் இயல், ஏந்து இழை], MAN-21: [மது மலர்க் குழலி, ஆய் இழை, பூங்கொடி]}}
+- {id: pandya_king, cls: Person, en: "Neduncheliyan (Pandya king)", epics: [SIL], names: [நெடுஞ்செழிய], epithets: {SIL-16: [வேம்பன், மன்னவன், காவலன், வேந்தன்], SIL-20: [தென்னவர் கோ, கொற்கை வேந்த, செழிய, தென்னவ, பஞ்வ, மன்னவன், வேந்தே, கூடலான், வையைக்கோன், அரசன்], SIL-22: [செழியன், அரைசர் பெருமான்], SIL-27: [பொற்றேர்ச் செழியன், கோமகன்]}}
+- {id: pandya_queen, cls: Person, en: "Pandya queen", epics: [SIL], names: [], epithets: {SIL-16: [கோப்பெருந் தேவி, காவலன் றேவி, குலமுதல் தேவி], SIL-20: [கோப்பெருந் தேவி, பாண்டியன்பெருந் தேவி, தேவி]}}
+- {id: goldsmith, cls: Person, en: "the goldsmith", epics: [SIL], names: [], epithets: {SIL-00: [பொன்செய் கொல்லன்], SIL-16: [கொல்லன், கூற்றத் தூதன்], SIL-20: [பொன்செய் கொல்லன்]}}
+- {id: vetrivel_celiyan, cls: Person, en: "Vetrivel Celiyan (Korkai)", epics: [SIL], names: [வெற்றிவேற் செழியன்], epithets: {}}
+- {id: cenkuttuvan, cls: Person, en: Cenkuttuvan, epics: [SIL, MAN], names: [செங்குட்டுவ], epithets: {SIL-25: [மன்னவன்], SIL-30: [அரசன்]}}
+- {id: gajabahu, cls: Person, en: "Gajabahu of Lanka", epics: [SIL], names: [கயவாகு], epithets: {}}
+- {id: ilanko, cls: Person, en: "Ilanko Adikal", epics: [SIL], names: [இளங்கோ], epithets: {}}
+- {id: cattan, cls: Person, en: "Cattan", epics: [SIL, MAN], names: [சாத்தன்], epithets: {}}
+- {id: masattuvan, cls: Person, en: Masattuvan, epics: [SIL], names: [மாசாத்து], epithets: {SIL-27: [கோவலன் தாதை]}}
+- {id: manaikan, cls: Person, en: Manaikan, epics: [SIL], names: [மாநாய்க], epithets: {}}
+- {id: kavunti, cls: Person, en: "Kavunti", epics: [SIL], names: [கவுந்தி, காவுந்தி], epithets: {}}
+- {id: matari, cls: Person, en: Matari, epics: [SIL], names: [மாதரி], epithets: {}}
+- {id: matalan, cls: Person, en: "Matalan the brahmin", epics: [SIL], names: [மாடல], epithets: {}}
+- {id: tevanti, cls: Person, en: Tevanti, epics: [SIL], names: [தேவந்தி], epithets: {}}
+- {id: madurapati, cls: Deity, en: "Madurapati", epics: [SIL, MAN], names: [மதுரா பதி, மதுராபதி, மதுரைமா தெய்வம்], epithets: {}}
+- {id: agni, cls: Deity, en: "the fire god", epics: [SIL], names: [அங்கி வானவன்], epithets: {}}
+- {id: bharatan, cls: Person, en: "Bharatan (earlier birth of Kovalan)", epics: [SIL, MAN], names: [பரத னென்னும், பரதன் என்னும்], epithets: {}}
+- {id: sangaman, cls: Person, en: Sangaman, epics: [SIL, MAN], names: [சங்கமன்], epithets: {}}
+- {id: neeli, cls: Person, en: Neeli, epics: [SIL], names: [நீலி], epithets: {}}
+- {id: udayakumaran, cls: Person, en: Udayakumaran, epics: [MAN], names: [உதயகுமர], epithets: {MAN-20: [அரசு இளங் குமரன், மன்னவன் மகன்]}}
+- {id: rahulan, cls: Person, en: "Rahulan (earlier birth of Udayakumaran)", epics: [MAN], names: [இராகுலன்], epithets: {}}
+- {id: lakshmi, cls: Person, en: "Lakshmi (earlier birth of Manimekalai)", epics: [MAN], names: [இலக்குமி], epithets: {}}
+- {id: kayasandikai, cls: Person, en: Kayasandikai, epics: [MAN], names: [காயசண்டிகை], epithets: {}}
+- {id: kanchanan, cls: Person, en: Kanchanan, epics: [MAN], names: [காஞ்சனன்], epithets: {MAN-20: [விஞ்சையன்]}}
+- {id: aputhiran, cls: Person, en: Aputhiran, epics: [MAN], names: [ஆபுத்திரன்], epithets: {}}
+- {id: punyarasan, cls: Person, en: "Punyarasan (rebirth of Aputhiran)", epics: [MAN], names: [புண்ணியராசன்], epithets: {}}
+- {id: bhumichandran, cls: Person, en: Bhumichandran, epics: [MAN], names: [பூமிசந்திரன்], epithets: {}}
+- {id: chintadevi, cls: Deity, en: Chintadevi, epics: [MAN], names: [சிந்தாதேவி], epithets: {}}
+- {id: tivatilakai, cls: Deity, en: "Tivatilakai", epics: [MAN], names: [தீவதிலகை, தீபதிலகை], epithets: {}}
+- {id: manimekhala_deity, cls: Deity, en: "goddess Manimekala", epics: [MAN], names: [மணிமேகலா], epithets: {}}
+- {id: cutamati, cls: Person, en: Sutamati, epics: [MAN], names: [சுதமதி], epithets: {}}
+- {id: aravanan, cls: Person, en: "Aravana Adikal", epics: [MAN], names: [அறவண], epithets: {}}
+- {id: cittirapati, cls: Person, en: Chitrapati, epics: [MAN], names: [சித்திராபதி], epithets: {}}
+- {id: vayantamalai, cls: Person, en: Vayantamalai, epics: [SIL, MAN], names: [வயந்தமாலை], epithets: {}}
+- {id: aticari, cls: Person, en: Atirai, epics: [MAN], names: [ஆதிரை], epithets: {}}
+- {id: puhar, cls: Place, en: Puhar, epics: [SIL, MAN], names: [புகார், பூம்புகார், காவிரிப்பூம்பட்டின], epithets: {}}
+- {id: madurai, cls: Place, en: Madurai, epics: [SIL, MAN], names: [மதுரை, கூடல்], epithets: {}}
+- {id: vanci, cls: Place, en: Vanci, epics: [SIL, MAN], names: [வஞ்சி], epithets: {}}
+- {id: kanchi, cls: Place, en: Kanchi, epics: [MAN], names: [கச்சி, காஞ்சி], epithets: {}}
+- {id: manipallavam, cls: Place, en: Manipallavam, epics: [MAN], names: [மணிபல்லவ], epithets: {}}
+- {id: gomukhi, cls: Place, en: "Gomukhi pond", epics: [MAN], names: [கோமுகி], epithets: {}}
+- {id: nagapuram, cls: Place, en: Nagapuram, epics: [MAN], names: [நாகபுரம்], epithets: {}}
+- {id: singapuram, cls: Place, en: Singapuram, epics: [SIL, MAN], names: [சிங்க புரத், சிங்கபுர, அரிபுரம்], epithets: {}}
+- {id: amudasurabhi, cls: Object, en: "Amudasurabhi (the bowl)", epics: [MAN], names: [அமுதசுரபி], epithets: {MAN-14: [பாத்திரம்], MAN-11: [பாத்திரம்], MAN-17: [பாத்திரம்], MAN-19: [கடிஞை, பாத்திரம்], MAN-20: [பாத்திரம், கடிஞை]}}

@@ -1,0 +1,186 @@
+# Everything the material records point at that isn't already in names.yaml.
+#   kind : Food, Material, Thing (one particular object), Person, Group, Place, Deity
+#   type : true means this node is a KIND of thing, so two records that mention it share a kind and nothing more.
+#   gloss: a reading that isn't in the words of the verse. `by` says whose reading it is.
+#   broader: the wider kind. Sandalwood is a fragrant wood, but "fragrant wood" isn't sandalwood.
+# review: draft, like everything else here.
+cowherd_women: {cls: Group, en: the cowherd women, ta: இடைக்குல மடந்தையர், also: [aaychiyar, ஆய்ச்சியர், idaiyar]}
+aiyai_daughter: {cls: Person, en: Aiyai (Matari's daughter), ta: ஐயை, also: [aiyai, ayyai, aiyyai]}
+skilled_woman_16: {cls: Person, en: the woman who wove the mat, ta: கைவன் மகடூஉ, unnamed: true}
+cooking_vessels: {cls: Thing, en: cooking vessels, ta: மடைக்கலம்}
+meal_16: {cls: Thing, en: Kannagi's meal for Kovalan, ta: அடிசில், also: [saappadu, meal, food, unavu, உணவு, சாப்பாடு, விருந்து]}
+palm_mat: {cls: Thing, en: the palm-leaf mat, ta: செய்வினைத் தவிசு}
+palm_leaf: {cls: Material, type: true, en: palm leaf, ta: தாலப் புல்}
+curved_knife: {cls: Thing, en: the curved knife, ta: குயம்}
+vegetables: {cls: Food, type: true, en: green vegetables, ta: பசுங்காய்}
+koli_fruit: {cls: Food, type: true, en: the kōḷi fruit, ta: கோளிப் பாகல், gloss: {of: jackfruit, by: commentary, note: "The verse says கோளிப் பாகல், not பலா. Reading it as jackfruit comes from the commentary tradition, and I haven't checked that against a printed commentary."}}
+cucumber: {cls: Food, type: true, en: striped cucumber, ta: வாள்வரிக் கொடுங்காய், also: [vellarikkai]}
+pomegranate: {cls: Food, type: true, en: pomegranate, ta: மாதுளம் பசுங்காய், also: [maathulai, mathulai, மாதுளை]}
+mango: {cls: Food, type: true, en: mango, ta: மாங்கனி, also: [maa, maangani, mangani, mambazham, மா, தேமாங்கனி, மாம்பழம்]}
+plantain: {cls: Food, type: true, en: plantain, ta: வாழை, also: [vaazhai, vazhai, banana, valai, வாழைக்கனி]}
+sali_rice: {cls: Food, type: true, en: sāli rice, ta: சாலி அரிசி, also: [rice, arisi, சாலி, அரிசி]}
+dairy: {cls: Food, type: true, en: milk products, ta: பாற்பயன், also: [milk, paal, பால்]}
+areca: {cls: Food, type: true, en: areca nut, ta: அடைக்காய், also: [paakku, pakku, betel, வெற்றிலை, பாக்கு, கமுகு]}
+jackfruit: {cls: Food, type: true, en: jackfruit, ta: பலாப்பழம், also: [pala, palaa, palapazham, பலா, பலவின் பழம்]}
+coconut: {cls: Food, type: true, en: coconut, ta: தெங்கின் பழம், also: [thengai, தேங்காய்]}
+sugarcane: {cls: Food, type: true, en: sugarcane, ta: கரும்பு, also: [karumbu]}
+garlic: {cls: Food, type: true, en: garlic, ta: காயம், also: [poondu]}
+cardamom: {cls: Food, type: true, en: cardamom, ta: ஏலவல்லி, also: [elakkai, ஏலம், ஏலக்காய்]}
+pepper: {cls: Food, type: true, en: pepper vine, ta: இருங்கறி வல்லி, also: [milagu, மிளகு, கறி]}
+liquor_jars: {cls: Food, type: true, en: jars of honey or liquor, ta: மதுவின் குடங்கள், also: [madhu, mathu, மது]}
+toddy: {cls: Food, type: true, en: toddy, ta: கள், also: [kal, kallu]}
+meat: {cls: Food, type: true, en: meat, ta: ஊன், also: [oon, kari]}
+ivory: {cls: Material, type: true, en: ivory, ta: யானைவெண் கோடு, also: [thantham, தந்தம்]}
+agarwood: {cls: Material, type: true, broader: fragrant_wood, en: agarwood, ta: அகில், also: [akil, agil]}
+sandalwood: {cls: Material, type: true, broader: fragrant_wood, en: sandalwood, ta: சந்தனம், also: [santhanam, sandhanam, sandal]}
+fragrant_wood: {cls: Material, type: true, en: fragrant wood, ta: விரை மரம், also: [virai maram]}
+soft_cloth: {cls: Material, type: true, en: soft cloth, ta: மென் துகில், also: [thugil, cloth, ஆடை]}
+treasure: {cls: Material, type: true, en: heaped treasure, ta: விழு நிதிக் குப்பை}
+yak_tail_fans: {cls: Thing, en: yak-tail fans, ta: கவரி}
+sindoor: {cls: Material, type: true, en: vermilion, ta: சிந்துரம்}
+collyrium: {cls: Material, type: true, en: collyrium, ta: அஞ்சனம்}
+orpiment: {cls: Material, type: true, en: orpiment, ta: அரிதாரம்}
+young_animals: {cls: Group, en: young wild animals, ta: விலங்குக் குட்டிகள்}
+gold: {cls: Material, type: true, en: gold, ta: பொன், also: [pon, thangam, தங்கம்]}
+gemstone: {cls: Material, type: true, en: gemstone, ta: மணி, also: [mani, ratnam, jewel, மாணிக்கம்]}
+diamond: {cls: Material, type: true, en: diamond, ta: வயிரம், also: [vayiram, vairam]}
+coral: {cls: Material, type: true, en: coral, ta: பவளம், also: [pavalam]}
+pearl_material: {cls: Material, type: true, en: pearl, ta: முத்து, also: [muthu, muthiram]}
+emerald: {cls: Material, type: true, en: emerald, ta: மரகதம், also: [maragatham]}
+sapphire: {cls: Material, type: true, en: sapphire, ta: இந்திர நீலம், also: [neelam]}
+royal_ornaments: {cls: Thing, en: crowns and royal ornaments, ta: முடிமுதற் கலன்கள்}
+goldsmiths_100: {cls: Group, en: the hundred fine smiths, ta: நுண்வினைக் கொல்லர் நூற்றுவர்}
+leg_ornaments: {cls: Thing, en: Madhavi's leg ornaments, ta: நூபுரம், also: [salangai, சதங்கை]}
+pearl_girdle: {cls: Thing, en: Madhavi's pearl girdle, ta: முத்தரை, also: [mekalai, oddiyanam, muthu mekalai]}
+painted_bangle: {cls: Thing, en: Madhavi's painted bangle, ta: சித்திரச் சூடகம், also: [valayal, வளையல்]}
+finger_rings: {cls: Thing, en: Madhavi's rings, ta: மோதிரம், also: [mothiram, ring]}
+ear_ornaments: {cls: Thing, en: Madhavi's ear ornaments, ta: கடிப்பிணை, also: [kammal]}
+vajra_king: {cls: Person, en: the king of Vajra, ta: வச்சிர நாட்டுக் கோன், unnamed: true}
+magadha_king: {cls: Person, en: the king of Magadha, ta: மகத வேந்தன், unnamed: true}
+avanti_king: {cls: Person, en: the king of Avanti, ta: அவந்தி வேந்தன், unnamed: true}
+chola_conqueror: {cls: Person, en: the Chola who marked the Himalaya, ta: கொடுவரி ஒற்றிய சோழன், also: [karikalan, karikala, கரிகாலன்], unnamed: true}
+vajra_country: {cls: Place, en: Vajra country, ta: வச்சிர நாடு}
+magadha: {cls: Place, en: Magadha, ta: மகதம், also: [magadham, magatha]}
+avanti: {cls: Place, en: Avanti, ta: அவந்தி, also: [avanthi]}
+maratha: {cls: Place, en: Maratha country, ta: மராட்டம், also: [maratta, maharashtra]}
+yavana_land: {cls: Place, en: Yavana lands, ta: யவனம், also: [yavana, yavanar]}
+victory_canopy: {cls: Thing, en: the victory canopy, ta: கொற்றப் பந்தர்}
+debate_hall: {cls: Thing, en: the debate hall, ta: பட்டிமண்டபம், also: [pattimandapam, pattimandram]}
+arched_gate: {cls: Thing, en: the arched gate, ta: தோரண வாயில், also: [thorana]}
+mayan: {cls: Deity, en: Mayan, ta: மயன், also: [maya, mayan]}
+gold_pavilion: {cls: Thing, en: the gold pavilion, ta: பசும் பொன் மண்டபம், also: [mandapam, pavilion, மண்டபம்]}
+magadha_workers: {cls: Group, en: workers of Magadha, ta: மகத வினைஞர்}
+maratha_smiths: {cls: Group, en: smiths of Maratha, ta: மராட்டக் கம்மர்}
+avanti_smiths: {cls: Group, en: metalworkers of Avanti, ta: அவந்திக் கொல்லர்}
+yavana_carpenters: {cls: Group, en: Yavana carpenters, ta: யவனத் தச்சர்}
+tamil_workers: {cls: Group, en: Tamil workers, ta: தமிழ் வினைஞர்}
+festival_drum: {cls: Thing, en: the festival drum, ta: மணம் கெழு முரசம், also: [murasu, முரசு, drum]}
+vachira_temple: {cls: Place, en: Vachirakottam, ta: வச்சிரக் கோட்டம், also: [vachira kottam, vachirakottam]}
+drummer_man01: {cls: Person, en: the old-lineage drummer, ta: முதுகுடிப் பிறந்தோன், also: [drummer], unnamed: true}
+hill_people_25: {cls: Group, en: the hill people who brought gifts, ta: மலைமிசை மாக்கள், also: [kuravar, குரவர், குறவர்]}
+saduvan: {cls: Person, en: Saduvan, ta: சாதுவன், also: [sathuvan, sadhuvan, saaduvan]}
+naked_nagas: {cls: Group, en: the Nagas of the island, ta: நக்க சாரணர், also: [nagar, நாகர்]}
+naga_chief: {cls: Person, en: the Naga chief, ta: குருமகன், also: [gurumagan, gurumahan], unnamed: true}
+shipwrecked_men: {cls: Group, en: earlier shipwrecked men, ta: கலம் கவிழ் மாக்கள்}
+wreck_goods: {cls: Thing, en: goods from wrecked ships, ta: உறு பொருள்}
+chandradattan: {cls: Person, en: Chandradattan, ta: சந்திரதத்தன், also: [chandradathan, santhiradathan]}
+pilivalai: {cls: Person, en: Pilivalai, ta: பீலிவளை, also: [peelivalai, pilivalai]}
+blanket_merchant: {cls: Person, en: the blanket merchant, ta: கம்பளச் செட்டி, also: [kambala chetti, rug merchant], unnamed: true}
+royal_infant: {cls: Person, en: Pilivalai's infant son, ta: புனிற்று இளங் குழவி, unnamed: true}
+wrecked_crew: {cls: Group, en: the wrecked crew, ta: கெடு கல மாக்கள்}
+killi: {cls: Person, en: Killi the Chola king, ta: கிள்ளி, also: [nedumudi killi, vadivel killi, கிள்ளிவளவன்]}
+indra_festival: {cls: Thing, en: the Indra festival, ta: இந்திர விழா, also: [indira vizha, indra vizha, intira vila, இந்திரவிழா]}
+kosikan: {cls: Person, en: Kosikan the messenger, ta: கோசிகன், also: [kosigan, kausigan, kaushikan, கௌசிகன்]}
+madhavi_letter: {cls: Thing, en: Madhavi's letter, ta: மாதவியின் முடங்கல், also: [letter, kadidham]}
+reply_letter: {cls: Thing, en: Kovalan's letter home, ta: மண்ணுடை முடங்கல்}
+kanjukan: {cls: Person, en: the king's attendant, ta: கஞ்சுகன், also: [kanchukan], unnamed: true}
+dharmadattan: {cls: Person, en: Dharmadattan, ta: தருமதத்தன், also: [dharmadathan, tharumadathan]}
+visakai: {cls: Person, en: Visakai, ta: விசாகை, also: [visagai, vishakai]}
+temple_artisans: {cls: Group, en: the artisans at the temple, ta: வித்தகர்}
+krishna: {cls: Deity, en: Krishna, ta: கண்ணன், also: [kannan, mayavan, மாயவன்]}
+
+# ---- added with the coverage pass
+noble_lady_02: {cls: Person, en: the great lady who set up the house, ta: பேரியல் கிழத்தி, unnamed: true}
+flower_letter: {cls: Thing, en: Madhavi's garland letter, ta: மாலைத் திருமுகம், also: [thirumugam, திருமுகம்]}
+ketaki_leaf: {cls: Material, type: true, en: screw-pine leaf, ta: தாழை வெண்தோடு, also: [thazhai, தாழை]}
+lac: {cls: Material, type: true, en: lac, ta: அலத்தகம், also: [alaththagam]}
+paddy: {cls: Food, type: true, en: paddy, ta: செந்நெல், also: [nel, நெல்]}
+chola_country: {cls: Place, en: the Chola country, ta: சோழ நாடு, also: [chola nadu, sozha nadu]}
+charana_10: {cls: Person, en: the charana on the road, ta: சாரணர், unnamed: true}
+karma: {cls: Other, en: karma, ta: வல்வினை}
+wanton_woman_10: {cls: Person, en: the wanton woman, ta: வம்பப் பரத்தை, unnamed: true}
+idle_man_10: {cls: Person, en: the idle talker, ta: வறுமொழியாளன், unnamed: true}
+uraiyur: {cls: Place, en: Uraiyur, ta: உறையூர், also: [urayur, woraiyur]}
+silappatikaram_work: {cls: Other, en: Silappatikāram (the poem), ta: சிலப்பதிகாரம்}
+manimekalai_work: {cls: Other, en: Maṇimēkalai (the poem), ta: மணிமேகலை நூல்}
+brahmin_11: {cls: Person, en: the brahmin of Mangadu, ta: மாங்காட்டு மறையவன், unnamed: true}
+sirumalai: {cls: Place, en: Sirumalai, ta: சிறுமலை, also: [siru malai]}
+millet: {cls: Food, type: true, en: millet, ta: தினை, also: [thinai]}
+turmeric: {cls: Food, type: true, en: turmeric, ta: மஞ்சள், also: [manjal]}
+forest_deity_11: {cls: Deity, en: the forest spirit, ta: வனசாரிணி, also: [vanasarini]}
+aiyai_temple: {cls: Place, en: the Aiyai temple, ta: ஐயை கோட்டம்}
+salini: {cls: Person, en: Salini, ta: சாலினி}
+eyinar: {cls: Group, en: the Eyinar hunters, ta: எயினர், also: [vedar, வேடர், eyinar]}
+hunter_girl_12: {cls: Person, en: the girl dressed as the goddess, ta: தொல்குடிக் குமரி, unnamed: true}
+boar_tusk: {cls: Material, type: true, en: boar tusk, ta: ஏனத்து வெண்கோடு}
+tiger_teeth: {cls: Material, type: true, en: tiger's teeth, ta: புலிப்பல்}
+animal_skin: {cls: Material, type: true, en: tiger skin, ta: உரிவை}
+korravai: {cls: Deity, en: Korravai, ta: கொற்றவை, also: [kotravai, kottravai]}
+rama_unnamed: {cls: Person, en: the hero who left home at his father's word, ta: தாதை ஏவலின் போனவன், also: [rama, raman, இராமன்], unnamed: true}
+nala_unnamed: {cls: Person, en: the hero who lost his kingdom at dice, ta: சூதில் நாடிழந்தவன், also: [nala, nalan, நளன்], unnamed: true}
+yavana_guards: {cls: Group, en: the Yavana guards at Madurai, ta: அடல்வாள் யவனர், also: [yavana guards]}
+madurai_women: {cls: Group, en: the women of Madurai, ta: மதுரை மகளிர்}
+puhar_women: {cls: Group, en: the women of Puhar, ta: புகார் மகளிர்}
+vanci_women: {cls: Group, en: the women of Vanci, ta: வஞ்சி மகளிர்}
+korkai: {cls: Place, en: Korkai, ta: கொற்கை, also: [kotkai, korgai]}
+tondi: {cls: Place, en: Tondi, ta: தொண்டி, also: [thondi]}
+tondi_shippers: {cls: Group, en: the shippers of Tondi, ta: தொண்டியோர்}
+silk: {cls: Material, type: true, en: silk, ta: துகில், also: [pattu, பட்டு]}
+perfume: {cls: Material, type: true, en: perfume, ta: வாசம்}
+camphor: {cls: Material, type: true, en: camphor, ta: கருப்பூரம், also: [karpooram, கற்பூரம்]}
+gem_street: {cls: Place, en: the gem street of Madurai, ta: மணி வீதி}
+gold_street: {cls: Place, en: the gold street of Madurai, ta: பொன் வீதி}
+cloth_street: {cls: Place, en: the cloth street of Madurai, ta: அறுவை வீதி}
+grain_street: {cls: Place, en: the grain street of Madurai, ta: கூல வீதி}
+grain: {cls: Food, type: true, en: grain, ta: கூலம், also: [thaniyam, தானியம்]}
+bathing_woman_18: {cls: Person, en: the woman who brought the news, ta: ஆயர் முதுமகள், unnamed: true}
+sun: {cls: Deity, en: the Sun, ta: காய்கதிர்ச் செல்வன், also: [suriyan, ஞாயிறு]}
+guardian_woman_29: {cls: Person, en: the guardian woman, ta: காவற்பெண்டு, unnamed: true}
+kannagi_maid: {cls: Person, en: Kannagi's maid, ta: அடித்தோழி, unnamed: true}
+kannagi_mother: {cls: Person, en: Kannagi's mother, ta: கண்ணகி தாய், unnamed: true}
+kovalan_mother: {cls: Person, en: Kovalan's mother, ta: கோவலன் தாய், unnamed: true}
+kausikan_campai: {cls: Person, en: Kausikan of Campai (Cutamati's father), ta: சண்பைக் கௌசிகன்}
+campai: {cls: Place, en: Campai, ta: சண்பை, also: [sanbai]}
+marutavegan: {cls: Person, en: Marutavegan, ta: மாருதவேகன், also: [maruthavegan]}
+toddy_drunk_03: {cls: Person, en: the drunk on the road, ta: களிமகன், unnamed: true}
+jain_monk_03: {cls: Person, en: the Jain monk on the road, ta: உண்ணா நோன்பி, unnamed: true}
+etti_kumaran: {cls: Person, en: the merchant's son, ta: எட்டிகுமரன், unnamed: true}
+indra: {cls: Deity, en: Indra, ta: தேவர் கோன், also: [indiran, இந்திரன்]}
+two_naga_kings: {cls: Group, en: the two Naga kings, ta: இரு நாக மன்னர்}
+vira: {cls: Person, en: Vira, ta: வீரை, also: [veerai]}
+tara: {cls: Person, en: Tara, ta: தாரை, also: [thaarai]}
+hunger: {cls: Other, en: hunger, ta: பசிப்பிணி}
+sali: {cls: Person, en: Sali, ta: சாலி}
+nursing_cow: {cls: Other, en: the cow that nursed Aputhiran, ta: ஆபுத்திரனை வளர்த்த ஆ}
+ilambuti: {cls: Person, en: Ilambuti, ta: இளம்பூதி, also: [ilambhuti]}
+sacrificial_cow: {cls: Other, en: the sacrificial cow, ta: வேள்வி ஆ}
+brahmin_teacher_13: {cls: Person, en: the brahmin teacher, ta: அந்தணர் உவாத்தி, unnamed: true}
+brahmin_13: {cls: Person, en: the brahmin who tells of Sali, ta: ஓர் அந்தணன், unnamed: true}
+savakam: {cls: Place, en: Savakam, ta: சாவகம், also: [savagam, java]}
+manmukan: {cls: Person, en: the sage Manmukan, ta: மண்முகன்}
+vasantavai: {cls: Person, en: Vasantavai, ta: வாசந்தவை}
+chola_queen: {cls: Person, en: the Chola queen, ta: இராசமாதேவி, also: [rajamadevi, chola queen]}
+hired_youth_23: {cls: Person, en: the hired youth, ta: கல்லா இளைஞன், unnamed: true}
+gold_coins: {cls: Thing, en: the gold coins, ta: காணம், also: [kaanam]}
+fish: {cls: Food, type: true, en: fish, ta: மீன், also: [meen]}
+salt: {cls: Food, type: true, en: salt, ta: உப்பு, also: [uppu]}
+vanci_goldsmiths: {cls: Group, en: the goldsmiths of Vanci, ta: வஞ்சிப் பொன் செய் கொல்லர்}
+vanci_carpenters: {cls: Group, en: the carpenters of Vanci, ta: வஞ்சித் தச்சர்}
+vanci_painters: {cls: Group, en: the painters of Vanci, ta: வஞ்சி ஓவியர்}
+kovalan_ninth_ancestor: {cls: Person, en: Kovalan of nine generations back, ta: முன்னோன் கோவலன்}
+vanci_stupa: {cls: Thing, en: the stupa at Vanci, ta: சயித்தம், also: [stupa, chaityam]}
+charanas_28: {cls: Group, en: the charanas who foretold the flood, ta: தவத்தோர்}
+kapilai: {cls: Place, en: Kapilai, ta: கபிலை, also: [kapilavastu]}
+kanjukan_28: {cls: Person, en: the attendant at Kanchi, ta: கஞ்சுகன் (காஞ்சி), unnamed: true}
+kanchi_king: {cls: Person, en: the king at Kanchi, ta: காஞ்சி மன்னன், unnamed: true}
+kanchi_seat: {cls: Thing, en: the lotus seat at Kanchi, ta: பங்கயப் பீடிகை}

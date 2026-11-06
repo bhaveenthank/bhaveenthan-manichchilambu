@@ -1,0 +1,24 @@
+# Birth, karma, curse and the divine
+#
+# These are what the story tells, never checked against the world. Each birth has its own id.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m17_cosmology> a owl:Ontology ; rdfs:label "Birth, karma, curse and the divine" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E5_Event
+
+iy:Birth a owl:Class .
+iy:Curse a owl:Class ; rdfs:subClassOf iy:Speech .
+iy:Prophecy a owl:Class ; rdfs:subClassOf iy:Speech .
+iy:Miracle a owl:Class ; rdfs:subClassOf iy:Event .
+iy:Capability a owl:Class .
+
+iy:earlierBirthOf a owl:ObjectProperty .
+iy:fulfils a owl:ObjectProperty .
+iy:capableOf a owl:ObjectProperty .

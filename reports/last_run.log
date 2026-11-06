@@ -1,0 +1,424 @@
+10209 lines, 64 cantos
+359 records checked, 0 bad
+exact     P 0.93  R 0.16  F1 0.27   (tp 14, fp 1, fn 73)
+prefix    P 0.95  R 0.21  F1 0.34   (tp 18, fp 1, fn 69)
+squash    P 0.95  R 0.21  F1 0.34   (tp 18, fp 1, fn 69)
+scoped    P 0.95  R 0.70  F1 0.81   (tp 61, fp 3, fn 26)
+guarded   P 0.97  R 0.71  F1 0.82   (tp 62, fp 2, fn 25)
+637 lines tagged out of 10209; 47 entities seen
+top: [('madhavi', 68), ('manimekalai', 64), ('madurai', 52), ('kovalan', 51), ('vanci', 50), ('kannagi', 30), ('amudasurabhi', 28), ('aravanan', 23), ('pandya_king', 22), ('cutamati', 20), ('manipallavam', 19), ('kavunti', 18), ('puhar', 16), ('kayasandikai', 16)]
+825 candidates on 800 of 10209 lines
+  give           SIL    58  MAN    47
+  take_receive   SIL    28  MAN    12
+  speak          SIL    41  MAN   113
+  move           SIL    65  MAN    77
+  kill_harm      SIL    43  MAN    31
+  see            SIL    47  MAN    28
+  feed           SIL     6  MAN    21
+  worship        SIL    54  MAN    88
+  die            SIL    17  MAN    20
+  dream_curse    SIL    16  MAN    13
+recall on 114 told-straight ledger records: 0.29
+worship     MAN-28-0178 கைதொழுது இறைஞ்சி கஞ்சுகன் உரைப்போன்
+speak       SIL-25-0094 மன்னர் கோமான் வருந்தினன் உரைப்போன்
+see         SIL-08-0034 இசைபுணர் குறிநிலை எய்த நோக்கிக்
+see         SIL-02-0036 தீராக் காதலின் திருமுகம் நோக்கிக்
+worship     MAN-18-0129 தன் அடி தொழுதலும் தகவு!' என வணங்கி
+take_recei  SIL-26-0254 கற்கால் கொண்டனன் காவல னாங்கென்.
+speak       MAN-06-0016 ஆங்கு அவள் ஆங்கு அவன் கூறியது உரைத்தலும்
+move        MAN-00-0082 ஆய் வளை ஆபுத்திரன் நாடு அடைந்ததும்
+worship     MAN-14-0073 மாநீர் வங்கம் வந்தோர் வணங்கிச்
+move        SIL-30-0155 வலமுறை மும்முறை வந்தனன் வணங்கி
+take_recei  SIL-12-0031 கருவில் வாங்கிக் கையகத்துக் கொடுத்துத்
+kill_harm   MAN-25-0172 நின் உயிர் கொன்றாய் நின் உயிர்க்கு இரங்கிப்
+die         SIL-16-0141 வீழ்ந்தனன் கிடந்து தாழ்ந்துபல ஏத்திக்
+kill_harm   SIL-24-0048 உரவுநீர் மாகொன்ற வேலேந்தி ஏத்திக்
+speak       MAN-07-0014 அவத் திறம் ஒழிக' என்று அவன்வயின் உரைத்த பின்
+move        SIL-01-0048 அரசுஎழுந்ததொர் படிஎழுந்தன,
+kill_harm   SIL-19-0008 கொள்ளும் விலைப்பொருட்டாற் கொன்றாரே ஈதொன்று
+speak       MAN-21-0008 அங்கு அவற்கு உரைத்த அற்புதக் கிளவியும்
+move        MAN-07-0129 போய கங்குலில் புகுந்ததை எல்லாம்
+move        SIL-03-0120 வந்தனை செய்து வழிபடு தலைக்கோல்
+worship     SIL-10-0025 இலகுஒளிச் சிலாதலம் தொழுதுவலம் கொண்டு,
+worship     SIL-08-0052 ஒருமுகம் அன்றி உலகுதொழுது இறைஞ்சும்
+worship     MAN-25-0035 தொழுது வலம் கொள்ள அத் தூ மணிப்பீடிகைப்
+give        MAN-12-0012 நீங்கிய பிறப்பு நேர் இழைக்கு அளித்ததும்
+worship     MAN-06-0012 பாத பீடிகை பணிந்தனள் ஏத்தி
+dream_curs  SIL-03-0003 தலைக்கோல் தானத்துச் சாபம் நீங்கிய
+speak       MAN-12-0057 தரும தலைவன் தலைமையின் உரைத்த
+speak       MAN-21-0046 தெய்வக் கிளவியில் தெய்வம் கூறும்
+move        MAN-25-0206 வருந்தாது ஏகி வஞ்சியுள் புக்கனர்
+feed        MAN-06-0076 புலவு ஊண் பொருந்திய குராலின் குரலும்
+worship     SIL-30-0155 வலமுறை மும்முறை வந்தனன் வணங்கி
+worship     MAN-28-0114 முன் தவம் உடைமையின் முனிகளை ஏத்திப்
+worship     SIL-07-0004 இத்திறத்துக் குற்றம்நீங்கிய யாழ்கையில் தொழுதுவாங்கி
+speak       SIL-17-0056 மாயவன் என்றாள் குரலை விறல்வெள்ளை
+worship     MAN-28-0216 தொழுதகை மாதர் தொழுதனள் ஏத்திப்
+give        SIL-05-0062 கொடுப்போர் ஓதையும் கொள்வோர் ஓதையும்
+take_recei  MAN-18-0108 பண் தேர் மொழியின் பயன் பல வாங்கி
+give        MAN-00-0052 'மனம் கவல் ஒழிக!' என மந்திரம் கொடுத்ததும்
+kill_harm   MAN-22-0171 கள்ளும் பொய்யும் களவும் கொலையும்
+kill_harm   SIL-15-0167 ஊர்ச்சிறு குரங்கொன் றொதுங்கிஉள் புக்குப்
+ win score    pairs  gold     AP  P@20
+   3 count       81    29  0.572  0.65
+   5 count      109    34  0.556  0.65
+   3 llr         81    29  0.496  0.50
+   5 llr        109    34  0.490  0.70
+   5 dice       109    34  0.479  0.45
+  10 count      166    40  0.470  0.55
+   3 dice        81    29  0.454  0.40
+  10 dice       166    40  0.437  0.35
+  10 llr        166    40  0.431  0.45
+  50 count      330    46  0.426  0.55
+  25 count      260    43  0.425  0.55
+   5 npmi       109    34  0.408  0.35
+  50 llr        330    46  0.405  0.50
+   3 npmi        81    29  0.404  0.35
+worst: [(50, 'npmi', 0.291), (25, 'pmi', 0.26), (50, 'pmi', 0.232)]
+top pairs:
+  madhavi          manimekalai           11 n=11  known
+  kovalan          madhavi                5 n=5   known
+  manimekhala_deity manipallavam           5 n=5   known
+  cittirapati      madhavi                4 n=4   NEW
+  madurai          madurapati             3 n=3   NEW
+  kannagi          kovalan                3 n=3   known
+  kovalan          madurai                3 n=3   known
+  pandya_king      pandya_queen           3 n=3   NEW
+  kannagi          madurai                3 n=3   known
+  manimekalai      manimekhala_deity       3 n=3   known
+  manimekalai      manipallavam           3 n=3   known
+  madhavi          vayantamalai           3 n=3   NEW
+  cutamati         manimekalai            3 n=3   NEW
+  amudasurabhi     aputhiran              3 n=3   known
+  manimekalai      udayakumaran           3 n=3   known
+  kayasandikai     manimekalai            3 n=3   known
+  sangaman         singapuram             2 n=2   NEW
+  kannagi          madhavi                2 n=2   NEW
+== kin / hand
+ round 1: 9 candidates; cues ['மகன்', 'மகள்', 'மகனை', 'மகளை', 'தாதை', 'தந்தை']
+    goldsmith      pandya_king    0.5   பெற்ற     SIL-16-0109
+    goldsmith      pandya_queen   0.5   பெற்ற     SIL-16-0109
+    pandya_king    pandya_queen   0.5   பெற்ற     SIL-16-0109
+    aputhiran      aravanan       0.5   பெற்ற     MAN-00-0055
+    cittirapati    vayantamalai   0.5   மகள்      MAN-02-0006
+    kayasandikai   madhavi        0.5   மகள்      MAN-19-0031
+ round 2: 4 candidates; cues ['மகன்', 'மகள்', 'மகனை', 'மகளை', 'தாதை', 'தந்தை']
+    kayasandikai   madhavi        0.5   மகள்      MAN-19-0031
+    manimekalai    udayakumaran   0.5   மகன்      MAN-20-0068
+    cittirapati    madhavi        0.5   மகள்      MAN-22-0177
+    kannagi        kovalan        0.5   தாதை      MAN-26-0001
+ round 3: 0 candidates; cues ['மகன்', 'மகள்', 'மகனை', 'மகளை', 'தாதை', 'தந்தை']
+== kin / learned
+ round 1: 40 candidates; cues ['ஈன்ற', 'யளிப்பவும்', 'ரெய்தி', 'வாராத்', 'நோக்கி', 'முகம்']
+    manimekalai    udayakumaran   0.857 ஈன்ற      MAN-18-0025
+    madhavi        udayakumaran   0.857 ஈன்ற      MAN-18-0025
+    lakshmi        rahulan        0.857 ஈன்ற      MAN-11-0012
+    lakshmi        madhavi        0.857 ஈன்ற      MAN-11-0012
+    lakshmi        manimekalai    0.857 ஈன்ற      MAN-11-0012
+    madhavi        rahulan        0.857 ஈன்ற      MAN-11-0012
+ round 2: 40 candidates; cues ['ஈன்ற', 'அகவயின்', 'மகன்', 'இருந்த', 'பிறவியில்', 'யளிப்பவும்']
+    madhavi        rahulan        0.857 ஈன்ற      MAN-11-0012
+    manimekalai    rahulan        0.857 ஈன்ற      MAN-11-0012
+    kovalan        madhavi        0.8   இருந்த    SIL-06-0172
+    pandya_king    pandya_queen   0.8   இருந்த    SIL-20-0032
+    goldsmith      pandya_queen   0.75  நோக்கி    SIL-16-0119
+    kannagi        kovalan        0.75  மனை       SIL-20-0072
+ round 3: 40 candidates; cues ['நெடுங்கண்', 'மாமலர்', 'கோப்பெருந்', 'ஈன்ற', 'கோலம்', 'கொடுந்துய']
+    cenkuttuvan    kannagi        0.833 நல்       SIL-29-0084
+    aputhiran      aravanan       0.833 நல்       MAN-11-0140
+    aticari        manimekalai    0.833 நல்       MAN-16-0128
+    bharatan       kovalan        0.8   கொண்ட     SIL-23-0154
+    kannagi        madurapati     0.8   கொண்ட     SIL-23-0176
+    kannagi        kovalan        0.75  மனை       SIL-20-0072
+== spouse / hand
+ round 1: 7 candidates; cues ['மனைவி', 'கணவன்', 'கணவ', 'கொழுந', 'காதலி', 'காதலன்']
+    pandya_king    pandya_queen   0.5   கணவ       SIL-20-0089
+    bharatan       kovalan        0.5   கணவன்     SIL-23-0152
+    kannagi        madurapati     0.5   கணவ       SIL-23-0177
+    madhavi        vayantamalai   0.5   காதலன்    MAN-02-0036
+    cittirapati    madhavi        0.5   காதலன்    MAN-22-0177
+    madhavi        manimekalai    0.5   காதலன்    MAN-22-0178
+ round 2: 2 candidates; cues ['மனைவி', 'கணவன்', 'கணவ', 'கொழுந', 'காதலி', 'காதலன்']
+    madhavi        manimekalai    0.5   காதலன்    MAN-22-0178
+    bharatan       sangaman       0.5   கணவன்     MAN-26-0023
+ round 3: 0 candidates; cues ['மனைவி', 'கணவன்', 'கணவ', 'கொழுந', 'காதலி', 'காதலன்']
+== spouse / learned
+ round 1: 33 candidates; cues ['பட்ட', 'மனைவி', 'கொலைக்களப்', 'மனை', 'பெயரேயெனப்', 'பெண்ணணங்கே']
+    madhavi        manimekalai    0.75  மனை       MAN-11-0012
+    lakshmi        madhavi        0.75  மனை       MAN-11-0012
+    lakshmi        manimekalai    0.75  மனை       MAN-11-0012
+    madhavi        rahulan        0.75  மனை       MAN-11-0012
+    manimekalai    rahulan        0.75  மனை       MAN-11-0012
+    aticari        manimekalai    0.75  மனை       MAN-16-0128
+ round 2: 40 candidates; cues ['ஈன்ற', 'அகவயின்', 'பட்ட', 'மனைவி', 'கொலைக்களப்', 'பிறவியில்']
+    manimekalai    udayakumaran   0.857 ஈன்ற      MAN-18-0025
+    madhavi        udayakumaran   0.857 ஈன்ற      MAN-18-0025
+    kovalan        madhavi        0.75  நோக்கி    SIL-07-0018
+    goldsmith      pandya_queen   0.75  நோக்கி    SIL-16-0119
+    pandya_king    pandya_queen   0.75  நோக்கி    SIL-16-0137
+    cittirapati    madhavi        0.75  வாராத்    MAN-02-0004
+ round 3: 40 candidates; cues ['நெடுங்கண்', 'மாமலர்', 'கோப்பெருந்', 'ஈன்ற', 'கோலம்', 'அகவயின்']
+    bharatan       kovalan        0.8   கொண்ட     SIL-23-0154
+    kannagi        madurapati     0.8   கொண்ட     SIL-23-0176
+    kovalan        manimekalai    0.8   கொண்ட     MAN-04-0067
+    goldsmith      pandya_king    0.75  பொருந்திக்SIL-16-0109
+    cittirapati    madhavi        0.75  வாராத்    MAN-02-0004
+    cittirapati    manimekalai    0.75  வாராத்    MAN-02-0004
+1342 line pairs above 0.45, 143 between the two epics
+canto pairs with most reuse: [(('MAN-29', 'MAN-29'), 209), (('SIL-07', 'SIL-07'), 103), (('MAN-24', 'MAN-30'), 45), (('SIL-29', 'SIL-29'), 38), (('MAN-30', 'MAN-30'), 34), (('SIL-24', 'SIL-24'), 30), (('SIL-17', 'SIL-17'), 14), (('SIL-12', 'SIL-12'), 11), (('SIL-00', 'SIL-23'), 10), (('SIL-10', 'SIL-23'), 10), (('SIL-25', 'SIL-26'), 9), (('MAN-22', 'MAN-22'), 8)]
+-- cross-epic, top 25
+1.00 SIL-05-0073 வசியும் வளனும் சுரக்க என வாழ்த்தி || MAN-01-0071 வசியும் வளனும் சுரக்க!' என வாழ்த்தி
+1.00 SIL-15-0158 பாரோர் காணாப் பலர்தொழு படிமையன் || MAN-03-0037 பாரோர் காணாப் பலர் தொழு படிமையன்
+1.00 SIL-05-0118 கூனும் குறளும் ஊமும் செவிடும் || MAN-12-0097 கூனும் குறளும் ஊமும் செவிடும்
+1.00 SIL-15-0157 தாரன் மாலையன் தமனியப் பூணினன் || MAN-03-0036 தாரன் மாலையன் தமனியப் பூணினன்
+1.00 SIL-05-0142 கச்சை யானைப் பிடர்த்தலை ஏற்றி, || MAN-01-0028 கச்சை யானைப் பிடர்த்தலை ஏற்றி
+0.97 SIL-05-0141 வச்சிரக் கோட்டத்து மணம்கெழு முரசம் || MAN-01-0027 வச்சிரக் கோட்டத்து மணம் கெழு முரசம்
+0.97 SIL-05-0040 கோவியன் வீதியும், கொடித்தேர் வீதியும், || MAN-04-0037 கோவியன் வீதியும் கொடித் தேர் வீதியும்
+0.97 SIL-10-0031 இலவந் திகையின் எயில்புறம் போகி, || MAN-03-0045 இலவந்திகையின் எயில் புறம் போகின்
+0.92 SIL-15-0156 திருவில் இட்டுத் திகழ்தரு மேனியன் || MAN-06-0010 திருவில் இட்டுத் திகழ்தரு மேனியள்
+0.92 SIL-05-0157 ஐம்பெருங் குழுவும் எண்பேர் ஆயமும் || MAN-01-0017 ஐம் பெருங்குழுவும் எண் பேர் ஆயமும்
+0.90 SIL-05-0072 பசியும் பிணியும் பகையும் நீங்கி || MAN-01-0070 'பசியும் பிணியும் பகையும் நீங்கி
+0.89 SIL-03-0039 வேத்தியல் பொதுவியல் என்றுஇரு திறத்தின் || MAN-02-0018 "வேத்தியல் பொதுவியல் என்று இரு திறத்துக்
+0.87 SIL-06-0061 திருவின் செய்யோள் ஆடிய பாவையும், || MAN-05-0004 திருவின் செய்யோள் ஆடிய பாவையின்
+0.86 SIL-15-0033 வந்தேன் அஞ்சல் மணிமே கலையான் || MAN-07-0018 வந்தேன் அஞ்சல் மணிமேகலை யான்
+0.84 SIL-00-0049 இட்ட சாபம் கட்டியது ஆகலின் || MAN-26-0031 இட்ட சாபம் கட்டியது ஆகும்
+0.80 SIL-27-0153 குறியவும் நெடியவுங் குன்றுகண் டன்ன || MAN-06-0058 குறியவும் நெடியவும் குன்று கண்டன்ன
+0.77 SIL-23-0082 விடர்ச்சிலை பொறித்த வேந்தன் வாழி || MAN-28-0104 விடர்ச் சிலை பொறித்த வேந்தன் முன் நாள்
+0.77 SIL-30-0038 குரற்றலைக் கூந்தல் குலைந்துபின் வீழத் || MAN-08-0036 குரல் தலைக் கூந்தல் குலைந்து பின் வீழ
+0.77 SIL-13-0058 அருமணி இழந்த நாகம் போன்றதும் || MAN-25-0195 நல் மணி இழந்த நாகம் போன்று
+0.76 SIL-05-0024 காழியர் கூவியர் கள்நொடை யாட்டியர் || MAN-28-0032 கள் நொடையாட்டியர் காழியர் கூவியர்
+0.73 SIL-03-0008 ஆடலும் பாடலும் அழகும் என்றுஇக் || MAN-18-0104 ஆடலும் பாடலும் அழகும் காட்டி
+0.72 SIL-28-0229 வித்தகர் இயற்றிய விளங்கிய கோலத்து || MAN-03-0167 வித்தகர் இயற்றிய விளங்கிய கைவினைச்
+0.72 SIL-28-0229 வித்தகர் இயற்றிய விளங்கிய கோலத்து || MAN-19-0005 வித்தகர் இயற்றிய விளங்கிய கைவினைச்
+0.72 SIL-22-0129 குதலைச் செவ்வாய்க் குறுநடைப் புதல்வரொடு || MAN-07-0057 குதலைச் செவ் வாய் குறு நடைப் புதல்வர்க்குக
+0.70 SIL-14-0148 வேத்தியல் பொதுவியல் எனவிரு திறத்து || MAN-02-0018 "வேத்தியல் பொதுவியல் என்று இரு திறத்துக்
+relationstart     rnd  prop right  prec  new new+
+kin     hand        1     9     1  0.11    9    1
+kin     hand        2     4     1  0.25    0    0
+kin     hand        3     0     0  None    0    0
+kin     learned     1    40     2  0.05   40    2
+kin     learned     2    40     2  0.05    7    0
+kin     learned     3    40     2  0.05    5    0
+spouse  hand        1     7     1  0.14    7    1
+spouse  hand        2     2     0   0.0    0    0
+spouse  hand        3     0     0  None    0    0
+spouse  learned     1    33     1  0.03   33    1
+spouse  learned     2    40     2  0.05   14    1
+spouse  learned     3    40     0   0.0    5    0
+scorer plumbing test: {"n": 120, "base_rate": 0.05, "brier": 0.055, "brier_baseline": 0.047, "log_loss": 0.213, "reliability": [{"bin": "0.0-0.2", "n": 118, "mean_score": 0.045, "share_correct": 0.051}, {"bin": "0.6-0.8", "n": 2, "mean_score": 0.695, "share_correct": 0.0}]}
+dev: 59 records, 49 questions
+method        right  wrong  blank    acc   leak   size
+flat_all          8     17     24   0.16   0.75     74
+flat_clean       16      9     24   0.33   0.08     57
+nary             11     10     28   0.22   0.67    182
+qualified        36      3     10   0.73   0.00    418
+contexts         26      2     21   0.53   0.00    241
+standards        49      0      0   1.00   0.00   1081
+ledger           49      0      0   1.00   0.00    480
+heldout: 163 records, 36 questions
+method        right  wrong  blank    acc   leak   size
+flat_all         15     10     11   0.42   0.75    180
+flat_clean       20      5     11   0.56   0.12    144
+nary             15      9     12   0.42   0.75    480
+qualified        27      7      2   0.75   0.00   1132
+contexts         30      3      3   0.83   0.00    643
+standards        36      0      0   1.00   0.00   2843
+ledger           36      0      0   1.00   0.00   1287
+ext: 163 records, 36 questions
+method        right  wrong  blank    acc   leak   size
+flat_all          9     13     14   0.25   1.00    180
+flat_clean       19      3     14   0.53   0.09    144
+nary             11     10     15   0.31   0.91    480
+qualified        26      3      7   0.72   0.00   1132
+contexts         27      0      9   0.75   0.00    643
+standards        36      0      0   1.00   0.00   2843
+ledger           36      0      0   1.00   0.00   1287
+
+-- ledger minus each baseline, share of questions, 95% interval from resampling episodes
+flat_clean  {'gap': 0.545, 'low': 0.436, 'high': 0.625, 'episodes': 22}
+nary        {'gap': 0.694, 'low': 0.573, 'high': 0.793, 'episodes': 22}
+qualified   {'gap': 0.264, 'low': 0.19, 'high': 0.336, 'episodes': 22}
+contexts    {'gap': 0.314, 'low': 0.181, 'high': 0.41, 'episodes': 22}
+standards   {'gap': 0.0, 'low': 0.0, 'high': 0.0, 'episodes': 22}
+removed            right/121  leaks  questions lost
+nothing              121          0
+voice_chain          110          0  q13 q14 q47 h04 h05 h17 h22 h34 e04 e17 e21
+mood                  94         26  q01 q04 q06 q09 q10 q19 q29 q30 q31 q33 q39 h01 h03 h10 h11 h30 h35 e01 e02 e09 e14 e20 e2
+time                 104          0  q15 q16 q19 q20 q22 q23 q28 q34 q38 q42 q43 h06 h14 h19 h27 e06 e07
+state_changes        100          0  q15 q16 q17 q18 q19 q24 q40 q42 q43 q44 q49 h06 h13 h15 h27 h28 e06 e07 e13 e15 e23
+belief_records       113          0  q20 q21 q28 q34 q35 q37 q38 e10
+open_values          119          0  q26 h33
+contradictions       118          0  q27 q46 h07
+reasons              113          0  q25 q41 h08 h12 h26 e05 e11 e19
+birth_scope          121          0  
+strategy                 statements  right  false facts
+everything                     1456    121            0
+composed                       1181    121            0
+qualified_template             1227     65            0
+per_verb                       1243    121            0
+bare_event                      722     41           24
+
+-- across the epics: trained on one, scored only on the other's questions
+train SIL, test MAN  per_verb   right 24/44  false facts 8
+train SIL, test MAN  composed   right 44/44  false facts 0
+train MAN, test SIL  per_verb   right 45/77  false facts 16
+train MAN, test SIL  composed   right 77/77  false facts 0
+161 spans from 163 records
+
+-- leave one episode out
+facet     share  always yes        cue P/R/F1    char LR P/R/F1
+voice      0.59        0.74    0.67/0.37/0.48     0.68/0.67/0.68
+mood       0.26        0.41    0.33/0.12/0.18     0.53/0.24/0.33
+state      0.22        0.37    0.35/0.36/0.36     0.32/0.17/0.22
+reason     0.12        0.22    0.31/0.2/0.24      0.0/0.0/0.0
+birth      0.09        0.17     0.0/0.0/0.0       0.5/0.07/0.12
+macro F1: {'cue_rules': 0.25, 'char_lr': 0.27, 'always_yes': 0.38}
+
+-- train one epic, test the other
+facet     share  always yes        cue P/R/F1    char LR P/R/F1
+voice      0.59        0.74    0.67/0.37/0.48     0.65/0.8/0.72
+mood       0.26        0.41    0.33/0.12/0.18     0.33/0.17/0.22
+state      0.22        0.37    0.35/0.36/0.36     0.29/0.06/0.09
+reason     0.12        0.22    0.31/0.2/0.24      0.0/0.0/0.0
+birth      0.09        0.17     0.0/0.0/0.0       1.0/0.2/0.33
+macro F1: {'cue_rules': 0.25, 'char_lr': 0.27, 'always_yes': 0.38}
+clean ledger complaints: {'shape': 0, 'story': 0, 'identity': 0, 'citation': 0}
+mutation                     shape     story  identity  citation
+drop_voice                     YES         -         -         -
+drop_mood                      YES         -         -         -
+drop_evidence                  YES         -         -         -
+malformed_line_id              YES         -         -       YES
+no_time                        YES       YES         -         -
+no_believer                    YES         -         -         -
+recipient_no_theme             YES         -         -         -
+bad_stance                     YES         -         -         -
+wrong_line                       -         -         -       YES
+line_does_not_exist              -         -         -       YES
+promote_claim                    -       YES         -         -
+restate_as_fact                  -       YES         -         -
+time_flip                        -       YES         -         -
+two_holders                      -       YES         -         -
+give_up_unheld                   -       YES         -         -
+dead_actor                       -       YES         -         -
+order_takes_effect               -       YES         -         -
+missing_belief_claim             -       YES         -         -
+disguise_as_identity             -       YES       YES         -
+merge_the_anklets                -       YES       YES         -
+merge_the_bowls                  -       YES       YES         -
+flatten_rebirth                  -       YES       YES         -
+statue_is_goddess                -       YES       YES         -
+plan_as_sale                     -         -         -         -
+dream_as_event                   -         -         -         -
+wrong_killer                     -         -         -         -
+invented_participant           YES         -         -         -
+doctrine_as_fact                 -         -         -         -
+valid reading clean                    false alarms: 0 []
+valid reading extra_reading            false alarms: 0 []
+valid reading conflicting_accounts     false alarms: 0 []
+valid reading dead_man_rises           false alarms: 0 []
+valid reading unknown_speaker          false alarms: 0 []
+valid reading claim_contradicted_twice false alarms: 0 []
+{'mutations': 28, 'caught': 24, 'by_layer': {'shape': 9, 'story': 14, 'identity': 5, 'citation': 3}, 'only_this_layer': {'shape': 7, 'story': 8, 'identity': 0, 'citation': 2}, 'missed': ['plan_as_sale', 'dream_as_event', 'wrong_killer', 'doctrine_as_fact'], 'valid_readings': 6, 'false_alarms': 0}
+20 modules + core: 349 triples parse fine
+after OWL RL closure with the data: 6199 triples, identity clashes: 0  SHACL violations: 0
+  m01_source            163 records
+  m02_lexicon             0 records
+  m03_agents            118 records
+  m04_objects            30 records
+  m05_events            120 records
+  m06_custody            15 records
+  m07_states             15 records
+  m08_time               27 records
+  m09_place              20 records
+  m10_speech             98 records
+  m11_belief             24 records
+  m12_identity           11 records
+  m13_plans               3 records
+  m14_causes             20 records
+  m15_social             12 records
+  m16_emotion             0 records
+  m17_cosmology          16 records
+  m18_interpretation      8 records
+  m19_crosstext           5 records
+  m20_provenance        163 records
+no records use: ['m02_lexicon', 'm16_emotion']
+{
+ "nodes": 82,
+ "pairs": 3321,
+ "plain_found": 3084,
+ "plain_bad": 1743,
+ "actual_found": 2214,
+ "lawful_found": 2214,
+ "len_plain": 7126,
+ "len_lawful": 7315,
+ "both": 2214,
+ "life_mix": 0
+}
+manimekalai  kannagi      plain  child_of[m06:add]
+manimekalai  kannagi      lawful speak_as_deity[m08:ass]
+manimekalai  pandya_king  plain  child_of[m05:ass] > frame[a07:int]
+manimekalai  pandya_king  lawful child_of[m05:ass] > accuse[a08:ass]
+kovalan      sangaman     plain  same_person[d01:ass] > accuse[d02:ass]
+kovalan      sangaman     lawful same_person[d01:ass] > accuse[d02:ass]
+udayakumaran kovalan      plain  motive[b18:ass] > child_of[m05:ass]
+udayakumaran kovalan      lawful motive[b18:ass] > child_of[m05:ass]
+kovalan      ank_q        plain  steal[a09:cla]
+kovalan      ank_q        lawful show[a04:ass] > steal[a06b:ass]
+kanchanan    manimekalai  plain  correct[b15:ass]
+kanchanan    manimekalai  lawful correct[b15:ass]
+aputhiran    manimekalai  plain  give[c01:ass] > feed[b02:ass]
+aputhiran    manimekalai  lawful give[c01:ass] > feed[b02:ass]
+punyarasan   amudasurabhi plain  same_person[g02:ass] > give[c01:ass]
+punyarasan   amudasurabhi lawful same_person[g02:ass] > give[c01:ass]
+kannagi      cenkuttuvan  plain  child_of[m06:add] > worship[m07:ass] > install[x73:ass]
+kannagi      cenkuttuvan  lawful speak_as_deity[m08:ass] > worship[m07:ass] > install[x73:ass]
+neeli        kannagi      plain  curse[d06:ass] > same_person[d01:ass] > offer[a01:ass]
+neeli        kannagi      lawful curse[d06:ass] > same_person[d01:ass] > offer[a01:ass]
+gajabahu     kovalan      plain  ask_boon[m10:ass] > offer[a01:ass]
+gajabahu     kovalan      lawful ask_boon[m10:ass] > offer[a01:ass]
+goldsmith    kovalan      plain  show[a04:ass]
+goldsmith    kovalan      lawful show[a04:ass]
+
+-- echoes, top 10
+('anklet', 'main') ~ ('curse', 'prev_bharatan') consistent 2 lcs 2 bag 2 map {'kovalan': 'sangaman', 'goldsmith': 'bharatan', 'pandya_king': 'kalinga_king'}
+('curse', 'prev_bharatan') ~ ('retelling', 'prev_bharatan') consistent 2 lcs 2 bag 2 map {'sangaman': 'sangaman', 'bharatan': 'bharatan', 'kalinga_king': 'kalinga_king'}
+('fire', 'main') ~ ('rahulan', 'prev_lakshmi') consistent 2 lcs 2 bag 2 map {'pandya_queen': 'rahulan', 'matari': 'lakshmi'}
+('anklet', 'main') ~ ('rahulan', 'prev_lakshmi') consistent 1 lcs 2 bag 2 map {'kovalan': 'cook', 'drunk_man': 'rahulan', 'sword': 'sword'}
+('anklet', 'main') ~ ('disguise', 'main') consistent 1 lcs 1 bag 1 map {'kovalan': 'udayakumaran', 'drunk_man': 'kanchanan', 'sword': 'sword'}
+('anklet', 'main') ~ ('fire', 'main') consistent 1 lcs 1 bag 1 map {'pandya_king': 'pandya_queen'}
+('anklet', 'main') ~ ('retelling', 'prev_bharatan') consistent 1 lcs 1 bag 1 map {'kovalan': 'sangaman', 'goldsmith': 'bharatan', 'pandya_king': 'kalinga_king'}
+('bowl', 'main') ~ ('disguise', 'main') consistent 1 lcs 1 bag 1 map {'aputhiran': 'manimekalai', 'amudasurabhi': 'amudasurabhi'}
+('bowl', 'main') ~ ('garland', 'main') consistent 1 lcs 1 bag 1 map {'amudasurabhi': 'garland', 'chintadevi': 'madhavi', 'aputhiran': 'hunchback'}
+('bowl', 'main') ~ ('prison', 'main') consistent 1 lcs 1 bag 1 map {'aputhiran': 'disguised_woman', 'amudasurabhi': 'amudasurabhi'}
+shuffle test ('anklet', 'main') ('curse', 'prev_bharatan') 2 p=0.1634
+shuffle test ('curse', 'prev_bharatan') ('retelling', 'prev_bharatan') 2 p=0.0120
+shuffle test ('fire', 'main') ('rahulan', 'prev_lakshmi') 2 p=0.0390
+{'tempting_flagged': '8/8', 'false_makes_licensed': [], 'true_makes_missed': [], 'expected_found': '15/15', 'mean_connector_degree': {'guarded': 15.3, 'plain': 18.4}, 'depth': {'causal_longest_records': 5, 'story_order_stages_by_episode': {'journey': 21, 'anklet': 19, 'disguise': 14, 'plain': 14, 'aputhiran': 12, 'bowl': 11}}}
+  ok  ['cowherd_women', 'hill_people_25'] ['mango', 'hill_people_25'] ['event', 'kind']
+  ok  ['hill_people_25', 'saduvan'] ['agarwood', 'fragrant_wood', 'saduvan'] ['event', 'kind', 'wider']
+  ok  ['magadha_king', 'magadha_workers'] ['magadha', 'magadha_workers'] ['event', 'place']
+  ok  ['avanti_king', 'avanti_smiths'] ['avanti', 'avanti_smiths'] ['event', 'place']
+  ok  ['skilled_woman_16', 'hill_people_25'] ['kovalan', 'areca', 'hill_people_25'] ['event', 'kind', 'same']
+  ok  ['cowherd_women', 'jackfruit'] ['koli_fruit', 'jackfruit'] ['event', 'gloss', 'kind']
+  ok  ['madhavi', 'goldsmith'] ['kovalan', 'goldsmith'] ['event', 'same']
+  ok  ['madhavi', 'yavana_carpenters'] ['pearl_material', 'gold_pavilion', 'yavana_carpenters'] ['event', 'kind', 'same']
+...............................                                          [100%]
+31 passed in 0.84s
+76 items, 3 homonyms, 0 problems
+93 nodes; {'ledger': 199, 'candidate': 81} edges; 427 canto links, 116 cross-epic
+wrote annotation/review_ledger.csv
+{'records': 359, 'nodes': 273, 'edges': 534, 'lines': 10209, 'cantos': 64, 'crossEpicLines': 143, 'discoveries': 120, 'crossDiscoveries': 105, 'machineCantos': ['MAN-00', 'MAN-01', 'MAN-02', 'MAN-03', 'MAN-04', 'MAN-05', 'MAN-06', 'MAN-07', 'MAN-08', 'MAN-09', 'MAN-10', 'MAN-11', 'MAN-12', 'MAN-13', 'MAN-14', 'MAN-15', 'MAN-16', 'MAN-17', 'MAN-18', 'MAN-19', 'MAN-20', 'MAN-21', 'MAN-22', 'MAN-23', 'MAN-24', 'MAN-25', 'MAN-26', 'MAN-27', 'MAN-28', 'MAN-29', 'MAN-30', 'SIL-00', 'SIL-01', 'SIL-02', 'SIL-03', 'SIL-04', 'SIL-05', 'SIL-06', 'SIL-07', 'SIL-08', 'SIL-09', 'SIL-10', 'SIL-11', 'SIL-12', 'SIL-13', 'SIL-14', 'SIL-15', 'SIL-16', 'SIL-17', 'SIL-18', 'SIL-19', 'SIL-20', 'SIL-21', 'SIL-22', 'SIL-23', 'SIL-24', 'SIL-25', 'SIL-26', 'SIL-27', 'SIL-28', 'SIL-29', 'SIL-30', 'SIL-31', 'SIL-32'], 'cantosWithRecords': 64}
+{"lines": 10209, "status": {"drafted": 8539, "noted": 920, "in_graph": 746, "unread": 4}, "unread_by_canto": {"SIL-07": 1, "SIL-12": 2, "SIL-14": 1}}
+
+> manichchilambu-web@0.1.0 test
+> vitest run
+
+
+ RUN  v4.1.12 /Users/bhaveenthankajanikanth/Documents/Twin_Epics/web
+
+
+ Test Files  3 passed (3)
+      Tests  82 passed (82)
+   Start at  11:25:50
+   Duration  387ms (transform 140ms, setup 0ms, import 186ms, tests 411ms, environment 0ms)
+

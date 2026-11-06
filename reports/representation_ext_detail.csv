@@ -1,0 +1,253 @@
+method,q,ep,op,result,answer
+flat_all,e01,dream,happened,wrong,true
+flat_all,e02,dream,happened,wrong,true
+flat_all,e03,dream,happened,right,true
+flat_all,e04,dream,tellers,blank,null
+flat_all,e05,dream,causes,blank,null
+flat_all,e06,entrust,state_of,blank,null
+flat_all,e07,entrust,state_of,blank,null
+flat_all,e08,entrust,holder,wrong,"[""kovalan""]"
+flat_all,e09,song,happened,wrong,true
+flat_all,e10,song,belief,blank,null
+flat_all,e11,song,causes,blank,null
+flat_all,e12,risen,happened,right,true
+flat_all,e13,risen,alive,right,false
+flat_all,e14,risen,happened,wrong,true
+flat_all,e15,transport,state_of,blank,null
+flat_all,e16,transport,retellings,blank,null
+flat_all,e17,transport,tellers,blank,null
+flat_all,e18,ascetic,happened,right,true
+flat_all,e19,ascetic,causes,blank,null
+flat_all,e20,madhavi,happened,wrong,true
+flat_all,e21,madhavi,tellers,blank,null
+flat_all,e22,madhavi,retellings,blank,null
+flat_all,e23,image,state_of,blank,null
+flat_all,e24,image,happened,wrong,true
+flat_all,e25,image,happened,wrong,true
+flat_all,e26,doctrine,happened,wrong,true
+flat_all,e27,doctrine,happened,wrong,true
+flat_all,e28,worship,retellings,blank,null
+flat_all,e29,worship,happened,wrong,true
+flat_all,e30,plain,role_of,right,"""manimekalai"""
+flat_all,e31,plain,happened,right,true
+flat_all,e32,plain,role_of,wrong,"""nagapuram"""
+flat_all,e33,plain,happened,right,true
+flat_all,e34,plain,happened,right,true
+flat_all,e35,plain,role_of,right,"""goldsmith"""
+flat_all,e36,plain,happened,wrong,true
+flat_clean,e01,dream,happened,right,false
+flat_clean,e02,dream,happened,right,false
+flat_clean,e03,dream,happened,right,true
+flat_clean,e04,dream,tellers,blank,null
+flat_clean,e05,dream,causes,blank,null
+flat_clean,e06,entrust,state_of,blank,null
+flat_clean,e07,entrust,state_of,blank,null
+flat_clean,e08,entrust,holder,wrong,"[""kovalan""]"
+flat_clean,e09,song,happened,right,false
+flat_clean,e10,song,belief,blank,null
+flat_clean,e11,song,causes,blank,null
+flat_clean,e12,risen,happened,right,true
+flat_clean,e13,risen,alive,right,false
+flat_clean,e14,risen,happened,right,false
+flat_clean,e15,transport,state_of,blank,null
+flat_clean,e16,transport,retellings,blank,null
+flat_clean,e17,transport,tellers,blank,null
+flat_clean,e18,ascetic,happened,right,true
+flat_clean,e19,ascetic,causes,blank,null
+flat_clean,e20,madhavi,happened,right,false
+flat_clean,e21,madhavi,tellers,blank,null
+flat_clean,e22,madhavi,retellings,blank,null
+flat_clean,e23,image,state_of,blank,null
+flat_clean,e24,image,happened,right,false
+flat_clean,e25,image,happened,right,false
+flat_clean,e26,doctrine,happened,right,false
+flat_clean,e27,doctrine,happened,right,false
+flat_clean,e28,worship,retellings,blank,null
+flat_clean,e29,worship,happened,right,false
+flat_clean,e30,plain,role_of,right,"""manimekalai"""
+flat_clean,e31,plain,happened,right,true
+flat_clean,e32,plain,role_of,wrong,"""nagapuram"""
+flat_clean,e33,plain,happened,right,true
+flat_clean,e34,plain,happened,right,true
+flat_clean,e35,plain,role_of,right,"""goldsmith"""
+flat_clean,e36,plain,happened,wrong,true
+nary,e01,dream,happened,wrong,true
+nary,e02,dream,happened,wrong,true
+nary,e03,dream,happened,right,true
+nary,e04,dream,tellers,blank,null
+nary,e05,dream,causes,blank,null
+nary,e06,entrust,state_of,blank,null
+nary,e07,entrust,state_of,blank,null
+nary,e08,entrust,holder,blank,null
+nary,e09,song,happened,wrong,true
+nary,e10,song,belief,blank,null
+nary,e11,song,causes,blank,null
+nary,e12,risen,happened,right,true
+nary,e13,risen,alive,right,false
+nary,e14,risen,happened,wrong,true
+nary,e15,transport,state_of,blank,null
+nary,e16,transport,retellings,blank,null
+nary,e17,transport,tellers,blank,null
+nary,e18,ascetic,happened,right,true
+nary,e19,ascetic,causes,blank,null
+nary,e20,madhavi,happened,wrong,true
+nary,e21,madhavi,tellers,blank,null
+nary,e22,madhavi,retellings,blank,null
+nary,e23,image,state_of,blank,null
+nary,e24,image,happened,wrong,true
+nary,e25,image,happened,wrong,true
+nary,e26,doctrine,happened,wrong,true
+nary,e27,doctrine,happened,wrong,true
+nary,e28,worship,retellings,blank,null
+nary,e29,worship,happened,wrong,true
+nary,e30,plain,role_of,right,"""manimekalai"""
+nary,e31,plain,happened,right,true
+nary,e32,plain,role_of,right,"""vanci"""
+nary,e33,plain,happened,right,true
+nary,e34,plain,happened,right,true
+nary,e35,plain,role_of,right,"""goldsmith"""
+nary,e36,plain,happened,right,false
+qualified,e01,dream,happened,right,false
+qualified,e02,dream,happened,right,false
+qualified,e03,dream,happened,right,true
+qualified,e04,dream,tellers,wrong,"[[""kannagi""]]"
+qualified,e05,dream,causes,right,"[[""foreshadowed"", ""x04""]]"
+qualified,e06,entrust,state_of,blank,null
+qualified,e07,entrust,state_of,blank,null
+qualified,e08,entrust,holder,right,null
+qualified,e09,song,happened,right,false
+qualified,e10,song,belief,right,"""accept"""
+qualified,e11,song,causes,right,"[[""karma"", ""x22""], [""motivates"", ""x21""]]"
+qualified,e12,risen,happened,right,true
+qualified,e13,risen,alive,right,false
+qualified,e14,risen,happened,right,false
+qualified,e15,transport,state_of,blank,null
+qualified,e16,transport,retellings,blank,null
+qualified,e17,transport,tellers,wrong,"[[""manimekhala_deity""], [""poet""]]"
+qualified,e18,ascetic,happened,right,true
+qualified,e19,ascetic,causes,right,"[[""motivates"", ""x50""]]"
+qualified,e20,madhavi,happened,right,false
+qualified,e21,madhavi,tellers,wrong,"[[""aravanan""]]"
+qualified,e22,madhavi,retellings,blank,null
+qualified,e23,image,state_of,blank,null
+qualified,e24,image,happened,right,false
+qualified,e25,image,happened,right,false
+qualified,e26,doctrine,happened,right,false
+qualified,e27,doctrine,happened,right,false
+qualified,e28,worship,retellings,blank,null
+qualified,e29,worship,happened,right,false
+qualified,e30,plain,role_of,right,"""manimekalai"""
+qualified,e31,plain,happened,right,true
+qualified,e32,plain,role_of,right,"""vanci"""
+qualified,e33,plain,happened,right,true
+qualified,e34,plain,happened,right,true
+qualified,e35,plain,role_of,right,"""goldsmith"""
+qualified,e36,plain,happened,right,false
+contexts,e01,dream,happened,right,false
+contexts,e02,dream,happened,right,false
+contexts,e03,dream,happened,right,true
+contexts,e04,dream,tellers,right,"[[""kannagi"", ""poet""]]"
+contexts,e05,dream,causes,right,"[[""foreshadowed"", ""x04""]]"
+contexts,e06,entrust,state_of,blank,null
+contexts,e07,entrust,state_of,blank,null
+contexts,e08,entrust,holder,blank,null
+contexts,e09,song,happened,right,false
+contexts,e10,song,belief,blank,null
+contexts,e11,song,causes,right,"[[""karma"", ""x22""], [""motivates"", ""x21""]]"
+contexts,e12,risen,happened,right,true
+contexts,e13,risen,alive,right,false
+contexts,e14,risen,happened,right,false
+contexts,e15,transport,state_of,blank,null
+contexts,e16,transport,retellings,blank,null
+contexts,e17,transport,tellers,right,"[[""manimekhala_deity"", ""poet""], [""poet""]]"
+contexts,e18,ascetic,happened,right,true
+contexts,e19,ascetic,causes,right,"[[""motivates"", ""x50""]]"
+contexts,e20,madhavi,happened,right,false
+contexts,e21,madhavi,tellers,right,"[[""aravanan"", ""madhavi"", ""poet""]]"
+contexts,e22,madhavi,retellings,blank,null
+contexts,e23,image,state_of,blank,null
+contexts,e24,image,happened,right,false
+contexts,e25,image,happened,right,false
+contexts,e26,doctrine,happened,right,false
+contexts,e27,doctrine,happened,right,false
+contexts,e28,worship,retellings,blank,null
+contexts,e29,worship,happened,right,false
+contexts,e30,plain,role_of,right,"""manimekalai"""
+contexts,e31,plain,happened,right,true
+contexts,e32,plain,role_of,right,"""vanci"""
+contexts,e33,plain,happened,right,true
+contexts,e34,plain,happened,right,true
+contexts,e35,plain,role_of,right,"""goldsmith"""
+contexts,e36,plain,happened,right,false
+standards,e01,dream,happened,right,false
+standards,e02,dream,happened,right,false
+standards,e03,dream,happened,right,true
+standards,e04,dream,tellers,right,"[[""kannagi"", ""poet""]]"
+standards,e05,dream,causes,right,"[[""foreshadowed"", ""x04""]]"
+standards,e06,entrust,state_of,right,"[""holds kannagi ank_k1"", ""holds kannagi ank_k2"", ""in_care_of matari kannagi""]"
+standards,e07,entrust,state_of,right,"[""holds kannagi ank_k2""]"
+standards,e08,entrust,holder,right,null
+standards,e09,song,happened,right,false
+standards,e10,song,belief,right,"""accept"""
+standards,e11,song,causes,right,"[[""karma"", ""x22""], [""motivates"", ""x21""]]"
+standards,e12,risen,happened,right,true
+standards,e13,risen,alive,right,false
+standards,e14,risen,happened,right,false
+standards,e15,transport,state_of,right,"[""at manimekalai manipallavam""]"
+standards,e16,transport,retellings,right,"[""x41""]"
+standards,e17,transport,tellers,right,"[[""manimekhala_deity"", ""poet""], [""poet""]]"
+standards,e18,ascetic,happened,right,true
+standards,e19,ascetic,causes,right,"[[""motivates"", ""x50""]]"
+standards,e20,madhavi,happened,right,false
+standards,e21,madhavi,tellers,right,"[[""aravanan"", ""madhavi"", ""poet""]]"
+standards,e22,madhavi,retellings,right,"[""r04"", ""x61""]"
+standards,e23,image,state_of,right,"[""depicts kannagi_image kannagi""]"
+standards,e24,image,happened,right,false
+standards,e25,image,happened,right,false
+standards,e26,doctrine,happened,right,false
+standards,e27,doctrine,happened,right,false
+standards,e28,worship,retellings,right,"[""x91""]"
+standards,e29,worship,happened,right,false
+standards,e30,plain,role_of,right,"""manimekalai"""
+standards,e31,plain,happened,right,true
+standards,e32,plain,role_of,right,"""vanci"""
+standards,e33,plain,happened,right,true
+standards,e34,plain,happened,right,true
+standards,e35,plain,role_of,right,"""goldsmith"""
+standards,e36,plain,happened,right,false
+ledger,e01,dream,happened,right,false
+ledger,e02,dream,happened,right,false
+ledger,e03,dream,happened,right,true
+ledger,e04,dream,tellers,right,"[[""kannagi"", ""poet""]]"
+ledger,e05,dream,causes,right,"[[""foreshadowed"", ""x04""]]"
+ledger,e06,entrust,state_of,right,"[""holds kannagi ank_k1"", ""holds kannagi ank_k2"", ""in_care_of matari kannagi""]"
+ledger,e07,entrust,state_of,right,"[""holds kannagi ank_k2""]"
+ledger,e08,entrust,holder,right,null
+ledger,e09,song,happened,right,false
+ledger,e10,song,belief,right,"""accept"""
+ledger,e11,song,causes,right,"[[""karma"", ""x22""], [""motivates"", ""x21""]]"
+ledger,e12,risen,happened,right,true
+ledger,e13,risen,alive,right,false
+ledger,e14,risen,happened,right,false
+ledger,e15,transport,state_of,right,"[""at manimekalai manipallavam""]"
+ledger,e16,transport,retellings,right,"[""x41""]"
+ledger,e17,transport,tellers,right,"[[""manimekhala_deity"", ""poet""], [""poet""]]"
+ledger,e18,ascetic,happened,right,true
+ledger,e19,ascetic,causes,right,"[[""motivates"", ""x50""]]"
+ledger,e20,madhavi,happened,right,false
+ledger,e21,madhavi,tellers,right,"[[""aravanan"", ""madhavi"", ""poet""]]"
+ledger,e22,madhavi,retellings,right,"[""r04"", ""x61""]"
+ledger,e23,image,state_of,right,"[""depicts kannagi_image kannagi""]"
+ledger,e24,image,happened,right,false
+ledger,e25,image,happened,right,false
+ledger,e26,doctrine,happened,right,false
+ledger,e27,doctrine,happened,right,false
+ledger,e28,worship,retellings,right,"[""x91""]"
+ledger,e29,worship,happened,right,false
+ledger,e30,plain,role_of,right,"""manimekalai"""
+ledger,e31,plain,happened,right,true
+ledger,e32,plain,role_of,right,"""vanci"""
+ledger,e33,plain,happened,right,true
+ledger,e34,plain,happened,right,true
+ledger,e35,plain,role_of,right,"""goldsmith"""
+ledger,e36,plain,happened,right,false

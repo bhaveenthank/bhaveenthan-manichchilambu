@@ -1,0 +1,25 @@
+# Places and journeys
+#
+# A pond can hold a bowl, so custody can't assume a person. A site isn't the institution in it.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m09_place> a owl:Ontology ; rdfs:label "Places and journeys" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E53_Place
+
+iy:City a owl:Class ; rdfs:subClassOf iy:Place .
+iy:Kingdom a owl:Class ; rdfs:subClassOf iy:Place .
+iy:Temple a owl:Class ; rdfs:subClassOf iy:Place .
+iy:Monastery a owl:Class ; rdfs:subClassOf iy:Place .
+iy:Pond a owl:Class ; rdfs:subClassOf iy:Place .
+iy:Site a owl:Class ; rdfs:subClassOf iy:Place .
+iy:Journey a owl:Class ; rdfs:subClassOf iy:Movement .
+
+iy:at a owl:ObjectProperty .
+iy:locatedIn a owl:ObjectProperty .

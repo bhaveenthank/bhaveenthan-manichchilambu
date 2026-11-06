@@ -1,0 +1,31 @@
+﻿n,lines,kind,mood,voice,roles,text,my_reading,note
+1,MAN-28-0156 MAN-28-0157,withhold_rain,asserted,poet>arundavan,"{""place"": ""kanchi""}",பொன் எயில் காஞ்சி நாடு கவின் அழிந்து / மன் உயிர் மடிய மழை வளம் கரத்தலின்,right,
+2,SIL-10-0125,gather,asserted,poet,"{""agent"": ""farm_workers"", ""place"": ""threshing_floor""}",கருங்கை வினைஞரும் களமருங் கூடி,right,
+3,MAN-23-0034 MAN-23-0035 MAN-23-0036,permit,command,poet>king,"{""agent"": ""king"", ""theme"": ""manimekalai""}",செறிந்த சிறை நோய் தீர்க்க' என்று இறை சொல / 'என்னோடு இருப்பினும் இருக்க இவ் இளங்கொடி / தன் ஓடு எடுப்பினும் தகைக்குநர் இல்' என்று,wrong,"The speaker of 35-36 is the queen, not the king, who spoke in 34. தன் ஓடு is her own bowl, not going with the speaker."
+4,MAN-28-0234,cure_hunger,asserted,poet,"{""agent"": ""manimekalai"", ""patient"": ""all_beings""}",பசிப் பிணி தீர்த்த பாவையை ஏத்திச்,partly,all_beings as patient is filled in. The line only says she cured hunger.
+5,SIL-14-0024,ask_if_harm,question,poet>kovalan,"{""agent"": ""kovalan"", ""addressee"": ""kavunti""}",ஏத முண்டோ அடிக ளீங் கென்றலும்,right,
+6,SIL-10-0223 SIL-10-0224,question_who_are_travellers,question,poet>courtesan,{},"நோற்றுஉணல் யாக்கை நொசிதவத் தீர்உடன் / ஆற்றுவழிப் பட்டோ ர் ஆர்என வினவ,என்",right,
+7,MAN-23-0073,ask,question,poet>manimekalai,"{""agent"": ""manimekalai"", ""addressee"": ""mapperundevi""}",உடற்கு அழுதனையோ? உயிர்க்கு அழுதனையோ?,right,
+8,SIL-10-0074 SIL-10-0075,hurt,conditional,poet,"{""theme"": ""jackfruit_pebbles"", ""place"": ""flower_grove""}",மஞ்சளும் இஞ்சியும் மயங்குஅரில் வலயத்துச் / செஞ்சுளைப் பலவின் பரல்பகை உறுக்கும்.,partly,"Jackfruit pebbles are right. It is a warning about the road, so conditional is the wrong mood."
+9,SIL-14-0098 SIL-14-0099 SIL-14-0100,sit_by_fire,asserted,poet,"{""agent"": ""young_women"", ""theme"": ""fire"", ""place"": ""mansion""}",முகில்தோய் மாடத் தகில்தரு விறகின் / மடவரல் மகளிர் தடவுநெருப் பமர்ந்து / நறுஞ்சாந் தகலத்து நம்பியர் தம்மொடு,right,
+10,MAN-23-0063,tremble,asserted,poet,"{""agent"": ""queen""}",ஐயென விம்மி ஆய் இழை நடுங்கி,right,
+11,MAN-28-0083,reach,asserted,poet>manimekalai,"{""agent"": ""savaka_king"", ""place"": ""savaka_land""}",சாவக மன்னன் தன் நாடு எய்த,right,
+12,MAN-28-0202 MAN-28-0203,arrive,asserted,poet>deity,"{""agent"": ""manipallavam"", ""theme"": ""gomukhi""}",கோமுகி என்னும் கொழு நீர் இலஞ்சியொடு / மா மணிபல்லவம் வந்தது ஈங்கு என,right,
+13,MAN-23-0147,bow,asserted,poet,"{""agent"": ""manimekalai"", ""target"": ""queen""}",மாபெருந்தேவி' என்று எதிர் வணங்கினள் என்,right,
+14,SIL-14-0061,go,command,poet,{},பொருந்துழி யறிந்து போதீங் கென்றலும்,right,
+15,MAN-28-0190 MAN-28-0191,suffer,asserted,poet>king,"{""patient"": ""land""}",நலத்தகை நல்லாய்! நல் நாடு எல்லாம் / அலத்தல்காலை ஆகியது அறியேன்,right,
+16,SIL-14-0056 SIL-14-0057,invite_to_say,question,poet>kavunti,"{""agent"": ""kavunti"", ""addressee"": ""kovalan""}",வல்வினை யன்றோ மடந்தைதன் பிழையெனச் / சொல்லலும் உண்டேற் சொல்லா யோநீ,right,
+17,MAN-28-0145,say,asserted,poet>arundavan,"{""agent"": ""wonder_knowers""}",அற்புதக் கிளவி அறிந்தோர் கூறச்,right,
+18,MAN-23-0061 MAN-23-0062,shield,asserted,poet,"{""patient"": ""manimekalai"", ""instrument"": ""fasting_mantra""}",ஊண் ஒழி மந்திரம் உடைமையின் அந்த / வாள் நுதல் மேனி வருந்தாது இருப்ப,right,
+19,MAN-28-0150,teach,asserted,poet>arundavan,"{""agent"": ""aravanan""}",தவ நெறி அறவணன் சாற்றக் கேட்டனன்,right,
+20,MAN-23-0115 MAN-23-0116 MAN-23-0117,grieve,asserted,poet>speaker,"{""agent"": ""doe"", ""theme"": ""fawn""}",மான் மறி விழுந்தது கண்டு மனம் மயங்கி / பயிர்க் குரல் கேட்டு அதன் பான்மையன் ஆகி / உயிர்ப்பொடு செங் கண் உகுத்த நீர் கண்டு,partly,"The note says the text does not choose, but the record still names the doe as agent."
+21,MAN-28-0181,hold,claimed,poet>unnamed_speaker,"{""agent"": ""manimekalai"", ""theme"": ""amudasurabhi""}",அங்கையின் ஏந்திய அமுதசுரபியொடு,right,
+22,MAN-13-0081,insult,asserted,poet>brahmin_one>sali,"{""agent"": ""sali"", ""patient"": ""vedic_teacher""}",காப்புக் கடைகழிந்து கணவனை இகழ்ந்தேன்,right,
+23,SIL-14-0081 SIL-14-0082 SIL-14-0083 SIL-14-0084 SIL-14-0085 SIL-14-0086 SIL-14-0087 SIL-14-0088 SIL-14-0089 SIL-14-0090 SIL-14-0091 SIL-14-0092 SIL-14-0093,adorn_and_sit_in_garden,metaphor,poet,"{""place"": ""madurai""}",தெக்கண மலயச் செழுஞ்சே றாடிப் / பொற்கொடி மூதூர்ப் பொழிலாட் டமர்ந்தாங்கு / எற்படு பொழுதின் இளநிலா முன்றில் / தாழ்தரு கோலந் தகை பாராட்ட / வீழ்பூஞ் சேக்கை மேலினி திருந்தாங்கு / அரத்தப் பூம்பட் டரைமிசை யுடீஇக் / குரற்றலைக் கூந்தற் குடசம் பொருந்திச் / சிறுமலைச் சிலம்பின் செங்கூ தாளமொடு / நறுமலர்க் குறிஞ்சி நாண்மலர் வேய்ந்து / குங்கும வருணங் கொங்கையி னிழைத்துச் / செங்கொடு வேரிச் செழும்பூம் பிணையல் / சிந்துரச் சுண்ணஞ் சேர்ந்த மேனியில் / அந்துகிர்க் கோவை அணியொடு பூண்டு,right,
+24,MAN-28-0126,hear_dharma,asserted,poet>aravanan,"{""agent"": ""kovalan_ancestor"", ""theme"": ""dharma""}",தாங்க நல் அறம் தானும் கேட்டு,partly,"Ancestor Kovalan is right. The voice should be Masattuvan, not Aravanan."
+25,MAN-28-0075 MAN-28-0076,gain_wealth,asserted,poet>manimekalai,"{""agent"": ""punyarasan"", ""theme"": ""world_ruling_wealth""}",தானப் பயத்தால் சாவக மன்னவன் / ஊனம் ஒன்று இன்றி உலகு ஆள் செல்வமும்,right,
+26,SIL-10-0100 SIL-10-0101,set_out,asserted,poet,{},"மொழிப்பொருள் தெய்வம் வழித்துணை ஆகெனப் / பழிப்புஅருஞ் சிறப்பின் வழிப்படர் புரிந்தோர்,",right,
+27,MAN-28-0239,worship,asserted,poet,"{""agent"": ""manimekalai"", ""target"": ""aravanan_and_mothers""}",சென்று அவர் தம்மைத் திருவடி வணங்கி,right,
+28,SIL-10-0162 SIL-10-0163,preach,asserted,poet,"{""agent"": ""charanas"", ""theme"": ""dharma""}","பெருமகன் அதிசயம் பிறழா வாய்மைத் / தருமம் சாற்றும் சாரணர் தோன்றப்,",right,
+29,SIL-10-0196 SIL-10-0197,speak,negated,poet>kavunti,"{""agent"": ""kavunti"", ""theme"": ""arhat""}","காமனை வென்றோன் ஆயிரத்து எட்டு / நாமம் அல்லது நவிலாது என்நா,",wrong,நாமம் அல்லது நவிலாது means her tongue utters nothing but his names. A negated speak about the Arhat says the opposite.
+30,MAN-28-0245,bow,asserted,poet,"{""agent"": ""manimekalai"", ""target"": ""aravanan_and_mothers""}",மாயை விட்டு இறைஞ்சினள் மணிமேகலை என்,right,

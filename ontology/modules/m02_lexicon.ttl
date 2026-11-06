@@ -1,0 +1,23 @@
+# Names, epithets and mentions
+#
+# Epithets only count inside the cantos listed for them. கோவலர் is a Lookalike: cowherds, not Kova
+# lan.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m02_lexicon> a owl:Ontology ; rdfs:label "Names, epithets and mentions" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E41_Appellation
+
+iy:Mention a owl:Class .
+iy:Name a owl:Class ; rdfs:subClassOf iy:Mention .
+iy:Epithet a owl:Class ; rdfs:subClassOf iy:Mention .
+iy:Lookalike a owl:Class .
+
+iy:refersTo a owl:ObjectProperty .
+iy:validInCanto a owl:ObjectProperty .

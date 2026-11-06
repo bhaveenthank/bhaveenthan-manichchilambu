@@ -1,0 +1,75 @@
+# What the text doesn't say. A graph that fills these in looks clever and is wrong.
+# Each entry names the tempting answer, the mistake someone would make without the verses in front of them.
+# "Not found" means not found in the passages looked at, and a scholar could yet find more.
+- id: g01
+  match: {subjects: [ank_k1, ank_pair, ank_k2], relation: maker}
+  q: ["Who made Kannagi's anklet?", "கண்ணகியின் சிலம்பைச் செய்தவர் யார்?"]
+  a: ["The passages read so far don't say. The goldsmith examines it, and separately boasts he can make royal ornaments, but he never claims this anklet.", "பார்த்த பகுதிகளில் இது கூறப்படவில்லை. பொற்கொல்லன் அதைச் சோதிக்கிறான்; அரச அணிகலன்களைச் செய்வேன் என்று பொதுவாகக் கூறுகிறான்; இந்தச் சிலம்பைச் செய்ததாகக் கூறவில்லை."]
+  tempting: ["The goldsmith made it.", "பொற்கொல்லன் செய்தான்."]
+  recs: [n10, n11, n12]
+- id: g02
+  match: {subjects: [ank_q], relation: maker}
+  q: ["Who made the queen's anklet?", "அரசியின் சிலம்பைச் செய்தவர் யார்?"]
+  a: ["Not stated. We're told the goldsmith took it and that pearls are inside it, by the king's word.", "கூறப்படவில்லை. பொற்கொல்லன் அதை எடுத்தான்; உள்ளே முத்து என்பது அரசன் சொல்."]
+  tempting: ["The royal goldsmith, since he works for the palace.", "அரண்மனைப் பொற்கொல்லன் செய்திருப்பான்."]
+  recs: [a06, a19]
+- id: g03
+  match: {subjects: [sali_rice, mango, plantain, koli_fruit, pomegranate, cucumber, dairy, meal_16], relation: origin}
+  q: ["Where was the food in Kannagi's meal grown?", "கண்ணகி சமைத்த உணவுப் பொருள்கள் எங்கு விளைந்தன?"]
+  a: ["Not stated. The text only says who handed it over, the cowherd women outside Madurai. Being eaten near Madurai doesn't make it grown there.", "கூறப்படவில்லை. அவற்றைக் கொடுத்தவர் இடைக்குல மடந்தையர் என்பது மட்டுமே உள்ளது. மதுரை அருகே உண்டதால் அங்கு விளைந்தது என்று ஆகாது."]
+  tempting: ["Madurai, or the cowherds' settlement.", "மதுரை அல்லது ஆயர் சேரி."]
+  recs: [n02, n05]
+- id: g04
+  match: {subjects: [mango, plantain, jackfruit, koli_fruit, areca], relation: transfer}
+  q: ["Did the hill people's fruit reach Kannagi's kitchen?", "மலைமக்களின் கனிகள் கண்ணகியின் அடுக்களைக்கு வந்தனவா?"]
+  a: ["No line says so, and the order rules it out: the hill people's gifts come after Kannagi is dead. Mango and plantain are in both lists, as the same kind of fruit and never as the same fruit.", "அப்படி எந்த வரியும் இல்லை. மலைமக்கள் காணிக்கை கண்ணகி மறைந்த பின்னரே வருகிறது. மாவும் வாழையும் இரு பட்டியலிலும் உள்ளன; ஒரே வகை, ஒரே கனி அல்ல."]
+  tempting: ["Yes, they share mango and plantain.", "ஆம், மாவும் வாழையும் இரண்டிலும் உள்ளன."]
+  recs: [n02, n50]
+- id: g05
+  match: {subjects: [drummer_man01, festival_drum, vachira_temple], relation: origin}
+  q: ["Is the festival drummer from Vachirakottam?", "விழா முரசறைபவன் வச்சிரக் கோட்டத்தைச் சேர்ந்தவனா?"]
+  a: ["The text doesn't say that. The drum comes from Vachirakottam. The man beating it is only 'born of an old lineage', with no place given.", "அப்படிக் கூறவில்லை. முரசு வச்சிரக் கோட்டத்தில் இருந்து வருகிறது. முரசறைபவன் 'முதுகுடிப் பிறந்தோன்' மட்டுமே; ஊர் கூறப்படவில்லை."]
+  tempting: ["Yes, his community belongs to Vachirakottam.", "ஆம், அவன் குடி அங்கே உள்ளது."]
+  recs: [n46, n47]
+- id: g06
+  match: {subjects: [fragrant_wood, wreck_goods, sandalwood], relation: kind}
+  q: ["Was there sandalwood in the goods given to Saduvan?", "சாதுவனுக்குக் கொடுத்த பொருள்களில் சந்தனம் இருந்ததா?"]
+  a: ["The verse says விரை மரம், fragrant wood, without saying which. Sandalwood is one possibility and agarwood is another. The word சந்தனம் doesn't occur anywhere in Maṇimēkalai in this edition.", "பாடல் 'விரை மரம்' என்று மட்டுமே கூறுகிறது. சந்தனம் அல்லது அகில் ஆகலாம். இந்தப் பதிப்பின் மணிமேகலையில் 'சந்தனம்' என்ற சொல் இல்லை."]
+  tempting: ["Yes, sandalwood.", "ஆம், சந்தனம்."]
+  recs: [n65, n50]
+- id: g07
+  match: {subjects: [fragrant_wood, wreck_goods, soft_cloth, treasure, naga_chief], relation: origin}
+  q: ["Did the Naga chief's people make those goods?", "அந்தப் பொருள்களை நாகர்கள் செய்தார்களா?"]
+  a: ["No. By his own account they came from shipwrecked men his people had eaten. He held them. He didn't make or grow them, and we aren't told where they came from before that.", "இல்லை. கவிழ்ந்த கலத்து மக்களை உண்டதால் கிடைத்தவை என்று அவனே கூறுகிறான். அதற்கு முன் அவை எங்கிருந்து வந்தன என்பது கூறப்படவில்லை."]
+  tempting: ["They're products of the island.", "அவை தீவின் விளைபொருள்கள்."]
+  recs: [n64, n65]
+- id: g08
+  match: {subjects: [gold_pavilion, magadha_workers, maratha_smiths, avanti_smiths, yavana_carpenters, tamil_workers], relation: maker_person}
+  q: ["Which person built the gold pavilion?", "பொன் மண்டபத்தைக் கட்டியவர் எவர்?"]
+  a: ["No one person is named. Five groups built it together, by region and trade. Which group did which part isn't stated either.", "ஒருவர் பெயரும் இல்லை. ஐந்து குழுக்கள் சேர்ந்து செய்தன. எந்தக் குழு எந்தப் பகுதியைச் செய்தது என்பதும் இல்லை."]
+  tempting: ["The Yavana carpenters did the woodwork, Avanti smiths the metal.", "யவனர் மரவேலை, அவந்தியர் உலோகவேலை."]
+  recs: [n35, n36]
+- id: g09
+  match: {subjects: [goldsmith, naga_chief, blanket_merchant, kanjukan, drummer_man01, skilled_woman_16], relation: name}
+  q: ["What is the goldsmith's name?", "பொற்கொல்லனின் பெயர் என்ன?"]
+  a: ["He has none in the text, and neither do the Naga chief, the blanket merchant, the attendant or the drummer. They keep separate ids here so that two different goldsmiths or merchants never merge into one person.", "நூலில் பெயர் இல்லை. நாகர் தலைவன், கம்பளச் செட்டி, கஞ்சுகன், முரசறைபவன் ஆகியோருக்கும் இல்லை. வேறுவேறு நபர்கள் ஒன்றாகாமல் இருக்கத் தனித்தனி அடையாளம் உண்டு."]
+  tempting: ["A name from a later retelling or film.", "பிற்காலக் கதையில் வரும் பெயர்."]
+  recs: [n11, n65, n70]
+- id: g10
+  match: {subjects: [amudasurabhi], relation: maker}
+  q: ["Who made the Amudasurabhi?", "அமுதசுரபியைச் செய்தவர் யார்?"]
+  a: ["No maker appears in what's recorded. The trail starts with Chintadevi giving it to Aputhiran.", "செய்தவர் பதிவில் இல்லை. சிந்தாதேவி ஆபுத்திரனுக்குக் கொடுத்ததில் இருந்தே வரலாறு தொடங்குகிறது."]
+  tempting: ["The goddess Chintadevi made it.", "சிந்தாதேவி செய்தாள்."]
+  recs: [c01]
+- id: g11
+  match: {subjects: [victory_canopy, debate_hall, arched_gate], relation: maker_person}
+  q: ["Did craftsmen of Magadha or Avanti make the gifts at Puhar?", "புகாரில் உள்ள பரிசுகளை மகத, அவந்தி வினைஞர் செய்தனரா?"]
+  a: ["No. The poet says craftsmen never saw their like and that Mayan made them. Magadha and Avanti workers do appear in Maṇimēkalai, on a different building.", "இல்லை. வினைஞர் காணா மரபின, மயன் விதித்தவை என்று புலவர் கூறுகிறார். மகத, அவந்தி வினைஞர் மணிமேகலையில் வேறு ஒரு மண்டபத்தில் வருகின்றனர்."]
+  tempting: ["Yes, since they came from those kingdoms.", "ஆம், அந்த நாடுகளில் இருந்து வந்தவை."]
+  recs: [n31, n32, n33, n35]
+- id: g12
+  match: {subjects: [rama_unnamed, nala_unnamed], relation: name}
+  q: ["Does Kavunti name Rama and Nala?", "கவுந்தி இராமன், நளன் பெயர்களைக் கூறுகிறாளா?"]
+  a: ["No. She describes one man who left at his father's word and one who lost at dice, without names. Naming them is the usual reading and it isn't in these lines.", "இல்லை. தாதை ஏவலின் போனவன், சூதில் இழந்தவன் என்று மட்டுமே கூறுகிறாள்."]
+  tempting: ["Yes, she names them.", "ஆம், கூறுகிறாள்."]
+  recs: [v045]

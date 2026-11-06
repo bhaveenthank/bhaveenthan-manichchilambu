@@ -1,0 +1,129 @@
+{
+ "searchinfo": {
+  "search": "Kanchipuram"
+ },
+ "search": [
+  {
+   "id": "Q15157",
+   "title": "Q15157",
+   "pageid": 17463,
+   "concepturi": "http://www.wikidata.org/entity/Q15157",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q15157",
+   "display": {
+    "label": {
+     "value": "Kanchipuram district",
+     "language": "en"
+    },
+    "description": {
+     "value": "district of Tamil Nadu, India",
+     "language": "en"
+    }
+   },
+   "label": "Kanchipuram district",
+   "description": "district of Tamil Nadu, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kanchipuram district"
+   }
+  },
+  {
+   "id": "Q212332",
+   "title": "Q212332",
+   "pageid": 207890,
+   "concepturi": "http://www.wikidata.org/entity/Q212332",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q212332",
+   "display": {
+    "label": {
+     "value": "Kanchipuram",
+     "language": "en"
+    },
+    "description": {
+     "value": "city in Tamil Nadu, India",
+     "language": "en"
+    }
+   },
+   "label": "Kanchipuram",
+   "description": "city in Tamil Nadu, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kanchipuram"
+   }
+  },
+  {
+   "id": "Q63680649",
+   "title": "Q63680649",
+   "pageid": 63402313,
+   "concepturi": "http://www.wikidata.org/entity/Q63680649",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q63680649",
+   "display": {
+    "label": {
+     "value": "Kanchipuram postal division",
+     "language": "en"
+    }
+   },
+   "label": "Kanchipuram postal division",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kanchipuram postal division"
+   }
+  },
+  {
+   "id": "Q15233410",
+   "title": "Q15233410",
+   "pageid": 16883388,
+   "concepturi": "http://www.wikidata.org/entity/Q15233410",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q15233410",
+   "display": {
+    "label": {
+     "value": "Kanchipuram railway station",
+     "language": "en"
+    },
+    "description": {
+     "value": "railway station in Tamil Nadu, India",
+     "language": "en"
+    }
+   },
+   "label": "Kanchipuram railway station",
+   "description": "railway station in Tamil Nadu, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kanchipuram railway station"
+   }
+  },
+  {
+   "id": "Q12993137",
+   "title": "Q12993137",
+   "pageid": 14482400,
+   "concepturi": "http://www.wikidata.org/entity/Q12993137",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q12993137",
+   "display": {
+    "label": {
+     "value": "Kanchipuram",
+     "language": "en"
+    },
+    "description": {
+     "value": "village in Kanigiri mandal, Markapuram district, Andhra Pradesh, India",
+     "language": "en"
+    }
+   },
+   "label": "Kanchipuram",
+   "description": "village in Kanigiri mandal, Markapuram district, Andhra Pradesh, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kanchipuram"
+   }
+  }
+ ],
+ "search-continue": 5,
+ "success": 1
+}

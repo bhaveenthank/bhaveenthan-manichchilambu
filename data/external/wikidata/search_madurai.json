@@ -1,0 +1,129 @@
+{
+ "searchinfo": {
+  "search": "Madurai"
+ },
+ "search": [
+  {
+   "id": "Q228405",
+   "title": "Q228405",
+   "pageid": 222591,
+   "concepturi": "http://www.wikidata.org/entity/Q228405",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q228405",
+   "display": {
+    "label": {
+     "value": "Madurai",
+     "language": "en"
+    },
+    "description": {
+     "value": "city of Tamil Nadu in southern India",
+     "language": "en"
+    }
+   },
+   "label": "Madurai",
+   "description": "city of Tamil Nadu in southern India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Madurai"
+   }
+  },
+  {
+   "id": "Q15184",
+   "title": "Q15184",
+   "pageid": 17496,
+   "concepturi": "http://www.wikidata.org/entity/Q15184",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q15184",
+   "display": {
+    "label": {
+     "value": "Madurai district",
+     "language": "en"
+    },
+    "description": {
+     "value": "district of Tamil Nadu, India",
+     "language": "en"
+    }
+   },
+   "label": "Madurai district",
+   "description": "district of Tamil Nadu, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Madurai district"
+   }
+  },
+  {
+   "id": "Q3465662",
+   "title": "Q3465662",
+   "pageid": 3301191,
+   "concepturi": "http://www.wikidata.org/entity/Q3465662",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q3465662",
+   "display": {
+    "label": {
+     "value": "Madurai International Airport",
+     "language": "en"
+    },
+    "description": {
+     "value": "airport in Madurai, India",
+     "language": "en"
+    }
+   },
+   "label": "Madurai International Airport",
+   "description": "airport in Madurai, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Madurai International Airport"
+   }
+  },
+  {
+   "id": "Q63680692",
+   "title": "Q63680692",
+   "pageid": 63402356,
+   "concepturi": "http://www.wikidata.org/entity/Q63680692",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q63680692",
+   "display": {
+    "label": {
+     "value": "Madurai postal division",
+     "language": "en"
+    }
+   },
+   "label": "Madurai postal division",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Madurai postal division"
+   }
+  },
+  {
+   "id": "Q3276104",
+   "title": "Q3276104",
+   "pageid": 3125202,
+   "concepturi": "http://www.wikidata.org/entity/Q3276104",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q3276104",
+   "display": {
+    "label": {
+     "value": "Madurai Kamaraj University",
+     "language": "en"
+    },
+    "description": {
+     "value": "state public university in Madurai, Tamil Nadu, India",
+     "language": "en"
+    }
+   },
+   "label": "Madurai Kamaraj University",
+   "description": "state public university in Madurai, Tamil Nadu, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Madurai Kamaraj University"
+   }
+  }
+ ],
+ "search-continue": 5,
+ "success": 1
+}

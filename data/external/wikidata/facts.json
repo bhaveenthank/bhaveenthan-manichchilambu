@@ -1,0 +1,682 @@
+[
+ {
+  "entity": "kannagi",
+  "qid": "Q3115610",
+  "prop": "P1889",
+  "value": "Q1206536",
+  "prop_label": "different from",
+  "value_label": "Kannagi",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kannagi",
+  "qid": "Q3115610",
+  "prop": "P1889",
+  "value": "Q58197126",
+  "prop_label": "different from",
+  "value_label": "Q58197126",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kannagi",
+  "qid": "Q3115610",
+  "prop": "P21",
+  "value": "Q6581072",
+  "prop_label": "sex or gender",
+  "value_label": "female",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kannagi",
+  "qid": "Q3115610",
+  "prop": "P1441",
+  "value": "Q3115588",
+  "prop_label": "present in work",
+  "value_label": "Silappatikaram",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kannagi",
+  "qid": "Q3115610",
+  "prop": "P26",
+  "value": "Q6434829",
+  "prop_label": "spouse",
+  "value_label": "Kovalan",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kannagi",
+  "qid": "Q3115610",
+  "prop": "P19",
+  "value": "Q2135463",
+  "prop_label": "place of birth",
+  "value_label": "Puhar",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kovalan",
+  "qid": "Q6434829",
+  "prop": "P26",
+  "value": "Q3115610",
+  "prop_label": "spouse",
+  "value_label": "Kannagi",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kovalan",
+  "qid": "Q6434829",
+  "prop": "P21",
+  "value": "Q6581097",
+  "prop_label": "sex or gender",
+  "value_label": "male",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "gajabahu",
+  "qid": "Q5517531",
+  "prop": "P21",
+  "value": "Q6581097",
+  "prop_label": "sex or gender",
+  "value_label": "male",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "gajabahu",
+  "qid": "Q5517531",
+  "prop": "P39",
+  "value": "Q48605742",
+  "prop_label": "position held",
+  "value_label": "King of Anuradhapura",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "gajabahu",
+  "qid": "Q5517531",
+  "prop": "P53",
+  "value": "Q30715981",
+  "prop_label": "family",
+  "value_label": "House of Lambakanna I",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "gajabahu",
+  "qid": "Q5517531",
+  "prop": "P106",
+  "value": "Q116",
+  "prop_label": "occupation",
+  "value_label": "monarch",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "gajabahu",
+  "qid": "Q5517531",
+  "prop": "P22",
+  "value": "Q16228746",
+  "prop_label": "father",
+  "value_label": "Vankanasika Tissa of Anuradhapura",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "gajabahu",
+  "qid": "Q5517531",
+  "prop": "P1038",
+  "value": "Q16314444",
+  "prop_label": "relative",
+  "value_label": "Mahallaka Naga of Anuradhapura",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P21",
+  "value": "Q6581097",
+  "prop_label": "sex or gender",
+  "value_label": "male",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P106",
+  "value": "Q36180",
+  "prop_label": "occupation",
+  "value_label": "writer",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P106",
+  "value": "Q49757",
+  "prop_label": "occupation",
+  "value_label": "poet",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P22",
+  "value": "Q6986348",
+  "prop_label": "father",
+  "value_label": "Nedum Cheralathan",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P800",
+  "value": "Q3115588",
+  "prop_label": "notable work",
+  "value_label": "Silappatikaram",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P172",
+  "value": "Q173491",
+  "prop_label": "ethnic group",
+  "value_label": "Tamil",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P140",
+  "value": "Q9089",
+  "prop_label": "religion or worldview",
+  "value_label": "Hinduism",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P7763",
+  "value": "Q71887839",
+  "prop_label": "copyright status as a creator",
+  "value_label": "copyrights on works have expired",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P1412",
+  "value": "Q5885",
+  "prop_label": "languages spoken, written or signed",
+  "value_label": "Tamil",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "ilanko",
+  "qid": "Q3032538",
+  "prop": "P101",
+  "value": "Q37484",
+  "prop_label": "field of work",
+  "value_label": "epic poem",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_sil",
+  "qid": "Q3115588",
+  "prop": "P50",
+  "value": "Q3032538",
+  "prop_label": "author",
+  "value_label": "Ilango Adigal",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_sil",
+  "qid": "Q3115588",
+  "prop": "P136",
+  "value": "Q2367164",
+  "prop_label": "genre",
+  "value_label": "epic",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_sil",
+  "qid": "Q3115588",
+  "prop": "P407",
+  "value": "Q5885",
+  "prop_label": "language of work or name",
+  "value_label": "Tamil",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_sil",
+  "qid": "Q3115588",
+  "prop": "P8371",
+  "value": "Q7719799",
+  "prop_label": "references work, tradition or theory",
+  "value_label": "The Brahmin and the Mongoose",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_sil",
+  "qid": "Q3115588",
+  "prop": "P361",
+  "value": "Q3537391",
+  "prop_label": "part of",
+  "value_label": "Five Great Epics of Tamil Literature",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_man",
+  "qid": "Q1480970",
+  "prop": "P50",
+  "value": "Q1570434",
+  "prop_label": "author",
+  "value_label": "Chithalai Chathanar",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_man",
+  "qid": "Q1480970",
+  "prop": "P136",
+  "value": "Q2367164",
+  "prop_label": "genre",
+  "value_label": "epic",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_man",
+  "qid": "Q1480970",
+  "prop": "P495",
+  "value": "Q668",
+  "prop_label": "country of origin",
+  "value_label": "India",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "epic_man",
+  "qid": "Q1480970",
+  "prop": "P407",
+  "value": "Q5885",
+  "prop_label": "language of work or name",
+  "value_label": "Tamil",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "manimekalai_character",
+  "qid": "Q60764140",
+  "prop": "P21",
+  "value": "Q6581072",
+  "prop_label": "sex or gender",
+  "value_label": "female",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "manimekalai_character",
+  "qid": "Q60764140",
+  "prop": "P19",
+  "value": "Q7228677",
+  "prop_label": "place of birth",
+  "value_label": "Poompuhar Assembly constituency",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "manimekalai_character",
+  "qid": "Q60764140",
+  "prop": "P22",
+  "value": "Q6434829",
+  "prop_label": "father",
+  "value_label": "Kovalan",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "manimekalai_character",
+  "qid": "Q60764140",
+  "prop": "P25",
+  "value": "Q85783057",
+  "prop_label": "mother",
+  "value_label": "Madhavi",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "manimekalai_character",
+  "qid": "Q60764140",
+  "prop": "P140",
+  "value": "Q748",
+  "prop_label": "religion or worldview",
+  "value_label": "Buddhism",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "manimekalai_character",
+  "qid": "Q60764140",
+  "prop": "P361",
+  "value": "Q3537391",
+  "prop_label": "part of",
+  "value_label": "Five Great Epics of Tamil Literature",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P1464",
+  "value": "Q18618662",
+  "prop_label": "category for people born here",
+  "value_label": "Category:Births in Madura",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P131",
+  "value": "Q15184",
+  "prop_label": "located in the administrative territorial entity",
+  "value_label": "Madurai district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P1465",
+  "value": "Q18618664",
+  "prop_label": "category for people who died here",
+  "value_label": "Category:Deaths in Madurai",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P1740",
+  "value": "Q16779873",
+  "prop_label": "category for films shot at this location",
+  "value_label": "Category:Films shot in Madurai",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P1376",
+  "value": "Q844910",
+  "prop_label": "capital of",
+  "value_label": "Pandya dynasty",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P1376",
+  "value": "Q15184",
+  "prop_label": "capital of",
+  "value_label": "Madurai district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P47",
+  "value": "Q15191",
+  "prop_label": "shares border with",
+  "value_label": "Ramanathapuram district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P47",
+  "value": "Q15154",
+  "prop_label": "shares border with",
+  "value_label": "Dindigul district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P47",
+  "value": "Q15196",
+  "prop_label": "shares border with",
+  "value_label": "Theni district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P47",
+  "value": "Q15209",
+  "prop_label": "shares border with",
+  "value_label": "Virudhunagar district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P47",
+  "value": "Q15195",
+  "prop_label": "shares border with",
+  "value_label": "Sivaganga district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P2633",
+  "value": "Q5535180",
+  "prop_label": "geography of topic",
+  "value_label": "geography of Madurai",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P2936",
+  "value": "Q5885",
+  "prop_label": "language used",
+  "value_label": "Tamil",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P1792",
+  "value": "Q10103495",
+  "prop_label": "category of associated people",
+  "value_label": "Category:People from Madurai",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P797",
+  "value": "Q4045694",
+  "prop_label": "authority",
+  "value_label": "Madura Municipal Corporation",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P7867",
+  "value": "Q84096854",
+  "prop_label": "category for maps or plans",
+  "value_label": "Category:Maps on Madura",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "madurai",
+  "qid": "Q228405",
+  "prop": "P1151",
+  "value": "Q15411368",
+  "prop_label": "topic's main Wikimedia portal",
+  "value_label": "Portal:Madurai",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kanchi",
+  "qid": "Q212332",
+  "prop": "P131",
+  "value": "Q15157",
+  "prop_label": "located in the administrative territorial entity",
+  "value_label": "Kanchipuram district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kanchi",
+  "qid": "Q212332",
+  "prop": "P131",
+  "value": "Q1069918",
+  "prop_label": "located in the administrative territorial entity",
+  "value_label": "Chingleput District",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kanchi",
+  "qid": "Q212332",
+  "prop": "P1464",
+  "value": "Q28747264",
+  "prop_label": "category for people born here",
+  "value_label": "Category:Births in Kanchipuram",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kanchi",
+  "qid": "Q212332",
+  "prop": "P1792",
+  "value": "Q32653484",
+  "prop_label": "category of associated people",
+  "value_label": "Category:People of Kanchipuram",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "kanchi",
+  "qid": "Q212332",
+  "prop": "P1376",
+  "value": "Q15157",
+  "prop_label": "capital of",
+  "value_label": "Kanchipuram district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "puhar",
+  "qid": "Q2135463",
+  "prop": "P131",
+  "value": "Q695585",
+  "prop_label": "located in the administrative territorial entity",
+  "value_label": "Nagapattinam",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "puhar",
+  "qid": "Q2135463",
+  "prop": "P131",
+  "value": "Q15194",
+  "prop_label": "located in the administrative territorial entity",
+  "value_label": "Thanjavur district",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "puhar",
+  "qid": "Q2135463",
+  "prop": "P131",
+  "value": "Q7683395",
+  "prop_label": "located in the administrative territorial entity",
+  "value_label": "Tanjore District",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "puhar",
+  "qid": "Q2135463",
+  "prop": "P1376",
+  "value": "Q151148",
+  "prop_label": "capital of",
+  "value_label": "Chola dynasty",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "puhar",
+  "qid": "Q2135463",
+  "prop": "P1376",
+  "value": "Q2572901",
+  "prop_label": "capital of",
+  "value_label": "Kalabhra",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "puhar",
+  "qid": "Q2135463",
+  "prop": "P403",
+  "value": "Q216239",
+  "prop_label": "mouth of the watercourse",
+  "value_label": "Kaveri",
+  "scope": "EXTERNAL",
+  "text_support": null
+ },
+ {
+  "entity": "puhar",
+  "qid": "Q2135463",
+  "prop": "P793",
+  "value": "Q17781833",
+  "prop_label": "significant event",
+  "value_label": "destruction",
+  "scope": "EXTERNAL",
+  "text_support": null
+ }
+]

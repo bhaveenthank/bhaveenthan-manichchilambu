@@ -1,0 +1,23 @@
+# Holding, owning and being in someone's care
+#
+# Three different things. Holding comes from events and is replayed. Nothing in the text transfers
+#  title, so ownership isn't asserted.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m06_custody> a owl:Ontology ; rdfs:label "Holding, owning and being in someone's care" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E10_Transfer_of_Custody
+
+iy:Custody a owl:Class .
+iy:Ownership a owl:Class .
+iy:Care a owl:Class .
+
+iy:holds a owl:ObjectProperty .
+iy:owns a owl:ObjectProperty .
+iy:inCareOf a owl:ObjectProperty .

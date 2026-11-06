@@ -1,0 +1,16 @@
+[project]
+name = "manichchilambu"
+version = "0.2.0"
+description = "A voice-scoped ledger for knowledge graphs of Silappatikaram and Manimekalai"
+requires-python = ">=3.10"
+dependencies = ["rdflib", "pyshacl", "scikit-learn", "numpy", "pyyaml", "owlrl"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

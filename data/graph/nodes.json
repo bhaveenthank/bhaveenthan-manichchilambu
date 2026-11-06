@@ -1,0 +1,1241 @@
+[
+{
+"id": "kannagi",
+"label": "Kannagi",
+"class": "Person",
+"names_ta": [
+"கண்ணகி",
+"கண்ணகியார்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 30,
+"first_line": "SIL-00-0017",
+"wikidata": "Q3115610",
+"review": "draft"
+},
+{
+"id": "kovalan",
+"label": "Kovalan",
+"class": "Person",
+"names_ta": [
+"கோவலன்",
+"கோவலற்",
+"கோவலனும்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 51,
+"first_line": "SIL-00-0014",
+"wikidata": "Q6434829",
+"review": "draft"
+},
+{
+"id": "madhavi",
+"label": "Madhavi",
+"class": "Person",
+"names_ta": [
+"மாதவி"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 68,
+"first_line": "SIL-00-0065",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "manimekalai",
+"label": "Manimekalai",
+"class": "Person",
+"names_ta": [
+"மணிமேகலை"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 64,
+"first_line": "SIL-15-0104",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "pandya_king",
+"label": "Neduncheliyan (Pandya king)",
+"class": "Person",
+"names_ta": [
+"நெடுஞ்செழிய"
+],
+"epics": [
+"SIL"
+],
+"mentions": 22,
+"first_line": "SIL-16-0111",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "pandya_queen",
+"label": "Pandya queen",
+"class": "Person",
+"names_ta": [],
+"epics": [
+"SIL"
+],
+"mentions": 7,
+"first_line": "SIL-16-0111",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "goldsmith",
+"label": "the goldsmith",
+"class": "Person",
+"names_ta": [],
+"epics": [
+"SIL"
+],
+"mentions": 8,
+"first_line": "SIL-00-0022",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "vetrivel_celiyan",
+"label": "Vetrivel Celiyan (Korkai)",
+"class": "Person",
+"names_ta": [
+"வெற்றிவேற் செழியன்"
+],
+"epics": [
+"SIL"
+],
+"mentions": 1,
+"first_line": "SIL-27-0127",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "cenkuttuvan",
+"label": "Cenkuttuvan",
+"class": "Person",
+"names_ta": [
+"செங்குட்டுவ"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 9,
+"first_line": "SIL-25-0084",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "gajabahu",
+"label": "Gajabahu of Lanka",
+"class": "Person",
+"names_ta": [
+"கயவாகு"
+],
+"epics": [
+"SIL"
+],
+"mentions": 1,
+"first_line": "SIL-30-0160",
+"wikidata": "Q5517531",
+"review": "draft"
+},
+{
+"id": "ilanko",
+"label": "Ilanko Adikal",
+"class": "Person",
+"names_ta": [
+"இளங்கோ"
+],
+"epics": [
+"SIL"
+],
+"mentions": 8,
+"first_line": "SIL-00-0002",
+"wikidata": "Q3032538",
+"review": "draft"
+},
+{
+"id": "cattan",
+"label": "Cattan",
+"class": "Person",
+"names_ta": [
+"சாத்தன்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 4,
+"first_line": "SIL-00-0010",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "masattuvan",
+"label": "Masattuvan",
+"class": "Person",
+"names_ta": [
+"மாசாத்து"
+],
+"epics": [
+"SIL"
+],
+"mentions": 5,
+"first_line": "SIL-01-0033",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "manaikan",
+"label": "Manaikan",
+"class": "Person",
+"names_ta": [
+"மாநாய்க"
+],
+"epics": [
+"SIL"
+],
+"mentions": 2,
+"first_line": "SIL-01-0023",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kavunti",
+"label": "Kavunti",
+"class": "Person",
+"names_ta": [
+"கவுந்தி",
+"காவுந்தி"
+],
+"epics": [
+"SIL"
+],
+"mentions": 18,
+"first_line": "SIL-10-0036",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "matari",
+"label": "Matari",
+"class": "Person",
+"names_ta": [
+"மாதரி"
+],
+"epics": [
+"SIL"
+],
+"mentions": 4,
+"first_line": "SIL-15-0118",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "matalan",
+"label": "Matalan the brahmin",
+"class": "Person",
+"names_ta": [
+"மாடல"
+],
+"epics": [
+"SIL"
+],
+"mentions": 15,
+"first_line": "SIL-15-0013",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "tevanti",
+"label": "Tevanti",
+"class": "Person",
+"names_ta": [
+"தேவந்தி"
+],
+"epics": [
+"SIL"
+],
+"mentions": 6,
+"first_line": "SIL-09-0033",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "madurapati",
+"label": "Madurapati",
+"class": "Deity",
+"names_ta": [
+"மதுரா பதி",
+"மதுராபதி",
+"மதுரைமா தெய்வம்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 6,
+"first_line": "SIL-00-0043",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "agni",
+"label": "the fire god",
+"class": "Deity",
+"names_ta": [
+"அங்கி வானவன்"
+],
+"epics": [
+"SIL"
+],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "bharatan",
+"label": "Bharatan (earlier birth of Kovalan)",
+"class": "Person",
+"names_ta": [
+"பரத னென்னும்",
+"பரதன் என்னும்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 2,
+"first_line": "SIL-23-0154",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "sangaman",
+"label": "Sangaman",
+"class": "Person",
+"names_ta": [
+"சங்கமன்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 4,
+"first_line": "SIL-00-0048",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "neeli",
+"label": "Neeli",
+"class": "Person",
+"names_ta": [
+"நீலி"
+],
+"epics": [
+"SIL"
+],
+"mentions": 3,
+"first_line": "SIL-12-0068",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "udayakumaran",
+"label": "Udayakumaran",
+"class": "Person",
+"names_ta": [
+"உதயகுமர"
+],
+"epics": [
+"MAN"
+],
+"mentions": 15,
+"first_line": "MAN-04-0028",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "rahulan",
+"label": "Rahulan (earlier birth of Udayakumaran)",
+"class": "Person",
+"names_ta": [
+"இராகுலன்"
+],
+"epics": [
+"MAN"
+],
+"mentions": 9,
+"first_line": "MAN-09-0046",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "lakshmi",
+"label": "Lakshmi (earlier birth of Manimekalai)",
+"class": "Person",
+"names_ta": [
+"இலக்குமி"
+],
+"epics": [
+"MAN"
+],
+"mentions": 5,
+"first_line": "MAN-07-0108",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kayasandikai",
+"label": "Kayasandikai",
+"class": "Person",
+"names_ta": [
+"காயசண்டிகை"
+],
+"epics": [
+"MAN"
+],
+"mentions": 16,
+"first_line": "MAN-00-0065",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kanchanan",
+"label": "Kanchanan",
+"class": "Person",
+"names_ta": [
+"காஞ்சனன்"
+],
+"epics": [
+"MAN"
+],
+"mentions": 5,
+"first_line": "MAN-00-0073",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "aputhiran",
+"label": "Aputhiran",
+"class": "Person",
+"names_ta": [
+"ஆபுத்திரன்"
+],
+"epics": [
+"MAN"
+],
+"mentions": 14,
+"first_line": "MAN-00-0057",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "punyarasan",
+"label": "Punyarasan (rebirth of Aputhiran)",
+"class": "Person",
+"names_ta": [
+"புண்ணியராசன்"
+],
+"epics": [
+"MAN"
+],
+"mentions": 1,
+"first_line": "MAN-24-0170",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "bhumichandran",
+"label": "Bhumichandran",
+"class": "Person",
+"names_ta": [
+"பூமிசந்திரன்"
+],
+"epics": [
+"MAN"
+],
+"mentions": 2,
+"first_line": "MAN-24-0170",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "chintadevi",
+"label": "Chintadevi",
+"class": "Deity",
+"names_ta": [
+"சிந்தாதேவி"
+],
+"epics": [
+"MAN"
+],
+"mentions": 2,
+"first_line": "MAN-00-0060",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "tivatilakai",
+"label": "Tivatilakai",
+"class": "Deity",
+"names_ta": [
+"தீவதிலகை",
+"தீபதிலகை"
+],
+"epics": [
+"MAN"
+],
+"mentions": 11,
+"first_line": "MAN-00-0053",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "manimekhala_deity",
+"label": "goddess Manimekala",
+"class": "Deity",
+"names_ta": [
+"மணிமேகலா"
+],
+"epics": [
+"MAN"
+],
+"mentions": 15,
+"first_line": "SIL-15-0033",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "cutamati",
+"label": "Sutamati",
+"class": "Person",
+"names_ta": [
+"சுதமதி"
+],
+"epics": [
+"MAN"
+],
+"mentions": 20,
+"first_line": "MAN-00-0046",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "aravanan",
+"label": "Aravana Adikal",
+"class": "Person",
+"names_ta": [
+"அறவண"
+],
+"epics": [
+"MAN"
+],
+"mentions": 23,
+"first_line": "MAN-00-0056",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "cittirapati",
+"label": "Chitrapati",
+"class": "Person",
+"names_ta": [
+"சித்திராபதி"
+],
+"epics": [
+"MAN"
+],
+"mentions": 10,
+"first_line": "MAN-00-0035",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "vayantamalai",
+"label": "Vayantamalai",
+"class": "Person",
+"names_ta": [
+"வயந்தமாலை"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 4,
+"first_line": "MAN-02-0008",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "aticari",
+"label": "Atirai",
+"class": "Person",
+"names_ta": [
+"ஆதிரை"
+],
+"epics": [
+"MAN"
+],
+"mentions": 6,
+"first_line": "MAN-15-0079",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "puhar",
+"label": "Puhar",
+"class": "Place",
+"names_ta": [
+"புகார்",
+"பூம்புகார்",
+"காவிரிப்பூம்பட்டின"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 16,
+"first_line": "SIL-00-0013",
+"wikidata": "Q2135463",
+"review": "draft"
+},
+{
+"id": "madurai",
+"label": "Madurai",
+"class": "Place",
+"names_ta": [
+"மதுரை",
+"கூடல்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 52,
+"first_line": "SIL-00-0020",
+"wikidata": "Q228405",
+"review": "draft"
+},
+{
+"id": "vanci",
+"label": "Vanci",
+"class": "Place",
+"names_ta": [
+"வஞ்சி"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 50,
+"first_line": "SIL-00-0080",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kanchi",
+"label": "Kanchi",
+"class": "Place",
+"names_ta": [
+"கச்சி",
+"காஞ்சி"
+],
+"epics": [
+"MAN"
+],
+"mentions": 12,
+"first_line": "SIL-22-0077",
+"wikidata": "Q212332",
+"review": "draft"
+},
+{
+"id": "manipallavam",
+"label": "Manipallavam",
+"class": "Place",
+"names_ta": [
+"மணிபல்லவ"
+],
+"epics": [
+"MAN"
+],
+"mentions": 19,
+"first_line": "MAN-00-0044",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "gomukhi",
+"label": "Gomukhi pond",
+"class": "Place",
+"names_ta": [
+"கோமுகி"
+],
+"epics": [
+"MAN"
+],
+"mentions": 5,
+"first_line": "MAN-11-0039",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "nagapuram",
+"label": "Nagapuram",
+"class": "Place",
+"names_ta": [
+"நாகபுரம்"
+],
+"epics": [
+"MAN"
+],
+"mentions": 1,
+"first_line": "MAN-24-0169",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "singapuram",
+"label": "Singapuram",
+"class": "Place",
+"names_ta": [
+"சிங்க புரத்",
+"சிங்கபுர",
+"அரிபுரம்"
+],
+"epics": [
+"SIL",
+"MAN"
+],
+"mentions": 5,
+"first_line": "SIL-00-0047",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "amudasurabhi",
+"label": "Amudasurabhi (the bowl)",
+"class": "Object",
+"names_ta": [
+"அமுதசுரபி"
+],
+"epics": [
+"MAN"
+],
+"mentions": 28,
+"first_line": "MAN-11-0044",
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "ank_pair",
+"label": "ank pair",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "ank_k1",
+"label": "ank k1",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "ank_q",
+"label": "ank q",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "drunk_man",
+"label": "drunk man",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "ank_k2",
+"label": "ank k2",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "palace_gate",
+"label": "palace gate",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "gems",
+"label": "gems",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "pearls",
+"label": "pearls",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "goldsmiths_1000",
+"label": "goldsmiths 1000",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "viruchikan",
+"label": "viruchikan",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "vindhya_demoness",
+"label": "vindhya demoness",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "disguised_woman",
+"label": "disguised woman",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "pillar",
+"label": "pillar",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "righteous_person",
+"label": "righteous person",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "unnamed_deity",
+"label": "unnamed deity",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "sankatharuman",
+"label": "sankatharuman",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "other_bowl",
+"label": "other bowl",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kalinga_king",
+"label": "kalinga king",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "brahmins",
+"label": "brahmins",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "the_virtuous",
+"label": "the virtuous",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "cows",
+"label": "cows",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "chaste_women",
+"label": "chaste women",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "the_old",
+"label": "the old",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "children",
+"label": "children",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "cook",
+"label": "cook",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "prisoners",
+"label": "prisoners",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "prison_site",
+"label": "prison site",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "chola_king",
+"label": "chola king",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "hunchback",
+"label": "hunchback",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "garland",
+"label": "garland",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kannagi_image",
+"label": "kannagi image",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kannagi_temple",
+"label": "kannagi temple",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "kovalan_ancestor",
+"label": "kovalan ancestor",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "townsfolk",
+"label": "townsfolk",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "sceptre",
+"label": "sceptre",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "town_woman",
+"label": "town woman",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "male_ascetic",
+"label": "male ascetic",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "himalaya_stone",
+"label": "himalaya stone",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "northern_kings",
+"label": "northern kings",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "vaidika_teacher",
+"label": "vaidika teacher",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "hill_folk",
+"label": "hill folk",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "temple_lodging",
+"label": "temple lodging",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "flower_grove",
+"label": "flower grove",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "crystal_room",
+"label": "crystal room",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+},
+{
+"id": "seat_of_buddha",
+"label": "seat of buddha",
+"class": "Unlexed",
+"names_ta": [],
+"epics": [],
+"mentions": 0,
+"first_line": null,
+"wikidata": null,
+"review": "draft"
+}
+]

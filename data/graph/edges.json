@@ -1,0 +1,5860 @@
+[
+{
+"source": "kannagi",
+"target": "kovalan",
+"kind": "offer",
+"record": "a01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 9.7,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-09-0073"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "ank_pair",
+"kind": "offer",
+"record": "a01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 9.7,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-09-0073"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "ank_pair",
+"kind": "offer",
+"record": "a01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 9.7,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-09-0073"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "ank_pair",
+"kind": "trade",
+"record": "a02",
+"layer": "ledger",
+"tier": 0,
+"mood": "intended",
+"voice": [
+"poet",
+"kovalan"
+],
+"t": 9.75,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-09-0075",
+"SIL-09-0076"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "madurai",
+"kind": "trade",
+"record": "a02",
+"layer": "ledger",
+"tier": 0,
+"mood": "intended",
+"voice": [
+"poet",
+"kovalan"
+],
+"t": 9.75,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-09-0075",
+"SIL-09-0076"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "ank_pair",
+"target": "madurai",
+"kind": "trade",
+"record": "a02",
+"layer": "ledger",
+"tier": 0,
+"mood": "intended",
+"voice": [
+"poet",
+"kovalan"
+],
+"t": 9.75,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-09-0075",
+"SIL-09-0076"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "ank_k1",
+"kind": "take",
+"record": "a03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kovalan"
+],
+"t": 16.09,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0092"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "kannagi",
+"kind": "take",
+"record": "a03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kovalan"
+],
+"t": 16.09,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0092"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "ank_k1",
+"target": "kannagi",
+"kind": "take",
+"record": "a03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kovalan"
+],
+"t": 16.09,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0092"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "goldsmith",
+"kind": "show",
+"record": "a04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.11,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0116"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "ank_k1",
+"kind": "show",
+"record": "a04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.11,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0116"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmith",
+"target": "ank_k1",
+"kind": "show",
+"record": "a04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.11,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0116"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "ank_k1",
+"target": "pandya_queen",
+"kind": "suits",
+"record": "a05",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"goldsmith"
+],
+"t": 16.12,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0121",
+"SIL-16-0122"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmith",
+"target": "ank_q",
+"kind": "steal",
+"record": "a06",
+"layer": "ledger",
+"tier": 0,
+"mood": "thought",
+"voice": [
+"poet",
+"goldsmith"
+],
+"t": 0.5,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0127"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmith",
+"target": "ank_q",
+"kind": "steal",
+"record": "a06b",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"cattan"
+],
+"t": 0.5,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-00-0025"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmith",
+"target": "kovalan",
+"kind": "frame",
+"record": "a07",
+"layer": "ledger",
+"tier": 0,
+"mood": "intended",
+"voice": [
+"poet",
+"goldsmith"
+],
+"t": 16.13,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0128",
+"SIL-16-0129"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmith",
+"target": "pandya_king",
+"kind": "frame",
+"record": "a07",
+"layer": "ledger",
+"tier": 0,
+"mood": "intended",
+"voice": [
+"poet",
+"goldsmith"
+],
+"t": 16.13,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0128",
+"SIL-16-0129"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "pandya_king",
+"kind": "frame",
+"record": "a07",
+"layer": "ledger",
+"tier": 0,
+"mood": "intended",
+"voice": [
+"poet",
+"goldsmith"
+],
+"t": 16.13,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0128",
+"SIL-16-0129"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmith",
+"target": "kovalan",
+"kind": "accuse",
+"record": "a08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.14,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0145"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmith",
+"target": "pandya_king",
+"kind": "accuse",
+"record": "a08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.14,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0145"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "pandya_king",
+"kind": "accuse",
+"record": "a08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.14,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0145"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "ank_q",
+"kind": "steal",
+"record": "a09",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"goldsmith"
+],
+"t": 16.14,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0145",
+"SIL-16-0147"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "pandya_king",
+"target": "goldsmith",
+"kind": "believe",
+"record": "a10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.15,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0149"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "drunk_man",
+"target": "kovalan",
+"kind": "kill",
+"record": "a15",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.2,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0212",
+"SIL-16-0213"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "pandya_king",
+"target": "ank_k1",
+"kind": "bring",
+"record": "a16",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.5,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0081"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "ank_k2",
+"kind": "arrive",
+"record": "a17",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.1,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0038",
+"SIL-20-0039"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "palace_gate",
+"kind": "arrive",
+"record": "a17",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.1,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0038",
+"SIL-20-0039"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "ank_k2",
+"target": "palace_gate",
+"kind": "arrive",
+"record": "a17",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.1,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0038",
+"SIL-20-0039"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "ank_pair",
+"target": "gems",
+"kind": "contains",
+"record": "a18",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 20.4,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0078"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "ank_q",
+"target": "pearls",
+"kind": "contains",
+"record": "a19",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"pandya_king"
+],
+"t": 20.45,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0080"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "pandya_king",
+"target": "gems",
+"kind": "gem_shows",
+"record": "a21",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.61,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0083"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "pandya_king",
+"target": "kannagi",
+"kind": "believe",
+"record": "a22",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.7,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-20-0085",
+"SIL-20-0086"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "vetrivel_celiyan",
+"target": "goldsmiths_1000",
+"kind": "sacrifice",
+"record": "a26",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan"
+],
+"t": 26,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-27-0127",
+"SIL-27-0128",
+"SIL-27-0130"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "vetrivel_celiyan",
+"target": "kannagi",
+"kind": "sacrifice",
+"record": "a26",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan"
+],
+"t": 26,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-27-0127",
+"SIL-27-0128",
+"SIL-27-0130"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "goldsmiths_1000",
+"target": "kannagi",
+"kind": "sacrifice",
+"record": "a26",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan"
+],
+"t": 26,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-27-0127",
+"SIL-27-0128",
+"SIL-27-0130"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "pandya_queen",
+"target": "ank_q",
+"kind": "appear",
+"record": "a27",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 0.1,
+"birth": "main",
+"episode": "anklet",
+"lines": [
+"SIL-16-0151"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "viruchikan",
+"target": "kayasandikai",
+"kind": "hunger_curse",
+"record": "b01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kayasandikai"
+],
+"t": 17.1,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-17-0014",
+"MAN-17-0034"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "kayasandikai",
+"kind": "feed",
+"record": "b02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 17.2,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-17-0018",
+"MAN-17-0019"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "amudasurabhi",
+"kind": "feed",
+"record": "b02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 17.2,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-17-0018",
+"MAN-17-0019"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kayasandikai",
+"target": "amudasurabhi",
+"kind": "feed",
+"record": "b02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 17.2,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-17-0018",
+"MAN-17-0019"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "vindhya_demoness",
+"target": "kayasandikai",
+"kind": "swallowed",
+"record": "b03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"pillar"
+],
+"t": 17.9,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0119",
+"MAN-20-0121"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "udayakumaran",
+"target": "rahulan",
+"kind": "same_person",
+"record": "b04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekalai"
+],
+"t": 18.1,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-18-0128"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "kayasandikai",
+"kind": "disguise",
+"record": "b05",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 18.5,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-18-0148",
+"MAN-18-0149",
+"MAN-18-0150"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "disguised_woman",
+"target": "manimekalai",
+"kind": "is_identity",
+"record": "b07",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"udayakumaran"
+],
+"t": 18.6,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-18-0155"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "disguised_woman",
+"target": "kayasandikai",
+"kind": "is_identity",
+"record": "b09",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"kanchanan"
+],
+"t": 20.2,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0033"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "udayakumaran",
+"target": "kayasandikai",
+"kind": "lover_of",
+"record": "b11",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"kanchanan"
+],
+"t": 20.3,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0077"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kanchanan",
+"target": "udayakumaran",
+"kind": "kill",
+"record": "b13",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.5,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0106",
+"MAN-20-0107"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kanchanan",
+"target": "disguised_woman",
+"kind": "correct",
+"record": "b15",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"pillar"
+],
+"t": 20.61,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0113"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kanchanan",
+"target": "manimekalai",
+"kind": "correct",
+"record": "b15",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"pillar"
+],
+"t": 20.61,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0113"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "disguised_woman",
+"target": "manimekalai",
+"kind": "correct",
+"record": "b15",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"pillar"
+],
+"t": 20.61,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0113"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kanchanan",
+"target": "pillar",
+"kind": "believe",
+"record": "b16",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.62,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-20-0113"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "kayasandikai",
+"kind": "undisguise",
+"record": "b17",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 21.1,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-21-0009",
+"MAN-21-0010"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "udayakumaran",
+"kind": "motive",
+"record": "b18",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekalai"
+],
+"t": 18.49,
+"birth": "main",
+"episode": "disguise",
+"lines": [
+"MAN-21-0021",
+"MAN-21-0022"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "chintadevi",
+"target": "aputhiran",
+"kind": "give",
+"record": "c01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -5.1,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0016"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "chintadevi",
+"target": "amudasurabhi",
+"kind": "give",
+"record": "c01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -5.1,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0016"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "aputhiran",
+"target": "amudasurabhi",
+"kind": "give",
+"record": "c01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -5.1,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0016"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "aputhiran",
+"target": "amudasurabhi",
+"kind": "feed",
+"record": "c02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -5.0,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0022",
+"MAN-14-0023"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "aputhiran",
+"target": "manipallavam",
+"kind": "stranded",
+"record": "c03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -4.9,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0081",
+"MAN-14-0085"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "aputhiran",
+"target": "amudasurabhi",
+"kind": "deposit",
+"record": "c04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -4.8,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0091",
+"MAN-14-0092"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "aputhiran",
+"target": "gomukhi",
+"kind": "deposit",
+"record": "c04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -4.8,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0091",
+"MAN-14-0092"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "amudasurabhi",
+"target": "gomukhi",
+"kind": "deposit",
+"record": "c04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -4.8,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0091",
+"MAN-14-0092"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "righteous_person",
+"target": "amudasurabhi",
+"kind": "appear",
+"record": "c05",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"aravanan",
+"aputhiran"
+],
+"t": -4.79,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0092",
+"MAN-14-0093",
+"MAN-14-0094"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "righteous_person",
+"target": "amudasurabhi",
+"kind": "appear",
+"record": "c05",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"aravanan",
+"aputhiran"
+],
+"t": -4.79,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0092",
+"MAN-14-0093",
+"MAN-14-0094"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "amudasurabhi",
+"target": "amudasurabhi",
+"kind": "appear",
+"record": "c05",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"aravanan",
+"aputhiran"
+],
+"t": -4.79,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-14-0092",
+"MAN-14-0093",
+"MAN-14-0094"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "amudasurabhi",
+"kind": "receive",
+"record": "c07",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 11.2,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-11-0057",
+"MAN-11-0058"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "gomukhi",
+"kind": "receive",
+"record": "c07",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 11.2,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-11-0057",
+"MAN-11-0058"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "amudasurabhi",
+"target": "gomukhi",
+"kind": "receive",
+"record": "c07",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 11.2,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-11-0057",
+"MAN-11-0058"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "tivatilakai",
+"target": "manimekalai",
+"kind": "give",
+"record": "c08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 11.2,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-00-0053",
+"MAN-00-0054"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "tivatilakai",
+"target": "amudasurabhi",
+"kind": "give",
+"record": "c08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 11.2,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-00-0053",
+"MAN-00-0054"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "amudasurabhi",
+"kind": "give",
+"record": "c08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 11.2,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-00-0053",
+"MAN-00-0054"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "unnamed_deity",
+"target": "amudasurabhi",
+"kind": "give",
+"record": "c09",
+"layer": "ledger",
+"tier": 0,
+"mood": "claimed",
+"voice": [
+"poet",
+"manimekalai"
+],
+"t": 11.2,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-19-0151",
+"MAN-19-0152"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "sankatharuman",
+"target": "cutamati",
+"kind": "give",
+"record": "c10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"cutamati"
+],
+"t": 5.0,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-05-0065"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "sankatharuman",
+"target": "other_bowl",
+"kind": "give",
+"record": "c10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"cutamati"
+],
+"t": 5.0,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-05-0065"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cutamati",
+"target": "other_bowl",
+"kind": "give",
+"record": "c10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"cutamati"
+],
+"t": 5.0,
+"birth": "main",
+"episode": "bowl",
+"lines": [
+"MAN-05-0065"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "bharatan",
+"kind": "same_person",
+"record": "d01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": -60,
+"birth": "main",
+"episode": "curse",
+"lines": [
+"SIL-23-0154"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "bharatan",
+"target": "sangaman",
+"kind": "accuse",
+"record": "d02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": -50,
+"birth": "prev_bharatan",
+"episode": "curse",
+"lines": [
+"SIL-23-0156",
+"SIL-23-0157"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "bharatan",
+"target": "kalinga_king",
+"kind": "accuse",
+"record": "d02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": -50,
+"birth": "prev_bharatan",
+"episode": "curse",
+"lines": [
+"SIL-23-0156",
+"SIL-23-0157"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "sangaman",
+"target": "kalinga_king",
+"kind": "accuse",
+"record": "d02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": -50,
+"birth": "prev_bharatan",
+"episode": "curse",
+"lines": [
+"SIL-23-0156",
+"SIL-23-0157"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "sangaman",
+"target": "kalinga_king",
+"kind": "kill",
+"record": "d04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": -49,
+"birth": "prev_bharatan",
+"episode": "curse",
+"lines": [
+"SIL-23-0157",
+"SIL-23-0158"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "neeli",
+"target": "kalinga_king",
+"kind": "protest",
+"record": "d05",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": -48,
+"birth": "prev_bharatan",
+"episode": "curse",
+"lines": [
+"SIL-23-0160",
+"SIL-23-0162"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "neeli",
+"target": "bharatan",
+"kind": "curse",
+"record": "d06",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": -47,
+"birth": "prev_bharatan",
+"episode": "curse",
+"lines": [
+"SIL-23-0168",
+"SIL-23-0169"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "kovalan",
+"kind": "ascend",
+"record": "d09",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 23.9,
+"birth": "main",
+"episode": "curse",
+"lines": [
+"SIL-23-0198",
+"SIL-23-0199"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "kannagi",
+"kind": "fate_explains",
+"record": "d10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madurapati"
+],
+"t": 23.5,
+"birth": "main",
+"episode": "curse",
+"lines": [
+"SIL-23-0170"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "madurai",
+"kind": "throw_breast",
+"record": "e01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 21.5,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0043",
+"SIL-21-0046"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "madurai",
+"kind": "prior_order",
+"record": "e02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"agni"
+],
+"t": 21.6,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0050",
+"SIL-21-0051",
+"SIL-21-0052"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "brahmins",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "the_virtuous",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "cows",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "chaste_women",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "the_old",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "children",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "agni",
+"target": "agni",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "brahmins",
+"target": "the_virtuous",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "brahmins",
+"target": "cows",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "brahmins",
+"target": "chaste_women",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "brahmins",
+"target": "the_old",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "brahmins",
+"target": "children",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "brahmins",
+"target": "agni",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "the_virtuous",
+"target": "cows",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "the_virtuous",
+"target": "chaste_women",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "the_virtuous",
+"target": "the_old",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "the_virtuous",
+"target": "children",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "the_virtuous",
+"target": "agni",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cows",
+"target": "chaste_women",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cows",
+"target": "the_old",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cows",
+"target": "children",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cows",
+"target": "agni",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "chaste_women",
+"target": "the_old",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "chaste_women",
+"target": "children",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "chaste_women",
+"target": "agni",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "the_old",
+"target": "children",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "the_old",
+"target": "agni",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "children",
+"target": "agni",
+"kind": "spare",
+"record": "e03",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.7,
+"birth": "main",
+"episode": "fire",
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "lakshmi",
+"kind": "same_person",
+"record": "f01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekalai"
+],
+"t": -70,
+"birth": "main",
+"episode": "rahulan",
+"lines": [
+"MAN-09-0041"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "lakshmi",
+"target": "rahulan",
+"kind": "spouse",
+"record": "f02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekalai"
+],
+"t": -65,
+"birth": "prev_lakshmi",
+"episode": "rahulan",
+"lines": [
+"MAN-09-0046"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "udayakumaran",
+"target": "rahulan",
+"kind": "same_person",
+"record": "f03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekhala_deity"
+],
+"t": 10.1,
+"birth": "main",
+"episode": "rahulan",
+"lines": [
+"MAN-10-0043"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "rahulan",
+"target": "cook",
+"kind": "kill",
+"record": "f05",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"pillar"
+],
+"t": -66,
+"birth": "prev_lakshmi",
+"episode": "rahulan",
+"lines": [
+"MAN-21-0059",
+"MAN-21-0060"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "udayakumaran",
+"target": "manimekalai",
+"kind": "child_of",
+"record": "f08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"pillar"
+],
+"t": -90,
+"birth": "other_births",
+"episode": "rahulan",
+"lines": [
+"MAN-21-0029"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "udayakumaran",
+"kind": "child_of",
+"record": "f09",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"pillar"
+],
+"t": -91,
+"birth": "other_births",
+"episode": "rahulan",
+"lines": [
+"MAN-21-0030"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "punyarasan",
+"target": "aputhiran",
+"kind": "same_person",
+"record": "g02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"aravanan"
+],
+"t": -4.4,
+"birth": "main",
+"episode": "aputhiran",
+"lines": [
+"MAN-14-0103",
+"MAN-14-0104"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "punyarasan",
+"target": "bhumichandran",
+"kind": "child_of",
+"record": "g03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"sage_nagapuram"
+],
+"t": 24,
+"birth": "main",
+"episode": "aputhiran",
+"lines": [
+"MAN-24-0170"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "punyarasan",
+"target": "nagapuram",
+"kind": "rules",
+"record": "g04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"sage_nagapuram"
+],
+"t": 24,
+"birth": "main",
+"episode": "aputhiran",
+"lines": [
+"MAN-24-0169",
+"MAN-24-0170"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "disguised_woman",
+"target": "prisoners",
+"kind": "feed",
+"record": "h01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"guard"
+],
+"t": 19.2,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0133",
+"MAN-19-0136"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "disguised_woman",
+"target": "prison_site",
+"kind": "feed",
+"record": "h01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"guard"
+],
+"t": 19.2,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0133",
+"MAN-19-0136"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "disguised_woman",
+"target": "amudasurabhi",
+"kind": "feed",
+"record": "h01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"guard"
+],
+"t": 19.2,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0133",
+"MAN-19-0136"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "prisoners",
+"target": "prison_site",
+"kind": "feed",
+"record": "h01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"guard"
+],
+"t": 19.2,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0133",
+"MAN-19-0136"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "prisoners",
+"target": "amudasurabhi",
+"kind": "feed",
+"record": "h01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"guard"
+],
+"t": 19.2,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0133",
+"MAN-19-0136"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "prison_site",
+"target": "amudasurabhi",
+"kind": "feed",
+"record": "h01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"guard"
+],
+"t": 19.2,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0133",
+"MAN-19-0136"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "chola_king",
+"target": "prison_site",
+"kind": "convert",
+"record": "h02",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"manimekalai"
+],
+"t": 19.6,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0157",
+"MAN-19-0158"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "chola_king",
+"target": "prison_site",
+"kind": "convert",
+"record": "h03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 19.7,
+"birth": "main",
+"episode": "prison",
+"lines": [
+"MAN-19-0161",
+"MAN-19-0162"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "madhavi",
+"target": "hunchback",
+"kind": "give",
+"record": "l01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.1,
+"birth": "main",
+"episode": "garland",
+"lines": [
+"SIL-03-0167"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "madhavi",
+"target": "garland",
+"kind": "give",
+"record": "l01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.1,
+"birth": "main",
+"episode": "garland",
+"lines": [
+"SIL-03-0167"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "hunchback",
+"target": "garland",
+"kind": "give",
+"record": "l01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.1,
+"birth": "main",
+"episode": "garland",
+"lines": [
+"SIL-03-0167"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "garland",
+"kind": "buy",
+"record": "l02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.2,
+"birth": "main",
+"episode": "garland",
+"lines": [
+"SIL-03-0170",
+"SIL-03-0171"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "hunchback",
+"kind": "buy",
+"record": "l02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.2,
+"birth": "main",
+"episode": "garland",
+"lines": [
+"SIL-03-0170",
+"SIL-03-0171"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "garland",
+"target": "hunchback",
+"kind": "buy",
+"record": "l02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.2,
+"birth": "main",
+"episode": "garland",
+"lines": [
+"SIL-03-0170",
+"SIL-03-0171"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "kovalan",
+"kind": "spouse",
+"record": "m01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"cattan"
+],
+"t": 0.2,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-00-0017"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "masattuvan",
+"kind": "child_of",
+"record": "m02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 0.2,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-20-0069"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "manaikan",
+"kind": "child_of",
+"record": "m03",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 0.2,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-01-0023"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "madhavi",
+"kind": "child_of",
+"record": "m04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan"
+],
+"t": 3.5,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-15-0022",
+"SIL-15-0023"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "kovalan",
+"kind": "child_of",
+"record": "m05",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.5,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"MAN-26-0003"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "kannagi",
+"kind": "child_of",
+"record": "m06",
+"layer": "ledger",
+"tier": 0,
+"mood": "address",
+"voice": [
+"poet"
+],
+"t": 26.1,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"MAN-26-0002"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "kannagi_image",
+"kind": "worship",
+"record": "m07",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 26.1,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"MAN-26-0004",
+"MAN-26-0005",
+"MAN-26-0006"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "vanci",
+"kind": "worship",
+"record": "m07",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 26.1,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"MAN-26-0004",
+"MAN-26-0005",
+"MAN-26-0006"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi_image",
+"target": "vanci",
+"kind": "worship",
+"record": "m07",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 26.1,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"MAN-26-0004",
+"MAN-26-0005",
+"MAN-26-0006"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "manimekalai",
+"kind": "speak_as_deity",
+"record": "m08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 26.2,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"MAN-26-0010"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cenkuttuvan",
+"target": "kannagi_temple",
+"kind": "found_temple",
+"record": "m09",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 28.9,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-30-0151"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "gajabahu",
+"target": "kannagi",
+"kind": "ask_boon",
+"record": "m10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 29.1,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-30-0160",
+"SIL-30-0163"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "bharatan",
+"target": "sangaman",
+"kind": "accuse",
+"record": "r01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kannagi",
+"madurapati"
+],
+"t": -50,
+"birth": "prev_bharatan",
+"episode": "retelling",
+"lines": [
+"MAN-26-0027"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "bharatan",
+"target": "kalinga_king",
+"kind": "accuse",
+"record": "r01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kannagi",
+"madurapati"
+],
+"t": -50,
+"birth": "prev_bharatan",
+"episode": "retelling",
+"lines": [
+"MAN-26-0027"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "sangaman",
+"target": "kalinga_king",
+"kind": "accuse",
+"record": "r01",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kannagi",
+"madurapati"
+],
+"t": -50,
+"birth": "prev_bharatan",
+"episode": "retelling",
+"lines": [
+"MAN-26-0027"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "madurai",
+"kind": "destroy",
+"record": "r04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 21.8,
+"birth": "main",
+"episode": "retelling",
+"lines": [
+"MAN-26-0034"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "kovalan",
+"kind": "reborn_many",
+"record": "r05",
+"layer": "ledger",
+"tier": 0,
+"mood": "predicted",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 30,
+"birth": "main",
+"episode": "retelling",
+"lines": [
+"MAN-26-0038",
+"MAN-26-0041"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekhala_deity",
+"target": "kovalan_ancestor",
+"kind": "rescue",
+"record": "m12",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan",
+"kovalan"
+],
+"t": -20,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-15-0029",
+"SIL-15-0033"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "manimekalai",
+"kind": "name_child",
+"record": "m13",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan",
+"kovalan"
+],
+"t": 3.6,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-15-0037"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "manimekhala_deity",
+"kind": "name_child",
+"record": "m13",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan",
+"kovalan"
+],
+"t": 3.6,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-15-0037"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "manimekhala_deity",
+"kind": "name_child",
+"record": "m13",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan",
+"kovalan"
+],
+"t": 3.6,
+"birth": "main",
+"episode": "bridge",
+"lines": [
+"SIL-15-0037"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "kannagi",
+"kind": "travel",
+"record": "x01",
+"layer": "ledger",
+"tier": 0,
+"mood": "dreamed",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 9.6,
+"birth": "main",
+"episode": "dream",
+"lines": [
+"SIL-09-0045",
+"SIL-09-0046"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "townsfolk",
+"target": "kannagi",
+"kind": "slander",
+"record": "x02",
+"layer": "ledger",
+"tier": 0,
+"mood": "dreamed",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 9.6,
+"birth": "main",
+"episode": "dream",
+"lines": [
+"SIL-09-0047",
+"SIL-09-0048"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "pandya_king",
+"kind": "plead",
+"record": "x04",
+"layer": "ledger",
+"tier": 0,
+"mood": "dreamed",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 9.6,
+"birth": "main",
+"episode": "dream",
+"lines": [
+"SIL-09-0050"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "pandya_king",
+"target": "sceptre",
+"kind": "sceptre_falls",
+"record": "x05",
+"layer": "ledger",
+"tier": 0,
+"mood": "dreamed",
+"voice": [
+"poet",
+"pandya_queen"
+],
+"t": 19.9,
+"birth": "main",
+"episode": "dream",
+"lines": [
+"SIL-20-0002",
+"SIL-20-0032"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "pandya_king",
+"kind": "plead",
+"record": "x06",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.3,
+"birth": "main",
+"episode": "dream",
+"lines": [
+"SIL-20-0061"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kavunti",
+"target": "matari",
+"kind": "entrust",
+"record": "x10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kavunti"
+],
+"t": 15.5,
+"birth": "main",
+"episode": "entrust",
+"lines": [
+"SIL-15-0129",
+"SIL-15-0130"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kavunti",
+"target": "kannagi",
+"kind": "entrust",
+"record": "x10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kavunti"
+],
+"t": 15.5,
+"birth": "main",
+"episode": "entrust",
+"lines": [
+"SIL-15-0129",
+"SIL-15-0130"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "matari",
+"target": "kannagi",
+"kind": "entrust",
+"record": "x10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kavunti"
+],
+"t": 15.5,
+"birth": "main",
+"episode": "entrust",
+"lines": [
+"SIL-15-0129",
+"SIL-15-0130"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "matari",
+"target": "kannagi",
+"kind": "lose_ward",
+"record": "x11",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"matalan",
+"matari"
+],
+"t": 22.4,
+"birth": "main",
+"episode": "entrust",
+"lines": [
+"SIL-27-0076"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "madhavi",
+"kind": "leave",
+"record": "x23",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 7.9,
+"birth": "main",
+"episode": "song",
+"lines": [
+"SIL-07-0309",
+"SIL-07-0311"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "kannagi",
+"kind": "wipe_tears",
+"record": "x31",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 19.51,
+"birth": "main",
+"episode": "risen",
+"lines": [
+"SIL-19-0063"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "kannagi",
+"kind": "bid_stay",
+"record": "x32",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 19.52,
+"birth": "main",
+"episode": "risen",
+"lines": [
+"SIL-19-0067"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekhala_deity",
+"target": "manimekalai",
+"kind": "carry",
+"record": "x40",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 6.9,
+"birth": "main",
+"episode": "transport",
+"lines": [
+"MAN-06-0210",
+"MAN-06-0213",
+"MAN-06-0214"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekhala_deity",
+"target": "manipallavam",
+"kind": "carry",
+"record": "x40",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 6.9,
+"birth": "main",
+"episode": "transport",
+"lines": [
+"MAN-06-0210",
+"MAN-06-0213",
+"MAN-06-0214"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "manipallavam",
+"kind": "carry",
+"record": "x40",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 6.9,
+"birth": "main",
+"episode": "transport",
+"lines": [
+"MAN-06-0210",
+"MAN-06-0213",
+"MAN-06-0214"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekhala_deity",
+"target": "manimekalai",
+"kind": "carry",
+"record": "x41",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekhala_deity"
+],
+"t": 6.9,
+"birth": "main",
+"episode": "transport",
+"lines": [
+"MAN-07-0021",
+"MAN-07-0022"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekhala_deity",
+"target": "manipallavam",
+"kind": "carry",
+"record": "x41",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekhala_deity"
+],
+"t": 6.9,
+"birth": "main",
+"episode": "transport",
+"lines": [
+"MAN-07-0021",
+"MAN-07-0022"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "manipallavam",
+"kind": "carry",
+"record": "x41",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"manimekhala_deity"
+],
+"t": 6.9,
+"birth": "main",
+"episode": "transport",
+"lines": [
+"MAN-07-0021",
+"MAN-07-0022"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekhala_deity",
+"target": "town_woman",
+"kind": "disguise",
+"record": "x42",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 5.5,
+"birth": "main",
+"episode": "transport",
+"lines": [
+"MAN-05-0095",
+"MAN-05-0096"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "male_ascetic",
+"kind": "disguise",
+"record": "x51",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 26.4,
+"birth": "main",
+"episode": "ascetic",
+"lines": [
+"MAN-26-0071"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "kannagi",
+"kind": "child_of",
+"record": "x60",
+"layer": "ledger",
+"tier": 0,
+"mood": "address",
+"voice": [
+"poet",
+"madhavi"
+],
+"t": 2.5,
+"birth": "main",
+"episode": "madhavi",
+"lines": [
+"MAN-02-0055"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "madurai",
+"kind": "burn",
+"record": "x61",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madhavi"
+],
+"t": 21.8,
+"birth": "main",
+"episode": "madhavi",
+"lines": [
+"MAN-02-0053",
+"MAN-02-0054"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "aravanan",
+"target": "madhavi",
+"kind": "teach",
+"record": "x62",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"madhavi"
+],
+"t": 2.2,
+"birth": "main",
+"episode": "madhavi",
+"lines": [
+"MAN-02-0061",
+"MAN-02-0064"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cenkuttuvan",
+"target": "himalaya_stone",
+"kind": "fetch_stone",
+"record": "x70",
+"layer": "ledger",
+"tier": 0,
+"mood": "conditional",
+"voice": [
+"poet",
+"poets_at_court"
+],
+"t": 25.5,
+"birth": "main",
+"episode": "image",
+"lines": [
+"SIL-25-0118",
+"SIL-25-0119"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cenkuttuvan",
+"target": "northern_kings",
+"kind": "stone_on_heads",
+"record": "x72",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 27,
+"birth": "main",
+"episode": "image",
+"lines": [
+"MAN-26-0087",
+"MAN-26-0089"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cenkuttuvan",
+"target": "himalaya_stone",
+"kind": "stone_on_heads",
+"record": "x72",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 27,
+"birth": "main",
+"episode": "image",
+"lines": [
+"MAN-26-0087",
+"MAN-26-0089"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "northern_kings",
+"target": "himalaya_stone",
+"kind": "stone_on_heads",
+"record": "x72",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 27,
+"birth": "main",
+"episode": "image",
+"lines": [
+"MAN-26-0087",
+"MAN-26-0089"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "cenkuttuvan",
+"target": "kannagi_image",
+"kind": "install",
+"record": "x73",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 28.5,
+"birth": "main",
+"episode": "image",
+"lines": [
+"SIL-28-0228",
+"SIL-28-0233"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "vaidika_teacher",
+"kind": "ask",
+"record": "x80",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 27.1,
+"birth": "main",
+"episode": "doctrine",
+"lines": [
+"MAN-27-0003",
+"MAN-27-0004"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "kovalan",
+"kind": "lost_husband",
+"record": "x90",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"kannagi"
+],
+"t": 23.6,
+"birth": "main",
+"episode": "worship",
+"lines": [
+"SIL-24-0007"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "kovalan",
+"kind": "ascend",
+"record": "x91",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet",
+"hill_folk"
+],
+"t": 23.9,
+"birth": "main",
+"episode": "worship",
+"lines": [
+"SIL-24-0009",
+"SIL-24-0010"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "hill_folk",
+"target": "kannagi",
+"kind": "take_as_deity",
+"record": "x92",
+"layer": "ledger",
+"tier": 0,
+"mood": "command",
+"voice": [
+"poet",
+"hill_folk"
+],
+"t": 24,
+"birth": "main",
+"episode": "worship",
+"lines": [
+"SIL-24-0013"
+],
+"actual": false,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "madhavi",
+"kind": "live_with",
+"record": "s02",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 3.4,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"SIL-03-0172"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "goldsmith",
+"kind": "see",
+"record": "s04",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.1,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"SIL-16-0108"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kovalan",
+"target": "temple_lodging",
+"kind": "enter",
+"record": "s05",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 16.13,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"SIL-16-0126"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "kannagi",
+"target": "pandya_king",
+"kind": "enter",
+"record": "s06",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 20.3,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"SIL-20-0058"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "flower_grove",
+"kind": "enter",
+"record": "s08",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 4.0,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"MAN-00-0037",
+"MAN-00-0038"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "crystal_room",
+"kind": "enter",
+"record": "s09",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 4.2,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"MAN-00-0040"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "udayakumaran",
+"target": "manimekalai",
+"kind": "see",
+"record": "s10",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 4.3,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"MAN-00-0041"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "seat_of_buddha",
+"kind": "worship",
+"record": "s11",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 11.25,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"MAN-11-0054"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "vanci",
+"kind": "fly",
+"record": "s12",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 26.0,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"MAN-26-0001"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "manimekalai",
+"target": "nagapuram",
+"kind": "fly",
+"record": "s13",
+"layer": "ledger",
+"tier": 0,
+"mood": "asserted",
+"voice": [
+"poet"
+],
+"t": 24.5,
+"birth": "main",
+"episode": "plain",
+"lines": [
+"MAN-24-0163",
+"MAN-24-0165"
+],
+"actual": true,
+"score": null,
+"review": "draft"
+},
+{
+"source": "madhavi",
+"target": "manimekalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 11,
+"count": 11,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kovalan",
+"target": "madhavi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 5,
+"count": 5,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekhala_deity",
+"target": "manipallavam",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 5,
+"count": 5,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cittirapati",
+"target": "madhavi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 4,
+"count": 4,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "madurai",
+"target": "madurapati",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kannagi",
+"target": "kovalan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kovalan",
+"target": "madurai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "pandya_king",
+"target": "pandya_queen",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kannagi",
+"target": "madurai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekalai",
+"target": "manimekhala_deity",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekalai",
+"target": "manipallavam",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "madhavi",
+"target": "vayantamalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cutamati",
+"target": "manimekalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "amudasurabhi",
+"target": "aputhiran",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekalai",
+"target": "udayakumaran",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kayasandikai",
+"target": "manimekalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 3,
+"count": 3,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "sangaman",
+"target": "singapuram",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kannagi",
+"target": "madhavi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "goldsmith",
+"target": "pandya_king",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kovalan",
+"target": "pandya_king",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kannagi",
+"target": "pandya_king",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cenkuttuvan",
+"target": "vanci",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "aputhiran",
+"target": "aravanan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kanchanan",
+"target": "kayasandikai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "aravanan",
+"target": "kanchi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "madhavi",
+"target": "udayakumaran",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekalai",
+"target": "vanci",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "lakshmi",
+"target": "rahulan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cutamati",
+"target": "madhavi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "aravanan",
+"target": "vanci",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 2,
+"count": 2,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kovalan",
+"target": "puhar",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cattan",
+"target": "madurai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manaikan",
+"target": "puhar",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "madhavi",
+"target": "puhar",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kavunti",
+"target": "matari",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "goldsmith",
+"target": "pandya_queen",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "bharatan",
+"target": "kovalan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "neeli",
+"target": "sangaman",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kannagi",
+"target": "madurapati",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kanchi",
+"target": "vanci",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kovalan",
+"target": "matari",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "matari",
+"target": "pandya_king",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "madurai",
+"target": "pandya_king",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kovalan",
+"target": "masattuvan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "ilanko",
+"target": "matalan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "ilanko",
+"target": "pandya_king",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "matalan",
+"target": "pandya_king",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kannagi",
+"target": "vanci",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "madurai",
+"target": "tevanti",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cenkuttuvan",
+"target": "tevanti",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "puhar",
+"target": "tevanti",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manaikan",
+"target": "masattuvan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "madhavi",
+"target": "tevanti",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cenkuttuvan",
+"target": "kannagi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "aputhiran",
+"target": "chintadevi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "aputhiran",
+"target": "manipallavam",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cittirapati",
+"target": "manimekalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekalai",
+"target": "vayantamalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kovalan",
+"target": "manimekalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cittirapati",
+"target": "udayakumaran",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cittirapati",
+"target": "vayantamalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "udayakumaran",
+"target": "vayantamalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "cutamati",
+"target": "manimekhala_deity",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "rahulan",
+"target": "udayakumaran",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "gomukhi",
+"target": "tivatilakai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "amudasurabhi",
+"target": "tivatilakai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekhala_deity",
+"target": "udayakumaran",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manipallavam",
+"target": "udayakumaran",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "amudasurabhi",
+"target": "chintadevi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "amudasurabhi",
+"target": "aticari",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "kayasandikai",
+"target": "madhavi",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "amudasurabhi",
+"target": "kayasandikai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "aravanan",
+"target": "cutamati",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manipallavam",
+"target": "vanci",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "bhumichandran",
+"target": "nagapuram",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "bhumichandran",
+"target": "punyarasan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "nagapuram",
+"target": "punyarasan",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "gomukhi",
+"target": "manimekalai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "gomukhi",
+"target": "manipallavam",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "manimekhala_deity",
+"target": "tivatilakai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+},
+{
+"source": "aravanan",
+"target": "tivatilakai",
+"kind": "co_occurs",
+"layer": "candidate",
+"tier": 1,
+"association": 1,
+"count": 1,
+"mood": null,
+"voice": null,
+"t": null,
+"birth": null,
+"lines": [],
+"actual": null,
+"score": null,
+"review": "unreviewed"
+}
+]

@@ -1,0 +1,2564 @@
+@prefix ns1: <https://example.org/manichchilambu/baseline/> .
+@prefix ns2: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:a00 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N145fc5aaba61406c86c1409ccb0fcda3 ;
+    prov:qualifiedAttribution [ prov:agent ns1:kannagi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "state" ;
+    ns1:line "SIL-20-0072" ;
+    ns1:mood "asserted" .
+
+ns1:a01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 9.7 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "offer" ;
+    ns1:line "SIL-09-0073" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_recipient ns1:kovalan ;
+    ns1:role_theme ns1:ank_pair .
+
+ns1:a02 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 9.75 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kovalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "trade" ;
+    ns1:line "SIL-09-0075",
+        "SIL-09-0076" ;
+    ns1:mood "intended" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_place ns1:madurai ;
+    ns1:role_theme ns1:ank_pair .
+
+ns1:a03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Ne558a76cbb044a04aed2a783e3424bd1 ;
+    prov:qualifiedAttribution [ prov:agent ns1:kovalan ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "take" ;
+    ns1:line "SIL-16-0092" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_source ns1:kannagi ;
+    ns1:role_theme ns1:ank_k1 .
+
+ns1:a04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.11 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "show" ;
+    ns1:line "SIL-16-0116" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_recipient ns1:goldsmith ;
+    ns1:role_theme ns1:ank_k1 .
+
+ns1:a05 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.12 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:goldsmith ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "suits" ;
+    ns1:line "SIL-16-0121",
+        "SIL-16-0122" ;
+    ns1:mood "claimed" ;
+    ns1:role_beneficiary ns1:pandya_queen ;
+    ns1:role_theme ns1:ank_k1 .
+
+ns1:a06 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 0.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:goldsmith ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "steal" ;
+    ns1:line "SIL-16-0127" ;
+    ns1:mood "thought" ;
+    ns1:role_agent ns1:goldsmith ;
+    ns1:role_theme ns1:ank_q .
+
+ns1:a06b a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Ne79eed3a6aab43febfffe1c444c07e18 ;
+    prov:qualifiedAttribution [ prov:agent ns1:cattan ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "steal" ;
+    ns1:line "SIL-00-0025" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:goldsmith ;
+    ns1:role_theme ns1:ank_q .
+
+ns1:a07 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.13 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:goldsmith ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "frame" ;
+    ns1:line "SIL-16-0128",
+        "SIL-16-0129" ;
+    ns1:mood "intended" ;
+    ns1:role_addressee ns1:pandya_king ;
+    ns1:role_agent ns1:goldsmith ;
+    ns1:role_target ns1:kovalan .
+
+ns1:a12 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.16 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:pandya_king ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "kill" ;
+    ns1:line "SIL-16-0152",
+        "SIL-16-0153" ;
+    ns1:mood "conditional" ;
+    ns1:role_agent ns1:guards ;
+    ns1:role_patient ns1:kovalan .
+
+ns1:a13 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.17 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:guards ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:contradicts ns1:a09 ;
+    ns1:kind "innocent" ;
+    ns1:line "SIL-16-0163" ;
+    ns1:mood "claimed" ;
+    ns1:role_theme ns1:kovalan .
+
+ns1:a15 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N3d99e1020b604969afae58e04dba8e64 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "kill" ;
+    ns1:line "SIL-16-0212",
+        "SIL-16-0213" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:k_karma_kov ;
+            ns1:rel "karma" ],
+        [ ns1:of ns1:k_sceptre ;
+            ns1:rel "moral" ],
+        [ ns1:of ns1:a14 ;
+            ns1:rel "enables" ],
+        [ ns1:of ns1:a11 ;
+            ns1:rel "enables" ] ;
+    ns1:role_agent ns1:drunk_man ;
+    ns1:role_instrument ns1:sword ;
+    ns1:role_patient ns1:kovalan .
+
+ns1:a16 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N8f222689ca57489593d2db0ca8a51267 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "bring" ;
+    ns1:line "SIL-20-0081" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:pandya_king ;
+    ns1:role_theme ns1:ank_k1 .
+
+ns1:a17 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "arrive" ;
+    ns1:line "SIL-20-0038",
+        "SIL-20-0039" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_place ns1:palace_gate ;
+    ns1:role_theme ns1:ank_k2 .
+
+ns1:a18 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.4 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:kannagi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "contains" ;
+    ns1:line "SIL-20-0078" ;
+    ns1:mood "claimed" ;
+    ns1:role_content_of ns1:gems ;
+    ns1:role_theme ns1:ank_pair .
+
+ns1:a19 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.45 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:pandya_king ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "contains" ;
+    ns1:line "SIL-20-0080" ;
+    ns1:mood "claimed" ;
+    ns1:role_content_of ns1:pearls ;
+    ns1:role_theme ns1:ank_q .
+
+ns1:a23 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.71 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:pandya_king ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "steal" ;
+    ns1:line "SIL-20-0086" ;
+    ns1:mood "metaphor" ;
+    ns1:role_agent ns1:pandya_king .
+
+ns1:a24 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N351addfafcf04fac9c7c688811481ba1 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "die" ;
+    ns1:line "SIL-20-0089",
+        "SIL-22-0007" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:a22 ;
+            ns1:rel "causes" ] ;
+    ns1:role_patient ns1:pandya_king .
+
+ns1:a25 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 22.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:matari ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:contradicts ns1:a09 ;
+    ns1:kind "innocent" ;
+    ns1:line "SIL-27-0075" ;
+    ns1:mood "claimed" ;
+    ns1:role_theme ns1:kovalan .
+
+ns1:a26 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 26.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "sacrifice" ;
+    ns1:line "SIL-27-0127",
+        "SIL-27-0128",
+        "SIL-27-0130" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:vetrivel_celiyan ;
+    ns1:role_beneficiary ns1:kannagi ;
+    ns1:role_patient ns1:goldsmiths_1000 .
+
+ns1:a27 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N34c31ac6d2b0490488b334173277bdc2 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "appear" ;
+    ns1:line "SIL-16-0151" ;
+    ns1:mood "asserted" ;
+    ns1:role_holder ns1:pandya_queen ;
+    ns1:role_theme ns1:ank_q .
+
+ns1:b01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N2dfec21a33f94c47b2bcfba26b5f6af7 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kayasandikai ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "hunger_curse" ;
+    ns1:line "MAN-17-0014",
+        "MAN-17-0034" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:viruchikan ;
+    ns1:role_patient ns1:kayasandikai .
+
+ns1:b02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N5e763d5987b94febbfa71ec9a3869ed5 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "feed" ;
+    ns1:line "MAN-17-0018",
+        "MAN-17-0019" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_instrument ns1:amudasurabhi ;
+    ns1:role_patient ns1:kayasandikai .
+
+ns1:b03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Nbb717a26fc5e41a3a6c1e8735632fd70 ;
+    prov:qualifiedAttribution [ prov:agent ns1:pillar ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "swallowed" ;
+    ns1:line "MAN-20-0119",
+        "MAN-20-0121" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:vindhya_demoness ;
+    ns1:role_patient ns1:kayasandikai .
+
+ns1:b04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 18.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "same_person" ;
+    ns1:line "MAN-18-0128" ;
+    ns1:mood "asserted" ;
+    ns1:role_earlier ns1:rahulan ;
+    ns1:role_later ns1:udayakumaran .
+
+ns1:b05 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Neb9d9b46471f43779a78d91c89e02e80 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "disguise" ;
+    ns1:line "MAN-18-0148",
+        "MAN-18-0149",
+        "MAN-18-0150" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_form ns1:kayasandikai ;
+    ns1:role_instrument ns1:mantra .
+
+ns1:b06 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "is_vidyadhara" ;
+    ns1:line "MAN-19-0147" ;
+    ns1:mood "claimed" ;
+    ns1:role_theme ns1:manimekalai .
+
+ns1:b08 a ns2:I2_Belief ;
+    ns2:J4_that ns1:b07 ;
+    ns2:J5_holds_to_be "accept" ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 18.7 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "believe" ;
+    ns1:line "MAN-20-0084",
+        "MAN-20-0085" ;
+    ns1:mood "asserted" ;
+    ns1:role_holder ns1:udayakumaran .
+
+ns1:b13 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N30c19aa41d6c43879ff2b934d2c64dd0 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "kill" ;
+    ns1:line "MAN-20-0106",
+        "MAN-20-0107" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:b12 ;
+            ns1:rel "motivates" ],
+        [ ns1:of ns1:b14 ;
+            ns1:rel "karma" ] ;
+    ns1:role_agent ns1:kanchanan ;
+    ns1:role_instrument ns1:sword ;
+    ns1:role_patient ns1:udayakumaran .
+
+ns1:b15 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.61 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:pillar ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "correct" ;
+    ns1:line "MAN-20-0113" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:kanchanan ;
+    ns1:role_is ns1:manimekalai ;
+    ns1:role_seen ns1:disguised_woman .
+
+ns1:b16 a ns2:I2_Belief ;
+    ns2:J4_that ns1:b09 ;
+    ns2:J5_holds_to_be "reject" ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.62 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "believe" ;
+    ns1:line "MAN-20-0113" ;
+    ns1:mood "asserted" ;
+    ns1:role_holder ns1:kanchanan ;
+    ns1:role_source ns1:pillar .
+
+ns1:b17 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Nd1a35b9eab9541799c27e10fc68f66be ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "undisguise" ;
+    ns1:line "MAN-21-0009",
+        "MAN-21-0010" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_form ns1:kayasandikai .
+
+ns1:b18 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 18.49 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "motive" ;
+    ns1:line "MAN-21-0021",
+        "MAN-21-0022" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_target ns1:udayakumaran .
+
+ns1:c01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N4713cc19c26f4ccc85b31f3a5cb9bcc7 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:aravanan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "give" ;
+    ns1:line "MAN-14-0016" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:chintadevi ;
+    ns1:role_recipient ns1:aputhiran ;
+    ns1:role_theme ns1:amudasurabhi .
+
+ns1:c02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -5.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:aravanan ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "feed" ;
+    ns1:line "MAN-14-0022",
+        "MAN-14-0023" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:aputhiran ;
+    ns1:role_instrument ns1:amudasurabhi .
+
+ns1:c03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -4.9 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:aravanan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "stranded" ;
+    ns1:line "MAN-14-0081",
+        "MAN-14-0085" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:aputhiran ;
+    ns1:role_place ns1:manipallavam .
+
+ns1:c04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N10fd3f90103e42b494fc6c27a7b84d89 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:aravanan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "deposit" ;
+    ns1:line "MAN-14-0091",
+        "MAN-14-0092" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:aputhiran ;
+    ns1:role_place ns1:gomukhi ;
+    ns1:role_theme ns1:amudasurabhi .
+
+ns1:c05 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -4.79 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:aravanan ;
+            ns1:position 1 ],
+        [ prov:agent ns1:aputhiran ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "appear" ;
+    ns1:line "MAN-14-0092",
+        "MAN-14-0093",
+        "MAN-14-0094" ;
+    ns1:mood "command" ;
+    ns1:role_addressee ns1:amudasurabhi ;
+    ns1:role_recipient ns1:righteous_person ;
+    ns1:role_theme ns1:amudasurabhi .
+
+ns1:c06 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 11.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:tivatilakai ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "inexhaustible" ;
+    ns1:line "MAN-11-0050" ;
+    ns1:mood "asserted" ;
+    ns1:role_theme ns1:amudasurabhi .
+
+ns1:c08 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 11.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:conflicts ns1:c07 ;
+    ns1:kind "give" ;
+    ns1:line "MAN-00-0053",
+        "MAN-00-0054" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:tivatilakai ;
+    ns1:role_recipient ns1:manimekalai ;
+    ns1:role_theme ns1:amudasurabhi .
+
+ns1:c09 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 11.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:conflicts ns1:c07 ;
+    ns1:kind "give" ;
+    ns1:line "MAN-19-0151",
+        "MAN-19-0152" ;
+    ns1:mood "claimed" ;
+    ns1:role_agent ns1:unnamed_deity ;
+    ns1:role_theme ns1:amudasurabhi .
+
+ns1:c10 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Ne2e65cf465124062831ae674fc3c8b37 ;
+    prov:qualifiedAttribution [ prov:agent ns1:cutamati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "give" ;
+    ns1:line "MAN-05-0065" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:sankatharuman ;
+    ns1:role_recipient ns1:cutamati ;
+    ns1:role_theme ns1:other_bowl .
+
+ns1:d01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -60.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "same_person" ;
+    ns1:line "SIL-23-0154" ;
+    ns1:mood "asserted" ;
+    ns1:role_earlier ns1:bharatan ;
+    ns1:role_later ns1:kovalan .
+
+ns1:d07 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -47.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:neeli ;
+            ns1:position 2 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "suffer_same" ;
+    ns1:line "SIL-23-0167",
+        "SIL-23-0168" ;
+    ns1:mood "wish" ;
+    ns1:role_patient ns1:bharatan .
+
+ns1:d10 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 23.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fate_explains" ;
+    ns1:line "SIL-23-0170" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:d06 ;
+            ns1:rel "karma" ] ;
+    ns1:role_patient ns1:kovalan ;
+    ns1:role_target ns1:kannagi .
+
+ns1:e03 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.7 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "spare" ;
+    ns1:line "SIL-21-0053",
+        "SIL-21-0054",
+        "SIL-21-0055" ;
+    ns1:mood "command" ;
+    ns1:role_addressee ns1:agni ;
+    ns1:role_agent ns1:agni ;
+    ns1:role_patient ns1:brahmins,
+        ns1:chaste_women,
+        ns1:children,
+        ns1:cows,
+        ns1:the_old,
+        ns1:the_virtuous .
+
+ns1:e05 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.4 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "blameless" ;
+    ns1:line "SIL-21-0042" ;
+    ns1:mood "claimed" ;
+    ns1:role_theme ns1:kannagi .
+
+ns1:e06 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N471c89e9663c4910b9f9c5c3a3c8544c ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "die" ;
+    ns1:line "SIL-22-0006",
+        "SIL-22-0007" ;
+    ns1:mood "asserted" ;
+    ns1:role_patient ns1:pandya_queen .
+
+ns1:e07 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N9889b71dd6fc4ff5b1b0e96108cad486 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "enter_fire" ;
+    ns1:line "SIL-27-0078" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:matari .
+
+ns1:e08 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N55b883f5a9fe4171869e12c4fe43c5fa ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fast_to_death" ;
+    ns1:line "SIL-27-0083" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kavunti .
+
+ns1:f01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -70.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "same_person" ;
+    ns1:line "MAN-09-0041" ;
+    ns1:mood "asserted" ;
+    ns1:role_earlier ns1:lakshmi ;
+    ns1:role_later ns1:manimekalai .
+
+ns1:f02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -65.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_lakshmi" ;
+    ns1:kind "spouse" ;
+    ns1:line "MAN-09-0046" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:lakshmi ;
+    ns1:role_target ns1:rahulan .
+
+ns1:f03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 10.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:manimekhala_deity ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "same_person" ;
+    ns1:line "MAN-10-0043" ;
+    ns1:mood "asserted" ;
+    ns1:role_earlier ns1:rahulan ;
+    ns1:role_later ns1:udayakumaran .
+
+ns1:f06 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Nf7fc4bde78784997b3d33d224832c0e7 ;
+    prov:qualifiedAttribution [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "prev_lakshmi" ;
+    ns1:kind "die" ;
+    ns1:line "MAN-21-0011" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:f04 ;
+            ns1:rel "fulfils" ] ;
+    ns1:role_patient ns1:rahulan .
+
+ns1:f07 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Na8965e7b4ed2489b905912122b40fe75 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_lakshmi" ;
+    ns1:kind "enter_fire" ;
+    ns1:line "MAN-21-0012" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:lakshmi .
+
+ns1:f08 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -90.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:pillar ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "other_births" ;
+    ns1:kind "child_of" ;
+    ns1:line "MAN-21-0029" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:udayakumaran ;
+    ns1:role_target ns1:manimekalai .
+
+ns1:f09 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -91.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:pillar ;
+            ns1:position 1 ] ;
+    ns1:birth "other_births" ;
+    ns1:kind "child_of" ;
+    ns1:line "MAN-21-0030" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_target ns1:udayakumaran .
+
+ns1:f10 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:pillar ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fate_explains" ;
+    ns1:line "MAN-21-0070" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:f05 ;
+            ns1:rel "karma" ] ;
+    ns1:role_patient ns1:udayakumaran .
+
+ns1:g01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Nead729266df843dc80c6b408d1d524da ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:aravanan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fast_to_death" ;
+    ns1:line "MAN-14-0095" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:aputhiran .
+
+ns1:g02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -4.4 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:aravanan ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "same_person" ;
+    ns1:line "MAN-14-0103",
+        "MAN-14-0104" ;
+    ns1:mood "asserted" ;
+    ns1:role_earlier ns1:aputhiran ;
+    ns1:role_later ns1:punyarasan .
+
+ns1:g03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 24.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:sage_nagapuram ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "child_of" ;
+    ns1:line "MAN-24-0170" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:punyarasan ;
+    ns1:role_target ns1:bhumichandran .
+
+ns1:g04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 24.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:sage_nagapuram ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "rules" ;
+    ns1:line "MAN-24-0169",
+        "MAN-24-0170" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:punyarasan ;
+    ns1:role_place ns1:nagapuram .
+
+ns1:h01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:guard ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "feed" ;
+    ns1:line "MAN-19-0133",
+        "MAN-19-0136" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:disguised_woman ;
+    ns1:role_instrument ns1:amudasurabhi ;
+    ns1:role_patient ns1:prisoners ;
+    ns1:role_place ns1:prison_site .
+
+ns1:h03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Nda7623a726ae41038483f29ed284cb30 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "convert" ;
+    ns1:line "MAN-19-0161",
+        "MAN-19-0162" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:h02 ;
+            ns1:rel "motivates" ] ;
+    ns1:role_agent ns1:chola_king ;
+    ns1:role_theme ns1:prison_site .
+
+ns1:l01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N4665b004580b4042b762b07652968011 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "give" ;
+    ns1:line "SIL-03-0167" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:madhavi ;
+    ns1:role_recipient ns1:hunchback ;
+    ns1:role_theme ns1:garland .
+
+ns1:l02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N29c29d39aafc4e20b56650b61440396f ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "buy" ;
+    ns1:line "SIL-03-0170",
+        "SIL-03-0171" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_source ns1:hunchback ;
+    ns1:role_theme ns1:garland .
+
+ns1:m01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 0.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:cattan ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "spouse" ;
+    ns1:line "SIL-00-0017" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_target ns1:kovalan .
+
+ns1:m02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 0.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "child_of" ;
+    ns1:line "SIL-20-0069" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_target ns1:masattuvan .
+
+ns1:m03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 0.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "child_of" ;
+    ns1:line "SIL-01-0023" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_target ns1:manaikan .
+
+ns1:m04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 3.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "child_of" ;
+    ns1:line "SIL-15-0022",
+        "SIL-15-0023" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_target ns1:madhavi .
+
+ns1:m05 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 3.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "child_of" ;
+    ns1:line "MAN-26-0003" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_target ns1:kovalan .
+
+ns1:m06 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 26.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "child_of" ;
+    ns1:line "MAN-26-0002" ;
+    ns1:mood "address" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_target ns1:kannagi .
+
+ns1:m07 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 26.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "worship" ;
+    ns1:line "MAN-26-0004",
+        "MAN-26-0005",
+        "MAN-26-0006" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_place ns1:vanci ;
+    ns1:role_theme ns1:kannagi_image .
+
+ns1:m08 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 26.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "speak_as_deity" ;
+    ns1:line "MAN-26-0010" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:manimekalai ;
+    ns1:role_agent ns1:kannagi .
+
+ns1:m09 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 28.9 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "found_temple" ;
+    ns1:line "SIL-30-0151" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:cenkuttuvan ;
+    ns1:role_theme ns1:kannagi_temple .
+
+ns1:m10 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 29.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "ask_boon" ;
+    ns1:line "SIL-30-0160",
+        "SIL-30-0163" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:gajabahu ;
+    ns1:role_target ns1:kannagi .
+
+ns1:m11 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 29.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:unknown ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "grant_boon" ;
+    ns1:line "SIL-30-0164" ;
+    ns1:mood "asserted" ;
+    ns1:openRole "agent" ;
+    ns1:role_agent ns1:kannagi,
+        ns1:unnamed .
+
+ns1:m12 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -20.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:kovalan ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "rescue" ;
+    ns1:line "SIL-15-0029",
+        "SIL-15-0033" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekhala_deity ;
+    ns1:role_patient ns1:kovalan_ancestor .
+
+ns1:m13 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 3.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kovalan ;
+            ns1:position 2 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "name_child" ;
+    ns1:line "SIL-15-0037" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_source ns1:manimekhala_deity ;
+    ns1:role_theme ns1:manimekalai .
+
+ns1:r01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -50.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "accuse" ;
+    ns1:line "MAN-26-0027" ;
+    ns1:mood "asserted" ;
+    ns1:retells ns1:d02 ;
+    ns1:role_addressee ns1:kalinga_king ;
+    ns1:role_agent ns1:bharatan ;
+    ns1:role_target ns1:sangaman .
+
+ns1:r02 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -50.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:bharatan ;
+            ns1:position 3 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "spy" ;
+    ns1:line "MAN-26-0027" ;
+    ns1:mood "claimed" ;
+    ns1:role_agent ns1:sangaman .
+
+ns1:r03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -49.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:kannagi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:madurapati ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:contradicts ns1:d03 ;
+    ns1:kind "innocent" ;
+    ns1:line "MAN-26-0028" ;
+    ns1:mood "asserted" ;
+    ns1:role_theme ns1:sangaman .
+
+ns1:r04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.8 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "destroy" ;
+    ns1:line "MAN-26-0034" ;
+    ns1:mood "asserted" ;
+    ns1:retells ns1:e04 ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_patient ns1:madurai .
+
+ns1:r05 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 30.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "reborn_many" ;
+    ns1:line "MAN-26-0038",
+        "MAN-26-0041" ;
+    ns1:mood "predicted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_companion ns1:kovalan .
+
+ns1:s01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 3.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "dance" ;
+    ns1:line "SIL-03-0161" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:madhavi .
+
+ns1:s02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 3.4 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "live_with" ;
+    ns1:line "SIL-03-0172" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_target ns1:madhavi .
+
+ns1:s03 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.05 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "leave" ;
+    ns1:line "SIL-16-0098",
+        "SIL-16-0099" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan .
+
+ns1:s04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "see" ;
+    ns1:line "SIL-16-0108" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_target ns1:goldsmith .
+
+ns1:s05 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.13 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "enter" ;
+    ns1:line "SIL-16-0126" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_place ns1:temple_lodging .
+
+ns1:s06 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.3 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "enter" ;
+    ns1:line "SIL-20-0058" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_target ns1:pandya_king .
+
+ns1:s07 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.75 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "faint" ;
+    ns1:line "SIL-20-0089" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:pandya_king .
+
+ns1:s08 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 4.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "enter" ;
+    ns1:line "MAN-00-0037",
+        "MAN-00-0038" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_place ns1:flower_grove .
+
+ns1:s09 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 4.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "enter" ;
+    ns1:line "MAN-00-0040" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_place ns1:crystal_room .
+
+ns1:s10 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 4.3 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "see" ;
+    ns1:line "MAN-00-0041" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:udayakumaran ;
+    ns1:role_target ns1:manimekalai .
+
+ns1:s11 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 11.25 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "worship" ;
+    ns1:line "MAN-11-0054" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_theme ns1:seat_of_buddha .
+
+ns1:s12 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 26.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fly" ;
+    ns1:line "MAN-26-0001" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_place ns1:vanci .
+
+ns1:s13 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 24.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fly" ;
+    ns1:line "MAN-24-0163",
+        "MAN-24-0165" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_place ns1:nagapuram .
+
+ns1:s14 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.05 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "faint" ;
+    ns1:line "MAN-21-0004" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekalai .
+
+ns1:x01 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 9.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:kannagi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "travel" ;
+    ns1:line "SIL-09-0045",
+        "SIL-09-0046" ;
+    ns1:mood "dreamed" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_companion ns1:kannagi .
+
+ns1:x02 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 9.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "slander" ;
+    ns1:line "SIL-09-0047",
+        "SIL-09-0048" ;
+    ns1:mood "dreamed" ;
+    ns1:role_agent ns1:townsfolk ;
+    ns1:role_target ns1:kannagi .
+
+ns1:x03 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 9.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:kannagi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "harmed" ;
+    ns1:line "SIL-09-0049" ;
+    ns1:mood "dreamed" ;
+    ns1:role_patient ns1:kovalan .
+
+ns1:x05 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.9 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:pandya_queen ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "sceptre_falls" ;
+    ns1:line "SIL-20-0002",
+        "SIL-20-0032" ;
+    ns1:mood "dreamed" ;
+    ns1:role_holder ns1:pandya_king ;
+    ns1:role_theme ns1:sceptre .
+
+ns1:x06 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.3 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "plead" ;
+    ns1:line "SIL-20-0061" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:x04 ;
+            ns1:rel "foreshadowed" ] ;
+    ns1:role_addressee ns1:pandya_king ;
+    ns1:role_agent ns1:kannagi .
+
+ns1:x10 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N4e85e01a8ad94946ba14d54f8b967495 ;
+    prov:qualifiedAttribution [ prov:agent ns1:kavunti ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "entrust" ;
+    ns1:line "SIL-15-0129",
+        "SIL-15-0130" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kavunti ;
+    ns1:role_recipient ns1:matari ;
+    ns1:role_theme ns1:kannagi .
+
+ns1:x11 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N84106f615dc245528e6bba80cb47e020 ;
+    prov:qualifiedAttribution [ prov:agent ns1:matari ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:matalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "lose_ward" ;
+    ns1:line "SIL-27-0076" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:matari ;
+    ns1:role_theme ns1:kannagi .
+
+ns1:x23 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 7.9 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "leave" ;
+    ns1:line "SIL-07-0309",
+        "SIL-07-0311" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:x21 ;
+            ns1:rel "motivates" ],
+        [ ns1:of ns1:x22 ;
+            ns1:rel "karma" ] ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_target ns1:madhavi .
+
+ns1:x30 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "rise" ;
+    ns1:line "SIL-19-0062" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan .
+
+ns1:x31 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.51 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "wipe_tears" ;
+    ns1:line "SIL-19-0063" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_target ns1:kannagi .
+
+ns1:x32 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.52 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "bid_stay" ;
+    ns1:line "SIL-19-0067" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:kannagi ;
+    ns1:role_agent ns1:kovalan .
+
+ns1:x33 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.53 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "illusion" ;
+    ns1:line "SIL-19-0068" ;
+    ns1:mood "question" ;
+    ns1:role_theme ns1:risen_kovalan .
+
+ns1:x41 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 6.9 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:manimekhala_deity ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "carry" ;
+    ns1:line "MAN-07-0021",
+        "MAN-07-0022" ;
+    ns1:mood "asserted" ;
+    ns1:retells ns1:x40 ;
+    ns1:role_agent ns1:manimekhala_deity ;
+    ns1:role_patient ns1:manimekalai ;
+    ns1:role_place ns1:manipallavam .
+
+ns1:x42 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:Nd272326e392844d58b711a8b17aebf97 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "disguise" ;
+    ns1:line "MAN-05-0095",
+        "MAN-05-0096" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekhala_deity ;
+    ns1:role_form ns1:town_woman .
+
+ns1:x51 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N6b358def1f0145529ffa915eb7cccf54 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "disguise" ;
+    ns1:line "MAN-26-0071" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:x50 ;
+            ns1:rel "motivates" ] ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_form ns1:male_ascetic ;
+    ns1:role_instrument ns1:mantra .
+
+ns1:x60 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 2.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madhavi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "child_of" ;
+    ns1:line "MAN-02-0055" ;
+    ns1:mood "address" ;
+    ns1:role_agent ns1:manimekalai ;
+    ns1:role_target ns1:kannagi .
+
+ns1:x61 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.8 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:madhavi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "burn" ;
+    ns1:line "MAN-02-0053",
+        "MAN-02-0054" ;
+    ns1:mood "asserted" ;
+    ns1:retells ns1:e04 ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_patient ns1:madurai .
+
+ns1:x62 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 2.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:madhavi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "teach" ;
+    ns1:line "MAN-02-0061",
+        "MAN-02-0064" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:madhavi ;
+    ns1:role_agent ns1:aravanan .
+
+ns1:x63 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 2.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madhavi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:aravanan ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "birth_is_suffering" ;
+    ns1:line "MAN-02-0064" ;
+    ns1:mood "claimed" ;
+    ns1:role_theme ns1:birth .
+
+ns1:x70 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 25.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:poets_at_court ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fetch_stone" ;
+    ns1:line "SIL-25-0118",
+        "SIL-25-0119" ;
+    ns1:mood "conditional" ;
+    ns1:role_agent ns1:cenkuttuvan ;
+    ns1:role_theme ns1:himalaya_stone .
+
+ns1:x71 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 25.8 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:cenkuttuvan ;
+            ns1:position 1 ],
+        [ prov:agent ns1:himalaya_ascetics ;
+            ns1:position 2 ] ;
+    ns1:birth "main" ;
+    ns1:kind "northern_insult" ;
+    ns1:line "SIL-26-0009",
+        "SIL-26-0010" ;
+    ns1:mood "claimed" ;
+    ns1:role_agent ns1:northern_kings .
+
+ns1:x72 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 27.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "stone_on_heads" ;
+    ns1:line "MAN-26-0087",
+        "MAN-26-0089" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:cenkuttuvan ;
+    ns1:role_patient ns1:northern_kings ;
+    ns1:role_theme ns1:himalaya_stone .
+
+ns1:x73 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N8bf67763f5ba43ed9a1834f6ded1bcd6 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "install" ;
+    ns1:line "SIL-28-0228",
+        "SIL-28-0233" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:cenkuttuvan ;
+    ns1:role_theme ns1:kannagi_image .
+
+ns1:x80 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 27.1 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "ask" ;
+    ns1:line "MAN-27-0003",
+        "MAN-27-0004" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:vaidika_teacher ;
+    ns1:role_agent ns1:manimekalai .
+
+ns1:x81 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 27.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:vaidika_teacher ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "truth_by_proof" ;
+    ns1:line "MAN-27-0013" ;
+    ns1:mood "claimed" ;
+    ns1:role_theme ns1:knowledge .
+
+ns1:x82 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 26.25 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "find_no_truth" ;
+    ns1:line "MAN-26-0065" ;
+    ns1:mood "predicted" ;
+    ns1:role_agent ns1:manimekalai .
+
+ns1:x90 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 23.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:kannagi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "lost_husband" ;
+    ns1:line "SIL-24-0007" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_patient ns1:kovalan .
+
+ns1:x91 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 23.9 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:hill_folk ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "ascend" ;
+    ns1:line "SIL-24-0009",
+        "SIL-24-0010" ;
+    ns1:mood "asserted" ;
+    ns1:retells ns1:d09 ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_companion ns1:kovalan .
+
+ns1:x92 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 24.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:hill_folk ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "take_as_deity" ;
+    ns1:line "SIL-24-0013" ;
+    ns1:mood "command" ;
+    ns1:role_agent ns1:hill_folk ;
+    ns1:role_theme ns1:kannagi .
+
+ns1:a08 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.14 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "accuse" ;
+    ns1:line "SIL-16-0145" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:pandya_king ;
+    ns1:role_agent ns1:goldsmith ;
+    ns1:role_target ns1:kovalan .
+
+ns1:a10 a ns2:I2_Belief ;
+    ns2:J4_that ns1:a09 ;
+    ns2:J5_holds_to_be "accept" ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.15 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "believe" ;
+    ns1:line "SIL-16-0149" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:a08 ;
+            ns1:rel "motivates" ] ;
+    ns1:role_holder ns1:pandya_king ;
+    ns1:role_source ns1:goldsmith .
+
+ns1:a11 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.16 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "order" ;
+    ns1:line "SIL-16-0150" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:a10 ;
+            ns1:rel "motivates" ] ;
+    ns1:role_addressee ns1:guards ;
+    ns1:role_agent ns1:pandya_king .
+
+ns1:a14 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.18 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "persuade" ;
+    ns1:line "SIL-16-0165" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:guards ;
+    ns1:role_agent ns1:goldsmith .
+
+ns1:a20 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N8277df23cc33481ca6d47be9c1d4fc8d ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "break" ;
+    ns1:line "SIL-20-0082" ;
+    ns1:mood "asserted" ;
+    ns1:openRole "theme" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_theme ns1:ank_k1,
+        ns1:ank_k2 .
+
+ns1:a21 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.61 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "gem_shows" ;
+    ns1:line "SIL-20-0083" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:a20 ;
+            ns1:rel "causes" ] ;
+    ns1:role_target ns1:pandya_king ;
+    ns1:role_theme ns1:gems .
+
+ns1:a22 a ns2:I2_Belief ;
+    ns2:J4_that ns1:a09 ;
+    ns2:J5_holds_to_be "reject" ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.7 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "believe" ;
+    ns1:line "SIL-20-0085",
+        "SIL-20-0086" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:a21 ;
+            ns1:rel "causes" ] ;
+    ns1:role_holder ns1:pandya_king ;
+    ns1:role_source ns1:kannagi .
+
+ns1:b07 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 18.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:udayakumaran ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "is_identity" ;
+    ns1:line "MAN-18-0155" ;
+    ns1:mood "claimed" ;
+    ns1:role_is ns1:manimekalai ;
+    ns1:role_seen ns1:disguised_woman .
+
+ns1:b10 a ns2:I2_Belief ;
+    ns2:J4_that ns1:b09 ;
+    ns2:J5_holds_to_be "accept" ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.21 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "believe" ;
+    ns1:line "MAN-20-0026",
+        "MAN-20-0027" ;
+    ns1:mood "asserted" ;
+    ns1:role_holder ns1:kanchanan .
+
+ns1:b11 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.3 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kanchanan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "lover_of" ;
+    ns1:line "MAN-20-0077" ;
+    ns1:mood "claimed" ;
+    ns1:role_agent ns1:udayakumaran ;
+    ns1:role_target ns1:kayasandikai .
+
+ns1:b12 a ns2:I2_Belief ;
+    ns2:J4_that ns1:b11 ;
+    ns2:J5_holds_to_be "accept" ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.31 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "believe" ;
+    ns1:line "MAN-20-0078" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:b10 ;
+            ns1:rel "enables" ] ;
+    ns1:role_holder ns1:kanchanan .
+
+ns1:b14 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:pillar ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fate_explains" ;
+    ns1:line "MAN-20-0123",
+        "MAN-20-0124" ;
+    ns1:mood "asserted" ;
+    ns1:role_patient ns1:udayakumaran .
+
+ns1:d03 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -50.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:bharatan ;
+            ns1:position 2 ],
+        [ prov:agent ns1:madurapati ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "spy" ;
+    ns1:line "SIL-23-0156" ;
+    ns1:mood "claimed" ;
+    ns1:role_agent ns1:sangaman .
+
+ns1:d04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N917324933e4c4f0abf098ea610723642 ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "kill" ;
+    ns1:line "SIL-23-0157",
+        "SIL-23-0158" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:d02 ;
+            ns1:rel "motivates" ] ;
+    ns1:role_addressee ns1:kalinga_king ;
+    ns1:role_patient ns1:sangaman .
+
+ns1:d05 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -48.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "protest" ;
+    ns1:line "SIL-23-0160",
+        "SIL-23-0162" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:d04 ;
+            ns1:rel "causes" ] ;
+    ns1:role_agent ns1:neeli ;
+    ns1:role_target ns1:kalinga_king .
+
+ns1:d06 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -47.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:madurapati ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "curse" ;
+    ns1:line "SIL-23-0168",
+        "SIL-23-0169" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:d05 ;
+            ns1:rel "enables" ] ;
+    ns1:role_agent ns1:neeli ;
+    ns1:role_target ns1:bharatan .
+
+ns1:d08 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -1.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "burn" ;
+    ns1:line "SIL-23-0135",
+        "SIL-23-0136" ;
+    ns1:mood "predicted" ;
+    ns1:role_agent ns1:fire ;
+    ns1:role_patient ns1:madurai .
+
+ns1:d09 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 23.9 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "ascend" ;
+    ns1:line "SIL-23-0198",
+        "SIL-23-0199" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_companion ns1:kovalan .
+
+ns1:e02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:agni ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "prior_order" ;
+    ns1:line "SIL-21-0050",
+        "SIL-21-0051",
+        "SIL-21-0052" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:e01 ;
+            ns1:rel "enables" ] ;
+    ns1:role_agent ns1:agni ;
+    ns1:role_patient ns1:madurai .
+
+ns1:f04 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -64.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:sage ;
+            ns1:position 2 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_lakshmi" ;
+    ns1:kind "die" ;
+    ns1:line "MAN-09-0048",
+        "MAN-09-0049" ;
+    ns1:mood "predicted" ;
+    ns1:role_patient ns1:rahulan .
+
+ns1:f05 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -66.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:pillar ;
+            ns1:position 1 ] ;
+    ns1:birth "prev_lakshmi" ;
+    ns1:kind "kill" ;
+    ns1:line "MAN-21-0059",
+        "MAN-21-0060" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:rahulan ;
+    ns1:role_instrument ns1:sword ;
+    ns1:role_patient ns1:cook .
+
+ns1:h02 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 19.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:manimekalai ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "convert" ;
+    ns1:line "MAN-19-0157",
+        "MAN-19-0158" ;
+    ns1:mood "command" ;
+    ns1:role_agent ns1:chola_king ;
+    ns1:role_theme ns1:prison_site .
+
+ns1:k_karma_kov a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.21 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fate_explains" ;
+    ns1:line "SIL-16-0217" ;
+    ns1:mood "asserted" ;
+    ns1:role_patient ns1:kovalan .
+
+ns1:k_sceptre a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.21 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "sceptre_bends" ;
+    ns1:line "SIL-16-0216" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:pandya_king .
+
+ns1:x04 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 9.6 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kannagi ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "plead" ;
+    ns1:line "SIL-09-0050" ;
+    ns1:mood "dreamed" ;
+    ns1:role_addressee ns1:pandya_king ;
+    ns1:role_agent ns1:kannagi .
+
+ns1:x20 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 7.8 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kovalan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "mind_elsewhere" ;
+    ns1:line "SIL-07-0306",
+        "SIL-07-0307" ;
+    ns1:mood "thought" ;
+    ns1:role_agent ns1:madhavi .
+
+ns1:x21 a ns2:I2_Belief ;
+    ns2:J4_that ns1:x20 ;
+    ns2:J5_holds_to_be "accept" ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 7.81 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "believe" ;
+    ns1:line "SIL-07-0307" ;
+    ns1:mood "asserted" ;
+    ns1:role_holder ns1:kovalan .
+
+ns1:x22 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 7.82 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "fate_explains" ;
+    ns1:line "SIL-07-0308" ;
+    ns1:mood "asserted" ;
+    ns1:role_patient ns1:kovalan .
+
+ns1:x40 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N749ba7007b4b426f9ff5e60defc5dc94 ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "carry" ;
+    ns1:line "MAN-06-0210",
+        "MAN-06-0213",
+        "MAN-06-0214" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:manimekhala_deity ;
+    ns1:role_patient ns1:manimekalai ;
+    ns1:role_place ns1:manipallavam .
+
+ns1:x50 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 26.3 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:kannagi ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "disguise" ;
+    ns1:line "MAN-26-0069" ;
+    ns1:mood "command" ;
+    ns1:role_agent ns1:manimekalai .
+
+ns1:b09 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 20.2 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:kanchanan ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "is_identity" ;
+    ns1:line "MAN-20-0033" ;
+    ns1:mood "claimed" ;
+    ns1:role_is ns1:kayasandikai ;
+    ns1:role_seen ns1:disguised_woman .
+
+ns1:c07 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime _:N758676effa0a4f87bdfab859d148d5ed ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "receive" ;
+    ns1:line "MAN-11-0057",
+        "MAN-11-0058" ;
+    ns1:mood "asserted" ;
+    ns1:role_place ns1:gomukhi ;
+    ns1:role_recipient ns1:manimekalai ;
+    ns1:role_theme ns1:amudasurabhi .
+
+ns1:d02 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition -50.0 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:madurapati ;
+            ns1:position 1 ],
+        [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "prev_bharatan" ;
+    ns1:kind "accuse" ;
+    ns1:line "SIL-23-0156",
+        "SIL-23-0157" ;
+    ns1:mood "asserted" ;
+    ns1:role_addressee ns1:kalinga_king ;
+    ns1:role_agent ns1:bharatan ;
+    ns1:role_target ns1:sangaman .
+
+ns1:e01 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.5 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "throw_breast" ;
+    ns1:line "SIL-21-0043",
+        "SIL-21-0046" ;
+    ns1:mood "asserted" ;
+    ns1:role_agent ns1:kannagi ;
+    ns1:role_place ns1:madurai .
+
+ns1:e04 a <http://www.cidoc-crm.org/cidoc-crm/E7_Activity> ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 21.8 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ] ;
+    ns1:birth "main" ;
+    ns1:kind "burn" ;
+    ns1:line "SIL-21-0056",
+        "SIL-21-0057" ;
+    ns1:mood "asserted" ;
+    ns1:reason [ ns1:of ns1:d08 ;
+            ns1:rel "fulfils" ],
+        [ ns1:of ns1:e02 ;
+            ns1:rel "enables" ],
+        [ ns1:of ns1:e01 ;
+            ns1:rel "causes" ] ;
+    ns1:role_agent ns1:fire ;
+    ns1:role_patient ns1:madurai .
+
+ns1:a09 a ns2:I4_Proposition_Set ;
+    time:hasTime [ time:inTimePosition [ time:numericPosition 16.14 ] ] ;
+    prov:qualifiedAttribution [ prov:agent ns1:poet ;
+            ns1:position 0 ],
+        [ prov:agent ns1:goldsmith ;
+            ns1:position 1 ] ;
+    ns1:birth "main" ;
+    ns1:kind "steal" ;
+    ns1:line "SIL-16-0145",
+        "SIL-16-0147" ;
+    ns1:mood "claimed" ;
+    ns1:role_agent ns1:kovalan ;
+    ns1:role_theme ns1:ank_q .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N55b883f5a9fe4171869e12c4fe43c5fa ;
+    ns1:args "kavunti" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Na8965e7b4ed2489b905912122b40fe75 ;
+    ns1:args "lakshmi" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Nf7fc4bde78784997b3d33d224832c0e7 ;
+    ns1:args "rahulan" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N8f222689ca57489593d2db0ca8a51267 ;
+    ns1:args "kovalan,ank_k1" ;
+    ns1:fluent "holds" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N5e763d5987b94febbfa71ec9a3869ed5 ;
+    ns1:args "kayasandikai" ;
+    ns1:fluent "hungry" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N8277df23cc33481ca6d47be9c1d4fc8d ;
+    ns1:args "ank_k1|ank_k2" ;
+    ns1:fluent "broken" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Ne79eed3a6aab43febfffe1c444c07e18 ;
+    ns1:args "goldsmith,ank_q" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N758676effa0a4f87bdfab859d148d5ed ;
+    ns1:args "gomukhi,amudasurabhi" ;
+    ns1:fluent "holds" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N29c29d39aafc4e20b56650b61440396f ;
+    ns1:args "hunchback,garland" ;
+    ns1:fluent "holds" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Nead729266df843dc80c6b408d1d524da ;
+    ns1:args "aputhiran" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Nbb717a26fc5e41a3a6c1e8735632fd70 ;
+    ns1:args "kayasandikai" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N758676effa0a4f87bdfab859d148d5ed ;
+    ns1:args "manimekalai,amudasurabhi" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Ne79eed3a6aab43febfffe1c444c07e18 ;
+    ns1:args "pandya_queen,ank_q" ;
+    ns1:fluent "holds" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N10fd3f90103e42b494fc6c27a7b84d89 ;
+    ns1:args "aputhiran,amudasurabhi" ;
+    ns1:fluent "holds" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Nda7623a726ae41038483f29ed284cb30 ;
+    ns1:args "prison_site,charity" ;
+    ns1:fluent "function" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N4e85e01a8ad94946ba14d54f8b967495 ;
+    ns1:args "matari,kannagi" ;
+    ns1:fluent "in_care_of" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N8f222689ca57489593d2db0ca8a51267 ;
+    ns1:args "pandya_king,ank_k1" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Ne558a76cbb044a04aed2a783e3424bd1 ;
+    ns1:args "kovalan,ank_k1" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Nda7623a726ae41038483f29ed284cb30 ;
+    ns1:args "prison_site,jail" ;
+    ns1:fluent "function" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Neb9d9b46471f43779a78d91c89e02e80 ;
+    ns1:args "manimekalai,kayasandikai" ;
+    ns1:fluent "looks_like" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Nd272326e392844d58b711a8b17aebf97 ;
+    ns1:args "manimekhala_deity,town_woman" ;
+    ns1:fluent "looks_like" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N4713cc19c26f4ccc85b31f3a5cb9bcc7 ;
+    ns1:args "aputhiran,amudasurabhi" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N6b358def1f0145529ffa915eb7cccf54 ;
+    ns1:args "manimekalai,male_ascetic" ;
+    ns1:fluent "looks_like" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N471c89e9663c4910b9f9c5c3a3c8544c ;
+    ns1:args "pandya_queen" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Ne558a76cbb044a04aed2a783e3424bd1 ;
+    ns1:args "kannagi,ank_k1" ;
+    ns1:fluent "holds" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N10fd3f90103e42b494fc6c27a7b84d89 ;
+    ns1:args "gomukhi,amudasurabhi" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N749ba7007b4b426f9ff5e60defc5dc94 ;
+    ns1:args "manimekalai,manipallavam" ;
+    ns1:fluent "at" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N145fc5aaba61406c86c1409ccb0fcda3 ;
+    ns1:args "kannagi,ank_k2" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Nd1a35b9eab9541799c27e10fc68f66be ;
+    ns1:args "manimekalai,kayasandikai" ;
+    ns1:fluent "looks_like" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:Ne2e65cf465124062831ae674fc3c8b37 ;
+    ns1:args "cutamati,other_bowl" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N9889b71dd6fc4ff5b1b0e96108cad486 ;
+    ns1:args "matari" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N4665b004580b4042b762b07652968011 ;
+    ns1:args "hunchback,garland" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N351addfafcf04fac9c7c688811481ba1 ;
+    ns1:args "pandya_king" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N30c19aa41d6c43879ff2b934d2c64dd0 ;
+    ns1:args "udayakumaran" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N145fc5aaba61406c86c1409ccb0fcda3 ;
+    ns1:args "kannagi,ank_k1" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N3d99e1020b604969afae58e04dba8e64 ;
+    ns1:args "kovalan" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N84106f615dc245528e6bba80cb47e020 ;
+    ns1:args "matari,kannagi" ;
+    ns1:fluent "in_care_of" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N29c29d39aafc4e20b56650b61440396f ;
+    ns1:args "kovalan,garland" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N2dfec21a33f94c47b2bcfba26b5f6af7 ;
+    ns1:args "kayasandikai" ;
+    ns1:fluent "hungry" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N917324933e4c4f0abf098ea610723642 ;
+    ns1:args "sangaman" ;
+    ns1:fluent "alive" ;
+    ns1:sign "-" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N34c31ac6d2b0490488b334173277bdc2 ;
+    ns1:args "pandya_queen,ank_q" ;
+    ns1:fluent "holds" ;
+    ns1:sign "+" .
+
+[] a <http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State> ;
+    time:hasTime _:N8bf67763f5ba43ed9a1834f6ded1bcd6 ;
+    ns1:args "kannagi_image,kannagi" ;
+    ns1:fluent "depicts" ;
+    ns1:sign "+" .
+
+_:N0613c6e887e44be48487e83557bfba2a time:numericPosition -63.0 .
+
+_:N1014e11ff4ac413985f89853e34d12cb time:numericPosition 22.7 .
+
+_:N168ea9a475d94d08b7217af8335687d7 time:numericPosition 6.9 .
+
+_:N17039ff2f5cb4e33b198c0a772623163 time:numericPosition -62.0 .
+
+_:N1b551b5356bd4055afc916284d55d1b9 time:numericPosition 20.9 .
+
+_:N207a135de5a44084bad4f1235862b456 time:numericPosition 15.5 .
+
+_:N210eaa8479344046b9368fc25bfd5df4 time:numericPosition 20.6 .
+
+_:N3f03506ed9bc46e196a8f2dff1f7ba3a time:numericPosition -49.0 .
+
+_:N3ff69decc94e44b49b6bc1958713e4ac time:numericPosition 19.7 .
+
+_:N416a3f0d04c44d489350806fe8a3efa8 time:numericPosition 20.8 .
+
+_:N46e089118d7743ef9a58e547835b294c time:numericPosition -4.5 .
+
+_:N489374bad2e44e80a3453f6d20d20f2b time:numericPosition -5.1 .
+
+_:N4cfd302e7f43469ca5ae99a753501fec time:numericPosition -4.8 .
+
+_:N570b4727a60d4c63b9e747666b76412b time:numericPosition 16.2 .
+
+_:N5bba70eddf18431f9cd5c085d57310fc time:numericPosition 17.9 .
+
+_:N754cfb4558e44e3fa8e68d135e6d68e4 time:numericPosition 0.5 .
+
+_:N7828659b71524020a5d510ac16471d02 time:numericPosition 20.5 .
+
+_:N8088a63ffa6d458096edf7ad896993c3 time:numericPosition 3.2 .
+
+_:N84a8984f3bb64f43afcc702fb64d0456 time:numericPosition 26.4 .
+
+_:N8fe372c1214d4964b496c1ec30416e5f time:numericPosition 20.5 .
+
+_:Na7f4dd24ce1c4f469d1aed22b9a5af2d time:numericPosition 1.0 .
+
+_:Naa5d4a0d3571435cb70e0999f5bfad28 time:numericPosition 17.1 .
+
+_:Naa9591e9608d4cd1be1c6e04e770cbcf time:numericPosition 17.2 .
+
+_:Nb020a4c285f1425a9d2d806e8ab8e5c6 time:numericPosition 22.4 .
+
+_:Nb40189ce355e4f64852f6de4562d934d time:numericPosition 0.1 .
+
+_:Nb7236913797a4289bcf956392805f421 time:numericPosition 11.2 .
+
+_:Nb9ccbc8879bd4ef6a50c2a2f56234ae8 time:numericPosition 16.09 .
+
+_:Nbbf528621cdd426891cdcc844a3525e6 time:numericPosition 22.6 .
+
+_:Ncfbc2a05605b4121b3d999bb76df9b3a time:numericPosition 21.1 .
+
+_:Nd42bcaf2923a420285705502b83846ea time:numericPosition 5.0 .
+
+_:Ndcaf4d47314d474a90653b3c756a37f7 time:numericPosition 3.1 .
+
+_:Nf33de236500f4d65a9d499d33768e72e time:numericPosition 28.5 .
+
+_:Nf529ea8c32244c28a196c934dc04f072 time:numericPosition 5.5 .
+
+_:Nfa6186bcf4a54999b17751c644c064fc time:numericPosition 18.5 .
+
+_:N2dfec21a33f94c47b2bcfba26b5f6af7 time:inTimePosition _:Naa5d4a0d3571435cb70e0999f5bfad28 .
+
+_:N30c19aa41d6c43879ff2b934d2c64dd0 time:inTimePosition _:N7828659b71524020a5d510ac16471d02 .
+
+_:N34c31ac6d2b0490488b334173277bdc2 time:inTimePosition _:Nb40189ce355e4f64852f6de4562d934d .
+
+_:N351addfafcf04fac9c7c688811481ba1 time:inTimePosition _:N416a3f0d04c44d489350806fe8a3efa8 .
+
+_:N3d99e1020b604969afae58e04dba8e64 time:inTimePosition _:N570b4727a60d4c63b9e747666b76412b .
+
+_:N4665b004580b4042b762b07652968011 time:inTimePosition _:Ndcaf4d47314d474a90653b3c756a37f7 .
+
+_:N4713cc19c26f4ccc85b31f3a5cb9bcc7 time:inTimePosition _:N489374bad2e44e80a3453f6d20d20f2b .
+
+_:N471c89e9663c4910b9f9c5c3a3c8544c time:inTimePosition _:N1b551b5356bd4055afc916284d55d1b9 .
+
+_:N4e85e01a8ad94946ba14d54f8b967495 time:inTimePosition _:N207a135de5a44084bad4f1235862b456 .
+
+_:N55b883f5a9fe4171869e12c4fe43c5fa time:inTimePosition _:N1014e11ff4ac413985f89853e34d12cb .
+
+_:N5e763d5987b94febbfa71ec9a3869ed5 time:inTimePosition _:Naa9591e9608d4cd1be1c6e04e770cbcf .
+
+_:N6b358def1f0145529ffa915eb7cccf54 time:inTimePosition _:N84a8984f3bb64f43afcc702fb64d0456 .
+
+_:N749ba7007b4b426f9ff5e60defc5dc94 time:inTimePosition _:N168ea9a475d94d08b7217af8335687d7 .
+
+_:N8277df23cc33481ca6d47be9c1d4fc8d time:inTimePosition _:N210eaa8479344046b9368fc25bfd5df4 .
+
+_:N84106f615dc245528e6bba80cb47e020 time:inTimePosition _:Nb020a4c285f1425a9d2d806e8ab8e5c6 .
+
+_:N8bf67763f5ba43ed9a1834f6ded1bcd6 time:inTimePosition _:Nf33de236500f4d65a9d499d33768e72e .
+
+_:N917324933e4c4f0abf098ea610723642 time:inTimePosition _:N3f03506ed9bc46e196a8f2dff1f7ba3a .
+
+_:N9889b71dd6fc4ff5b1b0e96108cad486 time:inTimePosition _:Nbbf528621cdd426891cdcc844a3525e6 .
+
+_:Na8965e7b4ed2489b905912122b40fe75 time:inTimePosition _:N17039ff2f5cb4e33b198c0a772623163 .
+
+_:Nbb717a26fc5e41a3a6c1e8735632fd70 time:inTimePosition _:N5bba70eddf18431f9cd5c085d57310fc .
+
+_:Nd1a35b9eab9541799c27e10fc68f66be time:inTimePosition _:Ncfbc2a05605b4121b3d999bb76df9b3a .
+
+_:Nd272326e392844d58b711a8b17aebf97 time:inTimePosition _:Nf529ea8c32244c28a196c934dc04f072 .
+
+_:Ne2e65cf465124062831ae674fc3c8b37 time:inTimePosition _:Nd42bcaf2923a420285705502b83846ea .
+
+_:Nead729266df843dc80c6b408d1d524da time:inTimePosition _:N46e089118d7743ef9a58e547835b294c .
+
+_:Neb9d9b46471f43779a78d91c89e02e80 time:inTimePosition _:Nfa6186bcf4a54999b17751c644c064fc .
+
+_:Nf7fc4bde78784997b3d33d224832c0e7 time:inTimePosition _:N0613c6e887e44be48487e83557bfba2a .
+
+_:N10fd3f90103e42b494fc6c27a7b84d89 time:inTimePosition _:N4cfd302e7f43469ca5ae99a753501fec .
+
+_:N145fc5aaba61406c86c1409ccb0fcda3 time:inTimePosition _:Na7f4dd24ce1c4f469d1aed22b9a5af2d .
+
+_:N29c29d39aafc4e20b56650b61440396f time:inTimePosition _:N8088a63ffa6d458096edf7ad896993c3 .
+
+_:N758676effa0a4f87bdfab859d148d5ed time:inTimePosition _:Nb7236913797a4289bcf956392805f421 .
+
+_:N8f222689ca57489593d2db0ca8a51267 time:inTimePosition _:N8fe372c1214d4964b496c1ec30416e5f .
+
+_:Nda7623a726ae41038483f29ed284cb30 time:inTimePosition _:N3ff69decc94e44b49b6bc1958713e4ac .
+
+_:Ne558a76cbb044a04aed2a783e3424bd1 time:inTimePosition _:Nb9ccbc8879bd4ef6a50c2a2f56234ae8 .
+
+_:Ne79eed3a6aab43febfffe1c444c07e18 time:inTimePosition _:N754cfb4558e44e3fa8e68d135e6d68e4 .
+

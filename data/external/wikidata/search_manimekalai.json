@@ -1,0 +1,134 @@
+{
+ "searchinfo": {
+  "search": "Manimekalai"
+ },
+ "search": [
+  {
+   "id": "Q1480970",
+   "title": "Q1480970",
+   "pageid": 1418885,
+   "concepturi": "http://www.wikidata.org/entity/Q1480970",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q1480970",
+   "display": {
+    "label": {
+     "value": "Manimekalai",
+     "language": "en"
+    },
+    "description": {
+     "value": "one of five great Tamil epics, Buddhist",
+     "language": "en"
+    }
+   },
+   "label": "Manimekalai",
+   "description": "one of five great Tamil epics, Buddhist",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Manimekalai"
+   }
+  },
+  {
+   "id": "Q60764140",
+   "title": "Q60764140",
+   "pageid": 60621422,
+   "concepturi": "http://www.wikidata.org/entity/Q60764140",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q60764140",
+   "display": {
+    "label": {
+     "value": "Manimekalai",
+     "language": "en"
+    },
+    "description": {
+     "value": "Narrator of Manimegalai Kappiyam",
+     "language": "en"
+    }
+   },
+   "label": "Manimekalai",
+   "description": "Narrator of Manimegalai Kappiyam",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Manimekalai"
+   }
+  },
+  {
+   "id": "Q19893686",
+   "title": "Q19893686",
+   "pageid": 21537214,
+   "concepturi": "http://www.wikidata.org/entity/Q19893686",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q19893686",
+   "display": {
+    "label": {
+     "value": "Manimekalai",
+     "language": "en"
+    },
+    "description": {
+     "value": "1959 Tamil film directed by V. S. Raghavan",
+     "language": "en"
+    }
+   },
+   "label": "Manimekalai",
+   "description": "1959 Tamil film directed by V. S. Raghavan",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Manimekalai"
+   }
+  },
+  {
+   "id": "Q85783644",
+   "title": "Q85783644",
+   "pageid": 85058945,
+   "concepturi": "http://www.wikidata.org/entity/Q85783644",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q85783644",
+   "display": {
+    "label": {
+     "value": "Manimekalai",
+     "language": "en"
+    },
+    "description": {
+     "value": "1940 Indian film directed by Bomman Irani",
+     "language": "en"
+    }
+   },
+   "label": "Manimekalai",
+   "description": "1940 Indian film directed by Bomman Irani",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Manimekalai"
+   }
+  },
+  {
+   "id": "Q140308664",
+   "title": "Q140308664",
+   "pageid": 133746990,
+   "concepturi": "http://www.wikidata.org/entity/Q140308664",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q140308664",
+   "display": {
+    "label": {
+     "value": "Manimekalai",
+     "language": "en"
+    },
+    "description": {
+     "value": "book by  A.Madhaviah",
+     "language": "en"
+    }
+   },
+   "label": "Manimekalai",
+   "description": "book by  A.Madhaviah",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Manimekalai"
+   }
+  }
+ ],
+ "search-continue": 5,
+ "success": 1
+}

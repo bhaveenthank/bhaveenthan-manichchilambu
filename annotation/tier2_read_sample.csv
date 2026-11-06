@@ -1,0 +1,41 @@
+﻿n,lines,kind,mood,voice,roles,text,my_reading,note
+0,MAN-20-0091 MAN-20-0092 MAN-20-0093,accompany,metaphor,poet,"{""agent"": ""udayakumaran"", ""theme"": ""kama""}",வான்தேர்ப் பாகனைப் மீன் திகழ் கொடியனை / கருப்பு வில்லியை அருப்புக் கணை மைந்தனை / உயாவுத் துணையாக வயாவொடும் போகி,right,
+1,SIL-16-0062,be_confused,thought,poet>kovalan,"{""agent"": ""kovalan""}",யானுளங் கலங்கி யாவதும் அறியேன்,right,
+2,SIL-20-0072,sell,intended,poet>kannagi,"{""agent"": ""kovalan"", ""theme"": ""anklet""}",என்காற் சிலம்புபகர்தல் வேண்டி நின்பாற்,right,
+3,SIL-16-0125 SIL-16-0126,enter,asserted,poet>goldsmith,"{""agent"": ""kovalan"", ""place"": ""devakottam_prison""}",கோவலன் சென்றக் குறுமக னிருக்கையோர் / தேவ கோட்டச் சிறையகம் புக்கபின்,partly,"event right, voice wrong: the poet narrates this, not the goldsmith"
+4,SIL-16-0102,pass_through,asserted,poet,"{""agent"": ""kovalan"", ""place"": ""tateru_mandram""}",தாதெரு மன்றந் தானுடன் கழிந்து,right,
+5,SIL-20-0086,declare_self_thief,metaphor,poet>pandya_king,"{""agent"": ""pandya_king""}",யானோ அரசன் யானே கள்வன்,partly,"event right, mood doubtful: he says it of himself, it isn't a metaphor"
+6,SIL-16-0044 SIL-16-0045,perform_rites,asserted,poet,{},அரசர் பின்னோர்க் கருமறை மருங்கின் / உரிய வெல்லாம் ஒருமுறை கழித்தாங்கு,partly,no people given
+7,SIL-16-0162 SIL-16-0163 SIL-16-0164,say,asserted,poet,"{""agent"": ""mighty_men"", ""theme"": ""kovalan""}",இலக்கண முறைமையின் இருந்தோன் ஈங்கிவன் / கொலைப்படு மகனலன் என்றுகூறும் / அருந்திறல் மாக்களை அகநகைத் துரைத்துக்,right,
+8,SIL-20-0082,break,asserted,poet,"{""agent"": ""kannagi"", ""theme"": ""kannagi_anklet""}",கண்ணகி அணிமணிக் காற்சிலம் புடைப்ப,right,
+9,MAN-20-0048,drip,asserted,poet>unnamed_speaker,"{""patient"": ""speaker_nose""}",குமிழ் மூக்கு இவை காண் உமிழ் சீ ஒழுக்குவ,right,
+10,MAN-20-0123 MAN-20-0124,kill,asserted,poet>deity,"{""agent"": ""fate"", ""patient"": ""udayakumaran""}",ஊழ்வினை வந்து இங்கு உதயகுமரனை / ஆர் உயிர் உண்டதுஆயினும் அறியாய்,right,
+11,MAN-20-0022 MAN-20-0023 MAN-20-0024,curse,asserted,poet>unknown_speaker,"{""agent"": ""sage"", ""patient"": ""woman"", ""place"": ""podhiyil_hill""}",'மழை சூழ் குடுமிப் பொதியில் குன்றத்துக் / கழை வளர் கான் யாற்று பழப் வினைப் பயத்தான் / மாதவன் மாதர்க்கு இட்ட சாபம்,right,
+12,SIL-16-0149 SIL-16-0150,summon,asserted,poet,"{""agent"": ""pandya_king"", ""patient"": ""city_guards""}",சினையலர் வேம்பன் தேரான் ஆகி / ஊர்காப் பாளரைக் கூவி ஈங்கென்,right,
+13,MAN-20-0116 MAN-20-0117 MAN-20-0118 MAN-20-0119 MAN-20-0120,swallow,conditional,poet>painted_doll,"{""agent"": ""vindhakadikai"", ""patient"": ""sky_travelers"", ""place"": ""vindhya_mountain""}",அந்தரம் செல்வோர் அந்தரி இருந்த / விந்த மால் வரை மீமிசைப் போகார் / போவார் உளர்அனின் பொங்கிய சினத்தள் / சாயையின் வாங்கித் தன் வயிற்று இடூஉம் / விந்தம் காக்கும் விந்தா கடிகை,right,
+14,SIL-16-0143 SIL-16-0144,put_to_sleep,claimed,poet>unnamed_speaker,"{""agent"": ""thief"", ""patient"": ""door_guards"", ""instrument"": ""mantra""}",துன்னிய மந்திரந் துணையெனக் கொண்டு / வாயி லாளரை மயக்குதுயி லுறுத்துக்,right,
+15,MAN-20-0084 MAN-20-0085 MAN-20-0086,bewitch,thought,poet>udayakumaran,"{""agent"": ""manimekalai""}",'வளை சேர் செங் கை மணிமேகலையே / காயசண்டிகை ஆய் கடிஞை ஏந்தி / மாய விஞ்சையின் மனம் மயக்குறுத்தனள்,right,
+16,SIL-20-0083,spring_out,asserted,poet,"{""theme"": ""gem"", ""target"": ""pandya_king""}","மன்னவன் வாய்முதல் தெறித்தது மணியே, மணி கண்டு",right,
+17,MAN-20-0090,rise,asserted,poet,"{""agent"": ""udayakumaran""}",வந்து அறிகுவன்' என மனம் கொண்டு எழுந்து,right,
+18,MAN-20-0001 MAN-20-0002,remove,asserted,poet,"{""agent"": ""manimekalai"", ""theme"": ""prison_site""}",அரசன் ஆணையின் ஆய் இழை அருளால் / நிரயக் கொடுஞ் சிறை நீக்கிய கோட்டம்,partly,mixes the king's order with her grace; agent doubtful
+19,MAN-20-0112,approach,command,poet>painted_doll,"{""agent"": ""kanchanan""}",'அணுகல் அணுகல்! விஞ்சைக் காஞ்சன!,wrong,polarity lost: the line says do NOT approach
+20,SIL-20-0039,lose_husband,claimed,poet>kannagi,"{""agent"": ""kannagi"", ""patient"": ""kovalan""}",கணவனை இழந்தாள் கடையகத் தாளென்று,partly,"voice wrong: it's the guard's message, not Kannagi's words"
+21,SIL-16-0160 SIL-16-0161,show,asserted,poet,"{""agent"": ""goldsmith"", ""theme"": ""anklet""}",செய்வினைச் சிலம்பின் செய்தி யெல்லாம் / பொய்வினைக் கொல்லன் புரிந்துடன் காட்ட,right,
+22,MAN-20-0078 MAN-20-0081,grow_angry,asserted,poet,"{""agent"": ""kanchanan""}",ஈங்கு ஒழிந்தனள்' என இகல் எரி பொத்தி / காஞ்சனன் என்னும் கதிர் வாள் விஞ்சையன்,right,
+23,MAN-20-0041 MAN-20-0042,look_at_hair,command,poet>woman_with_bowl,"{""agent"": ""udayakumaran"", ""theme"": ""old_woman""}",தண் அறல் வண்ணம் திரிந்து வேறாகி / வெண் மணல் ஆகிய கூந்தல் காணாய்,right,
+24,SIL-16-0056,call_to_come,command,poet,"{""agent"": ""kovalan"", ""addressee"": ""kannagi""}",மையீ ரோதியை வருகெனப் பொருந்திக்,right,
+25,SIL-16-0077 SIL-16-0078 SIL-16-0079 SIL-16-0080,hide,asserted,poet>kannagi,"{""agent"": ""kannagi"", ""theme"": ""grief""}",அற்புளஞ் சிறந்தாங் கருண்மொழி அளைஇ / எற்பா ராட்ட யானகத் தொளித்த / நோயும் துன்பமும் நொடிவது போலுமென் / வாயல் முறுவற்கவர் உள்ளகம் வருந்தப்,right,
+26,SIL-16-0086 SIL-16-0087 SIL-16-0088,accompany,claimed,poet>kovalan,"{""agent"": ""kannagi"", ""patient"": ""kovalan""}",நாணமும் மடனும் நல்லோ ரேத்தும் / பேணிய கற்பும் பெருந்துணை யாக / என்னொடு போந்தீங் கென்றுயர் களைந்த,right,
+27,SIL-16-0063 SIL-16-0064 SIL-16-0065 SIL-16-0066,keep_company,asserted,poet>kovalan,"{""agent"": ""kovalan""}",வறுமொழி யாளரொடு வம்பப் பரத்தரொடு / குறுமொழி கோட்டி நெடுநகை புக்குப் / பொச்சாப் புண்டு பொருளுரை யாளர் / நச்சுக்கொன் றேற்கும் நன்னெறி யுண்டோ,right,
+28,MAN-20-0057 MAN-20-0058,droop,asserted,poet>unnamed_speaker,"{""patient"": ""speaker_shoulders""}",தாழ்ந்து ஓசி தெங்கின் மடல் போல் திரங்கி / வீழ்ந்தன இள வேய்த் தோளும் காணாய்,right,
+29,MAN-20-0073 MAN-20-0074,cite_proverbs,thought,poet>kanchanan,"{""agent"": ""manimekalai"", ""addressee"": ""udayakumaran""}",மதுக் கமழ் அலங்கல் மன்னவன் மகற்கு / முதுக்குறை முதுமொழி எடுத்துக் காட்டி,right,
+30,SIL-16-0006,lodge,asserted,poet,"{""agent"": ""matari"", ""patient"": ""kannagi"", ""place"": ""guarded_house""}",காவற் சிற்றிற் கடிமனைப் படுத்துச்,right,
+31,SIL-16-0029 SIL-16-0030,cut,asserted,poet,"{""agent"": ""kannagi"", ""theme"": ""green_vegetables"", ""instrument"": ""knife""}",மெல்விரல் சிவப்பப் பல்வேறு பசுங்காய் / கொடுவாய்க் குயத்து விடுவாய் செய்யத்,right,
+32,MAN-20-0013 MAN-20-0014 MAN-20-0015 MAN-20-0016,seize,intended,poet>udayakumaran,"{""agent"": ""udayakumaran"", ""patient"": ""manimekalai""}",கேட்டனன் ஆகி 'அத் தோட்டு ஆர் குழலியை / மதியோர் எள்ளினும் மன்னவன் காயினும் / பொதியில் நீங்கிய பொழுதில் சென்று / பற்றினன் கொண்டு என் பொன் தேர் ஏற்றி,right,
+33,SIL-20-0062 SIL-20-0063,relieve_distress,asserted,poet>kannagi,"{""agent"": ""dove_relieving_one"", ""patient"": ""dove""}",எள்ளறு சிறப்பின் இமையவர் வியப்பப் / புள்ளுறு புன்கண் தீர்த்தோன் அன்றியும்,right,
+34,SIL-16-0061 SIL-16-0062,wonder,question,poet>kovalan,"{""agent"": ""kovalan""}",மாயங் கொல்லோ வல்வினை கொல்லோ / யானுளங் கலங்கி யாவதும் அறியேன்,right,
+35,SIL-20-0095 SIL-20-0096,commit_wrong,asserted,poet,"{""agent"": ""pandya_king""}",பல்லவையோர் சொல்லும் பழுதன்றே--பொல்லா / வடுவினையே செய்த வயவேந்தன் றேவி,right,
+36,MAN-20-0114 MAN-20-0115 MAN-20-0121,swallow,asserted,poet>painted_doll,"{""agent"": ""vindhakadikai"", ""patient"": ""kayasandikai"", ""place"": ""vindhya_mountain""}",காயசண்டிகை தன் கடும் பசி நீங்கி / வானம் போவழி வந்தது கேளாய் / அம் மலைமிசைப் போய் அவள் வயிற்று அடங்கினள்,right,
+37,SIL-16-0100,confront,asserted,poet,"{""agent"": ""bull"", ""patient"": ""kovalan""}",இமிலே றெதிர்ந்த திழுக்கென அறியான்,right,
+38,SIL-16-0174 SIL-16-0175,appear_divine,conditional,poet>goldsmith,"{""agent"": ""thieves""}",தெய்வத் தோற்றம் தௌிகுவ ராயின் / கையகத் துறுபொருள் காட்டியும் பெயர்குவர்,partly,my reading of the condition differs; agent doubtful
+39,MAN-20-0043,look_at_forehead,question,poet>woman_with_bowl,"{""agent"": ""udayakumaran"", ""theme"": ""old_woman""}",பிறை நுதல் வண்ணம் காணாயோ நீ,right,

@@ -1,0 +1,33 @@
+{
+ "modules": 20,
+ "triples": 349,
+ "closure_triples": 6199,
+ "clashes": 0,
+ "shacl": 0,
+ "coverage": {
+  "m01_source": 163,
+  "m02_lexicon": 0,
+  "m03_agents": 118,
+  "m04_objects": 30,
+  "m05_events": 120,
+  "m06_custody": 15,
+  "m07_states": 15,
+  "m08_time": 27,
+  "m09_place": 20,
+  "m10_speech": 98,
+  "m11_belief": 24,
+  "m12_identity": 11,
+  "m13_plans": 3,
+  "m14_causes": 20,
+  "m15_social": 12,
+  "m16_emotion": 0,
+  "m17_cosmology": 16,
+  "m18_interpretation": 8,
+  "m19_crosstext": 5,
+  "m20_provenance": 163
+ },
+ "unused": [
+  "m02_lexicon",
+  "m16_emotion"
+ ]
+}

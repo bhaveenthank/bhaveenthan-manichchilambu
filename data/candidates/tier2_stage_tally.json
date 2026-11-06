@@ -1,0 +1,12 @@
+{
+ "few": {
+  "calls": 51,
+  "kept": 656,
+  "rejected": 2
+ },
+ "notext": {
+  "calls": 51,
+  "kept": 211,
+  "rejected": 1
+ }
+}

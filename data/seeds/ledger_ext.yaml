@@ -1,0 +1,73 @@
+# Third batch: events from the ranked list that weren't encoded yet, written under format v2.
+# The last section is deliberately dull. A benchmark made only of hard cases would flatter any method built for them.
+
+# ---- dreams: nothing in here may ever change the world
+- {id: x01, ep: dream, kind: travel, voice: [poet, kannagi], mood: dreamed, t: 9.6, roles: {agent: kovalan, companion: kannagi}, lines: [SIL-09-0045, SIL-09-0046], check: பெரும்பதியுள்}
+- {id: x02, ep: dream, kind: slander, voice: [poet, kannagi], mood: dreamed, t: 9.6, roles: {agent: townsfolk, target: kannagi}, lines: [SIL-09-0047, SIL-09-0048], check: இட்டனர் ஊரார்}
+- {id: x03, ep: dream, kind: harmed, voice: [poet, kannagi], mood: dreamed, t: 9.6, roles: {patient: kovalan}, lines: [SIL-09-0049], check: உற்றதுஓர் தீங்கு}
+- {id: x04, ep: dream, kind: plead, voice: [poet, kannagi], mood: dreamed, t: 9.6, roles: {agent: kannagi, addressee: pandya_king}, lines: [SIL-09-0050], check: காவலன் முன்னர்யான்}
+- {id: x05, ep: dream, kind: sceptre_falls, voice: [poet, pandya_queen], mood: dreamed, t: 19.9, roles: {theme: sceptre, holder: pandya_king}, lines: [SIL-20-0002, SIL-20-0032], check: குடையொடு கோல்வீழ}
+- {id: x06, ep: dream, kind: plead, voice: [poet], mood: asserted, t: 20.3, roles: {agent: kannagi, addressee: pandya_king}, because: [{of: x04, rel: foreshadowed}], lines: [SIL-20-0061], check: தேரா மன்னா}
+
+# ---- entrusting a person is not handing over an object
+- {id: x10, ep: entrust, kind: entrust, voice: [poet, kavunti], mood: asserted, t: 15.5, roles: {agent: kavunti, theme: kannagi, recipient: matari}, condition: "until she reaches the house of rich folk", does: ["+in_care_of(matari,kannagi)"], lines: [SIL-15-0129, SIL-15-0130], check: கடைக்கலந் தந்தேன்}
+- {id: x11, ep: entrust, kind: lose_ward, voice: [poet, matalan, matari], mood: asserted, t: 22.4, roles: {agent: matari, theme: kannagi}, does: ["-in_care_of(matari,kannagi)"], lines: [SIL-27-0076], check: அடைக்கல மிழந்தேன்}
+
+# ---- a song misread
+- {id: x20, ep: song, kind: mind_elsewhere, voice: [poet, kovalan], mood: thought, t: 7.8, roles: {agent: madhavi}, lines: [SIL-07-0306, SIL-07-0307], check: தான்ஒன்றின்மேல்}
+- {id: x21, ep: song, kind: believe, voice: [poet], mood: asserted, t: 7.81, roles: {holder: kovalan}, content: x20, stance: accept, heard_by: [kovalan], lines: [SIL-07-0307], check: பாடினாள்என}
+- {id: x22, ep: song, kind: fate_explains, voice: [poet], mood: asserted, t: 7.82, roles: {patient: kovalan}, lines: [SIL-07-0308], check: ஊழ்வினைவந்து}
+- {id: x23, ep: song, kind: leave, voice: [poet], mood: asserted, t: 7.9, roles: {agent: kovalan, target: madhavi}, because: [{of: x21, rel: motivates}, {of: x22, rel: karma, voice: [poet]}], lines: [SIL-07-0309, SIL-07-0311], check: கோவலன்தான் போனபின்னர்}
+
+# ---- the dead man rises: told straight by the poet, doubted by Kannagi
+- {id: x30, ep: risen, kind: rise, voice: [poet], mood: asserted, t: 19.5, after_death: true, roles: {agent: kovalan}, lines: [SIL-19-0062], check: நின்றான் எழுந்து}
+- {id: x31, ep: risen, kind: wipe_tears, voice: [poet], mood: asserted, t: 19.51, after_death: true, roles: {agent: kovalan, target: kannagi}, lines: [SIL-19-0063], check: கண்ணீர்கை யான்மாற்ற}
+- {id: x32, ep: risen, kind: bid_stay, voice: [poet], mood: asserted, t: 19.52, after_death: true, roles: {agent: kovalan, addressee: kannagi}, lines: [SIL-19-0067], check: இருந்தைக்க}
+- {id: x33, ep: risen, kind: illusion, voice: [poet, kannagi], mood: question, t: 19.53, roles: {theme: risen_kovalan}, lines: [SIL-19-0068], check: மாயங்கொல்}
+
+# ---- carried across the sea, and a goddess in disguise
+- {id: x40, ep: transport, kind: carry, voice: [poet], mood: asserted, t: 6.9, roles: {agent: manimekhala_deity, patient: manimekalai, place: manipallavam}, does: ["+at(manimekalai,manipallavam)"], lines: [MAN-06-0210, MAN-06-0213, MAN-06-0214], check: மணிபல்லவத்திடை மணிமேகலா}
+- {id: x41, ep: transport, kind: carry, voice: [poet, manimekhala_deity], mood: asserted, t: 6.9, roles: {agent: manimekhala_deity, patient: manimekalai, place: manipallavam}, retells: x40, lines: [MAN-07-0021, MAN-07-0022], check: மணிபல்லவத்திடை வைத்தேன்}
+- {id: x42, ep: transport, kind: disguise, voice: [poet], mood: asserted, t: 5.5, roles: {agent: manimekhala_deity, form: town_woman}, does: ["+looks_like(manimekhala_deity,town_woman)"], lines: [MAN-05-0095, MAN-05-0096], check: பைந்தொடி ஆகி}
+
+# ---- the ascetic form, on Kannagi's instruction
+- {id: x50, ep: ascetic, kind: disguise, voice: [poet, kannagi], mood: command, t: 26.3, roles: {agent: manimekalai}, lines: [MAN-26-0069], check: வேற்று உருக் கொள்க}
+- {id: x51, ep: ascetic, kind: disguise, voice: [poet], mood: asserted, t: 26.4, roles: {agent: manimekalai, form: male_ascetic, instrument: mantra}, does: ["+looks_like(manimekalai,male_ascetic)"], because: [{of: x50, rel: motivates}], lines: [MAN-26-0071], check: மாதவன் வடிவு}
+
+# ---- what Madhavi says in Manimekalai
+- {id: x60, ep: madhavi, kind: child_of, voice: [poet, madhavi], mood: address, t: 2.5, roles: {agent: manimekalai, target: kannagi}, lines: [MAN-02-0055], check: பத்தினி மகள் மணிமேகலை}
+- {id: x61, ep: madhavi, kind: burn, voice: [poet, madhavi], mood: asserted, t: 21.8, roles: {agent: kannagi, patient: madurai}, retells: e04, lines: [MAN-02-0053, MAN-02-0054], check: கனை எரி ஊட்டிய}
+- {id: x62, ep: madhavi, kind: teach, voice: [poet, madhavi], mood: asserted, t: 2.2, roles: {agent: aravanan, addressee: madhavi}, carries: x63, lines: [MAN-02-0061, MAN-02-0064], check: அறவண அடிகள்}
+- {id: x63, ep: madhavi, kind: birth_is_suffering, voice: [poet, madhavi, aravanan], mood: claimed, t: 2.2, roles: {theme: birth}, lines: [MAN-02-0064], check: பிறந்தோர் உறுவது}
+
+# ---- the stone, the image and the goddess are three things
+- {id: x70, ep: image, kind: fetch_stone, voice: [poet, poets_at_court], mood: conditional, t: 25.5, roles: {agent: cenkuttuvan, theme: himalaya_stone}, lines: [SIL-25-0118, SIL-25-0119], check: கற்கால் கொள்ளினுங்}
+- {id: x71, ep: image, kind: northern_insult, voice: [poet, cenkuttuvan, himalaya_ascetics], mood: claimed, t: 25.8, roles: {agent: northern_kings}, lines: [SIL-26-0009, SIL-26-0010], check: அரைசர் வாய்மொழி}
+- {id: x72, ep: image, kind: stone_on_heads, voice: [poet], mood: asserted, t: 27, roles: {agent: cenkuttuvan, patient: northern_kings, theme: himalaya_stone}, lines: [MAN-26-0087, MAN-26-0089], check: தெய்வக் கல்லும்}
+- {id: x73, ep: image, kind: install, voice: [poet], mood: asserted, t: 28.5, roles: {agent: cenkuttuvan, theme: kannagi_image}, does: ["+depicts(kannagi_image,kannagi)"], lines: [SIL-28-0228, SIL-28-0233], check: தெய்வப் படிமத்து}
+
+# ---- teaching isn't doing
+- {id: x80, ep: doctrine, kind: ask, voice: [poet], mood: asserted, t: 27.1, roles: {agent: manimekalai, addressee: vaidika_teacher}, lines: [MAN-27-0003, MAN-27-0004], check: அளவை வாதியை}
+- {id: x81, ep: doctrine, kind: truth_by_proof, voice: [poet, vaidika_teacher], mood: claimed, t: 27.2, roles: {theme: knowledge}, lines: [MAN-27-0013], check: பொருளின் உண்மை}
+- {id: x82, ep: doctrine, kind: find_no_truth, voice: [poet, kannagi], mood: predicted, t: 26.25, roles: {agent: manimekalai}, lines: [MAN-26-0065], check: மெய் வகை இன்மை}
+
+# ---- Kannagi and the hill folk
+- {id: x90, ep: worship, kind: lost_husband, voice: [poet, kannagi], mood: asserted, t: 23.6, roles: {agent: kannagi, patient: kovalan}, lines: [SIL-24-0007], check: கணவனையங்கு}
+- {id: x91, ep: worship, kind: ascend, voice: [poet, hill_folk], mood: asserted, t: 23.9, roles: {agent: kannagi, companion: kovalan}, retells: d09, lines: [SIL-24-0009, SIL-24-0010], check: கொண்டுபோயினார்}
+- {id: x92, ep: worship, kind: take_as_deity, voice: [poet, hill_folk], mood: command, t: 24, roles: {agent: hill_folk, theme: kannagi}, lines: [SIL-24-0013], check: தெய்வங் கொள்ளுமின்}
+
+# ---- plain events: one voice, told straight, nothing tricky
+- {id: s01, ep: plain, kind: dance, voice: [poet], mood: asserted, t: 3.0, roles: {agent: madhavi}, lines: [SIL-03-0161], check: தலைஅரங்கு ஏறி}
+- {id: s02, ep: plain, kind: live_with, voice: [poet], mood: asserted, t: 3.4, roles: {agent: kovalan, target: madhavi}, lines: [SIL-03-0172], check: மாதவி தன்னொடு}
+- {id: s03, ep: plain, kind: leave, voice: [poet], mood: asserted, t: 16.05, roles: {agent: kovalan}, lines: [SIL-16-0098, SIL-16-0099], check: ரில்லம் நீங்கி}
+- {id: s04, ep: plain, kind: see, voice: [poet], mood: asserted, t: 16.1, roles: {agent: kovalan, target: goldsmith}, lines: [SIL-16-0108], check: கைக்கோற் கொல்லனைக்}
+- {id: s05, ep: plain, kind: enter, voice: [poet], mood: asserted, t: 16.13, roles: {agent: kovalan, place: temple_lodging}, lines: [SIL-16-0126], check: சிறையகம் புக்கபின்}
+- {id: s06, ep: plain, kind: enter, voice: [poet], mood: asserted, t: 20.3, roles: {agent: kannagi, target: pandya_king}, lines: [SIL-20-0058], check: குறுகினள் சென்றுழி}
+- {id: s07, ep: plain, kind: faint, voice: [poet], mood: asserted, t: 20.75, roles: {agent: pandya_king}, lines: [SIL-20-0089], check: மயங்கிவீழ்ந்}
+- {id: s08, ep: plain, kind: enter, voice: [poet], mood: asserted, t: 4.0, roles: {agent: manimekalai, place: flower_grove}, lines: [MAN-00-0037, MAN-00-0038], check: பூம்பொழில் அகவயின்}
+- {id: s09, ep: plain, kind: enter, voice: [poet], mood: asserted, t: 4.2, roles: {agent: manimekalai, place: crystal_room}, lines: [MAN-00-0040], check: பளிக்கறை புக்கதும்}
+- {id: s10, ep: plain, kind: see, voice: [poet], mood: asserted, t: 4.3, roles: {agent: udayakumaran, target: manimekalai}, lines: [MAN-00-0041], check: பாவையைக் கண்டு}
+- {id: s11, ep: plain, kind: worship, voice: [poet], mood: asserted, t: 11.25, roles: {agent: manimekalai, theme: seat_of_buddha}, lines: [MAN-11-0054], check: பீடிகை தொழுதனள்}
+- {id: s12, ep: plain, kind: fly, voice: [poet], mood: asserted, t: 26.0, roles: {agent: manimekalai, place: vanci}, lines: [MAN-26-0001], check: அந்தரம் ஆறா}
+- {id: s13, ep: plain, kind: fly, voice: [poet], mood: asserted, t: 24.5, roles: {agent: manimekalai, place: nagapuram}, lines: [MAN-24-0163, MAN-24-0165], check: அந்தரம் ஆறாப்}
+- {id: s14, ep: plain, kind: faint, voice: [poet], mood: asserted, t: 21.05, roles: {agent: manimekalai}, lines: [MAN-21-0004], check: மயங்கினள் எழுந்து}

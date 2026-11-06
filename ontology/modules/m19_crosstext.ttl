@@ -1,0 +1,23 @@
+# Links across the two epics
+#
+# A retelling isn't sameness, the telling can change. MAN-26 adds 'the innocent man' that SIL-23 d
+# oesn't state.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m19_crosstext> a owl:Ontology ; rdfs:label "Links across the two epics" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:P67_refers_to
+
+iy:Retelling a owl:Class .
+iy:FormulaEcho a owl:Class .
+iy:StoryEcho a owl:Class .
+
+iy:retells a owl:ObjectProperty .
+iy:sharesWording a owl:ObjectProperty .
+iy:mirrors a owl:ObjectProperty .

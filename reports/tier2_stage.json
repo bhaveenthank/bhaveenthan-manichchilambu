@@ -1,0 +1,23 @@
+{
+ "gold": 56,
+ "few_proposals": 656,
+ "few_recall": 0.804,
+ "notext_recall": 0.429,
+ "chance_mean": 0.452,
+ "chance_97_5": 0.554,
+ "non_facts_kept_apart": "6/10",
+ "by_canto": {
+  "SIL-10": 0.786,
+  "SIL-14": 0.5,
+  "MAN-13": 1.0,
+  "MAN-23": 0.9,
+  "MAN-28": 0.846
+ },
+ "checks": {
+  "recall_at_least_0.60": true,
+  "beats_chance": true,
+  "beats_notext_by_0.10": true,
+  "keeps_half_of_non_facts_apart": true
+ },
+ "verdict": "GO"
+}

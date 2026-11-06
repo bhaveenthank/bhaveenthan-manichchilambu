@@ -1,0 +1,132 @@
+{
+ "searchinfo": {
+  "search": "Poompuhar"
+ },
+ "search": [
+  {
+   "id": "Q2135463",
+   "title": "Q2135463",
+   "pageid": 2061438,
+   "concepturi": "http://www.wikidata.org/entity/Q2135463",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q2135463",
+   "display": {
+    "label": {
+     "value": "Puhar",
+     "language": "en"
+    },
+    "description": {
+     "value": "Village in Thanjavur District, Tamil Nadu, India",
+     "language": "en"
+    }
+   },
+   "label": "Puhar",
+   "description": "Village in Thanjavur District, Tamil Nadu, India",
+   "match": {
+    "type": "alias",
+    "language": "en",
+    "text": "Poompuhar"
+   },
+   "aliases": [
+    "Poompuhar"
+   ]
+  },
+  {
+   "id": "Q4122008",
+   "title": "Q4122008",
+   "pageid": 3929774,
+   "concepturi": "http://www.wikidata.org/entity/Q4122008",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q4122008",
+   "display": {
+    "label": {
+     "value": "Poompuhar",
+     "language": "en"
+    },
+    "description": {
+     "value": "1964 Tamil film directed by P. Neelakantan",
+     "language": "en"
+    }
+   },
+   "label": "Poompuhar",
+   "description": "1964 Tamil film directed by P. Neelakantan",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Poompuhar"
+   }
+  },
+  {
+   "id": "Q7228677",
+   "title": "Q7228677",
+   "pageid": 7131168,
+   "concepturi": "http://www.wikidata.org/entity/Q7228677",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q7228677",
+   "display": {
+    "label": {
+     "value": "Poompuhar Assembly constituency",
+     "language": "en"
+    },
+    "description": {
+     "value": "constituency of the Tamil Nadu legislative assembly in India",
+     "language": "en"
+    }
+   },
+   "label": "Poompuhar Assembly constituency",
+   "description": "constituency of the Tamil Nadu legislative assembly in India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Poompuhar Assembly constituency"
+   }
+  },
+  {
+   "id": "Q33130325",
+   "title": "Q33130325",
+   "pageid": 34592032,
+   "concepturi": "http://www.wikidata.org/entity/Q33130325",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q33130325",
+   "display": {
+    "label": {
+     "value": "Poompuhar Lighthouse",
+     "language": "en"
+    },
+    "description": {
+     "value": "lighthouse in Tamil Nadu, India",
+     "language": "en"
+    }
+   },
+   "label": "Poompuhar Lighthouse",
+   "description": "lighthouse in Tamil Nadu, India",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Poompuhar Lighthouse"
+   }
+  },
+  {
+   "id": "Q7228679",
+   "title": "Q7228679",
+   "pageid": 7131170,
+   "concepturi": "http://www.wikidata.org/entity/Q7228679",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q7228679",
+   "display": {
+    "label": {
+     "value": "Poompuhar Shipping Corporation Limited",
+     "language": "en"
+    }
+   },
+   "label": "Poompuhar Shipping Corporation Limited",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Poompuhar Shipping Corporation Limited"
+   }
+  }
+ ],
+ "search-continue": 5,
+ "success": 1
+}

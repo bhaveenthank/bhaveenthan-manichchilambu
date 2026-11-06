@@ -1,0 +1,22 @@
+{
+ "zero": {
+  "calls": 69,
+  "kept": 1248,
+  "rejected": 20
+ },
+ "few": {
+  "calls": 69,
+  "kept": 999,
+  "rejected": 21
+ },
+ "masked": {
+  "calls": 69,
+  "kept": 1266,
+  "rejected": 67
+ },
+ "notext": {
+  "calls": 69,
+  "kept": 528,
+  "rejected": 0
+ }
+}

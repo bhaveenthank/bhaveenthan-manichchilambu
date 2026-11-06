@@ -1,0 +1,2564 @@
+[
+{
+"source": "MAN-24",
+"target": "MAN-30",
+"line_pairs": 45,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "SIL-23",
+"line_pairs": 10,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-23",
+"line_pairs": 10,
+"cross_epic": false
+},
+{
+"source": "SIL-25",
+"target": "SIL-26",
+"line_pairs": 9,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "SIL-31",
+"line_pairs": 7,
+"cross_epic": false
+},
+{
+"source": "SIL-26",
+"target": "SIL-28",
+"line_pairs": 7,
+"cross_epic": false
+},
+{
+"source": "SIL-25",
+"target": "SIL-28",
+"line_pairs": 7,
+"cross_epic": false
+},
+{
+"source": "MAN-11",
+"target": "MAN-12",
+"line_pairs": 6,
+"cross_epic": false
+},
+{
+"source": "MAN-11",
+"target": "MAN-15",
+"line_pairs": 6,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "SIL-30",
+"line_pairs": 6,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "MAN-01",
+"line_pairs": 5,
+"cross_epic": true
+},
+{
+"source": "MAN-06",
+"target": "MAN-07",
+"line_pairs": 5,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "SIL-30",
+"line_pairs": 5,
+"cross_epic": false
+},
+{
+"source": "MAN-11",
+"target": "MAN-14",
+"line_pairs": 5,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-31",
+"line_pairs": 5,
+"cross_epic": false
+},
+{
+"source": "MAN-18",
+"target": "MAN-22",
+"line_pairs": 5,
+"cross_epic": false
+},
+{
+"source": "SIL-26",
+"target": "SIL-27",
+"line_pairs": 5,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "MAN-28",
+"line_pairs": 5,
+"cross_epic": true
+},
+{
+"source": "MAN-15",
+"target": "MAN-17",
+"line_pairs": 5,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-17",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-12",
+"target": "MAN-21",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-10",
+"target": "MAN-12",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "SIL-06",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-22",
+"target": "SIL-23",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-10",
+"target": "MAN-21",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-19",
+"target": "MAN-22",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-21",
+"target": "MAN-25",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-11",
+"target": "SIL-15",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-06",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-18",
+"target": "MAN-20",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-02",
+"target": "MAN-03",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "SIL-16",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-14",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-28",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-11",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-27",
+"target": "MAN-29",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-26",
+"target": "MAN-05",
+"line_pairs": 4,
+"cross_epic": true
+},
+{
+"source": "SIL-00",
+"target": "SIL-22",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-06",
+"target": "MAN-15",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "SIL-28",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-25",
+"target": "MAN-28",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-20",
+"target": "MAN-22",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "SIL-07",
+"target": "SIL-26",
+"line_pairs": 4,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-11",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "SIL-17",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "SIL-24",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-14",
+"target": "SIL-22",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-14",
+"target": "MAN-25",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-22",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "MAN-03",
+"line_pairs": 3,
+"cross_epic": true
+},
+{
+"source": "SIL-10",
+"target": "SIL-15",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "SIL-20",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-11",
+"target": "SIL-25",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "SIL-08",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-14",
+"target": "MAN-28",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-12",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-11",
+"target": "MAN-17",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-09",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "SIL-28",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-21",
+"target": "MAN-28",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-03",
+"target": "MAN-06",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-22",
+"target": "MAN-07",
+"line_pairs": 3,
+"cross_epic": true
+},
+{
+"source": "MAN-02",
+"target": "MAN-22",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-11",
+"target": "SIL-13",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "SIL-16",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-02",
+"target": "SIL-05",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-26",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-26",
+"target": "MAN-01",
+"line_pairs": 3,
+"cross_epic": true
+},
+{
+"source": "SIL-06",
+"target": "SIL-28",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-10",
+"target": "MAN-11",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "SIL-28",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-08",
+"target": "SIL-13",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "MAN-13",
+"target": "MAN-14",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-04",
+"target": "SIL-05",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "SIL-29",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-25",
+"target": "SIL-27",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-07",
+"target": "SIL-24",
+"line_pairs": 3,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "SIL-27",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "SIL-29",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-21",
+"target": "MAN-23",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "MAN-03",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "MAN-09",
+"target": "MAN-21",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-25",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-19",
+"target": "MAN-20",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-10",
+"target": "MAN-26",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-20",
+"target": "SIL-25",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "MAN-04",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "MAN-11",
+"target": "MAN-28",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-12",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-27",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "SIL-27",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-18",
+"target": "MAN-19",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-30",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-04",
+"target": "MAN-18",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-22",
+"target": "MAN-24",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "SIL-29",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-11",
+"target": "MAN-21",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-04",
+"target": "SIL-27",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-14",
+"target": "MAN-23",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-04",
+"target": "MAN-19",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-09",
+"target": "MAN-11",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-04",
+"target": "SIL-08",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "SIL-31",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-14",
+"target": "MAN-17",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-14",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "MAN-19",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "MAN-15",
+"target": "MAN-21",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-13",
+"target": "MAN-22",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-02",
+"target": "MAN-18",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-10",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-04",
+"target": "SIL-22",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-02",
+"target": "MAN-12",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-15",
+"target": "MAN-18",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "SIL-14",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-13",
+"target": "MAN-07",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "MAN-11",
+"target": "MAN-25",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "MAN-00",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "SIL-03",
+"target": "SIL-05",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-25",
+"target": "SIL-31",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-11",
+"target": "MAN-13",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-06",
+"target": "MAN-22",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "SIL-29",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "SIL-25",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-01",
+"target": "MAN-24",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-07",
+"target": "SIL-10",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-13",
+"target": "SIL-22",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-11",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-21",
+"target": "MAN-26",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-06",
+"target": "MAN-17",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-11",
+"target": "MAN-00",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "SIL-03",
+"target": "SIL-08",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-09",
+"target": "MAN-10",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-29",
+"target": "SIL-31",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-16",
+"target": "SIL-26",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-14",
+"target": "MAN-15",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-25",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-16",
+"target": "SIL-30",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-04",
+"target": "MAN-20",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-22",
+"target": "MAN-21",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "SIL-30",
+"target": "MAN-19",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "SIL-24",
+"target": "SIL-25",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-15",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-04",
+"target": "MAN-21",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "SIL-07",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "SIL-13",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-26",
+"target": "SIL-30",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "SIL-13",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "MAN-06",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "MAN-03",
+"target": "MAN-14",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "MAN-15",
+"target": "MAN-25",
+"line_pairs": 2,
+"cross_epic": false
+},
+{
+"source": "SIL-17",
+"target": "MAN-29",
+"line_pairs": 2,
+"cross_epic": true
+},
+{
+"source": "SIL-22",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-17",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-06",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-17",
+"target": "SIL-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-17",
+"target": "SIL-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-24",
+"target": "SIL-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-02",
+"target": "MAN-10",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "MAN-12",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-01",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-18",
+"target": "MAN-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-09",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-03",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "SIL-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-01",
+"target": "MAN-11",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-20",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "MAN-06",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-06",
+"target": "MAN-10",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-24",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-25",
+"target": "MAN-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-09",
+"target": "MAN-15",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "MAN-05",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-17",
+"target": "SIL-20",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-00",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-10",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-09",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-03",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "MAN-06",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-00",
+"target": "MAN-17",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-11",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-30",
+"target": "MAN-08",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-13",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-26",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-17",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-03",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-04",
+"target": "MAN-05",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-19",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "SIL-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-10",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-11",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-03",
+"target": "MAN-04",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-20",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "MAN-03",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-00",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-23",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-06",
+"target": "MAN-11",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-16",
+"target": "SIL-17",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-14",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-16",
+"target": "SIL-19",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-15",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-26",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-00",
+"target": "MAN-13",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-30",
+"target": "MAN-16",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-10",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-10",
+"target": "MAN-10",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-00",
+"target": "SIL-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-16",
+"target": "MAN-14",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-14",
+"target": "MAN-14",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-24",
+"target": "MAN-05",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-27",
+"target": "MAN-03",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-00",
+"target": "MAN-04",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-17",
+"target": "SIL-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-12",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-15",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-30",
+"target": "MAN-17",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-13",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-02",
+"target": "MAN-20",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-14",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-04",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-21",
+"target": "MAN-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-16",
+"target": "MAN-03",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-03",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "MAN-05",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-05",
+"target": "MAN-14",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-16",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "SIL-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-22",
+"target": "MAN-04",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-13",
+"target": "SIL-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-01",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-11",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-13",
+"target": "MAN-03",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-06",
+"target": "MAN-12",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "SIL-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-18",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-08",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-13",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "SIL-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-08",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-20",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-15",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "MAN-27",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-18",
+"target": "SIL-19",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-21",
+"target": "MAN-09",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-26",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-10",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-14",
+"target": "SIL-17",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-06",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-18",
+"target": "MAN-23",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-03",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-17",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-28",
+"target": "MAN-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-04",
+"target": "SIL-16",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-16",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-14",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-04",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-00",
+"target": "MAN-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-08",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-05",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-08",
+"target": "MAN-17",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-02",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-20",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "MAN-14",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-13",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "MAN-09",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-16",
+"target": "SIL-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-27",
+"target": "MAN-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-11",
+"target": "SIL-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-21",
+"target": "MAN-01",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-11",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-25",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-12",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-03",
+"target": "SIL-13",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-29",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-07",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-21",
+"target": "MAN-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-30",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-00",
+"target": "MAN-12",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-12",
+"target": "MAN-13",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-01",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-00",
+"target": "MAN-10",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-17",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-08",
+"target": "SIL-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-12",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-08",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-02",
+"target": "MAN-11",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-26",
+"target": "SIL-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-29",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-29",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-02",
+"target": "MAN-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-21",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "SIL-09",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-17",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "MAN-01",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-31",
+"target": "MAN-01",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-18",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-22",
+"target": "MAN-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-05",
+"target": "MAN-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-07",
+"target": "SIL-12",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-15",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-22",
+"target": "SIL-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-25",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-00",
+"target": "SIL-09",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-12",
+"target": "SIL-14",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-17",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-14",
+"target": "MAN-01",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-20",
+"target": "SIL-23",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-09",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-25",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-00",
+"target": "SIL-32",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-22",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "MAN-03",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-15",
+"target": "MAN-16",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-14",
+"target": "MAN-16",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-13",
+"target": "MAN-01",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-14",
+"target": "MAN-04",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-08",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-02",
+"target": "MAN-05",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-17",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-04",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-28",
+"target": "MAN-23",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-18",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-28",
+"target": "SIL-31",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-31",
+"target": "MAN-10",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-22",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "MAN-12",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-27",
+"target": "MAN-01",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-27",
+"target": "MAN-11",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-27",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-05",
+"target": "MAN-07",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-14",
+"target": "SIL-15",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-13",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "SIL-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-10",
+"target": "SIL-16",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-02",
+"target": "MAN-23",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "MAN-06",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-04",
+"target": "SIL-14",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "SIL-11",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-01",
+"target": "SIL-29",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-09",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-10",
+"target": "MAN-19",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-28",
+"target": "MAN-12",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-07",
+"target": "SIL-23",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "MAN-20",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-15",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-08",
+"target": "SIL-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-04",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-14",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-14",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-04",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-07",
+"target": "MAN-20",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-26",
+"target": "MAN-04",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-01",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-04",
+"target": "SIL-13",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "MAN-14",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-15",
+"target": "SIL-16",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-25",
+"target": "MAN-22",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-24",
+"target": "MAN-17",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-02",
+"target": "MAN-17",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-08",
+"target": "MAN-09",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-08",
+"target": "MAN-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-08",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-20",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "MAN-06",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-05",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-05",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-27",
+"target": "MAN-04",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-07",
+"target": "MAN-01",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-05",
+"target": "SIL-07",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-07",
+"target": "SIL-17",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-07",
+"target": "SIL-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-07",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-13",
+"target": "SIL-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-10",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-04",
+"target": "MAN-16",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-23",
+"target": "MAN-16",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-05",
+"target": "MAN-15",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "MAN-03",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-15",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-06",
+"target": "SIL-14",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-32",
+"target": "MAN-12",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-14",
+"target": "SIL-24",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-11",
+"target": "MAN-16",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-14",
+"target": "MAN-20",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-20",
+"target": "MAN-28",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-22",
+"target": "MAN-14",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-00",
+"target": "SIL-01",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-24",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-12",
+"target": "SIL-16",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-02",
+"target": "SIL-13",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-06",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-25",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-00",
+"target": "MAN-16",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-26",
+"target": "MAN-21",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-13",
+"target": "SIL-27",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "MAN-05",
+"target": "MAN-12",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "MAN-06",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-05",
+"target": "MAN-18",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-04",
+"target": "SIL-15",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-15",
+"target": "MAN-25",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "MAN-03",
+"target": "MAN-11",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-05",
+"target": "MAN-05",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-22",
+"target": "MAN-02",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-21",
+"target": "SIL-30",
+"line_pairs": 1,
+"cross_epic": false
+},
+{
+"source": "SIL-21",
+"target": "MAN-17",
+"line_pairs": 1,
+"cross_epic": true
+},
+{
+"source": "SIL-23",
+"target": "MAN-26",
+"line_pairs": 1,
+"cross_epic": true
+}
+]

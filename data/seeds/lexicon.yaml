@@ -1,0 +1,58 @@
+# Six lexicons and a homonym register. Every form here is checked against the line it cites.
+# `entity` is what the form points at in that line and only there. A name list on its own can't tell these apart.
+# Sources: "text" is what the line says. "reading" is my interpretation, marked so nobody mistakes it for the text.
+people:
+- {form: கண்ணகி, entity: kannagi, line: MAN-26-0002, source: text}
+- {form: கோவலன், entity: kovalan, line: SIL-16-0125, source: text}
+- {form: கௌசிகன், entity: kosikan, line: SIL-13-0047, source: text, note: "same man as கோசிக மாணி, six lines later"}
+- {form: கோசிக மாணி, entity: kosikan, line: SIL-13-0053, source: text}
+- {form: பொய்த்தொழிற் கொல்லன், entity: goldsmith, line: SIL-16-0120, source: text, note: "the poet's word: the man of false craft"}
+- {form: கூற்றத் தூதன், entity: goldsmith, line: SIL-16-0115, source: text, note: "messenger of death, used only inside this episode"}
+- {form: குருமகன், entity: naga_chief, line: MAN-16-0064, source: text, note: "a title, not a name"}
+places:
+- {form: பூம்புகார், entity: puhar, line: SIL-01-0010, source: text}
+- {form: கூடல், entity: madurai, line: SIL-14-0006, source: text}
+- {form: மதுரை மூதூர், entity: madurai, line: SIL-00-0039, source: text}
+- {form: வச்சிரக் கோட்டம், entity: vachira_temple, line: SIL-09-0012, source: text}
+objects:
+- {form: சிலம்பு, entity: ank_pair, line: SIL-20-0080, source: reading, note: "the king says யாமுடைச் சிலம்பு here and means the queen's, so the word alone never picks out one anklet"}
+- {form: அமுதசுரபி, entity: amudasurabhi, line: MAN-11-0044, source: text}
+- {form: முத்தரை, entity: pearl_girdle, line: SIL-06-0087, source: text}
+- {form: கடிஞை, entity: amudasurabhi, line: MAN-20-0085, source: reading, note: "a begging bowl in general. It's this one only by context"}
+foods:
+- {form: மாவின் கனி, entity: mango, line: SIL-16-0026, source: text}
+- {form: தேமாங் கனி, entity: mango, line: SIL-25-0043, source: text}
+- {form: வாழைத் தீங்கனி, entity: plantain, line: SIL-16-0026, source: text}
+- {form: குமரி வாழையின் குருத்த, entity: plantain, line: SIL-16-0042, source: text, note: "the leaf, not the fruit. Same plant, different part"}
+- {form: பலவின் பழங்க, entity: jackfruit, line: SIL-25-0044, source: text}
+- {form: கோளிப் பாகற், entity: koli_fruit, line: SIL-16-0024, source: reading, note: "read as jackfruit in the commentary tradition; the word பலா isn't here"}
+events:
+- {form: இந்திர விழவு, entity: indra_festival, line: SIL-06-0006, source: text}
+- {form: ஆயிரம்கண்ணோன் விழா, entity: indra_festival, line: MAN-01-0026, source: text}
+- {form: வானவன் விழாக் கோள், entity: indra_festival, line: MAN-25-0197, source: text}
+epithets:
+- {form: மதுரை மூதூர் மாநகர், entity: madurai, line: SIL-11-0188, source: text, meaning: "the old, great city of Madurai"}
+- {form: ஒங்குயர் கூடல், entity: madurai, line: SIL-14-0006, source: text, meaning: "lofty Kūṭal"}
+- {form: கொடிமாடக் கூடலை, entity: madurai, line: SIL-24-0118, source: text, meaning: "Kūṭal of the bannered mansions"}
+- {form: நான்மாடக் கூடல், entity: madurai, line: SIL-21-0039, source: text, meaning: "Kūṭal of the four mansions"}
+- {form: கலிகெழு கூடல், entity: madurai, line: SIL-13-0149, source: text, meaning: "bustling Kūṭal"}
+- {form: நிலைகெழு கூடல், entity: madurai, line: SIL-00-0035, source: text, meaning: "steadfast Kūṭal"}
+- {form: மாபெருங் கூடல், entity: madurai, line: SIL-23-0022, source: text, meaning: "great Kūṭal"}
+- {form: திருமலி மூதூர், entity: madurai, line: SIL-13-0133, source: text, meaning: "the old city rich in fortune, said of the Pandya's city"}
+- {form: மாட மூதூர், entity: madurai, line: SIL-27-0061, source: text, meaning: "the old city of mansions"}
+homonyms:
+- {form: கூடல், senses: [{entity: madurai, line: SIL-14-0006, en: "Madurai", ta: "மதுரை"}, {line: SIL-06-0109, as: கூடலும், en: "lovers' union (கூடலும் ஊடலும்)", ta: "கூடுதல், புணர்ச்சி"}]}
+- {form: ஐயை, senses: [{entity: aiyai_daughter, line: SIL-16-0012, en: "Aiyai, Matari's daughter", ta: "மாதரியின் மகள்"}, {entity: kavunti, line: SIL-10-0045, en: "a title of respect for Kavunti", ta: "கவுந்திக்கான மரியாதைச் சொல்"}, {line: SIL-11-0216, en: "the goddess, at her temple", ta: "கொற்றவை (ஐயை கோட்டம்)"}]}
+- {form: மணி, senses: [{entity: gemstone, line: SIL-20-0078, en: "gem, inside Kannagi's anklet", ta: "இரத்தினம்"}, {line: SIL-23-0032, en: "the bell at the palace gate (மணிநா)", ta: "ஆராய்ச்சி மணி"}]}
+- {form: மணிமேகலை, senses: [{entity: manimekalai, line: MAN-03-0171, en: "the heroine", ta: "தலைவி"}, {line: MAN-00-0097, en: "the poem itself (மணிமேகலை துறவு)", ta: "நூல்"}]}
+- {form: மணிமேகலா, senses: [{entity: manimekhala_deity, line: MAN-06-0213, en: "the sea goddess, not the heroine", ta: "கடல் தெய்வம், தலைவி அல்ல"}]}
+- {form: கோவல, senses: [{entity: kovalan, line: SIL-16-0125, en: "Kovalan", ta: "கோவலன்"}, {line: SIL-16-0004, en: "cowherds (கோவலர்), on the very same page", ta: "இடையர்"}]}
+- {form: சாதுவன், senses: [{entity: saduvan, line: MAN-16-0004, en: "Saduvan the merchant", ta: "வணிகன் சாதுவன்"}, {line: SIL-10-0182, en: "a title in praise of the Arhat", ta: "அருகனின் பெயர்"}]}
+- {form: மா, senses: [{entity: mango, line: SIL-16-0026, en: "mango tree (மாவின் கனி)", ta: "மாமரம்"}, {line: SIL-11-0188, en: "great (மாநகர்)", ta: "பெரிய"}]}
+- {form: கௌசிகன், senses: [{entity: kosikan, line: SIL-13-0047, en: "Kosikan the messenger", ta: "கோசிக மாணி"}, {entity: kausikan_campai, line: MAN-03-0029, en: "Cutamati's father, a brahmin of Campai", ta: "சுதமதியின் தந்தை"}]}
+- {form: ஆரம், senses: [{line: SIL-14-0108, as: ஆரமு, en: "sandalwood, probably, beside agarwood and camphor", ta: "சந்தனம்"}, {line: SIL-11-0049, en: "a necklace", ta: "மாலை"}]}
+- {form: கோவலன், senses: [{entity: kovalan, line: SIL-16-0125, en: "Kovalan the hero", ta: "தலைவன் கோவலன்"}, {entity: kovalan_ninth_ancestor, line: MAN-28-0124, en: "his ancestor nine generations back", ta: "ஒன்பது தலைமுறைக்கு முன்"}]}
+- {form: கஞ்சுகன், senses: [{entity: kanjukan, line: MAN-25-0011, en: "the attendant at Punyarasan's court", ta: "புண்ணியராசன் அவை"}, {entity: kanjukan_28, line: MAN-28-0178, en: "the attendant at Kanchi", ta: "காஞ்சி"}]}
+- {form: சாலி, senses: [{entity: sali, line: MAN-13-0005, en: "Sali, Aputhiran's mother (பார்ப்பனி சாலி)", ta: "ஆபுத்திரனின் தாய் சாலி"}, {entity: sali_rice, line: SIL-16-0027, en: "sāli rice, in Kannagi's meal", ta: "சாலி அரிசி"}]}
+- {form: மாபெருந்தேவி, senses: [{line: SIL-25-0110, en: "Cenkuttuvan's queen", ta: "செங்குட்டுவனின் தேவி"}, {entity: chola_queen, line: MAN-23-0080, en: "the Chola queen, Irasamadevi", ta: "இராசமாதேவி"}]}
+- {form: குழல், senses: [{line: SIL-02-0020, en: "hair (புரிகுழல்)", ta: "கூந்தல்"}, {line: SIL-17-0085, en: "the flute (தீங்குழல்)", ta: "இசைக்கருவி"}]}

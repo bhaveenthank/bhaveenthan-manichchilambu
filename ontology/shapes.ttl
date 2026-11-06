@@ -1,0 +1,18 @@
+# Structural rules the graph has to pass. SHACL can only look at shape, the text still decides what's right.
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+iy:RecordShape a sh:NodeShape ; sh:targetClass iy:Record ;
+  sh:property [ sh:path iy:voice ; sh:minCount 1 ; sh:message "A record needs a teller." ] ;
+  sh:property [ sh:path iy:mood ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "A record needs exactly one mood." ] ;
+  sh:property [ sh:path iy:evidence ; sh:minCount 1 ; sh:pattern "^(SIL|MAN)-[0-9]{2}-[0-9]{4}$" ; sh:message "A record needs a verse line id." ] ;
+  sh:property [ sh:path iy:storyTime ; sh:minCount 1 ; sh:maxCount 1 ; sh:message "A record needs one story time." ] .
+
+iy:BeliefShape a sh:NodeShape ; sh:targetClass iy:Belief ;
+  sh:property [ sh:path iy:holder ; sh:minCount 1 ; sh:message "A belief needs someone to hold it." ] ;
+  sh:property [ sh:path iy:content ; sh:minCount 1 ; sh:message "A belief needs a claim to be about." ] ;
+  sh:property [ sh:path iy:stance ; sh:minCount 1 ; sh:in ("accept" "reject") ; sh:message "Stance is accept or reject." ] .
+
+iy:TransferShape a sh:NodeShape ; sh:targetSubjectsOf iy:recipient ;
+  sh:property [ sh:path iy:theme ; sh:minCount 1 ; sh:message "If there's a recipient, something has to be received." ] .

@@ -1,0 +1,24 @@
+# Physical, bodily and functional states
+#
+# States are never stored, they come from replaying changes. A site keeps its identity while its f
+# unction changes.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m07_states> a owl:Ontology ; rdfs:label "Physical, bodily and functional states" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E3_Condition_State
+
+iy:PhysicalState a owl:Class .
+iy:BodilyState a owl:Class .
+iy:FunctionState a owl:Class .
+
+iy:broken a owl:ObjectProperty .
+iy:hungry a owl:ObjectProperty .
+iy:alive a owl:ObjectProperty .
+iy:function a owl:ObjectProperty .

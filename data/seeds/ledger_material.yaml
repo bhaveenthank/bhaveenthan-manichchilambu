@@ -1,0 +1,88 @@
+# Fourth batch: food, jewels, crafts, voyages and the people with two lines. Same format as the others.
+# Kept out of the 163 records the experiments were scored on, so those numbers still mean what they said.
+# Rule for this file: a record only says what its lines say. Supplying isn't growing, examining isn't making,
+# and a food named in one scene is not the same batch as that food named in another.
+
+# ---- the meal in Madurai (SIL-16, not Adaikkala Kathai, which ends one canto earlier)
+- {id: n01, ep: meal, kind: ask_for_vessels, voice: [poet, matari], mood: command, t: 16.01, roles: {agent: matari, addressee: cowherd_women, theme: cooking_vessels}, lines: [SIL-16-0019, SIL-16-0020, SIL-16-0021], check: அடிசிலாக்குதற்}
+- {id: n02, ep: meal, kind: supply, voice: [poet], mood: asserted, t: 16.02, roles: {agent: cowherd_women, recipient: kannagi, theme: [cooking_vessels, koli_fruit, cucumber, pomegranate, mango, plantain, sali_rice, dairy]}, lines: [SIL-16-0022, SIL-16-0023, SIL-16-0024, SIL-16-0025, SIL-16-0026, SIL-16-0027, SIL-16-0028], check: சாலியரிசி}
+- {id: n03, ep: meal, kind: cut, voice: [poet], mood: asserted, t: 16.03, roles: {agent: kannagi, theme: vegetables, instrument: curved_knife}, lines: [SIL-16-0029, SIL-16-0030], check: கொடுவாய்க்குயத்து}
+- {id: n04, ep: meal, kind: light_fire, voice: [poet], mood: asserted, t: 16.04, roles: {agent: aiyai_daughter, target: kannagi}, lines: [SIL-16-0033], check: வையெரிமூட்டிய}
+- {id: n05, ep: meal, kind: cook, voice: [poet], mood: asserted, t: 16.05, roles: {agent: kannagi, companion: aiyai_daughter, beneficiary: kovalan, theme: meal_16}, lines: [SIL-16-0033, SIL-16-0034], check: காதலற்காக்கி}
+- {id: n06, ep: meal, kind: make, voice: [poet], mood: asserted, t: 16.051, roles: {agent: skilled_woman_16, theme: palm_mat, source: palm_leaf, beneficiary: kovalan}, lines: [SIL-16-0035, SIL-16-0036, SIL-16-0037], check: கைவன்மகடூஉ}
+- {id: n07, ep: meal, kind: serve, voice: [poet], mood: asserted, t: 16.06, roles: {agent: kannagi, recipient: kovalan, theme: meal_16, instrument: plantain}, lines: [SIL-16-0042, SIL-16-0043], check: குமரிவாழையின்}
+- {id: n08, ep: meal, kind: liken, voice: [poet, aiyai_daughter, matari], mood: metaphor, t: 16.07, roles: {agent: aiyai_daughter, companion: matari, target: kovalan, form: krishna}, lines: [SIL-16-0046, SIL-16-0047, SIL-16-0048, SIL-16-0052], check: அசோதைபெற்றெடுத்த}
+- {id: n09, ep: meal, kind: give_betel, voice: [poet], mood: asserted, t: 16.08, roles: {agent: kannagi, recipient: kovalan, theme: areca}, lines: [SIL-16-0054, SIL-16-0055], check: டடைக்காயீத்த}
+
+# ---- looking at the anklet is not making it
+- {id: n10, ep: craft, kind: boast_of_craft, voice: [poet, goldsmith], mood: claimed, t: 16.12, roles: {agent: goldsmith, theme: royal_ornaments}, lines: [SIL-16-0113, SIL-16-0114], check: முடிமுதற்கலன்கள்}
+- {id: n11, ep: craft, kind: examine, voice: [poet], mood: asserted, t: 16.121, roles: {agent: goldsmith, theme: ank_k1}, lines: [SIL-16-0119, SIL-16-0120], check: பொய்த்தொழிற்கொல்லன்}
+- {id: n12, ep: craft, kind: made_of, voice: [poet], mood: asserted, t: 16.12, roles: {theme: ank_k1, source: [gemstone, diamond, gold]}, lines: [SIL-16-0117, SIL-16-0118, SIL-16-0119], check: வயிரம்கட்டிய}
+- {id: n13, ep: craft, kind: serve_king, voice: [poet], mood: asserted, t: 16.11, roles: {agent: goldsmith, addressee: pandya_king, companion: goldsmiths_100}, lines: [SIL-16-0106, SIL-16-0109, SIL-16-0110], check: நுண்வினைக்கொல்லர்நூற்றுவர்}
+
+# ---- what Madhavi wears before the seashore. Same jeweller's phrase as the anklet, SIL-06-0091 and SIL-16-0117.
+- {id: n20, ep: jewels, kind: wear, voice: [poet], mood: asserted, t: 6.3, roles: {agent: madhavi, theme: leg_ornaments}, lines: [SIL-06-0084, SIL-06-0085], check: நூபுரம்}
+- {id: n21, ep: jewels, kind: wear, voice: [poet], mood: asserted, t: 6.31, roles: {agent: madhavi, theme: pearl_girdle, source: pearl_material}, lines: [SIL-06-0087, SIL-06-0088], check: முத்தரைமுப்பத்து}
+- {id: n22, ep: jewels, kind: wear, voice: [poet], mood: asserted, t: 6.32, roles: {agent: madhavi, theme: painted_bangle, source: [gemstone, diamond, gold, coral]}, lines: [SIL-06-0091, SIL-06-0092, SIL-06-0093, SIL-06-0094], check: வயிரம்கட்டிய}
+- {id: n23, ep: jewels, kind: wear, voice: [poet], mood: asserted, t: 6.33, roles: {agent: madhavi, theme: finger_rings, source: [emerald, diamond]}, lines: [SIL-06-0095, SIL-06-0096, SIL-06-0097, SIL-06-0098], check: மரகதத்}
+- {id: n24, ep: jewels, kind: wear, voice: [poet], mood: asserted, t: 6.34, roles: {agent: madhavi, theme: ear_ornaments, source: sapphire}, lines: [SIL-06-0103, SIL-06-0104, SIL-06-0105], check: இந்திரநீலத்து}
+
+# ---- gifts of the northern kings at Puhar: the poet says no craftsman made them
+- {id: n30, ep: gifts, kind: gift, voice: [poet], mood: asserted, t: 5.1, roles: {agent: vajra_king, recipient: chola_conqueror, theme: victory_canopy, source: vajra_country}, lines: [SIL-05-0099, SIL-05-0100], check: கொற்றப்பந்தரும்}
+- {id: n31, ep: gifts, kind: gift, voice: [poet], mood: asserted, t: 5.1, roles: {agent: magadha_king, recipient: chola_conqueror, theme: debate_hall, source: magadha}, lines: [SIL-05-0101, SIL-05-0102], check: பட்டிமண்டபமும்}
+- {id: n32, ep: gifts, kind: gift, voice: [poet], mood: asserted, t: 5.1, roles: {agent: avanti_king, recipient: chola_conqueror, theme: arched_gate, source: avanti}, lines: [SIL-05-0103, SIL-05-0104], check: தோரணவாயிலும்}
+- {id: n33, ep: gifts, kind: make, voice: [poet], mood: asserted, t: 5.09, roles: {agent: mayan, theme: [victory_canopy, debate_hall, arched_gate], source: [gold, gemstone]}, lines: [SIL-05-0105, SIL-05-0106, SIL-05-0108], check: மயன்விதித்து}
+
+# ---- the Chola pavilion in Manimekalai: five groups named, no single maker
+- {id: n35, ep: pavilion, kind: build_together, voice: [poet], mood: asserted, t: 19.8, roles: {agent: [magadha_workers, maratha_smiths, avanti_smiths, yavana_carpenters, tamil_workers], theme: gold_pavilion}, lines: [MAN-19-0107, MAN-19-0108, MAN-19-0109, MAN-19-0110], check: மகதவினைஞரும்}
+- {id: n36, ep: pavilion, kind: made_of, voice: [poet], mood: asserted, t: 19.81, roles: {theme: gold_pavilion, source: [coral, gemstone, pearl_material, gold]}, lines: [MAN-19-0111, MAN-19-0112, MAN-19-0114, MAN-19-0115], check: பவளத்திரள்கால்}
+- {id: n37, ep: pavilion, kind: comes_from, voice: [poet], mood: asserted, t: 19.8, roles: {agent: magadha_workers, source: magadha}, lines: [MAN-19-0107], check: மகதவினைஞரும்}
+- {id: n38, ep: pavilion, kind: comes_from, voice: [poet], mood: asserted, t: 19.8, roles: {agent: avanti_smiths, source: avanti}, lines: [MAN-19-0108], check: அவந்திக்கொல்லரும்}
+- {id: n39, ep: pavilion, kind: comes_from, voice: [poet], mood: asserted, t: 19.8, roles: {agent: maratha_smiths, source: maratha}, lines: [MAN-19-0107], check: மராட்டக்கம்மரும்}
+- {id: n40, ep: pavilion, kind: comes_from, voice: [poet], mood: asserted, t: 19.8, roles: {agent: yavana_carpenters, source: yavana_land}, lines: [MAN-19-0108], check: யவனத்தச்சரும்}
+- {id: n41, ep: pavilion, kind: sit, voice: [poet], mood: asserted, t: 19.82, roles: {agent: chola_king, place: gold_pavilion}, lines: [MAN-19-0115, MAN-19-0116], check: இந்திரதிருவன்}
+
+# ---- the festival drum. The drum comes from Vachirakottam; the text never says the drummer's people do.
+- {id: n45, ep: festival, kind: fetch_drum, voice: [poet], mood: asserted, t: 5.5, roles: {theme: festival_drum, source: vachira_temple, place: puhar}, lines: [SIL-05-0141, SIL-05-0142], check: வச்சிரக்கோட்டத்து}
+- {id: n46, ep: festival, kind: fetch_drum, voice: [poet], mood: asserted, t: 1.1, roles: {theme: festival_drum, source: vachira_temple, place: puhar}, lines: [MAN-01-0027, MAN-01-0028], check: வச்சிரக்கோட்டத்து}
+- {id: n47, ep: festival, kind: announce_festival, voice: [poet], mood: asserted, t: 1.2, roles: {agent: drummer_man01, instrument: festival_drum, place: puhar}, lines: [MAN-01-0031, MAN-01-0032], check: முதுகுடிப்பிறந்தோன்}
+
+# ---- what the hill people carried to Cenkuttuvan
+- {id: n50, ep: tribute, kind: bring_gifts, voice: [poet], mood: asserted, t: 25.2, roles: {agent: hill_people_25, recipient: cenkuttuvan, theme: [ivory, agarwood, yak_tail_fans, liquor_jars, sandalwood, sindoor, collyrium, orpiment, cardamom, pepper, coconut, mango, jackfruit, garlic, sugarcane, areca, plantain]}, lines: [SIL-25-0037, SIL-25-0038, SIL-25-0039, SIL-25-0040, SIL-25-0041, SIL-25-0043, SIL-25-0044, SIL-25-0045, SIL-25-0046, SIL-25-0047, SIL-25-0055], check: மலைமிசைமாக்கள்}
+- {id: n51, ep: tribute, kind: bring_gifts, voice: [poet], mood: asserted, t: 25.21, roles: {agent: hill_people_25, recipient: cenkuttuvan, theme: young_animals}, lines: [SIL-25-0048, SIL-25-0049, SIL-25-0050, SIL-25-0053, SIL-25-0055], check: அரியின்குருளையும்}
+- {id: n52, ep: tribute, kind: report_wonder, voice: [poet, hill_people_25], mood: asserted, t: 25.22, roles: {agent: hill_people_25, addressee: cenkuttuvan, theme: kannagi}, lines: [SIL-25-0057, SIL-25-0060, SIL-25-0061], check: வானகம்பெற்றனள்}
+
+# ---- Saduvan: wrecked, spared because he speaks his hosts' tongue, and sent home with dead men's goods.
+# Kayasandikai tells all of this (MAN-16-0001). The chief is only ever "our guru-son" (குருமகன்), a title and not a name.
+- {id: n60, ep: wreck, kind: shipwreck, voice: [poet, kayasandikai], mood: asserted, t: -3.0, roles: {patient: saduvan}, lines: [MAN-16-0013, MAN-16-0014, MAN-16-0015], check: ஒடிமரம்பற்றி}
+- {id: n61, ep: wreck, kind: speak_their_tongue, voice: [poet, kayasandikai], mood: asserted, t: -2.99, roles: {agent: saduvan, addressee: naked_nagas}, lines: [MAN-16-0060, MAN-16-0061, MAN-16-0062], check: பாடை}
+- {id: n62, ep: wreck, kind: offer_food, voice: [poet, kayasandikai, naga_chief], mood: command, t: -2.98, roles: {agent: naga_chief, recipient: saduvan, theme: [toddy, meat]}, lines: [MAN-16-0076, MAN-16-0077], check: வெங்களும்ஊனும்}
+- {id: n63, ep: wreck, kind: refuse, voice: [poet, kayasandikai], mood: asserted, t: -2.97, roles: {agent: saduvan, target: naga_chief}, lines: [MAN-16-0078, MAN-16-0079], check: வேண்டேன்}
+- {id: n64, ep: wreck, kind: admit_eating, voice: [poet, kayasandikai, naga_chief], mood: claimed, t: -2.96, roles: {agent: naga_chief, patient: shipwrecked_men, theme: wreck_goods}, lines: [MAN-16-0120, MAN-16-0121], check: கலம்கவிழ்மாக்களை}
+- {id: n65, ep: wreck, kind: give_goods, voice: [poet, kayasandikai], mood: asserted, t: -2.95, roles: {agent: naga_chief, recipient: saduvan, theme: [fragrant_wood, soft_cloth, treasure]}, does: ["+holds(saduvan,wreck_goods)"], lines: [MAN-16-0122, MAN-16-0123], check: விரைமரம்}
+- {id: n66, ep: wreck, kind: sail_home, voice: [poet, kayasandikai], mood: asserted, t: -2.94, roles: {agent: saduvan, companion: chandradattan, place: puhar}, lines: [MAN-16-0124, MAN-16-0125, MAN-16-0126], check: சந்திரதத்தன்}
+- {id: n67, ep: wreck, kind: give_alms, voice: [poet, kayasandikai], mood: asserted, t: -2.93, roles: {agent: saduvan, companion: aticari}, lines: [MAN-16-0126, MAN-16-0127], check: நன்பலதானமும்}
+
+# ---- Pilivalai's child: a chain of unnamed hands that ends with Puhar under the sea
+- {id: n70, ep: child, kind: hand_over_child, voice: [poet, tivatilakai], mood: asserted, t: -2.0, roles: {agent: pilivalai, recipient: blanket_merchant, theme: royal_infant}, does: ["+holds(blanket_merchant,royal_infant)"], lines: [MAN-25-0184, MAN-25-0186, MAN-25-0189], check: கம்பளச்செட்டி}
+- {id: n71, ep: child, kind: shipwreck, voice: [poet, tivatilakai], mood: asserted, t: -1.9, roles: {patient: blanket_merchant, theme: royal_infant}, does: ["-holds(blanket_merchant,royal_infant)"], because: [{of: n70, rel: then}], lines: [MAN-25-0190, MAN-25-0191, MAN-25-0192], check: அக்கலம்கெட்டது}
+- {id: n72, ep: child, kind: report_loss, voice: [poet, tivatilakai], mood: asserted, t: -1.85, roles: {agent: wrecked_crew, addressee: killi, theme: royal_infant}, because: [{of: n71, rel: motivates}], lines: [MAN-25-0192, MAN-25-0193], check: வடிவேல்கிள்ளி}
+- {id: n73, ep: child, kind: forget_festival, voice: [poet, tivatilakai], mood: asserted, t: -1.8, roles: {agent: killi, theme: indra_festival, place: puhar}, because: [{of: n72, rel: motivates}], lines: [MAN-25-0194, MAN-25-0196, MAN-25-0197], check: வானவன்விழாக்கோள்}
+- {id: n74, ep: child, kind: curse_city, voice: [poet, tivatilakai], mood: asserted, t: -1.75, roles: {agent: manimekhala_deity, patient: puhar}, because: [{of: n73, rel: motivates}], lines: [MAN-25-0198, MAN-25-0199, MAN-25-0200], check: அலைகடல்கொள்க}
+- {id: n75, ep: child, kind: hand_over_child, voice: [poet, aravanan], mood: asserted, t: -2.0, retells: n70, roles: {agent: pilivalai, recipient: blanket_merchant, theme: royal_infant}, lines: [MAN-29-0004, MAN-29-0005, MAN-29-0006], check: கம்பளச்செட்டி}
+
+# ---- cameos
+- {id: n80, ep: cameo, kind: mistake_for, voice: [poet], mood: asserted, t: 13.2, roles: {agent: kosikan, target: kovalan}, lines: [SIL-13-0047, SIL-13-0053], check: கௌசிகன்}
+- {id: n81, ep: cameo, kind: deliver_letter, voice: [poet], mood: asserted, t: 13.21, roles: {agent: kosikan, addressee: kovalan, theme: madhavi_letter, source: madhavi}, lines: [SIL-13-0076, SIL-13-0082], check: மண்ணுடைமுடங்கல்}
+- {id: n82, ep: cameo, kind: send_letter, voice: [poet], mood: asserted, t: 13.3, roles: {agent: kovalan, recipient: kosikan, theme: reply_letter}, lines: [SIL-13-0096, SIL-13-0099], check: கோசிகமாணி}
+- {id: n83, ep: cameo, kind: report_to_king, voice: [poet, matalan], mood: asserted, t: 27.1, roles: {agent: matalan, addressee: cenkuttuvan, theme: kannagi}, lines: [SIL-27-0063, SIL-27-0064, SIL-27-0065], check: கொலைக்களப்பட்ட}
+- {id: n84, ep: cameo, kind: answer_king, voice: [poet], mood: asserted, t: 25.1, roles: {agent: kanjukan, addressee: punyarasan}, lines: [MAN-25-0011, MAN-25-0012], check: கஞ்சுகன்உரைப்போன்}
+- {id: n85, ep: cameo, kind: slander, voice: [poet, manimekalai], mood: claimed, t: 22.1, roles: {agent: townsfolk, target: [dharmadattan, visakai]}, lines: [MAN-22-0086, MAN-22-0087], check: ஊர்முழுதுஅலர்எழ}
+- {id: n86, ep: cameo, kind: plead, voice: [poet, manimekalai], mood: asserted, t: 22.11, roles: {agent: visakai, addressee: pillar}, because: [{of: n85, rel: motivates}], lines: [MAN-22-0089, MAN-22-0091, MAN-22-0092], check: இலகுஒளிக்கந்தின்}
+
+# ---- who dressed Kannagi's image
+- {id: n90, ep: image, kind: adorn_image, voice: [poet], mood: asserted, t: 28.49, roles: {agent: temple_artisans, theme: kannagi_image, source: gold}, lines: [SIL-28-0223, SIL-28-0228, SIL-28-0229, SIL-28-0230], check: வித்தகர்இயற்றிய}
+
+# ---- who put food in the bowl, and who it fed
+- {id: n68, ep: bowl, kind: first_alms, voice: [poet, kayasandikai], mood: asserted, t: 16.1, roles: {agent: aticari, recipient: manimekalai, instrument: amudasurabhi}, lines: [MAN-16-0128, MAN-16-0133, MAN-16-0135], check: ஆதிரைஇட்டனள்}
+- {id: n69, ep: bowl, kind: relieve_hunger, voice: [poet], mood: asserted, t: 17.05, roles: {agent: manimekalai, patient: kayasandikai, instrument: amudasurabhi}, lines: [MAN-17-0017, MAN-17-0018, MAN-17-0019], check: பெரும்பசிநீங்கி}

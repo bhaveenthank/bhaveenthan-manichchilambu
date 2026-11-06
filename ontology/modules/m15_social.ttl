@@ -1,0 +1,22 @@
+# Kinship, marriage and office
+#
+# Scoped to a birth. Kin terms used as address (mother Kannagi) are a mood, not kinship.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m15_social> a owl:Ontology ; rdfs:label "Kinship, marriage and office" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E85_Joining
+
+iy:Kinship a owl:Class .
+iy:Marriage a owl:Class .
+iy:Office a owl:Class .
+
+iy:spouseOf a owl:ObjectProperty .
+iy:childOf a owl:ObjectProperty .
+iy:rules a owl:ObjectProperty .

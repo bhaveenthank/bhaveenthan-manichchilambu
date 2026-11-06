@@ -1,0 +1,32 @@
+{
+ "flat_clean": {
+  "gap": 0.545,
+  "low": 0.436,
+  "high": 0.625,
+  "episodes": 22
+ },
+ "nary": {
+  "gap": 0.694,
+  "low": 0.573,
+  "high": 0.793,
+  "episodes": 22
+ },
+ "qualified": {
+  "gap": 0.264,
+  "low": 0.19,
+  "high": 0.336,
+  "episodes": 22
+ },
+ "contexts": {
+  "gap": 0.314,
+  "low": 0.181,
+  "high": 0.41,
+  "episodes": 22
+ },
+ "standards": {
+  "gap": 0.0,
+  "low": 0.0,
+  "high": 0.0,
+  "episodes": 22
+ }
+}

@@ -1,0 +1,51 @@
+# Dev questions, written with the dev episodes. Gold answers come from reading the cited lines.
+# op names map straight to methods in representations.py. gloss is the plain-language question.
+- {id: q01, ep: anklet, op: happened, kind: steal, roles: {agent: kovalan, theme: ank_q}, gold: false, gloss: "Did Kovalan really steal the queen's anklet?"}
+- {id: q02, ep: anklet, op: happened, kind: steal, roles: {agent: goldsmith, theme: ank_q}, gold: true, gloss: "Did the goldsmith take the queen's anklet?"}
+- {id: q03, ep: anklet, op: happened, kind: accuse, roles: {agent: goldsmith, target: kovalan}, gold: true, gloss: "Did the goldsmith accuse Kovalan?"}
+- {id: q04, ep: anklet, op: happened, kind: kill, roles: {agent: guards, patient: kovalan}, gold: false, gloss: "Did the guards as a group kill Kovalan? (the order said so, one drunk man did it)"}
+- {id: q05, ep: anklet, op: happened, kind: kill, roles: {agent: drunk_man, patient: kovalan}, gold: true, gloss: "Did the drunk man kill Kovalan?"}
+- {id: q06, ep: anklet, op: happened, kind: steal, roles: {agent: pandya_king}, gold: false, gloss: "Is the king a thief? ('I am the thief' is his own bitter metaphor)"}
+- {id: q07, ep: anklet, op: happened, kind: offer, roles: {agent: kannagi, recipient: kovalan}, gold: true, gloss: "Did Kannagi offer the anklets to Kovalan?"}
+- {id: q08, ep: anklet, op: happened, kind: give, roles: {agent: kannagi, recipient: kovalan}, gold: false, gloss: "Is there a 'gave' event from Kannagi to Kovalan? (she says take them, he later takes one)"}
+- {id: q09, ep: anklet, op: happened, kind: suits, roles: {theme: ank_k1, beneficiary: pandya_queen}, gold: false, gloss: "Does Kannagi's anklet belong with the queen? (only the goldsmith says so)"}
+- {id: q10, ep: anklet, op: happened, kind: trade, roles: {agent: kovalan, theme: ank_pair}, gold: false, gloss: "Did the sale ever complete?"}
+- {id: q11, ep: anklet, op: role_of, kind: take, roles: {agent: kovalan}, role: theme, gold: ank_k1, gloss: "What did Kovalan take?"}
+- {id: q12, ep: anklet, op: role_of, kind: kill, roles: {agent: drunk_man}, role: instrument, gold: sword, gloss: "What was he killed with?"}
+- {id: q13, ep: anklet, op: tellers, kind: steal, roles: {agent: kovalan, theme: ank_q}, gold: [[poet, goldsmith]], gloss: "Who tells us Kovalan stole it?"}
+- {id: q14, ep: anklet, op: tellers, kind: innocent, roles: {theme: kovalan}, gold: [[poet, guards], [poet, matalan, matari]], gloss: "Who says Kovalan is innocent, and through whom?"}
+- {id: q15, ep: anklet, op: holder, obj: ank_k1, t: 9, gold: [kannagi], gloss: "Who holds anklet 1 before leaving Puhar?"}
+- {id: q16, ep: anklet, op: holder, obj: ank_k1, t: 16.12, gold: [kovalan], gloss: "Who holds it when he meets the goldsmith?"}
+- {id: q17, ep: anklet, op: holder, obj: ank_k1, t: 20.65, gold: [pandya_king], gloss: "Who holds it in court?"}
+- {id: q18, ep: anklet, op: holder, obj: ank_k2, t: 20.2, gold: [kannagi], gloss: "Who holds the other one at the palace gate?"}
+- {id: q19, ep: anklet, op: holder, obj: ank_q, t: 16.5, gold: [goldsmith], gloss: "Who actually has the queen's anklet during the accusation?"}
+- {id: q20, ep: anklet, op: belief, holder: pandya_king, content: a09, t: 16.5, gold: accept, gloss: "Does the king believe the theft claim at the time of the order?"}
+- {id: q21, ep: anklet, op: belief, holder: pandya_king, content: a09, t: 20.75, gold: reject, gloss: "And after the anklet breaks?"}
+- {id: q22, ep: anklet, op: belief, holder: pandya_king, content: a09, t: 10, gold: null, gloss: "And before anyone told him? (no belief yet)"}
+- {id: q23, ep: anklet, op: alive, who: kovalan, t: 16.1, gold: true, gloss: "Is Kovalan alive when he meets the goldsmith?"}
+- {id: q24, ep: anklet, op: alive, who: kovalan, t: 20.0, gold: false, gloss: "Is Kovalan alive when Kannagi comes to court?"}
+- {id: q25, ep: anklet, op: causes, kind: kill, roles: {agent: drunk_man}, gold: [[a11, enables], [a14, enables], [k_karma_kov, karma], [k_sceptre, moral]], gloss: "What does the text give as reasons for the killing, all of them?"}
+- {id: q26, ep: anklet, op: open_values, kind: break, roles: {agent: kannagi}, role: theme, gold: [ank_k1, ank_k2], gloss: "Which anklet did she break? (text leaves it open)"}
+- {id: q27, ep: anklet, op: conflicts, kind: steal, roles: {agent: kovalan, theme: ank_q}, gold: [a13, a25], gloss: "Who contradicts the theft claim?"}
+- {id: q28, ep: anklet, op: viewer_sees, viewer: pandya_king, t: 16.5, kind: steal, roles: {agent: kovalan, theme: ank_q}, gold: true, gloss: "In the king's head at the order, did Kovalan steal it?"}
+- {id: q29, ep: anklet, op: viewer_sees, viewer: pandya_king, t: 20.75, kind: steal, roles: {agent: kovalan, theme: ank_q}, gold: false, gloss: "In the king's head after the break?"}
+- {id: q30, ep: disguise, op: happened, kind: is_identity, roles: {seen: disguised_woman, is: kayasandikai}, gold: false, gloss: "Was the woman really Kayasandikai?"}
+- {id: q31, ep: disguise, op: happened, kind: lover_of, roles: {agent: udayakumaran, target: kayasandikai}, gold: false, gloss: "Was Udayakumaran really Kayasandikai's lover?"}
+- {id: q32, ep: disguise, op: happened, kind: disguise, roles: {agent: manimekalai, form: kayasandikai}, gold: true, gloss: "Did Manimekalai take Kayasandikai's form?"}
+- {id: q33, ep: disguise, op: happened, kind: is_vidyadhara, roles: {theme: manimekalai}, gold: false, gloss: "Is Manimekalai a Vidyadhara woman? (she told the king so, in disguise)"}
+- {id: q34, ep: disguise, op: belief, holder: kanchanan, content: b09, t: 20.4, gold: accept, gloss: "Does Kanchanan think she's his wife, before the attack?"}
+- {id: q35, ep: disguise, op: belief, holder: kanchanan, content: b09, t: 20.7, gold: reject, gloss: "After the pillar speaks?"}
+- {id: q36, ep: disguise, op: belief, holder: udayakumaran, content: b09, t: 20.4, gold: null, gloss: "Does Udayakumaran hold Kanchanan's wrong belief? (no)"}
+- {id: q37, ep: disguise, op: belief, holder: udayakumaran, content: b07, t: 20.4, gold: accept, gloss: "Does Udayakumaran see through it? (yes)"}
+- {id: q38, ep: disguise, op: viewer_sees, viewer: kanchanan, t: 20.4, kind: is_identity, roles: {seen: disguised_woman, is: kayasandikai}, gold: true, gloss: "From Kanchanan's seat, who is she?"}
+- {id: q39, ep: disguise, op: viewer_sees, viewer: udayakumaran, t: 20.4, kind: is_identity, roles: {seen: disguised_woman, is: kayasandikai}, gold: false, gloss: "From Udayakumaran's seat, same moment?"}
+- {id: q40, ep: disguise, op: alive, who: kayasandikai, t: 20.4, gold: false, gloss: "Is the real Kayasandikai even alive by then?"}
+- {id: q41, ep: disguise, op: causes, kind: kill, roles: {agent: kanchanan}, gold: [[b12, motivates], [b14, karma]], gloss: "Reasons given for Udayakumaran's death?"}
+- {id: q42, ep: bowl, op: holder, obj: amudasurabhi, t: -5.05, gold: [aputhiran], gloss: "Who holds the bowl first?"}
+- {id: q43, ep: bowl, op: holder, obj: amudasurabhi, t: -4.5, gold: [gomukhi], gloss: "Where is it after he gives up? (a pond, not a person)"}
+- {id: q44, ep: bowl, op: holder, obj: amudasurabhi, t: 11.3, gold: [manimekalai], gloss: "Who has it after it rises?"}
+- {id: q45, ep: bowl, op: happened, kind: give, roles: {agent: aputhiran, recipient: manimekalai}, gold: false, gloss: "Did Aputhiran give it to Manimekalai?"}
+- {id: q46, ep: bowl, op: conflicts, kind: receive, roles: {theme: amudasurabhi, recipient: manimekalai}, gold: [c08, c09], gloss: "Do other accounts disagree on how she got it?"}
+- {id: q47, ep: bowl, op: tellers, kind: give, roles: {agent: chintadevi, recipient: aputhiran}, gold: [[poet, aravanan]], gloss: "Whose telling is the first gift?"}
+- {id: q48, ep: bowl, op: role_of, kind: give, roles: {agent: chintadevi}, role: recipient, gold: aputhiran, gloss: "Who received it from Chintadevi?"}
+- {id: q49, ep: bowl, op: holder, obj: other_bowl, t: 6, gold: [cutamati], gloss: "The begging bowl in canto 5 is a different one. Who holds that?"}

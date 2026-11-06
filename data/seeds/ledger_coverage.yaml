@@ -1,0 +1,180 @@
+# Fifth batch: one pass through the cantos that had nothing, so every canto of both epics has a way in.
+# This is coverage and not completeness. Each canto got its main events, read by me, checked by script, reviewed by nobody.
+# Like the material batch, it stays out of the 163 records the experiments were scored on.
+
+# ---- SIL-02 setting up house
+- {id: v001, ep: home, kind: dwell, voice: [poet], mood: asserted, t: 2.1, roles: {agent: kannagi, companion: kovalan}, lines: [SIL-02-0011, SIL-02-0012, SIL-02-0013], check: கயமலர்க்கண்ணி}
+- {id: v002, ep: home, kind: praise, voice: [poet, kovalan], mood: address, t: 2.2, roles: {agent: kovalan, target: kannagi}, lines: [SIL-02-0037, SIL-02-0073, SIL-02-0074, SIL-02-0075], check: மாசறுபொன்னே}
+- {id: v003, ep: home, kind: set_up_household, voice: [poet], mood: asserted, t: 2.3, roles: {agent: noble_lady_02, recipient: kannagi}, unresolved: "The verse says only பேர்இயல் கிழத்தி, a lady of great bearing. Taking her as Kovalan's mother is a reading.", lines: [SIL-02-0084, SIL-02-0088, SIL-02-0090], check: உரிமைச்சுற்றமொடு}
+
+# ---- SIL-04 one evening, two women
+- {id: v004, ep: home, kind: dress_up, voice: [poet], mood: asserted, t: 4.1, roles: {agent: madhavi, beneficiary: kovalan}, lines: [SIL-04-0032, SIL-04-0033, SIL-04-0034], check: கோலம்கொண்டமாதவி}
+- {id: v005, ep: home, kind: leave_off_ornaments, voice: [poet], mood: asserted, t: 4.2, roles: {agent: kannagi, theme: ank_pair}, lines: [SIL-04-0047, SIL-04-0050, SIL-04-0057], check: அணிசிலம்புஒழிய}
+
+# ---- SIL-08 the letter Kovalan refuses
+- {id: v006, ep: letter, kind: play, voice: [poet], mood: asserted, t: 8.1, roles: {agent: madhavi}, lines: [SIL-08-0023, SIL-08-0024], check: மதுரகீதம்}
+- {id: v007, ep: letter, kind: write_letter, voice: [poet], mood: asserted, t: 8.2, roles: {agent: madhavi, theme: flower_letter, source: [ketaki_leaf, lac]}, lines: [SIL-08-0049, SIL-08-0054, SIL-08-0055, SIL-08-0067], check: அலத்தகக்கொழுஞ்சேறு}
+- {id: v008, ep: letter, kind: send, voice: [poet], mood: command, t: 8.3, roles: {agent: madhavi, recipient: vayantamalai, theme: flower_letter, target: kovalan}, lines: [SIL-08-0069, SIL-08-0070, SIL-08-0071], check: வசந்தமாலையைவருகென}
+- {id: v009, ep: letter, kind: hand_over, voice: [poet], mood: asserted, t: 8.4, roles: {agent: vayantamalai, recipient: kovalan, theme: flower_letter}, lines: [SIL-08-0072, SIL-08-0073], check: கோவலற்குஅளிப்ப}
+- {id: v010, ep: letter, kind: dismiss, voice: [poet, kovalan], mood: claimed, t: 8.5, roles: {agent: kovalan, target: madhavi}, lines: [SIL-08-0109, SIL-08-0110], check: ஆடல்மகளே}
+- {id: v011, ep: letter, kind: refuse, voice: [poet], mood: asserted, t: 8.51, roles: {agent: kovalan, theme: flower_letter}, because: [{of: v010, rel: motivates}], lines: [SIL-08-0111, SIL-08-0112], check: திருமுகம்மறுத்ததற்கு}
+- {id: v012, ep: letter, kind: report_back, voice: [poet], mood: asserted, t: 8.6, roles: {agent: vayantamalai, addressee: madhavi}, because: [{of: v011, rel: motivates}], lines: [SIL-08-0113, SIL-08-0114], check: துனைந்துசென்று}
+- {id: v013, ep: letter, kind: wait, voice: [poet, madhavi], mood: intended, t: 8.7, roles: {agent: madhavi, target: kovalan}, lines: [SIL-08-0116, SIL-08-0117], check: காலைகாண்குவம்}
+
+# ---- SIL-10 out of Puhar with Kavunti, and the jackal curse
+- {id: v014, ep: journey, kind: leave_city, voice: [poet], mood: asserted, t: 10.1, roles: {agent: kovalan, companion: kannagi, source: puhar}, lines: [SIL-10-0004, SIL-10-0008, SIL-10-0033], check: ஊழ்வினைக்கடைஇ}
+- {id: v015, ep: journey, kind: ask_distance, voice: [poet], mood: asserted, t: 10.2, roles: {agent: kannagi, theme: madurai, addressee: kovalan}, lines: [SIL-10-0041, SIL-10-0042], check: யாதுஎனவினவ}
+- {id: v016, ep: journey, kind: meet, voice: [poet], mood: asserted, t: 10.3, roles: {agent: kovalan, companion: kannagi, target: kavunti}, lines: [SIL-10-0044, SIL-10-0045], check: கண்டுஅடிதொழலும்}
+- {id: v017, ep: journey, kind: join, voice: [poet, kavunti], mood: asserted, t: 10.31, roles: {agent: kavunti, target: madurai}, lines: [SIL-10-0058, SIL-10-0059, SIL-10-0060], check: போதுவல்யானும்}
+- {id: v018, ep: journey, kind: warn_of_road, voice: [poet, kavunti], mood: predicted, t: 10.4, roles: {agent: kavunti, addressee: kovalan}, lines: [SIL-10-0064, SIL-10-0065], check: ஏதம்தருவன}
+- {id: v019, ep: journey, kind: see_farmland, voice: [poet], mood: asserted, t: 10.5, roles: {agent: kovalan, companion: [kannagi, kavunti], theme: [paddy, sugarcane], place: chola_country}, lines: [SIL-10-0112, SIL-10-0124, SIL-10-0153], check: கழனிச்செந்நெல்}
+- {id: v020, ep: journey, kind: teach, voice: [poet], mood: asserted, t: 10.6, roles: {agent: charana_10, addressee: kavunti}, carries: v021, lines: [SIL-10-0163, SIL-10-0170], check: தருமம்சாற்றும்}
+- {id: v021, ep: journey, kind: karma_inescapable, voice: [poet, charana_10], mood: claimed, t: 10.61, roles: {theme: karma}, lines: [SIL-10-0171, SIL-10-0172, SIL-10-0173], check: ஊட்டும்வல்வினை}
+- {id: v022, ep: journey, kind: taunt, voice: [poet, wanton_woman_10], mood: claimed, t: 10.7, roles: {agent: [wanton_woman_10, idle_man_10], target: [kovalan, kannagi]}, lines: [SIL-10-0219, SIL-10-0227, SIL-10-0228], check: உடன்வயிற்றோர்க்கள்}
+- {id: v023, ep: journey, kind: curse, voice: [poet], mood: asserted, t: 10.71, roles: {agent: kavunti, patient: [wanton_woman_10, idle_man_10]}, because: [{of: v022, rel: motivates}], lines: [SIL-10-0232, SIL-10-0233], check: தவம்தருசாபம்}
+- {id: v024, ep: journey, kind: become_jackals, voice: [poet], mood: asserted, t: 10.72, roles: {patient: [wanton_woman_10, idle_man_10]}, because: [{of: v023, rel: causes}], lines: [SIL-10-0234, SIL-10-0235], check: குறுநரிநெடுங்குரல்}
+- {id: v025, ep: journey, kind: plead, voice: [poet], mood: asserted, t: 10.73, roles: {agent: [kovalan, kannagi], addressee: kavunti, beneficiary: [wanton_woman_10, idle_man_10]}, lines: [SIL-10-0239, SIL-10-0240], check: உய்திக்காலம்}
+- {id: v026, ep: journey, kind: limit_curse, voice: [poet, kavunti], mood: asserted, t: 10.74, roles: {agent: kavunti, patient: [wanton_woman_10, idle_man_10], place: uraiyur}, because: [{of: v025, rel: motivates}], lines: [SIL-10-0242, SIL-10-0243, SIL-10-0245], check: பன்னிருமதியம்}
+- {id: v027, ep: journey, kind: arrive, voice: [poet], mood: asserted, t: 10.8, roles: {agent: kavunti, companion: [kovalan, kannagi], place: uraiyur}, lines: [SIL-10-0246, SIL-10-0248], check: புறஞ்சிறைவாரணம்}
+
+# ---- SIL-31, SIL-32 the closing frames. The last says the meaning carries on in the other poem.
+- {id: v028, ep: frame, kind: praise_line, voice: [poet], mood: asserted, t: 31, roles: {agent: ilanko, theme: cenkuttuvan}, lines: [SIL-31-0003, SIL-31-0014], check: செங்குட்டுவனோடொரு}
+- {id: v029, ep: frame, kind: continues_in, voice: [poet], mood: asserted, t: 32, roles: {theme: silappatikaram_work, target: manimekalai_work}, lines: [SIL-32-0017, SIL-32-0018], check: மணிமேகலைமேல்}
+
+# ---- SIL-11 the brahmin's roads, a goddess pretending to be Vayantamalai
+- {id: v030, ep: journey, kind: meet, voice: [poet], mood: asserted, t: 11.1, roles: {agent: kovalan, target: brahmin_11}, lines: [SIL-11-0031, SIL-11-0032, SIL-11-0033], check: யாதுநும்மூர்}
+- {id: v031, ep: journey, kind: describe_road, voice: [poet, brahmin_11], mood: asserted, t: 11.2, roles: {agent: brahmin_11, addressee: kovalan, theme: madurai}, lines: [SIL-11-0058, SIL-11-0059, SIL-11-0071], check: மதுரைச்செந்நெறி}
+- {id: v032, ep: journey, kind: grows_on, voice: [poet, brahmin_11], mood: asserted, t: 11.21, roles: {place: sirumalai, theme: [sugarcane, millet, garlic, turmeric, plantain, areca, coconut, mango, jackfruit]}, lines: [SIL-11-0080, SIL-11-0081, SIL-11-0082, SIL-11-0083, SIL-11-0084, SIL-11-0085], check: தென்னவன்சிறுமலை}
+- {id: v033, ep: journey, kind: wave_off, voice: [poet], mood: asserted, t: 11.3, roles: {agent: kavunti, addressee: brahmin_11}, lines: [SIL-11-0152, SIL-11-0153], check: பிலம்புகவேண்டும்}
+- {id: v034, ep: journey, kind: disguise, voice: [poet], mood: asserted, t: 11.4, roles: {agent: forest_deity_11, form: vayantamalai, target: kovalan}, lines: [SIL-11-0171, SIL-11-0173], check: வயந்தமாலைவடிவில்}
+- {id: v035, ep: journey, kind: false_report, voice: [poet, forest_deity_11], mood: claimed, t: 11.41, roles: {agent: forest_deity_11, addressee: kovalan, theme: madhavi}, because: [{of: v034, rel: then}], lines: [SIL-11-0176, SIL-11-0178, SIL-11-0179], check: கோவலன்செய்தான்}
+- {id: v036, ep: journey, kind: expose_with_mantra, voice: [poet], mood: asserted, t: 11.42, roles: {agent: kovalan, target: forest_deity_11, instrument: mantra}, because: [{of: v035, rel: motivates}], lines: [SIL-11-0194, SIL-11-0196, SIL-11-0198], check: வனசாரிணியான்}
+- {id: v037, ep: journey, kind: fetch_water, voice: [poet], mood: asserted, t: 11.5, roles: {agent: kovalan, beneficiary: kannagi}, lines: [SIL-11-0201, SIL-11-0202], check: தாமரைப்பாசடை}
+- {id: v038, ep: journey, kind: arrive, voice: [poet], mood: asserted, t: 11.6, roles: {agent: kavunti, companion: [kovalan, kannagi], place: aiyai_temple}, lines: [SIL-11-0205, SIL-11-0206, SIL-11-0216], check: ஐயைதன்கோட்டம்}
+
+# ---- SIL-12 the hunters' goddess, and a woman who speaks over Kannagi
+- {id: v039, ep: journey, kind: become_possessed, voice: [poet], mood: asserted, t: 12.1, roles: {agent: salini}, lines: [SIL-12-0007, SIL-12-0008], check: முழங்குவாய்ச்சாலினி}
+- {id: v040, ep: journey, kind: dress_as_goddess, voice: [poet], mood: asserted, t: 12.2, roles: {agent: eyinar, patient: hunter_girl_12, source: [boar_tusk, tiger_teeth, animal_skin]}, lines: [SIL-12-0021, SIL-12-0025, SIL-12-0027, SIL-12-0028, SIL-12-0030], check: தொல்குடிக்குமரி}
+- {id: v041, ep: journey, kind: proclaim, voice: [poet, salini], mood: claimed, t: 12.3, roles: {agent: salini, target: kannagi}, lines: [SIL-12-0047, SIL-12-0048, SIL-12-0049, SIL-12-0050], check: கொங்கச்செல்வி}
+- {id: v042, ep: journey, kind: shrug_off, voice: [poet, kannagi], mood: claimed, t: 12.31, roles: {agent: kannagi, target: salini}, because: [{of: v041, rel: motivates}], lines: [SIL-12-0051, SIL-12-0052, SIL-12-0053], check: பேதுறவுமொழிந்தனள்}
+- {id: v043, ep: journey, kind: blood_offering, voice: [poet, eyinar], mood: address, t: 12.4, roles: {agent: eyinar, target: korravai}, lines: [SIL-12-0151, SIL-12-0152], check: மிடறுகுகுருதி}
+
+# ---- SIL-14 a day walking through Madurai, by trade
+- {id: v044, ep: city, kind: entrust_wife_leave, voice: [poet, kovalan], mood: intended, t: 14.1, roles: {agent: kovalan, addressee: kavunti, theme: kannagi}, lines: [SIL-14-0015, SIL-14-0016, SIL-14-0022, SIL-14-0024], check: என்னிலையுணர்த்தி}
+- {id: v045, ep: city, kind: console, voice: [poet, kavunti], mood: claimed, t: 14.2, roles: {agent: kavunti, addressee: kovalan, theme: [rama_unnamed, nala_unnamed]}, unresolved: "The verse names neither hero. Rama and Nala are how these two examples are usually read.", lines: [SIL-14-0046, SIL-14-0047, SIL-14-0050, SIL-14-0051, SIL-14-0055], check: தாதைஏவலின்}
+- {id: v046, ep: city, kind: pass_guards, voice: [poet], mood: asserted, t: 14.3, roles: {agent: kovalan, target: yavana_guards, place: madurai}, lines: [SIL-14-0066, SIL-14-0067], check: அடல்வாள்யவனர்}
+- {id: v047, ep: city, kind: wear_from_source, voice: [poet], mood: asserted, t: 14.4, roles: {agent: madurai_women, theme: pearl_material, source: korkai}, lines: [SIL-14-0080], check: கொற்கையம்பெருந்துறைமுத்தொடு}
+- {id: v048, ep: city, kind: bring_cargo, voice: [poet], mood: asserted, t: 14.5, roles: {agent: tondi_shippers, theme: [agarwood, silk, sandalwood, perfume, camphor], place: madurai, source: tondi}, unresolved: "The word here is ஆரம், which also means a necklace. Sandalwood is the likely sense beside agarwood and camphor, but it's a reading.", lines: [SIL-14-0107, SIL-14-0108, SIL-14-0109, SIL-14-0110], check: தொண்டியோரிட்ட}
+- {id: v049, ep: city, kind: sold_in_street, voice: [poet], mood: asserted, t: 14.6, roles: {theme: [diamond, gemstone, emerald, sapphire, coral], place: gem_street}, lines: [SIL-14-0183, SIL-14-0185, SIL-14-0186, SIL-14-0192, SIL-14-0198, SIL-14-0200], check: நலங்கெழுமணிகளும்}
+- {id: v050, ep: city, kind: sold_in_street, voice: [poet], mood: asserted, t: 14.61, roles: {theme: gold, place: gold_street}, lines: [SIL-14-0201, SIL-14-0202, SIL-14-0204], check: சாதரூபம்}
+- {id: v051, ep: city, kind: sold_in_street, voice: [poet], mood: asserted, t: 14.62, roles: {theme: soft_cloth, place: cloth_street}, lines: [SIL-14-0205, SIL-14-0207], check: அறுவைவீதியும்}
+- {id: v052, ep: city, kind: sold_in_street, voice: [poet], mood: asserted, t: 14.63, roles: {theme: [pepper, grain], place: grain_street}, lines: [SIL-14-0210, SIL-14-0211], check: கருங்கறிமூடையொடு}
+- {id: v053, ep: city, kind: walk_city, voice: [poet], mood: asserted, t: 14.7, roles: {agent: kovalan, place: madurai}, lines: [SIL-14-0217, SIL-14-0218], check: காவலன்பேரூர்}
+
+# ---- SIL-17 omens among the cowherds
+- {id: v054, ep: omen, kind: omens_seen, voice: [poet], mood: asserted, t: 16.5, roles: {agent: matari, theme: [dairy, cows]}, lines: [SIL-17-0012, SIL-17-0013, SIL-17-0014, SIL-17-0016], check: குடப்பால்உறையா}
+- {id: v055, ep: omen, kind: call_dance, voice: [poet, matari], mood: command, t: 16.51, roles: {agent: matari, addressee: aiyai_daughter, beneficiary: kannagi}, because: [{of: v054, rel: motivates}], lines: [SIL-17-0023, SIL-17-0024, SIL-17-0027, SIL-17-0028], check: குரவையாடுதும்}
+- {id: v056, ep: omen, kind: dance, voice: [poet], mood: asserted, t: 16.52, roles: {agent: matari, companion: cowherd_women, target: krishna}, lines: [SIL-17-0065, SIL-17-0066], check: தண்டாக்குரவை}
+- {id: v057, ep: omen, kind: pray, voice: [poet, cowherd_women], mood: wish, t: 16.53, roles: {agent: cowherd_women, target: krishna, beneficiary: cows}, lines: [SIL-17-0166, SIL-17-0167], check: ஆத்தலைப்பட்டதுயர்}
+
+# ---- SIL-18 the news reaches her
+- {id: v058, ep: fire, kind: hear_uproar, voice: [poet], mood: asserted, t: 16.6, roles: {agent: bathing_woman_18}, lines: [SIL-18-0002, SIL-18-0005, SIL-18-0006, SIL-18-0007], check: ஊரரவங்}
+- {id: v059, ep: fire, kind: report_rumour, voice: [poet, bathing_woman_18], mood: claimed, t: 16.61, roles: {agent: bathing_woman_18, addressee: kannagi, target: kovalan}, lines: [SIL-18-0025, SIL-18-0026, SIL-18-0028], check: கள்வனாம்}
+- {id: v060, ep: fire, kind: collapse, voice: [poet], mood: asserted, t: 16.62, roles: {agent: kannagi}, because: [{of: v059, rel: motivates}], lines: [SIL-18-0030, SIL-18-0032, SIL-18-0033], check: பொங்கிஎழுந்தாள்}
+- {id: v061, ep: fire, kind: ask_the_sun, voice: [poet, kannagi], mood: question, t: 16.63, roles: {agent: kannagi, addressee: sun, target: kovalan}, lines: [SIL-18-0050, SIL-18-0051], check: கள்வனோஎன்கணவன்}
+- {id: v062, ep: fire, kind: sun_answers, voice: [poet, sun], mood: asserted, t: 16.64, roles: {agent: sun, addressee: kannagi, target: kovalan}, because: [{of: v061, rel: answers}], lines: [SIL-18-0052, SIL-18-0053], check: கள்வனோஅல்லன்}
+- {id: v063, ep: fire, kind: fire_foretold, voice: [poet, sun], mood: predicted, t: 16.65, roles: {agent: fire, patient: madurai}, lines: [SIL-18-0053], check: ஒள்ளெரிஉண்ணுமிவ்வூரென்ற}
+
+# ---- SIL-29 what became of everyone, told to the king
+- {id: v064, ep: blessing, kind: journey_to_her, voice: [poet], mood: asserted, t: 29.1, roles: {agent: [tevanti, guardian_woman_29, kannagi_maid], target: kannagi, place: madurai, companion: [matari, aiyai_daughter]}, lines: [SIL-29-0030, SIL-29-0031, SIL-29-0032], check: மதுரைமாநகர்புகுந்து}
+- {id: v065, ep: blessing, kind: tell_king, voice: [poet], mood: asserted, t: 29.11, roles: {agent: [tevanti, guardian_woman_29, kannagi_maid], addressee: cenkuttuvan}, because: [{of: v064, rel: then}], lines: [SIL-29-0036, SIL-29-0037], check: செங்குட்டுவற்குத்திறமுரைப்பர்}
+- {id: v066, ep: blessing, kind: mothers_die, voice: [poet, tevanti], mood: asserted, t: 29.12, roles: {patient: [kannagi_mother, kovalan_mother]}, lines: [SIL-29-0060, SIL-29-0061], check: அவ்வையுயிர்வீவுங்}
+- {id: v067, ep: blessing, kind: renounce, voice: [poet, guardian_woman_29], mood: asserted, t: 29.13, roles: {agent: [masattuvan, manaikan]}, lines: [SIL-29-0066, SIL-29-0067, SIL-29-0068], check: மாசாத்துவான்துறவுங்}
+- {id: v068, ep: blessing, kind: renounce, voice: [poet, kannagi_maid], mood: asserted, t: 29.14, roles: {agent: [madhavi, manimekalai]}, lines: [SIL-29-0072, SIL-29-0073, SIL-29-0074], check: மணிமேகலைதுறவுங்}
+- {id: v069, ep: blessing, kind: vision, voice: [poet, cenkuttuvan], mood: asserted, t: 29.2, roles: {agent: cenkuttuvan, seen: kannagi}, lines: [SIL-29-0082, SIL-29-0083, SIL-29-0085], check: மின்னுக்கொடி}
+- {id: v070, ep: blessing, kind: absolve_king, voice: [poet, kannagi], mood: claimed, t: 29.21, roles: {agent: kannagi, target: pandya_king}, lines: [SIL-29-0088, SIL-29-0089], check: தென்னவன்தீதிலன்}
+- {id: v071, ep: blessing, kind: praise_in_song, voice: [poet, vanci_women], mood: address, t: 29.3, roles: {agent: vanci_women, target: kannagi, theme: ank_k2}, lines: [SIL-29-0095, SIL-29-0096], check: செஞ்சிலம்பால்வென்றாளை}
+- {id: v072, ep: blessing, kind: pound_pearls, voice: [poet], mood: metaphor, t: 29.4, roles: {agent: [puhar_women, madurai_women, vanci_women], theme: pearl_material}, lines: [SIL-29-0171, SIL-29-0172, SIL-29-0176, SIL-29-0177, SIL-29-0181, SIL-29-0182], check: தகைசால்அணிமுத்தம்}
+
+# ---- MAN-03 into the flower grove. A different Kausikan, and Mayan again.
+- {id: v073, ep: grove, kind: weep_ruin_garland, voice: [poet], mood: asserted, t: 3.1, roles: {agent: manimekalai}, lines: [MAN-03-0005, MAN-03-0006, MAN-03-0009, MAN-03-0010], check: வெந்துயர்இடும்பை}
+- {id: v074, ep: grove, kind: send_for_flowers, voice: [poet, madhavi], mood: command, t: 3.11, roles: {agent: madhavi, addressee: manimekalai}, lines: [MAN-03-0014, MAN-03-0015], check: நிகர்மலர்நீயேகொணர்வாய்}
+- {id: v075, ep: grove, kind: child_of, voice: [poet, cutamati], mood: asserted, t: 3.2, roles: {agent: cutamati, source: kausikan_campai, place: campai}, lines: [MAN-03-0029, MAN-03-0030], check: கௌசிகன்என்போன்}
+- {id: v076, ep: grove, kind: abduct, voice: [poet, cutamati], mood: asserted, t: 3.21, roles: {agent: marutavegan, patient: cutamati}, lines: [MAN-03-0033, MAN-03-0038, MAN-03-0039], check: மாருதவேகன்}
+- {id: v077, ep: grove, kind: make, voice: [poet, cutamati], mood: asserted, t: 3.3, roles: {agent: mayan, theme: crystal_room}, lines: [MAN-03-0064, MAN-03-0079], check: மயன்பண்டுஇழைத்த}
+- {id: v078, ep: grove, kind: press_toddy, voice: [poet], mood: command, t: 3.4, roles: {agent: toddy_drunk_03, addressee: jain_monk_03, theme: toddy, source: coconut}, lines: [MAN-03-0098, MAN-03-0099, MAN-03-0103], check: தெங்கின்}
+- {id: v079, ep: grove, kind: blame_mother, voice: [poet, townsfolk], mood: claimed, t: 3.5, roles: {agent: townsfolk, target: madhavi}, lines: [MAN-03-0149, MAN-03-0150], check: தாயோகொடியள்}
+- {id: v080, ep: grove, kind: enter, voice: [poet], mood: asserted, t: 3.6, roles: {agent: manimekalai, companion: cutamati, place: flower_grove}, lines: [MAN-03-0170, MAN-03-0171], check: மலர்கொய்யப்புகுந்தனள்}
+
+# ---- MAN-04 the crystal room
+- {id: v081, ep: grove, kind: tame_elephant, voice: [poet], mood: asserted, t: 4.1, roles: {agent: udayakumaran}, lines: [MAN-04-0028, MAN-04-0046], check: கடாத்திறம்அடக்கி}
+- {id: v082, ep: grove, kind: tell_prince, voice: [poet, etti_kumaran], mood: asserted, t: 4.2, roles: {agent: etti_kumaran, addressee: udayakumaran, theme: manimekalai}, lines: [MAN-04-0058, MAN-04-0067, MAN-04-0068], check: மாதவிபயந்தமணிமேகலையொடு}
+- {id: v083, ep: grove, kind: resolve_to_seize, voice: [poet, udayakumaran], mood: intended, t: 4.21, roles: {agent: udayakumaran, patient: manimekalai}, because: [{of: v082, rel: motivates}], lines: [MAN-04-0073, MAN-04-0074], check: அணித்தேர்ஏற்றி}
+- {id: v084, ep: grove, kind: hide, voice: [poet], mood: asserted, t: 4.3, roles: {agent: cutamati, patient: manimekalai, place: crystal_room}, because: [{of: v083, rel: answers}], lines: [MAN-04-0087, MAN-04-0088], check: ஒளித்துஅறைதாழ்}
+- {id: v085, ep: grove, kind: lecture_on_the_body, voice: [poet, cutamati], mood: claimed, t: 4.4, roles: {agent: cutamati, addressee: udayakumaran}, lines: [MAN-04-0115, MAN-04-0120, MAN-04-0121], check: மக்கள்யாக்கை}
+- {id: v086, ep: grove, kind: seen_through_crystal, voice: [poet], mood: asserted, t: 4.5, roles: {agent: udayakumaran, seen: manimekalai, place: crystal_room}, lines: [MAN-04-0124, MAN-04-0125], check: பளிங்குபுறத்துஎறிந்த}
+
+# ---- MAN-08 alone on the island
+- {id: v087, ep: island, kind: shore_holds, voice: [poet], mood: asserted, t: 8.1, roles: {place: manipallavam, theme: [pearl_material, coral, fragrant_wood]}, lines: [MAN-08-0002, MAN-08-0004, MAN-08-0005], check: விரைமரம்உருட்டும்}
+- {id: v088, ep: island, kind: wake_alone, voice: [poet], mood: asserted, t: 8.2, roles: {agent: manimekalai, place: manipallavam}, lines: [MAN-08-0012, MAN-08-0015], check: பண்டுஅறிகிளையொடு}
+- {id: v089, ep: island, kind: mourn_father, voice: [poet, manimekalai], mood: address, t: 8.3, roles: {agent: manimekalai, target: kovalan}, lines: [MAN-08-0039, MAN-08-0043], check: ஐயாவோ}
+- {id: v090, ep: island, kind: set_seat, voice: [poet], mood: asserted, t: 8.4, roles: {agent: indra, theme: seat_of_buddha, place: manipallavam}, lines: [MAN-08-0052, MAN-08-0053], check: தேவர்கோன்இட்ட}
+- {id: v091, ep: island, kind: fight_over, voice: [poet], mood: asserted, t: -9, roles: {agent: two_naga_kings, theme: seat_of_buddha}, lines: [MAN-08-0054, MAN-08-0055, MAN-08-0059], check: இருவர்மன்னவர்}
+
+# ---- MAN-12 at Aravanan's feet
+- {id: v092, ep: teaching, kind: seek_teacher, voice: [poet], mood: asserted, t: 12.1, roles: {agent: manimekalai, target: aravanan}, lines: [MAN-12-0001, MAN-12-0002, MAN-12-0006], check: அறவணஅடிகள்}
+- {id: v093, ep: teaching, kind: sisters_die, voice: [poet, aravanan], mood: asserted, t: -8, roles: {patient: [vira, tara]}, lines: [MAN-12-0046, MAN-12-0048], check: வீரைமாய்ந்ததூஉம்}
+- {id: v094, ep: teaching, kind: reborn_as, voice: [poet, manimekhala_deity], mood: asserted, t: -7.9, roles: {earlier: [tara, vira], later: [madhavi, cutamati]}, lines: [MAN-12-0015, MAN-12-0016, MAN-12-0017], check: தாரையும்வீரையும்}
+- {id: v095, ep: teaching, kind: foretell_buddha, voice: [poet, aravanan], mood: predicted, t: 12.2, roles: {agent: aravanan}, lines: [MAN-12-0077, MAN-12-0078], check: பேர்அறிவாளன்தோன்றும்}
+- {id: v096, ep: teaching, kind: name_the_duty, voice: [poet, aravanan], mood: claimed, t: 12.3, roles: {agent: aravanan, addressee: manimekalai, theme: hunger}, lines: [MAN-12-0116, MAN-12-0118], check: பசிப்பிணிதீர்த்தல்}
+- {id: v097, ep: teaching, kind: lift_the_bowl, voice: [poet], mood: asserted, t: 12.4, roles: {agent: manimekalai, theme: amudasurabhi}, because: [{of: v096, rel: motivates}], lines: [MAN-12-0120, MAN-12-0121], check: எடுத்தனள்பாத்திரம்}
+
+# ---- MAN-13 who Aputhiran was. Another man called a thief.
+- {id: v098, ep: aputhiran, kind: abandon_child, voice: [poet, aravanan], mood: asserted, t: -6.9, roles: {agent: sali, patient: aputhiran}, lines: [MAN-13-0005, MAN-13-0009, MAN-13-0010], check: இட்டனள்நீங்க}
+- {id: v099, ep: aputhiran, kind: nurse, voice: [poet, aravanan], mood: asserted, t: -6.89, roles: {agent: nursing_cow, patient: aputhiran}, because: [{of: v098, rel: then}], lines: [MAN-13-0012, MAN-13-0013, MAN-13-0014], check: நாவான்நக்கி}
+- {id: v100, ep: aputhiran, kind: adopt, voice: [poet, aravanan], mood: asserted, t: -6.88, roles: {agent: ilambuti, patient: aputhiran}, lines: [MAN-13-0016, MAN-13-0019, MAN-13-0020], check: இளம்பூதி}
+- {id: v101, ep: aputhiran, kind: free_sacrificial_cow, voice: [poet, aravanan], mood: asserted, t: -6.8, roles: {agent: aputhiran, theme: sacrificial_cow}, lines: [MAN-13-0033, MAN-13-0034, MAN-13-0038], check: அல்லிடைஆக்கொண்டு}
+- {id: v102, ep: aputhiran, kind: beat, voice: [poet, aravanan], mood: asserted, t: -6.79, roles: {agent: brahmins, patient: aputhiran}, because: [{of: v101, rel: motivates}], lines: [MAN-13-0040, MAN-13-0041, MAN-13-0045], check: அலைக்கோல்}
+- {id: v103, ep: aputhiran, kind: gore, voice: [poet, aravanan], mood: asserted, t: -6.78, roles: {agent: sacrificial_cow, patient: brahmin_teacher_13}, lines: [MAN-13-0046, MAN-13-0047], check: கோட்டினில்குத்தி}
+- {id: v104, ep: aputhiran, kind: shame_his_birth, voice: [poet, aravanan, brahmin_13], mood: claimed, t: -6.7, roles: {agent: brahmin_13, target: aputhiran, theme: sali}, lines: [MAN-13-0071, MAN-13-0075, MAN-13-0089], check: சாலிஎன்போள்}
+- {id: v105, ep: aputhiran, kind: call_thief, voice: [poet, aravanan, brahmins], mood: claimed, t: -6.6, roles: {agent: brahmins, target: aputhiran}, lines: [MAN-13-0101, MAN-13-0102, MAN-13-0103], check: ஆகவர்கள்வன்}
+- {id: v106, ep: aputhiran, kind: feed_the_helpless, voice: [poet, aravanan], mood: asserted, t: -6.5, roles: {agent: aputhiran, place: madurai}, lines: [MAN-13-0105, MAN-13-0106, MAN-13-0113], check: தக்கணமதுரை}
+
+# ---- MAN-15 out with the bowl
+- {id: v107, ep: aputhiran, kind: cow_goes_to_savaka, voice: [poet, aravanan], mood: asserted, t: -5.5, roles: {agent: nursing_cow, place: savakam, target: manmukan}, lines: [MAN-15-0003, MAN-15-0004, MAN-15-0006], check: மண்முகன்}
+- {id: v108, ep: aputhiran, kind: reborn_of_cow, voice: [poet, aravanan], mood: asserted, t: -5.4, roles: {later: punyarasan, earlier: aputhiran, source: nursing_cow, place: savakam}, unresolved: "The verse says he's born from the cow in Savakam. That this is the man reigning as Punyarasan comes from other cantos.", lines: [MAN-15-0016, MAN-15-0019, MAN-15-0021], check: ஆவயிற்று}
+- {id: v109, ep: bowl, kind: go_out_begging, voice: [poet], mood: asserted, t: 15.1, roles: {agent: manimekalai, instrument: amudasurabhi}, lines: [MAN-15-0057, MAN-15-0058], check: பிக்குணிக்கோலத்து}
+- {id: v110, ep: bowl, kind: gossip, voice: [poet, townsfolk], mood: claimed, t: 15.2, roles: {agent: townsfolk, target: manimekalai, theme: udayakumaran}, lines: [MAN-15-0067, MAN-15-0069, MAN-15-0070], check: திப்பியம்}
+- {id: v111, ep: bowl, kind: direct_to_house, voice: [poet], mood: asserted, t: 15.3, roles: {agent: kayasandikai, addressee: manimekalai, target: aticari}, lines: [MAN-15-0079, MAN-15-0080, MAN-15-0086], check: அவள்மனைஇம்மனை}
+
+# ---- MAN-23 the queen's revenge, and why it fails
+- {id: v112, ep: prison, kind: console, voice: [poet], mood: asserted, t: 23.1, roles: {agent: vasantavai, addressee: chola_queen}, lines: [MAN-23-0001, MAN-23-0007, MAN-23-0008], check: வாசந்தவை}
+- {id: v113, ep: prison, kind: plot, voice: [poet, chola_queen], mood: intended, t: 23.2, roles: {agent: chola_queen, target: manimekalai}, lines: [MAN-23-0023], check: வஞ்சம்செய்குவன்}
+- {id: v114, ep: prison, kind: get_custody, voice: [poet], mood: asserted, t: 23.3, roles: {agent: chola_queen, addressee: chola_king, patient: manimekalai}, lines: [MAN-23-0024, MAN-23-0034, MAN-23-0035, MAN-23-0037], check: தீர்க்க}
+- {id: v115, ep: prison, kind: drug, voice: [poet], mood: asserted, t: 23.4, roles: {agent: chola_queen, patient: manimekalai}, lines: [MAN-23-0041, MAN-23-0042], check: மயல்பகைஊட்ட}
+- {id: v116, ep: prison, kind: hire_to_slander, voice: [poet], mood: asserted, t: 23.5, roles: {agent: chola_queen, recipient: hired_youth_23, theme: gold_coins, target: manimekalai}, lines: [MAN-23-0043, MAN-23-0047, MAN-23-0048], check: கல்லாஇளைஞன்}
+- {id: v117, ep: prison, kind: disguise, voice: [poet], mood: asserted, t: 23.51, roles: {agent: manimekalai, form: male_ascetic, instrument: mantra}, because: [{of: v116, rel: answers}], lines: [MAN-23-0051, MAN-23-0052, MAN-23-0053], check: ஆண்மைக்கோலத்து}
+- {id: v118, ep: prison, kind: starve_in_vain, voice: [poet], mood: asserted, t: 23.6, roles: {agent: chola_queen, patient: manimekalai, instrument: mantra}, lines: [MAN-23-0060, MAN-23-0061, MAN-23-0062], check: ஊண்ஒழிமந்திரம்}
+- {id: v119, ep: prison, kind: repent, voice: [poet], mood: asserted, t: 23.7, roles: {agent: chola_queen, target: manimekalai}, lines: [MAN-23-0064, MAN-23-0066], check: செய்தவத்தாட்டியை}
+- {id: v120, ep: prison, kind: teach, voice: [poet, manimekalai], mood: claimed, t: 23.8, roles: {agent: manimekalai, addressee: chola_queen}, lines: [MAN-23-0073, MAN-23-0079], check: உடற்குஅழுதனையோ}
+- {id: v121, ep: prison, kind: bow_to_each_other, voice: [poet], mood: asserted, t: 23.9, roles: {agent: manimekalai, target: chola_queen}, lines: [MAN-23-0144, MAN-23-0145, MAN-23-0147], check: எதிர்வணங்கினள்}
+
+# ---- MAN-28 Vanci by trade, Kovalan's father, and Kanchi's famine
+- {id: v122, ep: city, kind: sold_in_street, voice: [poet], mood: asserted, t: 28.1, roles: {theme: [fish, salt, toddy], place: vanci}, lines: [MAN-28-0031, MAN-28-0032], check: கள்நொடையாட்டியர்}
+- {id: v123, ep: city, kind: trades_in_street, voice: [poet], mood: asserted, t: 28.11, roles: {agent: [vanci_goldsmiths, vanci_carpenters, vanci_painters], place: vanci}, lines: [MAN-28-0036, MAN-28-0037, MAN-28-0038], check: மரம்கொல்தச்சரும்}
+- {id: v124, ep: bridge, kind: meet, voice: [poet], mood: asserted, t: 28.2, roles: {agent: manimekalai, target: masattuvan, place: vanci}, lines: [MAN-28-0073, MAN-28-0074], check: கோவலன்தாதை}
+- {id: v125, ep: bridge, kind: build_stupa, voice: [poet, masattuvan], mood: asserted, t: -30, roles: {agent: kovalan_ninth_ancestor, theme: vanci_stupa, place: vanci}, lines: [MAN-28-0123, MAN-28-0124, MAN-28-0130, MAN-28-0131], check: ஒன்பதுவழிமுறை}
+- {id: v126, ep: bridge, kind: foretell_flood, voice: [poet, masattuvan, charanas_28], mood: predicted, t: 28.21, roles: {agent: charanas_28, patient: puhar}, lines: [MAN-28-0135, MAN-28-0136], check: காவிரிப்பட்டினம்கடல்கொளும்}
+- {id: v127, ep: bridge, kind: foretell_release, voice: [poet, masattuvan], mood: predicted, t: 28.22, roles: {agent: kovalan, companion: kannagi, place: kapilai}, lines: [MAN-28-0138, MAN-28-0143, MAN-28-0144], check: கபிலைஅம்பதியில்}
+- {id: v128, ep: famine, kind: famine, voice: [poet, masattuvan], mood: asserted, t: 28.3, roles: {patient: kanchi}, lines: [MAN-28-0156, MAN-28-0157], check: மழைவளம்கரத்தலின்}
+- {id: v129, ep: famine, kind: charge_with_duty, voice: [poet, masattuvan], mood: command, t: 28.31, roles: {agent: masattuvan, addressee: manimekalai, target: kanchi}, because: [{of: v128, rel: motivates}], lines: [MAN-28-0160, MAN-28-0161], check: காத்தல்நின்கடன்}
+- {id: v130, ep: famine, kind: fly, voice: [poet], mood: asserted, t: 28.4, roles: {agent: manimekalai, instrument: amudasurabhi, target: kanchi, source: vanci}, because: [{of: v129, rel: motivates}], lines: [MAN-28-0163, MAN-28-0165, MAN-28-0168], check: வானத்துஇயங்கி}
+- {id: v131, ep: famine, kind: announce_arrival, voice: [poet], mood: asserted, t: 28.5, roles: {agent: kanjukan_28, addressee: kanchi_king, theme: manimekalai}, lines: [MAN-28-0178, MAN-28-0179, MAN-28-0181], check: கோவலன்மடந்தை}
+- {id: v132, ep: famine, kind: make, voice: [poet], mood: asserted, t: 28.6, roles: {agent: manimekalai, theme: kanchi_seat, place: kanchi}, lines: [MAN-28-0210, MAN-28-0211, MAN-28-0214], check: பங்கயப்பீடிகை}
+- {id: v133, ep: famine, kind: feed_everyone, voice: [poet], mood: asserted, t: 28.7, roles: {agent: manimekalai, instrument: amudasurabhi, place: kanchi}, because: [{of: v128, rel: answers}], lines: [MAN-28-0218, MAN-28-0219, MAN-28-0228], check: எல்லாஉயிரும்வருக}
+- {id: v134, ep: famine, kind: reveal_and_serve, voice: [poet], mood: asserted, t: 28.8, roles: {agent: manimekalai, recipient: aravanan, companion: madhavi}, lines: [MAN-28-0239, MAN-28-0242, MAN-28-0245], check: மாயைவிட்டுஇறைஞ்சினள்}
+
+# ---- MAN-30 the end
+- {id: v135, ep: teaching, kind: take_refuge, voice: [poet], mood: asserted, t: 30.1, roles: {agent: manimekalai}, lines: [MAN-30-0003, MAN-30-0004, MAN-30-0005], check: முத்திறமணியை}
+- {id: v136, ep: teaching, kind: teach_twelve_links, voice: [poet, aravanan], mood: claimed, t: 30.2, roles: {agent: aravanan, addressee: manimekalai, theme: knowledge}, lines: [MAN-30-0045, MAN-30-0046, MAN-30-0047, MAN-30-0048], check: பேதைமைசெய்கை}
+- {id: v137, ep: teaching, kind: begin_austerity, voice: [poet], mood: asserted, t: 30.3, roles: {agent: manimekalai}, lines: [MAN-30-0263, MAN-30-0264], check: பவத்திறம்அறுக}

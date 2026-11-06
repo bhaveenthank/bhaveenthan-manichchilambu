@@ -1,0 +1,20 @@
+# Story time and reading order
+#
+# Two different clocks. Aputhiran's story is read in canto 14 and happens before canto 11.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m08_time> a owl:Ontology ; rdfs:label "Story time and reading order" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: time:Instant
+
+iy:StoryPosition a owl:Class .
+iy:ReadingPosition a owl:Class .
+
+iy:storyTime a owl:ObjectProperty .
+iy:readingTime a owl:ObjectProperty .

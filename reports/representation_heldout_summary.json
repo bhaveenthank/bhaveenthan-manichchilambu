@@ -1,0 +1,81 @@
+{
+ "flat_all": {
+  "right": 15,
+  "wrong": 10,
+  "blank": 11,
+  "leak": 6,
+  "n": 36,
+  "accuracy": 0.417,
+  "leak_rate": 0.75,
+  "size": 180,
+  "ms_per_question": 0.01
+ },
+ "flat_clean": {
+  "right": 20,
+  "wrong": 5,
+  "blank": 11,
+  "leak": 1,
+  "n": 36,
+  "accuracy": 0.556,
+  "leak_rate": 0.125,
+  "size": 144,
+  "ms_per_question": 0.01
+ },
+ "nary": {
+  "right": 15,
+  "wrong": 9,
+  "blank": 12,
+  "leak": 6,
+  "n": 36,
+  "accuracy": 0.417,
+  "leak_rate": 0.75,
+  "size": 480,
+  "ms_per_question": 0.01
+ },
+ "qualified": {
+  "right": 27,
+  "wrong": 7,
+  "blank": 2,
+  "leak": 0,
+  "n": 36,
+  "accuracy": 0.75,
+  "leak_rate": 0.0,
+  "size": 1132,
+  "ms_per_question": 0.01
+ },
+ "contexts": {
+  "right": 30,
+  "wrong": 3,
+  "blank": 3,
+  "leak": 0,
+  "n": 36,
+  "accuracy": 0.833,
+  "leak_rate": 0.0,
+  "size": 643,
+  "ms_per_question": 0.01
+ },
+ "standards": {
+  "right": 36,
+  "wrong": 0,
+  "blank": 0,
+  "leak": 0,
+  "n": 36,
+  "accuracy": 1.0,
+  "leak_rate": 0.0,
+  "size": 2843,
+  "ms_per_question": 3.49,
+  "sparql_queries": 9,
+  "sparql_lines": 44
+ },
+ "ledger": {
+  "right": 36,
+  "wrong": 0,
+  "blank": 0,
+  "leak": 0,
+  "n": 36,
+  "accuracy": 1.0,
+  "leak_rate": 0.0,
+  "size": 1287,
+  "ms_per_question": 0.01
+ }
+}

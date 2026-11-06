@@ -1,0 +1,61 @@
+# Maṇichchilambu core: the record, its voice, its mood. Every module in modules/ builds on this file.
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://example.org/manichchilambu> a owl:Ontology ; rdfs:label "Maṇichchilambu core" .
+
+# --- things in the story
+iy:Entity a owl:Class .
+iy:Person a owl:Class ; rdfs:subClassOf iy:Entity ; rdfs:subClassOf crm:E21_Person .
+iy:Deity a owl:Class ; rdfs:subClassOf iy:Entity .
+iy:Group a owl:Class ; rdfs:subClassOf iy:Entity ; rdfs:subClassOf crm:E74_Group .
+iy:Place a owl:Class ; rdfs:subClassOf iy:Entity ; rdfs:subClassOf crm:E53_Place .
+iy:PhysicalThing a owl:Class ; rdfs:subClassOf iy:Entity ; rdfs:subClassOf crm:E18_Physical_Thing .
+
+# --- the record: the only way anything gets into the graph
+iy:Record a owl:Class ; rdfs:comment "Somebody in the text tells us this. It does not say it is true." ; rdfs:subClassOf prov:Entity .
+iy:Event a owl:Class ; rdfs:subClassOf iy:Record ; rdfs:subClassOf crm:E5_Event .
+iy:Speech a owl:Class ; rdfs:subClassOf iy:Event .
+iy:Belief a owl:Class ; rdfs:subClassOf iy:Record ; rdfs:comment "Close to CRMinf I2 Belief, scoped to story time." .
+iy:StateChange a owl:Class ; rdfs:comment "Starts or ends a fluent. Same idea as initiates/terminates in the event calculus." .
+
+# --- voice
+iy:VoiceLink a owl:Class ; rdfs:comment "One step in a chain of tellers. Chains are ordered, poet first." .
+iy:voice a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:VoiceLink .
+iy:speaker a owl:ObjectProperty ; rdfs:domain iy:VoiceLink ; rdfs:range iy:Entity .
+iy:depth a owl:DatatypeProperty ; rdfs:domain iy:VoiceLink ; rdfs:range xsd:integer .
+
+# --- mood: controlled list. Only Asserted can change the state of the world.
+iy:Mood a owl:Class .
+iy:Asserted a iy:Mood . iy:Negated a iy:Mood . iy:Claimed a iy:Mood . iy:Thought a iy:Mood .
+iy:Command a iy:Mood . iy:Conditional a iy:Mood . iy:Intended a iy:Mood . iy:Predicted a iy:Mood .
+iy:Wish a iy:Mood . iy:Metaphor a iy:Mood . iy:Address a iy:Mood . iy:Dreamed a iy:Mood . iy:Question a iy:Mood .
+iy:mood a owl:ObjectProperty , owl:FunctionalProperty ; rdfs:domain iy:Record ; rdfs:range iy:Mood .
+
+# --- everything else on a record
+iy:kind a owl:DatatypeProperty ; rdfs:domain iy:Record .
+iy:storyTime a owl:DatatypeProperty , owl:FunctionalProperty ; rdfs:domain iy:Record ; rdfs:range xsd:decimal .
+iy:birth a owl:DatatypeProperty ; rdfs:domain iy:Record .
+iy:evidence a owl:DatatypeProperty ; rdfs:domain iy:Record ; rdfs:comment "A verse line id." .
+iy:carries a owl:ObjectProperty ; rdfs:domain iy:Speech ; rdfs:range iy:Record .
+iy:content a owl:ObjectProperty ; rdfs:domain iy:Belief ; rdfs:range iy:Record .
+iy:stance a owl:DatatypeProperty ; rdfs:domain iy:Belief .
+iy:holder a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Entity .
+iy:contradicts a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Record .
+iy:because a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Record .
+
+# Event roles. Reusing the shape of CIDOC CRM's participation properties, kept short for readability.
+iy:agent a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Entity .
+iy:patient a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Entity .
+iy:theme a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Entity .
+iy:recipient a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Entity .
+iy:target a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Entity .
+iy:addressee a owl:ObjectProperty ; rdfs:domain iy:Record ; rdfs:range iy:Entity .
+
+# Identity. Deliberately NOT owl:sameAs: that would merge a disguise, a birth and a person into one thing.
+iy:earlierBirthOf a owl:ObjectProperty ; rdfs:domain iy:Person ; rdfs:range iy:Person .
+iy:looksLike a owl:ObjectProperty ; rdfs:domain iy:Person ; rdfs:range iy:Person .

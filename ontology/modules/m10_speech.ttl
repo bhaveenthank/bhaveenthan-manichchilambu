@@ -1,0 +1,26 @@
+# Speech acts
+#
+# Saying something is an event. What was said is a separate record that doesn't become true by bei
+# ng said.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m10_speech> a owl:Ontology ; rdfs:label "Speech acts" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E7_Activity
+
+iy:Assertion a owl:Class ; rdfs:subClassOf iy:Speech .
+iy:Accusation a owl:Class ; rdfs:subClassOf iy:Assertion .
+iy:Testimony a owl:Class ; rdfs:subClassOf iy:Assertion .
+iy:Order a owl:Class ; rdfs:subClassOf iy:Speech .
+iy:Teaching a owl:Class ; rdfs:subClassOf iy:Speech .
+iy:Prayer a owl:Class ; rdfs:subClassOf iy:Speech .
+iy:Lament a owl:Class ; rdfs:subClassOf iy:Speech .
+
+iy:addressee a owl:ObjectProperty .
+iy:carries a owl:ObjectProperty .

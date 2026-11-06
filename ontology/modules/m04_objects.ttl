@@ -1,0 +1,29 @@
+# Objects, materials, parts and sets
+#
+# This is the answer to the silambu question: individuals, not a shared 'silambu' node. A pair, it
+# s members, what's inside.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m04_objects> a owl:Ontology ; rdfs:label "Objects, materials, parts and sets" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E22_Human-Made_Object
+
+iy:Ornament a owl:Class ; rdfs:subClassOf iy:PhysicalThing .
+iy:Anklet a owl:Class ; rdfs:subClassOf iy:Ornament .
+iy:Garland a owl:Class ; rdfs:subClassOf iy:Ornament .
+iy:Vessel a owl:Class ; rdfs:subClassOf iy:PhysicalThing .
+iy:Weapon a owl:Class ; rdfs:subClassOf iy:PhysicalThing .
+iy:Image a owl:Class ; rdfs:subClassOf iy:PhysicalThing .
+iy:Material a owl:Class .
+iy:ObjectSet a owl:Class .
+
+iy:memberOfSet a owl:ObjectProperty .
+iy:contains a owl:ObjectProperty .
+iy:madeOf a owl:ObjectProperty .
+iy:depicts a owl:ObjectProperty .

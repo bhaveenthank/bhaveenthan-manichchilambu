@@ -1,0 +1,444 @@
+{
+ "tempting": [
+  {
+   "pair": [
+    "cowherd_women",
+    "hill_people_25"
+   ],
+   "false_reading": "the same fruit passed between them",
+   "plain_path": [
+    "kannagi",
+    "hill_people_25"
+   ],
+   "guarded": [
+    "mango",
+    "hill_people_25"
+   ],
+   "warrants": [
+    "event",
+    "kind"
+   ],
+   "flagged": true
+  },
+  {
+   "pair": [
+    "hill_people_25",
+    "saduvan"
+   ],
+   "false_reading": "the wrecked goods included sandalwood",
+   "plain_path": [
+    "agarwood",
+    "fragrant_wood",
+    "saduvan"
+   ],
+   "guarded": [
+    "agarwood",
+    "fragrant_wood",
+    "saduvan"
+   ],
+   "warrants": [
+    "event",
+    "kind",
+    "wider"
+   ],
+   "flagged": true
+  },
+  {
+   "pair": [
+    "magadha_king",
+    "magadha_workers"
+   ],
+   "false_reading": "the king's gift was made by these workers",
+   "plain_path": [
+    "magadha",
+    "magadha_workers"
+   ],
+   "guarded": [
+    "magadha",
+    "magadha_workers"
+   ],
+   "warrants": [
+    "event",
+    "place"
+   ],
+   "flagged": true
+  },
+  {
+   "pair": [
+    "avanti_king",
+    "avanti_smiths"
+   ],
+   "false_reading": "Avanti smiths made the arched gate",
+   "plain_path": [
+    "avanti",
+    "avanti_smiths"
+   ],
+   "guarded": [
+    "avanti",
+    "avanti_smiths"
+   ],
+   "warrants": [
+    "event",
+    "place"
+   ],
+   "flagged": true
+  },
+  {
+   "pair": [
+    "skilled_woman_16",
+    "hill_people_25"
+   ],
+   "false_reading": "the mat-maker knew the hill people",
+   "plain_path": [
+    "kovalan",
+    "areca",
+    "hill_people_25"
+   ],
+   "guarded": [
+    "kovalan",
+    "areca",
+    "hill_people_25"
+   ],
+   "warrants": [
+    "event",
+    "kind",
+    "same"
+   ],
+   "flagged": true
+  },
+  {
+   "pair": [
+    "cowherd_women",
+    "jackfruit"
+   ],
+   "false_reading": "the verse names jackfruit in the meal",
+   "plain_path": [
+    "koli_fruit",
+    "jackfruit"
+   ],
+   "guarded": [
+    "koli_fruit",
+    "jackfruit"
+   ],
+   "warrants": [
+    "event",
+    "gloss",
+    "kind"
+   ],
+   "flagged": true
+  },
+  {
+   "pair": [
+    "madhavi",
+    "goldsmith"
+   ],
+   "false_reading": "the goldsmith made Madhavi's jewels",
+   "plain_path": [
+    "kovalan",
+    "goldsmith"
+   ],
+   "guarded": [
+    "kovalan",
+    "goldsmith"
+   ],
+   "warrants": [
+    "event",
+    "same"
+   ],
+   "flagged": true
+  },
+  {
+   "pair": [
+    "madhavi",
+    "yavana_carpenters"
+   ],
+   "false_reading": "Yavanas made her ornaments",
+   "plain_path": [
+    "coral",
+    "gold_pavilion",
+    "yavana_carpenters"
+   ],
+   "guarded": [
+    "pearl_material",
+    "gold_pavilion",
+    "yavana_carpenters"
+   ],
+   "warrants": [
+    "event",
+    "kind",
+    "same"
+   ],
+   "flagged": true
+  }
+ ],
+ "tempting_flagged": "8/8",
+ "false_makes_licensed": [],
+ "true_makes_missed": [],
+ "make_tests": [
+  12,
+  6
+ ],
+ "expected": [
+  {
+   "pair": [
+    "kovalan",
+    "manimekalai"
+   ],
+   "found": true,
+   "cost": 1.0,
+   "via": [
+    "manimekalai"
+   ],
+   "warrants": [
+    "event"
+   ]
+  },
+  {
+   "pair": [
+    "cowherd_women",
+    "hill_people_25"
+   ],
+   "found": true,
+   "cost": 5.401197,
+   "via": [
+    "mango",
+    "hill_people_25"
+   ],
+   "warrants": [
+    "event",
+    "kind"
+   ]
+  },
+  {
+   "pair": [
+    "hill_people_25",
+    "saduvan"
+   ],
+   "found": true,
+   "cost": 8.560682,
+   "via": [
+    "agarwood",
+    "fragrant_wood",
+    "saduvan"
+   ],
+   "warrants": [
+    "event",
+    "kind",
+    "wider"
+   ]
+  },
+  {
+   "pair": [
+    "magadha_king",
+    "magadha_workers"
+   ],
+   "found": true,
+   "cost": 3.609438,
+   "via": [
+    "magadha",
+    "magadha_workers"
+   ],
+   "warrants": [
+    "event",
+    "place"
+   ]
+  },
+  {
+   "pair": [
+    "blanket_merchant",
+    "puhar"
+   ],
+   "found": true,
+   "cost": 6.218876,
+   "via": [
+    "royal_infant",
+    "killi",
+    "puhar"
+   ],
+   "warrants": [
+    "event",
+    "same"
+   ]
+  },
+  {
+   "pair": [
+    "aticari",
+    "aputhiran"
+   ],
+   "found": true,
+   "cost": 4.70805,
+   "via": [
+    "amudasurabhi",
+    "aputhiran"
+   ],
+   "warrants": [
+    "event",
+    "same"
+   ]
+  },
+  {
+   "pair": [
+    "kannagi",
+    "manimekalai"
+   ],
+   "found": true,
+   "cost": 1.0,
+   "via": [
+    "manimekalai"
+   ],
+   "warrants": [
+    "event"
+   ]
+  },
+  {
+   "pair": [
+    "pilivalai",
+    "manimekhala_deity"
+   ],
+   "found": true,
+   "cost": 9.703782,
+   "via": [
+    "royal_infant",
+    "killi",
+    "puhar",
+    "manimekhala_deity"
+   ],
+   "warrants": [
+    "event",
+    "place",
+    "same"
+   ]
+  },
+  {
+   "pair": [
+    "chintadevi",
+    "kayasandikai"
+   ],
+   "found": true,
+   "cost": 4.70805,
+   "via": [
+    "amudasurabhi",
+    "kayasandikai"
+   ],
+   "warrants": [
+    "event",
+    "same"
+   ]
+  },
+  {
+   "pair": [
+    "skilled_woman_16",
+    "kovalan"
+   ],
+   "found": true,
+   "cost": 1.0,
+   "via": [
+    "kovalan"
+   ],
+   "warrants": [
+    "event"
+   ]
+  },
+  {
+   "pair": [
+    "kosikan",
+    "kannagi"
+   ],
+   "found": true,
+   "cost": 5.89182,
+   "via": [
+    "kovalan",
+    "kannagi"
+   ],
+   "warrants": [
+    "event",
+    "same"
+   ]
+  },
+  {
+   "pair": [
+    "cowherd_women",
+    "madhavi"
+   ],
+   "found": true,
+   "cost": 10.357556,
+   "via": [
+    "plantain",
+    "kovalan",
+    "madhavi"
+   ],
+   "warrants": [
+    "event",
+    "kind",
+    "same"
+   ]
+  },
+  {
+   "pair": [
+    "drummer_man01",
+    "kovalan"
+   ],
+   "found": true,
+   "cost": 4.484907,
+   "via": [
+    "puhar",
+    "kovalan"
+   ],
+   "warrants": [
+    "event",
+    "place"
+   ]
+  },
+  {
+   "pair": [
+    "visakai",
+    "manimekalai"
+   ],
+   "found": true,
+   "cost": 5.70805,
+   "via": [
+    "pillar",
+    "kanchanan",
+    "manimekalai"
+   ],
+   "warrants": [
+    "event",
+    "same"
+   ]
+  },
+  {
+   "pair": [
+    "mayan",
+    "tamil_workers"
+   ],
+   "found": true,
+   "cost": 8.170484,
+   "via": [
+    "gold",
+    "gold_pavilion",
+    "tamil_workers"
+   ],
+   "warrants": [
+    "event",
+    "kind",
+    "same"
+   ]
+  }
+ ],
+ "expected_found": "15/15",
+ "mean_connector_degree": {
+  "guarded": 15.3,
+  "plain": 18.4
+ },
+ "depth": {
+  "causal_longest_records": 5,
+  "story_order_stages_by_episode": {
+   "journey": 21,
+   "anklet": 19,
+   "disguise": 14,
+   "plain": 14,
+   "aputhiran": 12,
+   "bowl": 11
+  }
+ }
+}

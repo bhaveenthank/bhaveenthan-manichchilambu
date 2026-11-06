@@ -1,0 +1,253 @@
+method,q,ep,op,result,answer
+flat_all,h01,curse,happened,wrong,true
+flat_all,h02,curse,happened,right,true
+flat_all,h03,curse,happened,wrong,true
+flat_all,h04,curse,tellers,blank,null
+flat_all,h05,curse,tellers,blank,null
+flat_all,h06,curse,alive,right,false
+flat_all,h07,curse,conflicts,blank,null
+flat_all,h08,curse,causes,blank,null
+flat_all,h09,fire,happened,right,true
+flat_all,h10,fire,happened,wrong,true
+flat_all,h11,fire,happened,wrong,true
+flat_all,h12,fire,causes,blank,null
+flat_all,h13,fire,alive,right,false
+flat_all,h14,fire,alive,right,true
+flat_all,h15,fire,alive,wrong,true
+flat_all,h16,rahulan,happened,right,true
+flat_all,h17,rahulan,tellers,blank,null
+flat_all,h18,rahulan,happened,right,true
+flat_all,h19,rahulan,alive,wrong,false
+flat_all,h20,rahulan,alive,wrong,false
+flat_all,h21,rahulan,role_of,blank,null
+flat_all,h22,aputhiran,tellers,blank,null
+flat_all,h23,aputhiran,role_of,right,"""bhumichandran"""
+flat_all,h24,aputhiran,alive,right,true
+flat_all,h25,prison,happened,right,true
+flat_all,h26,prison,causes,blank,null
+flat_all,h27,garland,holder,right,"[""hunchback""]"
+flat_all,h28,garland,holder,wrong,"[""hunchback""]"
+flat_all,h29,garland,happened,right,false
+flat_all,h30,bridge,happened,wrong,true
+flat_all,h31,bridge,happened,right,true
+flat_all,h32,bridge,happened,right,false
+flat_all,h33,bridge,open_values,blank,null
+flat_all,h34,retelling,tellers,blank,null
+flat_all,h35,retelling,happened,wrong,true
+flat_all,h36,retelling,role_of,right,"""madurai"""
+flat_clean,h01,curse,happened,right,false
+flat_clean,h02,curse,happened,right,true
+flat_clean,h03,curse,happened,right,false
+flat_clean,h04,curse,tellers,blank,null
+flat_clean,h05,curse,tellers,blank,null
+flat_clean,h06,curse,alive,right,false
+flat_clean,h07,curse,conflicts,blank,null
+flat_clean,h08,curse,causes,blank,null
+flat_clean,h09,fire,happened,right,true
+flat_clean,h10,fire,happened,right,false
+flat_clean,h11,fire,happened,right,false
+flat_clean,h12,fire,causes,blank,null
+flat_clean,h13,fire,alive,right,false
+flat_clean,h14,fire,alive,right,true
+flat_clean,h15,fire,alive,wrong,true
+flat_clean,h16,rahulan,happened,right,true
+flat_clean,h17,rahulan,tellers,blank,null
+flat_clean,h18,rahulan,happened,right,true
+flat_clean,h19,rahulan,alive,wrong,false
+flat_clean,h20,rahulan,alive,wrong,false
+flat_clean,h21,rahulan,role_of,blank,null
+flat_clean,h22,aputhiran,tellers,blank,null
+flat_clean,h23,aputhiran,role_of,right,"""bhumichandran"""
+flat_clean,h24,aputhiran,alive,right,true
+flat_clean,h25,prison,happened,right,true
+flat_clean,h26,prison,causes,blank,null
+flat_clean,h27,garland,holder,right,"[""hunchback""]"
+flat_clean,h28,garland,holder,wrong,"[""hunchback""]"
+flat_clean,h29,garland,happened,right,false
+flat_clean,h30,bridge,happened,wrong,true
+flat_clean,h31,bridge,happened,right,true
+flat_clean,h32,bridge,happened,right,false
+flat_clean,h33,bridge,open_values,blank,null
+flat_clean,h34,retelling,tellers,blank,null
+flat_clean,h35,retelling,happened,right,false
+flat_clean,h36,retelling,role_of,right,"""madurai"""
+nary,h01,curse,happened,wrong,true
+nary,h02,curse,happened,right,true
+nary,h03,curse,happened,wrong,true
+nary,h04,curse,tellers,blank,null
+nary,h05,curse,tellers,blank,null
+nary,h06,curse,alive,right,false
+nary,h07,curse,conflicts,blank,null
+nary,h08,curse,causes,blank,null
+nary,h09,fire,happened,right,true
+nary,h10,fire,happened,wrong,true
+nary,h11,fire,happened,wrong,true
+nary,h12,fire,causes,blank,null
+nary,h13,fire,alive,right,false
+nary,h14,fire,alive,right,true
+nary,h15,fire,alive,wrong,true
+nary,h16,rahulan,happened,right,true
+nary,h17,rahulan,tellers,blank,null
+nary,h18,rahulan,happened,right,true
+nary,h19,rahulan,alive,wrong,false
+nary,h20,rahulan,alive,wrong,false
+nary,h21,rahulan,role_of,right,"""sword"""
+nary,h22,aputhiran,tellers,blank,null
+nary,h23,aputhiran,role_of,right,"""bhumichandran"""
+nary,h24,aputhiran,alive,right,true
+nary,h25,prison,happened,right,true
+nary,h26,prison,causes,blank,null
+nary,h27,garland,holder,blank,null
+nary,h28,garland,holder,blank,null
+nary,h29,garland,happened,right,false
+nary,h30,bridge,happened,wrong,true
+nary,h31,bridge,happened,right,true
+nary,h32,bridge,happened,right,false
+nary,h33,bridge,open_values,blank,null
+nary,h34,retelling,tellers,blank,null
+nary,h35,retelling,happened,wrong,true
+nary,h36,retelling,role_of,right,"""madurai"""
+qualified,h01,curse,happened,right,false
+qualified,h02,curse,happened,right,true
+qualified,h03,curse,happened,right,false
+qualified,h04,curse,tellers,wrong,"[[""bharatan""], [""bharatan""]]"
+qualified,h05,curse,tellers,wrong,"[[""madurapati""]]"
+qualified,h06,curse,alive,right,false
+qualified,h07,curse,conflicts,blank,null
+qualified,h08,curse,causes,right,"[[""d05"", ""enables""]]"
+qualified,h09,fire,happened,right,true
+qualified,h10,fire,happened,right,false
+qualified,h11,fire,happened,right,false
+qualified,h12,fire,causes,right,"[[""causes"", ""e01""], [""d08"", ""fulfils""], [""e02"", ""enables""]]"
+qualified,h13,fire,alive,right,false
+qualified,h14,fire,alive,right,true
+qualified,h15,fire,alive,wrong,true
+qualified,h16,rahulan,happened,right,true
+qualified,h17,rahulan,tellers,wrong,"[[""manimekalai""], [""manimekhala_deity""]]"
+qualified,h18,rahulan,happened,right,true
+qualified,h19,rahulan,alive,right,true
+qualified,h20,rahulan,alive,right,true
+qualified,h21,rahulan,role_of,right,"""sword"""
+qualified,h22,aputhiran,tellers,wrong,"[[""aravanan""]]"
+qualified,h23,aputhiran,role_of,right,"""bhumichandran"""
+qualified,h24,aputhiran,alive,right,true
+qualified,h25,prison,happened,right,true
+qualified,h26,prison,causes,right,"[[""h02"", ""motivates""]]"
+qualified,h27,garland,holder,right,"[""hunchback""]"
+qualified,h28,garland,holder,wrong,"[""hunchback""]"
+qualified,h29,garland,happened,right,false
+qualified,h30,bridge,happened,right,false
+qualified,h31,bridge,happened,right,true
+qualified,h32,bridge,happened,right,false
+qualified,h33,bridge,open_values,blank,null
+qualified,h34,retelling,tellers,wrong,"[[""madurapati""], [""madurapati""]]"
+qualified,h35,retelling,happened,right,false
+qualified,h36,retelling,role_of,right,"""madurai"""
+contexts,h01,curse,happened,right,false
+contexts,h02,curse,happened,right,true
+contexts,h03,curse,happened,right,false
+contexts,h04,curse,tellers,right,"[[""bharatan"", ""kannagi"", ""madurapati"", ""poet""], [""bharatan"", ""madurapati"", ""poet""]]"
+contexts,h05,curse,tellers,right,"[[""madurapati"", ""poet""]]"
+contexts,h06,curse,alive,right,false
+contexts,h07,curse,conflicts,right,"[""r03""]"
+contexts,h08,curse,causes,right,"[[""d05"", ""enables""]]"
+contexts,h09,fire,happened,right,true
+contexts,h10,fire,happened,right,false
+contexts,h11,fire,happened,right,false
+contexts,h12,fire,causes,right,"[[""causes"", ""e01""], [""d08"", ""fulfils""], [""e02"", ""enables""]]"
+contexts,h13,fire,alive,right,false
+contexts,h14,fire,alive,right,true
+contexts,h15,fire,alive,wrong,true
+contexts,h16,rahulan,happened,right,true
+contexts,h17,rahulan,tellers,right,"[[""manimekalai"", ""poet""], [""manimekhala_deity"", ""poet""]]"
+contexts,h18,rahulan,happened,right,true
+contexts,h19,rahulan,alive,wrong,false
+contexts,h20,rahulan,alive,wrong,false
+contexts,h21,rahulan,role_of,right,"""sword"""
+contexts,h22,aputhiran,tellers,right,"[[""aravanan"", ""poet""]]"
+contexts,h23,aputhiran,role_of,right,"""bhumichandran"""
+contexts,h24,aputhiran,alive,right,true
+contexts,h25,prison,happened,right,true
+contexts,h26,prison,causes,right,"[[""h02"", ""motivates""]]"
+contexts,h27,garland,holder,blank,null
+contexts,h28,garland,holder,blank,null
+contexts,h29,garland,happened,right,false
+contexts,h30,bridge,happened,right,false
+contexts,h31,bridge,happened,right,true
+contexts,h32,bridge,happened,right,false
+contexts,h33,bridge,open_values,blank,null
+contexts,h34,retelling,tellers,right,"[[""kannagi"", ""madurapati"", ""poet""], [""madurapati"", ""poet""]]"
+contexts,h35,retelling,happened,right,false
+contexts,h36,retelling,role_of,right,"""madurai"""
+standards,h01,curse,happened,right,false
+standards,h02,curse,happened,right,true
+standards,h03,curse,happened,right,false
+standards,h04,curse,tellers,right,"[[""bharatan"", ""kannagi"", ""madurapati"", ""poet""], [""bharatan"", ""madurapati"", ""poet""]]"
+standards,h05,curse,tellers,right,"[[""madurapati"", ""poet""]]"
+standards,h06,curse,alive,right,false
+standards,h07,curse,conflicts,right,"[""r03""]"
+standards,h08,curse,causes,right,"[[""d05"", ""enables""]]"
+standards,h09,fire,happened,right,true
+standards,h10,fire,happened,right,false
+standards,h11,fire,happened,right,false
+standards,h12,fire,causes,right,"[[""causes"", ""e01""], [""d08"", ""fulfils""], [""e02"", ""enables""]]"
+standards,h13,fire,alive,right,false
+standards,h14,fire,alive,right,true
+standards,h15,fire,alive,right,false
+standards,h16,rahulan,happened,right,true
+standards,h17,rahulan,tellers,right,"[[""manimekalai"", ""poet""], [""manimekhala_deity"", ""poet""]]"
+standards,h18,rahulan,happened,right,true
+standards,h19,rahulan,alive,right,true
+standards,h20,rahulan,alive,right,true
+standards,h21,rahulan,role_of,right,"""sword"""
+standards,h22,aputhiran,tellers,right,"[[""aravanan"", ""poet""]]"
+standards,h23,aputhiran,role_of,right,"""bhumichandran"""
+standards,h24,aputhiran,alive,right,true
+standards,h25,prison,happened,right,true
+standards,h26,prison,causes,right,"[[""h02"", ""motivates""]]"
+standards,h27,garland,holder,right,"[""hunchback""]"
+standards,h28,garland,holder,right,"[""kovalan""]"
+standards,h29,garland,happened,right,false
+standards,h30,bridge,happened,right,false
+standards,h31,bridge,happened,right,true
+standards,h32,bridge,happened,right,false
+standards,h33,bridge,open_values,right,"[""kannagi"", ""unnamed""]"
+standards,h34,retelling,tellers,right,"[[""kannagi"", ""madurapati"", ""poet""], [""madurapati"", ""poet""]]"
+standards,h35,retelling,happened,right,false
+standards,h36,retelling,role_of,right,"""madurai"""
+ledger,h01,curse,happened,right,false
+ledger,h02,curse,happened,right,true
+ledger,h03,curse,happened,right,false
+ledger,h04,curse,tellers,right,"[[""bharatan"", ""kannagi"", ""madurapati"", ""poet""], [""bharatan"", ""madurapati"", ""poet""]]"
+ledger,h05,curse,tellers,right,"[[""madurapati"", ""poet""]]"
+ledger,h06,curse,alive,right,false
+ledger,h07,curse,conflicts,right,"[""r03""]"
+ledger,h08,curse,causes,right,"[[""d05"", ""enables""]]"
+ledger,h09,fire,happened,right,true
+ledger,h10,fire,happened,right,false
+ledger,h11,fire,happened,right,false
+ledger,h12,fire,causes,right,"[[""causes"", ""e01""], [""d08"", ""fulfils""], [""e02"", ""enables""]]"
+ledger,h13,fire,alive,right,false
+ledger,h14,fire,alive,right,true
+ledger,h15,fire,alive,right,false
+ledger,h16,rahulan,happened,right,true
+ledger,h17,rahulan,tellers,right,"[[""manimekalai"", ""poet""], [""manimekhala_deity"", ""poet""]]"
+ledger,h18,rahulan,happened,right,true
+ledger,h19,rahulan,alive,right,true
+ledger,h20,rahulan,alive,right,true
+ledger,h21,rahulan,role_of,right,"""sword"""
+ledger,h22,aputhiran,tellers,right,"[[""aravanan"", ""poet""]]"
+ledger,h23,aputhiran,role_of,right,"""bhumichandran"""
+ledger,h24,aputhiran,alive,right,true
+ledger,h25,prison,happened,right,true
+ledger,h26,prison,causes,right,"[[""h02"", ""motivates""]]"
+ledger,h27,garland,holder,right,"[""hunchback""]"
+ledger,h28,garland,holder,right,"[""kovalan""]"
+ledger,h29,garland,happened,right,false
+ledger,h30,bridge,happened,right,false
+ledger,h31,bridge,happened,right,true
+ledger,h32,bridge,happened,right,false
+ledger,h33,bridge,open_values,right,"[""kannagi"", ""unnamed""]"
+ledger,h34,retelling,tellers,right,"[[""kannagi"", ""madurapati"", ""poet""], [""madurapati"", ""poet""]]"
+ledger,h35,retelling,happened,right,false
+ledger,h36,retelling,role_of,right,"""madurai"""

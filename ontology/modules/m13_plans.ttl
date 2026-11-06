@@ -1,0 +1,21 @@
+# Plans, intentions and attempts
+#
+# A plan isn't its outcome. The anklet sale never completes.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m13_plans> a owl:Ontology ; rdfs:label "Plans, intentions and attempts" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E7_Activity
+
+iy:Intention a owl:Class .
+iy:Attempt a owl:Class .
+iy:Motive a owl:Class .
+
+iy:purpose a owl:ObjectProperty .
+iy:intendedBy a owl:ObjectProperty .

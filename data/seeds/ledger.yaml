@@ -1,0 +1,81 @@
+# The hand-drafted ledger. One record = one thing somebody in the text tells us.
+#
+#   voice : who is telling it, outermost first. [poet] is the narrator. [poet, goldsmith] means
+#           the poet tells us the goldsmith said it.
+#   mood  : asserted | negated | claimed | thought | command | conditional | intended |
+#           predicted | wish | metaphor | address | dreamed | question
+#           A speaker the text doesn't name goes in the voice chain as `unknown`.
+#   retells: this record is another telling of that one. Not a cause, not an identity.
+#   after_death: the text really does have this person act after dying. Stops the check from objecting.
+#   life  : main, or the name of the earlier birth this belongs to
+#   t     : story time, NOT canto number. Anything told as a flashback gets an earlier t than the moment
+#           it is told (Aputhiran's story is told in canto 14 but happens long before canto 11).
+#           Earlier births use negative numbers. Reading order comes from the line ids.
+#   does  : state changes: +holds(a,b) starts something, -holds(a,b) ends it
+#   check : a phrase that must appear in the cited lines. A script enforces this.
+#   ep    : episode. dev episodes were encoded first, then the format was frozen before held-out ones.
+
+# ------------------------------------------------------------- DEV: the anklets
+- {id: a00, ep: anklet, kind: state, voice: [poet, kannagi], mood: asserted, t: 1, roles: {}, does: ["+holds(kannagi,ank_k1)", "+holds(kannagi,ank_k2)"], lines: [SIL-20-0072], check: என்காற் சிலம்பு}
+- {id: a01, ep: anklet, kind: offer, voice: [poet], mood: asserted, t: 9.7, roles: {agent: kannagi, theme: ank_pair, recipient: kovalan}, lines: [SIL-09-0073], check: சிலம்புஉள கொண்மின்}
+- {id: a02, ep: anklet, kind: trade, voice: [poet, kovalan], mood: intended, t: 9.75, roles: {agent: kovalan, theme: ank_pair, place: madurai}, lines: [SIL-09-0075, SIL-09-0076], check: உலந்தபொருள் ஈட்டுதல்}
+- {id: a03, ep: anklet, kind: take, voice: [poet, kovalan], mood: asserted, t: 16.09, roles: {agent: kovalan, theme: ank_k1, source: kannagi}, does: ["+holds(kovalan,ank_k1)", "-holds(kannagi,ank_k1)"], lines: [SIL-16-0092], check: சிலம்பி னொன்றுகொண்}
+- {id: a04, ep: anklet, kind: show, voice: [poet], mood: asserted, t: 16.11, roles: {agent: kovalan, theme: ank_k1, recipient: goldsmith}, lines: [SIL-16-0116], check: பொதிவா யவிழ்த்தனன்}
+- {id: a05, ep: anklet, kind: suits, voice: [poet, goldsmith], mood: claimed, t: 16.12, roles: {theme: ank_k1, beneficiary: pandya_queen}, lines: [SIL-16-0121, SIL-16-0122], check: கோப்பெருந் தேவிக் கல்லதை}
+- {id: a06, ep: anklet, kind: steal, voice: [poet, goldsmith], mood: thought, t: 0.5, roles: {agent: goldsmith, theme: ank_q}, does: ["+holds(goldsmith,ank_q)", "-holds(pandya_queen,ank_q)"], lines: [SIL-16-0127], check: கரந்தியான் கொண்ட}
+- {id: a06b, ep: anklet, kind: steal, voice: [poet, cattan], mood: asserted, t: 0.5, roles: {agent: goldsmith, theme: ank_q}, does: ["+holds(goldsmith,ank_q)", "-holds(pandya_queen,ank_q)"], lines: [SIL-00-0025], check: பண்டுதான் கொண்ட}
+- {id: a07, ep: anklet, kind: frame, voice: [poet, goldsmith], mood: intended, t: 16.13, roles: {agent: goldsmith, target: kovalan, addressee: pandya_king}, lines: [SIL-16-0128, SIL-16-0129], check: புலம்பெயர் புதுவனிற்}
+- {id: a08, ep: anklet, kind: accuse, voice: [poet], mood: asserted, t: 16.14, roles: {agent: goldsmith, target: kovalan, addressee: pandya_king}, carries: a09, lines: [SIL-16-0145], check: கோயிற் சிலம்பு கொண்ட கள்வன்}
+- {id: a09, ep: anklet, kind: steal, voice: [poet, goldsmith], mood: claimed, t: 16.14, roles: {agent: kovalan, theme: ank_q}, does: ["+holds(kovalan,ank_q)"], lines: [SIL-16-0145, SIL-16-0147], check: கொண்ட கள்வன்}
+- {id: a10, ep: anklet, kind: believe, voice: [poet], mood: asserted, t: 16.15, roles: {holder: pandya_king, source: goldsmith}, content: a09, stance: accept, heard_by: [pandya_king], because: [{of: a08, rel: motivates}], lines: [SIL-16-0149], check: தேரான்}
+- {id: a11, ep: anklet, kind: order, voice: [poet], mood: asserted, t: 16.16, roles: {agent: pandya_king, addressee: guards}, carries: a12, because: [{of: a10, rel: motivates}], lines: [SIL-16-0150], check: ஊர்காப் பாளரை}
+- {id: a12, ep: anklet, kind: kill, voice: [poet, pandya_king], mood: conditional, t: 16.16, roles: {agent: guards, patient: kovalan}, condition: "anklet is in a thief's hand", lines: [SIL-16-0152, SIL-16-0153], check: கொன்றச் சிலம்பு}
+- {id: a13, ep: anklet, kind: innocent, voice: [poet, guards], mood: claimed, t: 16.17, roles: {theme: kovalan}, contradicts: a09, lines: [SIL-16-0163], check: கொலைப்படு மகனலன்}
+- {id: a14, ep: anklet, kind: persuade, voice: [poet], mood: asserted, t: 16.18, roles: {agent: goldsmith, addressee: guards}, lines: [SIL-16-0165], check: காட்டின னுரைப்போன்}
+- {id: a15, ep: anklet, kind: kill, voice: [poet], mood: asserted, t: 16.2, roles: {agent: drunk_man, patient: kovalan, instrument: sword}, does: ["-alive(kovalan)"], because: [{of: a11, rel: enables}, {of: a14, rel: enables}, {of: k_karma_kov, rel: karma, voice: [poet]}, {of: k_sceptre, rel: moral, voice: [poet]}], lines: [SIL-16-0212, SIL-16-0213], check: களிமக னொருவன்}
+- {id: k_karma_kov, ep: anklet, kind: fate_explains, voice: [poet], mood: asserted, t: 16.21, roles: {patient: kovalan}, lines: [SIL-16-0217], check: பண்டை ஊழ்வினை}
+- {id: k_sceptre, ep: anklet, kind: sceptre_bends, voice: [poet], mood: asserted, t: 16.21, roles: {agent: pandya_king}, lines: [SIL-16-0216], check: செங்கோல் வளைஇய}
+- {id: a16, ep: anklet, kind: bring, voice: [poet], mood: asserted, t: 20.5, roles: {agent: pandya_king, theme: ank_k1}, does: ["+holds(pandya_king,ank_k1)", "-holds(kovalan,ank_k1)"], inferred: "only the king's fetching is stated, the route from corpse to palace is not", lines: [SIL-20-0081], check: தருகெனத் தந்து}
+- {id: a17, ep: anklet, kind: arrive, voice: [poet], mood: asserted, t: 20.1, roles: {agent: kannagi, theme: ank_k2, place: palace_gate}, lines: [SIL-20-0038, SIL-20-0039], check: சிலம்பொன் றேந்திய}
+- {id: a18, ep: anklet, kind: contains, voice: [poet, kannagi], mood: claimed, t: 20.4, roles: {theme: ank_pair, content_of: gems}, lines: [SIL-20-0078], check: மணியுடை அரி}
+- {id: a19, ep: anklet, kind: contains, voice: [poet, pandya_king], mood: claimed, t: 20.45, roles: {theme: ank_q, content_of: pearls}, lines: [SIL-20-0080], check: முத்துடை அரி}
+- {id: a20, ep: anklet, kind: break, voice: [poet], mood: asserted, t: 20.6, roles: {agent: kannagi, theme: {one_of: [ank_k1, ank_k2]}}, unresolved: "the text does not say which of the pair she broke", does: ["+broken(ank_k1|ank_k2)"], lines: [SIL-20-0082], check: காற்சிலம் புடைப்ப}
+- {id: a21, ep: anklet, kind: gem_shows, voice: [poet], mood: asserted, t: 20.61, roles: {theme: gems, target: pandya_king}, because: [{of: a20, rel: causes}], lines: [SIL-20-0083], check: தெறித்தது மணியே}
+- {id: a22, ep: anklet, kind: believe, voice: [poet], mood: asserted, t: 20.7, roles: {holder: pandya_king, source: kannagi}, content: a09, stance: reject, heard_by: [pandya_king], because: [{of: a21, rel: causes}], lines: [SIL-20-0085, SIL-20-0086], check: பொன்செய் கொல்லன்}
+- {id: a23, ep: anklet, kind: steal, voice: [poet, pandya_king], mood: metaphor, t: 20.71, roles: {agent: pandya_king}, lines: [SIL-20-0086], check: யானே கள்வன்}
+- {id: a24, ep: anklet, kind: die, voice: [poet], mood: asserted, t: 20.8, roles: {patient: pandya_king}, does: ["-alive(pandya_king)"], because: [{of: a22, rel: causes}], lines: [SIL-20-0089, SIL-22-0007], check: துஞ்சியது}
+- {id: a25, ep: anklet, kind: innocent, voice: [poet, matalan, matari], mood: claimed, t: 22.5, roles: {theme: kovalan}, contradicts: a09, lines: [SIL-27-0075], check: கோவலன் தீதிலன்}
+- {id: a26, ep: anklet, kind: sacrifice, voice: [poet, matalan], mood: asserted, t: 26, roles: {agent: vetrivel_celiyan, patient: goldsmiths_1000, beneficiary: kannagi}, lines: [SIL-27-0127, SIL-27-0128, SIL-27-0130], check: கொல்லர் ஈரைஞ்}
+- {id: a27, ep: anklet, kind: appear, voice: [poet], mood: asserted, t: 0.1, roles: {theme: ank_q, holder: pandya_queen}, does: ["+holds(pandya_queen,ank_q)"], inferred: "the goldsmith took it from the queen, so she held it before", lines: [SIL-16-0151], check: தன்காற் சிலம்பு}
+
+# ------------------------------------------------------------- DEV: the disguise
+- {id: b01, ep: disguise, kind: hunger_curse, voice: [poet, kayasandikai], mood: asserted, t: 17.1, roles: {agent: viruchikan, patient: kayasandikai}, does: ["+hungry(kayasandikai)"], lines: [MAN-17-0014, MAN-17-0034], check: பழ வினைப்}
+- {id: b02, ep: disguise, kind: feed, voice: [poet], mood: asserted, t: 17.2, roles: {agent: manimekalai, patient: kayasandikai, instrument: amudasurabhi}, does: ["-hungry(kayasandikai)"], lines: [MAN-17-0018, MAN-17-0019], check: பெரும் பசி நீங்கி}
+- {id: b03, ep: disguise, kind: swallowed, voice: [poet, pillar], mood: asserted, t: 17.9, roles: {agent: vindhya_demoness, patient: kayasandikai}, does: ["-alive(kayasandikai)"], lines: [MAN-20-0119, MAN-20-0121], check: வயிற்று அடங்கினள்}
+- {id: b04, ep: disguise, kind: same_person, voice: [poet, manimekalai], mood: asserted, t: 18.1, roles: {later: udayakumaran, earlier: rahulan}, lines: [MAN-18-0128], check: இராகுலன் ஈங்கு இவன்}
+- {id: b05, ep: disguise, kind: disguise, voice: [poet], mood: asserted, t: 18.5, roles: {agent: manimekalai, form: kayasandikai, instrument: mantra}, does: ["+looks_like(manimekalai,kayasandikai)"], lines: [MAN-18-0148, MAN-18-0149, MAN-18-0150], check: காரிகை வடிவு}
+- {id: b06, ep: disguise, kind: is_vidyadhara, voice: [poet, manimekalai], mood: claimed, t: 19.5, roles: {theme: manimekalai}, addressee: chola_king, lines: [MAN-19-0147], check: விஞ்சை மகள் யான்}
+- {id: b07, ep: disguise, kind: is_identity, voice: [poet, udayakumaran], mood: claimed, t: 18.6, roles: {seen: disguised_woman, is: manimekalai}, lines: [MAN-18-0155], check: மாயையின் ஒளித்த மணிமேகலை}
+- {id: b08, ep: disguise, kind: believe, voice: [poet], mood: asserted, t: 18.7, roles: {holder: udayakumaran}, content: b07, stance: accept, heard_by: [udayakumaran], lines: [MAN-20-0084, MAN-20-0085], check: காயசண்டிகை ஆய்}
+- {id: b09, ep: disguise, kind: is_identity, voice: [poet, kanchanan], mood: claimed, t: 20.2, roles: {seen: disguised_woman, is: kayasandikai}, lines: [MAN-20-0033], check: இன்று நின் கையின்}
+- {id: b10, ep: disguise, kind: believe, voice: [poet], mood: asserted, t: 20.21, roles: {holder: kanchanan}, content: b09, stance: accept, heard_by: [kanchanan], lines: [MAN-20-0026, MAN-20-0027], check: காஞ்சனன் என்னும்}
+- {id: b11, ep: disguise, kind: lover_of, voice: [poet, kanchanan], mood: claimed, t: 20.3, roles: {agent: udayakumaran, target: kayasandikai}, lines: [MAN-20-0077], check: ஈங்கு இவன் காதலன்}
+- {id: b12, ep: disguise, kind: believe, voice: [poet], mood: asserted, t: 20.31, roles: {holder: kanchanan}, content: b11, stance: accept, heard_by: [kanchanan], because: [{of: b10, rel: enables}], lines: [MAN-20-0078], check: இகல் எரி}
+- {id: b13, ep: disguise, kind: kill, voice: [poet], mood: asserted, t: 20.5, roles: {agent: kanchanan, patient: udayakumaran, instrument: sword}, does: ["-alive(udayakumaran)"], because: [{of: b12, rel: motivates}, {of: b14, rel: karma, voice: [poet, pillar]}], lines: [MAN-20-0106, MAN-20-0107], check: துணிய வீசி}
+- {id: b14, ep: disguise, kind: fate_explains, voice: [poet, pillar], mood: asserted, t: 20.6, roles: {patient: udayakumaran}, lines: [MAN-20-0123, MAN-20-0124], check: ஊழ்வினை வந்து}
+- {id: b15, ep: disguise, kind: correct, voice: [poet, pillar], mood: asserted, t: 20.61, roles: {addressee: kanchanan, seen: disguised_woman, is: manimekalai}, lines: [MAN-20-0113], check: மணிமேகலை அவள் மறைந்து}
+- {id: b16, ep: disguise, kind: believe, voice: [poet], mood: asserted, t: 20.62, roles: {holder: kanchanan, source: pillar}, content: b09, stance: reject, heard_by: [kanchanan], inferred: "the pillar tells him, his change of mind is not narrated", lines: [MAN-20-0113], check: மணிமேகலை அவள்}
+- {id: b17, ep: disguise, kind: undisguise, voice: [poet], mood: asserted, t: 21.1, roles: {agent: manimekalai, form: kayasandikai}, does: ["-looks_like(manimekalai,kayasandikai)"], lines: [MAN-21-0009, MAN-21-0010], check: கெடுக இவ் உரு}
+- {id: b18, ep: disguise, kind: motive, voice: [poet, manimekalai], mood: asserted, t: 18.49, roles: {agent: manimekalai, target: udayakumaran}, purpose: "teach him so his bad karma ends", lines: [MAN-21-0021, MAN-21-0022], check: காயசண்டிகை வடிவு ஆனேன்}
+
+# ------------------------------------------------------------- DEV: the bowl
+- {id: c01, ep: bowl, kind: give, voice: [poet, aravanan], mood: asserted, t: -5.1, roles: {agent: chintadevi, theme: amudasurabhi, recipient: aputhiran}, does: ["+holds(aputhiran,amudasurabhi)"], lines: [MAN-14-0016], check: தன் கைப் பாத்திரம் அவன் கைக்}
+- {id: c02, ep: bowl, kind: feed, voice: [poet, aravanan], mood: asserted, t: -5.0, roles: {agent: aputhiran, instrument: amudasurabhi}, lines: [MAN-14-0022, MAN-14-0023], check: பசி தீர்த்து}
+- {id: c03, ep: bowl, kind: stranded, voice: [poet, aravanan], mood: asserted, t: -4.9, roles: {agent: aputhiran, place: manipallavam}, lines: [MAN-14-0081, MAN-14-0085], check: மணிபல்லவத்திடை}
+- {id: c04, ep: bowl, kind: deposit, voice: [poet, aravanan], mood: asserted, t: -4.8, roles: {agent: aputhiran, theme: amudasurabhi, place: gomukhi}, does: ["-holds(aputhiran,amudasurabhi)", "+holds(gomukhi,amudasurabhi)"], lines: [MAN-14-0091, MAN-14-0092], check: கோமுகி என்னும்}
+- {id: c05, ep: bowl, kind: appear, voice: [poet, aravanan, aputhiran], mood: command, t: -4.79, roles: {theme: amudasurabhi, addressee: amudasurabhi, recipient: righteous_person}, condition: "if someone who protects life with compassion exists", lines: [MAN-14-0092, MAN-14-0093, MAN-14-0094], check: ஓர் யாண்டு ஒரு நாள்}
+- {id: c06, ep: bowl, kind: inexhaustible, voice: [poet, tivatilakai], mood: asserted, t: 11.1, roles: {theme: amudasurabhi}, lines: [MAN-11-0050], check: தான் தொலைவு இல்லாத்}
+- {id: c07, ep: bowl, kind: receive, voice: [poet], mood: asserted, t: 11.2, roles: {theme: amudasurabhi, recipient: manimekalai, place: gomukhi}, does: ["-holds(gomukhi,amudasurabhi)", "+holds(manimekalai,amudasurabhi)"], lines: [MAN-11-0057, MAN-11-0058], check: பாத்திரம் புகுதலும்}
+- {id: c08, ep: bowl, kind: give, voice: [poet], mood: asserted, t: 11.2, roles: {agent: tivatilakai, theme: amudasurabhi, recipient: manimekalai}, conflicts: c07, account: patikam, lines: [MAN-00-0053, MAN-00-0054], check: மடக்கொடிக்கு அளித்ததும்}
+- {id: c09, ep: bowl, kind: give, voice: [poet, manimekalai], mood: claimed, t: 11.2, roles: {agent: unnamed_deity, theme: amudasurabhi}, conflicts: c07, lines: [MAN-19-0151, MAN-19-0152], check: தெய்வம் தந்தது}
+- {id: c10, ep: bowl, kind: give, voice: [poet, cutamati], mood: asserted, t: 5.0, roles: {agent: sankatharuman, theme: other_bowl, recipient: cutamati}, does: ["+holds(cutamati,other_bowl)"], note: "same word pattiram, a different bowl", lines: [MAN-05-0065], check: தன் கைப் பாத்திரம் என் கைத்}

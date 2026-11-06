@@ -1,0 +1,31 @@
+line,text,what,sense,categories,gist,verdict,why
+SIL-05-0188,விழவுக்களி சிறந்த வியலுள் ஆங்கண்,description,literal,PLACE EVENT STATE,wide space filled with festival joy,right,
+MAN-26-0072,தேவ குலமும் தெற்றியும் பள்ளியும்,list,literal,BUILDING RELIGION,"temples, platforms, monasteries",right,
+MAN-04-0122,என்று அவள் உரைத்த இசை படு தீம் சொல்,frame,literal,EVENT,she finished speaking her sweet words,right,
+MAN-24-0011,ஆங்கு அவன் புதல்வனோடு அருந் தவன் முனிந்த,event,literal,PERSON KINSHIP STATE,ascetic angered along with his son,partly,the ascetic was angered with him and his son; the gist reads as if the son was angry too
+SIL-06-0117,வெள்ளி விளக்கம் நள்இருள் கடியத்,event,literal,COSMOLOGY TIME,Venus's light drives off deep darkness,right,
+MAN-28-0021,பூமிசைப் பரந்து பொறி வண்டு ஆர்ப்ப,event,literal,PLANT_ANIMAL,"flowers spread, spotted bees hum",right,
+SIL-29-0141,கந்துக வரி,frame,literal,FESTIVAL_ART,heading: ball-game song section,right,
+SIL-04-0037,வடமலைப் பிறந்த வான்கேழ் வட்டத்துத்,list,literal,MATERIAL PLACE,bright-hued paste from the northern mountain,partly,"வட்டம் is the grinding slab from the northern mountain, not the paste itself"
+SIL-17-0134,மன்னர்கோச் சேரன் வளவஞ்சி வாழ்வேந்தன்,description,literal,PERSON PLACE OCCUPATION,"Chera king, ruler of Vanci",right,
+SIL-30-0094,அந்நீர் தெளியென் றறிந்தோன் கூறினன்,speech,literal,PERSON MATERIAL,the knowing one says to sprinkle that water,right,
+MAN-01-0040,இந் நகர் போல்வதோர் இயல்பினது ஆகிப்,comparison,figurative,PLACE STATE,becoming like this city,right,
+SIL-07-0071,வேறு (முகம் இல் வரி),frame,literal,FESTIVAL_ART,heading: song without prelude,right,
+SIL-18-0035,துன்புறு வனநோற்றுத் துயருறு மகளிரைப்போல்,comparison,mixed,STATE KINSHIP,women enduring hardships like those bereaved,partly,women who suffer through austerities; 'bereaved' is added
+MAN-29-0217,சாதாரணம் சபக்க விபக்கத்துக்கும்,doctrine,literal,EVIDENCE CLAIM,common fallacy: reason spans similar and dissimilar cases,right,
+SIL-12-0174,வேறு,frame,literal,,rubric: another song begins,right,
+SIL-07-0093,வேறு (நிலைவரி),frame,literal,FESTIVAL_ART,next song label: nilaivari,right,
+MAN-04-0043,நீல மால் வரை நிலனொடு படர்ந்தெனக்,comparison,figurative,,like a dark mountain moving across the ground,right,
+MAN-19-0160,பெருந் தவர் தம்மால் பெரும் பொருள் எய்த,event,literal,PERSON CAUSE RELIGION,great good gained through the great ascetic,right,
+MAN-19-0029,உறையுள் குடிகை உள்வரிக் கொண்ட,description,literal,EVENT,"dwelling-hut phrase, taking on a guise (obscure)",partly,"it admits the line is obscure, but EVENT is a guess"
+MAN-21-0166,அற வெயில் விரித்து ஆங்கு அளப்பு இல் இருத்தியொடு,comparison,figurative,RELIGION STATE,sunlight of dharma spread with boundless powers,right,
+SIL-22-0140,தண்ணுமை முழவம் தாழ்தரு தீங்குழல்,list,literal,OBJECT FESTIVAL_ART,"drum, muzhavam, sweet flute",right,
+MAN-24-0012,ஓங்கிய சிறப்பின் ஒருநூற்று நால்வரும்,description,literal,GROUP STATE,one hundred and four women of lofty fame,unsure,the 104 are right; that they're women needs the canto checked
+SIL-14-0008,உவணச் சேவ லுயர்த்தோன் நியமமும்,description,literal,BUILDING DEITY RELIGION,shrine of the god with the Garuda banner,right,
+SIL-07-0228,செந்நெல் பழனக் கழனிதொறும்,description,literal,PLANT_ANIMAL PLACE,red-rice paddy fields everywhere,right,
+SIL-02-0015,அரும்புபொதி அவிழ்ந்த சுரும்புஇமிர் தாமரை,list,literal,PLANT_ANIMAL,opening lotus buds humming with bees,right,
+SIL-13-0130,புலவர் செந்நாப் பொருந்திய நிவப்பின்,description,figurative,OCCUPATION,lofty breeze resting on poets' tongues,wrong,"no breeze in the line: it's an eminence fit for poets' tongues, i.e. praised by poets"
+SIL-11-0132,காண்டகு மரபின வல்ல மற்றவை,speech,literal,CLAIM RELIGION,other wishes are not fitting to be seen,right,
+MAN-30-0038,பின்போக்கு அல்லது பொன்றக் கெடாதாய்,doctrine,literal,RELIGION BELIEF,ceases only by reversal,right,
+SIL-14-0215,விசும்பகடு திருகிய வெங்கதிர் நுழையாப்,description,literal,PLACE,fierce sun cannot enter the shade,right,
+MAN-29-0238,மின்னினும் ஆகாசத்தினும் மின்னின்,doctrine,literal,CLAIM COSMOLOGY,lightning and sky as test cases for the reason,right,

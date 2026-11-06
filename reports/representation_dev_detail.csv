@@ -1,0 +1,344 @@
+method,q,ep,op,result,answer
+flat_all,q01,anklet,happened,wrong,true
+flat_all,q02,anklet,happened,right,true
+flat_all,q03,anklet,happened,right,true
+flat_all,q04,anklet,happened,wrong,true
+flat_all,q05,anklet,happened,right,true
+flat_all,q06,anklet,happened,wrong,true
+flat_all,q07,anklet,happened,right,true
+flat_all,q08,anklet,happened,right,false
+flat_all,q09,anklet,happened,wrong,true
+flat_all,q10,anklet,happened,wrong,true
+flat_all,q11,anklet,role_of,blank,null
+flat_all,q12,anklet,role_of,blank,null
+flat_all,q13,anklet,tellers,blank,null
+flat_all,q14,anklet,tellers,blank,null
+flat_all,q15,anklet,holder,wrong,"[""kovalan"", ""pandya_king""]"
+flat_all,q16,anklet,holder,wrong,"[""kovalan"", ""pandya_king""]"
+flat_all,q17,anklet,holder,wrong,"[""kovalan"", ""pandya_king""]"
+flat_all,q18,anklet,holder,blank,null
+flat_all,q19,anklet,holder,blank,null
+flat_all,q20,anklet,belief,blank,null
+flat_all,q21,anklet,belief,blank,null
+flat_all,q22,anklet,belief,blank,null
+flat_all,q23,anklet,alive,wrong,false
+flat_all,q24,anklet,alive,right,false
+flat_all,q25,anklet,causes,blank,null
+flat_all,q26,anklet,open_values,blank,null
+flat_all,q27,anklet,conflicts,blank,null
+flat_all,q28,anklet,viewer_sees,blank,null
+flat_all,q29,anklet,viewer_sees,blank,null
+flat_all,q30,disguise,happened,wrong,true
+flat_all,q31,disguise,happened,wrong,true
+flat_all,q32,disguise,happened,right,true
+flat_all,q33,disguise,happened,wrong,true
+flat_all,q34,disguise,belief,blank,null
+flat_all,q35,disguise,belief,blank,null
+flat_all,q36,disguise,belief,blank,null
+flat_all,q37,disguise,belief,blank,null
+flat_all,q38,disguise,viewer_sees,blank,null
+flat_all,q39,disguise,viewer_sees,blank,null
+flat_all,q40,disguise,alive,wrong,true
+flat_all,q41,disguise,causes,blank,null
+flat_all,q42,bowl,holder,wrong,"[""aputhiran"", ""manimekalai""]"
+flat_all,q43,bowl,holder,wrong,"[""aputhiran"", ""manimekalai""]"
+flat_all,q44,bowl,holder,wrong,"[""aputhiran"", ""manimekalai""]"
+flat_all,q45,bowl,happened,wrong,true
+flat_all,q46,bowl,conflicts,blank,null
+flat_all,q47,bowl,tellers,blank,null
+flat_all,q48,bowl,role_of,blank,null
+flat_all,q49,bowl,holder,right,"[""cutamati""]"
+flat_clean,q01,anklet,happened,right,false
+flat_clean,q02,anklet,happened,right,true
+flat_clean,q03,anklet,happened,right,true
+flat_clean,q04,anklet,happened,right,false
+flat_clean,q05,anklet,happened,right,true
+flat_clean,q06,anklet,happened,right,false
+flat_clean,q07,anklet,happened,right,true
+flat_clean,q08,anklet,happened,right,false
+flat_clean,q09,anklet,happened,right,false
+flat_clean,q10,anklet,happened,right,false
+flat_clean,q11,anklet,role_of,blank,null
+flat_clean,q12,anklet,role_of,blank,null
+flat_clean,q13,anklet,tellers,blank,null
+flat_clean,q14,anklet,tellers,blank,null
+flat_clean,q15,anklet,holder,wrong,"[""kovalan"", ""pandya_king""]"
+flat_clean,q16,anklet,holder,wrong,"[""kovalan"", ""pandya_king""]"
+flat_clean,q17,anklet,holder,wrong,"[""kovalan"", ""pandya_king""]"
+flat_clean,q18,anklet,holder,blank,null
+flat_clean,q19,anklet,holder,blank,null
+flat_clean,q20,anklet,belief,blank,null
+flat_clean,q21,anklet,belief,blank,null
+flat_clean,q22,anklet,belief,blank,null
+flat_clean,q23,anklet,alive,wrong,false
+flat_clean,q24,anklet,alive,right,false
+flat_clean,q25,anklet,causes,blank,null
+flat_clean,q26,anklet,open_values,blank,null
+flat_clean,q27,anklet,conflicts,blank,null
+flat_clean,q28,anklet,viewer_sees,blank,null
+flat_clean,q29,anklet,viewer_sees,blank,null
+flat_clean,q30,disguise,happened,right,false
+flat_clean,q31,disguise,happened,right,false
+flat_clean,q32,disguise,happened,right,true
+flat_clean,q33,disguise,happened,right,false
+flat_clean,q34,disguise,belief,blank,null
+flat_clean,q35,disguise,belief,blank,null
+flat_clean,q36,disguise,belief,blank,null
+flat_clean,q37,disguise,belief,blank,null
+flat_clean,q38,disguise,viewer_sees,blank,null
+flat_clean,q39,disguise,viewer_sees,blank,null
+flat_clean,q40,disguise,alive,wrong,true
+flat_clean,q41,disguise,causes,blank,null
+flat_clean,q42,bowl,holder,wrong,"[""aputhiran"", ""manimekalai""]"
+flat_clean,q43,bowl,holder,wrong,"[""aputhiran"", ""manimekalai""]"
+flat_clean,q44,bowl,holder,wrong,"[""aputhiran"", ""manimekalai""]"
+flat_clean,q45,bowl,happened,wrong,true
+flat_clean,q46,bowl,conflicts,blank,null
+flat_clean,q47,bowl,tellers,blank,null
+flat_clean,q48,bowl,role_of,blank,null
+flat_clean,q49,bowl,holder,right,"[""cutamati""]"
+nary,q01,anklet,happened,wrong,true
+nary,q02,anklet,happened,right,true
+nary,q03,anklet,happened,right,true
+nary,q04,anklet,happened,wrong,true
+nary,q05,anklet,happened,right,true
+nary,q06,anklet,happened,wrong,true
+nary,q07,anklet,happened,right,true
+nary,q08,anklet,happened,right,false
+nary,q09,anklet,happened,wrong,true
+nary,q10,anklet,happened,wrong,true
+nary,q11,anklet,role_of,right,"""ank_k1"""
+nary,q12,anklet,role_of,right,"""sword"""
+nary,q13,anklet,tellers,blank,null
+nary,q14,anklet,tellers,blank,null
+nary,q15,anklet,holder,blank,null
+nary,q16,anklet,holder,blank,null
+nary,q17,anklet,holder,blank,null
+nary,q18,anklet,holder,blank,null
+nary,q19,anklet,holder,blank,null
+nary,q20,anklet,belief,blank,null
+nary,q21,anklet,belief,blank,null
+nary,q22,anklet,belief,blank,null
+nary,q23,anklet,alive,wrong,false
+nary,q24,anklet,alive,right,false
+nary,q25,anklet,causes,blank,null
+nary,q26,anklet,open_values,blank,null
+nary,q27,anklet,conflicts,blank,null
+nary,q28,anklet,viewer_sees,blank,null
+nary,q29,anklet,viewer_sees,blank,null
+nary,q30,disguise,happened,wrong,true
+nary,q31,disguise,happened,wrong,true
+nary,q32,disguise,happened,right,true
+nary,q33,disguise,happened,wrong,true
+nary,q34,disguise,belief,blank,null
+nary,q35,disguise,belief,blank,null
+nary,q36,disguise,belief,blank,null
+nary,q37,disguise,belief,blank,null
+nary,q38,disguise,viewer_sees,blank,null
+nary,q39,disguise,viewer_sees,blank,null
+nary,q40,disguise,alive,wrong,true
+nary,q41,disguise,causes,blank,null
+nary,q42,bowl,holder,blank,null
+nary,q43,bowl,holder,blank,null
+nary,q44,bowl,holder,blank,null
+nary,q45,bowl,happened,right,false
+nary,q46,bowl,conflicts,blank,null
+nary,q47,bowl,tellers,blank,null
+nary,q48,bowl,role_of,right,"""aputhiran"""
+nary,q49,bowl,holder,blank,null
+qualified,q01,anklet,happened,right,false
+qualified,q02,anklet,happened,right,true
+qualified,q03,anklet,happened,right,true
+qualified,q04,anklet,happened,right,false
+qualified,q05,anklet,happened,right,true
+qualified,q06,anklet,happened,right,false
+qualified,q07,anklet,happened,right,true
+qualified,q08,anklet,happened,right,false
+qualified,q09,anklet,happened,right,false
+qualified,q10,anklet,happened,right,false
+qualified,q11,anklet,role_of,right,"""ank_k1"""
+qualified,q12,anklet,role_of,right,"""sword"""
+qualified,q13,anklet,tellers,wrong,"[[""goldsmith""]]"
+qualified,q14,anklet,tellers,wrong,"[[""guards""], [""matari""]]"
+qualified,q15,anklet,holder,blank,null
+qualified,q16,anklet,holder,right,"[""kovalan""]"
+qualified,q17,anklet,holder,right,"[""pandya_king""]"
+qualified,q18,anklet,holder,blank,null
+qualified,q19,anklet,holder,blank,null
+qualified,q20,anklet,belief,right,"""accept"""
+qualified,q21,anklet,belief,right,"""reject"""
+qualified,q22,anklet,belief,right,null
+qualified,q23,anklet,alive,right,true
+qualified,q24,anklet,alive,right,false
+qualified,q25,anklet,causes,right,"[[""a11"", ""enables""], [""a14"", ""enables""], [""k_karma_kov"", ""karma""], [""k_sceptre"", ""moral""]]"
+qualified,q26,anklet,open_values,blank,null
+qualified,q27,anklet,conflicts,blank,null
+qualified,q28,anklet,viewer_sees,blank,null
+qualified,q29,anklet,viewer_sees,blank,null
+qualified,q30,disguise,happened,right,false
+qualified,q31,disguise,happened,right,false
+qualified,q32,disguise,happened,right,true
+qualified,q33,disguise,happened,right,false
+qualified,q34,disguise,belief,right,"""accept"""
+qualified,q35,disguise,belief,right,"""reject"""
+qualified,q36,disguise,belief,right,null
+qualified,q37,disguise,belief,right,"""accept"""
+qualified,q38,disguise,viewer_sees,blank,null
+qualified,q39,disguise,viewer_sees,blank,null
+qualified,q40,disguise,alive,right,false
+qualified,q41,disguise,causes,right,"[[""b12"", ""motivates""], [""b14"", ""karma""]]"
+qualified,q42,bowl,holder,right,"[""aputhiran""]"
+qualified,q43,bowl,holder,right,"[""gomukhi""]"
+qualified,q44,bowl,holder,right,"[""manimekalai""]"
+qualified,q45,bowl,happened,right,false
+qualified,q46,bowl,conflicts,blank,null
+qualified,q47,bowl,tellers,wrong,"[[""aravanan""]]"
+qualified,q48,bowl,role_of,right,"""aputhiran"""
+qualified,q49,bowl,holder,right,"[""cutamati""]"
+contexts,q01,anklet,happened,right,false
+contexts,q02,anklet,happened,right,true
+contexts,q03,anklet,happened,right,true
+contexts,q04,anklet,happened,right,false
+contexts,q05,anklet,happened,right,true
+contexts,q06,anklet,happened,right,false
+contexts,q07,anklet,happened,right,true
+contexts,q08,anklet,happened,right,false
+contexts,q09,anklet,happened,right,false
+contexts,q10,anklet,happened,right,false
+contexts,q11,anklet,role_of,right,"""ank_k1"""
+contexts,q12,anklet,role_of,right,"""sword"""
+contexts,q13,anklet,tellers,right,"[[""goldsmith"", ""poet""]]"
+contexts,q14,anklet,tellers,right,"[[""guards"", ""poet""], [""matalan"", ""matari"", ""poet""]]"
+contexts,q15,anklet,holder,blank,null
+contexts,q16,anklet,holder,blank,null
+contexts,q17,anklet,holder,blank,null
+contexts,q18,anklet,holder,blank,null
+contexts,q19,anklet,holder,blank,null
+contexts,q20,anklet,belief,blank,null
+contexts,q21,anklet,belief,blank,null
+contexts,q22,anklet,belief,blank,null
+contexts,q23,anklet,alive,wrong,false
+contexts,q24,anklet,alive,right,false
+contexts,q25,anklet,causes,right,"[[""a11"", ""enables""], [""a14"", ""enables""], [""k_karma_kov"", ""karma""], [""k_sceptre"", ""moral""]]"
+contexts,q26,anklet,open_values,blank,null
+contexts,q27,anklet,conflicts,right,"[""a13"", ""a25""]"
+contexts,q28,anklet,viewer_sees,blank,null
+contexts,q29,anklet,viewer_sees,blank,null
+contexts,q30,disguise,happened,right,false
+contexts,q31,disguise,happened,right,false
+contexts,q32,disguise,happened,right,true
+contexts,q33,disguise,happened,right,false
+contexts,q34,disguise,belief,blank,null
+contexts,q35,disguise,belief,blank,null
+contexts,q36,disguise,belief,blank,null
+contexts,q37,disguise,belief,blank,null
+contexts,q38,disguise,viewer_sees,blank,null
+contexts,q39,disguise,viewer_sees,blank,null
+contexts,q40,disguise,alive,wrong,true
+contexts,q41,disguise,causes,right,"[[""b12"", ""motivates""], [""b14"", ""karma""]]"
+contexts,q42,bowl,holder,blank,null
+contexts,q43,bowl,holder,blank,null
+contexts,q44,bowl,holder,blank,null
+contexts,q45,bowl,happened,right,false
+contexts,q46,bowl,conflicts,right,"[""c08"", ""c09""]"
+contexts,q47,bowl,tellers,right,"[[""aravanan"", ""poet""]]"
+contexts,q48,bowl,role_of,right,"""aputhiran"""
+contexts,q49,bowl,holder,blank,null
+standards,q01,anklet,happened,right,false
+standards,q02,anklet,happened,right,true
+standards,q03,anklet,happened,right,true
+standards,q04,anklet,happened,right,false
+standards,q05,anklet,happened,right,true
+standards,q06,anklet,happened,right,false
+standards,q07,anklet,happened,right,true
+standards,q08,anklet,happened,right,false
+standards,q09,anklet,happened,right,false
+standards,q10,anklet,happened,right,false
+standards,q11,anklet,role_of,right,"""ank_k1"""
+standards,q12,anklet,role_of,right,"""sword"""
+standards,q13,anklet,tellers,right,"[[""goldsmith"", ""poet""]]"
+standards,q14,anklet,tellers,right,"[[""guards"", ""poet""], [""matalan"", ""matari"", ""poet""]]"
+standards,q15,anklet,holder,right,"[""kannagi""]"
+standards,q16,anklet,holder,right,"[""kovalan""]"
+standards,q17,anklet,holder,right,"[""pandya_king""]"
+standards,q18,anklet,holder,right,"[""kannagi""]"
+standards,q19,anklet,holder,right,"[""goldsmith""]"
+standards,q20,anklet,belief,right,"""accept"""
+standards,q21,anklet,belief,right,"""reject"""
+standards,q22,anklet,belief,right,null
+standards,q23,anklet,alive,right,true
+standards,q24,anklet,alive,right,false
+standards,q25,anklet,causes,right,"[[""a11"", ""enables""], [""a14"", ""enables""], [""k_karma_kov"", ""karma""], [""k_sceptre"", ""moral""]]"
+standards,q26,anklet,open_values,right,"[""ank_k1"", ""ank_k2""]"
+standards,q27,anklet,conflicts,right,"[""a13"", ""a25""]"
+standards,q28,anklet,viewer_sees,right,true
+standards,q29,anklet,viewer_sees,right,false
+standards,q30,disguise,happened,right,false
+standards,q31,disguise,happened,right,false
+standards,q32,disguise,happened,right,true
+standards,q33,disguise,happened,right,false
+standards,q34,disguise,belief,right,"""accept"""
+standards,q35,disguise,belief,right,"""reject"""
+standards,q36,disguise,belief,right,null
+standards,q37,disguise,belief,right,"""accept"""
+standards,q38,disguise,viewer_sees,right,true
+standards,q39,disguise,viewer_sees,right,false
+standards,q40,disguise,alive,right,false
+standards,q41,disguise,causes,right,"[[""b12"", ""motivates""], [""b14"", ""karma""]]"
+standards,q42,bowl,holder,right,"[""aputhiran""]"
+standards,q43,bowl,holder,right,"[""gomukhi""]"
+standards,q44,bowl,holder,right,"[""manimekalai""]"
+standards,q45,bowl,happened,right,false
+standards,q46,bowl,conflicts,right,"[""c08"", ""c09""]"
+standards,q47,bowl,tellers,right,"[[""aravanan"", ""poet""]]"
+standards,q48,bowl,role_of,right,"""aputhiran"""
+standards,q49,bowl,holder,right,"[""cutamati""]"
+ledger,q01,anklet,happened,right,false
+ledger,q02,anklet,happened,right,true
+ledger,q03,anklet,happened,right,true
+ledger,q04,anklet,happened,right,false
+ledger,q05,anklet,happened,right,true
+ledger,q06,anklet,happened,right,false
+ledger,q07,anklet,happened,right,true
+ledger,q08,anklet,happened,right,false
+ledger,q09,anklet,happened,right,false
+ledger,q10,anklet,happened,right,false
+ledger,q11,anklet,role_of,right,"""ank_k1"""
+ledger,q12,anklet,role_of,right,"""sword"""
+ledger,q13,anklet,tellers,right,"[[""goldsmith"", ""poet""]]"
+ledger,q14,anklet,tellers,right,"[[""guards"", ""poet""], [""matalan"", ""matari"", ""poet""]]"
+ledger,q15,anklet,holder,right,"[""kannagi""]"
+ledger,q16,anklet,holder,right,"[""kovalan""]"
+ledger,q17,anklet,holder,right,"[""pandya_king""]"
+ledger,q18,anklet,holder,right,"[""kannagi""]"
+ledger,q19,anklet,holder,right,"[""goldsmith""]"
+ledger,q20,anklet,belief,right,"""accept"""
+ledger,q21,anklet,belief,right,"""reject"""
+ledger,q22,anklet,belief,right,null
+ledger,q23,anklet,alive,right,true
+ledger,q24,anklet,alive,right,false
+ledger,q25,anklet,causes,right,"[[""a11"", ""enables""], [""a14"", ""enables""], [""k_karma_kov"", ""karma""], [""k_sceptre"", ""moral""]]"
+ledger,q26,anklet,open_values,right,"[""ank_k1"", ""ank_k2""]"
+ledger,q27,anklet,conflicts,right,"[""a13"", ""a25""]"
+ledger,q28,anklet,viewer_sees,right,true
+ledger,q29,anklet,viewer_sees,right,false
+ledger,q30,disguise,happened,right,false
+ledger,q31,disguise,happened,right,false
+ledger,q32,disguise,happened,right,true
+ledger,q33,disguise,happened,right,false
+ledger,q34,disguise,belief,right,"""accept"""
+ledger,q35,disguise,belief,right,"""reject"""
+ledger,q36,disguise,belief,right,null
+ledger,q37,disguise,belief,right,"""accept"""
+ledger,q38,disguise,viewer_sees,right,true
+ledger,q39,disguise,viewer_sees,right,false
+ledger,q40,disguise,alive,right,false
+ledger,q41,disguise,causes,right,"[[""b12"", ""motivates""], [""b14"", ""karma""]]"
+ledger,q42,bowl,holder,right,"[""aputhiran""]"
+ledger,q43,bowl,holder,right,"[""gomukhi""]"
+ledger,q44,bowl,holder,right,"[""manimekalai""]"
+ledger,q45,bowl,happened,right,false
+ledger,q46,bowl,conflicts,right,"[""c08"", ""c09""]"
+ledger,q47,bowl,tellers,right,"[[""aravanan"", ""poet""]]"
+ledger,q48,bowl,role_of,right,"""aputhiran"""
+ledger,q49,bowl,holder,right,"[""cutamati""]"

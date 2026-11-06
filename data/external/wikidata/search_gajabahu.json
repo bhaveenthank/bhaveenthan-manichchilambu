@@ -1,0 +1,58 @@
+{
+ "searchinfo": {
+  "search": "Gajabahu I"
+ },
+ "search": [
+  {
+   "id": "Q5517531",
+   "title": "Q5517531",
+   "pageid": 5278478,
+   "concepturi": "http://www.wikidata.org/entity/Q5517531",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q5517531",
+   "display": {
+    "label": {
+     "value": "Gajabahu I of Anuradhapura",
+     "language": "en"
+    },
+    "description": {
+     "value": "King of Anuradhapura from c.113 to c.135",
+     "language": "en"
+    }
+   },
+   "label": "Gajabahu I of Anuradhapura",
+   "description": "King of Anuradhapura from c.113 to c.135",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Gajabahu I of Anuradhapura"
+   }
+  },
+  {
+   "id": "Q5517528",
+   "title": "Q5517528",
+   "pageid": 5278474,
+   "concepturi": "http://www.wikidata.org/entity/Q5517528",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q5517528",
+   "display": {
+    "label": {
+     "value": "Gajabahu II of Polonnaruwa",
+     "language": "en"
+    },
+    "description": {
+     "value": "king of Polonnaruwa",
+     "language": "en"
+    }
+   },
+   "label": "Gajabahu II of Polonnaruwa",
+   "description": "king of Polonnaruwa",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Gajabahu II of Polonnaruwa"
+   }
+  }
+ ],
+ "success": 1
+}

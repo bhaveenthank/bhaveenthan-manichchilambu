@@ -1,0 +1,28 @@
+{
+ "candidates": 825,
+ "lines_flagged": 800,
+ "lines": 10209,
+ "recall": 0.29,
+ "per_class": {
+  "SIL/move": 65,
+  "SIL/see": 47,
+  "SIL/kill_harm": 43,
+  "SIL/feed": 6,
+  "SIL/dream_curse": 16,
+  "SIL/speak": 41,
+  "SIL/give": 58,
+  "SIL/worship": 54,
+  "SIL/take_receive": 28,
+  "SIL/die": 17,
+  "MAN/worship": 88,
+  "MAN/speak": 113,
+  "MAN/give": 47,
+  "MAN/move": 77,
+  "MAN/kill_harm": 31,
+  "MAN/feed": 21,
+  "MAN/see": 28,
+  "MAN/die": 20,
+  "MAN/take_receive": 12,
+  "MAN/dream_curse": 13
+ }
+}

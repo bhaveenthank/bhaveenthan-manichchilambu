@@ -1,0 +1,587 @@
+{
+ "round1_after_fixes": {
+  "tally": {
+   "right": 27,
+   "wrong": 1,
+   "refused": 3,
+   "buried": 2,
+   "offered closest": 1
+  },
+  "rows": [
+   {
+    "q": "Who struck Kovalan with the sword?",
+    "want": "a15",
+    "type": "kill",
+    "verdict": "right",
+    "headline": "a drunk man killed Kovalan."
+   },
+   {
+    "q": "Who ordered Kovalan's death?",
+    "want": "a11",
+    "type": "kill",
+    "verdict": "right",
+    "headline": "a drunk man killed Kovalan."
+   },
+   {
+    "q": "Was Kovalan guilty?",
+    "want": "a13",
+    "type": "not_fact",
+    "verdict": "right",
+    "headline": "No, the text doesn't tell this as having happened. The guards look at Kovalan and say this"
+   },
+   {
+    "q": "Who said Kovalan was innocent?",
+    "want": "a13",
+    "type": "who_told",
+    "verdict": "right",
+    "headline": "It reaches us through: the poet → the guards; the poet → Matalan → Matari."
+   },
+   {
+    "q": "What was inside Kannagi's anklet?",
+    "want": "a18",
+    "type": "inside",
+    "verdict": "right",
+    "headline": "Kannagi says her anklets are filled with gems."
+   },
+   {
+    "q": "What was inside the queen's anklet?",
+    "want": "a19",
+    "type": "inside",
+    "verdict": "right",
+    "headline": "The king says the queen's anklet is filled with pearls."
+   },
+   {
+    "q": "Why did the king die?",
+    "want": "a24",
+    "type": "why_death",
+    "verdict": "right",
+    "headline": "The king falls and dies."
+   },
+   {
+    "q": "What did Kannagi do to Madurai?",
+    "want": "e01",
+    "type": "path",
+    "verdict": "right",
+    "headline": "Kannagi and Madurai connect in 1 step. Each step is below, with its verse."
+   },
+   {
+    "q": "Who was spared from the fire?",
+    "want": "e03",
+    "type": "yes",
+    "verdict": "wrong",
+    "headline": "Yes. The fire consumes Madurai."
+   },
+   {
+    "q": "Who did Kannagi marry?",
+    "want": "m01",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about Kannagi, but can't answer that question about them."
+   },
+   {
+    "q": "கண்ணகியின் கணவன் யார்?",
+    "want": "m01",
+    "type": "family",
+    "verdict": "right",
+    "headline": "Kannagi is Kovalan's wife. Kannagi comes from the house of Manaikan."
+   },
+   {
+    "q": "மாதவியின் மகள் யார்?",
+    "want": "m04",
+    "type": "family",
+    "verdict": "right",
+    "headline": "Madhavi gave birth to a child, Manimekalai."
+   },
+   {
+    "q": "கோவலனின் தந்தை யார்?",
+    "want": "m02",
+    "type": "family",
+    "verdict": "right",
+    "headline": "Kannagi is Kovalan's wife. Kovalan is the son of Masattuvan, says Kannagi. Manimekalai's f"
+   },
+   {
+    "q": "சிலம்பை உடைத்தது யார்?",
+    "want": "a20",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Kannagi breaks an anklet. The text doesn't say which of the pair."
+   },
+   {
+    "q": "பொற்கொல்லன் என்ன செய்தான்?",
+    "want": "a06b",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about the goldsmith, but can't answer that question about them."
+   },
+   {
+    "q": "நீலி யார்?",
+    "want": "d05",
+    "type": "about",
+    "verdict": "right",
+    "headline": "Neeli appears in Silappatikāram. Neeli, Sangaman's wife, cries out for justice through the"
+   },
+   {
+    "q": "கண்ணகி மதுரையை ஏன் எரித்தாள்?",
+    "want": "e01",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Kannagi twists off her left breast and hurls it at Madurai."
+   },
+   {
+    "q": "அமுதசுரபி யார் கொடுத்தது?",
+    "want": "c01",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Chintadevi places the bowl in Aputhiran's hand."
+   },
+   {
+    "q": "மணிமேகலை ஏன் காயசண்டிகை வடிவம் எடுத்தாள்?",
+    "want": "b18",
+    "type": "why_disguise",
+    "verdict": "right",
+    "headline": "Manimekalai says she took the form to teach the prince and end his bad karma."
+   },
+   {
+    "q": "காஞ்சனன் உதயகுமரனை ஏன் கொன்றான்?",
+    "want": "b12",
+    "type": "why_death",
+    "verdict": "right",
+    "headline": "Kanchanan killed Udayakumaran."
+   },
+   {
+    "q": "kannagi kanavan yaar",
+    "want": "m01",
+    "type": "family",
+    "verdict": "right",
+    "headline": "Kannagi is Kovalan's wife. Kannagi comes from the house of Manaikan."
+   },
+   {
+    "q": "silambu yaar udaithathu",
+    "want": "a20",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Kannagi breaks an anklet. The text doesn't say which of the pair."
+   },
+   {
+    "q": "manimegalai yen kayasandigai vadivam eduthaal",
+    "want": "b18",
+    "type": "why_disguise",
+    "verdict": "right",
+    "headline": "Manimekalai says she took the form to teach the prince and end his bad karma."
+   },
+   {
+    "q": "pandiya mannan ethukku kovalana kondran",
+    "want": "a10",
+    "type": "why_death",
+    "verdict": "buried",
+    "headline": "a drunk man killed Kovalan."
+   },
+   {
+    "q": "amudhasurabi enna seyyum",
+    "want": "c06",
+    "type": "about",
+    "verdict": "right",
+    "headline": "the Amudasurabhi bowl appears in Maṇimēkalai. The bowl's food never runs out, says Tivatil"
+   },
+   {
+    "q": "neeli enna sabam kuduthaa",
+    "want": "d06",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Neeli throws herself from a hill and lays a curse as she falls."
+   },
+   {
+    "q": "udayakumaran yaaru",
+    "want": "b04",
+    "type": "about",
+    "verdict": "right",
+    "headline": "Udayakumaran appears in Maṇimēkalai. The goddess Manimekala tells her that Udayakumaran is"
+   },
+   {
+    "q": "madurai ah yaaru erichaa",
+    "want": "e04",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about Madurai, but can't answer that question about them."
+   },
+   {
+    "q": "Which king built Kannagi's temple?",
+    "want": "m09",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Cenkuttuvan founds Kannagi's temple and orders daily festivals."
+   },
+   {
+    "q": "Where did Manimekalai get the bowl?",
+    "want": "c07",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. The bowl rises from the pond and enters Manimekalai's hand. Nobody gives it to her he"
+   },
+   {
+    "q": "Who is Rahulan?",
+    "want": "f02",
+    "type": "about",
+    "verdict": "buried",
+    "headline": "Rahulan appears in Maṇimēkalai. The goddess Manimekala tells her that Udayakumaran is her "
+   },
+   {
+    "q": "Who raised the prison into a charity?",
+    "want": "h03",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. The king frees the prisoners and turns the prison into a house of charity."
+   },
+   {
+    "q": "What is the moon's distance from Madurai?",
+    "want": null,
+    "type": "none",
+    "verdict": "right",
+    "headline": "The graph knows about Madurai, but can't answer that question about them."
+   },
+   {
+    "q": "Who won the cricket world cup?",
+    "want": null,
+    "type": "closest",
+    "verdict": "offered closest",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: Kannagi wonders: "
+   }
+  ]
+ },
+ "round2_after_fixes": {
+  "tally": {
+   "wrong": 2,
+   "buried": 1,
+   "right": 18,
+   "refused": 3,
+   "offered closest": 1
+  },
+  "rows": [
+   {
+    "q": "Who killed Rahulan's cook?",
+    "want": "f05",
+    "type": "kill",
+    "verdict": "wrong",
+    "headline": "Rahulan dies of the serpent's gaze."
+   },
+   {
+    "q": "Who beheaded the cook?",
+    "want": "f05",
+    "type": "yes",
+    "verdict": "buried",
+    "headline": "Yes. One unlearned drunk man strikes Kovalan with a sword and kills him."
+   },
+   {
+    "q": "Why did Neeli curse?",
+    "want": "d05",
+    "type": "why",
+    "verdict": "right",
+    "headline": "Neeli, Sangaman's wife, cries out for justice through the streets."
+   },
+   {
+    "q": "Did Kovalan buy the garland?",
+    "want": "l02",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Kovalan buys the garland from her and goes home with Madhavi."
+   },
+   {
+    "q": "Did Manimekalai lie to the king?",
+    "want": "b06",
+    "type": "not_fact",
+    "verdict": "right",
+    "headline": "No, the text doesn't tell this as having happened. Disguised, Manimekalai tells the king s"
+   },
+   {
+    "q": "Who carried Manimekalai to Manipallavam?",
+    "want": "x40",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: The goddess Manim"
+   },
+   {
+    "q": "Was Udayakumaran her son?",
+    "want": "f08",
+    "type": "family",
+    "verdict": "right",
+    "headline": "In other births Udayakumaran was her son, says the pillar goddess."
+   },
+   {
+    "q": "Did Kovalan really rise after death?",
+    "want": "x30",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. When Kannagi embraces the body, Kovalan rises."
+   },
+   {
+    "q": "Who fetched the stone from the Himalaya?",
+    "want": "x72",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Cenkuttuvan beats the northern kings and sets the sacred stone on their crowned heads"
+   },
+   {
+    "q": "Who entrusted Kannagi to Matari?",
+    "want": "x10",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: Kavunti entrusts "
+   },
+   {
+    "q": "மாதரி எப்படி இறந்தாள்?",
+    "want": "e07",
+    "type": "kill",
+    "verdict": "right",
+    "headline": "Matari walks into the fire in the dead of night, as Matalan reports."
+   },
+   {
+    "q": "கவுந்தி எப்படி இறந்தார்?",
+    "want": "e08",
+    "type": "kill",
+    "verdict": "right",
+    "headline": "Kavunti fasts until she dies, as Matalan reports."
+   },
+   {
+    "q": "உதயகுமரன் முற்பிறப்பில் யார்?",
+    "want": "b04",
+    "type": "birth",
+    "verdict": "right",
+    "headline": "Udayakumaran was Rahulan in an earlier birth, according to what the text's speakers say."
+   },
+   {
+    "q": "புண்ணியராசன் யாருடைய மகன்?",
+    "want": "g03",
+    "type": "family",
+    "verdict": "right",
+    "headline": "Punyarasan is the son of Bhumichandran."
+   },
+   {
+    "q": "அரசியின் சிலம்பில் என்ன இருந்தது?",
+    "want": "a19",
+    "type": "inside",
+    "verdict": "right",
+    "headline": "The king says the queen's anklet is filled with pearls."
+   },
+   {
+    "q": "சங்கமனைக் கொன்றது யார்?",
+    "want": "d04",
+    "type": "kill",
+    "verdict": "right",
+    "headline": "Sangaman is killed, but the line doesn't name the killer."
+   },
+   {
+    "q": "மாலையைக் கோவலன் வாங்கினானா?",
+    "want": "l02",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Kovalan buys the garland from her and goes home with Madhavi."
+   },
+   {
+    "q": "matari eppadi sethaa",
+    "want": "e07",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about Matari, but can't answer that question about them."
+   },
+   {
+    "q": "kanchanan yaara kondran",
+    "want": "b13",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about Kanchanan, but can't answer that question about them."
+   },
+   {
+    "q": "bharatan yaaru",
+    "want": "d01",
+    "type": "about",
+    "verdict": "right",
+    "headline": "Bharatan appears in Maṇimēkalai and Silappatikāram. Madurapati says Kovalan was Bharatan i"
+   },
+   {
+    "q": "queen anklet ulla enna irunthuchu",
+    "want": "a19",
+    "type": "inside",
+    "verdict": "right",
+    "headline": "The king says the queen's anklet is filled with pearls."
+   },
+   {
+    "q": "aputhiran bowl enna panninan",
+    "want": "c04",
+    "type": "path",
+    "verdict": "wrong",
+    "headline": "Aputhiran and the Amudasurabhi bowl connect in 1 step. Each step is below, with its verse."
+   },
+   {
+    "q": "kannagi deivam aanala",
+    "want": "x92",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about Kannagi, but can't answer that question about them."
+   },
+   {
+    "q": "Who is the president of India?",
+    "want": null,
+    "type": "none",
+    "verdict": "right",
+    "headline": "The graph can't answer that. Try naming someone from the epics, or see the verse matches b"
+   },
+   {
+    "q": "What does Kannagi eat for breakfast?",
+    "want": null,
+    "type": "closest",
+    "verdict": "offered closest",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: Kannagi says hers"
+   }
+  ]
+ },
+ "round3_unseen": {
+  "tally": {
+   "right": 13,
+   "wrong": 4,
+   "refused": 2,
+   "offered closest": 1
+  },
+  "rows": [
+   {
+    "q": "Who took one anklet from Kannagi?",
+    "want": "a03",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Kovalan takes one of the two anklets and sets out to sell it."
+   },
+   {
+    "q": "Who did the goldsmith talk into the killing?",
+    "want": "a14",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: The goldsmith tal"
+   },
+   {
+    "q": "What did Kannagi say to the king at the gate?",
+    "want": "x06",
+    "type": "closest",
+    "verdict": "wrong",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: The poet says the"
+   },
+   {
+    "q": "Who fainted when the anklet broke?",
+    "want": "s07",
+    "type": "yes",
+    "verdict": "wrong",
+    "headline": "Yes. Kannagi breaks an anklet. The text doesn't say which of the pair."
+   },
+   {
+    "q": "Did the guards object to killing Kovalan?",
+    "want": "a13",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: The order has an "
+   },
+   {
+    "q": "How did Lakshmi die?",
+    "want": "f07",
+    "type": "kill",
+    "verdict": "right",
+    "headline": "Lakshmi burns herself on his pyre."
+   },
+   {
+    "q": "Who swallowed Kayasandikai?",
+    "want": "b03",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: The real Kayasand"
+   },
+   {
+    "q": "Who cursed Kayasandikai?",
+    "want": "b01",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: Kayasandikai tell"
+   },
+   {
+    "q": "What did Aravana teach Madhavi?",
+    "want": "x62",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: Aravana Adikal te"
+   },
+   {
+    "q": "Who asked Kannagi for a boon?",
+    "want": "m10",
+    "type": "closest",
+    "verdict": "right",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: Gajabahu of Lanka"
+   },
+   {
+    "q": "கண்ணகி தெய்வமாக யாரிடம் பேசினாள்?",
+    "want": "m08",
+    "type": "closest",
+    "verdict": "wrong",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: 'Take her as your"
+   },
+   {
+    "q": "மாதவி மாலையை யாரிடம் கொடுத்தாள்?",
+    "want": "l01",
+    "type": "holder",
+    "verdict": "right",
+    "headline": "Madhavi's garland: a hunchbacked woman → Kovalan."
+   },
+   {
+    "q": "மாதவியை விட்டுக் கோவலன் ஏன் சென்றான்?",
+    "want": "x23",
+    "type": "why_death",
+    "verdict": "wrong",
+    "headline": "a drunk man killed Kovalan."
+   },
+   {
+    "q": "அரசன் எப்படி இறந்தான்?",
+    "want": "a24",
+    "type": "kill",
+    "verdict": "right",
+    "headline": "The king falls and dies."
+   },
+   {
+    "q": "ஆபுத்திரன் பாத்திரத்தை எங்கே விட்டான்?",
+    "want": "c04",
+    "type": "holder",
+    "verdict": "right",
+    "headline": "the Amudasurabhi bowl: Aputhiran → Gomukhi pond → Manimekalai."
+   },
+   {
+    "q": "kovalan ean madhavi ya vittu ponan",
+    "want": "x23",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about Kovalan and Madhavi, but can't answer that question about them."
+   },
+   {
+    "q": "kannagi yaara sabicha",
+    "want": null,
+    "type": "none",
+    "verdict": "right",
+    "headline": "The graph knows about Kannagi, but can't answer that question about them."
+   },
+   {
+    "q": "manimegalai prison la enna panna",
+    "want": "h01",
+    "type": "yes",
+    "verdict": "right",
+    "headline": "Yes. Manimekalai feeds Kayasandikai from the bowl and her terrible hunger ends."
+   },
+   {
+    "q": "goldsmith pathi sollu",
+    "want": "a08",
+    "type": "none",
+    "verdict": "refused",
+    "headline": "The graph knows about the goldsmith, but can't answer that question about them."
+   },
+   {
+    "q": "Who is the prime minister of Sri Lanka?",
+    "want": null,
+    "type": "closest",
+    "verdict": "offered closest",
+    "headline": "No rule fits this question exactly. The closest thing the graph records: Gajabahu of Lanka"
+   }
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+# Literary source and text structure
+#
+# Where every claim points back to. Line ids like SIL-16-0145.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m01_source> a owl:Ontology ; rdfs:label "Literary source and text structure" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E73_Information_Object
+
+iy:Work a owl:Class .
+iy:Epic a owl:Class ; rdfs:subClassOf iy:Work .
+iy:Kandam a owl:Class .
+iy:Canto a owl:Class .
+iy:Line a owl:Class .
+iy:Commentary a owl:Class ; rdfs:subClassOf iy:Work .
+
+iy:partOfWork a owl:ObjectProperty .
+iy:inCanto a owl:ObjectProperty .
+iy:lineText a owl:ObjectProperty .

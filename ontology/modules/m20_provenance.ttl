@@ -1,0 +1,22 @@
+# Evidence and who made this record
+#
+# Citations, model runs, scholar decisions. 'draft' stays draft until a person signs it off.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m20_provenance> a owl:Ontology ; rdfs:label "Evidence and who made this record" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: prov:Activity
+
+iy:ModelRun a owl:Class ; rdfs:subClassOf iy:Activity .
+iy:Review a owl:Class .
+
+iy:evidence a owl:ObjectProperty .
+iy:check a owl:ObjectProperty .
+iy:tier a owl:ObjectProperty .
+iy:reviewStatus a owl:ObjectProperty .

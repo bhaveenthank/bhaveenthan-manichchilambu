@@ -1,0 +1,24 @@
+# Emotion and moral judgement
+#
+# Only when the text states it. An emotion is never inferred from an action. No records use this y
+# et.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m16_emotion> a owl:Ontology ; rdfs:label "Emotion and moral judgement" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E3_Condition_State
+
+iy:Emotion a owl:Class ; rdfs:subClassOf iy:BodilyState .
+iy:Grief a owl:Class ; rdfs:subClassOf iy:Emotion .
+iy:Anger a owl:Class ; rdfs:subClassOf iy:Emotion .
+iy:Remorse a owl:Class ; rdfs:subClassOf iy:Emotion .
+iy:MoralJudgement a owl:Class .
+
+iy:experiencer a owl:ObjectProperty .
+iy:stimulus a owl:ObjectProperty .

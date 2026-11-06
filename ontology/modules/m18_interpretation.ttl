@@ -1,0 +1,22 @@
+# Dreams, figures of speech and readings
+#
+# Dream content stays in mood dreamed. 'I am the thief' stays a metaphor. Scholars' readings stay 
+# attributed.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m18_interpretation> a owl:Ontology ; rdfs:label "Dreams, figures of speech and readings" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crminf:I1_Argumentation
+
+iy:Dream a owl:Class ; rdfs:subClassOf iy:Event .
+iy:Figure a owl:Class .
+iy:Reading a owl:Class .
+
+iy:readingBy a owl:ObjectProperty .
+iy:alternativeTo a owl:ObjectProperty .

@@ -1,0 +1,58 @@
+{
+ "searchinfo": {
+  "search": "Ilango Adigal"
+ },
+ "search": [
+  {
+   "id": "Q3032538",
+   "title": "Q3032538",
+   "pageid": 2899094,
+   "concepturi": "http://www.wikidata.org/entity/Q3032538",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q3032538",
+   "display": {
+    "label": {
+     "value": "Ilango Adigal",
+     "language": "en"
+    },
+    "description": {
+     "value": "Tamil Jain monk and author of Cilappatikaram",
+     "language": "en"
+    }
+   },
+   "label": "Ilango Adigal",
+   "description": "Tamil Jain monk and author of Cilappatikaram",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Ilango Adigal"
+   }
+  },
+  {
+   "id": "Q139999165",
+   "title": "Q139999165",
+   "pageid": 133446343,
+   "concepturi": "http://www.wikidata.org/entity/Q139999165",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q139999165",
+   "display": {
+    "label": {
+     "value": "Ilango Adigal Chilappathikaram",
+     "language": "en"
+    },
+    "description": {
+     "value": "Malayalam-language poetry published by DC Books",
+     "language": "en"
+    }
+   },
+   "label": "Ilango Adigal Chilappathikaram",
+   "description": "Malayalam-language poetry published by DC Books",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Ilango Adigal Chilappathikaram"
+   }
+  }
+ ],
+ "success": 1
+}

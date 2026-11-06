@@ -1,0 +1,2664 @@
+@prefix i: <https://example.org/manichchilambu/item/> .
+@prefix iy: <https://example.org/manichchilambu#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+i:a00 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0072" ;
+    iy:kind "state" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1 ;
+    iy:voice i:a00_v0,
+        i:a00_v1 .
+
+i:a01 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-09-0073" ;
+    iy:kind "offer" ;
+    iy:mood iy:Asserted ;
+    iy:recipient i:kovalan ;
+    iy:storyTime 9.7e+00 ;
+    iy:theme i:ank_pair ;
+    iy:voice i:a01_v0 .
+
+i:a02 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-09-0075",
+        "SIL-09-0076" ;
+    iy:kind "trade" ;
+    iy:mood iy:Intended ;
+    iy:place i:madurai ;
+    iy:storyTime 9.75e+00 ;
+    iy:theme i:ank_pair ;
+    iy:voice i:a02_v0,
+        i:a02_v1 .
+
+i:a03 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0092" ;
+    iy:kind "take" ;
+    iy:mood iy:Asserted ;
+    iy:source i:kannagi ;
+    iy:storyTime 1.609e+01 ;
+    iy:theme i:ank_k1 ;
+    iy:voice i:a03_v0,
+        i:a03_v1 .
+
+i:a04 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0116" ;
+    iy:kind "show" ;
+    iy:mood iy:Asserted ;
+    iy:recipient i:goldsmith ;
+    iy:storyTime 1.611e+01 ;
+    iy:theme i:ank_k1 ;
+    iy:voice i:a04_v0 .
+
+i:a05 a iy:Record ;
+    iy:beneficiary i:pandya_queen ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0121",
+        "SIL-16-0122" ;
+    iy:kind "suits" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 1.612e+01 ;
+    iy:theme i:ank_k1 ;
+    iy:voice i:a05_v0,
+        i:a05_v1 .
+
+i:a06 a iy:Record ;
+    iy:agent i:goldsmith ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0127" ;
+    iy:kind "steal" ;
+    iy:mood iy:Thought ;
+    iy:storyTime 5e-01 ;
+    iy:theme i:ank_q ;
+    iy:voice i:a06_v0,
+        i:a06_v1 .
+
+i:a06b a iy:Record ;
+    iy:agent i:goldsmith ;
+    iy:birth "main" ;
+    iy:evidence "SIL-00-0025" ;
+    iy:kind "steal" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 5e-01 ;
+    iy:theme i:ank_q ;
+    iy:voice i:a06b_v0,
+        i:a06b_v1 .
+
+i:a07 a iy:Record ;
+    iy:addressee i:pandya_king ;
+    iy:agent i:goldsmith ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0128",
+        "SIL-16-0129" ;
+    iy:kind "frame" ;
+    iy:mood iy:Intended ;
+    iy:storyTime 1.613e+01 ;
+    iy:target i:kovalan ;
+    iy:voice i:a07_v0,
+        i:a07_v1 .
+
+i:a08 a iy:Record ;
+    iy:addressee i:pandya_king ;
+    iy:agent i:goldsmith ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0145" ;
+    iy:kind "accuse" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.614e+01 ;
+    iy:target i:kovalan ;
+    iy:voice i:a08_v0 .
+
+i:a10 a iy:Belief,
+        iy:Record ;
+    iy:birth "main" ;
+    iy:content i:a09 ;
+    iy:evidence "SIL-16-0149" ;
+    iy:holder i:pandya_king ;
+    iy:kind "believe" ;
+    iy:mood iy:Asserted ;
+    iy:source i:goldsmith ;
+    iy:stance "accept" ;
+    iy:storyTime 1.615e+01 ;
+    iy:voice i:a10_v0 .
+
+i:a11 a iy:Record ;
+    iy:addressee i:guards ;
+    iy:agent i:pandya_king ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0150" ;
+    iy:kind "order" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.616e+01 ;
+    iy:voice i:a11_v0 .
+
+i:a12 a iy:Record ;
+    iy:agent i:guards ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0152",
+        "SIL-16-0153" ;
+    iy:kind "kill" ;
+    iy:mood iy:Conditional ;
+    iy:patient i:kovalan ;
+    iy:storyTime 1.616e+01 ;
+    iy:voice i:a12_v0,
+        i:a12_v1 .
+
+i:a13 a iy:Record ;
+    iy:birth "main" ;
+    iy:contradicts i:a09 ;
+    iy:evidence "SIL-16-0163" ;
+    iy:kind "innocent" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 1.617e+01 ;
+    iy:theme i:kovalan ;
+    iy:voice i:a13_v0,
+        i:a13_v1 .
+
+i:a14 a iy:Record ;
+    iy:addressee i:guards ;
+    iy:agent i:goldsmith ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0165" ;
+    iy:kind "persuade" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.618e+01 ;
+    iy:voice i:a14_v0 .
+
+i:a15 a iy:Record ;
+    iy:agent i:drunk_man ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0212",
+        "SIL-16-0213" ;
+    iy:instrument i:sword ;
+    iy:kind "kill" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kovalan ;
+    iy:storyTime 1.62e+01 ;
+    iy:voice i:a15_v0 .
+
+i:a16 a iy:Record ;
+    iy:agent i:pandya_king ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0081" ;
+    iy:kind "bring" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.05e+01 ;
+    iy:theme i:ank_k1 ;
+    iy:voice i:a16_v0 .
+
+i:a17 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0038",
+        "SIL-20-0039" ;
+    iy:kind "arrive" ;
+    iy:mood iy:Asserted ;
+    iy:place i:palace_gate ;
+    iy:storyTime 2.01e+01 ;
+    iy:theme i:ank_k2 ;
+    iy:voice i:a17_v0 .
+
+i:a18 a iy:Record ;
+    iy:birth "main" ;
+    iy:content_of i:gems ;
+    iy:evidence "SIL-20-0078" ;
+    iy:kind "contains" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.04e+01 ;
+    iy:theme i:ank_pair ;
+    iy:voice i:a18_v0,
+        i:a18_v1 .
+
+i:a19 a iy:Record ;
+    iy:birth "main" ;
+    iy:content_of i:pearls ;
+    iy:evidence "SIL-20-0080" ;
+    iy:kind "contains" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.045e+01 ;
+    iy:theme i:ank_q ;
+    iy:voice i:a19_v0,
+        i:a19_v1 .
+
+i:a20 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0082" ;
+    iy:kind "break" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.06e+01 ;
+    iy:theme i:ank_k1,
+        i:ank_k2 ;
+    iy:voice i:a20_v0 .
+
+i:a21 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0083" ;
+    iy:kind "gem_shows" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.061e+01 ;
+    iy:target i:pandya_king ;
+    iy:theme i:gems ;
+    iy:voice i:a21_v0 .
+
+i:a22 a iy:Belief,
+        iy:Record ;
+    iy:birth "main" ;
+    iy:content i:a09 ;
+    iy:evidence "SIL-20-0085",
+        "SIL-20-0086" ;
+    iy:holder i:pandya_king ;
+    iy:kind "believe" ;
+    iy:mood iy:Asserted ;
+    iy:source i:kannagi ;
+    iy:stance "reject" ;
+    iy:storyTime 2.07e+01 ;
+    iy:voice i:a22_v0 .
+
+i:a23 a iy:Record ;
+    iy:agent i:pandya_king ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0086" ;
+    iy:kind "steal" ;
+    iy:mood iy:Metaphor ;
+    iy:storyTime 2.071e+01 ;
+    iy:voice i:a23_v0,
+        i:a23_v1 .
+
+i:a24 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0089",
+        "SIL-22-0007" ;
+    iy:kind "die" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:pandya_king ;
+    iy:storyTime 2.08e+01 ;
+    iy:voice i:a24_v0 .
+
+i:a25 a iy:Record ;
+    iy:birth "main" ;
+    iy:contradicts i:a09 ;
+    iy:evidence "SIL-27-0075" ;
+    iy:kind "innocent" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.25e+01 ;
+    iy:theme i:kovalan ;
+    iy:voice i:a25_v0,
+        i:a25_v1,
+        i:a25_v2 .
+
+i:a26 a iy:Record ;
+    iy:agent i:vetrivel_celiyan ;
+    iy:beneficiary i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-27-0127",
+        "SIL-27-0128",
+        "SIL-27-0130" ;
+    iy:kind "sacrifice" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:goldsmiths_1000 ;
+    iy:storyTime 26 ;
+    iy:voice i:a26_v0,
+        i:a26_v1 .
+
+i:a27 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0151" ;
+    iy:holder i:pandya_queen ;
+    iy:kind "appear" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1e-01 ;
+    iy:theme i:ank_q ;
+    iy:voice i:a27_v0 .
+
+i:b01 a iy:Record ;
+    iy:agent i:viruchikan ;
+    iy:birth "main" ;
+    iy:evidence "MAN-17-0014",
+        "MAN-17-0034" ;
+    iy:kind "hunger_curse" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kayasandikai ;
+    iy:storyTime 1.71e+01 ;
+    iy:voice i:b01_v0,
+        i:b01_v1 .
+
+i:b02 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-17-0018",
+        "MAN-17-0019" ;
+    iy:instrument i:amudasurabhi ;
+    iy:kind "feed" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kayasandikai ;
+    iy:storyTime 1.72e+01 ;
+    iy:voice i:b02_v0 .
+
+i:b03 a iy:Record ;
+    iy:agent i:vindhya_demoness ;
+    iy:birth "main" ;
+    iy:evidence "MAN-20-0119",
+        "MAN-20-0121" ;
+    iy:kind "swallowed" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kayasandikai ;
+    iy:storyTime 1.79e+01 ;
+    iy:voice i:b03_v0,
+        i:b03_v1 .
+
+i:b04 a iy:Record ;
+    iy:birth "main" ;
+    iy:earlier i:rahulan ;
+    iy:evidence "MAN-18-0128" ;
+    iy:kind "same_person" ;
+    iy:later i:udayakumaran ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.81e+01 ;
+    iy:voice i:b04_v0,
+        i:b04_v1 .
+
+i:b05 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-18-0148",
+        "MAN-18-0149",
+        "MAN-18-0150" ;
+    iy:form i:kayasandikai ;
+    iy:instrument i:mantra ;
+    iy:kind "disguise" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.85e+01 ;
+    iy:voice i:b05_v0 .
+
+i:b06 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-19-0147" ;
+    iy:kind "is_vidyadhara" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 1.95e+01 ;
+    iy:theme i:manimekalai ;
+    iy:voice i:b06_v0,
+        i:b06_v1 .
+
+i:b08 a iy:Belief,
+        iy:Record ;
+    iy:birth "main" ;
+    iy:content i:b07 ;
+    iy:evidence "MAN-20-0084",
+        "MAN-20-0085" ;
+    iy:holder i:udayakumaran ;
+    iy:kind "believe" ;
+    iy:mood iy:Asserted ;
+    iy:stance "accept" ;
+    iy:storyTime 1.87e+01 ;
+    iy:voice i:b08_v0 .
+
+i:b10 a iy:Belief,
+        iy:Record ;
+    iy:birth "main" ;
+    iy:content i:b09 ;
+    iy:evidence "MAN-20-0026",
+        "MAN-20-0027" ;
+    iy:holder i:kanchanan ;
+    iy:kind "believe" ;
+    iy:mood iy:Asserted ;
+    iy:stance "accept" ;
+    iy:storyTime 2.021e+01 ;
+    iy:voice i:b10_v0 .
+
+i:b12 a iy:Belief,
+        iy:Record ;
+    iy:birth "main" ;
+    iy:content i:b11 ;
+    iy:evidence "MAN-20-0078" ;
+    iy:holder i:kanchanan ;
+    iy:kind "believe" ;
+    iy:mood iy:Asserted ;
+    iy:stance "accept" ;
+    iy:storyTime 2.031e+01 ;
+    iy:voice i:b12_v0 .
+
+i:b13 a iy:Record ;
+    iy:agent i:kanchanan ;
+    iy:birth "main" ;
+    iy:evidence "MAN-20-0106",
+        "MAN-20-0107" ;
+    iy:instrument i:sword ;
+    iy:kind "kill" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:udayakumaran ;
+    iy:storyTime 2.05e+01 ;
+    iy:voice i:b13_v0 .
+
+i:b14 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-20-0123",
+        "MAN-20-0124" ;
+    iy:kind "fate_explains" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:udayakumaran ;
+    iy:storyTime 2.06e+01 ;
+    iy:voice i:b14_v0,
+        i:b14_v1 .
+
+i:b15 a iy:Record ;
+    iy:addressee i:kanchanan ;
+    iy:birth "main" ;
+    iy:evidence "MAN-20-0113" ;
+    iy:is i:manimekalai ;
+    iy:kind "correct" ;
+    iy:mood iy:Asserted ;
+    iy:seen i:disguised_woman ;
+    iy:storyTime 2.061e+01 ;
+    iy:voice i:b15_v0,
+        i:b15_v1 .
+
+i:b16 a iy:Belief,
+        iy:Record ;
+    iy:birth "main" ;
+    iy:content i:b09 ;
+    iy:evidence "MAN-20-0113" ;
+    iy:holder i:kanchanan ;
+    iy:kind "believe" ;
+    iy:mood iy:Asserted ;
+    iy:source i:pillar ;
+    iy:stance "reject" ;
+    iy:storyTime 2.062e+01 ;
+    iy:voice i:b16_v0 .
+
+i:b17 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-21-0009",
+        "MAN-21-0010" ;
+    iy:form i:kayasandikai ;
+    iy:kind "undisguise" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.11e+01 ;
+    iy:voice i:b17_v0 .
+
+i:b18 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-21-0021",
+        "MAN-21-0022" ;
+    iy:kind "motive" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.849e+01 ;
+    iy:target i:udayakumaran ;
+    iy:voice i:b18_v0,
+        i:b18_v1 .
+
+i:c01 a iy:Record ;
+    iy:agent i:chintadevi ;
+    iy:birth "main" ;
+    iy:evidence "MAN-14-0016" ;
+    iy:kind "give" ;
+    iy:mood iy:Asserted ;
+    iy:recipient i:aputhiran ;
+    iy:storyTime -5.1e+00 ;
+    iy:theme i:amudasurabhi ;
+    iy:voice i:c01_v0,
+        i:c01_v1 .
+
+i:c02 a iy:Record ;
+    iy:agent i:aputhiran ;
+    iy:birth "main" ;
+    iy:evidence "MAN-14-0022",
+        "MAN-14-0023" ;
+    iy:instrument i:amudasurabhi ;
+    iy:kind "feed" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -5e+00 ;
+    iy:voice i:c02_v0,
+        i:c02_v1 .
+
+i:c03 a iy:Record ;
+    iy:agent i:aputhiran ;
+    iy:birth "main" ;
+    iy:evidence "MAN-14-0081",
+        "MAN-14-0085" ;
+    iy:kind "stranded" ;
+    iy:mood iy:Asserted ;
+    iy:place i:manipallavam ;
+    iy:storyTime -4.9e+00 ;
+    iy:voice i:c03_v0,
+        i:c03_v1 .
+
+i:c04 a iy:Record ;
+    iy:agent i:aputhiran ;
+    iy:birth "main" ;
+    iy:evidence "MAN-14-0091",
+        "MAN-14-0092" ;
+    iy:kind "deposit" ;
+    iy:mood iy:Asserted ;
+    iy:place i:gomukhi ;
+    iy:storyTime -4.8e+00 ;
+    iy:theme i:amudasurabhi ;
+    iy:voice i:c04_v0,
+        i:c04_v1 .
+
+i:c05 a iy:Record ;
+    iy:addressee i:amudasurabhi ;
+    iy:birth "main" ;
+    iy:evidence "MAN-14-0092",
+        "MAN-14-0093",
+        "MAN-14-0094" ;
+    iy:kind "appear" ;
+    iy:mood iy:Command ;
+    iy:recipient i:righteous_person ;
+    iy:storyTime -4.79e+00 ;
+    iy:theme i:amudasurabhi ;
+    iy:voice i:c05_v0,
+        i:c05_v1,
+        i:c05_v2 .
+
+i:c06 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-11-0050" ;
+    iy:kind "inexhaustible" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.11e+01 ;
+    iy:theme i:amudasurabhi ;
+    iy:voice i:c06_v0,
+        i:c06_v1 .
+
+i:c07 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-11-0057",
+        "MAN-11-0058" ;
+    iy:kind "receive" ;
+    iy:mood iy:Asserted ;
+    iy:place i:gomukhi ;
+    iy:recipient i:manimekalai ;
+    iy:storyTime 1.12e+01 ;
+    iy:theme i:amudasurabhi ;
+    iy:voice i:c07_v0 .
+
+i:c08 a iy:Record ;
+    iy:agent i:tivatilakai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-00-0053",
+        "MAN-00-0054" ;
+    iy:kind "give" ;
+    iy:mood iy:Asserted ;
+    iy:recipient i:manimekalai ;
+    iy:storyTime 1.12e+01 ;
+    iy:theme i:amudasurabhi ;
+    iy:voice i:c08_v0 .
+
+i:c09 a iy:Record ;
+    iy:agent i:unnamed_deity ;
+    iy:birth "main" ;
+    iy:evidence "MAN-19-0151",
+        "MAN-19-0152" ;
+    iy:kind "give" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 1.12e+01 ;
+    iy:theme i:amudasurabhi ;
+    iy:voice i:c09_v0,
+        i:c09_v1 .
+
+i:c10 a iy:Record ;
+    iy:agent i:sankatharuman ;
+    iy:birth "main" ;
+    iy:evidence "MAN-05-0065" ;
+    iy:kind "give" ;
+    iy:mood iy:Asserted ;
+    iy:recipient i:cutamati ;
+    iy:storyTime 5e+00 ;
+    iy:theme i:other_bowl ;
+    iy:voice i:c10_v0,
+        i:c10_v1 .
+
+i:d01 a iy:Record ;
+    iy:birth "main" ;
+    iy:earlier i:bharatan ;
+    iy:evidence "SIL-23-0154" ;
+    iy:kind "same_person" ;
+    iy:later i:kovalan ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -60 ;
+    iy:voice i:d01_v0,
+        i:d01_v1 .
+
+i:d02 a iy:Record ;
+    iy:addressee i:kalinga_king ;
+    iy:agent i:bharatan ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "SIL-23-0156",
+        "SIL-23-0157" ;
+    iy:kind "accuse" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -50 ;
+    iy:target i:sangaman ;
+    iy:voice i:d02_v0,
+        i:d02_v1 .
+
+i:d04 a iy:Record ;
+    iy:addressee i:kalinga_king ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "SIL-23-0157",
+        "SIL-23-0158" ;
+    iy:kind "kill" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:sangaman ;
+    iy:storyTime -49 ;
+    iy:voice i:d04_v0,
+        i:d04_v1 .
+
+i:d05 a iy:Record ;
+    iy:agent i:neeli ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "SIL-23-0160",
+        "SIL-23-0162" ;
+    iy:kind "protest" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -48 ;
+    iy:target i:kalinga_king ;
+    iy:voice i:d05_v0,
+        i:d05_v1 .
+
+i:d06 a iy:Record ;
+    iy:agent i:neeli ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "SIL-23-0168",
+        "SIL-23-0169" ;
+    iy:kind "curse" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -47 ;
+    iy:target i:bharatan ;
+    iy:voice i:d06_v0,
+        i:d06_v1 .
+
+i:d07 a iy:Record ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "SIL-23-0167",
+        "SIL-23-0168" ;
+    iy:kind "suffer_same" ;
+    iy:mood iy:Wish ;
+    iy:patient i:bharatan ;
+    iy:storyTime -47 ;
+    iy:voice i:d07_v0,
+        i:d07_v1,
+        i:d07_v2 .
+
+i:d08 a iy:Record ;
+    iy:agent i:fire ;
+    iy:birth "main" ;
+    iy:evidence "SIL-23-0135",
+        "SIL-23-0136" ;
+    iy:kind "burn" ;
+    iy:mood iy:Predicted ;
+    iy:patient i:madurai ;
+    iy:storyTime -1 ;
+    iy:voice i:d08_v0,
+        i:d08_v1 .
+
+i:d09 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:companion i:kovalan ;
+    iy:evidence "SIL-23-0198",
+        "SIL-23-0199" ;
+    iy:kind "ascend" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.39e+01 ;
+    iy:voice i:d09_v0 .
+
+i:d10 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-23-0170" ;
+    iy:kind "fate_explains" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kovalan ;
+    iy:storyTime 2.35e+01 ;
+    iy:target i:kannagi ;
+    iy:voice i:d10_v0,
+        i:d10_v1 .
+
+i:e01 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-21-0043",
+        "SIL-21-0046" ;
+    iy:kind "throw_breast" ;
+    iy:mood iy:Asserted ;
+    iy:place i:madurai ;
+    iy:storyTime 2.15e+01 ;
+    iy:voice i:e01_v0 .
+
+i:e02 a iy:Record ;
+    iy:agent i:agni ;
+    iy:birth "main" ;
+    iy:evidence "SIL-21-0050",
+        "SIL-21-0051",
+        "SIL-21-0052" ;
+    iy:kind "prior_order" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:madurai ;
+    iy:storyTime 2.16e+01 ;
+    iy:voice i:e02_v0,
+        i:e02_v1 .
+
+i:e03 a iy:Record ;
+    iy:addressee i:agni ;
+    iy:agent i:agni ;
+    iy:birth "main" ;
+    iy:evidence "SIL-21-0053",
+        "SIL-21-0054",
+        "SIL-21-0055" ;
+    iy:kind "spare" ;
+    iy:mood iy:Command ;
+    iy:patient i:brahmins,
+        i:chaste_women,
+        i:children,
+        i:cows,
+        i:the_old,
+        i:the_virtuous ;
+    iy:storyTime 2.17e+01 ;
+    iy:voice i:e03_v0,
+        i:e03_v1 .
+
+i:e04 a iy:Record ;
+    iy:agent i:fire ;
+    iy:birth "main" ;
+    iy:evidence "SIL-21-0056",
+        "SIL-21-0057" ;
+    iy:kind "burn" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:madurai ;
+    iy:storyTime 2.18e+01 ;
+    iy:voice i:e04_v0 .
+
+i:e05 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-21-0042" ;
+    iy:kind "blameless" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.14e+01 ;
+    iy:theme i:kannagi ;
+    iy:voice i:e05_v0,
+        i:e05_v1 .
+
+i:e06 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-22-0006",
+        "SIL-22-0007" ;
+    iy:kind "die" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:pandya_queen ;
+    iy:storyTime 2.09e+01 ;
+    iy:voice i:e06_v0 .
+
+i:e07 a iy:Record ;
+    iy:agent i:matari ;
+    iy:birth "main" ;
+    iy:evidence "SIL-27-0078" ;
+    iy:kind "enter_fire" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.26e+01 ;
+    iy:voice i:e07_v0,
+        i:e07_v1 .
+
+i:e08 a iy:Record ;
+    iy:agent i:kavunti ;
+    iy:birth "main" ;
+    iy:evidence "SIL-27-0083" ;
+    iy:kind "fast_to_death" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.27e+01 ;
+    iy:voice i:e08_v0,
+        i:e08_v1 .
+
+i:f01 a iy:Record ;
+    iy:birth "main" ;
+    iy:earlier i:lakshmi ;
+    iy:evidence "MAN-09-0041" ;
+    iy:kind "same_person" ;
+    iy:later i:manimekalai ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -70 ;
+    iy:voice i:f01_v0,
+        i:f01_v1 .
+
+i:f02 a iy:Record ;
+    iy:agent i:lakshmi ;
+    iy:birth "prev_lakshmi" ;
+    iy:evidence "MAN-09-0046" ;
+    iy:kind "spouse" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -65 ;
+    iy:target i:rahulan ;
+    iy:voice i:f02_v0,
+        i:f02_v1 .
+
+i:f03 a iy:Record ;
+    iy:birth "main" ;
+    iy:earlier i:rahulan ;
+    iy:evidence "MAN-10-0043" ;
+    iy:kind "same_person" ;
+    iy:later i:udayakumaran ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.01e+01 ;
+    iy:voice i:f03_v0,
+        i:f03_v1 .
+
+i:f04 a iy:Record ;
+    iy:birth "prev_lakshmi" ;
+    iy:evidence "MAN-09-0048",
+        "MAN-09-0049" ;
+    iy:kind "die" ;
+    iy:mood iy:Predicted ;
+    iy:patient i:rahulan ;
+    iy:storyTime -64 ;
+    iy:voice i:f04_v0,
+        i:f04_v1,
+        i:f04_v2 .
+
+i:f05 a iy:Record ;
+    iy:agent i:rahulan ;
+    iy:birth "prev_lakshmi" ;
+    iy:evidence "MAN-21-0059",
+        "MAN-21-0060" ;
+    iy:instrument i:sword ;
+    iy:kind "kill" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:cook ;
+    iy:storyTime -66 ;
+    iy:voice i:f05_v0,
+        i:f05_v1 .
+
+i:f06 a iy:Record ;
+    iy:birth "prev_lakshmi" ;
+    iy:evidence "MAN-21-0011" ;
+    iy:kind "die" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:rahulan ;
+    iy:storyTime -63 ;
+    iy:voice i:f06_v0,
+        i:f06_v1 .
+
+i:f07 a iy:Record ;
+    iy:agent i:lakshmi ;
+    iy:birth "prev_lakshmi" ;
+    iy:evidence "MAN-21-0012" ;
+    iy:kind "enter_fire" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -62 ;
+    iy:voice i:f07_v0,
+        i:f07_v1 .
+
+i:f08 a iy:Record ;
+    iy:agent i:udayakumaran ;
+    iy:birth "other_births" ;
+    iy:evidence "MAN-21-0029" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -90 ;
+    iy:target i:manimekalai ;
+    iy:voice i:f08_v0,
+        i:f08_v1 .
+
+i:f09 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "other_births" ;
+    iy:evidence "MAN-21-0030" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -91 ;
+    iy:target i:udayakumaran ;
+    iy:voice i:f09_v0,
+        i:f09_v1 .
+
+i:f10 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-21-0070" ;
+    iy:kind "fate_explains" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:udayakumaran ;
+    iy:storyTime 2.12e+01 ;
+    iy:voice i:f10_v0,
+        i:f10_v1 .
+
+i:g01 a iy:Record ;
+    iy:agent i:aputhiran ;
+    iy:birth "main" ;
+    iy:evidence "MAN-14-0095" ;
+    iy:kind "fast_to_death" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -4.5e+00 ;
+    iy:voice i:g01_v0,
+        i:g01_v1 .
+
+i:g02 a iy:Record ;
+    iy:birth "main" ;
+    iy:earlier i:aputhiran ;
+    iy:evidence "MAN-14-0103",
+        "MAN-14-0104" ;
+    iy:kind "same_person" ;
+    iy:later i:punyarasan ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -4.4e+00 ;
+    iy:voice i:g02_v0,
+        i:g02_v1 .
+
+i:g03 a iy:Record ;
+    iy:agent i:punyarasan ;
+    iy:birth "main" ;
+    iy:evidence "MAN-24-0170" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 24 ;
+    iy:target i:bhumichandran ;
+    iy:voice i:g03_v0,
+        i:g03_v1 .
+
+i:g04 a iy:Record ;
+    iy:agent i:punyarasan ;
+    iy:birth "main" ;
+    iy:evidence "MAN-24-0169",
+        "MAN-24-0170" ;
+    iy:kind "rules" ;
+    iy:mood iy:Asserted ;
+    iy:place i:nagapuram ;
+    iy:storyTime 24 ;
+    iy:voice i:g04_v0,
+        i:g04_v1 .
+
+i:h01 a iy:Record ;
+    iy:agent i:disguised_woman ;
+    iy:birth "main" ;
+    iy:evidence "MAN-19-0133",
+        "MAN-19-0136" ;
+    iy:instrument i:amudasurabhi ;
+    iy:kind "feed" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:prisoners ;
+    iy:place i:prison_site ;
+    iy:storyTime 1.92e+01 ;
+    iy:voice i:h01_v0,
+        i:h01_v1 .
+
+i:h02 a iy:Record ;
+    iy:agent i:chola_king ;
+    iy:birth "main" ;
+    iy:evidence "MAN-19-0157",
+        "MAN-19-0158" ;
+    iy:kind "convert" ;
+    iy:mood iy:Command ;
+    iy:storyTime 1.96e+01 ;
+    iy:theme i:prison_site ;
+    iy:voice i:h02_v0,
+        i:h02_v1 .
+
+i:h03 a iy:Record ;
+    iy:agent i:chola_king ;
+    iy:birth "main" ;
+    iy:evidence "MAN-19-0161",
+        "MAN-19-0162" ;
+    iy:kind "convert" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.97e+01 ;
+    iy:theme i:prison_site ;
+    iy:voice i:h03_v0 .
+
+i:k_karma_kov a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0217" ;
+    iy:kind "fate_explains" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kovalan ;
+    iy:storyTime 1.621e+01 ;
+    iy:voice i:k_karma_kov_v0 .
+
+i:k_sceptre a iy:Record ;
+    iy:agent i:pandya_king ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0216" ;
+    iy:kind "sceptre_bends" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.621e+01 ;
+    iy:voice i:k_sceptre_v0 .
+
+i:l01 a iy:Record ;
+    iy:agent i:madhavi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-03-0167" ;
+    iy:kind "give" ;
+    iy:mood iy:Asserted ;
+    iy:recipient i:hunchback ;
+    iy:storyTime 3.1e+00 ;
+    iy:theme i:garland ;
+    iy:voice i:l01_v0 .
+
+i:l02 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-03-0170",
+        "SIL-03-0171" ;
+    iy:kind "buy" ;
+    iy:mood iy:Asserted ;
+    iy:source i:hunchback ;
+    iy:storyTime 3.2e+00 ;
+    iy:theme i:garland ;
+    iy:voice i:l02_v0 .
+
+i:m01 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-00-0017" ;
+    iy:kind "spouse" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2e-01 ;
+    iy:target i:kovalan ;
+    iy:voice i:m01_v0,
+        i:m01_v1 .
+
+i:m02 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0069" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2e-01 ;
+    iy:target i:masattuvan ;
+    iy:voice i:m02_v0,
+        i:m02_v1 .
+
+i:m03 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-01-0023" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2e-01 ;
+    iy:target i:manaikan ;
+    iy:voice i:m03_v0 .
+
+i:m04 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "SIL-15-0022",
+        "SIL-15-0023" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 3.5e+00 ;
+    iy:target i:madhavi ;
+    iy:voice i:m04_v0,
+        i:m04_v1 .
+
+i:m05 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0003" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 3.5e+00 ;
+    iy:target i:kovalan ;
+    iy:voice i:m05_v0 .
+
+i:m06 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0002" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Address ;
+    iy:storyTime 2.61e+01 ;
+    iy:target i:kannagi ;
+    iy:voice i:m06_v0 .
+
+i:m07 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0004",
+        "MAN-26-0005",
+        "MAN-26-0006" ;
+    iy:kind "worship" ;
+    iy:mood iy:Asserted ;
+    iy:place i:vanci ;
+    iy:storyTime 2.61e+01 ;
+    iy:theme i:kannagi_image ;
+    iy:voice i:m07_v0 .
+
+i:m08 a iy:Record ;
+    iy:addressee i:manimekalai ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0010" ;
+    iy:kind "speak_as_deity" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.62e+01 ;
+    iy:voice i:m08_v0 .
+
+i:m09 a iy:Record ;
+    iy:agent i:cenkuttuvan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-30-0151" ;
+    iy:kind "found_temple" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.89e+01 ;
+    iy:theme i:kannagi_temple ;
+    iy:voice i:m09_v0 .
+
+i:m10 a iy:Record ;
+    iy:agent i:gajabahu ;
+    iy:birth "main" ;
+    iy:evidence "SIL-30-0160",
+        "SIL-30-0163" ;
+    iy:kind "ask_boon" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.91e+01 ;
+    iy:target i:kannagi ;
+    iy:voice i:m10_v0 .
+
+i:m11 a iy:Record ;
+    iy:agent i:kannagi,
+        i:unnamed ;
+    iy:birth "main" ;
+    iy:evidence "SIL-30-0164" ;
+    iy:kind "grant_boon" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.92e+01 ;
+    iy:voice i:m11_v0,
+        i:m11_v1 .
+
+i:m12 a iy:Record ;
+    iy:agent i:manimekhala_deity ;
+    iy:birth "main" ;
+    iy:evidence "SIL-15-0029",
+        "SIL-15-0033" ;
+    iy:kind "rescue" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kovalan_ancestor ;
+    iy:storyTime -20 ;
+    iy:voice i:m12_v0,
+        i:m12_v1,
+        i:m12_v2 .
+
+i:m13 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-15-0037" ;
+    iy:kind "name_child" ;
+    iy:mood iy:Asserted ;
+    iy:source i:manimekhala_deity ;
+    iy:storyTime 3.6e+00 ;
+    iy:theme i:manimekalai ;
+    iy:voice i:m13_v0,
+        i:m13_v1,
+        i:m13_v2 .
+
+i:r01 a iy:Record ;
+    iy:addressee i:kalinga_king ;
+    iy:agent i:bharatan ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "MAN-26-0027" ;
+    iy:kind "accuse" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -50 ;
+    iy:target i:sangaman ;
+    iy:voice i:r01_v0,
+        i:r01_v1,
+        i:r01_v2 .
+
+i:r02 a iy:Record ;
+    iy:agent i:sangaman ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "MAN-26-0027" ;
+    iy:kind "spy" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime -50 ;
+    iy:voice i:r02_v0,
+        i:r02_v1,
+        i:r02_v2,
+        i:r02_v3 .
+
+i:r03 a iy:Record ;
+    iy:birth "prev_bharatan" ;
+    iy:contradicts i:d03 ;
+    iy:evidence "MAN-26-0028" ;
+    iy:kind "innocent" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime -4.95e+01 ;
+    iy:theme i:sangaman ;
+    iy:voice i:r03_v0,
+        i:r03_v1,
+        i:r03_v2 .
+
+i:r04 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0034" ;
+    iy:kind "destroy" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:madurai ;
+    iy:storyTime 2.18e+01 ;
+    iy:voice i:r04_v0,
+        i:r04_v1 .
+
+i:r05 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:companion i:kovalan ;
+    iy:evidence "MAN-26-0038",
+        "MAN-26-0041" ;
+    iy:kind "reborn_many" ;
+    iy:mood iy:Predicted ;
+    iy:storyTime 30 ;
+    iy:voice i:r05_v0,
+        i:r05_v1 .
+
+i:s01 a iy:Record ;
+    iy:agent i:madhavi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-03-0161" ;
+    iy:kind "dance" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 3e+00 ;
+    iy:voice i:s01_v0 .
+
+i:s02 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-03-0172" ;
+    iy:kind "live_with" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 3.4e+00 ;
+    iy:target i:madhavi ;
+    iy:voice i:s02_v0 .
+
+i:s03 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0098",
+        "SIL-16-0099" ;
+    iy:kind "leave" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.605e+01 ;
+    iy:voice i:s03_v0 .
+
+i:s04 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0108" ;
+    iy:kind "see" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.61e+01 ;
+    iy:target i:goldsmith ;
+    iy:voice i:s04_v0 .
+
+i:s05 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0126" ;
+    iy:kind "enter" ;
+    iy:mood iy:Asserted ;
+    iy:place i:temple_lodging ;
+    iy:storyTime 1.613e+01 ;
+    iy:voice i:s05_v0 .
+
+i:s06 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0058" ;
+    iy:kind "enter" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.03e+01 ;
+    iy:target i:pandya_king ;
+    iy:voice i:s06_v0 .
+
+i:s07 a iy:Record ;
+    iy:agent i:pandya_king ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0089" ;
+    iy:kind "faint" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.075e+01 ;
+    iy:voice i:s07_v0 .
+
+i:s08 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-00-0037",
+        "MAN-00-0038" ;
+    iy:kind "enter" ;
+    iy:mood iy:Asserted ;
+    iy:place i:flower_grove ;
+    iy:storyTime 4e+00 ;
+    iy:voice i:s08_v0 .
+
+i:s09 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-00-0040" ;
+    iy:kind "enter" ;
+    iy:mood iy:Asserted ;
+    iy:place i:crystal_room ;
+    iy:storyTime 4.2e+00 ;
+    iy:voice i:s09_v0 .
+
+i:s10 a iy:Record ;
+    iy:agent i:udayakumaran ;
+    iy:birth "main" ;
+    iy:evidence "MAN-00-0041" ;
+    iy:kind "see" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 4.3e+00 ;
+    iy:target i:manimekalai ;
+    iy:voice i:s10_v0 .
+
+i:s11 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-11-0054" ;
+    iy:kind "worship" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.125e+01 ;
+    iy:theme i:seat_of_buddha ;
+    iy:voice i:s11_v0 .
+
+i:s12 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0001" ;
+    iy:kind "fly" ;
+    iy:mood iy:Asserted ;
+    iy:place i:vanci ;
+    iy:storyTime 2.6e+01 ;
+    iy:voice i:s12_v0 .
+
+i:s13 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-24-0163",
+        "MAN-24-0165" ;
+    iy:kind "fly" ;
+    iy:mood iy:Asserted ;
+    iy:place i:nagapuram ;
+    iy:storyTime 2.45e+01 ;
+    iy:voice i:s13_v0 .
+
+i:s14 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-21-0004" ;
+    iy:kind "faint" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.105e+01 ;
+    iy:voice i:s14_v0 .
+
+i:x01 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:companion i:kannagi ;
+    iy:evidence "SIL-09-0045",
+        "SIL-09-0046" ;
+    iy:kind "travel" ;
+    iy:mood iy:Dreamed ;
+    iy:storyTime 9.6e+00 ;
+    iy:voice i:x01_v0,
+        i:x01_v1 .
+
+i:x02 a iy:Record ;
+    iy:agent i:townsfolk ;
+    iy:birth "main" ;
+    iy:evidence "SIL-09-0047",
+        "SIL-09-0048" ;
+    iy:kind "slander" ;
+    iy:mood iy:Dreamed ;
+    iy:storyTime 9.6e+00 ;
+    iy:target i:kannagi ;
+    iy:voice i:x02_v0,
+        i:x02_v1 .
+
+i:x03 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-09-0049" ;
+    iy:kind "harmed" ;
+    iy:mood iy:Dreamed ;
+    iy:patient i:kovalan ;
+    iy:storyTime 9.6e+00 ;
+    iy:voice i:x03_v0,
+        i:x03_v1 .
+
+i:x04 a iy:Record ;
+    iy:addressee i:pandya_king ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-09-0050" ;
+    iy:kind "plead" ;
+    iy:mood iy:Dreamed ;
+    iy:storyTime 9.6e+00 ;
+    iy:voice i:x04_v0,
+        i:x04_v1 .
+
+i:x05 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0002",
+        "SIL-20-0032" ;
+    iy:holder i:pandya_king ;
+    iy:kind "sceptre_falls" ;
+    iy:mood iy:Dreamed ;
+    iy:storyTime 1.99e+01 ;
+    iy:theme i:sceptre ;
+    iy:voice i:x05_v0,
+        i:x05_v1 .
+
+i:x06 a iy:Record ;
+    iy:addressee i:pandya_king ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-20-0061" ;
+    iy:kind "plead" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.03e+01 ;
+    iy:voice i:x06_v0 .
+
+i:x10 a iy:Record ;
+    iy:agent i:kavunti ;
+    iy:birth "main" ;
+    iy:evidence "SIL-15-0129",
+        "SIL-15-0130" ;
+    iy:kind "entrust" ;
+    iy:mood iy:Asserted ;
+    iy:recipient i:matari ;
+    iy:storyTime 1.55e+01 ;
+    iy:theme i:kannagi ;
+    iy:voice i:x10_v0,
+        i:x10_v1 .
+
+i:x11 a iy:Record ;
+    iy:agent i:matari ;
+    iy:birth "main" ;
+    iy:evidence "SIL-27-0076" ;
+    iy:kind "lose_ward" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.24e+01 ;
+    iy:theme i:kannagi ;
+    iy:voice i:x11_v0,
+        i:x11_v1,
+        i:x11_v2 .
+
+i:x21 a iy:Belief,
+        iy:Record ;
+    iy:birth "main" ;
+    iy:content i:x20 ;
+    iy:evidence "SIL-07-0307" ;
+    iy:holder i:kovalan ;
+    iy:kind "believe" ;
+    iy:mood iy:Asserted ;
+    iy:stance "accept" ;
+    iy:storyTime 7.81e+00 ;
+    iy:voice i:x21_v0 .
+
+i:x22 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-07-0308" ;
+    iy:kind "fate_explains" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kovalan ;
+    iy:storyTime 7.82e+00 ;
+    iy:voice i:x22_v0 .
+
+i:x23 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-07-0309",
+        "SIL-07-0311" ;
+    iy:kind "leave" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 7.9e+00 ;
+    iy:target i:madhavi ;
+    iy:voice i:x23_v0 .
+
+i:x30 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-19-0062" ;
+    iy:kind "rise" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.95e+01 ;
+    iy:voice i:x30_v0 .
+
+i:x31 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-19-0063" ;
+    iy:kind "wipe_tears" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.951e+01 ;
+    iy:target i:kannagi ;
+    iy:voice i:x31_v0 .
+
+i:x32 a iy:Record ;
+    iy:addressee i:kannagi ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-19-0067" ;
+    iy:kind "bid_stay" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 1.952e+01 ;
+    iy:voice i:x32_v0 .
+
+i:x33 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "SIL-19-0068" ;
+    iy:kind "illusion" ;
+    iy:mood iy:Question ;
+    iy:storyTime 1.953e+01 ;
+    iy:theme i:risen_kovalan ;
+    iy:voice i:x33_v0,
+        i:x33_v1 .
+
+i:x40 a iy:Record ;
+    iy:agent i:manimekhala_deity ;
+    iy:birth "main" ;
+    iy:evidence "MAN-06-0210",
+        "MAN-06-0213",
+        "MAN-06-0214" ;
+    iy:kind "carry" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:manimekalai ;
+    iy:place i:manipallavam ;
+    iy:storyTime 6.9e+00 ;
+    iy:voice i:x40_v0 .
+
+i:x41 a iy:Record ;
+    iy:agent i:manimekhala_deity ;
+    iy:birth "main" ;
+    iy:evidence "MAN-07-0021",
+        "MAN-07-0022" ;
+    iy:kind "carry" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:manimekalai ;
+    iy:place i:manipallavam ;
+    iy:storyTime 6.9e+00 ;
+    iy:voice i:x41_v0,
+        i:x41_v1 .
+
+i:x42 a iy:Record ;
+    iy:agent i:manimekhala_deity ;
+    iy:birth "main" ;
+    iy:evidence "MAN-05-0095",
+        "MAN-05-0096" ;
+    iy:form i:town_woman ;
+    iy:kind "disguise" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 5.5e+00 ;
+    iy:voice i:x42_v0 .
+
+i:x50 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0069" ;
+    iy:kind "disguise" ;
+    iy:mood iy:Command ;
+    iy:storyTime 2.63e+01 ;
+    iy:voice i:x50_v0,
+        i:x50_v1 .
+
+i:x51 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0071" ;
+    iy:form i:male_ascetic ;
+    iy:instrument i:mantra ;
+    iy:kind "disguise" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.64e+01 ;
+    iy:voice i:x51_v0 .
+
+i:x60 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-02-0055" ;
+    iy:kind "child_of" ;
+    iy:mood iy:Address ;
+    iy:storyTime 2.5e+00 ;
+    iy:target i:kannagi ;
+    iy:voice i:x60_v0,
+        i:x60_v1 .
+
+i:x61 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "MAN-02-0053",
+        "MAN-02-0054" ;
+    iy:kind "burn" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:madurai ;
+    iy:storyTime 2.18e+01 ;
+    iy:voice i:x61_v0,
+        i:x61_v1 .
+
+i:x62 a iy:Record ;
+    iy:addressee i:madhavi ;
+    iy:agent i:aravanan ;
+    iy:birth "main" ;
+    iy:evidence "MAN-02-0061",
+        "MAN-02-0064" ;
+    iy:kind "teach" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.2e+00 ;
+    iy:voice i:x62_v0,
+        i:x62_v1 .
+
+i:x63 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-02-0064" ;
+    iy:kind "birth_is_suffering" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.2e+00 ;
+    iy:theme i:birth ;
+    iy:voice i:x63_v0,
+        i:x63_v1,
+        i:x63_v2 .
+
+i:x70 a iy:Record ;
+    iy:agent i:cenkuttuvan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-25-0118",
+        "SIL-25-0119" ;
+    iy:kind "fetch_stone" ;
+    iy:mood iy:Conditional ;
+    iy:storyTime 2.55e+01 ;
+    iy:theme i:himalaya_stone ;
+    iy:voice i:x70_v0,
+        i:x70_v1 .
+
+i:x71 a iy:Record ;
+    iy:agent i:northern_kings ;
+    iy:birth "main" ;
+    iy:evidence "SIL-26-0009",
+        "SIL-26-0010" ;
+    iy:kind "northern_insult" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.58e+01 ;
+    iy:voice i:x71_v0,
+        i:x71_v1,
+        i:x71_v2 .
+
+i:x72 a iy:Record ;
+    iy:agent i:cenkuttuvan ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0087",
+        "MAN-26-0089" ;
+    iy:kind "stone_on_heads" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:northern_kings ;
+    iy:storyTime 27 ;
+    iy:theme i:himalaya_stone ;
+    iy:voice i:x72_v0 .
+
+i:x73 a iy:Record ;
+    iy:agent i:cenkuttuvan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-28-0228",
+        "SIL-28-0233" ;
+    iy:kind "install" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.85e+01 ;
+    iy:theme i:kannagi_image ;
+    iy:voice i:x73_v0 .
+
+i:x80 a iy:Record ;
+    iy:addressee i:vaidika_teacher ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-27-0003",
+        "MAN-27-0004" ;
+    iy:kind "ask" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.71e+01 ;
+    iy:voice i:x80_v0 .
+
+i:x81 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-27-0013" ;
+    iy:kind "truth_by_proof" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.72e+01 ;
+    iy:theme i:knowledge ;
+    iy:voice i:x81_v0,
+        i:x81_v1 .
+
+i:x82 a iy:Record ;
+    iy:agent i:manimekalai ;
+    iy:birth "main" ;
+    iy:evidence "MAN-26-0065" ;
+    iy:kind "find_no_truth" ;
+    iy:mood iy:Predicted ;
+    iy:storyTime 2.625e+01 ;
+    iy:voice i:x82_v0,
+        i:x82_v1 .
+
+i:x90 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-24-0007" ;
+    iy:kind "lost_husband" ;
+    iy:mood iy:Asserted ;
+    iy:patient i:kovalan ;
+    iy:storyTime 2.36e+01 ;
+    iy:voice i:x90_v0,
+        i:x90_v1 .
+
+i:x91 a iy:Record ;
+    iy:agent i:kannagi ;
+    iy:birth "main" ;
+    iy:companion i:kovalan ;
+    iy:evidence "SIL-24-0009",
+        "SIL-24-0010" ;
+    iy:kind "ascend" ;
+    iy:mood iy:Asserted ;
+    iy:storyTime 2.39e+01 ;
+    iy:voice i:x91_v0,
+        i:x91_v1 .
+
+i:x92 a iy:Record ;
+    iy:agent i:hill_folk ;
+    iy:birth "main" ;
+    iy:evidence "SIL-24-0013" ;
+    iy:kind "take_as_deity" ;
+    iy:mood iy:Command ;
+    iy:storyTime 24 ;
+    iy:theme i:kannagi ;
+    iy:voice i:x92_v0,
+        i:x92_v1 .
+
+i:a00_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a00_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:a01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a02_v1 iy:depth 1 ;
+    iy:speaker i:kovalan .
+
+i:a03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a03_v1 iy:depth 1 ;
+    iy:speaker i:kovalan .
+
+i:a04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a05_v1 iy:depth 1 ;
+    iy:speaker i:goldsmith .
+
+i:a06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a06_v1 iy:depth 1 ;
+    iy:speaker i:goldsmith .
+
+i:a06b_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a06b_v1 iy:depth 1 ;
+    iy:speaker i:cattan .
+
+i:a07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a07_v1 iy:depth 1 ;
+    iy:speaker i:goldsmith .
+
+i:a08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a09_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a09_v1 iy:depth 1 ;
+    iy:speaker i:goldsmith .
+
+i:a10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a11_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a12_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a12_v1 iy:depth 1 ;
+    iy:speaker i:pandya_king .
+
+i:a13_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a13_v1 iy:depth 1 ;
+    iy:speaker i:guards .
+
+i:a14_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a15_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a16_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a17_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a18_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a18_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:a19_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a19_v1 iy:depth 1 ;
+    iy:speaker i:pandya_king .
+
+i:a20_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a21_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a22_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a23_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a23_v1 iy:depth 1 ;
+    iy:speaker i:pandya_king .
+
+i:a24_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a25_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a25_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:a25_v2 iy:depth 2 ;
+    iy:speaker i:matari .
+
+i:a26_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:a26_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:a27_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b01_v1 iy:depth 1 ;
+    iy:speaker i:kayasandikai .
+
+i:b02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b03_v1 iy:depth 1 ;
+    iy:speaker i:pillar .
+
+i:b04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b04_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:b05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b06_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:b07 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-18-0155" ;
+    iy:is i:manimekalai ;
+    iy:kind "is_identity" ;
+    iy:mood iy:Claimed ;
+    iy:seen i:disguised_woman ;
+    iy:storyTime 1.86e+01 ;
+    iy:voice i:b07_v0,
+        i:b07_v1 .
+
+i:b07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b07_v1 iy:depth 1 ;
+    iy:speaker i:udayakumaran .
+
+i:b08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b09_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b09_v1 iy:depth 1 ;
+    iy:speaker i:kanchanan .
+
+i:b10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b11 a iy:Record ;
+    iy:agent i:udayakumaran ;
+    iy:birth "main" ;
+    iy:evidence "MAN-20-0077" ;
+    iy:kind "lover_of" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 2.03e+01 ;
+    iy:target i:kayasandikai ;
+    iy:voice i:b11_v0,
+        i:b11_v1 .
+
+i:b11_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b11_v1 iy:depth 1 ;
+    iy:speaker i:kanchanan .
+
+i:b12_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b13_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b14_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b14_v1 iy:depth 1 ;
+    iy:speaker i:pillar .
+
+i:b15_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b15_v1 iy:depth 1 ;
+    iy:speaker i:pillar .
+
+i:b16_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b17_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b18_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:b18_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:c01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c01_v1 iy:depth 1 ;
+    iy:speaker i:aravanan .
+
+i:c02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c02_v1 iy:depth 1 ;
+    iy:speaker i:aravanan .
+
+i:c03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c03_v1 iy:depth 1 ;
+    iy:speaker i:aravanan .
+
+i:c04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c04_v1 iy:depth 1 ;
+    iy:speaker i:aravanan .
+
+i:c05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c05_v1 iy:depth 1 ;
+    iy:speaker i:aravanan .
+
+i:c05_v2 iy:depth 2 ;
+    iy:speaker i:aputhiran .
+
+i:c06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c06_v1 iy:depth 1 ;
+    iy:speaker i:tivatilakai .
+
+i:c07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c09_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c09_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:c10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:c10_v1 iy:depth 1 ;
+    iy:speaker i:cutamati .
+
+i:d01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d01_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d02_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d03 a iy:Record ;
+    iy:agent i:sangaman ;
+    iy:birth "prev_bharatan" ;
+    iy:evidence "SIL-23-0156" ;
+    iy:kind "spy" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime -50 ;
+    iy:voice i:d03_v0,
+        i:d03_v1,
+        i:d03_v2 .
+
+i:d03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d03_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d03_v2 iy:depth 2 ;
+    iy:speaker i:bharatan .
+
+i:d04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d04_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d05_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d06_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d07_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d07_v2 iy:depth 2 ;
+    iy:speaker i:neeli .
+
+i:d08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d08_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:d09_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:d10_v1 iy:depth 1 ;
+    iy:speaker i:madurapati .
+
+i:e01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e02_v1 iy:depth 1 ;
+    iy:speaker i:agni .
+
+i:e03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e03_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:e04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e05_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:e06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e07_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:e08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:e08_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:f01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f01_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:f02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f02_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:f03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f03_v1 iy:depth 1 ;
+    iy:speaker i:manimekhala_deity .
+
+i:f04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f04_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:f04_v2 iy:depth 2 ;
+    iy:speaker i:sage .
+
+i:f05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f05_v1 iy:depth 1 ;
+    iy:speaker i:pillar .
+
+i:f06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f06_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:f07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f07_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:f08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f08_v1 iy:depth 1 ;
+    iy:speaker i:pillar .
+
+i:f09_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f09_v1 iy:depth 1 ;
+    iy:speaker i:pillar .
+
+i:f10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:f10_v1 iy:depth 1 ;
+    iy:speaker i:pillar .
+
+i:g01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:g01_v1 iy:depth 1 ;
+    iy:speaker i:aravanan .
+
+i:g02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:g02_v1 iy:depth 1 ;
+    iy:speaker i:aravanan .
+
+i:g03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:g03_v1 iy:depth 1 ;
+    iy:speaker i:sage_nagapuram .
+
+i:g04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:g04_v1 iy:depth 1 ;
+    iy:speaker i:sage_nagapuram .
+
+i:h01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:h01_v1 iy:depth 1 ;
+    iy:speaker i:guard .
+
+i:h02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:h02_v1 iy:depth 1 ;
+    iy:speaker i:manimekalai .
+
+i:h03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:k_karma_kov_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:k_sceptre_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:l01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:l02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m01_v1 iy:depth 1 ;
+    iy:speaker i:cattan .
+
+i:m02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m02_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:m03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m04_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:m05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m09_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m11_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m11_v1 iy:depth 1 ;
+    iy:speaker i:unknown .
+
+i:m12_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m12_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:m12_v2 iy:depth 2 ;
+    iy:speaker i:kovalan .
+
+i:m13_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:m13_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:m13_v2 iy:depth 2 ;
+    iy:speaker i:kovalan .
+
+i:r01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:r01_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:r01_v2 iy:depth 2 ;
+    iy:speaker i:madurapati .
+
+i:r02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:r02_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:r02_v2 iy:depth 2 ;
+    iy:speaker i:madurapati .
+
+i:r02_v3 iy:depth 3 ;
+    iy:speaker i:bharatan .
+
+i:r03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:r03_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:r03_v2 iy:depth 2 ;
+    iy:speaker i:madurapati .
+
+i:r04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:r04_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:r05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:r05_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:s01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s07_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s08_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s09_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s11_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s12_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s13_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:s14_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x01_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x01_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x02_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x02_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x03_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x03_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x04_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x04_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x05_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x05_v1 iy:depth 1 ;
+    iy:speaker i:pandya_queen .
+
+i:x06_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x10_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x10_v1 iy:depth 1 ;
+    iy:speaker i:kavunti .
+
+i:x11_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x11_v1 iy:depth 1 ;
+    iy:speaker i:matalan .
+
+i:x11_v2 iy:depth 2 ;
+    iy:speaker i:matari .
+
+i:x20 a iy:Record ;
+    iy:agent i:madhavi ;
+    iy:birth "main" ;
+    iy:evidence "SIL-07-0306",
+        "SIL-07-0307" ;
+    iy:kind "mind_elsewhere" ;
+    iy:mood iy:Thought ;
+    iy:storyTime 7.8e+00 ;
+    iy:voice i:x20_v0,
+        i:x20_v1 .
+
+i:x20_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x20_v1 iy:depth 1 ;
+    iy:speaker i:kovalan .
+
+i:x21_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x22_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x23_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x30_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x31_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x32_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x33_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x33_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x40_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x41_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x41_v1 iy:depth 1 ;
+    iy:speaker i:manimekhala_deity .
+
+i:x42_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x50_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x50_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x51_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x60_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x60_v1 iy:depth 1 ;
+    iy:speaker i:madhavi .
+
+i:x61_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x61_v1 iy:depth 1 ;
+    iy:speaker i:madhavi .
+
+i:x62_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x62_v1 iy:depth 1 ;
+    iy:speaker i:madhavi .
+
+i:x63_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x63_v1 iy:depth 1 ;
+    iy:speaker i:madhavi .
+
+i:x63_v2 iy:depth 2 ;
+    iy:speaker i:aravanan .
+
+i:x70_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x70_v1 iy:depth 1 ;
+    iy:speaker i:poets_at_court .
+
+i:x71_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x71_v1 iy:depth 1 ;
+    iy:speaker i:cenkuttuvan .
+
+i:x71_v2 iy:depth 2 ;
+    iy:speaker i:himalaya_ascetics .
+
+i:x72_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x73_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x80_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x81_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x81_v1 iy:depth 1 ;
+    iy:speaker i:vaidika_teacher .
+
+i:x82_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x82_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x90_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x90_v1 iy:depth 1 ;
+    iy:speaker i:kannagi .
+
+i:x91_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x91_v1 iy:depth 1 ;
+    iy:speaker i:hill_folk .
+
+i:x92_v0 iy:depth 0 ;
+    iy:speaker i:poet .
+
+i:x92_v1 iy:depth 1 ;
+    iy:speaker i:hill_folk .
+
+i:b09 a iy:Record ;
+    iy:birth "main" ;
+    iy:evidence "MAN-20-0033" ;
+    iy:is i:kayasandikai ;
+    iy:kind "is_identity" ;
+    iy:mood iy:Claimed ;
+    iy:seen i:disguised_woman ;
+    iy:storyTime 2.02e+01 ;
+    iy:voice i:b09_v0,
+        i:b09_v1 .
+
+i:a09 a iy:Record ;
+    iy:agent i:kovalan ;
+    iy:birth "main" ;
+    iy:evidence "SIL-16-0145",
+        "SIL-16-0147" ;
+    iy:kind "steal" ;
+    iy:mood iy:Claimed ;
+    iy:storyTime 1.614e+01 ;
+    iy:theme i:ank_q ;
+    iy:voice i:a09_v0,
+        i:a09_v1 .
+

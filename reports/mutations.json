@@ -1,0 +1,336 @@
+{
+ "summary": {
+  "mutations": 28,
+  "caught": 24,
+  "by_layer": {
+   "shape": 9,
+   "story": 14,
+   "identity": 5,
+   "citation": 3
+  },
+  "only_this_layer": {
+   "shape": 7,
+   "story": 8,
+   "identity": 0,
+   "citation": 2
+  },
+  "missed": [
+   "plan_as_sale",
+   "dream_as_event",
+   "wrong_killer",
+   "doctrine_as_fact"
+  ],
+  "valid_readings": 6,
+  "false_alarms": 0
+ },
+ "rows": [
+  {
+   "mutation": "drop_voice",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "A record needs a teller."
+   ]
+  },
+  {
+   "mutation": "drop_mood",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "A record needs exactly one mood."
+   ]
+  },
+  {
+   "mutation": "drop_evidence",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "A record needs a verse line id."
+   ]
+  },
+  {
+   "mutation": "malformed_line_id",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": true,
+   "messages": [
+    "A record needs a verse line id.",
+    "a15: no such line ['page 12']"
+   ]
+  },
+  {
+   "mutation": "no_time",
+   "shape": true,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "A record needs one story time.",
+    "s10: udayakumaran acts after death"
+   ]
+  },
+  {
+   "mutation": "no_believer",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "A belief needs someone to hold it."
+   ]
+  },
+  {
+   "mutation": "recipient_no_theme",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "If there's a recipient, something has to be received."
+   ]
+  },
+  {
+   "mutation": "bad_stance",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "Stance is accept or reject."
+   ]
+  },
+  {
+   "mutation": "wrong_line",
+   "shape": false,
+   "story": false,
+   "identity": false,
+   "citation": true,
+   "messages": [
+    "a15: phrase not in cited lines"
+   ]
+  },
+  {
+   "mutation": "line_does_not_exist",
+   "shape": false,
+   "story": false,
+   "identity": false,
+   "citation": true,
+   "messages": [
+    "c04: no such line ['MAN-14-0999']"
+   ]
+  },
+  {
+   "mutation": "promote_claim",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "a09: ank_q held by ['goldsmith'] and kovalan at once"
+   ]
+  },
+  {
+   "mutation": "restate_as_fact",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "x3: ank_q held by ['goldsmith'] and kovalan at once",
+    "a09: contradicted claim also told as fact"
+   ]
+  },
+  {
+   "mutation": "time_flip",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "belief ('pandya_king', 'a09'): rejected before ever accepted"
+   ]
+  },
+  {
+   "mutation": "two_holders",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "c07: amudasurabhi held by ['gomukhi'] and manimekalai at once"
+   ]
+  },
+  {
+   "mutation": "give_up_unheld",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "l02: madhavi gives up garland without holding it",
+    "l02: garland held by ['hunchback'] and kovalan at once"
+   ]
+  },
+  {
+   "mutation": "dead_actor",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "x1: kovalan acts after death"
+   ]
+  },
+  {
+   "mutation": "order_takes_effect",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "a12: conditional record has state changes"
+   ]
+  },
+  {
+   "mutation": "missing_belief_claim",
+   "shape": false,
+   "story": true,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "b10: belief points at missing claim",
+    "belief ('kanchanan', 'b09'): rejected before ever accepted"
+   ]
+  },
+  {
+   "mutation": "disguise_as_identity",
+   "shape": false,
+   "story": true,
+   "identity": true,
+   "citation": false,
+   "messages": [
+    "xm: same_as used, should be disguise, same_person or a claim",
+    "https://example.org/manichchilambu/item/kayasandikai is declared different from itself"
+   ]
+  },
+  {
+   "mutation": "merge_the_anklets",
+   "shape": false,
+   "story": true,
+   "identity": true,
+   "citation": false,
+   "messages": [
+    "xm: same_as used, should be disguise, same_person or a claim",
+    "https://example.org/manichchilambu/item/ank_q is declared different from itself"
+   ]
+  },
+  {
+   "mutation": "merge_the_bowls",
+   "shape": false,
+   "story": true,
+   "identity": true,
+   "citation": false,
+   "messages": [
+    "xm: same_as used, should be disguise, same_person or a claim",
+    "https://example.org/manichchilambu/item/other_bowl is declared different from itself"
+   ]
+  },
+  {
+   "mutation": "flatten_rebirth",
+   "shape": false,
+   "story": true,
+   "identity": true,
+   "citation": false,
+   "messages": [
+    "xm: kovalan acts after death",
+    "xm: same_as used, should be disguise, same_person or a claim"
+   ]
+  },
+  {
+   "mutation": "statue_is_goddess",
+   "shape": false,
+   "story": true,
+   "identity": true,
+   "citation": false,
+   "messages": [
+    "xm: same_as used, should be disguise, same_person or a claim",
+    "https://example.org/manichchilambu/item/kannagi is declared different from itself"
+   ]
+  },
+  {
+   "mutation": "plan_as_sale",
+   "shape": false,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": []
+  },
+  {
+   "mutation": "dream_as_event",
+   "shape": false,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": []
+  },
+  {
+   "mutation": "wrong_killer",
+   "shape": false,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": []
+  },
+  {
+   "mutation": "invented_participant",
+   "shape": true,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": [
+    "If there's a recipient, something has to be received."
+   ]
+  },
+  {
+   "mutation": "doctrine_as_fact",
+   "shape": false,
+   "story": false,
+   "identity": false,
+   "citation": false,
+   "messages": []
+  }
+ ],
+ "valid": [
+  {
+   "reading": "clean",
+   "false_alarms": []
+  },
+  {
+   "reading": "extra_reading",
+   "false_alarms": []
+  },
+  {
+   "reading": "conflicting_accounts",
+   "false_alarms": []
+  },
+  {
+   "reading": "dead_man_rises",
+   "false_alarms": []
+  },
+  {
+   "reading": "unknown_speaker",
+   "false_alarms": []
+  },
+  {
+   "reading": "claim_contradicted_twice",
+   "false_alarms": []
+  }
+ ]
+}

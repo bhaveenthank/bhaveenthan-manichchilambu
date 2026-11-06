@@ -1,0 +1,134 @@
+{
+ "searchinfo": {
+  "search": "Kannagi"
+ },
+ "search": [
+  {
+   "id": "Q1723828",
+   "title": "Q1723828",
+   "pageid": 1656904,
+   "concepturi": "http://www.wikidata.org/entity/Q1723828",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q1723828",
+   "display": {
+    "label": {
+     "value": "Kannagi: Crazy Shrine Maidens",
+     "language": "en"
+    },
+    "description": {
+     "value": "Japanese manga series",
+     "language": "en"
+    }
+   },
+   "label": "Kannagi: Crazy Shrine Maidens",
+   "description": "Japanese manga series",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kannagi: Crazy Shrine Maidens"
+   }
+  },
+  {
+   "id": "Q3115610",
+   "title": "Q3115610",
+   "pageid": 2977045,
+   "concepturi": "http://www.wikidata.org/entity/Q3115610",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q3115610",
+   "display": {
+    "label": {
+     "value": "Kannagi",
+     "language": "en"
+    },
+    "description": {
+     "value": "legendary Tamil woman",
+     "language": "en"
+    }
+   },
+   "label": "Kannagi",
+   "description": "legendary Tamil woman",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kannagi"
+   }
+  },
+  {
+   "id": "Q58197126",
+   "title": "Q58197126",
+   "pageid": 58111192,
+   "concepturi": "http://www.wikidata.org/entity/Q58197126",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q58197126",
+   "display": {
+    "label": {
+     "value": "Kannagi",
+     "language": "mul"
+    },
+    "description": {
+     "value": "female given name",
+     "language": "en"
+    }
+   },
+   "label": "Kannagi",
+   "description": "female given name",
+   "match": {
+    "type": "label",
+    "language": "mul",
+    "text": "Kannagi"
+   }
+  },
+  {
+   "id": "Q6363926",
+   "title": "Q6363926",
+   "pageid": 6175353,
+   "concepturi": "http://www.wikidata.org/entity/Q6363926",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q6363926",
+   "display": {
+    "label": {
+     "value": "Kannagi",
+     "language": "en"
+    },
+    "description": {
+     "value": "Indian newspaper in Tamil of the late 20th century",
+     "language": "en"
+    }
+   },
+   "label": "Kannagi",
+   "description": "Indian newspaper in Tamil of the late 20th century",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kannagi"
+   }
+  },
+  {
+   "id": "Q12976229",
+   "title": "Q12976229",
+   "pageid": 14458156,
+   "concepturi": "http://www.wikidata.org/entity/Q12976229",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q12976229",
+   "display": {
+    "label": {
+     "value": "Kannagi",
+     "language": "en"
+    },
+    "description": {
+     "value": "1942 film",
+     "language": "en"
+    }
+   },
+   "label": "Kannagi",
+   "description": "1942 film",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Kannagi"
+   }
+  }
+ ],
+ "search-continue": 5,
+ "success": 1
+}

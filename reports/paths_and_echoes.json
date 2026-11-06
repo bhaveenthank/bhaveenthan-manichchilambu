@@ -1,0 +1,871 @@
+{
+ "exhaustive": {
+  "nodes": 82,
+  "pairs": 3321,
+  "plain_found": 3084,
+  "plain_bad": 1743,
+  "actual_found": 2214,
+  "lawful_found": 2214,
+  "len_plain": 7126,
+  "len_lawful": 7315,
+  "both": 2214,
+  "life_mix": 0
+ },
+ "pairs": [
+  {
+   "a": "manimekalai",
+   "b": "kannagi",
+   "mode": "plain",
+   "hops": 1,
+   "steps": "child_of[m06:add]",
+   "lines": [
+    "MAN-26-0002"
+   ]
+  },
+  {
+   "a": "manimekalai",
+   "b": "kannagi",
+   "mode": "lawful",
+   "hops": 1,
+   "steps": "speak_as_deity[m08:ass]",
+   "lines": [
+    "MAN-26-0010"
+   ]
+  },
+  {
+   "a": "manimekalai",
+   "b": "pandya_king",
+   "mode": "plain",
+   "hops": 2,
+   "steps": "child_of[m05:ass] > frame[a07:int]",
+   "lines": [
+    "MAN-26-0003",
+    "SIL-16-0128"
+   ]
+  },
+  {
+   "a": "manimekalai",
+   "b": "pandya_king",
+   "mode": "lawful",
+   "hops": 2,
+   "steps": "child_of[m05:ass] > accuse[a08:ass]",
+   "lines": [
+    "MAN-26-0003",
+    "SIL-16-0145"
+   ]
+  },
+  {
+   "a": "kovalan",
+   "b": "sangaman",
+   "mode": "plain",
+   "hops": 2,
+   "steps": "same_person[d01:ass] > accuse[d02:ass]",
+   "lines": [
+    "SIL-23-0154",
+    "SIL-23-0156"
+   ]
+  },
+  {
+   "a": "kovalan",
+   "b": "sangaman",
+   "mode": "lawful",
+   "hops": 2,
+   "steps": "same_person[d01:ass] > accuse[d02:ass]",
+   "lines": [
+    "SIL-23-0154",
+    "SIL-23-0156"
+   ]
+  },
+  {
+   "a": "udayakumaran",
+   "b": "kovalan",
+   "mode": "plain",
+   "hops": 2,
+   "steps": "motive[b18:ass] > child_of[m05:ass]",
+   "lines": [
+    "MAN-21-0021",
+    "MAN-26-0003"
+   ]
+  },
+  {
+   "a": "udayakumaran",
+   "b": "kovalan",
+   "mode": "lawful",
+   "hops": 2,
+   "steps": "motive[b18:ass] > child_of[m05:ass]",
+   "lines": [
+    "MAN-21-0021",
+    "MAN-26-0003"
+   ]
+  },
+  {
+   "a": "kovalan",
+   "b": "ank_q",
+   "mode": "plain",
+   "hops": 1,
+   "steps": "steal[a09:cla]",
+   "lines": [
+    "SIL-16-0145"
+   ]
+  },
+  {
+   "a": "kovalan",
+   "b": "ank_q",
+   "mode": "lawful",
+   "hops": 2,
+   "steps": "show[a04:ass] > steal[a06b:ass]",
+   "lines": [
+    "SIL-16-0116",
+    "SIL-00-0025"
+   ]
+  },
+  {
+   "a": "kanchanan",
+   "b": "manimekalai",
+   "mode": "plain",
+   "hops": 1,
+   "steps": "correct[b15:ass]",
+   "lines": [
+    "MAN-20-0113"
+   ]
+  },
+  {
+   "a": "kanchanan",
+   "b": "manimekalai",
+   "mode": "lawful",
+   "hops": 1,
+   "steps": "correct[b15:ass]",
+   "lines": [
+    "MAN-20-0113"
+   ]
+  },
+  {
+   "a": "aputhiran",
+   "b": "manimekalai",
+   "mode": "plain",
+   "hops": 2,
+   "steps": "give[c01:ass] > feed[b02:ass]",
+   "lines": [
+    "MAN-14-0016",
+    "MAN-17-0018"
+   ]
+  },
+  {
+   "a": "aputhiran",
+   "b": "manimekalai",
+   "mode": "lawful",
+   "hops": 2,
+   "steps": "give[c01:ass] > feed[b02:ass]",
+   "lines": [
+    "MAN-14-0016",
+    "MAN-17-0018"
+   ]
+  },
+  {
+   "a": "punyarasan",
+   "b": "amudasurabhi",
+   "mode": "plain",
+   "hops": 2,
+   "steps": "same_person[g02:ass] > give[c01:ass]",
+   "lines": [
+    "MAN-14-0103",
+    "MAN-14-0016"
+   ]
+  },
+  {
+   "a": "punyarasan",
+   "b": "amudasurabhi",
+   "mode": "lawful",
+   "hops": 2,
+   "steps": "same_person[g02:ass] > give[c01:ass]",
+   "lines": [
+    "MAN-14-0103",
+    "MAN-14-0016"
+   ]
+  },
+  {
+   "a": "kannagi",
+   "b": "cenkuttuvan",
+   "mode": "plain",
+   "hops": 3,
+   "steps": "child_of[m06:add] > worship[m07:ass] > install[x73:ass]",
+   "lines": [
+    "MAN-26-0002",
+    "MAN-26-0004",
+    "SIL-28-0228"
+   ]
+  },
+  {
+   "a": "kannagi",
+   "b": "cenkuttuvan",
+   "mode": "lawful",
+   "hops": 3,
+   "steps": "speak_as_deity[m08:ass] > worship[m07:ass] > install[x73:ass]",
+   "lines": [
+    "MAN-26-0010",
+    "MAN-26-0004",
+    "SIL-28-0228"
+   ]
+  },
+  {
+   "a": "neeli",
+   "b": "kannagi",
+   "mode": "plain",
+   "hops": 3,
+   "steps": "curse[d06:ass] > same_person[d01:ass] > offer[a01:ass]",
+   "lines": [
+    "SIL-23-0168",
+    "SIL-23-0154",
+    "SIL-09-0073"
+   ]
+  },
+  {
+   "a": "neeli",
+   "b": "kannagi",
+   "mode": "lawful",
+   "hops": 3,
+   "steps": "curse[d06:ass] > same_person[d01:ass] > offer[a01:ass]",
+   "lines": [
+    "SIL-23-0168",
+    "SIL-23-0154",
+    "SIL-09-0073"
+   ]
+  },
+  {
+   "a": "gajabahu",
+   "b": "kovalan",
+   "mode": "plain",
+   "hops": 2,
+   "steps": "ask_boon[m10:ass] > offer[a01:ass]",
+   "lines": [
+    "SIL-30-0160",
+    "SIL-09-0073"
+   ]
+  },
+  {
+   "a": "gajabahu",
+   "b": "kovalan",
+   "mode": "lawful",
+   "hops": 2,
+   "steps": "ask_boon[m10:ass] > offer[a01:ass]",
+   "lines": [
+    "SIL-30-0160",
+    "SIL-09-0073"
+   ]
+  },
+  {
+   "a": "goldsmith",
+   "b": "kovalan",
+   "mode": "plain",
+   "hops": 1,
+   "steps": "show[a04:ass]",
+   "lines": [
+    "SIL-16-0116"
+   ]
+  },
+  {
+   "a": "goldsmith",
+   "b": "kovalan",
+   "mode": "lawful",
+   "hops": 1,
+   "steps": "show[a04:ass]",
+   "lines": [
+    "SIL-16-0116"
+   ]
+  }
+ ],
+ "echoes": [
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "consistent": 2,
+   "lcs": 2,
+   "bag": 2,
+   "mapping": {
+    "kovalan": "sangaman",
+    "goldsmith": "bharatan",
+    "pandya_king": "kalinga_king"
+   },
+   "matched": [
+    [
+     "a08",
+     "d02"
+    ],
+    [
+     "a15",
+     "d04"
+    ]
+   ],
+   "len_a": 8,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "b": [
+    "retelling",
+    "prev_bharatan"
+   ],
+   "consistent": 2,
+   "lcs": 2,
+   "bag": 2,
+   "mapping": {
+    "sangaman": "sangaman",
+    "bharatan": "bharatan",
+    "kalinga_king": "kalinga_king"
+   },
+   "matched": [
+    [
+     "d02",
+     "r01"
+    ],
+    [
+     "d03",
+     "r02"
+    ]
+   ],
+   "len_a": 5,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "fire",
+    "main"
+   ],
+   "b": [
+    "rahulan",
+    "prev_lakshmi"
+   ],
+   "consistent": 2,
+   "lcs": 2,
+   "bag": 2,
+   "mapping": {
+    "pandya_queen": "rahulan",
+    "matari": "lakshmi"
+   },
+   "matched": [
+    [
+     "e06",
+     "f06"
+    ],
+    [
+     "e07",
+     "f07"
+    ]
+   ],
+   "len_a": 5,
+   "len_b": 3
+  },
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "rahulan",
+    "prev_lakshmi"
+   ],
+   "consistent": 1,
+   "lcs": 2,
+   "bag": 2,
+   "mapping": {
+    "kovalan": "cook",
+    "drunk_man": "rahulan",
+    "sword": "sword"
+   },
+   "matched": [
+    [
+     "a15",
+     "f05"
+    ]
+   ],
+   "len_a": 8,
+   "len_b": 3
+  },
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "disguise",
+    "main"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "kovalan": "udayakumaran",
+    "drunk_man": "kanchanan",
+    "sword": "sword"
+   },
+   "matched": [
+    [
+     "a15",
+     "b13"
+    ]
+   ],
+   "len_a": 8,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "fire",
+    "main"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "pandya_king": "pandya_queen"
+   },
+   "matched": [
+    [
+     "a24",
+     "e06"
+    ]
+   ],
+   "len_a": 8,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "retelling",
+    "prev_bharatan"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "kovalan": "sangaman",
+    "goldsmith": "bharatan",
+    "pandya_king": "kalinga_king"
+   },
+   "matched": [
+    [
+     "a08",
+     "r01"
+    ]
+   ],
+   "len_a": 8,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "bowl",
+    "main"
+   ],
+   "b": [
+    "disguise",
+    "main"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "aputhiran": "manimekalai",
+    "amudasurabhi": "amudasurabhi"
+   },
+   "matched": [
+    [
+     "c02",
+     "b02"
+    ]
+   ],
+   "len_a": 7,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "bowl",
+    "main"
+   ],
+   "b": [
+    "garland",
+    "main"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "amudasurabhi": "garland",
+    "chintadevi": "madhavi",
+    "aputhiran": "hunchback"
+   },
+   "matched": [
+    [
+     "c01",
+     "l01"
+    ]
+   ],
+   "len_a": 7,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "bowl",
+    "main"
+   ],
+   "b": [
+    "prison",
+    "main"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "aputhiran": "disguised_woman",
+    "amudasurabhi": "amudasurabhi"
+   },
+   "matched": [
+    [
+     "c02",
+     "h01"
+    ]
+   ],
+   "len_a": 7,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "b": [
+    "disguise",
+    "main"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "sangaman": "udayakumaran"
+   },
+   "matched": [
+    [
+     "d04",
+     "b13"
+    ]
+   ],
+   "len_a": 5,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "b": [
+    "rahulan",
+    "prev_lakshmi"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "sangaman": "cook"
+   },
+   "matched": [
+    [
+     "d04",
+     "f05"
+    ]
+   ],
+   "len_a": 5,
+   "len_b": 3
+  },
+  {
+   "a": [
+    "disguise",
+    "main"
+   ],
+   "b": [
+    "prison",
+    "main"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "kayasandikai": "prisoners",
+    "manimekalai": "disguised_woman",
+    "amudasurabhi": "amudasurabhi"
+   },
+   "matched": [
+    [
+     "b02",
+     "h01"
+    ]
+   ],
+   "len_a": 5,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "disguise",
+    "main"
+   ],
+   "b": [
+    "rahulan",
+    "prev_lakshmi"
+   ],
+   "consistent": 1,
+   "lcs": 1,
+   "bag": 1,
+   "mapping": {
+    "udayakumaran": "cook",
+    "kanchanan": "rahulan",
+    "sword": "sword"
+   },
+   "matched": [
+    [
+     "b13",
+     "f05"
+    ]
+   ],
+   "len_a": 5,
+   "len_b": 3
+  },
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "bowl",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 8,
+   "len_b": 7
+  },
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "garland",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 8,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "prison",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 8,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "bowl",
+    "main"
+   ],
+   "b": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 7,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "bowl",
+    "main"
+   ],
+   "b": [
+    "fire",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 7,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "bowl",
+    "main"
+   ],
+   "b": [
+    "rahulan",
+    "prev_lakshmi"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 7,
+   "len_b": 3
+  },
+  {
+   "a": [
+    "bowl",
+    "main"
+   ],
+   "b": [
+    "retelling",
+    "prev_bharatan"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 7,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "b": [
+    "fire",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 5,
+   "len_b": 5
+  },
+  {
+   "a": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "b": [
+    "garland",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 5,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "b": [
+    "prison",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 5,
+   "len_b": 2
+  },
+  {
+   "a": [
+    "disguise",
+    "main"
+   ],
+   "b": [
+    "fire",
+    "main"
+   ],
+   "consistent": 0,
+   "lcs": 0,
+   "bag": 0,
+   "mapping": {},
+   "matched": [],
+   "len_a": 5,
+   "len_b": 5
+  }
+ ],
+ "shuffle": [
+  {
+   "a": [
+    "anklet",
+    "main"
+   ],
+   "b": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "matches": 2,
+   "p": 0.1634
+  },
+  {
+   "a": [
+    "curse",
+    "prev_bharatan"
+   ],
+   "b": [
+    "retelling",
+    "prev_bharatan"
+   ],
+   "matches": 2,
+   "p": 0.012
+  },
+  {
+   "a": [
+    "fire",
+    "main"
+   ],
+   "b": [
+    "rahulan",
+    "prev_lakshmi"
+   ],
+   "matches": 2,
+   "p": 0.039
+  }
+ ]
+}

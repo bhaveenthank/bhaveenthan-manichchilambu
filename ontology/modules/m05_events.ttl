@@ -1,0 +1,26 @@
+# Events and roles
+#
+# The event is a node, the participants hang off it with named roles.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m05_events> a owl:Ontology ; rdfs:label "Events and roles" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E7_Activity
+
+iy:Transfer a owl:Class ; rdfs:subClassOf iy:Event .
+iy:Movement a owl:Class ; rdfs:subClassOf iy:Event .
+iy:Violence a owl:Class ; rdfs:subClassOf iy:Event .
+iy:Deposit a owl:Class ; rdfs:subClassOf iy:Transfer .
+iy:Purchase a owl:Class ; rdfs:subClassOf iy:Transfer .
+iy:Offer a owl:Class ; rdfs:subClassOf iy:Event .
+
+iy:instrument a owl:ObjectProperty .
+iy:place a owl:ObjectProperty .
+iy:source a owl:ObjectProperty .
+iy:companion a owl:ObjectProperty .

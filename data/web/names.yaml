@@ -1,0 +1,110 @@
+# How people, places and things are called, in English and Tamil, with the Thanglish spellings people type.
+# Extra spellings get matched fuzzily too, so this needs the common ones and not every one.
+kannagi: {en: Kannagi, ta: கண்ணகி, also: [kannaki, kanagi, kannagai, kannahi, pattini, pathini, பத்தினி]}
+kovalan: {en: Kovalan, ta: கோவலன், also: [koovalan, kovalan, gowalan, govalan]}
+madhavi: {en: Madhavi, ta: மாதவி, also: [mathavi, maadhavi, madavi]}
+manimekalai: {en: Manimekalai, ta: மணிமேகலை, also: [manimegalai, manimekhalai, manimehalai, manimegala]}
+pandya_king: {en: the Pandya king, ta: பாண்டிய மன்னன், also: [neduncheliyan, nedunchezhiyan, nedunjeliyan, pandiyan, pandian, pandya, pandiya mannan, king, mannan, arasan, நெடுஞ்செழியன், பாண்டியன், அரசன், மன்னன், வேந்தன்]}
+pandya_queen: {en: the Pandya queen, ta: பாண்டிய அரசி, also: [queen, arasi, kopperundevi, அரசி, கோப்பெருந்தேவி]}
+goldsmith: {en: the goldsmith, ta: பொற்கொல்லன், also: [porkollan, pon kollan, kollan, பொற்கொல்லர், கொல்லன்]}
+vetrivel_celiyan: {en: Vetrivel Celiyan, ta: வெற்றிவேற் செழியன், also: [vetrivel, vetrivel cheliyan]}
+cenkuttuvan: {en: Cenkuttuvan, ta: செங்குட்டுவன், also: [senguttuvan, chenguttuvan, cheran senguttuvan]}
+gajabahu: {en: Gajabahu, ta: கயவாகு, also: [kayavagu, gayavahu, kajabahu]}
+ilanko: {en: Ilanko Adikal, ta: இளங்கோ அடிகள், also: [ilango, ilango adigal, ilanko]}
+cattan: {en: Cattan, ta: சாத்தனார், also: [sathanar, sattanar, seethalai sathanar, சாத்தன், சீத்தலைச் சாத்தனார்]}
+masattuvan: {en: Masattuvan, ta: மாசாத்துவான், also: [masathuvan, masattuvan]}
+manaikan: {en: Manaikan, ta: மாநாய்கன், also: [manaigan, manaikan, maanaaykan]}
+kavunti: {en: Kavunti, ta: கவுந்தி, also: [kavundi, gavunthi, kaunthi, kavunthi, கவுந்தி அடிகள்]}
+matari: {en: Matari, ta: மாதரி, also: [mathari, maadari, madari]}
+matalan: {en: Matalan, ta: மாடலன், also: [madalan, maadalan]}
+tevanti: {en: Tevanti, ta: தேவந்தி, also: [devanthi, thevanthi]}
+madurapati: {en: Madurapati, ta: மதுராபதி, also: [mathurapathi, madurapathi, madurai goddess, madurai deivam, மதுரைத் தெய்வம்]}
+agni: {en: the fire god, ta: அங்கி, also: [agni, fire god, thee kadavul, தீக்கடவுள்]}
+bharatan: {en: Bharatan, ta: பரதன், also: [baradan, bharathan, parathan]}
+sangaman: {en: Sangaman, ta: சங்கமன், also: [sankaman, sangamen]}
+neeli: {en: Neeli, ta: நீலி, also: [nili]}
+udayakumaran: {en: Udayakumaran, ta: உதயகுமரன், also: [udhayakumaran, udaya kumaran, uthayakumaran, prince, ilavarasan, இளவரசன்]}
+rahulan: {en: Rahulan, ta: இராகுலன், also: [raakulan, ragulan, iragulan]}
+lakshmi: {en: Lakshmi, ta: இலக்குமி, also: [ilakkumi, latchumi, laxmi]}
+kayasandikai: {en: Kayasandikai, ta: காயசண்டிகை, also: [kayasandigai, kaayasandigai, kayasandika, kayasandihai]}
+kanchanan: {en: Kanchanan, ta: காஞ்சனன், also: [kaanchanan, kanjanan]}
+aputhiran: {en: Aputhiran, ta: ஆபுத்திரன், also: [aaputhiran, abuthiran, aputtiran, aputthiran]}
+punyarasan: {en: Punyarasan, ta: புண்ணியராசன், also: [punniyarasan, puniyarajan, punyaraja]}
+bhumichandran: {en: Bhumichandran, ta: பூமிசந்திரன், also: [boomichandran, pumisandiran]}
+chintadevi: {en: Chintadevi, ta: சிந்தாதேவி, also: [sinthadevi, sindhadevi, chinthadevi]}
+tivatilakai: {en: Tivatilakai, ta: தீவதிலகை, also: [deepathilagai, thivathilagai, theevathilagai, தீபதிலகை]}
+manimekhala_deity: {en: goddess Manimekala, ta: மணிமேகலா தெய்வம், also: [manimekala, manimegala deivam, manimekala goddess, manimekala deity, மணிமேகலா]}
+cutamati: {en: Sutamati, ta: சுதமதி, also: [suthamathi, sutamathi, cutamati]}
+aravanan: {en: Aravana Adikal, ta: அறவண அடிகள், also: [aravanar, aravana, aravana adigal, அறவணர்]}
+cittirapati: {en: Chitrapati, ta: சித்திராபதி, also: [sithirapathi, chithirapathi]}
+vayantamalai: {en: Vayantamalai, ta: வயந்தமாலை, also: [vasanthamalai, vayanthamalai]}
+aticari: {en: Atirai, ta: ஆதிரை, also: [aathirai, athirai]}
+puhar: {en: Puhar, ta: புகார், also: [pukar, poompuhar, kaveripoompattinam, பூம்புகார்]}
+madurai: {en: Madurai, ta: மதுரை, also: [mathurai, koodal, கூடல்]}
+vanci: {en: Vanci, ta: வஞ்சி, also: [vanji, vanchi]}
+kanchi: {en: Kanchi, ta: காஞ்சி, also: [kachi, kanchipuram, கச்சி]}
+manipallavam: {en: Manipallavam, ta: மணிபல்லவம், also: [manipallavam, mani pallavam]}
+gomukhi: {en: Gomukhi pond, ta: கோமுகிப் பொய்கை, also: [komuki, gomuki, gomugi, கோமுகி]}
+nagapuram: {en: Nagapuram, ta: நாகபுரம், also: [naagapuram]}
+singapuram: {en: Singapuram, ta: சிங்கபுரம், also: [singapuram, aripuram, அரிபுரம்]}
+amudasurabhi: {en: the Amudasurabhi bowl, ta: அமுதசுரபி, also: [amudhasurabhi, amutha surabhi, amuthasurabi, amudasurabi, amudha surabi, bowl, paathiram, pathiram, பாத்திரம்]}
+ank_pair: {en: Kannagi's pair of anklets, ta: கண்ணகியின் இரு சிலம்புகள், also: [silambu, chilambu, anklet, anklets, kaalsilambu, சிலம்பு]}
+ank_k1: {en: Kannagi's anklet (the one Kovalan took), ta: கண்ணகியின் சிலம்பு (கோவலன் எடுத்தது), also: [kannagi anklet, kannagi silambu, கண்ணகி சிலம்பு, kannagi's anklet]}
+ank_k2: {en: Kannagi's other anklet, ta: கண்ணகியின் மற்றொரு சிலம்பு, also: [other anklet, innoru silambu]}
+ank_q: {en: the queen's anklet, ta: அரசியின் சிலம்பு, also: [queen's anklet, queen anklet, queens anklet, arasi silambu, அரசி சிலம்பு, palace anklet]}
+drunk_man: {en: a drunk man, ta: களிமகன், also: [kalimagan, drunkard, kudikaran, குடிகாரன்]}
+palace_gate: {en: the palace gate, ta: அரண்மனை வாயில், also: []}
+gems: {en: gems, ta: மாணிக்கம், also: [gem, manikkam, mani, மணி]}
+pearls: {en: pearls, ta: முத்து, also: [pearl, muthu]}
+goldsmiths_1000: {en: a thousand goldsmiths, ta: ஆயிரம் பொற்கொல்லர், also: []}
+viruchikan: {en: the sage Viruchikan, ta: விருச்சிகன், also: [viruchigan]}
+vindhya_demoness: {en: the Vindhya demoness, ta: விந்தாகடிகை, also: [vindhya, vindhakadigai]}
+disguised_woman: {en: the woman in disguise, ta: மாறுவேடப் பெண், also: [disguised woman, maruvedam]}
+pillar: {en: the pillar goddess, ta: கந்திற்பாவை, also: [kanthir pavai, kandhirpavai, pillar goddess, pillar]}
+righteous_person: {en: someone compassionate, ta: அருளுடையோர், also: []}
+unnamed_deity: {en: an unnamed deity, ta: பெயரில்லாத் தெய்வம், also: []}
+sankatharuman: {en: Sankatharuman, ta: சங்கதருமன், also: [sangatharuman]}
+other_bowl: {en: a different bowl, ta: வேறொரு பாத்திரம், also: []}
+kalinga_king: {en: the Kalinga king, ta: கலிங்க மன்னன், also: [kalinga]}
+brahmins: {en: brahmins, ta: பார்ப்பார், also: []}
+the_virtuous: {en: the virtuous, ta: அறவோர், also: []}
+cows: {en: cows, ta: பசு, also: []}
+chaste_women: {en: chaste women, ta: பத்தினிப் பெண்டிர், also: []}
+the_old: {en: the old, ta: மூத்தோர், also: []}
+children: {en: children, ta: குழந்தைகள், also: []}
+cook: {en: a cook, ta: மடையன், also: [madaiyan]}
+prisoners: {en: the prisoners, ta: சிறையோர், also: []}
+prison_site: {en: the prison, ta: சிறைக்கோட்டம், also: [prison, sirai, siraikottam, charity house, அறக்கோட்டம்]}
+chola_king: {en: the Chola king, ta: சோழ மன்னன், also: [chola, cholan, சோழன்]}
+hunchback: {en: a hunchbacked woman, ta: கூனி, also: [kooni, kuni]}
+garland: {en: Madhavi's garland, ta: மாதவியின் மாலை, also: [maalai, malai, மாலை]}
+kannagi_image: {en: Kannagi's image, ta: கண்ணகி படிமம், also: [statue, image, padimam, silai, சிலை, படிமம்]}
+kannagi_temple: {en: Kannagi's temple, ta: பத்தினிக் கோட்டம், also: [temple, kannagi kovil, pathini kottam, கோயில்]}
+kovalan_ancestor: {en: Kovalan's ancestor, ta: கோவலனின் முன்னோன், also: []}
+townsfolk: {en: the townsfolk, ta: ஊரார், also: []}
+sceptre: {en: the sceptre, ta: செங்கோல், also: [sengol]}
+town_woman: {en: a local woman, ta: ஊர்ப் பெண், also: []}
+male_ascetic: {en: a male ascetic, ta: மாதவன், also: [ascetic, thuravi]}
+himalaya_stone: {en: the Himalayan stone, ta: இமயக் கல், also: [stone, himalaya, himalayan stone, kal, கல்]}
+northern_kings: {en: the northern kings, ta: வட அரசர், also: [kanaka vijaya, kanagan vijayan]}
+vaidika_teacher: {en: the Vaidika teacher, ta: வைதிக வாதி, also: []}
+hill_folk: {en: the hill folk, ta: குன்றவர், also: [kundravar, kuravar]}
+temple_lodging: {en: a lodging by a temple, ta: தேவகோட்ட இருக்கை, also: []}
+flower_grove: {en: the flower grove, ta: மலர்வனம், also: [malarvanam]}
+crystal_room: {en: the crystal room, ta: பளிக்கறை, also: [palikkarai]}
+seat_of_buddha: {en: the great seat, ta: பீடிகை, also: [peedigai, peetikai]}
+guards: {en: the guards, ta: காவலர், also: [kavalar]}
+sword: {en: a sword, ta: வாள், also: [vaal]}
+mantra: {en: a mantra, ta: மந்திரம், also: [manthiram]}
+fire: {en: the fire, ta: தீ, also: [thee, neruppu, நெருப்பு]}
+poet: {en: the poet, ta: புலவர், also: []}
+sage_nagapuram: {en: a sage at Nagapuram, ta: நாகபுர முனிவர், also: []}
+guard: {en: a guard, ta: காவலன், also: []}
+sage: {en: a sage, ta: முனிவர், also: []}
+unknown: {en: an unnamed voice, ta: பெயரில்லாக் குரல், also: []}
+unnamed: {en: unnamed, ta: பெயரில்லை, also: []}
+poets_at_court: {en: the court poets, ta: அவைப் புலவர்கள், also: []}
+himalaya_ascetics: {en: the Himalayan ascetics, ta: இமயத் தாபதர், also: []}
+risen_kovalan: {en: risen Kovalan, ta: எழுந்த கோவலன், also: []}
+knowledge: {en: knowledge, ta: அறிவு, also: []}
+birth: {en: birth, ta: பிறப்பு, also: []}

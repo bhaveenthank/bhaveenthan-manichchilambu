@@ -1,0 +1,68 @@
+[
+{
+"holder": "kovalan",
+"claim": "x20",
+"stance": "accept",
+"t": 7.81,
+"lines": [
+"SIL-07-0307"
+]
+},
+{
+"holder": "pandya_king",
+"claim": "a09",
+"stance": "accept",
+"t": 16.15,
+"lines": [
+"SIL-16-0149"
+]
+},
+{
+"holder": "udayakumaran",
+"claim": "b07",
+"stance": "accept",
+"t": 18.7,
+"lines": [
+"MAN-20-0084",
+"MAN-20-0085"
+]
+},
+{
+"holder": "kanchanan",
+"claim": "b09",
+"stance": "accept",
+"t": 20.21,
+"lines": [
+"MAN-20-0026",
+"MAN-20-0027"
+]
+},
+{
+"holder": "kanchanan",
+"claim": "b11",
+"stance": "accept",
+"t": 20.31,
+"lines": [
+"MAN-20-0078"
+]
+},
+{
+"holder": "kanchanan",
+"claim": "b09",
+"stance": "reject",
+"t": 20.62,
+"lines": [
+"MAN-20-0113"
+]
+},
+{
+"holder": "pandya_king",
+"claim": "a09",
+"stance": "reject",
+"t": 20.7,
+"lines": [
+"SIL-20-0085",
+"SIL-20-0086"
+]
+}
+]

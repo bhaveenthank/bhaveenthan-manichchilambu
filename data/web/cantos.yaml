@@ -1,0 +1,66 @@
+# For browsing. English title and where the canto sits. form comes from the Tamil title. themes are my tags,
+# drawn from the titles and the parts I've read closely. Draft: a scholar should go over them, Manimekalai's late cantos especially.
+SIL-00: {en: Prologue, setting: [Vanci], themes: [frame]}
+SIL-01: {en: Song of blessing and the wedding, setting: [Puhar], themes: [love_home]}
+SIL-02: {en: Setting up home, setting: [Puhar], themes: [love_home]}
+SIL-03: {en: Madhavi's first dance, setting: [Puhar], themes: [art_festival, love_home]}
+SIL-04: {en: Evening, setting: [Puhar], themes: [love_home]}
+SIL-05: {en: The Indra festival begins, setting: [Puhar], themes: [art_festival, city]}
+SIL-06: {en: Bathing in the sea, setting: [Puhar], themes: [art_festival]}
+SIL-07: {en: Songs of the seashore, setting: [Puhar], themes: [love_home, art_festival]}
+SIL-08: {en: Spring, setting: [Puhar], themes: [love_home]}
+SIL-09: {en: The dream told, setting: [Puhar], themes: [dream_omen, love_home]}
+SIL-10: {en: Seeing the country, setting: [On the road], themes: [journey]}
+SIL-11: {en: Seeing the forest, setting: [On the road], themes: [journey]}
+SIL-12: {en: Song of the hunters, setting: [On the road], themes: [journey, goddess_worship]}
+SIL-13: {en: Camping outside the walls, setting: [Madurai], themes: [journey]}
+SIL-14: {en: Seeing the city, setting: [Madurai], themes: [city]}
+SIL-15: {en: The entrusting, setting: [Madurai], themes: [journey, karma_rebirth]}
+SIL-16: {en: The place of killing, setting: [Madurai], themes: [justice, identity_deceit]}
+SIL-17: {en: Dance of the cowherd women, setting: [Madurai], themes: [dream_omen, art_festival]}
+SIL-18: {en: Garland of grief, setting: [Madurai], themes: [grief_fire]}
+SIL-19: {en: Walking through the city, setting: [Madurai], themes: [grief_fire, justice]}
+SIL-20: {en: The pleading, setting: [Madurai], themes: [justice, dream_omen]}
+SIL-21: {en: Garland of the vow, setting: [Madurai], themes: [grief_fire, justice]}
+SIL-22: {en: The city in flames, setting: [Madurai], themes: [grief_fire]}
+SIL-23: {en: The explaining, setting: [Madurai], themes: [karma_rebirth, goddess_worship]}
+SIL-24: {en: Dance of the hill folk, setting: [Chera hills], themes: [goddess_worship]}
+SIL-25: {en: The sighting, setting: [Vanci], themes: [goddess_worship, kingship_war]}
+SIL-26: {en: Taking the stone, setting: [Himalaya], themes: [kingship_war]}
+SIL-27: {en: Bathing the stone, setting: [Himalaya], themes: [kingship_war, grief_fire]}
+SIL-28: {en: Setting up the stone, setting: [Vanci], themes: [goddess_worship, kingship_war]}
+SIL-29: {en: Song of blessing, setting: [Vanci], themes: [goddess_worship]}
+SIL-30: {en: The granting of the boon, setting: [Vanci], themes: [goddess_worship]}
+SIL-31: {en: Closing statement, setting: [Vanci], themes: [frame]}
+SIL-32: {en: Afterword on the book, setting: [], themes: [frame]}
+MAN-00: {en: Prologue, setting: [], themes: [frame]}
+MAN-01: {en: Announcing the festival, setting: [Puhar], themes: [art_festival, city]}
+MAN-02: {en: The town's gossip, setting: [Puhar], themes: [grief_fire, doctrine]}
+MAN-03: {en: Into the flower grove, setting: [Puhar], themes: [city]}
+MAN-04: {en: In the crystal room, setting: [Puhar], themes: [love_home]}
+MAN-05: {en: The goddess Manimekala appears, setting: [Puhar], themes: [goddess_worship]}
+MAN-06: {en: The temple of the burning ground, setting: [Puhar], themes: [doctrine, goddess_worship]}
+MAN-07: {en: The waking, setting: [Puhar], themes: [goddess_worship]}
+MAN-08: {en: Grief on Manipallavam, setting: [Manipallavam], themes: [grief_fire, journey]}
+MAN-09: {en: The seat shows her past births, setting: [Manipallavam], themes: [karma_rebirth]}
+MAN-10: {en: The gift of the mantra, setting: [Manipallavam], themes: [karma_rebirth, goddess_worship]}
+MAN-11: {en: The bowl received, setting: [Manipallavam], themes: [charity_hunger]}
+MAN-12: {en: Bowing to Aravana Adikal, setting: [Puhar], themes: [doctrine]}
+MAN-13: {en: The story of Aputhiran, setting: [Puhar], themes: [charity_hunger, karma_rebirth]}
+MAN-14: {en: The history of the bowl, setting: [Puhar], themes: [charity_hunger, karma_rebirth]}
+MAN-15: {en: Going to beg with the bowl, setting: [Puhar], themes: [charity_hunger]}
+MAN-16: {en: Atirai gives alms, setting: [Puhar], themes: [charity_hunger]}
+MAN-17: {en: The hall of charity, setting: [Puhar], themes: [charity_hunger, karma_rebirth]}
+MAN-18: {en: Udayakumaran enters the hall, setting: [Puhar], themes: [love_home, identity_deceit]}
+MAN-19: {en: The prison made a house of charity, setting: [Puhar], themes: [charity_hunger, identity_deceit]}
+MAN-20: {en: Kanchanan strikes down Udayakumaran, setting: [Puhar], themes: [identity_deceit, karma_rebirth]}
+MAN-21: {en: The pillar image foretells, setting: [Puhar], themes: [karma_rebirth, goddess_worship]}
+MAN-22: {en: Imprisoned, setting: [Puhar], themes: [justice, kingship_war]}
+MAN-23: {en: Released, setting: [Puhar], themes: [justice, doctrine]}
+MAN-24: {en: Reaching Aputhiran's land, setting: [Nagapuram], themes: [journey, doctrine]}
+MAN-25: {en: To Manipallavam with Aputhiran, setting: [Manipallavam], themes: [karma_rebirth, journey]}
+MAN-26: {en: Entering Vanci, setting: [Vanci], themes: [goddess_worship, karma_rebirth, kingship_war]}
+MAN-27: {en: Hearing the accounts of the sects, setting: [Vanci], themes: [doctrine]}
+MAN-28: {en: Entering Kanchi, setting: [Kanchi], themes: [charity_hunger, journey]}
+MAN-29: {en: Taking up the path and hearing the dharma, setting: [Kanchi], themes: [doctrine]}
+MAN-30: {en: Austerities to end rebirth, setting: [Kanchi], themes: [doctrine, karma_rebirth]}

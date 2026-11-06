@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.egg-info/
+.DS_Store
+.claude/
+web/node_modules/
+web/dist/
+node_modules/
+# Every model prompt and answer. Keep it for the research, and choose deliberately whether to publish it.
+data/llm_cache/
+*.partial

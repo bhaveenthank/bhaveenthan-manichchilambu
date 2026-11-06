@@ -1,0 +1,37 @@
+# Third question set, for the extension episodes. Same rules: gold from reading the cited lines.
+- {id: e01, ep: dream, op: happened, kind: slander, roles: {target: kannagi}, gold: false, gloss: "Was Kannagi really slandered by the town? (dream)"}
+- {id: e02, ep: dream, op: happened, kind: sceptre_falls, roles: {holder: pandya_king}, gold: false, gloss: "Did the sceptre really fall? (the queen's dream)"}
+- {id: e03, ep: dream, op: happened, kind: plead, roles: {agent: kannagi, addressee: pandya_king}, gold: true, gloss: "Did Kannagi plead before the king? (dreamt, and later done)"}
+- {id: e04, ep: dream, op: tellers, kind: harmed, roles: {patient: kovalan}, gold: [[poet, kannagi]], gloss: "Who tells of harm to Kovalan in the dream?"}
+- {id: e05, ep: dream, op: causes, kind: plead, roles: {agent: kannagi}, gold: [[x04, foreshadowed]], gloss: "What does the plea link back to?"}
+- {id: e06, ep: entrust, op: state_of, thing: kannagi, t: 16, gold: ["holds kannagi ank_k1", "holds kannagi ank_k2", "in_care_of matari kannagi"], gloss: "Kannagi's state in early canto 16: in Matari's care, and both anklets still with her"}
+- {id: e07, ep: entrust, op: state_of, thing: kannagi, t: 23, gold: ["holds kannagi ank_k2"], gloss: "And after Matari says she has lost her?"}
+- {id: e08, ep: entrust, op: holder, obj: kannagi, t: 16, gold: null, gloss: "Is Kannagi 'held' like an object? (she must not be)"}
+- {id: e09, ep: song, op: happened, kind: mind_elsewhere, roles: {agent: madhavi}, gold: false, gloss: "Was Madhavi's mind on another? (only Kovalan's reading)"}
+- {id: e10, ep: song, op: belief, holder: kovalan, content: x20, t: 8, gold: accept, gloss: "Did Kovalan believe that?"}
+- {id: e11, ep: song, op: causes, kind: leave, roles: {agent: kovalan, target: madhavi}, gold: [[x21, motivates], [x22, karma]], gloss: "Why did he leave her?"}
+- {id: e12, ep: risen, op: happened, kind: rise, roles: {agent: kovalan}, gold: true, gloss: "Does the poet tell the corpse rising as an event?"}
+- {id: e13, ep: risen, op: alive, who: kovalan, t: 19.6, gold: false, gloss: "Rising doesn't undo the death. Alive?"}
+- {id: e14, ep: risen, op: happened, kind: illusion, roles: {theme: risen_kovalan}, gold: false, gloss: "Was it an illusion? (she only asks)"}
+- {id: e15, ep: transport, op: state_of, thing: manipallavam, t: 7, gold: ["at manimekalai manipallavam"], gloss: "Who is on Manipallavam after the carrying?"}
+- {id: e16, ep: transport, op: retellings, kind: carry, roles: {agent: manimekhala_deity}, gold: [x41], gloss: "Is the carrying told again? (the goddess tells it herself)"}
+- {id: e17, ep: transport, op: tellers, kind: carry, roles: {agent: manimekhala_deity}, gold: [[poet], [poet, manimekhala_deity]], gloss: "Who tells it?"}
+- {id: e18, ep: ascetic, op: happened, kind: disguise, roles: {agent: manimekalai, form: male_ascetic}, gold: true, gloss: "Did she take an ascetic's form?"}
+- {id: e19, ep: ascetic, op: causes, kind: disguise, roles: {agent: manimekalai, form: male_ascetic}, gold: [[x50, motivates]], gloss: "On whose instruction?"}
+- {id: e20, ep: madhavi, op: happened, kind: birth_is_suffering, roles: {theme: birth}, gold: false, gloss: "A doctrine stays a claim, it doesn't enter the facts"}
+- {id: e21, ep: madhavi, op: tellers, kind: birth_is_suffering, roles: {theme: birth}, gold: [[poet, madhavi, aravanan]], gloss: "Through whom do we hear it?"}
+- {id: e22, ep: madhavi, op: retellings, kind: burn, roles: {agent: fire, patient: madurai}, gold: [r04, x61], gloss: "Which records retell the burning? (Kannagi and Madhavi, both in Manimekalai)"}
+- {id: e23, ep: image, op: state_of, thing: kannagi_image, t: 29, gold: ["depicts kannagi_image kannagi"], gloss: "What is the image's relation to Kannagi?"}
+- {id: e24, ep: image, op: happened, kind: fetch_stone, roles: {agent: cenkuttuvan}, gold: false, gloss: "Is the poets' 'if you took stone' itself the fetching?"}
+- {id: e25, ep: image, op: happened, kind: northern_insult, roles: {agent: northern_kings}, gold: false, gloss: "Did the kings insult him? (only reported, by ascetics, through him)"}
+- {id: e26, ep: doctrine, op: happened, kind: truth_by_proof, roles: {theme: knowledge}, gold: false, gloss: "The Vaidika teacher's claim as fact?"}
+- {id: e27, ep: doctrine, op: happened, kind: find_no_truth, roles: {agent: manimekalai}, gold: false, gloss: "Kannagi's prediction as already done?"}
+- {id: e28, ep: worship, op: retellings, kind: ascend, roles: {agent: kannagi}, gold: [x91], gloss: "Is the ascent told again?"}
+- {id: e29, ep: worship, op: happened, kind: take_as_deity, roles: {agent: hill_folk}, gold: false, gloss: "'Take her as your deity' is a call, not the deed"}
+- {id: e30, ep: plain, op: role_of, kind: see, roles: {agent: udayakumaran}, role: target, gold: manimekalai, gloss: "Whom did he see?"}
+- {id: e31, ep: plain, op: happened, kind: dance, roles: {agent: madhavi}, gold: true, gloss: "Did Madhavi dance?"}
+- {id: e32, ep: plain, op: role_of, kind: fly, roles: {agent: manimekalai, place: vanci}, role: place, gold: vanci, gloss: "Where did she fly?"}
+- {id: e33, ep: plain, op: happened, kind: faint, roles: {agent: pandya_king}, gold: true, gloss: "Did the king faint?"}
+- {id: e34, ep: plain, op: happened, kind: enter, roles: {agent: manimekalai, place: crystal_room}, gold: true, gloss: "Did she enter the crystal room?"}
+- {id: e35, ep: plain, op: role_of, kind: see, roles: {agent: kovalan}, role: target, gold: goldsmith, gloss: "Whom did Kovalan see in the street?"}
+- {id: e36, ep: plain, op: happened, kind: see, roles: {agent: manimekalai, target: udayakumaran}, gold: false, gloss: "Wrong direction: he saw her at this line"}

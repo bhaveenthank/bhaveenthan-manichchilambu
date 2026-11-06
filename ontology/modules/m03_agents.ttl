@@ -1,0 +1,25 @@
+# People, deities and groups
+#
+# A group doing something doesn't mean every member did. The order goes to the guards, one drunk m
+# an strikes.
+
+@prefix iy:   <https://example.org/manichchilambu#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crminf: <http://www.cidoc-crm.org/extensions/crminf/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://example.org/manichchilambu/m03_agents> a owl:Ontology ; rdfs:label "People, deities and groups" ; owl:imports <https://example.org/manichchilambu> .
+# Closest standard term: crm:E39_Actor
+
+iy:Agent a owl:Class .
+iy:Ruler a owl:Class ; rdfs:subClassOf iy:Person .
+iy:Merchant a owl:Class ; rdfs:subClassOf iy:Person .
+iy:Artisan a owl:Class ; rdfs:subClassOf iy:Person .
+iy:Ascetic a owl:Class ; rdfs:subClassOf iy:Person .
+iy:Dynasty a owl:Class ; rdfs:subClassOf iy:Group .
+iy:Court a owl:Class ; rdfs:subClassOf iy:Group .
+
+iy:memberOf a owl:ObjectProperty .

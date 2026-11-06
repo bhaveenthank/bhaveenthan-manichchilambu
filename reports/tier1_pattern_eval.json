@@ -1,0 +1,145 @@
+{
+ "rounds": [
+  {
+   "relation": "kin",
+   "start": "hand",
+   "round": 1,
+   "proposed": 9,
+   "correct": 1,
+   "precision": 0.11,
+   "new": 9,
+   "new_correct": 1
+  },
+  {
+   "relation": "kin",
+   "start": "hand",
+   "round": 2,
+   "proposed": 4,
+   "correct": 1,
+   "precision": 0.25,
+   "new": 0,
+   "new_correct": 0
+  },
+  {
+   "relation": "kin",
+   "start": "hand",
+   "round": 3,
+   "proposed": 0,
+   "correct": 0,
+   "precision": null,
+   "new": 0,
+   "new_correct": 0
+  },
+  {
+   "relation": "kin",
+   "start": "learned",
+   "round": 1,
+   "proposed": 40,
+   "correct": 2,
+   "precision": 0.05,
+   "new": 40,
+   "new_correct": 2
+  },
+  {
+   "relation": "kin",
+   "start": "learned",
+   "round": 2,
+   "proposed": 40,
+   "correct": 2,
+   "precision": 0.05,
+   "new": 7,
+   "new_correct": 0
+  },
+  {
+   "relation": "kin",
+   "start": "learned",
+   "round": 3,
+   "proposed": 40,
+   "correct": 2,
+   "precision": 0.05,
+   "new": 5,
+   "new_correct": 0
+  },
+  {
+   "relation": "spouse",
+   "start": "hand",
+   "round": 1,
+   "proposed": 7,
+   "correct": 1,
+   "precision": 0.14,
+   "new": 7,
+   "new_correct": 1
+  },
+  {
+   "relation": "spouse",
+   "start": "hand",
+   "round": 2,
+   "proposed": 2,
+   "correct": 0,
+   "precision": 0.0,
+   "new": 0,
+   "new_correct": 0
+  },
+  {
+   "relation": "spouse",
+   "start": "hand",
+   "round": 3,
+   "proposed": 0,
+   "correct": 0,
+   "precision": null,
+   "new": 0,
+   "new_correct": 0
+  },
+  {
+   "relation": "spouse",
+   "start": "learned",
+   "round": 1,
+   "proposed": 33,
+   "correct": 1,
+   "precision": 0.03,
+   "new": 33,
+   "new_correct": 1
+  },
+  {
+   "relation": "spouse",
+   "start": "learned",
+   "round": 2,
+   "proposed": 40,
+   "correct": 2,
+   "precision": 0.05,
+   "new": 14,
+   "new_correct": 1
+  },
+  {
+   "relation": "spouse",
+   "start": "learned",
+   "round": 3,
+   "proposed": 40,
+   "correct": 0,
+   "precision": 0.0,
+   "new": 5,
+   "new_correct": 0
+  }
+ ],
+ "scorer_plumbing_test": {
+  "n": 120,
+  "base_rate": 0.05,
+  "brier": 0.055,
+  "brier_baseline": 0.047,
+  "log_loss": 0.213,
+  "reliability": [
+   {
+    "bin": "0.0-0.2",
+    "n": 118,
+    "mean_score": 0.045,
+    "share_correct": 0.051
+   },
+   {
+    "bin": "0.6-0.8",
+    "n": 2,
+    "mean_score": 0.695,
+    "share_correct": 0.0
+   }
+  ]
+ }
+}

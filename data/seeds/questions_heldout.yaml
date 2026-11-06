@@ -1,0 +1,37 @@
+# Held-out questions. Same operators as dev, new episodes. Written before running anything on them.
+- {id: h01, ep: curse, op: happened, kind: spy, roles: {agent: sangaman}, gold: false, gloss: "Was Sangaman really a spy?"}
+- {id: h02, ep: curse, op: happened, kind: accuse, roles: {agent: bharatan, target: sangaman}, gold: true, gloss: "Did Bharatan accuse him?"}
+- {id: h03, ep: curse, op: happened, kind: suffer_same, roles: {patient: bharatan}, gold: false, gloss: "Is the curse's wish itself an event? (it's a wish)"}
+- {id: h04, ep: curse, op: tellers, kind: spy, roles: {agent: sangaman}, gold: [[poet, madurapati, bharatan], [poet, kannagi, madurapati, bharatan]], gloss: "Who tells us he was a spy, through which voices, in both epics?"}
+- {id: h05, ep: curse, op: tellers, kind: same_person, roles: {later: kovalan, earlier: bharatan}, gold: [[poet, madurapati]], gloss: "Who says Kovalan was Bharatan?"}
+- {id: h06, ep: curse, op: alive, who: sangaman, t: -48, gold: false, gloss: "Is Sangaman alive when Neeli protests?"}
+- {id: h07, ep: curse, op: conflicts, kind: spy, roles: {agent: sangaman}, gold: [r03], gloss: "Does anyone contradict the spy claim?"}
+- {id: h08, ep: curse, op: causes, kind: curse, roles: {agent: neeli}, gold: [[d05, enables]], gloss: "What led to the curse?"}
+- {id: h09, ep: fire, op: happened, kind: burn, roles: {agent: fire, patient: madurai}, gold: true, gloss: "Did the fire burn Madurai?"}
+- {id: h10, ep: fire, op: happened, kind: spare, roles: {agent: agni}, gold: false, gloss: "Is the sparing an event in the record? (it's her command, the outcome isn't narrated at this line)"}
+- {id: h11, ep: fire, op: happened, kind: blameless, roles: {theme: kannagi}, gold: false, gloss: "'I am blameless' is her claim, not a fact we assert. Counted as happened?"}
+- {id: h12, ep: fire, op: causes, kind: burn, roles: {agent: fire, patient: madurai}, gold: [[e01, causes], [d08, fulfils], [e02, enables]], gloss: "All reasons the text gives for the fire?"}
+- {id: h13, ep: fire, op: alive, who: pandya_queen, t: 21.0, gold: false, gloss: "Is the queen alive by the time the fire comes?"}
+- {id: h14, ep: fire, op: alive, who: matari, t: 22.0, gold: true, gloss: "Is Matari alive before she walks into the fire?"}
+- {id: h15, ep: fire, op: alive, who: matari, t: 23, gold: false, gloss: "And after?"}
+- {id: h16, ep: rahulan, op: happened, kind: child_of, roles: {agent: udayakumaran, target: manimekalai}, gold: true, gloss: "Was Udayakumaran ever her son? (yes, in other births, per the pillar)"}
+- {id: h17, ep: rahulan, op: tellers, kind: same_person, roles: {later: udayakumaran, earlier: rahulan}, gold: [[poet, manimekalai], [poet, manimekhala_deity]], gloss: "Who says Udayakumaran was Rahulan?"}
+- {id: h18, ep: rahulan, op: happened, kind: kill, roles: {agent: rahulan, patient: cook}, gold: true, gloss: "Did Rahulan kill the cook?"}
+- {id: h19, ep: rahulan, op: alive, who: udayakumaran, t: 19, gold: true, gloss: "Is Udayakumaran alive in canto 19?"}
+- {id: h20, ep: rahulan, op: alive, who: rahulan, t: -70, gold: true, gloss: "Rahulan alive before his death in that birth?"}
+- {id: h21, ep: rahulan, op: role_of, kind: kill, roles: {agent: rahulan}, role: instrument, gold: sword, gloss: "What did Rahulan use?"}
+- {id: h22, ep: aputhiran, op: tellers, kind: same_person, roles: {later: punyarasan}, gold: [[poet, aravanan]], gloss: "Who says Punyarasan was Aputhiran?"}
+- {id: h23, ep: aputhiran, op: role_of, kind: child_of, roles: {agent: punyarasan}, role: target, gold: bhumichandran, gloss: "Whose son is Punyarasan?"}
+- {id: h24, ep: aputhiran, op: alive, who: aputhiran, t: -4.6, gold: true, gloss: "Aputhiran alive before his fast ends?"}
+- {id: h25, ep: prison, op: happened, kind: convert, roles: {agent: chola_king, theme: prison_site}, gold: true, gloss: "Did the king convert the prison?"}
+- {id: h26, ep: prison, op: causes, kind: convert, roles: {agent: chola_king, theme: prison_site}, gold: [[h02, motivates]], gloss: "Why did he convert it?"}
+- {id: h27, ep: garland, op: holder, obj: garland, t: 3.15, gold: [hunchback], gloss: "Who holds the garland before the sale?"}
+- {id: h28, ep: garland, op: holder, obj: garland, t: 3.3, gold: [kovalan], gloss: "After?"}
+- {id: h29, ep: garland, op: happened, kind: give, roles: {agent: madhavi, recipient: kovalan}, gold: false, gloss: "Did Madhavi give it straight to Kovalan?"}
+- {id: h30, ep: bridge, op: happened, kind: child_of, roles: {agent: manimekalai, target: kannagi}, gold: false, gloss: "Is Kannagi her birth mother? (she is called mother)"}
+- {id: h31, ep: bridge, op: happened, kind: child_of, roles: {agent: manimekalai, target: madhavi}, gold: true, gloss: "Is Madhavi her mother?"}
+- {id: h32, ep: bridge, op: happened, kind: worship, roles: {agent: manimekalai, theme: kannagi}, gold: false, gloss: "Does she worship the person or the image? (image)"}
+- {id: h33, ep: bridge, op: open_values, kind: grant_boon, roles: {}, role: agent, gold: [kannagi, unnamed], gloss: "Who granted the boon? (open)"}
+- {id: h34, ep: retelling, op: tellers, kind: accuse, roles: {agent: bharatan}, gold: [[poet, madurapati], [poet, kannagi, madurapati]], gloss: "Tellings of the old accusation across both epics?"}
+- {id: h35, ep: retelling, op: happened, kind: reborn_many, roles: {agent: kannagi}, gold: false, gloss: "Is her future rebirth an event yet? (it's predicted)"}
+- {id: h36, ep: retelling, op: role_of, kind: destroy, roles: {agent: kannagi}, role: patient, gold: madurai, gloss: "What did she say she destroyed?"}

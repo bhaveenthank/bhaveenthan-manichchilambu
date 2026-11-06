@@ -1,0 +1,1960 @@
+{
+"SIL-00-0002": [
+"ilanko"
+],
+"SIL-00-0010": [
+"cattan"
+],
+"SIL-00-0013": [
+"puhar"
+],
+"SIL-00-0014": [
+"kovalan"
+],
+"SIL-00-0017": [
+"kannagi"
+],
+"SIL-00-0020": [
+"madurai"
+],
+"SIL-00-0022": [
+"goldsmith"
+],
+"SIL-00-0031": [
+"kovalan"
+],
+"SIL-00-0035": [
+"madurai"
+],
+"SIL-00-0039": [
+"madurai"
+],
+"SIL-00-0043": [
+"madurapati",
+"madurai"
+],
+"SIL-00-0047": [
+"singapuram"
+],
+"SIL-00-0048": [
+"sangaman"
+],
+"SIL-00-0065": [
+"madhavi"
+],
+"SIL-00-0070": [
+"madhavi"
+],
+"SIL-00-0080": [
+"vanci"
+],
+"SIL-00-0088": [
+"madurai"
+],
+"SIL-00-0089": [
+"cattan"
+],
+"SIL-00-0091": [
+"puhar"
+],
+"SIL-01-0010": [
+"puhar"
+],
+"SIL-01-0022": [
+"puhar"
+],
+"SIL-01-0023": [
+"manaikan"
+],
+"SIL-01-0029": [
+"kannagi"
+],
+"SIL-01-0033": [
+"masattuvan"
+],
+"SIL-01-0039": [
+"kovalan"
+],
+"SIL-01-0053": [
+"kovalan"
+],
+"SIL-02-0018": [
+"madhavi"
+],
+"SIL-02-0037": [
+"kovalan"
+],
+"SIL-02-0090": [
+"kannagi"
+],
+"SIL-03-0007": [
+"madhavi"
+],
+"SIL-03-0170": [
+"madhavi"
+],
+"SIL-03-0171": [
+"kovalan"
+],
+"SIL-03-0172": [
+"madhavi"
+],
+"SIL-03-0178": [
+"madhavi",
+"puhar"
+],
+"SIL-04-0033": [
+"kovalan"
+],
+"SIL-04-0034": [
+"madhavi"
+],
+"SIL-04-0055": [
+"kovalan"
+],
+"SIL-04-0057": [
+"kannagi"
+],
+"SIL-04-0087": [
+"kannagi",
+"madhavi"
+],
+"SIL-05-0190": [
+"madhavi"
+],
+"SIL-05-0201": [
+"kovalan"
+],
+"SIL-05-0237": [
+"kannagi",
+"madhavi"
+],
+"SIL-06-0024": [
+"madhavi"
+],
+"SIL-06-0032": [
+"puhar"
+],
+"SIL-06-0069": [
+"madhavi"
+],
+"SIL-06-0109": [
+"kovalan"
+],
+"SIL-06-0173": [
+"kovalan"
+],
+"SIL-06-0174": [
+"madhavi"
+],
+"SIL-07-0018": [
+"kovalan"
+],
+"SIL-07-0020": [
+"madhavi"
+],
+"SIL-07-0151": [
+"madhavi"
+],
+"SIL-07-0311": [
+"kovalan"
+],
+"SIL-07-0314": [
+"madhavi"
+],
+"SIL-08-0003": [
+"madurai"
+],
+"SIL-08-0004": [
+"vanci"
+],
+"SIL-08-0015": [
+"kovalan"
+],
+"SIL-08-0016": [
+"madhavi"
+],
+"SIL-08-0045": [
+"madhavi"
+],
+"SIL-08-0071": [
+"kovalan"
+],
+"SIL-08-0073": [
+"kovalan"
+],
+"SIL-08-0118": [
+"madhavi"
+],
+"SIL-09-0033": [
+"tevanti"
+],
+"SIL-09-0041": [
+"kannagi"
+],
+"SIL-09-0049": [
+"kovalan"
+],
+"SIL-09-0066": [
+"kovalan"
+],
+"SIL-09-0076": [
+"madurai"
+],
+"SIL-09-0081": [
+"madhavi"
+],
+"SIL-10-0036": [
+"kavunti"
+],
+"SIL-10-0041": [
+"madurai"
+],
+"SIL-10-0045": [
+"kavunti"
+],
+"SIL-10-0051": [
+"madurai"
+],
+"SIL-10-0058": [
+"madurai"
+],
+"SIL-10-0061": [
+"kavunti"
+],
+"SIL-10-0064": [
+"kovalan"
+],
+"SIL-10-0099": [
+"kavunti"
+],
+"SIL-10-0165": [
+"kavunti"
+],
+"SIL-10-0170": [
+"kavunti"
+],
+"SIL-10-0193": [
+"kavunti"
+],
+"SIL-10-0211": [
+"kavunti"
+],
+"SIL-10-0230": [
+"kannagi"
+],
+"SIL-10-0233": [
+"kavunti"
+],
+"SIL-10-0246": [
+"kavunti"
+],
+"SIL-10-0271": [
+"puhar"
+],
+"SIL-11-0033": [
+"kovalan"
+],
+"SIL-11-0058": [
+"madurai"
+],
+"SIL-11-0059": [
+"kovalan"
+],
+"SIL-11-0139": [
+"madurai"
+],
+"SIL-11-0147": [
+"madurai"
+],
+"SIL-11-0151": [
+"kavunti"
+],
+"SIL-11-0163": [
+"kovalan"
+],
+"SIL-11-0166": [
+"kavunti"
+],
+"SIL-11-0178": [
+"kovalan"
+],
+"SIL-11-0179": [
+"madhavi"
+],
+"SIL-11-0188": [
+"madurai"
+],
+"SIL-11-0196": [
+"kovalan"
+],
+"SIL-11-0205": [
+"kovalan"
+],
+"SIL-12-0068": [
+"neeli"
+],
+"SIL-12-0164": [
+"neeli"
+],
+"SIL-13-0025": [
+"madurai"
+],
+"SIL-13-0048": [
+"kovalan"
+],
+"SIL-13-0049": [
+"madhavi"
+],
+"SIL-13-0051": [
+"madhavi"
+],
+"SIL-13-0062": [
+"kovalan"
+],
+"SIL-13-0067": [
+"madhavi"
+],
+"SIL-13-0076": [
+"madhavi"
+],
+"SIL-13-0082": [
+"madhavi"
+],
+"SIL-13-0120": [
+"madhavi"
+],
+"SIL-13-0132": [
+"madurai"
+],
+"SIL-13-0149": [
+"madurai"
+],
+"SIL-13-0181": [
+"madurai"
+],
+"SIL-14-0006": [
+"madurai"
+],
+"SIL-14-0015": [
+"kovalan"
+],
+"SIL-14-0016": [
+"kavunti"
+],
+"SIL-14-0025": [
+"kavunti"
+],
+"SIL-14-0060": [
+"madurai"
+],
+"SIL-14-0110": [
+"madurai"
+],
+"SIL-14-0113": [
+"madhavi"
+],
+"SIL-14-0116": [
+"madurai"
+],
+"SIL-14-0218": [
+"kovalan"
+],
+"SIL-15-0006": [
+"madurai"
+],
+"SIL-15-0009": [
+"madurai"
+],
+"SIL-15-0010": [
+"kovalan"
+],
+"SIL-15-0013": [
+"matalan"
+],
+"SIL-15-0018": [
+"kavunti"
+],
+"SIL-15-0019": [
+"kovalan"
+],
+"SIL-15-0022": [
+"madhavi"
+],
+"SIL-15-0025": [
+"madhavi"
+],
+"SIL-15-0033": [
+"manimekhala_deity"
+],
+"SIL-15-0040": [
+"madhavi"
+],
+"SIL-15-0095": [
+"kovalan"
+],
+"SIL-15-0104": [
+"madhavi",
+"manimekalai"
+],
+"SIL-15-0112": [
+"madurai"
+],
+"SIL-15-0114": [
+"kovalan"
+],
+"SIL-15-0118": [
+"matari"
+],
+"SIL-15-0119": [
+"kavunti"
+],
+"SIL-15-0123": [
+"matari"
+],
+"SIL-15-0125": [
+"matari"
+],
+"SIL-15-0200": [
+"kavunti"
+],
+"SIL-16-0009": [
+"madurai"
+],
+"SIL-16-0110": [
+"goldsmith"
+],
+"SIL-16-0111": [
+"pandya_king",
+"pandya_queen"
+],
+"SIL-16-0115": [
+"goldsmith"
+],
+"SIL-16-0120": [
+"goldsmith"
+],
+"SIL-16-0121": [
+"pandya_queen"
+],
+"SIL-16-0125": [
+"kovalan"
+],
+"SIL-16-0131": [
+"madurai"
+],
+"SIL-16-0136": [
+"pandya_queen"
+],
+"SIL-16-0137": [
+"pandya_king"
+],
+"SIL-16-0139": [
+"pandya_queen"
+],
+"SIL-16-0149": [
+"pandya_king"
+],
+"SIL-16-0154": [
+"pandya_king"
+],
+"SIL-16-0157": [
+"kovalan"
+],
+"SIL-16-0158": [
+"pandya_king"
+],
+"SIL-16-0161": [
+"goldsmith"
+],
+"SIL-16-0165": [
+"goldsmith"
+],
+"SIL-16-0193": [
+"pandya_king"
+],
+"SIL-16-0202": [
+"goldsmith"
+],
+"SIL-16-0216": [
+"pandya_king"
+],
+"SIL-16-0217": [
+"kovalan"
+],
+"SIL-16-0220": [
+"kannagi"
+],
+"SIL-17-0024": [
+"kannagi"
+],
+"SIL-19-0016": [
+"madurai"
+],
+"SIL-20-0030": [
+"pandya_queen"
+],
+"SIL-20-0032": [
+"pandya_queen"
+],
+"SIL-20-0034": [
+"pandya_king"
+],
+"SIL-20-0041": [
+"pandya_king"
+],
+"SIL-20-0043": [
+"pandya_king"
+],
+"SIL-20-0044": [
+"pandya_king"
+],
+"SIL-20-0046": [
+"kannagi"
+],
+"SIL-20-0060": [
+"kannagi"
+],
+"SIL-20-0069": [
+"masattuvan"
+],
+"SIL-20-0073": [
+"kovalan"
+],
+"SIL-20-0074": [
+"kannagi"
+],
+"SIL-20-0076": [
+"kannagi"
+],
+"SIL-20-0077": [
+"pandya_king"
+],
+"SIL-20-0079": [
+"kannagi"
+],
+"SIL-20-0082": [
+"kannagi"
+],
+"SIL-20-0083": [
+"pandya_king"
+],
+"SIL-20-0085": [
+"goldsmith"
+],
+"SIL-20-0086": [
+"pandya_king"
+],
+"SIL-20-0089": [
+"pandya_king"
+],
+"SIL-20-0090": [
+"pandya_queen"
+],
+"SIL-20-0101": [
+"pandya_king"
+],
+"SIL-20-0103": [
+"pandya_king"
+],
+"SIL-21-0011": [
+"vanci"
+],
+"SIL-21-0037": [
+"madurai"
+],
+"SIL-21-0039": [
+"madurai"
+],
+"SIL-21-0043": [
+"madurai"
+],
+"SIL-21-0046": [
+"kannagi"
+],
+"SIL-21-0050": [
+"kannagi"
+],
+"SIL-21-0056": [
+"kannagi"
+],
+"SIL-21-0057": [
+"madurai"
+],
+"SIL-22-0003": [
+"pandya_king"
+],
+"SIL-22-0077": [
+"kanchi"
+],
+"SIL-22-0157": [
+"madurapati"
+],
+"SIL-22-0162": [
+"madurapati"
+],
+"SIL-23-0014": [
+"kannagi"
+],
+"SIL-23-0022": [
+"madurapati",
+"madurai"
+],
+"SIL-23-0059": [
+"puhar"
+],
+"SIL-23-0123": [
+"madurai"
+],
+"SIL-23-0136": [
+"madurai"
+],
+"SIL-23-0140": [
+"singapuram"
+],
+"SIL-23-0149": [
+"singapuram"
+],
+"SIL-23-0151": [
+"sangaman"
+],
+"SIL-23-0154": [
+"kovalan",
+"bharatan"
+],
+"SIL-23-0158": [
+"sangaman"
+],
+"SIL-23-0159": [
+"neeli"
+],
+"SIL-23-0177": [
+"kannagi",
+"madurapati",
+"madurai"
+],
+"SIL-23-0195": [
+"kannagi"
+],
+"SIL-23-0198": [
+"kovalan"
+],
+"SIL-23-0200": [
+"kannagi"
+],
+"SIL-23-0204": [
+"kannagi"
+],
+"SIL-23-0224": [
+"pandya_king"
+],
+"SIL-25-0005": [
+"ilanko"
+],
+"SIL-25-0009": [
+"vanci"
+],
+"SIL-25-0034": [
+"vanci"
+],
+"SIL-25-0074": [
+"vanci"
+],
+"SIL-25-0077": [
+"madurai"
+],
+"SIL-25-0084": [
+"cenkuttuvan"
+],
+"SIL-25-0098": [
+"cenkuttuvan"
+],
+"SIL-25-0110": [
+"cenkuttuvan"
+],
+"SIL-25-0115": [
+"cenkuttuvan"
+],
+"SIL-25-0132": [
+"kanchi"
+],
+"SIL-25-0134": [
+"kanchi"
+],
+"SIL-25-0135": [
+"vanci"
+],
+"SIL-25-0136": [
+"kanchi"
+],
+"SIL-25-0141": [
+"vanci"
+],
+"SIL-25-0142": [
+"vanci"
+],
+"SIL-25-0143": [
+"vanci"
+],
+"SIL-25-0144": [
+"vanci"
+],
+"SIL-25-0148": [
+"vanci"
+],
+"SIL-25-0149": [
+"vanci"
+],
+"SIL-25-0174": [
+"vanci"
+],
+"SIL-25-0179": [
+"vanci"
+],
+"SIL-25-0180": [
+"vanci"
+],
+"SIL-26-0022": [
+"vanci"
+],
+"SIL-26-0046": [
+"vanci"
+],
+"SIL-26-0050": [
+"vanci"
+],
+"SIL-26-0056": [
+"vanci"
+],
+"SIL-26-0079": [
+"vanci"
+],
+"SIL-26-0099": [
+"vanci"
+],
+"SIL-26-0191": [
+"kanchi"
+],
+"SIL-27-0048": [
+"matalan"
+],
+"SIL-27-0049": [
+"madhavi"
+],
+"SIL-27-0056": [
+"matalan"
+],
+"SIL-27-0058": [
+"madhavi"
+],
+"SIL-27-0061": [
+"madurai"
+],
+"SIL-27-0063": [
+"kovalan"
+],
+"SIL-27-0071": [
+"madurai"
+],
+"SIL-27-0074": [
+"matari"
+],
+"SIL-27-0075": [
+"kovalan",
+"pandya_king"
+],
+"SIL-27-0079": [
+"kavunti"
+],
+"SIL-27-0084": [
+"pandya_king",
+"madurai"
+],
+"SIL-27-0090": [
+"kovalan",
+"masattuvan"
+],
+"SIL-27-0098": [
+"kannagi"
+],
+"SIL-27-0103": [
+"madhavi"
+],
+"SIL-27-0117": [
+"matalan"
+],
+"SIL-27-0127": [
+"vetrivel_celiyan"
+],
+"SIL-27-0131": [
+"madurai"
+],
+"SIL-27-0149": [
+"vanci"
+],
+"SIL-27-0157": [
+"pandya_king"
+],
+"SIL-27-0158": [
+"matalan"
+],
+"SIL-27-0159": [
+"ilanko"
+],
+"SIL-27-0163": [
+"matalan"
+],
+"SIL-27-0176": [
+"matalan"
+],
+"SIL-27-0249": [
+"vanci"
+],
+"SIL-27-0256": [
+"vanci"
+],
+"SIL-28-0004": [
+"vanci"
+],
+"SIL-28-0081": [
+"matalan"
+],
+"SIL-28-0097": [
+"madurai"
+],
+"SIL-28-0112": [
+"matalan"
+],
+"SIL-28-0147": [
+"vanci"
+],
+"SIL-28-0193": [
+"matalan"
+],
+"SIL-28-0196": [
+"vanci"
+],
+"SIL-28-0214": [
+"vanci"
+],
+"SIL-28-0218": [
+"madurai"
+],
+"SIL-29-0005": [
+"cenkuttuvan"
+],
+"SIL-29-0006": [
+"vanci"
+],
+"SIL-29-0019": [
+"vanci"
+],
+"SIL-29-0021": [
+"kannagi"
+],
+"SIL-29-0024": [
+"kovalan"
+],
+"SIL-29-0026": [
+"kannagi"
+],
+"SIL-29-0028": [
+"masattuvan"
+],
+"SIL-29-0031": [
+"tevanti"
+],
+"SIL-29-0032": [
+"madurai"
+],
+"SIL-29-0037": [
+"cenkuttuvan"
+],
+"SIL-29-0038": [
+"tevanti"
+],
+"SIL-29-0045": [
+"madhavi"
+],
+"SIL-29-0055": [
+"puhar"
+],
+"SIL-29-0056": [
+"tevanti"
+],
+"SIL-29-0063": [
+"kovalan"
+],
+"SIL-29-0067": [
+"masattuvan"
+],
+"SIL-29-0068": [
+"manaikan"
+],
+"SIL-29-0073": [
+"madhavi"
+],
+"SIL-29-0075": [
+"tevanti"
+],
+"SIL-29-0081": [
+"cenkuttuvan"
+],
+"SIL-29-0086": [
+"kannagi",
+"cenkuttuvan"
+],
+"SIL-29-0092": [
+"vanci"
+],
+"SIL-29-0093": [
+"vanci"
+],
+"SIL-29-0111": [
+"madurai"
+],
+"SIL-29-0115": [
+"vanci"
+],
+"SIL-29-0118": [
+"puhar"
+],
+"SIL-29-0124": [
+"puhar"
+],
+"SIL-29-0129": [
+"puhar"
+],
+"SIL-29-0134": [
+"puhar"
+],
+"SIL-29-0140": [
+"puhar"
+],
+"SIL-29-0172": [
+"puhar"
+],
+"SIL-29-0177": [
+"madurai"
+],
+"SIL-29-0182": [
+"vanci"
+],
+"SIL-30-0023": [
+"madhavi"
+],
+"SIL-30-0045": [
+"tevanti"
+],
+"SIL-30-0070": [
+"matalan"
+],
+"SIL-30-0071": [
+"matalan"
+],
+"SIL-30-0087": [
+"cattan"
+],
+"SIL-30-0117": [
+"matalan"
+],
+"SIL-30-0127": [
+"vanci"
+],
+"SIL-30-0147": [
+"matalan"
+],
+"SIL-30-0149": [
+"madurai"
+],
+"SIL-30-0160": [
+"gajabahu"
+],
+"SIL-30-0168": [
+"matalan"
+],
+"SIL-30-0173": [
+"vanci"
+],
+"MAN-00-0035": [
+"cittirapati"
+],
+"MAN-00-0036": [
+"madhavi"
+],
+"MAN-00-0037": [
+"manimekalai"
+],
+"MAN-00-0043": [
+"manimekhala_deity"
+],
+"MAN-00-0044": [
+"manimekalai",
+"manipallavam"
+],
+"MAN-00-0046": [
+"cutamati"
+],
+"MAN-00-0053": [
+"tivatilakai"
+],
+"MAN-00-0056": [
+"aravanan"
+],
+"MAN-00-0057": [
+"aputhiran",
+"aravanan"
+],
+"MAN-00-0059": [
+"aputhiran"
+],
+"MAN-00-0060": [
+"chintadevi"
+],
+"MAN-00-0065": [
+"kayasandikai"
+],
+"MAN-00-0073": [
+"kayasandikai",
+"kanchanan"
+],
+"MAN-00-0082": [
+"aputhiran"
+],
+"MAN-00-0084": [
+"manipallavam"
+],
+"MAN-00-0086": [
+"vanci"
+],
+"MAN-00-0089": [
+"aravanan"
+],
+"MAN-00-0090": [
+"kanchi"
+],
+"MAN-00-0096": [
+"cattan"
+],
+"MAN-00-0097": [
+"manimekalai"
+],
+"MAN-01-0046": [
+"vanci"
+],
+"MAN-02-0004": [
+"madhavi",
+"manimekalai"
+],
+"MAN-02-0006": [
+"cittirapati"
+],
+"MAN-02-0008": [
+"vayantamalai"
+],
+"MAN-02-0010": [
+"madhavi"
+],
+"MAN-02-0012": [
+"madhavi",
+"manimekalai"
+],
+"MAN-02-0037": [
+"madhavi",
+"vayantamalai"
+],
+"MAN-02-0055": [
+"manimekalai"
+],
+"MAN-02-0061": [
+"aravanan"
+],
+"MAN-02-0071": [
+"cittirapati"
+],
+"MAN-03-0001": [
+"madhavi",
+"vayantamalai"
+],
+"MAN-03-0003": [
+"manimekalai"
+],
+"MAN-03-0011": [
+"madhavi",
+"manimekalai"
+],
+"MAN-03-0017": [
+"cutamati"
+],
+"MAN-03-0020": [
+"manimekalai"
+],
+"MAN-03-0042": [
+"manimekalai"
+],
+"MAN-03-0069": [
+"madhavi"
+],
+"MAN-03-0082": [
+"manimekalai"
+],
+"MAN-03-0085": [
+"cutamati"
+],
+"MAN-03-0148": [
+"manimekalai"
+],
+"MAN-03-0170": [
+"cutamati"
+],
+"MAN-03-0171": [
+"manimekalai"
+],
+"MAN-04-0025": [
+"cutamati"
+],
+"MAN-04-0026": [
+"manimekalai"
+],
+"MAN-04-0028": [
+"udayakumaran"
+],
+"MAN-04-0067": [
+"madhavi",
+"manimekalai"
+],
+"MAN-04-0068": [
+"kovalan"
+],
+"MAN-04-0079": [
+"udayakumaran",
+"cittirapati"
+],
+"MAN-04-0081": [
+"madhavi",
+"vayantamalai"
+],
+"MAN-04-0086": [
+"cutamati"
+],
+"MAN-04-0103": [
+"manimekalai"
+],
+"MAN-04-0106": [
+"cutamati"
+],
+"MAN-04-0125": [
+"ilanko"
+],
+"MAN-05-0001": [
+"ilanko"
+],
+"MAN-05-0010": [
+"cutamati"
+],
+"MAN-05-0018": [
+"cutamati"
+],
+"MAN-05-0081": [
+"manimekalai",
+"vanci"
+],
+"MAN-05-0082": [
+"cittirapati"
+],
+"MAN-05-0092": [
+"manimekalai"
+],
+"MAN-05-0093": [
+"cutamati"
+],
+"MAN-05-0095": [
+"manimekhala_deity"
+],
+"MAN-05-0109": [
+"puhar"
+],
+"MAN-06-0014": [
+"cutamati"
+],
+"MAN-06-0035": [
+"madhavi"
+],
+"MAN-06-0209": [
+"cutamati"
+],
+"MAN-06-0213": [
+"manimekhala_deity",
+"manipallavam"
+],
+"MAN-07-0001": [
+"manimekalai",
+"manipallavam"
+],
+"MAN-07-0002": [
+"manimekhala_deity"
+],
+"MAN-07-0003": [
+"manimekalai"
+],
+"MAN-07-0004": [
+"udayakumaran"
+],
+"MAN-07-0016": [
+"cutamati"
+],
+"MAN-07-0018": [
+"manimekhala_deity"
+],
+"MAN-07-0022": [
+"manipallavam"
+],
+"MAN-07-0030": [
+"madhavi"
+],
+"MAN-07-0034": [
+"kovalan"
+],
+"MAN-07-0041": [
+"cutamati"
+],
+"MAN-07-0105": [
+"cutamati"
+],
+"MAN-07-0108": [
+"lakshmi"
+],
+"MAN-07-0130": [
+"madhavi"
+],
+"MAN-07-0134": [
+"cutamati"
+],
+"MAN-08-0002": [
+"manipallavam"
+],
+"MAN-08-0020": [
+"cutamati"
+],
+"MAN-08-0023": [
+"madhavi"
+],
+"MAN-09-0041": [
+"lakshmi"
+],
+"MAN-09-0046": [
+"rahulan"
+],
+"MAN-09-0048": [
+"rahulan"
+],
+"MAN-09-0055": [
+"manimekhala_deity"
+],
+"MAN-10-0005": [
+"manimekhala_deity"
+],
+"MAN-10-0020": [
+"rahulan",
+"lakshmi"
+],
+"MAN-10-0031": [
+"rahulan"
+],
+"MAN-10-0043": [
+"udayakumaran",
+"rahulan"
+],
+"MAN-10-0050": [
+"lakshmi"
+],
+"MAN-10-0058": [
+"aravanan"
+],
+"MAN-10-0073": [
+"madhavi",
+"cutamati"
+],
+"MAN-11-0001": [
+"manimekhala_deity"
+],
+"MAN-11-0002": [
+"manimekalai",
+"manipallavam"
+],
+"MAN-11-0006": [
+"tivatilakai"
+],
+"MAN-11-0012": [
+"rahulan",
+"lakshmi"
+],
+"MAN-11-0014": [
+"madhavi",
+"manimekalai"
+],
+"MAN-11-0020": [
+"tivatilakai"
+],
+"MAN-11-0029": [
+"tivatilakai"
+],
+"MAN-11-0039": [
+"gomukhi"
+],
+"MAN-11-0044": [
+"aputhiran",
+"amudasurabhi"
+],
+"MAN-11-0045": [
+"amudasurabhi"
+],
+"MAN-11-0052": [
+"aravanan"
+],
+"MAN-11-0055": [
+"tivatilakai"
+],
+"MAN-11-0056": [
+"gomukhi"
+],
+"MAN-11-0058": [
+"amudasurabhi"
+],
+"MAN-11-0059": [
+"amudasurabhi"
+],
+"MAN-11-0075": [
+"tivatilakai"
+],
+"MAN-11-0106": [
+"amudasurabhi"
+],
+"MAN-11-0124": [
+"tivatilakai"
+],
+"MAN-11-0125": [
+"amudasurabhi"
+],
+"MAN-11-0127": [
+"manimekalai"
+],
+"MAN-11-0140": [
+"aravanan"
+],
+"MAN-11-0142": [
+"aputhiran",
+"amudasurabhi"
+],
+"MAN-11-0143": [
+"amudasurabhi"
+],
+"MAN-12-0001": [
+"aravanan"
+],
+"MAN-12-0008": [
+"udayakumaran"
+],
+"MAN-12-0009": [
+"manimekhala_deity",
+"manipallavam"
+],
+"MAN-12-0017": [
+"madhavi",
+"cutamati"
+],
+"MAN-12-0019": [
+"aravanan"
+],
+"MAN-12-0023": [
+"tivatilakai"
+],
+"MAN-12-0025": [
+"aputhiran"
+],
+"MAN-12-0027": [
+"aputhiran",
+"aravanan"
+],
+"MAN-12-0031": [
+"manimekalai"
+],
+"MAN-12-0053": [
+"manimekalai"
+],
+"MAN-12-0114": [
+"amudasurabhi"
+],
+"MAN-13-0002": [
+"aputhiran"
+],
+"MAN-13-0049": [
+"aputhiran"
+],
+"MAN-13-0092": [
+"aputhiran"
+],
+"MAN-13-0105": [
+"madurai"
+],
+"MAN-14-0016": [
+"amudasurabhi"
+],
+"MAN-14-0017": [
+"chintadevi"
+],
+"MAN-14-0049": [
+"amudasurabhi"
+],
+"MAN-14-0065": [
+"aputhiran"
+],
+"MAN-14-0077": [
+"amudasurabhi"
+],
+"MAN-14-0081": [
+"manipallavam"
+],
+"MAN-14-0087": [
+"amudasurabhi"
+],
+"MAN-14-0090": [
+"amudasurabhi"
+],
+"MAN-14-0091": [
+"gomukhi"
+],
+"MAN-14-0101": [
+"manipallavam"
+],
+"MAN-15-0016": [
+"manipallavam"
+],
+"MAN-15-0036": [
+"manipallavam"
+],
+"MAN-15-0038": [
+"aravanan"
+],
+"MAN-15-0055": [
+"manimekalai"
+],
+"MAN-15-0067": [
+"udayakumaran"
+],
+"MAN-15-0071": [
+"madhavi"
+],
+"MAN-15-0079": [
+"aticari"
+],
+"MAN-15-0086": [
+"kayasandikai"
+],
+"MAN-16-0003": [
+"aticari"
+],
+"MAN-16-0022": [
+"aticari"
+],
+"MAN-16-0037": [
+"aticari"
+],
+"MAN-16-0128": [
+"aticari"
+],
+"MAN-16-0130": [
+"manimekalai"
+],
+"MAN-16-0133": [
+"amudasurabhi"
+],
+"MAN-16-0135": [
+"aticari"
+],
+"MAN-17-0008": [
+"kayasandikai"
+],
+"MAN-17-0074": [
+"manimekalai"
+],
+"MAN-17-0094": [
+"amudasurabhi"
+],
+"MAN-17-0095": [
+"aputhiran",
+"amudasurabhi"
+],
+"MAN-18-0005": [
+"cittirapati"
+],
+"MAN-18-0007": [
+"kovalan"
+],
+"MAN-18-0008": [
+"madhavi"
+],
+"MAN-18-0025": [
+"madhavi",
+"manimekalai"
+],
+"MAN-18-0027": [
+"udayakumaran"
+],
+"MAN-18-0031": [
+"manimekalai"
+],
+"MAN-18-0037": [
+"vanci"
+],
+"MAN-18-0053": [
+"madhavi",
+"manimekalai"
+],
+"MAN-18-0056": [
+"kanchi"
+],
+"MAN-18-0060": [
+"udayakumaran"
+],
+"MAN-18-0076": [
+"manimekalai"
+],
+"MAN-18-0086": [
+"cittirapati"
+],
+"MAN-18-0112": [
+"udayakumaran"
+],
+"MAN-18-0114": [
+"manimekalai"
+],
+"MAN-18-0128": [
+"rahulan"
+],
+"MAN-18-0149": [
+"kayasandikai"
+],
+"MAN-18-0150": [
+"manimekalai"
+],
+"MAN-18-0154": [
+"kayasandikai"
+],
+"MAN-18-0155": [
+"manimekalai"
+],
+"MAN-18-0170": [
+"manimekalai"
+],
+"MAN-19-0002": [
+"vanci"
+],
+"MAN-19-0007": [
+"udayakumaran"
+],
+"MAN-19-0012": [
+"amudasurabhi"
+],
+"MAN-19-0030": [
+"manimekalai"
+],
+"MAN-19-0031": [
+"madhavi"
+],
+"MAN-19-0033": [
+"kayasandikai"
+],
+"MAN-19-0040": [
+"amudasurabhi"
+],
+"MAN-19-0047": [
+"amudasurabhi"
+],
+"MAN-19-0120": [
+"vanci"
+],
+"MAN-19-0125": [
+"ilanko"
+],
+"MAN-19-0135": [
+"amudasurabhi"
+],
+"MAN-19-0144": [
+"amudasurabhi"
+],
+"MAN-19-0151": [
+"amudasurabhi"
+],
+"MAN-20-0001": [
+"manimekalai"
+],
+"MAN-20-0009": [
+"manimekalai"
+],
+"MAN-20-0026": [
+"kayasandikai"
+],
+"MAN-20-0027": [
+"kanchanan"
+],
+"MAN-20-0033": [
+"amudasurabhi"
+],
+"MAN-20-0039": [
+"udayakumaran"
+],
+"MAN-20-0069": [
+"udayakumaran"
+],
+"MAN-20-0070": [
+"manimekalai"
+],
+"MAN-20-0077": [
+"manimekalai"
+],
+"MAN-20-0081": [
+"kanchanan"
+],
+"MAN-20-0084": [
+"manimekalai"
+],
+"MAN-20-0085": [
+"kayasandikai",
+"amudasurabhi"
+],
+"MAN-20-0097": [
+"manimekalai"
+],
+"MAN-20-0102": [
+"kanchanan"
+],
+"MAN-20-0108": [
+"kayasandikai"
+],
+"MAN-20-0113": [
+"manimekalai"
+],
+"MAN-20-0114": [
+"kayasandikai"
+],
+"MAN-20-0123": [
+"udayakumaran"
+],
+"MAN-20-0129": [
+"kanchanan"
+],
+"MAN-21-0004": [
+"manimekalai"
+],
+"MAN-21-0015": [
+"manipallavam"
+],
+"MAN-21-0022": [
+"kayasandikai"
+],
+"MAN-21-0036": [
+"manimekalai"
+],
+"MAN-21-0045": [
+"manimekalai"
+],
+"MAN-21-0062": [
+"rahulan"
+],
+"MAN-21-0070": [
+"manimekalai"
+],
+"MAN-21-0078": [
+"madhavi"
+],
+"MAN-21-0082": [
+"aputhiran"
+],
+"MAN-21-0086": [
+"manipallavam"
+],
+"MAN-21-0088": [
+"tivatilakai"
+],
+"MAN-21-0091": [
+"manimekalai",
+"vanci"
+],
+"MAN-21-0141": [
+"manimekalai"
+],
+"MAN-21-0148": [
+"kanchi"
+],
+"MAN-21-0153": [
+"aravanan"
+],
+"MAN-21-0154": [
+"kanchi"
+],
+"MAN-21-0155": [
+"aravanan"
+],
+"MAN-21-0162": [
+"aravanan"
+],
+"MAN-21-0174": [
+"kanchi"
+],
+"MAN-21-0182": [
+"manimekhala_deity"
+],
+"MAN-21-0186": [
+"manipallavam"
+],
+"MAN-22-0004": [
+"udayakumaran"
+],
+"MAN-22-0006": [
+"manimekalai"
+],
+"MAN-22-0106": [
+"madurai"
+],
+"MAN-22-0121": [
+"madurai"
+],
+"MAN-22-0164": [
+"madhavi"
+],
+"MAN-22-0177": [
+"cittirapati"
+],
+"MAN-22-0179": [
+"madhavi"
+],
+"MAN-22-0180": [
+"manimekalai"
+],
+"MAN-22-0188": [
+"kayasandikai"
+],
+"MAN-22-0189": [
+"kayasandikai"
+],
+"MAN-22-0190": [
+"kayasandikai"
+],
+"MAN-22-0195": [
+"udayakumaran"
+],
+"MAN-22-0198": [
+"kayasandikai"
+],
+"MAN-22-0206": [
+"ilanko"
+],
+"MAN-23-0023": [
+"manimekalai"
+],
+"MAN-23-0044": [
+"manimekalai"
+],
+"MAN-23-0068": [
+"rahulan"
+],
+"MAN-23-0071": [
+"ilanko"
+],
+"MAN-23-0091": [
+"manimekalai"
+],
+"MAN-24-0005": [
+"madhavi"
+],
+"MAN-24-0020": [
+"madhavi"
+],
+"MAN-24-0064": [
+"manimekalai"
+],
+"MAN-24-0083": [
+"madhavi",
+"manimekalai"
+],
+"MAN-24-0085": [
+"cutamati"
+],
+"MAN-24-0087": [
+"aravanan"
+],
+"MAN-24-0089": [
+"cittirapati"
+],
+"MAN-24-0090": [
+"madhavi"
+],
+"MAN-24-0143": [
+"manimekalai"
+],
+"MAN-24-0149": [
+"cittirapati"
+],
+"MAN-24-0153": [
+"aputhiran"
+],
+"MAN-24-0154": [
+"manipallavam"
+],
+"MAN-24-0155": [
+"vanci"
+],
+"MAN-24-0169": [
+"nagapuram"
+],
+"MAN-24-0170": [
+"punyarasan",
+"bhumichandran"
+],
+"MAN-25-0017": [
+"aravanan"
+],
+"MAN-25-0075": [
+"bhumichandran"
+],
+"MAN-25-0095": [
+"manimekalai"
+],
+"MAN-25-0120": [
+"manipallavam"
+],
+"MAN-25-0126": [
+"manipallavam"
+],
+"MAN-25-0139": [
+"madurai"
+],
+"MAN-25-0146": [
+"amudasurabhi"
+],
+"MAN-25-0154": [
+"manimekalai"
+],
+"MAN-25-0156": [
+"gomukhi"
+],
+"MAN-25-0198": [
+"manimekhala_deity"
+],
+"MAN-25-0206": [
+"vanci"
+],
+"MAN-25-0209": [
+"manimekhala_deity"
+],
+"MAN-25-0211": [
+"aravanan"
+],
+"MAN-25-0212": [
+"vanci"
+],
+"MAN-25-0214": [
+"manimekalai"
+],
+"MAN-25-0220": [
+"manimekalai"
+],
+"MAN-25-0238": [
+"vanci"
+],
+"MAN-26-0002": [
+"kannagi"
+],
+"MAN-26-0003": [
+"kovalan"
+],
+"MAN-26-0010": [
+"kannagi"
+],
+"MAN-26-0012": [
+"madurai"
+],
+"MAN-26-0013": [
+"madurapati"
+],
+"MAN-26-0017": [
+"singapuram"
+],
+"MAN-26-0022": [
+"singapuram"
+],
+"MAN-26-0023": [
+"sangaman"
+],
+"MAN-26-0025": [
+"bharatan"
+],
+"MAN-26-0077": [
+"cenkuttuvan"
+],
+"MAN-26-0078": [
+"vanci"
+],
+"MAN-28-0001": [
+"aravanan"
+],
+"MAN-28-0002": [
+"vanci"
+],
+"MAN-28-0073": [
+"kovalan"
+],
+"MAN-28-0081": [
+"aravanan"
+],
+"MAN-28-0124": [
+"kovalan"
+],
+"MAN-28-0150": [
+"aravanan"
+],
+"MAN-28-0152": [
+"kanchi"
+],
+"MAN-28-0156": [
+"kanchi"
+],
+"MAN-28-0179": [
+"kovalan"
+],
+"MAN-28-0181": [
+"amudasurabhi"
+],
+"MAN-28-0202": [
+"gomukhi"
+],
+"MAN-28-0203": [
+"manipallavam"
+],
+"MAN-28-0212": [
+"tivatilakai",
+"manimekhala_deity"
+],
+"MAN-28-0218": [
+"amudasurabhi"
+],
+"MAN-28-0236": [
+"aravanan"
+],
+"MAN-28-0245": [
+"manimekalai"
+],
+"MAN-29-0002": [
+"aravanan"
+],
+"MAN-29-0033": [
+"manimekhala_deity"
+],
+"MAN-29-0037": [
+"aravanan"
+],
+"MAN-29-0039": [
+"tivatilakai"
+]
+}

@@ -1,0 +1,3536 @@
+{
+ "kin/hand": [
+  {
+   "round": 1,
+   "cues": {
+    "மகன்": 0.5,
+    "மகள்": 0.5,
+    "மகனை": 0.5,
+    "மகளை": 0.5,
+    "தாதை": 0.5,
+    "தந்தை": 0.5,
+    "தாய்": 0.5,
+    "புதல்வ": 0.5,
+    "பெற்ற": 0.5,
+    "வயிற்று": 0.5
+   },
+   "candidates": [
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "பெற்ற",
+     "lines": [
+      "SIL-16-0109",
+      "SIL-16-0110",
+      "SIL-16-0111"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_queen"
+     ],
+     "score": 0.5,
+     "cue": "பெற்ற",
+     "lines": [
+      "SIL-16-0109",
+      "SIL-16-0110",
+      "SIL-16-0111"
+     ]
+    },
+    {
+     "pair": [
+      "pandya_king",
+      "pandya_queen"
+     ],
+     "score": 0.5,
+     "cue": "பெற்ற",
+     "lines": [
+      "SIL-16-0109",
+      "SIL-16-0110",
+      "SIL-16-0111"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "aravanan"
+     ],
+     "score": 0.5,
+     "cue": "பெற்ற",
+     "lines": [
+      "MAN-00-0055",
+      "MAN-00-0056",
+      "MAN-00-0057"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "மகள்",
+     "lines": [
+      "MAN-02-0006",
+      "MAN-02-0007",
+      "MAN-02-0008"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மகள்",
+     "lines": [
+      "MAN-19-0031",
+      "MAN-19-0032",
+      "MAN-19-0033"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "udayakumaran"
+     ],
+     "score": 0.5,
+     "cue": "மகன்",
+     "lines": [
+      "MAN-20-0068",
+      "MAN-20-0069",
+      "MAN-20-0070"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மகள்",
+     "lines": [
+      "MAN-22-0177",
+      "MAN-22-0178",
+      "MAN-22-0179"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "தாதை",
+     "lines": [
+      "MAN-26-0001",
+      "MAN-26-0002",
+      "MAN-26-0003"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "cues": {
+    "மகன்": 0.5,
+    "மகள்": 0.5,
+    "மகனை": 0.5,
+    "மகளை": 0.5,
+    "தாதை": 0.5,
+    "தந்தை": 0.5,
+    "தாய்": 0.5,
+    "புதல்வ": 0.5,
+    "பெற்ற": 0.5,
+    "வயிற்று": 0.5
+   },
+   "candidates": [
+    {
+     "pair": [
+      "kayasandikai",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மகள்",
+     "lines": [
+      "MAN-19-0031",
+      "MAN-19-0032",
+      "MAN-19-0033"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "udayakumaran"
+     ],
+     "score": 0.5,
+     "cue": "மகன்",
+     "lines": [
+      "MAN-20-0068",
+      "MAN-20-0069",
+      "MAN-20-0070"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மகள்",
+     "lines": [
+      "MAN-22-0177",
+      "MAN-22-0178",
+      "MAN-22-0179"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "தாதை",
+     "lines": [
+      "MAN-26-0001",
+      "MAN-26-0002",
+      "MAN-26-0003"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "cues": {
+    "மகன்": 0.5,
+    "மகள்": 0.5,
+    "மகனை": 0.5,
+    "மகளை": 0.5,
+    "தாதை": 0.5,
+    "தந்தை": 0.5,
+    "தாய்": 0.5,
+    "புதல்வ": 0.5,
+    "பெற்ற": 0.5,
+    "வயிற்று": 0.5
+   },
+   "candidates": []
+  }
+ ],
+ "kin/learned": [
+  {
+   "round": 1,
+   "cues": {
+    "ஈன்ற": 0.8571428571428571,
+    "யளிப்பவும்": 0.75,
+    "ரெய்தி": 0.75,
+    "வாராத்": 0.75,
+    "நோக்கி": 0.75,
+    "முகம்": 0.75,
+    "அவிழ்": 0.75,
+    "பயந்த": 0.75,
+    "தாபதக்": 0.75,
+    "வல்லி": 0.75,
+    "எய்திய": 0.75,
+    "மலர்": 0.7272727272727273
+   },
+   "candidates": [
+    {
+     "pair": [
+      "manimekalai",
+      "udayakumaran"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-18-0025",
+      "MAN-18-0026",
+      "MAN-18-0027"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "udayakumaran"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-18-0025",
+      "MAN-18-0026",
+      "MAN-18-0027"
+     ]
+    },
+    {
+     "pair": [
+      "lakshmi",
+      "rahulan"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "lakshmi",
+      "madhavi"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "lakshmi",
+      "manimekalai"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "rahulan"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "rahulan"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "நோக்கி",
+     "lines": [
+      "SIL-07-0018",
+      "SIL-07-0019",
+      "SIL-07-0020"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_queen"
+     ],
+     "score": 0.75,
+     "cue": "நோக்கி",
+     "lines": [
+      "SIL-16-0119",
+      "SIL-16-0120",
+      "SIL-16-0121"
+     ]
+    },
+    {
+     "pair": [
+      "pandya_king",
+      "pandya_queen"
+     ],
+     "score": 0.75,
+     "cue": "நோக்கி",
+     "lines": [
+      "SIL-16-0137",
+      "SIL-16-0138",
+      "SIL-16-0139"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "manimekhala_deity"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-07-0002",
+      "MAN-07-0003",
+      "MAN-07-0004"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "aravanan"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0057",
+      "MAN-00-0058",
+      "MAN-00-0059"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "chintadevi"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0058",
+      "MAN-00-0059",
+      "MAN-00-0060"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-05-0092",
+      "MAN-05-0093",
+      "MAN-05-0094"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "udayakumaran"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-12-0007",
+      "MAN-12-0008",
+      "MAN-12-0009"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-18-0149",
+      "MAN-18-0150",
+      "MAN-18-0151"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "போது",
+     "lines": [
+      "SIL-04-0086",
+      "SIL-04-0087",
+      "SIL-04-0088"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "kovalan"
+     ],
+     "score": 0.667,
+     "cue": "வேந்தற்",
+     "lines": [
+      "SIL-23-0152",
+      "SIL-23-0153",
+      "SIL-23-0154"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "matalan"
+     ],
+     "score": 0.667,
+     "cue": "தண்",
+     "lines": [
+      "SIL-27-0056",
+      "SIL-27-0057",
+      "SIL-27-0058"
+     ]
+    },
+    {
+     "pair": [
+      "cenkuttuvan",
+      "kannagi"
+     ],
+     "score": 0.667,
+     "cue": "நல்",
+     "lines": [
+      "SIL-29-0084",
+      "SIL-29-0085",
+      "SIL-29-0086"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "படத்",
+     "lines": [
+      "MAN-24-0083",
+      "MAN-24-0084",
+      "MAN-24-0085"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cutamati"
+     ],
+     "score": 0.667,
+     "cue": "மெய்",
+     "lines": [
+      "MAN-24-0085",
+      "MAN-24-0086",
+      "MAN-24-0087"
+     ]
+    },
+    {
+     "pair": [
+      "aticari",
+      "manimekalai"
+     ],
+     "score": 0.667,
+     "cue": "நல்",
+     "lines": [
+      "MAN-16-0128",
+      "MAN-16-0129",
+      "MAN-16-0130"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madurapati"
+     ],
+     "score": 0.5,
+     "cue": "இல்",
+     "lines": [
+      "SIL-23-0175",
+      "SIL-23-0176",
+      "SIL-23-0177"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "வயந்த",
+     "lines": [
+      "MAN-02-0006",
+      "MAN-02-0007",
+      "MAN-02-0008"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "udayakumaran"
+     ],
+     "score": 0.5,
+     "cue": "வயந்த",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "udayakumaran",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "வயந்த",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekhala_deity"
+     ],
+     "score": 0.5,
+     "cue": "நகர்",
+     "lines": [
+      "MAN-07-0016",
+      "MAN-07-0017",
+      "MAN-07-0018"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மன்றம்",
+     "lines": [
+      "MAN-19-0031",
+      "MAN-19-0032",
+      "MAN-19-0033"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "தாதை",
+     "lines": [
+      "MAN-26-0001",
+      "MAN-26-0002",
+      "MAN-26-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "அறவோன்",
+     "lines": [
+      "MAN-28-0210",
+      "MAN-28-0211",
+      "MAN-28-0212"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "manimekhala_deity"
+     ],
+     "score": 0.444,
+     "cue": "நாள்",
+     "lines": [
+      "MAN-25-0209",
+      "MAN-25-0210",
+      "MAN-25-0211"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_king"
+     ],
+     "score": 0.4,
+     "cue": "பெற்ற",
+     "lines": [
+      "SIL-16-0109",
+      "SIL-16-0110",
+      "SIL-16-0111"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "pandya_king"
+     ],
+     "score": 0.4,
+     "cue": "செங்கோல்",
+     "lines": [
+      "SIL-16-0215",
+      "SIL-16-0216",
+      "SIL-16-0217"
+     ]
+    },
+    {
+     "pair": [
+      "rahulan",
+      "udayakumaran"
+     ],
+     "score": 0.4,
+     "cue": "தோன்ற",
+     "lines": [
+      "MAN-10-0041",
+      "MAN-10-0042",
+      "MAN-10-0043"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "tivatilakai"
+     ],
+     "score": 0.4,
+     "cue": "தோன்ற",
+     "lines": [
+      "MAN-12-0023",
+      "MAN-12-0024",
+      "MAN-12-0025"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "cues": {
+    "ஈன்ற": 0.8571428571428571,
+    "அகவயின்": 0.8333333333333334,
+    "மகன்": 0.8333333333333334,
+    "இருந்த": 0.8,
+    "பிறவியில்": 0.8,
+    "யளிப்பவும்": 0.75,
+    "ரெய்தி": 0.75,
+    "வாராத்": 0.75,
+    "நோக்கி": 0.75,
+    "முகம்": 0.75,
+    "அவிழ்": 0.75,
+    "பயந்த": 0.75
+   },
+   "candidates": [
+    {
+     "pair": [
+      "madhavi",
+      "rahulan"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "rahulan"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "madhavi"
+     ],
+     "score": 0.8,
+     "cue": "இருந்த",
+     "lines": [
+      "SIL-06-0172",
+      "SIL-06-0173",
+      "SIL-06-0174"
+     ]
+    },
+    {
+     "pair": [
+      "pandya_king",
+      "pandya_queen"
+     ],
+     "score": 0.8,
+     "cue": "இருந்த",
+     "lines": [
+      "SIL-20-0032",
+      "SIL-20-0033",
+      "SIL-20-0034"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_queen"
+     ],
+     "score": 0.75,
+     "cue": "நோக்கி",
+     "lines": [
+      "SIL-16-0119",
+      "SIL-16-0120",
+      "SIL-16-0121"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "kovalan"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "SIL-20-0072",
+      "SIL-20-0073",
+      "SIL-20-0074"
+     ]
+    },
+    {
+     "pair": [
+      "neeli",
+      "sangaman"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "SIL-23-0157",
+      "SIL-23-0158",
+      "SIL-23-0159"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "aticari",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-16-0128",
+      "MAN-16-0129",
+      "MAN-16-0130"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "manimekhala_deity"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-07-0002",
+      "MAN-07-0003",
+      "MAN-07-0004"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "aravanan"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0057",
+      "MAN-00-0058",
+      "MAN-00-0059"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "chintadevi"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0058",
+      "MAN-00-0059",
+      "MAN-00-0060"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-05-0092",
+      "MAN-05-0093",
+      "MAN-05-0094"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "udayakumaran"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-12-0007",
+      "MAN-12-0008",
+      "MAN-12-0009"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-18-0149",
+      "MAN-18-0150",
+      "MAN-18-0151"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "போது",
+     "lines": [
+      "SIL-04-0086",
+      "SIL-04-0087",
+      "SIL-04-0088"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "kovalan"
+     ],
+     "score": 0.667,
+     "cue": "வேந்தற்",
+     "lines": [
+      "SIL-23-0152",
+      "SIL-23-0153",
+      "SIL-23-0154"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "matalan"
+     ],
+     "score": 0.667,
+     "cue": "தண்",
+     "lines": [
+      "SIL-27-0056",
+      "SIL-27-0057",
+      "SIL-27-0058"
+     ]
+    },
+    {
+     "pair": [
+      "cenkuttuvan",
+      "kannagi"
+     ],
+     "score": 0.667,
+     "cue": "நல்",
+     "lines": [
+      "SIL-29-0084",
+      "SIL-29-0085",
+      "SIL-29-0086"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "படத்",
+     "lines": [
+      "MAN-24-0083",
+      "MAN-24-0084",
+      "MAN-24-0085"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cutamati"
+     ],
+     "score": 0.667,
+     "cue": "மெய்",
+     "lines": [
+      "MAN-24-0085",
+      "MAN-24-0086",
+      "MAN-24-0087"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "udayakumaran"
+     ],
+     "score": 0.6,
+     "cue": "பூம்பொழில்",
+     "lines": [
+      "MAN-04-0077",
+      "MAN-04-0078",
+      "MAN-04-0079"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "vayantamalai"
+     ],
+     "score": 0.556,
+     "cue": "நாள்",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "udayakumaran",
+      "vayantamalai"
+     ],
+     "score": 0.556,
+     "cue": "நாள்",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "manimekhala_deity"
+     ],
+     "score": 0.556,
+     "cue": "நாள்",
+     "lines": [
+      "MAN-25-0209",
+      "MAN-25-0210",
+      "MAN-25-0211"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "matari"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "SIL-15-0117",
+      "SIL-15-0118",
+      "SIL-15-0119"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "SIL-20-0083",
+      "SIL-20-0084",
+      "SIL-20-0085"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "SIL-20-0081",
+      "SIL-20-0082",
+      "SIL-20-0083"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madurapati"
+     ],
+     "score": 0.5,
+     "cue": "இல்",
+     "lines": [
+      "SIL-23-0175",
+      "SIL-23-0176",
+      "SIL-23-0177"
+     ]
+    },
+    {
+     "pair": [
+      "kanchanan",
+      "kayasandikai"
+     ],
+     "score": 0.5,
+     "cue": "விஞ்சை",
+     "lines": [
+      "MAN-00-0071",
+      "MAN-00-0072",
+      "MAN-00-0073"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekhala_deity"
+     ],
+     "score": 0.5,
+     "cue": "நகர்",
+     "lines": [
+      "MAN-07-0016",
+      "MAN-07-0017",
+      "MAN-07-0018"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மன்றம்",
+     "lines": [
+      "MAN-19-0031",
+      "MAN-19-0032",
+      "MAN-19-0033"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "sangaman"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "MAN-26-0023",
+      "MAN-26-0024",
+      "MAN-26-0025"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "அறவோன்",
+     "lines": [
+      "MAN-28-0210",
+      "MAN-28-0211",
+      "MAN-28-0212"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "என்றலும்",
+     "lines": [
+      "MAN-29-0037",
+      "MAN-29-0038",
+      "MAN-29-0039"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "kovalan"
+     ],
+     "score": 0.462,
+     "cue": "துயர்",
+     "lines": [
+      "MAN-18-0005",
+      "MAN-18-0006",
+      "MAN-18-0007"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "pandya_king"
+     ],
+     "score": 0.4,
+     "cue": "செங்கோல்",
+     "lines": [
+      "SIL-16-0215",
+      "SIL-16-0216",
+      "SIL-16-0217"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "cues": {
+    "நெடுங்கண்": 0.8888888888888888,
+    "மாமலர்": 0.8888888888888888,
+    "கோப்பெருந்": 0.8571428571428571,
+    "ஈன்ற": 0.8571428571428571,
+    "கோலம்": 0.8333333333333334,
+    "கொடுந்துய": 0.8333333333333334,
+    "அகவயின்": 0.8333333333333334,
+    "நல்": 0.8333333333333334,
+    "மகன்": 0.8333333333333334,
+    "வாங்கிக்": 0.8,
+    "கொண்ட": 0.8,
+    "இருந்த": 0.8
+   },
+   "candidates": [
+    {
+     "pair": [
+      "cenkuttuvan",
+      "kannagi"
+     ],
+     "score": 0.833,
+     "cue": "நல்",
+     "lines": [
+      "SIL-29-0084",
+      "SIL-29-0085",
+      "SIL-29-0086"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "aravanan"
+     ],
+     "score": 0.833,
+     "cue": "நல்",
+     "lines": [
+      "MAN-11-0140",
+      "MAN-11-0141",
+      "MAN-11-0142"
+     ]
+    },
+    {
+     "pair": [
+      "aticari",
+      "manimekalai"
+     ],
+     "score": 0.833,
+     "cue": "நல்",
+     "lines": [
+      "MAN-16-0128",
+      "MAN-16-0129",
+      "MAN-16-0130"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "kovalan"
+     ],
+     "score": 0.8,
+     "cue": "கொண்ட",
+     "lines": [
+      "SIL-23-0154",
+      "SIL-23-0155",
+      "SIL-23-0156"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madurapati"
+     ],
+     "score": 0.8,
+     "cue": "கொண்ட",
+     "lines": [
+      "SIL-23-0176",
+      "SIL-23-0177",
+      "SIL-23-0178"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "kovalan"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "SIL-20-0072",
+      "SIL-20-0073",
+      "SIL-20-0074"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_king"
+     ],
+     "score": 0.75,
+     "cue": "பொருந்திக்",
+     "lines": [
+      "SIL-16-0109",
+      "SIL-16-0110",
+      "SIL-16-0111"
+     ]
+    },
+    {
+     "pair": [
+      "neeli",
+      "sangaman"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "SIL-23-0157",
+      "SIL-23-0158",
+      "SIL-23-0159"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "manimekhala_deity"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-07-0002",
+      "MAN-07-0003",
+      "MAN-07-0004"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-05-0092",
+      "MAN-05-0093",
+      "MAN-05-0094"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "chintadevi"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0058",
+      "MAN-00-0059",
+      "MAN-00-0060"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "udayakumaran"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-12-0007",
+      "MAN-12-0008",
+      "MAN-12-0009"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-18-0149",
+      "MAN-18-0150",
+      "MAN-18-0151"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekhala_deity"
+     ],
+     "score": 0.7,
+     "cue": "தன்னொடு",
+     "lines": [
+      "MAN-05-0093",
+      "MAN-05-0094",
+      "MAN-05-0095"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "கூடா",
+     "lines": [
+      "SIL-04-0085",
+      "SIL-04-0086",
+      "SIL-04-0087"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "matalan"
+     ],
+     "score": 0.667,
+     "cue": "தண்",
+     "lines": [
+      "SIL-27-0056",
+      "SIL-27-0057",
+      "SIL-27-0058"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "படத்",
+     "lines": [
+      "MAN-24-0083",
+      "MAN-24-0084",
+      "MAN-24-0085"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cutamati"
+     ],
+     "score": 0.667,
+     "cue": "மெய்",
+     "lines": [
+      "MAN-24-0085",
+      "MAN-24-0086",
+      "MAN-24-0087"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "tivatilakai"
+     ],
+     "score": 0.667,
+     "cue": "அடைந்தது",
+     "lines": [
+      "MAN-12-0023",
+      "MAN-12-0024",
+      "MAN-12-0025"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "kovalan"
+     ],
+     "score": 0.667,
+     "cue": "கொடுந்",
+     "lines": [
+      "MAN-18-0005",
+      "MAN-18-0006",
+      "MAN-18-0007"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cittirapati"
+     ],
+     "score": 0.625,
+     "cue": "தேவி",
+     "lines": [
+      "MAN-24-0087",
+      "MAN-24-0088",
+      "MAN-24-0089"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "udayakumaran"
+     ],
+     "score": 0.6,
+     "cue": "பூம்பொழில்",
+     "lines": [
+      "MAN-04-0077",
+      "MAN-04-0078",
+      "MAN-04-0079"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "vayantamalai"
+     ],
+     "score": 0.556,
+     "cue": "நாள்",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "udayakumaran",
+      "vayantamalai"
+     ],
+     "score": 0.556,
+     "cue": "நாள்",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "manimekhala_deity"
+     ],
+     "score": 0.556,
+     "cue": "நாள்",
+     "lines": [
+      "MAN-25-0209",
+      "MAN-25-0210",
+      "MAN-25-0211"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "நீங்கி",
+     "lines": [
+      "SIL-14-0015",
+      "SIL-14-0016",
+      "SIL-14-0017"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "matari"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "SIL-15-0117",
+      "SIL-15-0118",
+      "SIL-15-0119"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "SIL-20-0081",
+      "SIL-20-0082",
+      "SIL-20-0083"
+     ]
+    },
+    {
+     "pair": [
+      "ilanko",
+      "matalan"
+     ],
+     "score": 0.5,
+     "cue": "இறந்த",
+     "lines": [
+      "SIL-27-0157",
+      "SIL-27-0158",
+      "SIL-27-0159"
+     ]
+    },
+    {
+     "pair": [
+      "ilanko",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "இறந்த",
+     "lines": [
+      "SIL-27-0157",
+      "SIL-27-0158",
+      "SIL-27-0159"
+     ]
+    },
+    {
+     "pair": [
+      "matalan",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "இறந்த",
+     "lines": [
+      "SIL-27-0157",
+      "SIL-27-0158",
+      "SIL-27-0159"
+     ]
+    },
+    {
+     "pair": [
+      "kanchanan",
+      "kayasandikai"
+     ],
+     "score": 0.5,
+     "cue": "விஞ்சை",
+     "lines": [
+      "MAN-00-0071",
+      "MAN-00-0072",
+      "MAN-00-0073"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மன்றம்",
+     "lines": [
+      "MAN-19-0031",
+      "MAN-19-0032",
+      "MAN-19-0033"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "sangaman"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "MAN-26-0023",
+      "MAN-26-0024",
+      "MAN-26-0025"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "அறவோன்",
+     "lines": [
+      "MAN-28-0210",
+      "MAN-28-0211",
+      "MAN-28-0212"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "என்றலும்",
+     "lines": [
+      "MAN-29-0037",
+      "MAN-29-0038",
+      "MAN-29-0039"
+     ]
+    }
+   ]
+  }
+ ],
+ "spouse/hand": [
+  {
+   "round": 1,
+   "cues": {
+    "மனைவி": 0.5,
+    "கணவன்": 0.5,
+    "கணவ": 0.5,
+    "கொழுந": 0.5,
+    "காதலி": 0.5,
+    "காதலன்": 0.5,
+    "மணமகன்": 0.5,
+    "கேள்வன்": 0.5,
+    "துணைவ": 0.5
+   },
+   "candidates": [
+    {
+     "pair": [
+      "pandya_king",
+      "pandya_queen"
+     ],
+     "score": 0.5,
+     "cue": "கணவ",
+     "lines": [
+      "SIL-20-0089",
+      "SIL-20-0090",
+      "SIL-20-0091"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "கணவன்",
+     "lines": [
+      "SIL-23-0152",
+      "SIL-23-0153",
+      "SIL-23-0154"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madurapati"
+     ],
+     "score": 0.5,
+     "cue": "கணவ",
+     "lines": [
+      "SIL-23-0177",
+      "SIL-23-0178",
+      "SIL-23-0179"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "காதலன்",
+     "lines": [
+      "MAN-02-0036",
+      "MAN-02-0037",
+      "MAN-02-0038"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "காதலன்",
+     "lines": [
+      "MAN-22-0177",
+      "MAN-22-0178",
+      "MAN-22-0179"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "manimekalai"
+     ],
+     "score": 0.5,
+     "cue": "காதலன்",
+     "lines": [
+      "MAN-22-0178",
+      "MAN-22-0179",
+      "MAN-22-0180"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "sangaman"
+     ],
+     "score": 0.5,
+     "cue": "கணவன்",
+     "lines": [
+      "MAN-26-0023",
+      "MAN-26-0024",
+      "MAN-26-0025"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "cues": {
+    "மனைவி": 0.5,
+    "கணவன்": 0.5,
+    "கணவ": 0.5,
+    "கொழுந": 0.5,
+    "காதலி": 0.5,
+    "காதலன்": 0.5,
+    "மணமகன்": 0.5,
+    "கேள்வன்": 0.5,
+    "துணைவ": 0.5
+   },
+   "candidates": [
+    {
+     "pair": [
+      "madhavi",
+      "manimekalai"
+     ],
+     "score": 0.5,
+     "cue": "காதலன்",
+     "lines": [
+      "MAN-22-0178",
+      "MAN-22-0179",
+      "MAN-22-0180"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "sangaman"
+     ],
+     "score": 0.5,
+     "cue": "கணவன்",
+     "lines": [
+      "MAN-26-0023",
+      "MAN-26-0024",
+      "MAN-26-0025"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "cues": {
+    "மனைவி": 0.5,
+    "கணவன்": 0.5,
+    "கணவ": 0.5,
+    "கொழுந": 0.5,
+    "காதலி": 0.5,
+    "காதலன்": 0.5,
+    "மணமகன்": 0.5,
+    "கேள்வன்": 0.5,
+    "துணைவ": 0.5
+   },
+   "candidates": []
+  }
+ ],
+ "spouse/learned": [
+  {
+   "round": 1,
+   "cues": {
+    "பட்ட": 0.8,
+    "மனைவி": 0.8,
+    "கொலைக்களப்": 0.8,
+    "மனை": 0.75,
+    "பெயரேயெனப்": 0.6666666666666666,
+    "பெண்ணணங்கே": 0.6666666666666666,
+    "யென்பதென்": 0.6666666666666666,
+    "நிலைக்களங்": 0.6666666666666666,
+    "காணாள்": 0.6666666666666666,
+    "ஆக்கிய": 0.6666666666666666,
+    "செய்": 0.6666666666666666,
+    "கோட்டம்": 0.6666666666666666
+   },
+   "candidates": [
+    {
+     "pair": [
+      "madhavi",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "lakshmi",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "lakshmi",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "rahulan"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "rahulan"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-11-0012",
+      "MAN-11-0013",
+      "MAN-11-0014"
+     ]
+    },
+    {
+     "pair": [
+      "aticari",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-16-0128",
+      "MAN-16-0129",
+      "MAN-16-0130"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "செய்",
+     "lines": [
+      "SIL-11-0177",
+      "SIL-11-0178",
+      "SIL-11-0179"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_queen"
+     ],
+     "score": 0.667,
+     "cue": "செய்",
+     "lines": [
+      "SIL-16-0119",
+      "SIL-16-0120",
+      "SIL-16-0121"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "kovalan"
+     ],
+     "score": 0.667,
+     "cue": "செய்",
+     "lines": [
+      "SIL-23-0152",
+      "SIL-23-0153",
+      "SIL-23-0154"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "செய்",
+     "lines": [
+      "MAN-10-0071",
+      "MAN-10-0072",
+      "MAN-10-0073"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "manimekalai"
+     ],
+     "score": 0.667,
+     "cue": "கேளாய்",
+     "lines": [
+      "MAN-20-0113",
+      "MAN-20-0114",
+      "MAN-20-0115"
+     ]
+    },
+    {
+     "pair": [
+      "bhumichandran",
+      "punyarasan"
+     ],
+     "score": 0.667,
+     "cue": "பூமி",
+     "lines": [
+      "MAN-24-0168",
+      "MAN-24-0169",
+      "MAN-24-0170"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "sangaman"
+     ],
+     "score": 0.571,
+     "cue": "கணவன்",
+     "lines": [
+      "MAN-26-0023",
+      "MAN-26-0024",
+      "MAN-26-0025"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "தன்னை",
+     "lines": [
+      "SIL-15-0017",
+      "SIL-15-0018",
+      "SIL-15-0019"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekalai"
+     ],
+     "score": 0.5,
+     "cue": "தன்னை",
+     "lines": [
+      "MAN-00-0044",
+      "MAN-00-0045",
+      "MAN-00-0046"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekhala_deity"
+     ],
+     "score": 0.5,
+     "cue": "தன்னை",
+     "lines": [
+      "MAN-07-0016",
+      "MAN-07-0017",
+      "MAN-07-0018"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "udayakumaran"
+     ],
+     "score": 0.5,
+     "cue": "தன்னை",
+     "lines": [
+      "MAN-12-0008",
+      "MAN-12-0009",
+      "MAN-12-0010"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "என்றலும்",
+     "lines": [
+      "MAN-29-0037",
+      "MAN-29-0038",
+      "MAN-29-0039"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "matari"
+     ],
+     "score": 0.4,
+     "cue": "என்போள்",
+     "lines": [
+      "SIL-15-0117",
+      "SIL-15-0118",
+      "SIL-15-0119"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "vayantamalai"
+     ],
+     "score": 0.4,
+     "cue": "எனக்",
+     "lines": [
+      "MAN-02-0006",
+      "MAN-02-0007",
+      "MAN-02-0008"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "vayantamalai"
+     ],
+     "score": 0.4,
+     "cue": "எனக்",
+     "lines": [
+      "MAN-02-0008",
+      "MAN-02-0009",
+      "MAN-02-0010"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "udayakumaran"
+     ],
+     "score": 0.4,
+     "cue": "பூம்பொழில்",
+     "lines": [
+      "MAN-04-0077",
+      "MAN-04-0078",
+      "MAN-04-0079"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "kovalan"
+     ],
+     "score": 0.4,
+     "cue": "அறம்",
+     "lines": [
+      "MAN-18-0005",
+      "MAN-18-0006",
+      "MAN-18-0007"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "masattuvan"
+     ],
+     "score": 0.333,
+     "cue": "தாதை",
+     "lines": [
+      "SIL-27-0090",
+      "SIL-27-0091",
+      "SIL-27-0092"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "manimekhala_deity"
+     ],
+     "score": 0.333,
+     "cue": "போய",
+     "lines": [
+      "MAN-00-0042",
+      "MAN-00-0043",
+      "MAN-00-0044"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "udayakumaran"
+     ],
+     "score": 0.333,
+     "cue": "இழை",
+     "lines": [
+      "MAN-18-0112",
+      "MAN-18-0113",
+      "MAN-18-0114"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "manimekalai"
+     ],
+     "score": 0.333,
+     "cue": "போய",
+     "lines": [
+      "MAN-05-0081",
+      "MAN-05-0082",
+      "MAN-05-0083"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "tivatilakai"
+     ],
+     "score": 0.333,
+     "cue": "போய",
+     "lines": [
+      "MAN-12-0023",
+      "MAN-12-0024",
+      "MAN-12-0025"
+     ]
+    },
+    {
+     "pair": [
+      "cattan",
+      "manimekalai"
+     ],
+     "score": 0.286,
+     "cue": "கெழு",
+     "lines": [
+      "MAN-00-0095",
+      "MAN-00-0096",
+      "MAN-00-0097"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "chintadevi"
+     ],
+     "score": 0.25,
+     "cue": "வண்ணமும்",
+     "lines": [
+      "MAN-00-0058",
+      "MAN-00-0059",
+      "MAN-00-0060"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "aravanan"
+     ],
+     "score": 0.25,
+     "cue": "வண்ணமும்",
+     "lines": [
+      "MAN-12-0027",
+      "MAN-12-0028",
+      "MAN-12-0029"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cutamati"
+     ],
+     "score": 0.231,
+     "cue": "அம்",
+     "lines": [
+      "MAN-12-0017",
+      "MAN-12-0018",
+      "MAN-12-0019"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "madhavi"
+     ],
+     "score": 0.231,
+     "cue": "அம்",
+     "lines": [
+      "MAN-12-0017",
+      "MAN-12-0018",
+      "MAN-12-0019"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "cues": {
+    "ஈன்ற": 0.8571428571428571,
+    "அகவயின்": 0.8333333333333334,
+    "பட்ட": 0.8,
+    "மனைவி": 0.8,
+    "கொலைக்களப்": 0.8,
+    "பிறவியில்": 0.8,
+    "யளிப்பவும்": 0.75,
+    "வாராத்": 0.75,
+    "நோக்கி": 0.75,
+    "முகம்": 0.75,
+    "அவிழ்": 0.75,
+    "பயந்த": 0.75
+   },
+   "candidates": [
+    {
+     "pair": [
+      "manimekalai",
+      "udayakumaran"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-18-0025",
+      "MAN-18-0026",
+      "MAN-18-0027"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "udayakumaran"
+     ],
+     "score": 0.857,
+     "cue": "ஈன்ற",
+     "lines": [
+      "MAN-18-0025",
+      "MAN-18-0026",
+      "MAN-18-0027"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "நோக்கி",
+     "lines": [
+      "SIL-07-0018",
+      "SIL-07-0019",
+      "SIL-07-0020"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_queen"
+     ],
+     "score": 0.75,
+     "cue": "நோக்கி",
+     "lines": [
+      "SIL-16-0119",
+      "SIL-16-0120",
+      "SIL-16-0121"
+     ]
+    },
+    {
+     "pair": [
+      "pandya_king",
+      "pandya_queen"
+     ],
+     "score": 0.75,
+     "cue": "நோக்கி",
+     "lines": [
+      "SIL-16-0137",
+      "SIL-16-0138",
+      "SIL-16-0139"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "பயந்த",
+     "lines": [
+      "MAN-04-0066",
+      "MAN-04-0067",
+      "MAN-04-0068"
+     ]
+    },
+    {
+     "pair": [
+      "aticari",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-16-0128",
+      "MAN-16-0129",
+      "MAN-16-0130"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "manimekhala_deity"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-07-0002",
+      "MAN-07-0003",
+      "MAN-07-0004"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-05-0092",
+      "MAN-05-0093",
+      "MAN-05-0094"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "aravanan"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0057",
+      "MAN-00-0058",
+      "MAN-00-0059"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "chintadevi"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0058",
+      "MAN-00-0059",
+      "MAN-00-0060"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "udayakumaran"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-12-0007",
+      "MAN-12-0008",
+      "MAN-12-0009"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-18-0149",
+      "MAN-18-0150",
+      "MAN-18-0151"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "போது",
+     "lines": [
+      "SIL-04-0086",
+      "SIL-04-0087",
+      "SIL-04-0088"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "kovalan"
+     ],
+     "score": 0.667,
+     "cue": "செய்",
+     "lines": [
+      "SIL-23-0152",
+      "SIL-23-0153",
+      "SIL-23-0154"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "matalan"
+     ],
+     "score": 0.667,
+     "cue": "தண்",
+     "lines": [
+      "SIL-27-0056",
+      "SIL-27-0057",
+      "SIL-27-0058"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "செய்",
+     "lines": [
+      "MAN-10-0071",
+      "MAN-10-0072",
+      "MAN-10-0073"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cutamati"
+     ],
+     "score": 0.667,
+     "cue": "மெய்",
+     "lines": [
+      "MAN-24-0085",
+      "MAN-24-0086",
+      "MAN-24-0087"
+     ]
+    },
+    {
+     "pair": [
+      "bhumichandran",
+      "punyarasan"
+     ],
+     "score": 0.667,
+     "cue": "பூமி",
+     "lines": [
+      "MAN-24-0168",
+      "MAN-24-0169",
+      "MAN-24-0170"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "udayakumaran"
+     ],
+     "score": 0.6,
+     "cue": "பூம்பொழில்",
+     "lines": [
+      "MAN-04-0077",
+      "MAN-04-0078",
+      "MAN-04-0079"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "sangaman"
+     ],
+     "score": 0.571,
+     "cue": "கணவன்",
+     "lines": [
+      "MAN-26-0023",
+      "MAN-26-0024",
+      "MAN-26-0025"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "தன்னை",
+     "lines": [
+      "SIL-15-0017",
+      "SIL-15-0018",
+      "SIL-15-0019"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madurapati"
+     ],
+     "score": 0.5,
+     "cue": "இல்",
+     "lines": [
+      "SIL-23-0175",
+      "SIL-23-0176",
+      "SIL-23-0177"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "masattuvan"
+     ],
+     "score": 0.5,
+     "cue": "கேட்டு",
+     "lines": [
+      "SIL-27-0088",
+      "SIL-27-0089",
+      "SIL-27-0090"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "வயந்த",
+     "lines": [
+      "MAN-02-0006",
+      "MAN-02-0007",
+      "MAN-02-0008"
+     ]
+    },
+    {
+     "pair": [
+      "udayakumaran",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "வயந்த",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekhala_deity"
+     ],
+     "score": 0.5,
+     "cue": "தன்னை",
+     "lines": [
+      "MAN-07-0016",
+      "MAN-07-0017",
+      "MAN-07-0018"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மன்றம்",
+     "lines": [
+      "MAN-19-0031",
+      "MAN-19-0032",
+      "MAN-19-0033"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "அறவோன்",
+     "lines": [
+      "MAN-28-0210",
+      "MAN-28-0211",
+      "MAN-28-0212"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "என்றலும்",
+     "lines": [
+      "MAN-29-0037",
+      "MAN-29-0038",
+      "MAN-29-0039"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "matari"
+     ],
+     "score": 0.4,
+     "cue": "என்போள்",
+     "lines": [
+      "SIL-15-0117",
+      "SIL-15-0118",
+      "SIL-15-0119"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_king"
+     ],
+     "score": 0.4,
+     "cue": "பெற்ற",
+     "lines": [
+      "SIL-16-0109",
+      "SIL-16-0110",
+      "SIL-16-0111"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "pandya_king"
+     ],
+     "score": 0.4,
+     "cue": "அணி",
+     "lines": [
+      "SIL-20-0081",
+      "SIL-20-0082",
+      "SIL-20-0083"
+     ]
+    },
+    {
+     "pair": [
+      "rahulan",
+      "udayakumaran"
+     ],
+     "score": 0.4,
+     "cue": "தோன்ற",
+     "lines": [
+      "MAN-10-0041",
+      "MAN-10-0042",
+      "MAN-10-0043"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "tivatilakai"
+     ],
+     "score": 0.4,
+     "cue": "தோன்ற",
+     "lines": [
+      "MAN-12-0023",
+      "MAN-12-0024",
+      "MAN-12-0025"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "kovalan"
+     ],
+     "score": 0.4,
+     "cue": "அறம்",
+     "lines": [
+      "MAN-18-0005",
+      "MAN-18-0006",
+      "MAN-18-0007"
+     ]
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "cues": {
+    "நெடுங்கண்": 0.8888888888888888,
+    "மாமலர்": 0.8888888888888888,
+    "கோப்பெருந்": 0.8571428571428571,
+    "ஈன்ற": 0.8571428571428571,
+    "கோலம்": 0.8333333333333334,
+    "அகவயின்": 0.8333333333333334,
+    "வாங்கிக்": 0.8,
+    "கொண்ட": 0.8,
+    "பட்ட": 0.8,
+    "மனைவி": 0.8,
+    "கொலைக்களப்": 0.8,
+    "இருந்த": 0.8
+   },
+   "candidates": [
+    {
+     "pair": [
+      "bharatan",
+      "kovalan"
+     ],
+     "score": 0.8,
+     "cue": "கொண்ட",
+     "lines": [
+      "SIL-23-0154",
+      "SIL-23-0155",
+      "SIL-23-0156"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madurapati"
+     ],
+     "score": 0.8,
+     "cue": "கொண்ட",
+     "lines": [
+      "SIL-23-0176",
+      "SIL-23-0177",
+      "SIL-23-0178"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "manimekalai"
+     ],
+     "score": 0.8,
+     "cue": "கொண்ட",
+     "lines": [
+      "MAN-04-0067",
+      "MAN-04-0068",
+      "MAN-04-0069"
+     ]
+    },
+    {
+     "pair": [
+      "goldsmith",
+      "pandya_king"
+     ],
+     "score": 0.75,
+     "cue": "பொருந்திக்",
+     "lines": [
+      "SIL-16-0109",
+      "SIL-16-0110",
+      "SIL-16-0111"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "madhavi"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "வாராத்",
+     "lines": [
+      "MAN-02-0004",
+      "MAN-02-0005",
+      "MAN-02-0006"
+     ]
+    },
+    {
+     "pair": [
+      "aticari",
+      "manimekalai"
+     ],
+     "score": 0.75,
+     "cue": "மனை",
+     "lines": [
+      "MAN-16-0128",
+      "MAN-16-0129",
+      "MAN-16-0130"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "manimekhala_deity"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-07-0002",
+      "MAN-07-0003",
+      "MAN-07-0004"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-05-0092",
+      "MAN-05-0093",
+      "MAN-05-0094"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "aravanan"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0057",
+      "MAN-00-0058",
+      "MAN-00-0059"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "chintadevi"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-00-0058",
+      "MAN-00-0059",
+      "MAN-00-0060"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekalai",
+      "vayantamalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-03-0001",
+      "MAN-03-0002",
+      "MAN-03-0003"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "udayakumaran"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-12-0007",
+      "MAN-12-0008",
+      "MAN-12-0009"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "manimekalai"
+     ],
+     "score": 0.727,
+     "cue": "மலர்",
+     "lines": [
+      "MAN-18-0149",
+      "MAN-18-0150",
+      "MAN-18-0151"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "manimekhala_deity"
+     ],
+     "score": 0.7,
+     "cue": "தன்னொடு",
+     "lines": [
+      "MAN-05-0093",
+      "MAN-05-0094",
+      "MAN-05-0095"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "கூடா",
+     "lines": [
+      "SIL-04-0085",
+      "SIL-04-0086",
+      "SIL-04-0087"
+     ]
+    },
+    {
+     "pair": [
+      "madhavi",
+      "matalan"
+     ],
+     "score": 0.667,
+     "cue": "தண்",
+     "lines": [
+      "SIL-27-0056",
+      "SIL-27-0057",
+      "SIL-27-0058"
+     ]
+    },
+    {
+     "pair": [
+      "kovalan",
+      "masattuvan"
+     ],
+     "score": 0.667,
+     "cue": "கொடுந்",
+     "lines": [
+      "SIL-27-0088",
+      "SIL-27-0089",
+      "SIL-27-0090"
+     ]
+    },
+    {
+     "pair": [
+      "cutamati",
+      "madhavi"
+     ],
+     "score": 0.667,
+     "cue": "செய்",
+     "lines": [
+      "MAN-10-0071",
+      "MAN-10-0072",
+      "MAN-10-0073"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cutamati"
+     ],
+     "score": 0.667,
+     "cue": "மெய்",
+     "lines": [
+      "MAN-24-0085",
+      "MAN-24-0086",
+      "MAN-24-0087"
+     ]
+    },
+    {
+     "pair": [
+      "aputhiran",
+      "tivatilakai"
+     ],
+     "score": 0.667,
+     "cue": "அடைந்தது",
+     "lines": [
+      "MAN-12-0023",
+      "MAN-12-0024",
+      "MAN-12-0025"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "kovalan"
+     ],
+     "score": 0.667,
+     "cue": "கொடுந்",
+     "lines": [
+      "MAN-18-0005",
+      "MAN-18-0006",
+      "MAN-18-0007"
+     ]
+    },
+    {
+     "pair": [
+      "bhumichandran",
+      "punyarasan"
+     ],
+     "score": 0.667,
+     "cue": "பூமி",
+     "lines": [
+      "MAN-24-0168",
+      "MAN-24-0169",
+      "MAN-24-0170"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "cittirapati"
+     ],
+     "score": 0.625,
+     "cue": "தேவி",
+     "lines": [
+      "MAN-24-0087",
+      "MAN-24-0088",
+      "MAN-24-0089"
+     ]
+    },
+    {
+     "pair": [
+      "cenkuttuvan",
+      "kannagi"
+     ],
+     "score": 0.6,
+     "cue": "தென்னவன்",
+     "lines": [
+      "SIL-29-0086",
+      "SIL-29-0087",
+      "SIL-29-0088"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "udayakumaran"
+     ],
+     "score": 0.6,
+     "cue": "பூம்பொழில்",
+     "lines": [
+      "MAN-04-0077",
+      "MAN-04-0078",
+      "MAN-04-0079"
+     ]
+    },
+    {
+     "pair": [
+      "bharatan",
+      "sangaman"
+     ],
+     "score": 0.571,
+     "cue": "கணவன்",
+     "lines": [
+      "MAN-26-0023",
+      "MAN-26-0024",
+      "MAN-26-0025"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "kovalan"
+     ],
+     "score": 0.5,
+     "cue": "நீங்கி",
+     "lines": [
+      "SIL-14-0015",
+      "SIL-14-0016",
+      "SIL-14-0017"
+     ]
+    },
+    {
+     "pair": [
+      "kavunti",
+      "matari"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "SIL-15-0117",
+      "SIL-15-0118",
+      "SIL-15-0119"
+     ]
+    },
+    {
+     "pair": [
+      "kannagi",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "கண்ட",
+     "lines": [
+      "SIL-20-0081",
+      "SIL-20-0082",
+      "SIL-20-0083"
+     ]
+    },
+    {
+     "pair": [
+      "ilanko",
+      "matalan"
+     ],
+     "score": 0.5,
+     "cue": "இறந்த",
+     "lines": [
+      "SIL-27-0157",
+      "SIL-27-0158",
+      "SIL-27-0159"
+     ]
+    },
+    {
+     "pair": [
+      "ilanko",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "இறந்த",
+     "lines": [
+      "SIL-27-0157",
+      "SIL-27-0158",
+      "SIL-27-0159"
+     ]
+    },
+    {
+     "pair": [
+      "matalan",
+      "pandya_king"
+     ],
+     "score": 0.5,
+     "cue": "இறந்த",
+     "lines": [
+      "SIL-27-0157",
+      "SIL-27-0158",
+      "SIL-27-0159"
+     ]
+    },
+    {
+     "pair": [
+      "cittirapati",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "வயந்த",
+     "lines": [
+      "MAN-02-0006",
+      "MAN-02-0007",
+      "MAN-02-0008"
+     ]
+    },
+    {
+     "pair": [
+      "udayakumaran",
+      "vayantamalai"
+     ],
+     "score": 0.5,
+     "cue": "வயந்த",
+     "lines": [
+      "MAN-04-0079",
+      "MAN-04-0080",
+      "MAN-04-0081"
+     ]
+    },
+    {
+     "pair": [
+      "rahulan",
+      "udayakumaran"
+     ],
+     "score": 0.5,
+     "cue": "அன்றியும்",
+     "lines": [
+      "MAN-10-0042",
+      "MAN-10-0043",
+      "MAN-10-0044"
+     ]
+    },
+    {
+     "pair": [
+      "kayasandikai",
+      "madhavi"
+     ],
+     "score": 0.5,
+     "cue": "மன்றம்",
+     "lines": [
+      "MAN-19-0031",
+      "MAN-19-0032",
+      "MAN-19-0033"
+     ]
+    },
+    {
+     "pair": [
+      "manimekhala_deity",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "அறவோன்",
+     "lines": [
+      "MAN-28-0210",
+      "MAN-28-0211",
+      "MAN-28-0212"
+     ]
+    },
+    {
+     "pair": [
+      "aravanan",
+      "tivatilakai"
+     ],
+     "score": 0.5,
+     "cue": "என்றலும்",
+     "lines": [
+      "MAN-29-0037",
+      "MAN-29-0038",
+      "MAN-29-0039"
+     ]
+    }
+   ]
+  }
+ ]
+}

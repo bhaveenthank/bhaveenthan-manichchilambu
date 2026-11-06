@@ -1,0 +1,81 @@
+{
+ "searchinfo": {
+  "search": "Nedunjeliyan I"
+ },
+ "search": [
+  {
+   "id": "Q19894721",
+   "title": "Q19894721",
+   "pageid": 21538276,
+   "concepturi": "http://www.wikidata.org/entity/Q19894721",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q19894721",
+   "display": {
+    "label": {
+     "value": "Nedunjeliyan II",
+     "language": "en"
+    },
+    "description": {
+     "value": "early Pandya King (c. 210 CE)",
+     "language": "en"
+    }
+   },
+   "label": "Nedunjeliyan II",
+   "description": "early Pandya King (c. 210 CE)",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Nedunjeliyan II"
+   }
+  },
+  {
+   "id": "Q27971834",
+   "title": "Q27971834",
+   "pageid": 29676943,
+   "concepturi": "http://www.wikidata.org/entity/Q27971834",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q27971834",
+   "display": {
+    "label": {
+     "value": "Nedunjeliyan III",
+     "language": "en"
+    }
+   },
+   "label": "Nedunjeliyan III",
+   "match": {
+    "type": "label",
+    "language": "en",
+    "text": "Nedunjeliyan III"
+   }
+  },
+  {
+   "id": "Q6986387",
+   "title": "Q6986387",
+   "pageid": 6859073,
+   "concepturi": "http://www.wikidata.org/entity/Q6986387",
+   "repository": "wikidata",
+   "url": "//www.wikidata.org/wiki/Q6986387",
+   "display": {
+    "label": {
+     "value": "Nedunj Cheliyan I",
+     "language": "en"
+    },
+    "description": {
+     "value": "1St Pandyan Ruler",
+     "language": "en"
+    }
+   },
+   "label": "Nedunj Cheliyan I",
+   "description": "1St Pandyan Ruler",
+   "match": {
+    "type": "label",
+    "language": "pl",
+    "text": "Nedunjeliyan I"
+   },
+   "aliases": [
+    "Nedunjeliyan I"
+   ]
+  }
+ ],
+ "success": 1
+}

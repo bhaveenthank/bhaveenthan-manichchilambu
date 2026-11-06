@@ -1,0 +1,40 @@
+{
+ "lines": 10209,
+ "status": {
+  "drafted": 8539,
+  "noted": 920,
+  "in_graph": 746,
+  "unread": 4
+ },
+ "unread_by_canto": {
+  "SIL-07": 1,
+  "SIL-12": 2,
+  "SIL-14": 1
+ },
+ "unread": {
+  "SIL-07": [
+   "SIL-07-0286"
+  ],
+  "SIL-12": [
+   "SIL-12-0121",
+   "SIL-12-0134"
+  ],
+  "SIL-14": [
+   "SIL-14-0001"
+  ]
+ },
+ "lines_with_catalogue_hits_by_category": {
+  "PLANT_ANIMAL": 53,
+  "OBJECT": 27,
+  "FESTIVAL_ART": 24,
+  "PLACE": 20,
+  "OCCUPATION": 20,
+  "BUILDING": 18,
+  "PERSON": 14,
+  "MATERIAL": 11,
+  "JEWEL": 11,
+  "FOOD": 9,
+  "DEITY": 6,
+  "RELIGION": 2
+ }
+}

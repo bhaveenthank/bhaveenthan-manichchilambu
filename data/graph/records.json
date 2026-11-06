@@ -1,0 +1,3641 @@
+[
+{
+"id": "a00",
+"ep": "anklet",
+"kind": "state",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "asserted",
+"t": 1,
+"roles": {},
+"does": [
+"+holds(kannagi,ank_k1)",
+"+holds(kannagi,ank_k2)"
+],
+"lines": [
+"SIL-20-0072"
+],
+"check": "என்காற் சிலம்பு",
+"life": "main"
+},
+{
+"id": "a01",
+"ep": "anklet",
+"kind": "offer",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 9.7,
+"roles": {
+"agent": "kannagi",
+"theme": "ank_pair",
+"recipient": "kovalan"
+},
+"lines": [
+"SIL-09-0073"
+],
+"check": "சிலம்புஉள கொண்மின்",
+"life": "main"
+},
+{
+"id": "a02",
+"ep": "anklet",
+"kind": "trade",
+"voice": [
+"poet",
+"kovalan"
+],
+"mood": "intended",
+"t": 9.75,
+"roles": {
+"agent": "kovalan",
+"theme": "ank_pair",
+"place": "madurai"
+},
+"lines": [
+"SIL-09-0075",
+"SIL-09-0076"
+],
+"check": "உலந்தபொருள் ஈட்டுதல்",
+"life": "main"
+},
+{
+"id": "a03",
+"ep": "anklet",
+"kind": "take",
+"voice": [
+"poet",
+"kovalan"
+],
+"mood": "asserted",
+"t": 16.09,
+"roles": {
+"agent": "kovalan",
+"theme": "ank_k1",
+"source": "kannagi"
+},
+"does": [
+"+holds(kovalan,ank_k1)",
+"-holds(kannagi,ank_k1)"
+],
+"lines": [
+"SIL-16-0092"
+],
+"check": "சிலம்பி னொன்றுகொண்",
+"life": "main"
+},
+{
+"id": "a04",
+"ep": "anklet",
+"kind": "show",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.11,
+"roles": {
+"agent": "kovalan",
+"theme": "ank_k1",
+"recipient": "goldsmith"
+},
+"lines": [
+"SIL-16-0116"
+],
+"check": "பொதிவா யவிழ்த்தனன்",
+"life": "main"
+},
+{
+"id": "a05",
+"ep": "anklet",
+"kind": "suits",
+"voice": [
+"poet",
+"goldsmith"
+],
+"mood": "claimed",
+"t": 16.12,
+"roles": {
+"theme": "ank_k1",
+"beneficiary": "pandya_queen"
+},
+"lines": [
+"SIL-16-0121",
+"SIL-16-0122"
+],
+"check": "கோப்பெருந் தேவிக் கல்லதை",
+"life": "main"
+},
+{
+"id": "a06",
+"ep": "anklet",
+"kind": "steal",
+"voice": [
+"poet",
+"goldsmith"
+],
+"mood": "thought",
+"t": 0.5,
+"roles": {
+"agent": "goldsmith",
+"theme": "ank_q"
+},
+"does": [
+"+holds(goldsmith,ank_q)",
+"-holds(pandya_queen,ank_q)"
+],
+"lines": [
+"SIL-16-0127"
+],
+"check": "கரந்தியான் கொண்ட",
+"life": "main"
+},
+{
+"id": "a06b",
+"ep": "anklet",
+"kind": "steal",
+"voice": [
+"poet",
+"cattan"
+],
+"mood": "asserted",
+"t": 0.5,
+"roles": {
+"agent": "goldsmith",
+"theme": "ank_q"
+},
+"does": [
+"+holds(goldsmith,ank_q)",
+"-holds(pandya_queen,ank_q)"
+],
+"lines": [
+"SIL-00-0025"
+],
+"check": "பண்டுதான் கொண்ட",
+"life": "main"
+},
+{
+"id": "a07",
+"ep": "anklet",
+"kind": "frame",
+"voice": [
+"poet",
+"goldsmith"
+],
+"mood": "intended",
+"t": 16.13,
+"roles": {
+"agent": "goldsmith",
+"target": "kovalan",
+"addressee": "pandya_king"
+},
+"lines": [
+"SIL-16-0128",
+"SIL-16-0129"
+],
+"check": "புலம்பெயர் புதுவனிற்",
+"life": "main"
+},
+{
+"id": "a08",
+"ep": "anklet",
+"kind": "accuse",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.14,
+"roles": {
+"agent": "goldsmith",
+"target": "kovalan",
+"addressee": "pandya_king"
+},
+"carries": "a09",
+"lines": [
+"SIL-16-0145"
+],
+"check": "கோயிற் சிலம்பு கொண்ட கள்வன்",
+"life": "main"
+},
+{
+"id": "a09",
+"ep": "anklet",
+"kind": "steal",
+"voice": [
+"poet",
+"goldsmith"
+],
+"mood": "claimed",
+"t": 16.14,
+"roles": {
+"agent": "kovalan",
+"theme": "ank_q"
+},
+"does": [
+"+holds(kovalan,ank_q)"
+],
+"lines": [
+"SIL-16-0145",
+"SIL-16-0147"
+],
+"check": "கொண்ட கள்வன்",
+"life": "main"
+},
+{
+"id": "a10",
+"ep": "anklet",
+"kind": "believe",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.15,
+"roles": {
+"holder": "pandya_king",
+"source": "goldsmith"
+},
+"content": "a09",
+"stance": "accept",
+"heard_by": [
+"pandya_king"
+],
+"because": [
+{
+"of": "a08",
+"rel": "motivates"
+}
+],
+"lines": [
+"SIL-16-0149"
+],
+"check": "தேரான்",
+"life": "main"
+},
+{
+"id": "a11",
+"ep": "anklet",
+"kind": "order",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.16,
+"roles": {
+"agent": "pandya_king",
+"addressee": "guards"
+},
+"carries": "a12",
+"because": [
+{
+"of": "a10",
+"rel": "motivates"
+}
+],
+"lines": [
+"SIL-16-0150"
+],
+"check": "ஊர்காப் பாளரை",
+"life": "main"
+},
+{
+"id": "a12",
+"ep": "anklet",
+"kind": "kill",
+"voice": [
+"poet",
+"pandya_king"
+],
+"mood": "conditional",
+"t": 16.16,
+"roles": {
+"agent": "guards",
+"patient": "kovalan"
+},
+"condition": "anklet is in a thief's hand",
+"lines": [
+"SIL-16-0152",
+"SIL-16-0153"
+],
+"check": "கொன்றச் சிலம்பு",
+"life": "main"
+},
+{
+"id": "a13",
+"ep": "anklet",
+"kind": "innocent",
+"voice": [
+"poet",
+"guards"
+],
+"mood": "claimed",
+"t": 16.17,
+"roles": {
+"theme": "kovalan"
+},
+"contradicts": "a09",
+"lines": [
+"SIL-16-0163"
+],
+"check": "கொலைப்படு மகனலன்",
+"life": "main"
+},
+{
+"id": "a14",
+"ep": "anklet",
+"kind": "persuade",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.18,
+"roles": {
+"agent": "goldsmith",
+"addressee": "guards"
+},
+"lines": [
+"SIL-16-0165"
+],
+"check": "காட்டின னுரைப்போன்",
+"life": "main"
+},
+{
+"id": "a15",
+"ep": "anklet",
+"kind": "kill",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.2,
+"roles": {
+"agent": "drunk_man",
+"patient": "kovalan",
+"instrument": "sword"
+},
+"does": [
+"-alive(kovalan)"
+],
+"because": [
+{
+"of": "a11",
+"rel": "enables"
+},
+{
+"of": "a14",
+"rel": "enables"
+},
+{
+"of": "k_karma_kov",
+"rel": "karma",
+"voice": [
+"poet"
+]
+},
+{
+"of": "k_sceptre",
+"rel": "moral",
+"voice": [
+"poet"
+]
+}
+],
+"lines": [
+"SIL-16-0212",
+"SIL-16-0213"
+],
+"check": "களிமக னொருவன்",
+"life": "main"
+},
+{
+"id": "k_karma_kov",
+"ep": "anklet",
+"kind": "fate_explains",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.21,
+"roles": {
+"patient": "kovalan"
+},
+"lines": [
+"SIL-16-0217"
+],
+"check": "பண்டை ஊழ்வினை",
+"life": "main"
+},
+{
+"id": "k_sceptre",
+"ep": "anklet",
+"kind": "sceptre_bends",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.21,
+"roles": {
+"agent": "pandya_king"
+},
+"lines": [
+"SIL-16-0216"
+],
+"check": "செங்கோல் வளைஇய",
+"life": "main"
+},
+{
+"id": "a16",
+"ep": "anklet",
+"kind": "bring",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.5,
+"roles": {
+"agent": "pandya_king",
+"theme": "ank_k1"
+},
+"does": [
+"+holds(pandya_king,ank_k1)",
+"-holds(kovalan,ank_k1)"
+],
+"inferred": "only the king's fetching is stated, the route from corpse to palace is not",
+"lines": [
+"SIL-20-0081"
+],
+"check": "தருகெனத் தந்து",
+"life": "main"
+},
+{
+"id": "a17",
+"ep": "anklet",
+"kind": "arrive",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.1,
+"roles": {
+"agent": "kannagi",
+"theme": "ank_k2",
+"place": "palace_gate"
+},
+"lines": [
+"SIL-20-0038",
+"SIL-20-0039"
+],
+"check": "சிலம்பொன் றேந்திய",
+"life": "main"
+},
+{
+"id": "a18",
+"ep": "anklet",
+"kind": "contains",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "claimed",
+"t": 20.4,
+"roles": {
+"theme": "ank_pair",
+"content_of": "gems"
+},
+"lines": [
+"SIL-20-0078"
+],
+"check": "மணியுடை அரி",
+"life": "main"
+},
+{
+"id": "a19",
+"ep": "anklet",
+"kind": "contains",
+"voice": [
+"poet",
+"pandya_king"
+],
+"mood": "claimed",
+"t": 20.45,
+"roles": {
+"theme": "ank_q",
+"content_of": "pearls"
+},
+"lines": [
+"SIL-20-0080"
+],
+"check": "முத்துடை அரி",
+"life": "main"
+},
+{
+"id": "a20",
+"ep": "anklet",
+"kind": "break",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.6,
+"roles": {
+"agent": "kannagi",
+"theme": {
+"one_of": [
+"ank_k1",
+"ank_k2"
+]
+}
+},
+"unresolved": "the text does not say which of the pair she broke",
+"does": [
+"+broken(ank_k1|ank_k2)"
+],
+"lines": [
+"SIL-20-0082"
+],
+"check": "காற்சிலம் புடைப்ப",
+"life": "main"
+},
+{
+"id": "a21",
+"ep": "anklet",
+"kind": "gem_shows",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.61,
+"roles": {
+"theme": "gems",
+"target": "pandya_king"
+},
+"because": [
+{
+"of": "a20",
+"rel": "causes"
+}
+],
+"lines": [
+"SIL-20-0083"
+],
+"check": "தெறித்தது மணியே",
+"life": "main"
+},
+{
+"id": "a22",
+"ep": "anklet",
+"kind": "believe",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.7,
+"roles": {
+"holder": "pandya_king",
+"source": "kannagi"
+},
+"content": "a09",
+"stance": "reject",
+"heard_by": [
+"pandya_king"
+],
+"because": [
+{
+"of": "a21",
+"rel": "causes"
+}
+],
+"lines": [
+"SIL-20-0085",
+"SIL-20-0086"
+],
+"check": "பொன்செய் கொல்லன்",
+"life": "main"
+},
+{
+"id": "a23",
+"ep": "anklet",
+"kind": "steal",
+"voice": [
+"poet",
+"pandya_king"
+],
+"mood": "metaphor",
+"t": 20.71,
+"roles": {
+"agent": "pandya_king"
+},
+"lines": [
+"SIL-20-0086"
+],
+"check": "யானே கள்வன்",
+"life": "main"
+},
+{
+"id": "a24",
+"ep": "anklet",
+"kind": "die",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.8,
+"roles": {
+"patient": "pandya_king"
+},
+"does": [
+"-alive(pandya_king)"
+],
+"because": [
+{
+"of": "a22",
+"rel": "causes"
+}
+],
+"lines": [
+"SIL-20-0089",
+"SIL-22-0007"
+],
+"check": "துஞ்சியது",
+"life": "main"
+},
+{
+"id": "a25",
+"ep": "anklet",
+"kind": "innocent",
+"voice": [
+"poet",
+"matalan",
+"matari"
+],
+"mood": "claimed",
+"t": 22.5,
+"roles": {
+"theme": "kovalan"
+},
+"contradicts": "a09",
+"lines": [
+"SIL-27-0075"
+],
+"check": "கோவலன் தீதிலன்",
+"life": "main"
+},
+{
+"id": "a26",
+"ep": "anklet",
+"kind": "sacrifice",
+"voice": [
+"poet",
+"matalan"
+],
+"mood": "asserted",
+"t": 26,
+"roles": {
+"agent": "vetrivel_celiyan",
+"patient": "goldsmiths_1000",
+"beneficiary": "kannagi"
+},
+"lines": [
+"SIL-27-0127",
+"SIL-27-0128",
+"SIL-27-0130"
+],
+"check": "கொல்லர் ஈரைஞ்",
+"life": "main"
+},
+{
+"id": "a27",
+"ep": "anklet",
+"kind": "appear",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 0.1,
+"roles": {
+"theme": "ank_q",
+"holder": "pandya_queen"
+},
+"does": [
+"+holds(pandya_queen,ank_q)"
+],
+"inferred": "the goldsmith took it from the queen, so she held it before",
+"lines": [
+"SIL-16-0151"
+],
+"check": "தன்காற் சிலம்பு",
+"life": "main"
+},
+{
+"id": "b01",
+"ep": "disguise",
+"kind": "hunger_curse",
+"voice": [
+"poet",
+"kayasandikai"
+],
+"mood": "asserted",
+"t": 17.1,
+"roles": {
+"agent": "viruchikan",
+"patient": "kayasandikai"
+},
+"does": [
+"+hungry(kayasandikai)"
+],
+"lines": [
+"MAN-17-0014",
+"MAN-17-0034"
+],
+"check": "பழ வினைப்",
+"life": "main"
+},
+{
+"id": "b02",
+"ep": "disguise",
+"kind": "feed",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 17.2,
+"roles": {
+"agent": "manimekalai",
+"patient": "kayasandikai",
+"instrument": "amudasurabhi"
+},
+"does": [
+"-hungry(kayasandikai)"
+],
+"lines": [
+"MAN-17-0018",
+"MAN-17-0019"
+],
+"check": "பெரும் பசி நீங்கி",
+"life": "main"
+},
+{
+"id": "b03",
+"ep": "disguise",
+"kind": "swallowed",
+"voice": [
+"poet",
+"pillar"
+],
+"mood": "asserted",
+"t": 17.9,
+"roles": {
+"agent": "vindhya_demoness",
+"patient": "kayasandikai"
+},
+"does": [
+"-alive(kayasandikai)"
+],
+"lines": [
+"MAN-20-0119",
+"MAN-20-0121"
+],
+"check": "வயிற்று அடங்கினள்",
+"life": "main"
+},
+{
+"id": "b04",
+"ep": "disguise",
+"kind": "same_person",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "asserted",
+"t": 18.1,
+"roles": {
+"later": "udayakumaran",
+"earlier": "rahulan"
+},
+"lines": [
+"MAN-18-0128"
+],
+"check": "இராகுலன் ஈங்கு இவன்",
+"life": "main"
+},
+{
+"id": "b05",
+"ep": "disguise",
+"kind": "disguise",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 18.5,
+"roles": {
+"agent": "manimekalai",
+"form": "kayasandikai",
+"instrument": "mantra"
+},
+"does": [
+"+looks_like(manimekalai,kayasandikai)"
+],
+"lines": [
+"MAN-18-0148",
+"MAN-18-0149",
+"MAN-18-0150"
+],
+"check": "காரிகை வடிவு",
+"life": "main"
+},
+{
+"id": "b06",
+"ep": "disguise",
+"kind": "is_vidyadhara",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "claimed",
+"t": 19.5,
+"roles": {
+"theme": "manimekalai"
+},
+"addressee": "chola_king",
+"lines": [
+"MAN-19-0147"
+],
+"check": "விஞ்சை மகள் யான்",
+"life": "main"
+},
+{
+"id": "b07",
+"ep": "disguise",
+"kind": "is_identity",
+"voice": [
+"poet",
+"udayakumaran"
+],
+"mood": "claimed",
+"t": 18.6,
+"roles": {
+"seen": "disguised_woman",
+"is": "manimekalai"
+},
+"lines": [
+"MAN-18-0155"
+],
+"check": "மாயையின் ஒளித்த மணிமேகலை",
+"life": "main"
+},
+{
+"id": "b08",
+"ep": "disguise",
+"kind": "believe",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 18.7,
+"roles": {
+"holder": "udayakumaran"
+},
+"content": "b07",
+"stance": "accept",
+"heard_by": [
+"udayakumaran"
+],
+"lines": [
+"MAN-20-0084",
+"MAN-20-0085"
+],
+"check": "காயசண்டிகை ஆய்",
+"life": "main"
+},
+{
+"id": "b09",
+"ep": "disguise",
+"kind": "is_identity",
+"voice": [
+"poet",
+"kanchanan"
+],
+"mood": "claimed",
+"t": 20.2,
+"roles": {
+"seen": "disguised_woman",
+"is": "kayasandikai"
+},
+"lines": [
+"MAN-20-0033"
+],
+"check": "இன்று நின் கையின்",
+"life": "main"
+},
+{
+"id": "b10",
+"ep": "disguise",
+"kind": "believe",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.21,
+"roles": {
+"holder": "kanchanan"
+},
+"content": "b09",
+"stance": "accept",
+"heard_by": [
+"kanchanan"
+],
+"lines": [
+"MAN-20-0026",
+"MAN-20-0027"
+],
+"check": "காஞ்சனன் என்னும்",
+"life": "main"
+},
+{
+"id": "b11",
+"ep": "disguise",
+"kind": "lover_of",
+"voice": [
+"poet",
+"kanchanan"
+],
+"mood": "claimed",
+"t": 20.3,
+"roles": {
+"agent": "udayakumaran",
+"target": "kayasandikai"
+},
+"lines": [
+"MAN-20-0077"
+],
+"check": "ஈங்கு இவன் காதலன்",
+"life": "main"
+},
+{
+"id": "b12",
+"ep": "disguise",
+"kind": "believe",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.31,
+"roles": {
+"holder": "kanchanan"
+},
+"content": "b11",
+"stance": "accept",
+"heard_by": [
+"kanchanan"
+],
+"because": [
+{
+"of": "b10",
+"rel": "enables"
+}
+],
+"lines": [
+"MAN-20-0078"
+],
+"check": "இகல் எரி",
+"life": "main"
+},
+{
+"id": "b13",
+"ep": "disguise",
+"kind": "kill",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.5,
+"roles": {
+"agent": "kanchanan",
+"patient": "udayakumaran",
+"instrument": "sword"
+},
+"does": [
+"-alive(udayakumaran)"
+],
+"because": [
+{
+"of": "b12",
+"rel": "motivates"
+},
+{
+"of": "b14",
+"rel": "karma",
+"voice": [
+"poet",
+"pillar"
+]
+}
+],
+"lines": [
+"MAN-20-0106",
+"MAN-20-0107"
+],
+"check": "துணிய வீசி",
+"life": "main"
+},
+{
+"id": "b14",
+"ep": "disguise",
+"kind": "fate_explains",
+"voice": [
+"poet",
+"pillar"
+],
+"mood": "asserted",
+"t": 20.6,
+"roles": {
+"patient": "udayakumaran"
+},
+"lines": [
+"MAN-20-0123",
+"MAN-20-0124"
+],
+"check": "ஊழ்வினை வந்து",
+"life": "main"
+},
+{
+"id": "b15",
+"ep": "disguise",
+"kind": "correct",
+"voice": [
+"poet",
+"pillar"
+],
+"mood": "asserted",
+"t": 20.61,
+"roles": {
+"addressee": "kanchanan",
+"seen": "disguised_woman",
+"is": "manimekalai"
+},
+"lines": [
+"MAN-20-0113"
+],
+"check": "மணிமேகலை அவள் மறைந்து",
+"life": "main"
+},
+{
+"id": "b16",
+"ep": "disguise",
+"kind": "believe",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.62,
+"roles": {
+"holder": "kanchanan",
+"source": "pillar"
+},
+"content": "b09",
+"stance": "reject",
+"heard_by": [
+"kanchanan"
+],
+"inferred": "the pillar tells him, his change of mind is not narrated",
+"lines": [
+"MAN-20-0113"
+],
+"check": "மணிமேகலை அவள்",
+"life": "main"
+},
+{
+"id": "b17",
+"ep": "disguise",
+"kind": "undisguise",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 21.1,
+"roles": {
+"agent": "manimekalai",
+"form": "kayasandikai"
+},
+"does": [
+"-looks_like(manimekalai,kayasandikai)"
+],
+"lines": [
+"MAN-21-0009",
+"MAN-21-0010"
+],
+"check": "கெடுக இவ் உரு",
+"life": "main"
+},
+{
+"id": "b18",
+"ep": "disguise",
+"kind": "motive",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "asserted",
+"t": 18.49,
+"roles": {
+"agent": "manimekalai",
+"target": "udayakumaran"
+},
+"purpose": "teach him so his bad karma ends",
+"lines": [
+"MAN-21-0021",
+"MAN-21-0022"
+],
+"check": "காயசண்டிகை வடிவு ஆனேன்",
+"life": "main"
+},
+{
+"id": "c01",
+"ep": "bowl",
+"kind": "give",
+"voice": [
+"poet",
+"aravanan"
+],
+"mood": "asserted",
+"t": -5.1,
+"roles": {
+"agent": "chintadevi",
+"theme": "amudasurabhi",
+"recipient": "aputhiran"
+},
+"does": [
+"+holds(aputhiran,amudasurabhi)"
+],
+"lines": [
+"MAN-14-0016"
+],
+"check": "தன் கைப் பாத்திரம் அவன் கைக்",
+"life": "main"
+},
+{
+"id": "c02",
+"ep": "bowl",
+"kind": "feed",
+"voice": [
+"poet",
+"aravanan"
+],
+"mood": "asserted",
+"t": -5.0,
+"roles": {
+"agent": "aputhiran",
+"instrument": "amudasurabhi"
+},
+"lines": [
+"MAN-14-0022",
+"MAN-14-0023"
+],
+"check": "பசி தீர்த்து",
+"life": "main"
+},
+{
+"id": "c03",
+"ep": "bowl",
+"kind": "stranded",
+"voice": [
+"poet",
+"aravanan"
+],
+"mood": "asserted",
+"t": -4.9,
+"roles": {
+"agent": "aputhiran",
+"place": "manipallavam"
+},
+"lines": [
+"MAN-14-0081",
+"MAN-14-0085"
+],
+"check": "மணிபல்லவத்திடை",
+"life": "main"
+},
+{
+"id": "c04",
+"ep": "bowl",
+"kind": "deposit",
+"voice": [
+"poet",
+"aravanan"
+],
+"mood": "asserted",
+"t": -4.8,
+"roles": {
+"agent": "aputhiran",
+"theme": "amudasurabhi",
+"place": "gomukhi"
+},
+"does": [
+"-holds(aputhiran,amudasurabhi)",
+"+holds(gomukhi,amudasurabhi)"
+],
+"lines": [
+"MAN-14-0091",
+"MAN-14-0092"
+],
+"check": "கோமுகி என்னும்",
+"life": "main"
+},
+{
+"id": "c05",
+"ep": "bowl",
+"kind": "appear",
+"voice": [
+"poet",
+"aravanan",
+"aputhiran"
+],
+"mood": "command",
+"t": -4.79,
+"roles": {
+"theme": "amudasurabhi",
+"addressee": "amudasurabhi",
+"recipient": "righteous_person"
+},
+"condition": "if someone who protects life with compassion exists",
+"lines": [
+"MAN-14-0092",
+"MAN-14-0093",
+"MAN-14-0094"
+],
+"check": "ஓர் யாண்டு ஒரு நாள்",
+"life": "main"
+},
+{
+"id": "c06",
+"ep": "bowl",
+"kind": "inexhaustible",
+"voice": [
+"poet",
+"tivatilakai"
+],
+"mood": "asserted",
+"t": 11.1,
+"roles": {
+"theme": "amudasurabhi"
+},
+"lines": [
+"MAN-11-0050"
+],
+"check": "தான் தொலைவு இல்லாத்",
+"life": "main"
+},
+{
+"id": "c07",
+"ep": "bowl",
+"kind": "receive",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 11.2,
+"roles": {
+"theme": "amudasurabhi",
+"recipient": "manimekalai",
+"place": "gomukhi"
+},
+"does": [
+"-holds(gomukhi,amudasurabhi)",
+"+holds(manimekalai,amudasurabhi)"
+],
+"lines": [
+"MAN-11-0057",
+"MAN-11-0058"
+],
+"check": "பாத்திரம் புகுதலும்",
+"life": "main"
+},
+{
+"id": "c08",
+"ep": "bowl",
+"kind": "give",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 11.2,
+"roles": {
+"agent": "tivatilakai",
+"theme": "amudasurabhi",
+"recipient": "manimekalai"
+},
+"conflicts": "c07",
+"account": "patikam",
+"lines": [
+"MAN-00-0053",
+"MAN-00-0054"
+],
+"check": "மடக்கொடிக்கு அளித்ததும்",
+"life": "main"
+},
+{
+"id": "c09",
+"ep": "bowl",
+"kind": "give",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "claimed",
+"t": 11.2,
+"roles": {
+"agent": "unnamed_deity",
+"theme": "amudasurabhi"
+},
+"conflicts": "c07",
+"lines": [
+"MAN-19-0151",
+"MAN-19-0152"
+],
+"check": "தெய்வம் தந்தது",
+"life": "main"
+},
+{
+"id": "c10",
+"ep": "bowl",
+"kind": "give",
+"voice": [
+"poet",
+"cutamati"
+],
+"mood": "asserted",
+"t": 5.0,
+"roles": {
+"agent": "sankatharuman",
+"theme": "other_bowl",
+"recipient": "cutamati"
+},
+"does": [
+"+holds(cutamati,other_bowl)"
+],
+"note": "same word pattiram, a different bowl",
+"lines": [
+"MAN-05-0065"
+],
+"check": "தன் கைப் பாத்திரம் என் கைத்",
+"life": "main"
+},
+{
+"id": "d01",
+"ep": "curse",
+"kind": "same_person",
+"voice": [
+"poet",
+"madurapati"
+],
+"mood": "asserted",
+"life": "main",
+"t": -60,
+"roles": {
+"later": "kovalan",
+"earlier": "bharatan"
+},
+"lines": [
+"SIL-23-0154"
+],
+"check": "பெயரனக் கோவலன்"
+},
+{
+"id": "d02",
+"ep": "curse",
+"kind": "accuse",
+"voice": [
+"poet",
+"madurapati"
+],
+"mood": "asserted",
+"life": "prev_bharatan",
+"t": -50,
+"roles": {
+"agent": "bharatan",
+"target": "sangaman",
+"addressee": "kalinga_king"
+},
+"carries": "d03",
+"lines": [
+"SIL-23-0156",
+"SIL-23-0157"
+],
+"check": "ஒற்றன் இவனென"
+},
+{
+"id": "d03",
+"ep": "curse",
+"kind": "spy",
+"voice": [
+"poet",
+"madurapati",
+"bharatan"
+],
+"mood": "claimed",
+"life": "prev_bharatan",
+"t": -50,
+"roles": {
+"agent": "sangaman"
+},
+"lines": [
+"SIL-23-0156"
+],
+"check": "ஒற்றன் இவனென"
+},
+{
+"id": "d04",
+"ep": "curse",
+"kind": "kill",
+"voice": [
+"poet",
+"madurapati"
+],
+"mood": "asserted",
+"life": "prev_bharatan",
+"t": -49,
+"roles": {
+"patient": "sangaman",
+"addressee": "kalinga_king"
+},
+"inferred": "shown to the king and killed, the line does not name the killer",
+"does": [
+"-alive(sangaman)"
+],
+"because": [
+{
+"of": "d02",
+"rel": "motivates"
+}
+],
+"lines": [
+"SIL-23-0157",
+"SIL-23-0158"
+],
+"check": "கொலைக்களப் பட்ட சங்கமன்"
+},
+{
+"id": "d05",
+"ep": "curse",
+"kind": "protest",
+"voice": [
+"poet",
+"madurapati"
+],
+"mood": "asserted",
+"life": "prev_bharatan",
+"t": -48,
+"roles": {
+"agent": "neeli",
+"target": "kalinga_king"
+},
+"because": [
+{
+"of": "d04",
+"rel": "causes"
+}
+],
+"lines": [
+"SIL-23-0160",
+"SIL-23-0162"
+],
+"check": "அரசர் முறையோ"
+},
+{
+"id": "d06",
+"ep": "curse",
+"kind": "curse",
+"voice": [
+"poet",
+"madurapati"
+],
+"mood": "asserted",
+"life": "prev_bharatan",
+"t": -47,
+"roles": {
+"agent": "neeli",
+"target": "bharatan"
+},
+"carries": "d07",
+"because": [
+{
+"of": "d05",
+"rel": "enables"
+}
+],
+"lines": [
+"SIL-23-0168",
+"SIL-23-0169"
+],
+"check": "வழுவில் சாபம்"
+},
+{
+"id": "d07",
+"ep": "curse",
+"kind": "suffer_same",
+"voice": [
+"poet",
+"madurapati",
+"neeli"
+],
+"mood": "wish",
+"life": "prev_bharatan",
+"t": -47,
+"roles": {
+"patient": "bharatan"
+},
+"lines": [
+"SIL-23-0167",
+"SIL-23-0168"
+],
+"check": "தம்முறு துயரமிற்"
+},
+{
+"id": "d08",
+"ep": "curse",
+"kind": "burn",
+"voice": [
+"poet",
+"madurapati"
+],
+"mood": "predicted",
+"t": -1,
+"roles": {
+"agent": "fire",
+"patient": "madurai"
+},
+"lines": [
+"SIL-23-0135",
+"SIL-23-0136"
+],
+"check": "அரைசுகே டுறுமெனும்",
+"life": "main"
+},
+{
+"id": "d09",
+"ep": "curse",
+"kind": "ascend",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 23.9,
+"roles": {
+"agent": "kannagi",
+"companion": "kovalan"
+},
+"lines": [
+"SIL-23-0198",
+"SIL-23-0199"
+],
+"check": "வான வூர்தி",
+"life": "main"
+},
+{
+"id": "d10",
+"ep": "curse",
+"kind": "fate_explains",
+"voice": [
+"poet",
+"madurapati"
+],
+"mood": "asserted",
+"t": 23.5,
+"roles": {
+"patient": "kovalan",
+"target": "kannagi"
+},
+"because": [
+{
+"of": "d06",
+"rel": "karma"
+}
+],
+"lines": [
+"SIL-23-0170"
+],
+"check": "பட்டனி ராதலிற்",
+"life": "main"
+},
+{
+"id": "e01",
+"ep": "fire",
+"kind": "throw_breast",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 21.5,
+"roles": {
+"agent": "kannagi",
+"place": "madurai"
+},
+"lines": [
+"SIL-21-0043",
+"SIL-21-0046"
+],
+"check": "இடமுலை கையால்",
+"life": "main"
+},
+{
+"id": "e02",
+"ep": "fire",
+"kind": "prior_order",
+"voice": [
+"poet",
+"agni"
+],
+"mood": "asserted",
+"t": 21.6,
+"roles": {
+"agent": "agni",
+"patient": "madurai"
+},
+"because": [
+{
+"of": "e01",
+"rel": "enables"
+}
+],
+"lines": [
+"SIL-21-0050",
+"SIL-21-0051",
+"SIL-21-0052"
+],
+"check": "ஏவ லுடையேனா",
+"life": "main"
+},
+{
+"id": "e03",
+"ep": "fire",
+"kind": "spare",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "command",
+"t": 21.7,
+"roles": {
+"agent": "agni",
+"addressee": "agni",
+"patient": [
+"brahmins",
+"the_virtuous",
+"cows",
+"chaste_women",
+"the_old",
+"children"
+]
+},
+"lines": [
+"SIL-21-0053",
+"SIL-21-0054",
+"SIL-21-0055"
+],
+"check": "பார்ப்பார் அறவோர்",
+"life": "main"
+},
+{
+"id": "e04",
+"ep": "fire",
+"kind": "burn",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 21.8,
+"roles": {
+"agent": "fire",
+"patient": "madurai"
+},
+"because": [
+{
+"of": "e01",
+"rel": "causes"
+},
+{
+"of": "d08",
+"rel": "fulfils"
+},
+{
+"of": "e02",
+"rel": "enables"
+}
+],
+"lines": [
+"SIL-21-0056",
+"SIL-21-0057"
+],
+"check": "புகையழல் மண்டிற்றே",
+"life": "main"
+},
+{
+"id": "e05",
+"ep": "fire",
+"kind": "blameless",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "claimed",
+"t": 21.4,
+"roles": {
+"theme": "kannagi"
+},
+"lines": [
+"SIL-21-0042"
+],
+"check": "குற்றமிலேன்",
+"life": "main"
+},
+{
+"id": "e06",
+"ep": "fire",
+"kind": "die",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.9,
+"roles": {
+"patient": "pandya_queen"
+},
+"does": [
+"-alive(pandya_queen)"
+],
+"lines": [
+"SIL-22-0006",
+"SIL-22-0007"
+],
+"check": "துஞ்சியது",
+"life": "main"
+},
+{
+"id": "e07",
+"ep": "fire",
+"kind": "enter_fire",
+"voice": [
+"poet",
+"matalan"
+],
+"mood": "asserted",
+"t": 22.6,
+"roles": {
+"agent": "matari"
+},
+"does": [
+"-alive(matari)"
+],
+"lines": [
+"SIL-27-0078"
+],
+"check": "தெரியகம் புக்கதும்",
+"life": "main"
+},
+{
+"id": "e08",
+"ep": "fire",
+"kind": "fast_to_death",
+"voice": [
+"poet",
+"matalan"
+],
+"mood": "asserted",
+"t": 22.7,
+"roles": {
+"agent": "kavunti"
+},
+"does": [
+"-alive(kavunti)"
+],
+"lines": [
+"SIL-27-0083"
+],
+"check": "உண்ணா நோன்போ",
+"life": "main"
+},
+{
+"id": "f01",
+"ep": "rahulan",
+"kind": "same_person",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "asserted",
+"t": -70,
+"roles": {
+"later": "manimekalai",
+"earlier": "lakshmi"
+},
+"lines": [
+"MAN-09-0041"
+],
+"check": "இலக்குமி என்னும்",
+"life": "main"
+},
+{
+"id": "f02",
+"ep": "rahulan",
+"kind": "spouse",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "asserted",
+"life": "prev_lakshmi",
+"t": -65,
+"roles": {
+"agent": "lakshmi",
+"target": "rahulan"
+},
+"lines": [
+"MAN-09-0046"
+],
+"check": "இராகுலன் தனக்குப் புக்கேன்"
+},
+{
+"id": "f03",
+"ep": "rahulan",
+"kind": "same_person",
+"voice": [
+"poet",
+"manimekhala_deity"
+],
+"mood": "asserted",
+"t": 10.1,
+"roles": {
+"later": "udayakumaran",
+"earlier": "rahulan"
+},
+"lines": [
+"MAN-10-0043"
+],
+"check": "உதயகுமரன் அவன் உன் இராகுலன்",
+"life": "main"
+},
+{
+"id": "f04",
+"ep": "rahulan",
+"kind": "die",
+"voice": [
+"poet",
+"manimekalai",
+"sage"
+],
+"mood": "predicted",
+"life": "prev_lakshmi",
+"t": -64,
+"roles": {
+"patient": "rahulan"
+},
+"lines": [
+"MAN-09-0048",
+"MAN-09-0049"
+],
+"check": "திட்டிவிடம் உணும்"
+},
+{
+"id": "f05",
+"ep": "rahulan",
+"kind": "kill",
+"voice": [
+"poet",
+"pillar"
+],
+"mood": "asserted",
+"life": "prev_lakshmi",
+"t": -66,
+"roles": {
+"agent": "rahulan",
+"patient": "cook",
+"instrument": "sword"
+},
+"lines": [
+"MAN-21-0059",
+"MAN-21-0060"
+],
+"check": "வாளின் தப்பிய"
+},
+{
+"id": "f06",
+"ep": "rahulan",
+"kind": "die",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "asserted",
+"life": "prev_lakshmi",
+"t": -63,
+"roles": {
+"patient": "rahulan"
+},
+"does": [
+"-alive(rahulan)"
+],
+"because": [
+{
+"of": "f04",
+"rel": "fulfils"
+}
+],
+"lines": [
+"MAN-21-0011"
+],
+"check": "திட்டிவிடம் உண"
+},
+{
+"id": "f07",
+"ep": "rahulan",
+"kind": "enter_fire",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "asserted",
+"life": "prev_lakshmi",
+"t": -62,
+"roles": {
+"agent": "lakshmi"
+},
+"does": [
+"-alive(lakshmi)"
+],
+"lines": [
+"MAN-21-0012"
+],
+"check": "என் உயிர் சுட்டேன்"
+},
+{
+"id": "f08",
+"ep": "rahulan",
+"kind": "child_of",
+"voice": [
+"poet",
+"pillar"
+],
+"mood": "asserted",
+"life": "other_births",
+"t": -90,
+"roles": {
+"agent": "udayakumaran",
+"target": "manimekalai"
+},
+"lines": [
+"MAN-21-0029"
+],
+"check": "நினக்கு இவன் மகனா"
+},
+{
+"id": "f09",
+"ep": "rahulan",
+"kind": "child_of",
+"voice": [
+"poet",
+"pillar"
+],
+"mood": "asserted",
+"life": "other_births",
+"t": -91,
+"roles": {
+"agent": "manimekalai",
+"target": "udayakumaran"
+},
+"lines": [
+"MAN-21-0030"
+],
+"check": "நீ மகள் ஆயதூஉம்"
+},
+{
+"id": "f10",
+"ep": "rahulan",
+"kind": "fate_explains",
+"voice": [
+"poet",
+"pillar"
+],
+"mood": "asserted",
+"t": 21.2,
+"roles": {
+"patient": "udayakumaran"
+},
+"because": [
+{
+"of": "f05",
+"rel": "karma"
+}
+],
+"lines": [
+"MAN-21-0070"
+],
+"check": "ஆங்கு அவ் வினை காண்",
+"life": "main"
+},
+{
+"id": "g01",
+"ep": "aputhiran",
+"kind": "fast_to_death",
+"voice": [
+"poet",
+"aravanan"
+],
+"mood": "asserted",
+"t": -4.5,
+"roles": {
+"agent": "aputhiran"
+},
+"does": [
+"-alive(aputhiran)"
+],
+"lines": [
+"MAN-14-0095"
+],
+"check": "உண்ணா நோன்போடு",
+"life": "main"
+},
+{
+"id": "g02",
+"ep": "aputhiran",
+"kind": "same_person",
+"voice": [
+"poet",
+"aravanan"
+],
+"mood": "asserted",
+"t": -4.4,
+"roles": {
+"later": "punyarasan",
+"earlier": "aputhiran"
+},
+"inferred": "canto 14 says he is born to the Savaka king, canto 24 names that ruler's son",
+"lines": [
+"MAN-14-0103",
+"MAN-14-0104"
+],
+"check": "ஆ வயிற்று உதித்தனன்",
+"life": "main"
+},
+{
+"id": "g03",
+"ep": "aputhiran",
+"kind": "child_of",
+"voice": [
+"poet",
+"sage_nagapuram"
+],
+"mood": "asserted",
+"t": 24,
+"roles": {
+"agent": "punyarasan",
+"target": "bhumichandran"
+},
+"lines": [
+"MAN-24-0170"
+],
+"check": "பூமிசந்திரன் மகன்",
+"life": "main"
+},
+{
+"id": "g04",
+"ep": "aputhiran",
+"kind": "rules",
+"voice": [
+"poet",
+"sage_nagapuram"
+],
+"mood": "asserted",
+"t": 24,
+"roles": {
+"agent": "punyarasan",
+"place": "nagapuram"
+},
+"lines": [
+"MAN-24-0169",
+"MAN-24-0170"
+],
+"check": "நல் நகர் ஆள்வோன்",
+"life": "main"
+},
+{
+"id": "h01",
+"ep": "prison",
+"kind": "feed",
+"voice": [
+"poet",
+"guard"
+],
+"mood": "asserted",
+"t": 19.2,
+"roles": {
+"agent": "disguised_woman",
+"patient": "prisoners",
+"instrument": "amudasurabhi",
+"place": "prison_site"
+},
+"lines": [
+"MAN-19-0133",
+"MAN-19-0136"
+],
+"check": "ஊண் சுரந்தனள்",
+"life": "main"
+},
+{
+"id": "h02",
+"ep": "prison",
+"kind": "convert",
+"voice": [
+"poet",
+"manimekalai"
+],
+"mood": "command",
+"t": 19.6,
+"roles": {
+"agent": "chola_king",
+"theme": "prison_site"
+},
+"lines": [
+"MAN-19-0157",
+"MAN-19-0158"
+],
+"check": "சிறையோர் கோட்டம் சீத்து",
+"life": "main"
+},
+{
+"id": "h03",
+"ep": "prison",
+"kind": "convert",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 19.7,
+"roles": {
+"agent": "chola_king",
+"theme": "prison_site"
+},
+"does": [
+"-function(prison_site,jail)",
+"+function(prison_site,charity)"
+],
+"because": [
+{
+"of": "h02",
+"rel": "motivates"
+}
+],
+"lines": [
+"MAN-19-0161",
+"MAN-19-0162"
+],
+"check": "அறவோர்க்கு ஆக்கினன்",
+"life": "main"
+},
+{
+"id": "l01",
+"ep": "garland",
+"kind": "give",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 3.1,
+"roles": {
+"agent": "madhavi",
+"theme": "garland",
+"recipient": "hunchback"
+},
+"does": [
+"+holds(hunchback,garland)"
+],
+"lines": [
+"SIL-03-0167"
+],
+"check": "கூனிகைக் கொடுத்து",
+"life": "main"
+},
+{
+"id": "l02",
+"ep": "garland",
+"kind": "buy",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 3.2,
+"roles": {
+"agent": "kovalan",
+"theme": "garland",
+"source": "hunchback"
+},
+"does": [
+"-holds(hunchback,garland)",
+"+holds(kovalan,garland)"
+],
+"lines": [
+"SIL-03-0170",
+"SIL-03-0171"
+],
+"check": "கோவலன் வாங்கிக்",
+"life": "main"
+},
+{
+"id": "m01",
+"ep": "bridge",
+"kind": "spouse",
+"voice": [
+"poet",
+"cattan"
+],
+"mood": "asserted",
+"t": 0.2,
+"roles": {
+"agent": "kannagi",
+"target": "kovalan"
+},
+"lines": [
+"SIL-00-0017"
+],
+"check": "கண்ணகி என்பாள் மனைவி",
+"life": "main"
+},
+{
+"id": "m02",
+"ep": "bridge",
+"kind": "child_of",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "asserted",
+"t": 0.2,
+"roles": {
+"agent": "kovalan",
+"target": "masattuvan"
+},
+"lines": [
+"SIL-20-0069"
+],
+"check": "மாசாத்து வாணிகன் மகனை",
+"life": "main"
+},
+{
+"id": "m03",
+"ep": "bridge",
+"kind": "child_of",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 0.2,
+"roles": {
+"agent": "kannagi",
+"target": "manaikan"
+},
+"lines": [
+"SIL-01-0023"
+],
+"check": "மாநாய்கன் குலக்கொம்பர்",
+"life": "main"
+},
+{
+"id": "m04",
+"ep": "bridge",
+"kind": "child_of",
+"voice": [
+"poet",
+"matalan"
+],
+"mood": "asserted",
+"t": 3.5,
+"roles": {
+"agent": "manimekalai",
+"target": "madhavi"
+},
+"lines": [
+"SIL-15-0022",
+"SIL-15-0023"
+],
+"check": "குழவி பயந்தன",
+"life": "main"
+},
+{
+"id": "m05",
+"ep": "bridge",
+"kind": "child_of",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 3.5,
+"roles": {
+"agent": "manimekalai",
+"target": "kovalan"
+},
+"lines": [
+"MAN-26-0003"
+],
+"check": "கொடை கெழு தாதை",
+"life": "main"
+},
+{
+"id": "m06",
+"ep": "bridge",
+"kind": "child_of",
+"voice": [
+"poet"
+],
+"mood": "address",
+"t": 26.1,
+"roles": {
+"agent": "manimekalai",
+"target": "kannagi"
+},
+"note": "she is called mother, she did not bear her",
+"lines": [
+"MAN-26-0002"
+],
+"check": "தாய் கண்ணகி",
+"life": "main"
+},
+{
+"id": "m07",
+"ep": "bridge",
+"kind": "worship",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 26.1,
+"roles": {
+"agent": "manimekalai",
+"theme": "kannagi_image",
+"place": "vanci"
+},
+"lines": [
+"MAN-26-0004",
+"MAN-26-0005",
+"MAN-26-0006"
+],
+"check": "படிமம் காணிய",
+"life": "main"
+},
+{
+"id": "m08",
+"ep": "bridge",
+"kind": "speak_as_deity",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 26.2,
+"roles": {
+"agent": "kannagi",
+"addressee": "manimekalai"
+},
+"lines": [
+"MAN-26-0010"
+],
+"check": "பத்தினிக் கடவுள்",
+"life": "main"
+},
+{
+"id": "m09",
+"ep": "bridge",
+"kind": "found_temple",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 28.9,
+"roles": {
+"agent": "cenkuttuvan",
+"theme": "kannagi_temple"
+},
+"lines": [
+"SIL-30-0151"
+],
+"check": "பத்தினிக் கோட்டப்",
+"life": "main"
+},
+{
+"id": "m10",
+"ep": "bridge",
+"kind": "ask_boon",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 29.1,
+"roles": {
+"agent": "gajabahu",
+"target": "kannagi"
+},
+"lines": [
+"SIL-30-0160",
+"SIL-30-0163"
+],
+"check": "கயவாகு",
+"life": "main"
+},
+{
+"id": "m11",
+"ep": "bridge",
+"kind": "grant_boon",
+"voice": [
+"poet",
+"unknown"
+],
+"mood": "asserted",
+"t": 29.2,
+"roles": {
+"agent": {
+"one_of": [
+"kannagi",
+"unnamed"
+]
+}
+},
+"unresolved": "the voice is not named at this line",
+"lines": [
+"SIL-30-0164"
+],
+"check": "தந்தேன் வரமென்",
+"life": "main"
+},
+{
+"id": "r01",
+"ep": "retelling",
+"kind": "accuse",
+"voice": [
+"poet",
+"kannagi",
+"madurapati"
+],
+"mood": "asserted",
+"life": "prev_bharatan",
+"t": -50,
+"roles": {
+"agent": "bharatan",
+"target": "sangaman",
+"addressee": "kalinga_king"
+},
+"retells": "d02",
+"lines": [
+"MAN-26-0027"
+],
+"check": "ஒற்றன் இவன் என"
+},
+{
+"id": "r02",
+"ep": "retelling",
+"kind": "spy",
+"voice": [
+"poet",
+"kannagi",
+"madurapati",
+"bharatan"
+],
+"mood": "claimed",
+"life": "prev_bharatan",
+"t": -50,
+"roles": {
+"agent": "sangaman"
+},
+"lines": [
+"MAN-26-0027"
+],
+"check": "ஒற்றன் இவன்"
+},
+{
+"id": "r03",
+"ep": "retelling",
+"kind": "innocent",
+"voice": [
+"poet",
+"kannagi",
+"madurapati"
+],
+"mood": "asserted",
+"life": "prev_bharatan",
+"t": -49.5,
+"roles": {
+"theme": "sangaman"
+},
+"contradicts": "d03",
+"lines": [
+"MAN-26-0028"
+],
+"check": "குற்றம் இலோனை"
+},
+{
+"id": "r04",
+"ep": "retelling",
+"kind": "destroy",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "asserted",
+"t": 21.8,
+"roles": {
+"agent": "kannagi",
+"patient": "madurai"
+},
+"retells": "e04",
+"lines": [
+"MAN-26-0034"
+],
+"check": "செழு நகர் சிதைத்தேன்",
+"life": "main"
+},
+{
+"id": "r05",
+"ep": "retelling",
+"kind": "reborn_many",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "predicted",
+"t": 30,
+"roles": {
+"agent": "kannagi",
+"companion": "kovalan"
+},
+"lines": [
+"MAN-26-0038",
+"MAN-26-0041"
+],
+"check": "பிறந்தும் இறந்தும்",
+"life": "main"
+},
+{
+"id": "m12",
+"ep": "bridge",
+"kind": "rescue",
+"voice": [
+"poet",
+"matalan",
+"kovalan"
+],
+"mood": "asserted",
+"t": -20,
+"roles": {
+"agent": "manimekhala_deity",
+"patient": "kovalan_ancestor"
+},
+"lines": [
+"SIL-15-0029",
+"SIL-15-0033"
+],
+"check": "மணிமே கலையான்",
+"life": "main"
+},
+{
+"id": "m13",
+"ep": "bridge",
+"kind": "name_child",
+"voice": [
+"poet",
+"matalan",
+"kovalan"
+],
+"mood": "asserted",
+"t": 3.6,
+"roles": {
+"agent": "kovalan",
+"theme": "manimekalai",
+"source": "manimekhala_deity"
+},
+"lines": [
+"SIL-15-0037"
+],
+"check": "எங்குல தெய்வப்",
+"life": "main"
+},
+{
+"id": "x01",
+"ep": "dream",
+"kind": "travel",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "dreamed",
+"t": 9.6,
+"roles": {
+"agent": "kovalan",
+"companion": "kannagi"
+},
+"lines": [
+"SIL-09-0045",
+"SIL-09-0046"
+],
+"check": "பெரும்பதியுள்",
+"life": "main"
+},
+{
+"id": "x02",
+"ep": "dream",
+"kind": "slander",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "dreamed",
+"t": 9.6,
+"roles": {
+"agent": "townsfolk",
+"target": "kannagi"
+},
+"lines": [
+"SIL-09-0047",
+"SIL-09-0048"
+],
+"check": "இட்டனர் ஊரார்",
+"life": "main"
+},
+{
+"id": "x03",
+"ep": "dream",
+"kind": "harmed",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "dreamed",
+"t": 9.6,
+"roles": {
+"patient": "kovalan"
+},
+"lines": [
+"SIL-09-0049"
+],
+"check": "உற்றதுஓர் தீங்கு",
+"life": "main"
+},
+{
+"id": "x04",
+"ep": "dream",
+"kind": "plead",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "dreamed",
+"t": 9.6,
+"roles": {
+"agent": "kannagi",
+"addressee": "pandya_king"
+},
+"lines": [
+"SIL-09-0050"
+],
+"check": "காவலன் முன்னர்யான்",
+"life": "main"
+},
+{
+"id": "x05",
+"ep": "dream",
+"kind": "sceptre_falls",
+"voice": [
+"poet",
+"pandya_queen"
+],
+"mood": "dreamed",
+"t": 19.9,
+"roles": {
+"theme": "sceptre",
+"holder": "pandya_king"
+},
+"lines": [
+"SIL-20-0002",
+"SIL-20-0032"
+],
+"check": "குடையொடு கோல்வீழ",
+"life": "main"
+},
+{
+"id": "x06",
+"ep": "dream",
+"kind": "plead",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.3,
+"roles": {
+"agent": "kannagi",
+"addressee": "pandya_king"
+},
+"because": [
+{
+"of": "x04",
+"rel": "foreshadowed"
+}
+],
+"lines": [
+"SIL-20-0061"
+],
+"check": "தேரா மன்னா",
+"life": "main"
+},
+{
+"id": "x10",
+"ep": "entrust",
+"kind": "entrust",
+"voice": [
+"poet",
+"kavunti"
+],
+"mood": "asserted",
+"t": 15.5,
+"roles": {
+"agent": "kavunti",
+"theme": "kannagi",
+"recipient": "matari"
+},
+"condition": "until she reaches the house of rich folk",
+"does": [
+"+in_care_of(matari,kannagi)"
+],
+"lines": [
+"SIL-15-0129",
+"SIL-15-0130"
+],
+"check": "கடைக்கலந் தந்தேன்",
+"life": "main"
+},
+{
+"id": "x11",
+"ep": "entrust",
+"kind": "lose_ward",
+"voice": [
+"poet",
+"matalan",
+"matari"
+],
+"mood": "asserted",
+"t": 22.4,
+"roles": {
+"agent": "matari",
+"theme": "kannagi"
+},
+"does": [
+"-in_care_of(matari,kannagi)"
+],
+"lines": [
+"SIL-27-0076"
+],
+"check": "அடைக்கல மிழந்தேன்",
+"life": "main"
+},
+{
+"id": "x20",
+"ep": "song",
+"kind": "mind_elsewhere",
+"voice": [
+"poet",
+"kovalan"
+],
+"mood": "thought",
+"t": 7.8,
+"roles": {
+"agent": "madhavi"
+},
+"lines": [
+"SIL-07-0306",
+"SIL-07-0307"
+],
+"check": "தான்ஒன்றின்மேல்",
+"life": "main"
+},
+{
+"id": "x21",
+"ep": "song",
+"kind": "believe",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 7.81,
+"roles": {
+"holder": "kovalan"
+},
+"content": "x20",
+"stance": "accept",
+"heard_by": [
+"kovalan"
+],
+"lines": [
+"SIL-07-0307"
+],
+"check": "பாடினாள்என",
+"life": "main"
+},
+{
+"id": "x22",
+"ep": "song",
+"kind": "fate_explains",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 7.82,
+"roles": {
+"patient": "kovalan"
+},
+"lines": [
+"SIL-07-0308"
+],
+"check": "ஊழ்வினைவந்து",
+"life": "main"
+},
+{
+"id": "x23",
+"ep": "song",
+"kind": "leave",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 7.9,
+"roles": {
+"agent": "kovalan",
+"target": "madhavi"
+},
+"because": [
+{
+"of": "x21",
+"rel": "motivates"
+},
+{
+"of": "x22",
+"rel": "karma",
+"voice": [
+"poet"
+]
+}
+],
+"lines": [
+"SIL-07-0309",
+"SIL-07-0311"
+],
+"check": "கோவலன்தான் போனபின்னர்",
+"life": "main"
+},
+{
+"id": "x30",
+"ep": "risen",
+"kind": "rise",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 19.5,
+"after_death": true,
+"roles": {
+"agent": "kovalan"
+},
+"lines": [
+"SIL-19-0062"
+],
+"check": "நின்றான் எழுந்து",
+"life": "main"
+},
+{
+"id": "x31",
+"ep": "risen",
+"kind": "wipe_tears",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 19.51,
+"after_death": true,
+"roles": {
+"agent": "kovalan",
+"target": "kannagi"
+},
+"lines": [
+"SIL-19-0063"
+],
+"check": "கண்ணீர்கை யான்மாற்ற",
+"life": "main"
+},
+{
+"id": "x32",
+"ep": "risen",
+"kind": "bid_stay",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 19.52,
+"after_death": true,
+"roles": {
+"agent": "kovalan",
+"addressee": "kannagi"
+},
+"lines": [
+"SIL-19-0067"
+],
+"check": "இருந்தைக்க",
+"life": "main"
+},
+{
+"id": "x33",
+"ep": "risen",
+"kind": "illusion",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "question",
+"t": 19.53,
+"roles": {
+"theme": "risen_kovalan"
+},
+"lines": [
+"SIL-19-0068"
+],
+"check": "மாயங்கொல்",
+"life": "main"
+},
+{
+"id": "x40",
+"ep": "transport",
+"kind": "carry",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 6.9,
+"roles": {
+"agent": "manimekhala_deity",
+"patient": "manimekalai",
+"place": "manipallavam"
+},
+"does": [
+"+at(manimekalai,manipallavam)"
+],
+"lines": [
+"MAN-06-0210",
+"MAN-06-0213",
+"MAN-06-0214"
+],
+"check": "மணிபல்லவத்திடை மணிமேகலா",
+"life": "main"
+},
+{
+"id": "x41",
+"ep": "transport",
+"kind": "carry",
+"voice": [
+"poet",
+"manimekhala_deity"
+],
+"mood": "asserted",
+"t": 6.9,
+"roles": {
+"agent": "manimekhala_deity",
+"patient": "manimekalai",
+"place": "manipallavam"
+},
+"retells": "x40",
+"lines": [
+"MAN-07-0021",
+"MAN-07-0022"
+],
+"check": "மணிபல்லவத்திடை வைத்தேன்",
+"life": "main"
+},
+{
+"id": "x42",
+"ep": "transport",
+"kind": "disguise",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 5.5,
+"roles": {
+"agent": "manimekhala_deity",
+"form": "town_woman"
+},
+"does": [
+"+looks_like(manimekhala_deity,town_woman)"
+],
+"lines": [
+"MAN-05-0095",
+"MAN-05-0096"
+],
+"check": "பைந்தொடி ஆகி",
+"life": "main"
+},
+{
+"id": "x50",
+"ep": "ascetic",
+"kind": "disguise",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "command",
+"t": 26.3,
+"roles": {
+"agent": "manimekalai"
+},
+"lines": [
+"MAN-26-0069"
+],
+"check": "வேற்று உருக் கொள்க",
+"life": "main"
+},
+{
+"id": "x51",
+"ep": "ascetic",
+"kind": "disguise",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 26.4,
+"roles": {
+"agent": "manimekalai",
+"form": "male_ascetic",
+"instrument": "mantra"
+},
+"does": [
+"+looks_like(manimekalai,male_ascetic)"
+],
+"because": [
+{
+"of": "x50",
+"rel": "motivates"
+}
+],
+"lines": [
+"MAN-26-0071"
+],
+"check": "மாதவன் வடிவு",
+"life": "main"
+},
+{
+"id": "x60",
+"ep": "madhavi",
+"kind": "child_of",
+"voice": [
+"poet",
+"madhavi"
+],
+"mood": "address",
+"t": 2.5,
+"roles": {
+"agent": "manimekalai",
+"target": "kannagi"
+},
+"lines": [
+"MAN-02-0055"
+],
+"check": "பத்தினி மகள் மணிமேகலை",
+"life": "main"
+},
+{
+"id": "x61",
+"ep": "madhavi",
+"kind": "burn",
+"voice": [
+"poet",
+"madhavi"
+],
+"mood": "asserted",
+"t": 21.8,
+"roles": {
+"agent": "kannagi",
+"patient": "madurai"
+},
+"retells": "e04",
+"lines": [
+"MAN-02-0053",
+"MAN-02-0054"
+],
+"check": "கனை எரி ஊட்டிய",
+"life": "main"
+},
+{
+"id": "x62",
+"ep": "madhavi",
+"kind": "teach",
+"voice": [
+"poet",
+"madhavi"
+],
+"mood": "asserted",
+"t": 2.2,
+"roles": {
+"agent": "aravanan",
+"addressee": "madhavi"
+},
+"carries": "x63",
+"lines": [
+"MAN-02-0061",
+"MAN-02-0064"
+],
+"check": "அறவண அடிகள்",
+"life": "main"
+},
+{
+"id": "x63",
+"ep": "madhavi",
+"kind": "birth_is_suffering",
+"voice": [
+"poet",
+"madhavi",
+"aravanan"
+],
+"mood": "claimed",
+"t": 2.2,
+"roles": {
+"theme": "birth"
+},
+"lines": [
+"MAN-02-0064"
+],
+"check": "பிறந்தோர் உறுவது",
+"life": "main"
+},
+{
+"id": "x70",
+"ep": "image",
+"kind": "fetch_stone",
+"voice": [
+"poet",
+"poets_at_court"
+],
+"mood": "conditional",
+"t": 25.5,
+"roles": {
+"agent": "cenkuttuvan",
+"theme": "himalaya_stone"
+},
+"lines": [
+"SIL-25-0118",
+"SIL-25-0119"
+],
+"check": "கற்கால் கொள்ளினுங்",
+"life": "main"
+},
+{
+"id": "x71",
+"ep": "image",
+"kind": "northern_insult",
+"voice": [
+"poet",
+"cenkuttuvan",
+"himalaya_ascetics"
+],
+"mood": "claimed",
+"t": 25.8,
+"roles": {
+"agent": "northern_kings"
+},
+"lines": [
+"SIL-26-0009",
+"SIL-26-0010"
+],
+"check": "அரைசர் வாய்மொழி",
+"life": "main"
+},
+{
+"id": "x72",
+"ep": "image",
+"kind": "stone_on_heads",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 27,
+"roles": {
+"agent": "cenkuttuvan",
+"patient": "northern_kings",
+"theme": "himalaya_stone"
+},
+"lines": [
+"MAN-26-0087",
+"MAN-26-0089"
+],
+"check": "தெய்வக் கல்லும்",
+"life": "main"
+},
+{
+"id": "x73",
+"ep": "image",
+"kind": "install",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 28.5,
+"roles": {
+"agent": "cenkuttuvan",
+"theme": "kannagi_image"
+},
+"does": [
+"+depicts(kannagi_image,kannagi)"
+],
+"lines": [
+"SIL-28-0228",
+"SIL-28-0233"
+],
+"check": "தெய்வப் படிமத்து",
+"life": "main"
+},
+{
+"id": "x80",
+"ep": "doctrine",
+"kind": "ask",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 27.1,
+"roles": {
+"agent": "manimekalai",
+"addressee": "vaidika_teacher"
+},
+"lines": [
+"MAN-27-0003",
+"MAN-27-0004"
+],
+"check": "அளவை வாதியை",
+"life": "main"
+},
+{
+"id": "x81",
+"ep": "doctrine",
+"kind": "truth_by_proof",
+"voice": [
+"poet",
+"vaidika_teacher"
+],
+"mood": "claimed",
+"t": 27.2,
+"roles": {
+"theme": "knowledge"
+},
+"lines": [
+"MAN-27-0013"
+],
+"check": "பொருளின் உண்மை",
+"life": "main"
+},
+{
+"id": "x82",
+"ep": "doctrine",
+"kind": "find_no_truth",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "predicted",
+"t": 26.25,
+"roles": {
+"agent": "manimekalai"
+},
+"lines": [
+"MAN-26-0065"
+],
+"check": "மெய் வகை இன்மை",
+"life": "main"
+},
+{
+"id": "x90",
+"ep": "worship",
+"kind": "lost_husband",
+"voice": [
+"poet",
+"kannagi"
+],
+"mood": "asserted",
+"t": 23.6,
+"roles": {
+"agent": "kannagi",
+"patient": "kovalan"
+},
+"lines": [
+"SIL-24-0007"
+],
+"check": "கணவனையங்கு",
+"life": "main"
+},
+{
+"id": "x91",
+"ep": "worship",
+"kind": "ascend",
+"voice": [
+"poet",
+"hill_folk"
+],
+"mood": "asserted",
+"t": 23.9,
+"roles": {
+"agent": "kannagi",
+"companion": "kovalan"
+},
+"retells": "d09",
+"lines": [
+"SIL-24-0009",
+"SIL-24-0010"
+],
+"check": "கொண்டுபோயினார்",
+"life": "main"
+},
+{
+"id": "x92",
+"ep": "worship",
+"kind": "take_as_deity",
+"voice": [
+"poet",
+"hill_folk"
+],
+"mood": "command",
+"t": 24,
+"roles": {
+"agent": "hill_folk",
+"theme": "kannagi"
+},
+"lines": [
+"SIL-24-0013"
+],
+"check": "தெய்வங் கொள்ளுமின்",
+"life": "main"
+},
+{
+"id": "s01",
+"ep": "plain",
+"kind": "dance",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 3.0,
+"roles": {
+"agent": "madhavi"
+},
+"lines": [
+"SIL-03-0161"
+],
+"check": "தலைஅரங்கு ஏறி",
+"life": "main"
+},
+{
+"id": "s02",
+"ep": "plain",
+"kind": "live_with",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 3.4,
+"roles": {
+"agent": "kovalan",
+"target": "madhavi"
+},
+"lines": [
+"SIL-03-0172"
+],
+"check": "மாதவி தன்னொடு",
+"life": "main"
+},
+{
+"id": "s03",
+"ep": "plain",
+"kind": "leave",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.05,
+"roles": {
+"agent": "kovalan"
+},
+"lines": [
+"SIL-16-0098",
+"SIL-16-0099"
+],
+"check": "ரில்லம் நீங்கி",
+"life": "main"
+},
+{
+"id": "s04",
+"ep": "plain",
+"kind": "see",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.1,
+"roles": {
+"agent": "kovalan",
+"target": "goldsmith"
+},
+"lines": [
+"SIL-16-0108"
+],
+"check": "கைக்கோற் கொல்லனைக்",
+"life": "main"
+},
+{
+"id": "s05",
+"ep": "plain",
+"kind": "enter",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 16.13,
+"roles": {
+"agent": "kovalan",
+"place": "temple_lodging"
+},
+"lines": [
+"SIL-16-0126"
+],
+"check": "சிறையகம் புக்கபின்",
+"life": "main"
+},
+{
+"id": "s06",
+"ep": "plain",
+"kind": "enter",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.3,
+"roles": {
+"agent": "kannagi",
+"target": "pandya_king"
+},
+"lines": [
+"SIL-20-0058"
+],
+"check": "குறுகினள் சென்றுழி",
+"life": "main"
+},
+{
+"id": "s07",
+"ep": "plain",
+"kind": "faint",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 20.75,
+"roles": {
+"agent": "pandya_king"
+},
+"lines": [
+"SIL-20-0089"
+],
+"check": "மயங்கிவீழ்ந்",
+"life": "main"
+},
+{
+"id": "s08",
+"ep": "plain",
+"kind": "enter",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 4.0,
+"roles": {
+"agent": "manimekalai",
+"place": "flower_grove"
+},
+"lines": [
+"MAN-00-0037",
+"MAN-00-0038"
+],
+"check": "பூம்பொழில் அகவயின்",
+"life": "main"
+},
+{
+"id": "s09",
+"ep": "plain",
+"kind": "enter",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 4.2,
+"roles": {
+"agent": "manimekalai",
+"place": "crystal_room"
+},
+"lines": [
+"MAN-00-0040"
+],
+"check": "பளிக்கறை புக்கதும்",
+"life": "main"
+},
+{
+"id": "s10",
+"ep": "plain",
+"kind": "see",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 4.3,
+"roles": {
+"agent": "udayakumaran",
+"target": "manimekalai"
+},
+"lines": [
+"MAN-00-0041"
+],
+"check": "பாவையைக் கண்டு",
+"life": "main"
+},
+{
+"id": "s11",
+"ep": "plain",
+"kind": "worship",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 11.25,
+"roles": {
+"agent": "manimekalai",
+"theme": "seat_of_buddha"
+},
+"lines": [
+"MAN-11-0054"
+],
+"check": "பீடிகை தொழுதனள்",
+"life": "main"
+},
+{
+"id": "s12",
+"ep": "plain",
+"kind": "fly",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 26.0,
+"roles": {
+"agent": "manimekalai",
+"place": "vanci"
+},
+"lines": [
+"MAN-26-0001"
+],
+"check": "அந்தரம் ஆறா",
+"life": "main"
+},
+{
+"id": "s13",
+"ep": "plain",
+"kind": "fly",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 24.5,
+"roles": {
+"agent": "manimekalai",
+"place": "nagapuram"
+},
+"lines": [
+"MAN-24-0163",
+"MAN-24-0165"
+],
+"check": "அந்தரம் ஆறாப்",
+"life": "main"
+},
+{
+"id": "s14",
+"ep": "plain",
+"kind": "faint",
+"voice": [
+"poet"
+],
+"mood": "asserted",
+"t": 21.05,
+"roles": {
+"agent": "manimekalai"
+},
+"lines": [
+"MAN-21-0004"
+],
+"check": "மயங்கினள் எழுந்து",
+"life": "main"
+}
+]

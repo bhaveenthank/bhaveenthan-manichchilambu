@@ -1,0 +1,110 @@
+{
+"amudasurabhi": [
+{
+"from_t": -91,
+"holders": []
+},
+{
+"from_t": -5.1,
+"holders": [
+"aputhiran"
+]
+},
+{
+"from_t": -4.8,
+"holders": [
+"gomukhi"
+]
+},
+{
+"from_t": 11.2,
+"holders": [
+"manimekalai"
+]
+}
+],
+"ank_k1": [
+{
+"from_t": -91,
+"holders": []
+},
+{
+"from_t": 1,
+"holders": [
+"kannagi"
+]
+},
+{
+"from_t": 16.09,
+"holders": [
+"kovalan"
+]
+},
+{
+"from_t": 20.5,
+"holders": [
+"pandya_king"
+]
+}
+],
+"ank_k2": [
+{
+"from_t": -91,
+"holders": []
+},
+{
+"from_t": 1,
+"holders": [
+"kannagi"
+]
+}
+],
+"ank_q": [
+{
+"from_t": -91,
+"holders": []
+},
+{
+"from_t": 0.1,
+"holders": [
+"pandya_queen"
+]
+},
+{
+"from_t": 0.5,
+"holders": [
+"goldsmith"
+]
+}
+],
+"garland": [
+{
+"from_t": -91,
+"holders": []
+},
+{
+"from_t": 3.1,
+"holders": [
+"hunchback"
+]
+},
+{
+"from_t": 3.2,
+"holders": [
+"kovalan"
+]
+}
+],
+"other_bowl": [
+{
+"from_t": -91,
+"holders": []
+},
+{
+"from_t": 5.0,
+"holders": [
+"cutamati"
+]
+}
+]
+}

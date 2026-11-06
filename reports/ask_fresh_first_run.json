@@ -1,0 +1,248 @@
+{
+ "tally": {
+  "wrong": 8,
+  "right": 22,
+  "buried": 3,
+  "wrongly answered": 1
+ },
+ "rows": [
+  {
+   "q": "Who struck Kovalan with the sword?",
+   "want": "a15",
+   "type": "about",
+   "verdict": "wrong",
+   "headline": "Kovalan appears in Maṇimēkalai and Silappatikāram. Madurapati says Kovalan was Bharatan in"
+  },
+  {
+   "q": "Who ordered Kovalan's death?",
+   "want": "a11",
+   "type": "kill",
+   "verdict": "right",
+   "headline": "a drunk man killed Kovalan."
+  },
+  {
+   "q": "Was Kovalan guilty?",
+   "want": "a13",
+   "type": "not_fact",
+   "verdict": "right",
+   "headline": "No, the text doesn't tell this as having happened. The guards look at Kovalan and say this"
+  },
+  {
+   "q": "Who said Kovalan was innocent?",
+   "want": "a13",
+   "type": "who_told",
+   "verdict": "right",
+   "headline": "It reaches us through: the poet → the guards; the poet → Matalan → Matari."
+  },
+  {
+   "q": "What was inside Kannagi's anklet?",
+   "want": "a18",
+   "type": "about",
+   "verdict": "wrong",
+   "headline": "Kannagi's anklet (the one Kovalan took) appears in Silappatikāram. Kovalan takes one of th"
+  },
+  {
+   "q": "What was inside the queen's anklet?",
+   "want": "a19",
+   "type": "about",
+   "verdict": "buried",
+   "headline": "the queen's anklet appears in Silappatikāram. The queen's anklet was hers before the golds"
+  },
+  {
+   "q": "Why did the king die?",
+   "want": "a24",
+   "type": "why_death",
+   "verdict": "right",
+   "headline": "The king falls and dies."
+  },
+  {
+   "q": "What did Kannagi do to Madurai?",
+   "want": "e01",
+   "type": "path",
+   "verdict": "right",
+   "headline": "Kannagi and Madurai connect in 1 step. Each step is below, with its verse."
+  },
+  {
+   "q": "Who was spared from the fire?",
+   "want": "e03",
+   "type": "yes",
+   "verdict": "wrong",
+   "headline": "Yes. The fire consumes Madurai."
+  },
+  {
+   "q": "Who did Kannagi marry?",
+   "want": "m01",
+   "type": "about",
+   "verdict": "right",
+   "headline": "Kannagi appears in Maṇimēkalai and Silappatikāram. Kannagi is Kovalan's wife."
+  },
+  {
+   "q": "கண்ணகியின் கணவன் யார்?",
+   "want": "m01",
+   "type": "family",
+   "verdict": "right",
+   "headline": "Kannagi is Kovalan's wife. Kannagi comes from the house of Manaikan."
+  },
+  {
+   "q": "மாதவியின் மகள் யார்?",
+   "want": "m04",
+   "type": "family",
+   "verdict": "right",
+   "headline": "Madhavi gave birth to a child, Manimekalai."
+  },
+  {
+   "q": "கோவலனின் தந்தை யார்?",
+   "want": "m02",
+   "type": "family",
+   "verdict": "right",
+   "headline": "Kannagi is Kovalan's wife. Kovalan is the son of Masattuvan, says Kannagi. Manimekalai's f"
+  },
+  {
+   "q": "சிலம்பை உடைத்தது யார்?",
+   "want": "a20",
+   "type": "yes",
+   "verdict": "right",
+   "headline": "Yes. Kannagi breaks an anklet. The text doesn't say which of the pair."
+  },
+  {
+   "q": "பொற்கொல்லன் என்ன செய்தான்?",
+   "want": "a06b",
+   "type": "about",
+   "verdict": "right",
+   "headline": "the goldsmith appears in Silappatikāram. The prologue says the goldsmith had taken the ank"
+  },
+  {
+   "q": "நீலி யார்?",
+   "want": "d05",
+   "type": "about",
+   "verdict": "right",
+   "headline": "Neeli appears in Silappatikāram. Neeli, Sangaman's wife, cries out for justice through the"
+  },
+  {
+   "q": "கண்ணகி மதுரையை ஏன் எரித்தாள்?",
+   "want": "e01",
+   "type": "yes",
+   "verdict": "right",
+   "headline": "Yes. Kannagi twists off her left breast and hurls it at Madurai."
+  },
+  {
+   "q": "அமுதசுரபி யார் கொடுத்தது?",
+   "want": "c01",
+   "type": "yes",
+   "verdict": "right",
+   "headline": "Yes. Chintadevi places the bowl in Aputhiran's hand."
+  },
+  {
+   "q": "மணிமேகலை ஏன் காயசண்டிகை வடிவம் எடுத்தாள்?",
+   "want": "b18",
+   "type": "disguise",
+   "verdict": "wrong",
+   "headline": "Manimekalai took the form of Kayasandikai; Manimekalai took the form of a male ascetic. Th"
+  },
+  {
+   "q": "காஞ்சனன் உதயகுமரனை ஏன் கொன்றான்?",
+   "want": "b12",
+   "type": "why_death",
+   "verdict": "right",
+   "headline": "Kanchanan killed Udayakumaran."
+  },
+  {
+   "q": "kannagi kanavan yaar",
+   "want": "m01",
+   "type": "family",
+   "verdict": "right",
+   "headline": "Kannagi is Kovalan's wife. Kannagi comes from the house of Manaikan."
+  },
+  {
+   "q": "silambu yaar udaithathu",
+   "want": "a20",
+   "type": "about",
+   "verdict": "wrong",
+   "headline": "Kannagi's pair of anklets appears in Silappatikāram. Kannagi offers Kovalan her anklets: '"
+  },
+  {
+   "q": "manimegalai yen kayasandigai vadivam eduthaal",
+   "want": "b18",
+   "type": "disguise",
+   "verdict": "wrong",
+   "headline": "Manimekalai took the form of Kayasandikai; Manimekalai took the form of a male ascetic. Th"
+  },
+  {
+   "q": "pandiya mannan ethukku kovalana kondran",
+   "want": "a10",
+   "type": "why_death",
+   "verdict": "wrong",
+   "headline": "The king falls and dies."
+  },
+  {
+   "q": "amudhasurabi enna seyyum",
+   "want": "c06",
+   "type": "about",
+   "verdict": "buried",
+   "headline": "the Amudasurabhi bowl appears in Maṇimēkalai. Chintadevi places the bowl in Aputhiran's ha"
+  },
+  {
+   "q": "neeli enna sabam kuduthaa",
+   "want": "d06",
+   "type": "yes",
+   "verdict": "right",
+   "headline": "Yes. Neeli throws herself from a hill and lays a curse as she falls."
+  },
+  {
+   "q": "udayakumaran yaaru",
+   "want": "b04",
+   "type": "about",
+   "verdict": "buried",
+   "headline": "Udayakumaran appears in Maṇimēkalai. And she was his daughter in others."
+  },
+  {
+   "q": "madurai ah yaaru erichaa",
+   "want": "e04",
+   "type": "about",
+   "verdict": "right",
+   "headline": "Madurai appears in Maṇimēkalai and Silappatikāram. Kannagi twists off her left breast and "
+  },
+  {
+   "q": "Which king built Kannagi's temple?",
+   "want": "m09",
+   "type": "yes",
+   "verdict": "right",
+   "headline": "Yes. Cenkuttuvan founds Kannagi's temple and orders daily festivals."
+  },
+  {
+   "q": "Where did Manimekalai get the bowl?",
+   "want": "c07",
+   "type": "path",
+   "verdict": "wrong",
+   "headline": "Manimekalai and the Amudasurabhi bowl connect in 1 step. Each step is below, with its vers"
+  },
+  {
+   "q": "Who is Rahulan?",
+   "want": "f02",
+   "type": "about",
+   "verdict": "right",
+   "headline": "Rahulan appears in Maṇimēkalai. In that birth Lakshmi married Rahulan."
+  },
+  {
+   "q": "Who raised the prison into a charity?",
+   "want": "h03",
+   "type": "yes",
+   "verdict": "right",
+   "headline": "Yes. The king frees the prisoners and turns the prison into a house of charity."
+  },
+  {
+   "q": "What is the moon's distance from Madurai?",
+   "want": null,
+   "type": "about",
+   "verdict": "wrongly answered",
+   "headline": "Madurai appears in Maṇimēkalai and Silappatikāram. Kannagi twists off her left breast and "
+  },
+  {
+   "q": "Who won the cricket world cup?",
+   "want": null,
+   "type": "none",
+   "verdict": "right",
+   "headline": "The graph can't answer that. Try naming someone from the epics, or see the verse matches b"
+  }
+ ]
+}
