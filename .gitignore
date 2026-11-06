@@ -9,3 +9,7 @@ node_modules/
 # Every model prompt and answer. Keep it for the research, and choose deliberately whether to publish it.
 data/llm_cache/
 *.partial
+
+# Local only: the design package and the backup made before the redesign
+design_handoff_manichchilambu_redesign/
+web_before_redesign/

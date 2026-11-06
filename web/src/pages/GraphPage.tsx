@@ -1,6 +1,8 @@
 import * as Slider from "@radix-ui/react-slider";
+import { Clock, Download, Eye, Layers, List, Network, RotateCcw, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { classColour, GraphCanvas } from "../components/GraphCanvas";
+import { GraphCanvas } from "../components/GraphCanvas";
+import { EntityIcon, EpicMark, LineSample, MoodTag } from "../components/Marks";
 import { RecordCard, RecordList } from "../components/RecordCard";
 import { go, useApp, useName, useT } from "../lib/app";
 import { CLASSES, defaultFilter, recordMentions, subgraph, type GraphFilter } from "../lib/model";
@@ -53,7 +55,7 @@ function NodePicker({ nodes, value, onPick }: { nodes: GraphNode[]; value: strin
       {open && (
         <ul className="combo__list" id="node-picker" role="listbox">
           <li><button type="button" role="option" aria-selected={at === 0} onMouseDown={(e) => e.preventDefault()} onClick={() => choose("")}>{t("Everyone (the whole graph)", "அனைவரும் (முழு வரைபடம்)")}</button></li>
-          {hits.map((n, i) => <li key={n.id}><button type="button" role="option" aria-selected={at === i + 1} onMouseDown={(e) => e.preventDefault()} onClick={() => choose(n.id)}>{n[lang]} <span className="fine">{lang === "ta" ? n.en : n.ta}</span></button></li>)}
+          {hits.map((n, i) => <li key={n.id}><button type="button" role="option" aria-selected={at === i + 1} onMouseDown={(e) => e.preventDefault()} onClick={() => choose(n.id)}><EntityIcon cls={n.cls} id={n.id} kind={n.kind} size={14} />{n[lang]} <span className="fine" lang={lang === "ta" ? "en" : "ta"}>{lang === "ta" ? n.en : n.ta}</span></button></li>)}
           {!hits.length && <li className="fine" style={{ padding: "6px 10px" }}>{t("No one by that name", "அப்பெயரில் யாரும் இல்லை")}</li>}
         </ul>
       )}
@@ -62,7 +64,7 @@ function NodePicker({ nodes, value, onPick }: { nodes: GraphNode[]; value: strin
 }
 
 export function GraphPage({ params }: { params: URLSearchParams }) {
-  const { corpus, lang, dark } = useApp();
+  const { corpus, lang } = useApp();
   const t = useT();
   const name = useName();
   const [clusters, setClusters] = useState(false);
@@ -89,6 +91,8 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
   const selectedNode = selected ? corpus.nodeById.get(selected) : null;
   const relevant = selected ? corpus.records.filter((r) => data.edges.some((e) => e.rec === r.id) && recordMentions(r, selected)) : [];
   const isFiltered = filter.focus !== START || filter.hops !== 1 || filter.episode !== "all" || filter.epic !== "both" || filter.reading !== "happened" || filter.viewer || filter.bridgesOnly || filter.suggestions || filter.layer !== "all" || tick !== ticks.length - 1 || !filter.earlierBirths || filter.classes.size !== CLASSES.length;
+  // How many filters differ from the opening view, so "3 filters on" can say it plainly.
+  const filtersOn = [filter.focus !== START || filter.hops !== 1, filter.episode !== "all", filter.epic !== "both", filter.reading !== "happened", !!filter.viewer, filter.bridgesOnly, filter.suggestions, filter.layer !== "all", tick !== ticks.length - 1, !filter.earlierBirths, filter.classes.size !== CLASSES.length].filter(Boolean).length;
   const reset = () => { setFilter(startFilter()); setTick(ticks.length - 1); setSelected(null); setRec(null); go("/graph"); };
   // Hands over what's on screen with the verse references, so a filtered view can go into a spreadsheet or a paper.
   const exportCsv = () => {
@@ -107,14 +111,13 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
         <div className="filters__head"><h1>{t("The graph", "வரைபடம்")}</h1><button className="link" onClick={() => setPanel(!panel)} aria-expanded={panel}>{panel ? t("Hide", "மறை") : t("Filters", "வடிகட்டி")}</button></div>
         {panel && (
           <div className="filters__body">
-            <p className="count"><span><b>{data.nodes.length}</b> {t(`of ${corpus.graph.nodes.length} shown`, `/ ${corpus.graph.nodes.length} காட்டப்படுகின்றன`)} · <b>{data.edges.length}</b> {t("links", "இணைப்புகள்")}</span>{isFiltered && <button className="link" onClick={reset}>{t("Reset", "மீட்டமை")}</button>}</p>
+            <p className="count" aria-live="polite"><span><b>{data.nodes.length}</b> {t(`of ${corpus.graph.nodes.length} shown`, `/ ${corpus.graph.nodes.length} காட்டப்படுகின்றன`)} · <b>{data.edges.length}</b> {t("links", "இணைப்புகள்")}</span>
+              {isFiltered && <span className="filters-on">{t(`${filtersOn} ${filtersOn === 1 ? "filter" : "filters"} on`, `${filtersOn} வடிகட்டிகள்`)}<button onClick={reset}><RotateCcw size={12} aria-hidden="true" /> {t("Reset", "மீட்டமை")}</button></span>}</p>
 
-            <fieldset><legend>{t("Layer", "அடுக்கு")}</legend>
-              <select value={filter.layer} onChange={(e) => set({ layer: e.target.value as GraphFilter["layer"] })} aria-label={t("Layer", "அடுக்கு")}>
-                {LAYERS.map(([k, en, ta]) => <option key={k} value={k}>{lang === "ta" ? ta : en}</option>)}
-              </select>
-              <p className="fine" style={{ marginTop: 6 }}>{(() => { const l = LAYERS.find((x) => x[0] === filter.layer)!; return lang === "ta" ? l[4] : l[3]; })()}</p>
-            </fieldset>
+            <div className="segmented" role="group" aria-label={t("View", "பார்வை")} style={{ marginBottom: 16 }}>
+              <button aria-pressed={view === "graph"} onClick={() => setView("graph")}><Network size={15} aria-hidden="true" />{t("Graph", "வரைபடம்")}</button>
+              <button aria-pressed={view === "list"} onClick={() => setView("list")}><List size={15} aria-hidden="true" />{t("List", "பட்டியல்")}</button>
+            </div>
 
             <fieldset><legend>{t("Small graph around", "இதைச் சுற்றிய சிறு வரைபடம்")}</legend>
               <NodePicker nodes={allNodes} value={filter.focus} onPick={(id) => { set({ focus: id }); setSelected(id || null); }} />
@@ -122,83 +125,97 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
               {filter.focus && <div className="segmented" role="group" aria-label={t("How far out", "எவ்வளவு தூரம்")}>{[1, 2, 3].map((h) => <button key={h} aria-pressed={filter.hops === h} onClick={() => set({ hops: h })}>{h} {t(h === 1 ? "step" : "steps", "படி")}</button>)}</div>}
             </fieldset>
 
-            <fieldset><legend>{t("Episode", "நிகழ்ச்சி")}</legend>
-              <select value={filter.episode} onChange={(e) => set({ episode: e.target.value })} aria-label={t("Episode", "நிகழ்ச்சி")}>
-                <option value="all">{t("All episodes", "அனைத்தும்")}</option>{EPISODES.map(([k, en, ta]) => <option key={k} value={k}>{lang === "ta" ? ta : en}</option>)}
-              </select>
-            </fieldset>
+            <div className="filter-group">
+              <h2><Layers size={16} aria-hidden="true" />{t("What to show", "எதைக் காட்டுவது")}</h2>
+              <fieldset><legend>{t("Layer", "அடுக்கு")}</legend>
+                <select value={filter.layer} onChange={(e) => set({ layer: e.target.value as GraphFilter["layer"] })} aria-label={t("Layer", "அடுக்கு")}>
+                  {LAYERS.map(([k, en, ta]) => <option key={k} value={k}>{lang === "ta" ? ta : en}</option>)}
+                </select>
+                <p className="fine" style={{ marginTop: 6 }}>{(() => { const l = LAYERS.find((x) => x[0] === filter.layer)!; return lang === "ta" ? l[4] : l[3]; })()}</p>
+              </fieldset>
+              <fieldset><legend>{t("Kinds of thing", "வகைகள்")}</legend>
+                <ul className="legend">{CLASSES.map((c) => (
+                  <li key={c}><label className="check"><input type="checkbox" checked={filter.classes.has(c)} onChange={() => toggleClass(c)} /><EntityIcon cls={c} size={14} />{lang === "ta" ? CLASS_NAMES[c][1] : CLASS_NAMES[c][0]}</label></li>
+                ))}</ul>
+              </fieldset>
+              <fieldset><legend>{t("Epic", "காப்பியம்")}</legend>
+                <div className="segmented" role="group" aria-label={t("Epic", "காப்பியம்")}>{([["both", "Both", "இரண்டும்"], ["SIL", "Silappatikāram", "சிலம்பு"], ["MAN", "Maṇimēkalai", "மணிமேகலை"]] as const).map(([v, en, ta]) => <button key={v} aria-pressed={filter.epic === v} onClick={() => set({ epic: v })}>{lang === "ta" ? ta : en}</button>)}</div>
+              </fieldset>
+            </div>
 
-            <fieldset><legend>{t("Epic", "காப்பியம்")}</legend>
-              <div className="segmented" role="group">{([["both", "Both", "இரண்டும்"], ["SIL", "Silappatikāram", "சிலம்பு"], ["MAN", "Maṇimēkalai", "மணிமேகலை"]] as const).map(([v, en, ta]) => <button key={v} aria-pressed={filter.epic === v} onClick={() => set({ epic: v })}>{lang === "ta" ? ta : en}</button>)}</div>
+            <div className="filter-group">
+              <h2><Eye size={16} aria-hidden="true" />{t("Whose view", "யாருடைய கண்ணோட்டம்")}</h2>
+              <fieldset><legend>{t("What counts", "எதைக் காட்டுவது")}</legend>
+                <div className="segmented" role="group" aria-label={t("What counts", "எதைக் காட்டுவது")}>
+                  <button aria-pressed={filter.reading === "happened"} onClick={() => set({ reading: "happened" })}>{t("What happened", "நிகழ்ந்தவை")}</button>
+                  <button aria-pressed={filter.reading === "said"} onClick={() => set({ reading: "said" })}>{t("Also what was said", "கூற்றுகளும்")}</button>
+                </div>
+              </fieldset>
+              <fieldset><legend>{t("See it through someone's eyes", "ஒருவர் கண்ணோட்டத்தில்")}</legend>
+                <select value={filter.viewer} onChange={(e) => set({ viewer: e.target.value })} aria-label={t("Viewpoint", "கண்ணோட்டம்")}>
+                  <option value="">{t("Nobody in particular", "யாருடையதும் அல்ல")}</option>{viewers.map((v) => <option key={v} value={v}>{name(v)}</option>)}
+                </select>
+                {filter.viewer && <p className="fine" style={{ marginTop: 6 }}>{t("Adds what they believe at this point in the story, true or not. Use the story slider to watch it change.", "கதையின் இந்த இடத்தில் அவர் நம்புவதைச் சேர்க்கிறது. கதை நகர்த்தியால் மாற்றத்தைப் பாருங்கள்.")}</p>}
+              </fieldset>
+            </div>
+
+            <div className="filter-group">
+              <h2><Clock size={16} aria-hidden="true" />{t("When", "எப்போது")}</h2>
+              <fieldset><legend>{t("Episode", "நிகழ்ச்சி")}</legend>
+                <select value={filter.episode} onChange={(e) => set({ episode: e.target.value })} aria-label={t("Episode", "நிகழ்ச்சி")}>
+                  <option value="all">{t("All episodes", "அனைத்தும்")}</option>{EPISODES.map(([k, en, ta]) => <option key={k} value={k}>{lang === "ta" ? ta : en}</option>)}
+                </select>
+              </fieldset>
+              <fieldset><legend>{t("Story so far", "இதுவரை கதை")}</legend>
+                <Slider.Root className="slider" min={0} max={ticks.length - 1} step={1} value={[tick]} onValueChange={([v]) => setTick(v)}>
+                  <Slider.Track className="slider__track"><Slider.Range className="slider__range" /></Slider.Track>
+                  <Slider.Thumb className="slider__thumb" aria-label={t("Story time", "கதைக் காலம்")} />
+                </Slider.Root>
+                <p className="fine">{tick === ticks.length - 1 ? t("The whole story, in story order", "முழுக் கதையும், கதை வரிசையில்") : (lang === "ta" ? atTick?.ta : atTick?.en)}</p>
+              </fieldset>
+            </div>
+
+            <details className="filter-group">
+              <summary>{t("More options", "மேலும் தேர்வுகள்")}</summary>
               <label className="check"><input type="checkbox" checked={filter.bridgesOnly} onChange={(e) => set({ bridgesOnly: e.target.checked })} />{t("Only links touching someone in both", "இரண்டிலும் வருபவர் தொடர்பானவை மட்டும்")}</label>
-            </fieldset>
-
-            <fieldset><legend>{t("What counts", "எதைக் காட்டுவது")}</legend>
-              <div className="segmented" role="group">
-                <button aria-pressed={filter.reading === "happened"} onClick={() => set({ reading: "happened" })}>{t("What happened", "நிகழ்ந்தவை")}</button>
-                <button aria-pressed={filter.reading === "said"} onClick={() => set({ reading: "said" })}>{t("Also what was said", "கூற்றுகளும்")}</button>
-              </div>
               <label className="check"><input type="checkbox" checked={filter.earlierBirths} onChange={(e) => set({ earlierBirths: e.target.checked })} />{t("Include earlier births", "முற்பிறப்புகளையும் சேர்")}</label>
               <label className="check"><input type="checkbox" checked={filter.suggestions} onChange={(e) => set({ suggestions: e.target.checked })} />{t("Pairs that only appear together", "அருகருகே மட்டும் வரும் இணைகள்")}</label>
-            </fieldset>
-
-            <fieldset><legend>{t("See it through someone's eyes", "ஒருவர் கண்ணோட்டத்தில்")}</legend>
-              <select value={filter.viewer} onChange={(e) => set({ viewer: e.target.value })} aria-label={t("Viewpoint", "கண்ணோட்டம்")}>
-                <option value="">{t("Nobody in particular", "யாருடையதும் அல்ல")}</option>{viewers.map((v) => <option key={v} value={v}>{name(v)}</option>)}
-              </select>
-              {filter.viewer && <p className="fine">{t("Adds what they believe at this point in the story, true or not. Use the story slider to watch it change.", "கதையின் இந்த இடத்தில் அவர் நம்புவதைச் சேர்க்கிறது. கதை நகர்த்தியால் மாற்றத்தைப் பாருங்கள்.")}</p>}
-            </fieldset>
-
-            <fieldset><legend>{t("Story so far", "இதுவரை கதை")}</legend>
-              <Slider.Root className="slider" min={0} max={ticks.length - 1} step={1} value={[tick]} onValueChange={([v]) => setTick(v)}>
-                <Slider.Track className="slider__track"><Slider.Range className="slider__range" /></Slider.Track>
-                <Slider.Thumb className="slider__thumb" aria-label={t("Story time", "கதைக் காலம்")} />
-              </Slider.Root>
-              <p className="fine">{tick === ticks.length - 1 ? t("The whole story, in story order", "முழுக் கதையும், கதை வரிசையில்") : (lang === "ta" ? atTick?.ta : atTick?.en)}</p>
-            </fieldset>
-
-            <fieldset><legend>{t("Show", "காட்டு")}</legend>
-              <ul className="legend">{CLASSES.map((c) => (
-                <li key={c}><label className="check"><input type="checkbox" checked={filter.classes.has(c)} onChange={() => toggleClass(c)} /><span className="swatch" style={{ background: classColour(c, dark) }} />{lang === "ta" ? CLASS_NAMES[c][1] : CLASS_NAMES[c][0]}</label></li>
-              ))}</ul>
               <label className="check" style={{ marginBottom: 8 }}><input type="checkbox" checked={clusters} onChange={(e) => setClusters(e.target.checked)} />{t("Colour by clusters it finds itself", "தானே கண்ட கொத்துகளால் நிறம்")}</label>
-            </fieldset>
-
-            <div className="segmented" role="group" aria-label={t("View", "பார்வை")}>
-              <button aria-pressed={view === "graph"} onClick={() => setView("graph")}>{t("Graph", "வரைபடம்")}</button>
-              <button aria-pressed={view === "list"} onClick={() => setView("list")}>{t("List", "பட்டியல்")}</button>
-            </div>
-            <button className="link" style={{ marginTop: 14 }} onClick={exportCsv}>{t("Download this view as CSV", "இந்தப் பார்வையை CSV ஆகப் பதிவிறக்கு")}</button>
+            </details>
+            <button className="link" style={{ marginTop: 14 }} onClick={exportCsv}><Download size={15} aria-hidden="true" />{t("Download this view as CSV", "இந்தப் பார்வையை CSV ஆகப் பதிவிறக்கு")}</button>
           </div>
         )}
       </aside>
 
       <div className="stage">
         {data.nodes.length === 0 ? (
-          <p className="empty">{t("Nothing fits these filters.", "இந்த வடிகட்டிகளுக்குப் பொருந்துவது இல்லை.")} <button className="link" onClick={reset}>{t("Reset", "மீட்டமை")}</button></p>
+          <p className="empty" style={{ margin: 24 }}>{t("No links left with these filters. Turn a filter off, or reset.", "இந்த வடிகட்டிகளுடன் இணைப்புகள் இல்லை. ஒரு வடிகட்டியை நீக்குங்கள், அல்லது மீட்டமையுங்கள்.")} <button className="link" onClick={reset}>{t("Reset", "மீட்டமை")}</button></p>
         ) : view === "graph" ? (
           <><GraphCanvas data={data} clusters={clusters} selected={selected} selectedEdge={rec} edgeLabels={data.nodes.length <= 16} onNode={(id) => { setSelected(id); setRec(null); }} onEdge={data.nodes.length <= 60 || selected ? setRec : undefined} edgeOf={selected} ariaLabel={t(`Graph with ${data.nodes.length} nodes. The list view has the same content as text.`, `${data.nodes.length} முனைகள் உள்ள வரைபடம். பட்டியல் பார்வையில் இதே உள்ளடக்கம் உள்ளது.`)} />
           <div className="graph__legend" aria-hidden="true">
-            {(clusters ? [] : CLASSES.filter((c) => filter.classes.has(c) && data.nodes.some((id) => corpus.nodeById.get(id)?.cls === c))).map((c) => <span key={c}><i className="swatch" style={{ background: classColour(c, dark) }} />{lang === "ta" ? CLASS_NAMES[c][1] : CLASS_NAMES[c][0]}</span>)}
+            {(clusters ? [] : CLASSES.filter((c) => filter.classes.has(c) && data.nodes.some((id) => corpus.nodeById.get(id)?.cls === c))).map((c) => <span key={c}><EntityIcon cls={c} size={12} />{lang === "ta" ? CLASS_NAMES[c][1] : CLASS_NAMES[c][0]}</span>)}
             <span><i className="ring" />{t("in both epics", "இரு காப்பியங்களிலும்")}</span>
-            <span><i className="dash dash--done" />{t("told as fact", "நிகழ்ந்ததாக")}</span>
-            {filter.reading === "said" && <span><i className="dash dash--said" />{t("only said", "கூற்று மட்டும்")}</span>}
+            <span><LineSample mood="asserted" />{t("told as fact", "நிகழ்ந்ததாக")}</span>
+            {filter.reading === "said" && <span style={{ color: "var(--edge-said)" }}><LineSample mood="claimed" /><span style={{ color: "var(--ink-soft)" }}>{t("said, wanted or imagined", "கூற்று, விருப்பம், கற்பனை")}</span></span>}
           </div></>
         ) : (
           <div className="list-view">
             <table><thead><tr><th>{t("Who", "யார்")}</th><th>{t("Links", "இணைப்புகள்")}</th><th>{t("Epics", "காப்பியம்")}</th></tr></thead>
-              <tbody>{peopleList.map((n) => <tr key={n.id}><td><button className="link" onClick={() => { setSelected(n.id); setView("graph"); }}>{n[lang]}</button></td><td>{data.edges.filter((e) => e.s === n.id || e.t === n.id).length}</td><td>{n.epics.join(", ")}</td></tr>)}</tbody></table>
+              <tbody>{peopleList.map((n) => <tr key={n.id}><td><span className="entity-name"><EntityIcon cls={n.cls} id={n.id} kind={n.kind} size={14} /><button className="link" onClick={() => { setSelected(n.id); setView("graph"); }}>{n[lang]}</button>{n.epics.length > 1 && <i className="both-mark" title={t("in both epics", "இரு காப்பியங்களிலும்")} />}</span></td><td>{data.edges.filter((e) => e.s === n.id || e.t === n.id).length}</td><td>{n.epics.join(", ")}</td></tr>)}</tbody></table>
+            <h2 className="sub">{t("Every link shown", "காட்டப்படும் எல்லா இணைப்புகளும்")} <span className="count-badge">{data.edges.length}</span></h2>
+            <table><thead><tr><th>{t("From", "இருந்து")}</th><th>{t("Link", "இணைப்பு")}</th><th>{t("To", "வரை")}</th></tr></thead>
+              <tbody>{data.edges.map((e, i) => <tr key={e.rec + i}><td>{name(e.s)}</td><td><button className="link" onClick={() => setRec(e.rec)}>{e.kind.replace(/_/g, " ")}</button> <MoodTag mood={e.mood} /></td><td>{name(e.t)}</td></tr>)}</tbody></table>
           </div>
         )}
       </div>
 
       {(selectedNode || rec) && (
         <aside className="detail" aria-label={t("Details", "விவரம்")}>
-          <button className="detail__close" onClick={() => { setSelected(null); setRec(null); }} aria-label={t("Close", "மூடு")}>×</button>
+          <button className="detail__close" onClick={() => { setSelected(null); setRec(null); }} aria-label={t("Close", "மூடு")}><X size={18} aria-hidden="true" /></button>
           {rec && corpus.byId.get(rec) ? <><p className="eyebrow">{t("The link you picked, shown thick on the graph", "நீங்கள் தேர்ந்த இணைப்பு, வரைபடத்தில் தடிமனாக")}</p>{(() => { const e = data.edges.find((x) => x.rec === rec); return e ? <h2 style={{ marginBottom: 14 }}>{name(e.s)} — {name(e.t)}</h2> : null; })()}<RecordCard record={corpus.byId.get(rec)!} /></> : selectedNode && (
             <>
-              <h2>{selectedNode[lang]}</h2>
-              <p className="detail__sub">{lang === "ta" ? selectedNode.en : selectedNode.ta} · {selectedNode.epics.join(" + ")}{selectedNode.mentions ? ` · ${selectedNode.mentions} ${t("lines name them", "வரிகளில் பெயர்")}` : ""}</p>
+              <h2 className="entity-name"><EntityIcon cls={selectedNode.cls} id={selectedNode.id} kind={selectedNode.kind} />{selectedNode[lang]}</h2>
+              <p className="detail__sub"><span lang={lang === "ta" ? "en" : "ta"}>{lang === "ta" ? selectedNode.en : selectedNode.ta}</span>{selectedNode.epics.map((ep) => <EpicMark key={ep} epic={ep} />)}{selectedNode.kind && <span className="tag">{t("a kind, not one individual", "ஒரு வகை, தனி ஒன்று அல்ல")}</span>}{selectedNode.mentions ? <span>{selectedNode.mentions} {t("lines name them", "வரிகளில் பெயர்")}</span> : null}</p>
               <div className="detail__links">
                 <button className="chip" onClick={() => { set({ focus: selectedNode.id }); }}>{t("Small graph around them", "சிறு வரைபடம்")}</button>
                 <a className="chip" href={`#/ask?q=${encodeURIComponent(lang === "ta" ? `${selectedNode.ta} யார்?` : `Who is ${selectedNode.en}?`)}`}>{t("Ask", "கேள்")}</a>

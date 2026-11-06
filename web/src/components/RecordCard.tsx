@@ -1,7 +1,11 @@
+import { ArrowRight, BookOpen, Flag } from "lucide-react";
 import { go, useApp, useT } from "../lib/app";
-import { MOOD_LABEL } from "../lib/model";
+import { CautionIcon } from "../lib/icons";
 import { cantoName, correctionLink } from "../lib/site";
 import type { LedgerRecord } from "../lib/types";
+import { EpicMark, MoodTag, StatusBadge } from "./Marks";
+
+export { MoodTag };
 
 export function Voice({ record }: { record: LedgerRecord }) {
   const { corpus, lang } = useApp();
@@ -10,16 +14,11 @@ export function Voice({ record }: { record: LedgerRecord }) {
   return <span className="voice" title={t("Who tells us this, outermost first", "யார் வழியாக இது வருகிறது")}>{steps.join(" → ")}</span>;
 }
 
-export function MoodTag({ mood }: { mood: string }) {
-  const { lang } = useApp();
-  return <span className={`mood mood--${mood === "asserted" ? "done" : "said"}`}>{MOOD_LABEL[mood]?.[lang] ?? mood}</span>;
-}
-
 export function VerseLines({ lines }: { lines: LedgerRecord["lines"] }) {
   return (
     <blockquote className="verse" lang="ta">
       {lines.map((l) => (
-        <a key={l.id} className="verse__line" href={`#/songs/${l.id.slice(0, 6)}?line=${l.id}`}><span className="verse__text">{l.text}</span><span className="verse__id">{l.id}</span></a>
+        <a key={l.id} className="verse__line" href={`#/songs/${l.id.slice(0, 6)}?line=${l.id}`}><span className="verse__id">{l.id}</span><span className="verse__text">{l.text}</span></a>
       ))}
     </blockquote>
   );
@@ -29,7 +28,7 @@ export function VerseLines({ lines }: { lines: LedgerRecord["lines"] }) {
 export function ReadLink({ line }: { line: string }) {
   const { lang } = useApp();
   const t = useT();
-  return <a className="read-link" href={`#/songs/${line.slice(0, 6)}?line=${line}`}>{t(`Read in ${cantoName(line, "en")}`, `${cantoName(line, lang)} இல் படிக்க`)} →</a>;
+  return <a className="read-link" href={`#/songs/${line.slice(0, 6)}?line=${line}`}><BookOpen size={15} aria-hidden="true" />{t(`Read in ${cantoName(line, "en")}`, `${cantoName(line, lang)} இல் படிக்க`)}<ArrowRight size={15} aria-hidden="true" /></a>;
 }
 
 export function RecordCard({ record, compact }: { record: LedgerRecord; compact?: boolean }) {
@@ -40,14 +39,15 @@ export function RecordCard({ record, compact }: { record: LedgerRecord; compact?
   const caveat = record.unresolved ?? record.inferred;
   return (
     <article className="record">
-      <p className="record__text">{main}</p>
+      <div className="record__tags"><MoodTag mood={record.mood} /><EpicMark epic={record.epic} /><StatusBadge />{record.birth !== "main" && <span className="tag">{t("earlier birth", "முற்பிறப்பு")}</span>}</div>
+      <p className="record__text" lang={lang}>{main}</p>
       {!compact && <p className="record__other" lang={lang === "ta" ? "en" : "ta"}>{other}</p>}
-      <div className="record__meta"><MoodTag mood={record.mood} /><Voice record={record} />{record.birth !== "main" && <span className="tag">{t("earlier birth", "முற்பிறப்பு")}</span>}</div>
+      <p className="record__meta"><Voice record={record} /></p>
       <VerseLines lines={record.lines} />
-      {caveat && <p className="record__caveat">{caveat}</p>}
+      {caveat && <p className="record__caveat"><CautionIcon size={14} aria-hidden="true" />{caveat}</p>}
       <div className="record__foot">
         {record.lines.length > 0 && <ReadLink line={record.lines[0].id} />}
-        <a className="flag-link" href={correctionLink(`record ${record.id}`, record.lines.map((l) => l.id))}>{t("Suggest a correction", "திருத்தம் பரிந்துரை")}</a>
+        <a className="flag-link" href={correctionLink(`record ${record.id}`, record.lines.map((l) => l.id))}><Flag size={14} aria-hidden="true" />{t("Suggest a correction", "திருத்தம் பரிந்துரை")}</a>
       </div>
     </article>
   );

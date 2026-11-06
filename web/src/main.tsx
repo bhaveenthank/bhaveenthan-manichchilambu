@@ -1,10 +1,11 @@
-import "@fontsource/playfair-display/700.css";
-import "@fontsource/poppins/400.css";
-import "@fontsource/poppins/500.css";
+import "@fontsource/source-serif-4/400.css";
+import "@fontsource/source-serif-4/600.css";
+import "@fontsource/source-sans-3/400.css";
+import "@fontsource/source-sans-3/600.css";
 import "@fontsource/noto-sans-tamil/400.css";
-import "@fontsource/noto-sans-tamil/500.css";
 import "@fontsource/noto-sans-tamil/600.css";
-import "@fontsource/noto-serif-tamil/700.css";
+import "@fontsource/noto-serif-tamil/400.css";
+import "@fontsource/noto-serif-tamil/600.css";
 import { Component, type ReactNode, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";

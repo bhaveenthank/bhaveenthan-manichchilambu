@@ -3,19 +3,36 @@ import forceAtlas2 from "graphology-layout-forceatlas2";
 import louvain from "graphology-communities-louvain";
 import noverlap from "graphology-layout-noverlap";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Maximize, Minus, Plus } from "lucide-react";
 import Sigma from "sigma";
 import { useApp, useName } from "../lib/app";
+import { classColour, classStyle, FAMILY, familyOf, type Shape } from "../lib/icons";
 import type { Subgraph } from "../lib/model";
 
-// Colours for node classes, in a fixed order, run through the palette validator on both backgrounds (see docs/11_web_app.md).
-// Labels on the graph and the filter list carry the identity too, so colour never has to do it alone.
-const CLASS_COLOURS: Record<string, [string, string]> = {
-  Person: ["#B4441B", "#DB6A38"], Deity: ["#1570A6", "#3A97D2"], Place: ["#B07A00", "#BA8C16"], Object: ["#7C3FA8", "#A975D6"],
-  Group: ["#0A8F6F", "#27A382"], Material: ["#E0568C", "#E878A5"], Food: ["#5E7F00", "#7E9318"], Other: ["#8A8074", "#8F867A"],
-};
-export const classColour = (cls: string, dark: boolean) => (CLASS_COLOURS[cls] ?? CLASS_COLOURS.Other)[dark ? 1 : 0];
+export { classColour };
 // Louvain clusters get their colours from the same list. They change between filters, so they never mean "this class".
 const CLUSTER_ORDER = ["Person", "Deity", "Place", "Object", "Group", "Material", "Food"];
+
+/** Class shapes, drawn on our own canvas so a class reads by shape as well as by colour (Bertin: two channels, one meaning). */
+function tracePath(ctx: CanvasRenderingContext2D, shape: Shape, x: number, y: number, r: number) {
+  const poly = (n: number, turn: number, scale = 1) => {
+    for (let i = 0; i < n; i++) {
+      const a = turn + (i / n) * Math.PI * 2;
+      const px = x + Math.cos(a) * r * scale, py = y + Math.sin(a) * r * scale;
+      if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py);
+    }
+    ctx.closePath();
+  };
+  ctx.beginPath();
+  if (shape === "circle") ctx.arc(x, y, r, 0, Math.PI * 2);
+  else if (shape === "dot") ctx.arc(x, y, r * 0.6, 0, Math.PI * 2);
+  else if (shape === "square") ctx.rect(x - r * 0.88, y - r * 0.88, r * 1.76, r * 1.76);
+  else if (shape === "hexagon") poly(6, 0, 1.05);
+  else if (shape === "triangle") poly(3, -Math.PI / 2, 1.25);
+  else if (shape === "down") poly(3, Math.PI / 2, 1.25);
+  else if (shape === "diamond") poly(4, -Math.PI / 2, 1.2);
+  else poly(5, -Math.PI / 2, 1.1);
+}
 
 const css = (name: string) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
@@ -91,18 +108,21 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
 
   const graph = useMemo(() => {
     const g = new Graph({ multi: true, type: "undirected" });
-    const edgeColour = { done: css("--edge-done"), said: css("--edge-said"), hint: css("--edge-hint") };
+    const edgeColour = { done: css("--edge-done"), said: css("--edge-said"), hint: css("--edge-hint"), under: css("--line") };
+    const surface = css("--surface");
     data.nodes.forEach((id) => {
       const n = corpus.nodeById.get(id);
       const h = hash(id);
       const angle = ((h % 360) * Math.PI) / 180;
       const radius = 10 + Math.abs(h % 90);
-      g.addNode(id, { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius, size: 4, color: classColour(n?.cls ?? "Other", dark), bridge: (n?.epics.length ?? 0) > 1 });
+      // Sigma draws a surface-coloured disc (for hit testing and a halo over the edges); the shape on top is ours.
+      g.addNode(id, { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius, size: 4, color: surface, fill: classColour(n?.cls ?? "Other", dark), shape: classStyle(n?.cls ?? "Other").shape, isKind: !!n?.kind, bridge: (n?.epics.length ?? 0) > 1 });
     });
     data.edges.forEach((e, i) => {
       if (g.hasNode(e.s) && g.hasNode(e.t) && e.s !== e.t) {
         const done = e.mood === "asserted";
-        g.addEdgeWithKey(`${e.rec}:${i}`, e.s, e.t, { size: done ? 1.6 : 1.2, color: done ? edgeColour.done : edgeColour.said, rec: e.rec, kind: e.kind, done });
+        // Anything not told as fact gets a faint base line here and its family's dash on the overlay.
+        g.addEdgeWithKey(`${e.rec}:${i}`, e.s, e.t, { size: done ? 1.6 : 1.4, color: done ? edgeColour.done : edgeColour.under, rec: e.rec, kind: e.kind, done, family: familyOf(e.mood) });
       }
     });
     data.suggested.forEach((s, i) => { if (g.hasNode(s.s) && g.hasNode(s.t)) g.addEdgeWithKey(`hint:${i}`, s.s, s.t, { size: 0.8, color: edgeColour.hint, hint: true }); });
@@ -119,7 +139,7 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     }
     if (clusters && g.size > 0) {
       const found = louvain(g, { randomWalk: false });
-      g.forEachNode((id) => g.setNodeAttribute(id, "color", classColour(CLUSTER_ORDER[found[id] % CLUSTER_ORDER.length], dark)));
+      g.forEachNode((id) => g.setNodeAttribute(id, "fill", classColour(CLUSTER_ORDER[found[id] % CLUSTER_ORDER.length], dark)));
     }
     return g;
     // The key stands in for data: rebuilding on every parent render would throw the layout away.
@@ -148,21 +168,54 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     const ends = edgeEnds(selEdge);
     const near = new Set<string>(ends.length && !hov ? ends : focus && graph.hasNode(focus) ? [focus, ...graph.neighbors(focus)] : []);
     const ink = css("--ink"), halo = css("--surface"), muted = css("--ink-soft");
-    const family = `"Poppins","Noto Sans Tamil",system-ui,sans-serif`;
+    const family = `"Source Sans 3","Noto Sans Tamil",system-ui,sans-serif`;
     const placed: [number, number, number, number][] = [];
     const clash = (x: number, y: number, w: number, h: number) => placed.some(([a, b, c, d]) => x < a + c && a < x + w && y < b + d && b < y + h);
 
-    // Rings first, under the text: a ring means this node appears in both epics.
-    graph.forEachNode((id, a) => {
-      if (!a.bridge) return;
-      const p = sigma.graphToViewport({ x: a.x, y: a.y });
-      const r = a.size + 3; // nodes keep their pixel size at every zoom, so the maths stays simple
+    const faded = (id: string) => (ends.length && !hov ? !ends.includes(id) : !!focus && graph.hasNode(focus) && !near.has(id));
+
+    // Dashed edges first: the mood family's dash over the faint base line Sigma drew.
+    graph.forEachEdge((edge, a, s, t, sa, ta) => {
+      if (a.hint || a.done || a.rec === selEdge) return;
+      const lit = selEdge ? false : !focus || !graph.hasNode(focus) || s === focus || t === focus;
+      const p1 = sigma.graphToViewport({ x: sa.x, y: sa.y }), p2 = sigma.graphToViewport({ x: ta.x, y: ta.y });
       ctx.beginPath();
-      ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
-      ctx.strokeStyle = a.color;
-      ctx.lineWidth = 1.5;
-      ctx.globalAlpha = focus && !near.has(id) ? 0.2 : 0.9;
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(p2.x, p2.y);
+      ctx.setLineDash(FAMILY[a.family as keyof typeof FAMILY]?.dash ?? [6, 4]);
+      ctx.lineCap = "round";
+      ctx.strokeStyle = css("--edge-said");
+      ctx.lineWidth = focus && lit ? 2.2 : 1.6;
+      ctx.globalAlpha = lit ? 0.95 : 0.12;
       ctx.stroke();
+    });
+    ctx.setLineDash([]);
+    ctx.globalAlpha = 1;
+
+    // Then the nodes: a ring for "in both epics", the class shape, and a copper halo on the one picked.
+    const ringInk = css("--ink"), copper = css("--copper"), surface = css("--surface");
+    graph.forEachNode((id, a) => {
+      const p = sigma.graphToViewport({ x: a.x, y: a.y });
+      const r = a.size; // nodes keep their pixel size at every zoom, so the maths stays simple
+      ctx.globalAlpha = faded(id) ? 0.2 : 1;
+      if (id === sel) {
+        ctx.beginPath(); ctx.arc(p.x, p.y, r + 7, 0, Math.PI * 2);
+        ctx.fillStyle = css("--copper-tint"); ctx.fill();
+        ctx.strokeStyle = copper; ctx.lineWidth = 2; ctx.stroke();
+      }
+      if (a.bridge) {
+        ctx.beginPath(); ctx.arc(p.x, p.y, r + 3.5, 0, Math.PI * 2);
+        ctx.strokeStyle = ringInk; ctx.lineWidth = 1.5; ctx.stroke();
+      }
+      tracePath(ctx, a.shape, p.x, p.y, r);
+      if (a.isKind) {
+        // A kind ("a jewel") is outlined and dashed; an individual ("this jewel") is filled.
+        ctx.fillStyle = surface; ctx.fill();
+        ctx.setLineDash([3, 2]); ctx.strokeStyle = a.fill; ctx.lineWidth = 2; ctx.stroke(); ctx.setLineDash([]);
+      } else {
+        ctx.fillStyle = a.fill; ctx.fill();
+        ctx.strokeStyle = surface; ctx.lineWidth = 1.5; ctx.stroke();
+      }
       ctx.globalAlpha = 1;
     });
 
@@ -200,7 +253,7 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
 
     // Edge words only where they fit: small graphs, or around what's selected.
     if (edgeLabels || focus || selEdge) {
-      ctx.font = `500 12px ${family}`;
+      ctx.font = `600 12.5px ${family}`;
       graph.forEachEdge((edge, a, s, t, sa, ta) => {
         if (a.hint) return;
         const related = edgeLabels || a.rec === selEdge || (focus && (s === focus || t === focus));
@@ -267,9 +320,9 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       <canvas ref={overlay} className="graph__labels" aria-hidden="true" />
       {!compact && (
         <div className="graph__zoom">
-          <button aria-label="Zoom in" onClick={() => sigmaRef.current?.getCamera().zoomIn({ duration: 200 })}>+</button>
-          <button aria-label="Zoom out" onClick={() => sigmaRef.current?.getCamera().zoomOut({ duration: 200 })}>−</button>
-          <button aria-label="Fit" onClick={() => sigmaRef.current?.getCamera().reset({ duration: 200 })}>⤢</button>
+          <button aria-label="Zoom in" onClick={() => sigmaRef.current?.getCamera().zoomIn({ duration: 200 })}><Plus size={16} aria-hidden="true" /></button>
+          <button aria-label="Zoom out" onClick={() => sigmaRef.current?.getCamera().zoomOut({ duration: 200 })}><Minus size={16} aria-hidden="true" /></button>
+          <button aria-label="Fit" onClick={() => sigmaRef.current?.getCamera().reset({ duration: 200 })}><Maximize size={16} aria-hidden="true" /></button>
         </div>
       )}
     </div>

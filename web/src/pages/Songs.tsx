@@ -78,7 +78,7 @@ export function SongsPage({ params }: { params: URLSearchParams }) {
           <a className="go" href="#/words?tab=search">{t("Search every line", "எல்லா வரிகளிலும் தேடு")}</a>
         </div>
         <p className="fine">{lang === "ta" ? current.why[1] : current.why[0]}</p>
-        <p className="coverage-key" style={{ marginTop: 10 }}><span><i style={{ background: "var(--copper)" }} />{t("lines the graph's records cite", "வரைபடப் பதிவுகள் சுட்டும் வரிகள்")}</span><span><i style={{ background: "var(--link-soft)" }} />{t("plus unchecked machine drafts", "சரிபார்க்காத இயந்திர வரைவுகளும்")}</span></p>
+        <p className="coverage-key"><span><i className="key-hand" />{t("lines the graph's records cite", "வரைபடப் பதிவுகள் சுட்டும் வரிகள்")}</span><span><i className="key-draft" />{t("plus unchecked machine drafts", "சரிபார்க்காத இயந்திர வரைவுகளும்")}</span></p>
       </div>
       {groups.map(([k, items]) => (
         <section key={k} className="song-group">
@@ -88,7 +88,7 @@ export function SongsPage({ params }: { params: URLSearchParams }) {
               <li key={c.key}><a href={`#/songs/${c.key}`}>
                 <span className="song__title" lang="ta">{c.title}</span>
                 <span className="song__en">{c.en}</span>
-                <span className="song__meta">{c.key} · {c.lines} {t("lines", "வரிகள்")}{c.records.length ? ` · ${c.records.length} ${t("records", "பதிவுகள்")}` : ""}{c.echo ? ` · ${c.echo} ${t("shared", "பொது")}` : ""}</span>
+                <span className="song__meta"><span className="mono">{c.key}</span> · {c.lines} {t("lines", "வரிகள்")}{c.records.length ? ` · ${c.records.length} ${t("records", "பதிவுகள்")}` : ""}{c.echo ? ` · ${c.echo} ${t("shared", "பொது")}` : ""}</span>
                 <CoverageBar lines={c.lines} cited={c.cited} drafted={c.drafted} />
                 <span className="coverage__text">{t(`${Math.round((c.cited / c.lines) * 100)}% of lines in the graph · ${Math.round((c.drafted / c.lines) * 100)}% with drafts`, `${Math.round((c.cited / c.lines) * 100)}% வரிகள் வரைபடத்தில் · ${Math.round((c.drafted / c.lines) * 100)}% வரைவுகளுடன்`)}</span>
               </a></li>

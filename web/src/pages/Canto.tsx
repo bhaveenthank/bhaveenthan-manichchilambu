@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { ArrowRight } from "lucide-react";
 import { GraphCanvas } from "../components/GraphCanvas";
+import { EpicMark, MoodTag, StatusBadge } from "../components/Marks";
 import { RecordCard } from "../components/RecordCard";
 import { useApp, useName, useT } from "../lib/app";
 import { loadCanto } from "../lib/data";
@@ -47,8 +49,8 @@ export function CantoPage({ cantoKey, line }: { cantoKey: string; line: string |
   return (
     <article className="canto">
       <header className="canto__head">
-        <a className="link" href="#/songs">← {t("All songs", "அனைத்துப் பாடல்கள்")}</a>
-        <p className="eyebrow">{canto.epic === "SIL" ? t("Silappatikāram", "சிலப்பதிகாரம்") : t("Maṇimēkalai", "மணிமேகலை")} · {canto.key}</p>
+        <nav aria-label={t("Breadcrumb", "வழித்தடம்")} className="fine"><a href="#/songs">{t("Songs", "பாடல்கள்")}</a> / <span className="mono">{canto.key}</span></nav>
+        <p className="eyebrow" style={{ display: "flex", gap: 10, alignItems: "center" }}><EpicMark epic={canto.epic} /></p>
         <h1 lang="ta">{canto.title}</h1>
         <p className="canto__en">{canto.en}</p>
         <div className="chips">
@@ -63,7 +65,7 @@ export function CantoPage({ cantoKey, line }: { cantoKey: string; line: string |
               {canto.people.map((id) => <button key={id} className="chip" aria-pressed={person === id} onClick={() => setPerson(person === id ? "" : id)}>{name(id)}</button>)}
             </div>
           )}
-          {!rows ? <p className="fine">{t("Loading...", "ஏற்றுகிறது...")}</p> : (
+          {!rows ? <div className="skeleton" aria-busy="true" aria-label={t("Loading the verse", "பாடலை ஏற்றுகிறது")}><i /><i /><i /><i /><i /></div> : (
             <ol className="lyric">
               {blocks.map((b) => (
                 <li key={b.rows[0].id} className="lyric__block">
@@ -89,14 +91,14 @@ export function CantoPage({ cantoKey, line }: { cantoKey: string; line: string |
         </div>
         <aside className="canto__side">
           {small && small.nodes.length > 0 ? (
-            <section><h2 className="sub">{t("This song's graph", "இப்பாடலின் வரைபடம்")}</h2><GraphCanvas data={small} compact edgeLabels={small.nodes.length <= 14} ariaLabel={t("Small graph of the records in this song", "இப்பாடலின் பதிவுகளின் சிறு வரைபடம்")} /><a className="link" href={`#/graph`}>{t("Open the full graph", "முழு வரைபடம்")} →</a></section>
+            <section><h2 className="sub">{t("This song's graph", "இப்பாடலின் வரைபடம்")}</h2><GraphCanvas data={small} compact edgeLabels={small.nodes.length <= 14} ariaLabel={t("Small graph of the records in this song", "இப்பாடலின் பதிவுகளின் சிறு வரைபடம்")} /><a className="link" href={`#/graph`}>{t("Open the full graph", "முழு வரைபடம்")}<ArrowRight size={15} aria-hidden="true" /></a></section>
           ) : <p className="fine">{t("The graph has no records from this song yet.", "இப்பாடலில் இருந்து வரைபடப் பதிவுகள் இன்னும் இல்லை.")}</p>}
           {machine.length > 0 && (
             <section>
-              <h2 className="sub">{t("Machine-read drafts", "இயந்திரம் படித்த வரைவுகள்")} <span className="count-badge">{machine.length}</span></h2>
+              <h2 className="sub">{t("Machine-read drafts", "இயந்திரம் படித்த வரைவுகள்")} <span className="count-badge count-badge--draft">{machine.length}</span></h2>
               <p className="fine">{t("A language model proposed these from this canto. The quoted words were checked against the lines, and nothing else was. They aren't in the graph and they aren't answers.", "மொழி மாதிரி முன்மொழிந்தவை. மேற்கோள் சொற்கள் மட்டுமே சரிபார்க்கப்பட்டன. இவை வரைபடத்தில் இல்லை.")}</p>
               <details className="machine"><summary>{t("Show them", "காட்டு")}</summary>
-                {machine.map((m, i) => <article key={i} className="machine__row"><p><b>{m.kind?.replace(/_/g, " ")}</b> · {m.mood}{m.roles ? ` · ${Object.values(m.roles).flat().filter((v) => typeof v === "string").map((v) => name(v as string)).join(", ")}` : ""}</p><a className="lex__line" href={`#/songs/${cantoKey}?line=${m.lines[0].id}`}><span lang="ta">{m.quote}</span><span className="verse__id">{m.lines[0].id}</span></a></article>)}
+                {machine.map((m, i) => <article key={i} className="machine__row"><div className="record__tags"><StatusBadge draft />{m.mood && <MoodTag mood={m.mood} />}</div><p><b>{m.kind?.replace(/_/g, " ")}</b>{m.roles ? ` · ${Object.values(m.roles).flat().filter((v) => typeof v === "string").map((v) => name(v as string)).join(", ")}` : ""}</p><a className="lex__line" href={`#/songs/${cantoKey}?line=${m.lines[0].id}`}><span lang="ta">{m.quote}</span><span className="verse__id">{m.lines[0].id}</span></a></article>)}
               </details>
             </section>
           )}

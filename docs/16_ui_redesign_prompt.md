@@ -27,7 +27,7 @@ The app's one idea, which the design has to carry: **it separates what the poem 
 ### Ground rules
 
 1. **Work only on this machine.**
-   - Don't connect to GitHub or any git host. No `git init`, `git push` or `gh` commands, and no creating repositories or pull requests. The project isn't under git, and that stays the owner's decision.
+   - Don't connect to GitHub or any git host. The project is a git repo, but don't run `git commit`, `git push`, `git pull` or any `gh` command, and don't create branches, repositories or pull requests. The owner reviews your changes and commits them.
    - Don't deploy anywhere. The owner uploads `web/dist` to Netlify by hand.
    - Don't add analytics, trackers, CDNs or web-font links. Every font and icon must be installed through npm and bundled, so the built site works offline from the `dist` folder.
 2. **Keep every feature working.** The list below is the contract. If a feature looks cluttered, redesign how it's presented. Don't drop it, hide it behind something nobody will find, or change what it does.

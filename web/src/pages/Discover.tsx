@@ -1,3 +1,4 @@
+import { EntityIcon } from "../components/Marks";
 import { useMemo, useState } from "react";
 import { LinkKey } from "../components/LinkKey";
 import { PathCard } from "../components/PathCard";
@@ -125,7 +126,7 @@ function EpicsTab() {
       })}
       <section>
         <h2>{t("Who's in both", "இரண்டிலும் வருபவை")} <span className="count-badge">{bridgePeople.length}</span></h2>
-        <div className="chips">{bridgePeople.map((n) => <a key={n.id} className="chip" href={`#/graph?focus=${n.id}`}>{n[lang]}</a>)}</div>
+        <div className="chips">{bridgePeople.map((n) => <a key={n.id} className="chip" href={`#/graph?focus=${n.id}`}><EntityIcon cls={n.cls} id={n.id} kind={n.kind} size={13} />{n[lang]}</a>)}</div>
       </section>
     </>
   );

@@ -1,3 +1,5 @@
+import { GitCompare } from "lucide-react";
+import { CautionIcon } from "../lib/icons";
 import { useState } from "react";
 import { RecordList } from "./RecordCard";
 import { useApp, useName, useT } from "../lib/app";
@@ -24,14 +26,14 @@ export function PathCard({ steps, startOpen }: { steps: PathStep[]; startOpen?: 
             const w = s.via && s.via !== "same" ? s.via : s.w;
             return (
               <span key={i} style={{ display: "contents" }}>
-                <i className={CAUTION.has(w) ? "caution" : ""}>{WARRANT_NAMES[w]?.[lang === "ta" ? 1 : 0] ?? w}</i>
+                <i className={CAUTION.has(w) ? "caution" : ""}>{CAUTION.has(w) && <CautionIcon size={12} aria-hidden="true" />}{WARRANT_NAMES[w]?.[lang === "ta" ? 1 : 0] ?? w}</i>
                 <span>{name(s.to)}</span>
               </span>
             );
           })}
         </p>
         {/* About the whole path, not one of its links, so it sits apart from them. */}
-        {epics.size > 1 && <p className="path__whole">{t("This path crosses both epics", "இப்பாதை இரு காப்பியங்களையும் கடக்கிறது")}</p>}
+        {epics.size > 1 && <p className="path__whole"><GitCompare size={14} aria-hidden="true" />{t("This path crosses both epics", "இப்பாதை இரு காப்பியங்களையும் கடக்கிறது")}</p>}
       </button>
       {open && (
         <div className="path__body">
