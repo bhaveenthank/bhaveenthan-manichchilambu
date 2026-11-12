@@ -1,3 +1,4 @@
+import type { RetrievalData } from "./hybrid";
 import type { CantoLine, Corpus } from "./types";
 
 // Files live next to the page, so this works on GitHub Pages under any repo name.
@@ -31,4 +32,11 @@ let searchCache: Promise<[string, string][]> | null = null;
 export function loadSearch() {
   searchCache ??= fetchJson<[string, string][]>("search.json");
   return searchCache;
+}
+
+let retrievalCache: Promise<RetrievalData> | null = null;
+/** The extra indexes the Ask page searches: every line, the machine notes that gloss them, and the drafts. Loaded on first question. */
+export function loadRetrieval() {
+  retrievalCache ??= Promise.all([loadSearch(), fetchJson<Omit<RetrievalData, "lines">>("retrieval.json")]).then(([lines, extra]) => ({ lines, ...extra }));
+  return retrievalCache;
 }

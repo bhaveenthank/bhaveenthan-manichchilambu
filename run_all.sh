@@ -28,3 +28,5 @@ $PY scripts/make_review_sheet.py
 $PY scripts/build_web_data.py
 $PY scripts/build_line_index.py
 npm --prefix web test
+# The web tests write each route's ranking per question; this compares retrievers on them.
+$PY experiments/run_dense_retrieval.py

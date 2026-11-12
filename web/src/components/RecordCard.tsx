@@ -3,6 +3,7 @@ import { go, useApp, useT } from "../lib/app";
 import { CautionIcon } from "../lib/icons";
 import { cantoName, correctionLink } from "../lib/site";
 import type { LedgerRecord } from "../lib/types";
+import { useInspect } from "./inspectContext";
 import { EpicMark, MoodTag, StatusBadge } from "./Marks";
 
 export { MoodTag };
@@ -15,10 +16,11 @@ export function Voice({ record }: { record: LedgerRecord }) {
 }
 
 export function VerseLines({ lines }: { lines: LedgerRecord["lines"] }) {
+  const inspect = useInspect();
   return (
     <blockquote className="verse" lang="ta">
       {lines.map((l) => (
-        <a key={l.id} className="verse__line" href={`#/songs/${l.id.slice(0, 6)}?line=${l.id}`}><span className="verse__id">{l.id}</span><span className="verse__text">{l.text}</span></a>
+        <a key={l.id} className="verse__line" href={`#/songs/${l.id.slice(0, 6)}?line=${l.id}`} onClick={inspect ? (e) => { e.preventDefault(); inspect(l.id); } : undefined}><span className="verse__id">{l.id}</span><span className="verse__text">{l.text}</span></a>
       ))}
     </blockquote>
   );

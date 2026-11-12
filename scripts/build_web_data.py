@@ -278,6 +278,30 @@ def build_machine():
     return out
 
 
+def build_retrieval(machine):
+    """What the Ask page searches besides the hand records, in one file it loads on demand.
+
+    notes : the every-line pass gives each line a short English gist. It's the bridge that lets an English
+            question reach a Tamil verse. Machine-written, and the site labels it that way.
+    drafts: the unchecked machine records, flattened so they can be searched by kind, people and quote.
+    """
+    notes = {}
+    for name in ("tier2_lines.jsonl", "tier2_lines_all.jsonl", "tier2_lines_all.jsonl.partial"):
+        path = ROOT / "data/candidates" / name
+        if not path.exists():
+            continue
+        for raw in open(path, encoding="utf-8"):
+            n = json.loads(raw)
+            if n.get("type") == "line_note" and n.get("line") in TEXT and n.get("gist"):
+                notes.setdefault(n["line"], [n["gist"], n.get("what", ""), n.get("sense", ""), n.get("categories") or []])
+    drafts = []
+    for rows in machine.values():
+        for d in rows:
+            people = sorted({v for vals in (d.get("roles") or {}).values() for v in values(vals) if isinstance(v, str)})
+            drafts.append([d["lines"][0]["id"], d.get("kind") or "", people, d.get("mood") or "", d.get("quote") or "", [l["id"] for l in d["lines"]]])
+    return {"notes": notes, "drafts": drafts}
+
+
 def main():
     records, graph, cantos = build_records(), build_graph(), build_cantos()
     write_canto_text()
@@ -297,6 +321,7 @@ def main():
     for key, rows in machine.items():
         dump(f"machine/{key}.json", rows)
     dump("search.json", [[r["id"], r["text"]] for r in ROWS])
+    dump("retrieval.json", build_retrieval(machine))
     dump("catalogue.json", build_catalogue())
     summary = {"records": len(records), "nodes": len(graph["nodes"]), "edges": len(graph["edges"]), "lines": len(ROWS), "cantos": len(cantos),
                "crossEpicLines": sum(1 for _ in build_echoes()["lines"]), "discoveries": len(discoveries),

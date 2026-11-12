@@ -1,0 +1,310 @@
+{
+ "right": 16,
+ "of": 32,
+ "rows": [
+  {
+   "q": "How did Kannagi hurt her fingers?",
+   "want": "n03",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "n03"
+   ]
+  },
+  {
+   "q": "What did Manimekalai find out about her previous birth?",
+   "want": "f01",
+   "type": "birth",
+   "hit": true,
+   "top": [
+    "f01",
+    "f02",
+    "f07"
+   ]
+  },
+  {
+   "q": "Who went to console the grieving queen?",
+   "want": "v112",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "v112"
+   ]
+  },
+  {
+   "q": "What struck the king in the mouth?",
+   "want": "a21",
+   "type": "kill",
+   "hit": true,
+   "top": [
+    "a24",
+    "a22",
+    "a21"
+   ]
+  },
+  {
+   "q": "Who made the crystal pavilion in the grove?",
+   "want": "v077",
+   "type": "maker",
+   "hit": false,
+   "top": [
+    "n35"
+   ]
+  },
+  {
+   "q": "How many goldsmiths were sacrificed to Kannagi?",
+   "want": "a26",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "a26",
+    "r05"
+   ]
+  },
+  {
+   "q": "Where did Kovalan wait inside the city?",
+   "want": "s05",
+   "type": "inside",
+   "hit": false,
+   "top": [
+    "a18",
+    "a19",
+    "a20"
+   ]
+  },
+  {
+   "q": "Who carried Kovalan's letter to his parents?",
+   "want": "n82",
+   "type": "family",
+   "hit": false,
+   "top": [
+    "m01",
+    "m02",
+    "m05"
+   ]
+  },
+  {
+   "q": "Which goddess's temple did the three travellers reach?",
+   "want": "v038",
+   "type": "yes",
+   "hit": false,
+   "top": [
+    "m09"
+   ]
+  },
+  {
+   "q": "What disaster struck the Kanchi country?",
+   "want": "v128",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "v128"
+   ]
+  },
+  {
+   "q": "Where did Aputhiran leave the bowl?",
+   "want": "c04",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "c04",
+    "v098"
+   ]
+  },
+  {
+   "q": "Who took the abandoned boy Aputhiran home?",
+   "want": "v100",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "v098",
+    "v100",
+    "v104"
+   ]
+  },
+  {
+   "q": "What did Kannagi ask the Sun?",
+   "want": "v061",
+   "type": "closest",
+   "hit": false,
+   "top": [
+    "m10",
+    "v015",
+    "v025"
+   ]
+  },
+  {
+   "q": "What were people gossiping about Dharmadattan and Visakai?",
+   "want": "n85",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "n85"
+   ]
+  },
+  {
+   "q": "Who sang of the woman who beat the king with an anklet?",
+   "want": "v071",
+   "type": "none",
+   "hit": false,
+   "top": []
+  },
+  {
+   "q": "Which kings asked Kannagi for a boon?",
+   "want": "m10",
+   "type": "closest",
+   "hit": false,
+   "top": [
+    "a08",
+    "a10",
+    "a11"
+   ]
+  },
+  {
+   "q": "Who were the workers who built the pavilion?",
+   "want": "n35",
+   "type": "maker",
+   "hit": true,
+   "top": [
+    "n35"
+   ]
+  },
+  {
+   "q": "What did Aravanan teach about dependent arising?",
+   "want": "v136",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "x62",
+    "v092",
+    "v136"
+   ]
+  },
+  {
+   "q": "Why was Kayasandikai always hungry?",
+   "want": "b01",
+   "type": "why_death",
+   "hit": false,
+   "top": [
+    "b03"
+   ]
+  },
+  {
+   "q": "Did Dharmadattan and Visakai really plan to marry?",
+   "want": "n85",
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "n85"
+   ]
+  },
+  {
+   "q": "கண்ணகி கனவில் என்ன கண்டாள்?",
+   "want": "x01",
+   "type": "about",
+   "hit": false,
+   "top": [
+    "m03",
+    "m01",
+    "a01"
+   ]
+  },
+  {
+   "q": "கோவலன் தன் மகளுக்கு யாருடைய பெயரை வைத்தான்?",
+   "want": "m13",
+   "type": "about",
+   "hit": false,
+   "top": [
+    "d01",
+    "m02",
+    "m05"
+   ]
+  },
+  {
+   "q": "சாதுவனுக்கு என்ன பொருள்கள் கொடுக்கப்பட்டன?",
+   "want": "n65",
+   "type": "about",
+   "hit": true,
+   "top": [
+    "n60",
+    "n61",
+    "n63"
+   ]
+  },
+  {
+   "q": "மணிமேகலை வஞ்சிக்கு எப்படிச் சென்றாள்?",
+   "want": "s12",
+   "type": "path",
+   "hit": false,
+   "top": [
+    "m07"
+   ]
+  },
+  {
+   "q": "மணிமேகலை எங்கே ஒளிந்தாள்?",
+   "want": "s09",
+   "type": "none",
+   "hit": false,
+   "top": []
+  },
+  {
+   "q": "அமுதசுரபியை ஆபுத்திரன் எங்கே விட்டான்?",
+   "want": "c04",
+   "type": "holder",
+   "hit": true,
+   "top": [
+    "c01",
+    "c04",
+    "c07"
+   ]
+  },
+  {
+   "q": "kavunti madurai ku varuven nu sonnaala",
+   "want": "v017",
+   "type": "none",
+   "hit": false,
+   "top": []
+  },
+  {
+   "q": "gajabahu kannagi kitta enna kettaan",
+   "want": "m10",
+   "type": "none",
+   "hit": false,
+   "top": []
+  },
+  {
+   "q": "kovalan letter yaar kitta kuduthaan",
+   "want": "n82",
+   "type": "none",
+   "hit": false,
+   "top": []
+  },
+  {
+   "q": "kayasandikai pasi yen theeravillai",
+   "want": "b01",
+   "type": "why_death",
+   "hit": false,
+   "top": [
+    "b03"
+   ]
+  },
+  {
+   "q": "What did Kovalan eat for breakfast in Puhar?",
+   "want": null,
+   "type": "closest",
+   "hit": true,
+   "top": [
+    "r05",
+    "x01",
+    "n47"
+   ]
+  },
+  {
+   "q": "Who was the emperor of Rome at the time?",
+   "want": null,
+   "type": "none",
+   "hit": true,
+   "top": []
+  }
+ ]
+}

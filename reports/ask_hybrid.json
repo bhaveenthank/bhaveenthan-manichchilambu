@@ -1,0 +1,3041 @@
+{
+ "open": {
+  "rules_only": {
+   "right": 16,
+   "of": 32,
+   "rows": [
+    {
+     "q": "How did Kannagi hurt her fingers?",
+     "want": "n03",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n03"
+     ]
+    },
+    {
+     "q": "What did Manimekalai find out about her previous birth?",
+     "want": "f01",
+     "type": "birth",
+     "ok": true,
+     "top": [
+      "f01",
+      "f02",
+      "f07"
+     ]
+    },
+    {
+     "q": "Who went to console the grieving queen?",
+     "want": "v112",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v112"
+     ]
+    },
+    {
+     "q": "What struck the king in the mouth?",
+     "want": "a21",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a24",
+      "a22",
+      "a21"
+     ]
+    },
+    {
+     "q": "Who made the crystal pavilion in the grove?",
+     "want": "v077",
+     "type": "maker",
+     "ok": false,
+     "top": [
+      "n35"
+     ]
+    },
+    {
+     "q": "How many goldsmiths were sacrificed to Kannagi?",
+     "want": "a26",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a26",
+      "r05"
+     ]
+    },
+    {
+     "q": "Where did Kovalan wait inside the city?",
+     "want": "s05",
+     "type": "inside",
+     "ok": false,
+     "top": [
+      "a18",
+      "a19",
+      "a20",
+      "a21"
+     ]
+    },
+    {
+     "q": "Who carried Kovalan's letter to his parents?",
+     "want": "n82",
+     "type": "family",
+     "ok": false,
+     "top": [
+      "m01",
+      "m02",
+      "m05"
+     ]
+    },
+    {
+     "q": "Which goddess's temple did the three travellers reach?",
+     "want": "v038",
+     "type": "yes",
+     "ok": false,
+     "top": [
+      "m09"
+     ]
+    },
+    {
+     "q": "What disaster struck the Kanchi country?",
+     "want": "v128",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v128"
+     ]
+    },
+    {
+     "q": "Where did Aputhiran leave the bowl?",
+     "want": "c04",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "c04",
+      "v098"
+     ]
+    },
+    {
+     "q": "Who took the abandoned boy Aputhiran home?",
+     "want": "v100",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v098",
+      "v100",
+      "v104"
+     ]
+    },
+    {
+     "q": "What did Kannagi ask the Sun?",
+     "want": "v061",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "m10",
+      "v015",
+      "v025",
+      "v044"
+     ]
+    },
+    {
+     "q": "What were people gossiping about Dharmadattan and Visakai?",
+     "want": "n85",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n85"
+     ]
+    },
+    {
+     "q": "Who sang of the woman who beat the king with an anklet?",
+     "want": "v071",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "Which kings asked Kannagi for a boon?",
+     "want": "m10",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "a08",
+      "a10",
+      "a11",
+      "k_sceptre"
+     ]
+    },
+    {
+     "q": "Who were the workers who built the pavilion?",
+     "want": "n35",
+     "type": "maker",
+     "ok": true,
+     "top": [
+      "n35"
+     ]
+    },
+    {
+     "q": "What did Aravanan teach about dependent arising?",
+     "want": "v136",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "x62",
+      "v092",
+      "v136"
+     ]
+    },
+    {
+     "q": "Why was Kayasandikai always hungry?",
+     "want": "b01",
+     "type": "why_death",
+     "ok": false,
+     "top": [
+      "b03"
+     ]
+    },
+    {
+     "q": "Did Dharmadattan and Visakai really plan to marry?",
+     "want": "n85",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n85"
+     ]
+    },
+    {
+     "q": "கண்ணகி கனவில் என்ன கண்டாள்?",
+     "want": "x01",
+     "type": "about",
+     "ok": false,
+     "top": [
+      "m03",
+      "m01",
+      "a01",
+      "x10",
+      "a03"
+     ]
+    },
+    {
+     "q": "கோவலன் தன் மகளுக்கு யாருடைய பெயரை வைத்தான்?",
+     "want": "m13",
+     "type": "about",
+     "ok": false,
+     "top": [
+      "d01",
+      "m02",
+      "m05",
+      "m01",
+      "l02"
+     ]
+    },
+    {
+     "q": "சாதுவனுக்கு என்ன பொருள்கள் கொடுக்கப்பட்டன?",
+     "want": "n65",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "n60",
+      "n61",
+      "n63",
+      "n65",
+      "n66"
+     ]
+    },
+    {
+     "q": "மணிமேகலை வஞ்சிக்கு எப்படிச் சென்றாள்?",
+     "want": "s12",
+     "type": "path",
+     "ok": false,
+     "top": [
+      "m07"
+     ]
+    },
+    {
+     "q": "மணிமேகலை எங்கே ஒளிந்தாள்?",
+     "want": "s09",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "அமுதசுரபியை ஆபுத்திரன் எங்கே விட்டான்?",
+     "want": "c04",
+     "type": "holder",
+     "ok": true,
+     "top": [
+      "c01",
+      "c04",
+      "c07"
+     ]
+    },
+    {
+     "q": "kavunti madurai ku varuven nu sonnaala",
+     "want": "v017",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "gajabahu kannagi kitta enna kettaan",
+     "want": "m10",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "kovalan letter yaar kitta kuduthaan",
+     "want": "n82",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "kayasandikai pasi yen theeravillai",
+     "want": "b01",
+     "type": "why_death",
+     "ok": false,
+     "top": [
+      "b03"
+     ]
+    },
+    {
+     "q": "What did Kovalan eat for breakfast in Puhar?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "r05",
+      "x01",
+      "n47"
+     ]
+    },
+    {
+     "q": "Who was the emperor of Rome at the time?",
+     "want": null,
+     "type": "none",
+     "ok": true,
+     "top": []
+    }
+   ]
+  },
+  "hybrid": {
+   "right": 29,
+   "of": 32,
+   "rows": [
+    {
+     "q": "How did Kannagi hurt her fingers?",
+     "want": "n03",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n03",
+      "e01",
+      "m01",
+      "v001"
+     ]
+    },
+    {
+     "q": "What did Manimekalai find out about her previous birth?",
+     "want": "f01",
+     "type": "birth",
+     "ok": true,
+     "top": [
+      "f01",
+      "f02",
+      "f07",
+      "x82",
+      "v124"
+     ]
+    },
+    {
+     "q": "Who went to console the grieving queen?",
+     "want": "v112",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v017",
+      "v112",
+      "e06",
+      "a27"
+     ]
+    },
+    {
+     "q": "What struck the king in the mouth?",
+     "want": "a21",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a24",
+      "a22",
+      "a21",
+      "a15",
+      "a23"
+     ]
+    },
+    {
+     "q": "Who made the crystal pavilion in the grove?",
+     "want": "v077",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n35",
+      "n36",
+      "v077",
+      "s09"
+     ]
+    },
+    {
+     "q": "How many goldsmiths were sacrificed to Kannagi?",
+     "want": "a26",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a26",
+      "r05",
+      "n11",
+      "s04"
+     ]
+    },
+    {
+     "q": "Where did Kovalan wait inside the city?",
+     "want": "s05",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v053",
+      "x01",
+      "s05",
+      "v013"
+     ]
+    },
+    {
+     "q": "Who carried Kovalan's letter to his parents?",
+     "want": "n82",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m01",
+      "m02",
+      "m05",
+      "n82",
+      "n81"
+     ]
+    },
+    {
+     "q": "Which goddess's temple did the three travellers reach?",
+     "want": "v038",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v038",
+      "m09",
+      "v027",
+      "s12",
+      "x01"
+     ]
+    },
+    {
+     "q": "What disaster struck the Kanchi country?",
+     "want": "v128",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v128",
+      "a15",
+      "v132",
+      "v129"
+     ]
+    },
+    {
+     "q": "Where did Aputhiran leave the bowl?",
+     "want": "c04",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "c04",
+      "v005",
+      "e01",
+      "s03",
+      "x23"
+     ]
+    },
+    {
+     "q": "Who took the abandoned boy Aputhiran home?",
+     "want": "v100",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v098",
+      "v104",
+      "v100",
+      "v045"
+     ]
+    },
+    {
+     "q": "What did Kannagi ask the Sun?",
+     "want": "v061",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v061",
+      "v015",
+      "v025",
+      "m10",
+      "v044"
+     ]
+    },
+    {
+     "q": "What were people gossiping about Dharmadattan and Visakai?",
+     "want": "n85",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "n85",
+      "v110",
+      "n86"
+     ]
+    },
+    {
+     "q": "Who sang of the woman who beat the king with an anklet?",
+     "want": "v071",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v071",
+      "v006",
+      "x20",
+      "a01",
+      "a16"
+     ]
+    },
+    {
+     "q": "Which kings asked Kannagi for a boon?",
+     "want": "m10",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "m10",
+      "m11",
+      "v015",
+      "v025",
+      "v061"
+     ]
+    },
+    {
+     "q": "Who were the workers who built the pavilion?",
+     "want": "n35",
+     "type": "maker",
+     "ok": true,
+     "top": [
+      "n35",
+      "n36",
+      "n41",
+      "n37",
+      "v125"
+     ]
+    },
+    {
+     "q": "What did Aravanan teach about dependent arising?",
+     "want": "v136",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v136",
+      "x62",
+      "v092",
+      "v134",
+      "v095"
+     ]
+    },
+    {
+     "q": "Why was Kayasandikai always hungry?",
+     "want": "b01",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "b01",
+      "n69",
+      "b02",
+      "n07"
+     ]
+    },
+    {
+     "q": "Did Dharmadattan and Visakai really plan to marry?",
+     "want": "n85",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n85",
+      "a07",
+      "b10",
+      "x90"
+     ]
+    },
+    {
+     "q": "கண்ணகி கனவில் என்ன கண்டாள்?",
+     "want": "x01",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "x01",
+      "x02",
+      "x04",
+      "x03",
+      "m06"
+     ]
+    },
+    {
+     "q": "கோவலன் தன் மகளுக்கு யாருடைய பெயரை வைத்தான்?",
+     "want": "m13",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "m13",
+      "m05",
+      "n82",
+      "m02",
+      "v010"
+     ]
+    },
+    {
+     "q": "சாதுவனுக்கு என்ன பொருள்கள் கொடுக்கப்பட்டன?",
+     "want": "n65",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "x81",
+      "n63",
+      "n60",
+      "n64"
+     ]
+    },
+    {
+     "q": "மணிமேகலை வஞ்சிக்கு எப்படிச் சென்றாள்?",
+     "want": "s12",
+     "type": "path",
+     "ok": true,
+     "top": [
+      "m07",
+      "v113",
+      "x40",
+      "s12",
+      "v124"
+     ]
+    },
+    {
+     "q": "மணிமேகலை எங்கே ஒளிந்தாள்?",
+     "want": "s09",
+     "type": "hybrid",
+     "ok": false,
+     "top": [
+      "v084",
+      "a06",
+      "x40",
+      "b06",
+      "f01"
+     ]
+    },
+    {
+     "q": "அமுதசுரபியை ஆபுத்திரன் எங்கே விட்டான்?",
+     "want": "c04",
+     "type": "holder",
+     "ok": true,
+     "top": [
+      "c01",
+      "c04",
+      "c07",
+      "c03",
+      "v134"
+     ]
+    },
+    {
+     "q": "kavunti madurai ku varuven nu sonnaala",
+     "want": "v017",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v017",
+      "v016",
+      "d08",
+      "v015"
+     ]
+    },
+    {
+     "q": "gajabahu kannagi kitta enna kettaan",
+     "want": "m10",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "m10",
+      "v015",
+      "v025",
+      "v061",
+      "v044"
+     ]
+    },
+    {
+     "q": "kovalan letter yaar kitta kuduthaan",
+     "want": "n82",
+     "type": "hybrid",
+     "ok": false,
+     "top": [
+      "n09",
+      "c08",
+      "n81",
+      "m04",
+      "v008"
+     ]
+    },
+    {
+     "q": "kayasandikai pasi yen theeravillai",
+     "want": "b01",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "n69",
+      "b02",
+      "b01",
+      "v118",
+      "v096"
+     ]
+    },
+    {
+     "q": "What did Kovalan eat for breakfast in Puhar?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v002",
+      "v030",
+      "x03",
+      "x23"
+     ]
+    },
+    {
+     "q": "Who was the emperor of Rome at the time?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": []
+    }
+   ]
+  }
+ },
+ "open_2_heldout": {
+  "rules_only": {
+   "right": 12,
+   "of": 20,
+   "rows": [
+    {
+     "q": "What did the chief of the island say about the shipwrecked men?",
+     "want": "n64",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n10",
+      "n33",
+      "n64",
+      "v032"
+     ]
+    },
+    {
+     "q": "Who recognised Manimekalai when she was disguised?",
+     "want": "b07",
+     "type": "disguise",
+     "ok": true,
+     "top": [
+      "b05",
+      "x51",
+      "v117",
+      "b07",
+      "b09"
+     ]
+    },
+    {
+     "q": "Was Sangaman innocent according to the retelling?",
+     "want": "r03",
+     "type": "retold",
+     "ok": false,
+     "top": [
+      "d02",
+      "r01"
+     ]
+    },
+    {
+     "q": "Where did Kannagi and Kovalan live after marriage?",
+     "want": "v001",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "m13",
+      "s02",
+      "n09",
+      "n81"
+     ]
+    },
+    {
+     "q": "Who did Kanchanan suspect was Manimekalai's lover?",
+     "want": "b11",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "b12"
+     ]
+    },
+    {
+     "q": "Who were the Yavana carpenters?",
+     "want": "n40",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "n35",
+      "n40"
+     ]
+    },
+    {
+     "q": "Who told that Madhavi became a nun under the Bodhi tree?",
+     "want": "v068",
+     "type": "who_told",
+     "ok": false,
+     "top": [
+      "m04",
+      "x20",
+      "x62",
+      "v010"
+     ]
+    },
+    {
+     "q": "What did the drunk man ask the Jain monk?",
+     "want": "v078",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a15",
+      "x80",
+      "v078",
+      "v092"
+     ]
+    },
+    {
+     "q": "What did the prince in Aputhiran's story do with the cow?",
+     "want": "v101",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v099",
+      "v100",
+      "v101",
+      "v105"
+     ]
+    },
+    {
+     "q": "Where did Aputhiran feed the blind and the lame?",
+     "want": "v106",
+     "type": "yes",
+     "ok": false,
+     "top": [
+      "c02"
+     ]
+    },
+    {
+     "q": "Who carried off the Vidyadhara woman?",
+     "want": "v076",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "b06",
+      "l01",
+      "n62",
+      "v042"
+     ]
+    },
+    {
+     "q": "What was sold in the cloth street?",
+     "want": "v051",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v049",
+      "v050",
+      "v051",
+      "v052"
+     ]
+    },
+    {
+     "q": "What did the prophet foretell about the Buddha's coming?",
+     "want": "v095",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v095",
+      "v127"
+     ]
+    },
+    {
+     "q": "Who goes to the painted figure on the pillar to clear their names?",
+     "want": "n86",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "b16",
+      "m13",
+      "n10",
+      "n13"
+     ]
+    },
+    {
+     "q": "நீலி தெருக்களில் என்ன செய்தாள்?",
+     "want": "d05",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "d05",
+      "d06"
+     ]
+    },
+    {
+     "q": "பரதன் சங்கமனை என்ன சொல்லிக் குற்றம் சாட்டினான்?",
+     "want": "d02",
+     "type": "accuse",
+     "ok": true,
+     "top": [
+      "d02",
+      "r01",
+      "d03",
+      "r03"
+     ]
+    },
+    {
+     "q": "சிறைக்கோட்டத்தை என்ன செய்யச் சொன்னாள்?",
+     "want": "h02",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "h03",
+      "h01",
+      "h02"
+     ]
+    },
+    {
+     "q": "kovalan kannagi kanneer thudaithaana",
+     "want": "x31",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "kavunti cave vendaam nu sonnaala",
+     "want": "v033",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v033"
+     ]
+    },
+    {
+     "q": "Who was the first king of Ceylon?",
+     "want": null,
+     "type": "none",
+     "ok": true,
+     "top": []
+    }
+   ]
+  },
+  "hybrid": {
+   "right": 18,
+   "of": 20,
+   "rows": [
+    {
+     "q": "What did the chief of the island say about the shipwrecked men?",
+     "want": "n64",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "n64",
+      "a13",
+      "v117",
+      "v116",
+      "v125"
+     ]
+    },
+    {
+     "q": "Who recognised Manimekalai when she was disguised?",
+     "want": "b07",
+     "type": "disguise",
+     "ok": true,
+     "top": [
+      "b05",
+      "x51",
+      "v117",
+      "b07",
+      "b09"
+     ]
+    },
+    {
+     "q": "Was Sangaman innocent according to the retelling?",
+     "want": "r03",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "r03",
+      "r02",
+      "a25",
+      "d04",
+      "d02"
+     ]
+    },
+    {
+     "q": "Where did Kannagi and Kovalan live after marriage?",
+     "want": "v001",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "n09",
+      "v001",
+      "v044",
+      "s02"
+     ]
+    },
+    {
+     "q": "Who did Kanchanan suspect was Manimekalai's lover?",
+     "want": "b11",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "b12",
+      "b10",
+      "s08",
+      "x40"
+     ]
+    },
+    {
+     "q": "Who were the Yavana carpenters?",
+     "want": "n40",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "n35",
+      "n40",
+      "v123",
+      "v046",
+      "n38"
+     ]
+    },
+    {
+     "q": "Who told that Madhavi became a nun under the Bodhi tree?",
+     "want": "v068",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v068",
+      "v074",
+      "v012",
+      "v008",
+      "x62"
+     ]
+    },
+    {
+     "q": "What did the drunk man ask the Jain monk?",
+     "want": "v078",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v015",
+      "v030",
+      "v078",
+      "v025"
+     ]
+    },
+    {
+     "q": "What did the prince in Aputhiran's story do with the cow?",
+     "want": "v101",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v108",
+      "v101",
+      "v099",
+      "v100"
+     ]
+    },
+    {
+     "q": "Where did Aputhiran feed the blind and the lame?",
+     "want": "v106",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v106",
+      "c02",
+      "v099",
+      "c04",
+      "g01"
+     ]
+    },
+    {
+     "q": "Who carried off the Vidyadhara woman?",
+     "want": "v076",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v005",
+      "e01",
+      "v076",
+      "b06"
+     ]
+    },
+    {
+     "q": "What was sold in the cloth street?",
+     "want": "v051",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v051",
+      "v052",
+      "v050",
+      "v049",
+      "d05"
+     ]
+    },
+    {
+     "q": "What did the prophet foretell about the Buddha's coming?",
+     "want": "v095",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v095",
+      "v135",
+      "f04",
+      "n38",
+      "n37"
+     ]
+    },
+    {
+     "q": "Who goes to the painted figure on the pillar to clear their names?",
+     "want": "n86",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "n86",
+      "v050",
+      "l02",
+      "v044",
+      "b16"
+     ]
+    },
+    {
+     "q": "நீலி தெருக்களில் என்ன செய்தாள்?",
+     "want": "d05",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v122",
+      "v123",
+      "d05",
+      "d06"
+     ]
+    },
+    {
+     "q": "பரதன் சங்கமனை என்ன சொல்லிக் குற்றம் சாட்டினான்?",
+     "want": "d02",
+     "type": "accuse",
+     "ok": true,
+     "top": [
+      "d02",
+      "r01",
+      "d03",
+      "r03",
+      "e05"
+     ]
+    },
+    {
+     "q": "சிறைக்கோட்டத்தை என்ன செய்யச் சொன்னாள்?",
+     "want": "h02",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "h03",
+      "h01",
+      "h02"
+     ]
+    },
+    {
+     "q": "kovalan kannagi kanneer thudaithaana",
+     "want": "x31",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "v001",
+      "d09",
+      "v002",
+      "m01"
+     ]
+    },
+    {
+     "q": "kavunti cave vendaam nu sonnaala",
+     "want": "v033",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v033",
+      "v017",
+      "v020",
+      "v027"
+     ]
+    },
+    {
+     "q": "Who was the first king of Ceylon?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a23",
+      "s06",
+      "a22",
+      "s07"
+     ]
+    }
+   ]
+  }
+ },
+ "fresh_1": {
+  "rules_only": {
+   "right": 29,
+   "of": 34,
+   "rows": [
+    {
+     "q": "Who struck Kovalan with the sword?",
+     "want": "a15",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a15",
+      "a12",
+      "a11",
+      "a14",
+      "k_karma_kov"
+     ]
+    },
+    {
+     "q": "Who ordered Kovalan's death?",
+     "want": "a11",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a15",
+      "a12",
+      "a11",
+      "a14",
+      "k_karma_kov"
+     ]
+    },
+    {
+     "q": "Was Kovalan guilty?",
+     "want": "a13",
+     "type": "not_fact",
+     "ok": true,
+     "top": [
+      "a13",
+      "a25"
+     ]
+    },
+    {
+     "q": "Who said Kovalan was innocent?",
+     "want": "a13",
+     "type": "who_told",
+     "ok": true,
+     "top": [
+      "a13",
+      "a25"
+     ]
+    },
+    {
+     "q": "What was inside Kannagi's anklet?",
+     "want": "a18",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a18",
+      "a19",
+      "a20",
+      "a21"
+     ]
+    },
+    {
+     "q": "What was inside the queen's anklet?",
+     "want": "a19",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a19",
+      "a18",
+      "a20",
+      "a21"
+     ]
+    },
+    {
+     "q": "Why did the king die?",
+     "want": "a24",
+     "type": "why_death",
+     "ok": true,
+     "top": [
+      "a22",
+      "a24",
+      "a21"
+     ]
+    },
+    {
+     "q": "What did Kannagi do to Madurai?",
+     "want": "e01",
+     "type": "path",
+     "ok": true,
+     "top": [
+      "e01"
+     ]
+    },
+    {
+     "q": "Who was spared from the fire?",
+     "want": "e03",
+     "type": "yes",
+     "ok": false,
+     "top": [
+      "e04",
+      "d08"
+     ]
+    },
+    {
+     "q": "Who did Kannagi marry?",
+     "want": "m01",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "கண்ணகியின் கணவன் யார்?",
+     "want": "m01",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m01",
+      "m03",
+      "m06",
+      "x60"
+     ]
+    },
+    {
+     "q": "மாதவியின் மகள் யார்?",
+     "want": "m04",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m04"
+     ]
+    },
+    {
+     "q": "கோவலனின் தந்தை யார்?",
+     "want": "m02",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m01",
+      "m02",
+      "m05"
+     ]
+    },
+    {
+     "q": "சிலம்பை உடைத்தது யார்?",
+     "want": "a20",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a20"
+     ]
+    },
+    {
+     "q": "பொற்கொல்லன் என்ன செய்தான்?",
+     "want": "a06b",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "நீலி யார்?",
+     "want": "d05",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "d05",
+      "d06"
+     ]
+    },
+    {
+     "q": "கண்ணகி மதுரையை ஏன் எரித்தாள்?",
+     "want": "e01",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "e01",
+      "r04",
+      "x61"
+     ]
+    },
+    {
+     "q": "அமுதசுரபி யார் கொடுத்தது?",
+     "want": "c01",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "c01",
+      "c08",
+      "c09"
+     ]
+    },
+    {
+     "q": "மணிமேகலை ஏன் காயசண்டிகை வடிவம் எடுத்தாள்?",
+     "want": "b18",
+     "type": "why_disguise",
+     "ok": true,
+     "top": [
+      "b18",
+      "x50",
+      "b05",
+      "x51"
+     ]
+    },
+    {
+     "q": "காஞ்சனன் உதயகுமரனை ஏன் கொன்றான்?",
+     "want": "b12",
+     "type": "why_death",
+     "ok": true,
+     "top": [
+      "b12",
+      "b14",
+      "b13",
+      "b10"
+     ]
+    },
+    {
+     "q": "kannagi kanavan yaar",
+     "want": "m01",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m01",
+      "m03",
+      "m06",
+      "x60"
+     ]
+    },
+    {
+     "q": "silambu yaar udaithathu",
+     "want": "a20",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a20"
+     ]
+    },
+    {
+     "q": "manimegalai yen kayasandigai vadivam eduthaal",
+     "want": "b18",
+     "type": "why_disguise",
+     "ok": true,
+     "top": [
+      "b18",
+      "x50",
+      "b05",
+      "x51"
+     ]
+    },
+    {
+     "q": "pandiya mannan ethukku kovalana kondran",
+     "want": "a10",
+     "type": "why_death",
+     "ok": false,
+     "top": [
+      "a11",
+      "a14",
+      "k_karma_kov",
+      "k_sceptre",
+      "a15"
+     ]
+    },
+    {
+     "q": "amudhasurabi enna seyyum",
+     "want": "c06",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "c06",
+      "c01",
+      "c02",
+      "c04",
+      "c07"
+     ]
+    },
+    {
+     "q": "neeli enna sabam kuduthaa",
+     "want": "d06",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "d06"
+     ]
+    },
+    {
+     "q": "udayakumaran yaaru",
+     "want": "b04",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "f03",
+      "b04",
+      "f09",
+      "f08",
+      "s10"
+     ]
+    },
+    {
+     "q": "madurai ah yaaru erichaa",
+     "want": "e04",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "Which king built Kannagi's temple?",
+     "want": "m09",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "m09"
+     ]
+    },
+    {
+     "q": "Where did Manimekalai get the bowl?",
+     "want": "c07",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "c07",
+      "c08"
+     ]
+    },
+    {
+     "q": "Who is Rahulan?",
+     "want": "f02",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "f03",
+      "b04",
+      "f05",
+      "f02",
+      "f06"
+     ]
+    },
+    {
+     "q": "Who raised the prison into a charity?",
+     "want": "h03",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "h03",
+      "h01",
+      "h02"
+     ]
+    },
+    {
+     "q": "What is the moon's distance from Madurai?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v015"
+     ]
+    },
+    {
+     "q": "Who won the cricket world cup?",
+     "want": null,
+     "type": "none",
+     "ok": true,
+     "top": []
+    }
+   ]
+  },
+  "hybrid": {
+   "right": 31,
+   "of": 34,
+   "rows": [
+    {
+     "q": "Who struck Kovalan with the sword?",
+     "want": "a15",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a15",
+      "a12",
+      "a11",
+      "a14",
+      "k_karma_kov"
+     ]
+    },
+    {
+     "q": "Who ordered Kovalan's death?",
+     "want": "a11",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a15",
+      "a12",
+      "a11",
+      "a14",
+      "k_karma_kov"
+     ]
+    },
+    {
+     "q": "Was Kovalan guilty?",
+     "want": "a13",
+     "type": "not_fact",
+     "ok": true,
+     "top": [
+      "a13",
+      "a25",
+      "v002",
+      "v030",
+      "v044"
+     ]
+    },
+    {
+     "q": "Who said Kovalan was innocent?",
+     "want": "a13",
+     "type": "who_told",
+     "ok": true,
+     "top": [
+      "a13",
+      "a25",
+      "v035",
+      "x22",
+      "k_karma_kov"
+     ]
+    },
+    {
+     "q": "What was inside Kannagi's anklet?",
+     "want": "a18",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a18",
+      "a19",
+      "a20",
+      "a21",
+      "a03"
+     ]
+    },
+    {
+     "q": "What was inside the queen's anklet?",
+     "want": "a19",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a19",
+      "a18",
+      "a20",
+      "a21",
+      "a27"
+     ]
+    },
+    {
+     "q": "Why did the king die?",
+     "want": "a24",
+     "type": "why_death",
+     "ok": true,
+     "top": [
+      "a22",
+      "a24",
+      "a21",
+      "e06",
+      "d04"
+     ]
+    },
+    {
+     "q": "What did Kannagi do to Madurai?",
+     "want": "e01",
+     "type": "path",
+     "ok": true,
+     "top": [
+      "e01",
+      "v064",
+      "v015",
+      "a02",
+      "v031"
+     ]
+    },
+    {
+     "q": "Who was spared from the fire?",
+     "want": "e03",
+     "type": "yes",
+     "ok": false,
+     "top": [
+      "e04",
+      "d08",
+      "v063"
+     ]
+    },
+    {
+     "q": "Who did Kannagi marry?",
+     "want": "m01",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "x90",
+      "v042",
+      "m01",
+      "n83",
+      "v061"
+     ]
+    },
+    {
+     "q": "கண்ணகியின் கணவன் யார்?",
+     "want": "m01",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m01",
+      "m03",
+      "m06",
+      "x60",
+      "x90"
+     ]
+    },
+    {
+     "q": "மாதவியின் மகள் யார்?",
+     "want": "m04",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m04",
+      "v079",
+      "v010",
+      "v134",
+      "x60"
+     ]
+    },
+    {
+     "q": "கோவலனின் தந்தை யார்?",
+     "want": "m02",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m01",
+      "m02",
+      "m05",
+      "v038",
+      "v089"
+     ]
+    },
+    {
+     "q": "சிலம்பை உடைத்தது யார்?",
+     "want": "a20",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a20",
+      "n60",
+      "n71",
+      "a18",
+      "a01"
+     ]
+    },
+    {
+     "q": "பொற்கொல்லன் என்ன செய்தான்?",
+     "want": "a06b",
+     "type": "hybrid",
+     "ok": false,
+     "top": [
+      "a14",
+      "s04",
+      "n11",
+      "n13",
+      "n10"
+     ]
+    },
+    {
+     "q": "நீலி யார்?",
+     "want": "d05",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "d05",
+      "d06",
+      "n24",
+      "v049",
+      "d07"
+     ]
+    },
+    {
+     "q": "கண்ணகி மதுரையை ஏன் எரித்தாள்?",
+     "want": "e01",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "e01",
+      "r04",
+      "x61",
+      "e04",
+      "e02"
+     ]
+    },
+    {
+     "q": "அமுதசுரபி யார் கொடுத்தது?",
+     "want": "c01",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "c01",
+      "c08",
+      "c09",
+      "c07",
+      "v079"
+     ]
+    },
+    {
+     "q": "மணிமேகலை ஏன் காயசண்டிகை வடிவம் எடுத்தாள்?",
+     "want": "b18",
+     "type": "why_disguise",
+     "ok": true,
+     "top": [
+      "b18",
+      "x50",
+      "b05",
+      "x51",
+      "v097"
+     ]
+    },
+    {
+     "q": "காஞ்சனன் உதயகுமரனை ஏன் கொன்றான்?",
+     "want": "b12",
+     "type": "why_death",
+     "ok": true,
+     "top": [
+      "b12",
+      "b14",
+      "b13",
+      "b10",
+      "f10"
+     ]
+    },
+    {
+     "q": "kannagi kanavan yaar",
+     "want": "m01",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "m01",
+      "m03",
+      "m06",
+      "x60",
+      "x90"
+     ]
+    },
+    {
+     "q": "silambu yaar udaithathu",
+     "want": "a20",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a20",
+      "n60",
+      "a01",
+      "v087",
+      "v005"
+     ]
+    },
+    {
+     "q": "manimegalai yen kayasandigai vadivam eduthaal",
+     "want": "b18",
+     "type": "why_disguise",
+     "ok": true,
+     "top": [
+      "b18",
+      "x50",
+      "b05",
+      "x51",
+      "v111"
+     ]
+    },
+    {
+     "q": "pandiya mannan ethukku kovalana kondran",
+     "want": "a10",
+     "type": "why_death",
+     "ok": false,
+     "top": [
+      "a11",
+      "a14",
+      "k_karma_kov",
+      "k_sceptre",
+      "a15"
+     ]
+    },
+    {
+     "q": "amudhasurabi enna seyyum",
+     "want": "c06",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "c06",
+      "c01",
+      "c02",
+      "c04",
+      "c07"
+     ]
+    },
+    {
+     "q": "neeli enna sabam kuduthaa",
+     "want": "d06",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "d06",
+      "v023",
+      "v024",
+      "v026",
+      "d07"
+     ]
+    },
+    {
+     "q": "udayakumaran yaaru",
+     "want": "b04",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "f03",
+      "b04",
+      "f09",
+      "f08",
+      "s10"
+     ]
+    },
+    {
+     "q": "madurai ah yaaru erichaa",
+     "want": "e04",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "e04",
+      "d08",
+      "v031",
+      "v017"
+     ]
+    },
+    {
+     "q": "Which king built Kannagi's temple?",
+     "want": "m09",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "m09",
+      "s06",
+      "v070",
+      "v125",
+      "n35"
+     ]
+    },
+    {
+     "q": "Where did Manimekalai get the bowl?",
+     "want": "c07",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "c07",
+      "c08",
+      "v114",
+      "v133",
+      "n68"
+     ]
+    },
+    {
+     "q": "Who is Rahulan?",
+     "want": "f02",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "f03",
+      "b04",
+      "f05",
+      "f02",
+      "f06"
+     ]
+    },
+    {
+     "q": "Who raised the prison into a charity?",
+     "want": "h03",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "h03",
+      "h01",
+      "h02"
+     ]
+    },
+    {
+     "q": "What is the moon's distance from Madurai?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v015",
+      "e04",
+      "d08",
+      "e01"
+     ]
+    },
+    {
+     "q": "Who won the cricket world cup?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v054",
+      "v121",
+      "n68",
+      "v013"
+     ]
+    }
+   ]
+  }
+ },
+ "fresh_2": {
+  "rules_only": {
+   "right": 20,
+   "of": 25,
+   "rows": [
+    {
+     "q": "Who killed Rahulan's cook?",
+     "want": "f05",
+     "type": "kill",
+     "ok": false,
+     "top": [
+      "f06",
+      "f04"
+     ]
+    },
+    {
+     "q": "Who beheaded the cook?",
+     "want": "f05",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a15",
+      "b13",
+      "d04",
+      "f05",
+      "a12"
+     ]
+    },
+    {
+     "q": "Why did Neeli curse?",
+     "want": "d05",
+     "type": "why",
+     "ok": true,
+     "top": [
+      "d05",
+      "d06"
+     ]
+    },
+    {
+     "q": "Did Kovalan buy the garland?",
+     "want": "l02",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "l02",
+      "a02"
+     ]
+    },
+    {
+     "q": "Did Manimekalai lie to the king?",
+     "want": "b06",
+     "type": "not_fact",
+     "ok": true,
+     "top": [
+      "b06"
+     ]
+    },
+    {
+     "q": "Who carried Manimekalai to Manipallavam?",
+     "want": "x40",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "x40"
+     ]
+    },
+    {
+     "q": "Was Udayakumaran her son?",
+     "want": "f08",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "f08",
+      "f09"
+     ]
+    },
+    {
+     "q": "Did Kovalan really rise after death?",
+     "want": "x30",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "x30"
+     ]
+    },
+    {
+     "q": "Who fetched the stone from the Himalaya?",
+     "want": "x72",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "x72",
+      "x70"
+     ]
+    },
+    {
+     "q": "Who entrusted Kannagi to Matari?",
+     "want": "x10",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "x10",
+      "v044"
+     ]
+    },
+    {
+     "q": "மாதரி எப்படி இறந்தாள்?",
+     "want": "e07",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "e07"
+     ]
+    },
+    {
+     "q": "கவுந்தி எப்படி இறந்தார்?",
+     "want": "e08",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "e08"
+     ]
+    },
+    {
+     "q": "உதயகுமரன் முற்பிறப்பில் யார்?",
+     "want": "b04",
+     "type": "birth",
+     "ok": true,
+     "top": [
+      "b04",
+      "f03",
+      "f02",
+      "f04",
+      "f05"
+     ]
+    },
+    {
+     "q": "புண்ணியராசன் யாருடைய மகன்?",
+     "want": "g03",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "g03"
+     ]
+    },
+    {
+     "q": "அரசியின் சிலம்பில் என்ன இருந்தது?",
+     "want": "a19",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a19",
+      "a18",
+      "a20",
+      "a21"
+     ]
+    },
+    {
+     "q": "சங்கமனைக் கொன்றது யார்?",
+     "want": "d04",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "d04",
+      "d02"
+     ]
+    },
+    {
+     "q": "மாலையைக் கோவலன் வாங்கினானா?",
+     "want": "l02",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "l02"
+     ]
+    },
+    {
+     "q": "matari eppadi sethaa",
+     "want": "e07",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "kanchanan yaara kondran",
+     "want": "b13",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "bharatan yaaru",
+     "want": "d01",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "d01",
+      "d02",
+      "r01",
+      "d06",
+      "d07"
+     ]
+    },
+    {
+     "q": "queen anklet ulla enna irunthuchu",
+     "want": "a19",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a19",
+      "a18",
+      "a20",
+      "a21"
+     ]
+    },
+    {
+     "q": "aputhiran bowl enna panninan",
+     "want": "c04",
+     "type": "path",
+     "ok": false,
+     "top": [
+      "c02"
+     ]
+    },
+    {
+     "q": "kannagi deivam aanala",
+     "want": "x92",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "Who is the president of India?",
+     "want": null,
+     "type": "none",
+     "ok": true,
+     "top": []
+    },
+    {
+     "q": "What does Kannagi eat for breakfast?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "r04",
+      "r05",
+      "x01",
+      "x60"
+     ]
+    }
+   ]
+  },
+  "hybrid": {
+   "right": 23,
+   "of": 25,
+   "rows": [
+    {
+     "q": "Who killed Rahulan's cook?",
+     "want": "f05",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "f06",
+      "f04",
+      "f05",
+      "n05",
+      "n01"
+     ]
+    },
+    {
+     "q": "Who beheaded the cook?",
+     "want": "f05",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a15",
+      "b13",
+      "d04",
+      "f05",
+      "a12"
+     ]
+    },
+    {
+     "q": "Why did Neeli curse?",
+     "want": "d05",
+     "type": "why",
+     "ok": true,
+     "top": [
+      "d05",
+      "d06",
+      "v023",
+      "v024",
+      "v026"
+     ]
+    },
+    {
+     "q": "Did Kovalan buy the garland?",
+     "want": "l02",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "l02",
+      "a02",
+      "v009",
+      "v011",
+      "v008"
+     ]
+    },
+    {
+     "q": "Did Manimekalai lie to the king?",
+     "want": "b06",
+     "type": "not_fact",
+     "ok": true,
+     "top": [
+      "b06",
+      "a23",
+      "s06",
+      "a22",
+      "v035"
+     ]
+    },
+    {
+     "q": "Who carried Manimekalai to Manipallavam?",
+     "want": "x40",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "x40",
+      "x41",
+      "v076",
+      "n82",
+      "n81"
+     ]
+    },
+    {
+     "q": "Was Udayakumaran her son?",
+     "want": "f08",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "f08",
+      "f09",
+      "v082",
+      "m02",
+      "v073"
+     ]
+    },
+    {
+     "q": "Did Kovalan really rise after death?",
+     "want": "x30",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "x30",
+      "n09",
+      "m13",
+      "v044",
+      "v059"
+     ]
+    },
+    {
+     "q": "Who fetched the stone from the Himalaya?",
+     "want": "x72",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "x72",
+      "x70",
+      "v037",
+      "n45",
+      "v074"
+     ]
+    },
+    {
+     "q": "Who entrusted Kannagi to Matari?",
+     "want": "x10",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "x10",
+      "v044",
+      "x11",
+      "v055",
+      "e07"
+     ]
+    },
+    {
+     "q": "மாதரி எப்படி இறந்தாள்?",
+     "want": "e07",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "e07",
+      "a13",
+      "f07",
+      "v055",
+      "v093"
+     ]
+    },
+    {
+     "q": "கவுந்தி எப்படி இறந்தார்?",
+     "want": "e08",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "e08",
+      "v020",
+      "v023",
+      "v016",
+      "v027"
+     ]
+    },
+    {
+     "q": "உதயகுமரன் முற்பிறப்பில் யார்?",
+     "want": "b04",
+     "type": "birth",
+     "ok": true,
+     "top": [
+      "b04",
+      "f03",
+      "f02",
+      "f04",
+      "f05"
+     ]
+    },
+    {
+     "q": "புண்ணியராசன் யாருடைய மகன்?",
+     "want": "g03",
+     "type": "family",
+     "ok": true,
+     "top": [
+      "g03",
+      "g02",
+      "v100",
+      "m02",
+      "f08"
+     ]
+    },
+    {
+     "q": "அரசியின் சிலம்பில் என்ன இருந்தது?",
+     "want": "a19",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a19",
+      "a18",
+      "a20",
+      "a21",
+      "a27"
+     ]
+    },
+    {
+     "q": "சங்கமனைக் கொன்றது யார்?",
+     "want": "d04",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "d04",
+      "f10",
+      "d02",
+      "r03"
+     ]
+    },
+    {
+     "q": "மாலையைக் கோவலன் வாங்கினானா?",
+     "want": "l02",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "l02",
+      "v008",
+      "v009",
+      "v035",
+      "x23"
+     ]
+    },
+    {
+     "q": "matari eppadi sethaa",
+     "want": "e07",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "x11",
+      "v055",
+      "e07",
+      "n01"
+     ]
+    },
+    {
+     "q": "kanchanan yaara kondran",
+     "want": "b13",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "b10",
+      "b12",
+      "b13",
+      "b16"
+     ]
+    },
+    {
+     "q": "bharatan yaaru",
+     "want": "d01",
+     "type": "about",
+     "ok": true,
+     "top": [
+      "d01",
+      "d02",
+      "r01",
+      "d06",
+      "d07"
+     ]
+    },
+    {
+     "q": "queen anklet ulla enna irunthuchu",
+     "want": "a19",
+     "type": "inside",
+     "ok": true,
+     "top": [
+      "a19",
+      "a18",
+      "a20",
+      "a21",
+      "a27"
+     ]
+    },
+    {
+     "q": "aputhiran bowl enna panninan",
+     "want": "c04",
+     "type": "path",
+     "ok": false,
+     "top": [
+      "c02",
+      "a23",
+      "c08",
+      "s06",
+      "v133"
+     ]
+    },
+    {
+     "q": "kannagi deivam aanala",
+     "want": "x92",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "d10",
+      "e01",
+      "m01",
+      "v001"
+     ]
+    },
+    {
+     "q": "Who is the president of India?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v090"
+     ]
+    },
+    {
+     "q": "What does Kannagi eat for breakfast?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "e01",
+      "m01",
+      "v001",
+      "a20"
+     ]
+    }
+   ]
+  }
+ },
+ "fresh_3": {
+  "rules_only": {
+   "right": 14,
+   "of": 20,
+   "rows": [
+    {
+     "q": "Who took one anklet from Kannagi?",
+     "want": "a03",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a03"
+     ]
+    },
+    {
+     "q": "Who did the goldsmith talk into the killing?",
+     "want": "a14",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a14",
+      "v114"
+     ]
+    },
+    {
+     "q": "What did Kannagi say to the king at the gate?",
+     "want": "x06",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "k_sceptre",
+      "a17",
+      "a20",
+      "a23"
+     ]
+    },
+    {
+     "q": "Who fainted when the anklet broke?",
+     "want": "s07",
+     "type": "yes",
+     "ok": false,
+     "top": [
+      "a20"
+     ]
+    },
+    {
+     "q": "Did the guards object to killing Kovalan?",
+     "want": "a13",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a12",
+      "a13",
+      "a15",
+      "n06"
+     ]
+    },
+    {
+     "q": "How did Lakshmi die?",
+     "want": "f07",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "f07"
+     ]
+    },
+    {
+     "q": "Who swallowed Kayasandikai?",
+     "want": "b03",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "b03"
+     ]
+    },
+    {
+     "q": "Who cursed Kayasandikai?",
+     "want": "b01",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "b01"
+     ]
+    },
+    {
+     "q": "What did Aravana teach Madhavi?",
+     "want": "x62",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "x62",
+      "v092",
+      "v136"
+     ]
+    },
+    {
+     "q": "Who asked Kannagi for a boon?",
+     "want": "m10",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "m10",
+      "m11",
+      "v015",
+      "v025"
+     ]
+    },
+    {
+     "q": "கண்ணகி தெய்வமாக யாரிடம் பேசினாள்?",
+     "want": "m08",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "x92"
+     ]
+    },
+    {
+     "q": "மாதவி மாலையை யாரிடம் கொடுத்தாள்?",
+     "want": "l01",
+     "type": "holder",
+     "ok": true,
+     "top": [
+      "l01",
+      "l02"
+     ]
+    },
+    {
+     "q": "மாதவியை விட்டுக் கோவலன் ஏன் சென்றான்?",
+     "want": "x23",
+     "type": "why_death",
+     "ok": false,
+     "top": [
+      "a11",
+      "a14",
+      "k_karma_kov",
+      "k_sceptre",
+      "a15"
+     ]
+    },
+    {
+     "q": "அரசன் எப்படி இறந்தான்?",
+     "want": "a24",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a24",
+      "a22",
+      "a21"
+     ]
+    },
+    {
+     "q": "ஆபுத்திரன் பாத்திரத்தை எங்கே விட்டான்?",
+     "want": "c04",
+     "type": "holder",
+     "ok": true,
+     "top": [
+      "c01",
+      "c04",
+      "c07"
+     ]
+    },
+    {
+     "q": "kovalan ean madhavi ya vittu ponan",
+     "want": "x23",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "kannagi yaara sabicha",
+     "want": null,
+     "type": "none",
+     "ok": true,
+     "top": []
+    },
+    {
+     "q": "manimegalai prison la enna panna",
+     "want": "h01",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "b02",
+      "h01",
+      "h02",
+      "h03"
+     ]
+    },
+    {
+     "q": "goldsmith pathi sollu",
+     "want": "a08",
+     "type": "none",
+     "ok": false,
+     "top": []
+    },
+    {
+     "q": "Who is the prime minister of Sri Lanka?",
+     "want": null,
+     "type": "none",
+     "ok": true,
+     "top": []
+    }
+   ]
+  },
+  "hybrid": {
+   "right": 18,
+   "of": 20,
+   "rows": [
+    {
+     "q": "Who took one anklet from Kannagi?",
+     "want": "a03",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a03",
+      "a20",
+      "x92",
+      "a01",
+      "a17"
+     ]
+    },
+    {
+     "q": "Who did the goldsmith talk into the killing?",
+     "want": "a14",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a14",
+      "a12",
+      "a13",
+      "d04"
+     ]
+    },
+    {
+     "q": "What did Kannagi say to the king at the gate?",
+     "want": "x06",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "a17",
+      "v070",
+      "a23",
+      "k_sceptre"
+     ]
+    },
+    {
+     "q": "Who fainted when the anklet broke?",
+     "want": "s07",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "a20",
+      "s07",
+      "a01",
+      "v005",
+      "s14"
+     ]
+    },
+    {
+     "q": "Did the guards object to killing Kovalan?",
+     "want": "a13",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "a13",
+      "a12",
+      "v059",
+      "a15"
+     ]
+    },
+    {
+     "q": "How did Lakshmi die?",
+     "want": "f07",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "f07",
+      "e06",
+      "a24",
+      "v066",
+      "d04"
+     ]
+    },
+    {
+     "q": "Who swallowed Kayasandikai?",
+     "want": "b03",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "b03",
+      "b05",
+      "v111",
+      "b01",
+      "b09"
+     ]
+    },
+    {
+     "q": "Who cursed Kayasandikai?",
+     "want": "b01",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "v023",
+      "b05",
+      "v111",
+      "n74",
+      "b01"
+     ]
+    },
+    {
+     "q": "What did Aravana teach Madhavi?",
+     "want": "x62",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "x62",
+      "v136",
+      "x63",
+      "v020",
+      "v092"
+     ]
+    },
+    {
+     "q": "Who asked Kannagi for a boon?",
+     "want": "m10",
+     "type": "hybrid",
+     "ok": true,
+     "top": [
+      "m10",
+      "m11",
+      "v015",
+      "v025",
+      "v061"
+     ]
+    },
+    {
+     "q": "கண்ணகி தெய்வமாக யாரிடம் பேசினாள்?",
+     "want": "m08",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "m11",
+      "m08",
+      "m06",
+      "x60"
+     ]
+    },
+    {
+     "q": "மாதவி மாலையை யாரிடம் கொடுத்தாள்?",
+     "want": "l01",
+     "type": "holder",
+     "ok": true,
+     "top": [
+      "l01",
+      "l02",
+      "v079",
+      "c01",
+      "v116"
+     ]
+    },
+    {
+     "q": "மாதவியை விட்டுக் கோவலன் ஏன் சென்றான்?",
+     "want": "x23",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "x23",
+      "v035",
+      "s02",
+      "l02"
+     ]
+    },
+    {
+     "q": "அரசன் எப்படி இறந்தான்?",
+     "want": "a24",
+     "type": "kill",
+     "ok": true,
+     "top": [
+      "a24",
+      "a22",
+      "a21",
+      "a23",
+      "s06"
+     ]
+    },
+    {
+     "q": "ஆபுத்திரன் பாத்திரத்தை எங்கே விட்டான்?",
+     "want": "c04",
+     "type": "holder",
+     "ok": true,
+     "top": [
+      "c01",
+      "c04",
+      "c07",
+      "c03",
+      "v134"
+     ]
+    },
+    {
+     "q": "kovalan ean madhavi ya vittu ponan",
+     "want": "x23",
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "v004",
+      "x23",
+      "s02",
+      "v008"
+     ]
+    },
+    {
+     "q": "kannagi yaara sabicha",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "e01",
+      "m01",
+      "v001",
+      "a20"
+     ]
+    },
+    {
+     "q": "manimegalai prison la enna panna",
+     "want": "h01",
+     "type": "yes",
+     "ok": true,
+     "top": [
+      "b02",
+      "h01",
+      "h02",
+      "h03",
+      "s08"
+     ]
+    },
+    {
+     "q": "goldsmith pathi sollu",
+     "want": "a08",
+     "type": "closest",
+     "ok": false,
+     "top": [
+      "a14",
+      "s04",
+      "n11",
+      "n13"
+     ]
+    },
+    {
+     "q": "Who is the prime minister of Sri Lanka?",
+     "want": null,
+     "type": "closest",
+     "ok": true,
+     "top": [
+      "m10"
+     ]
+    }
+   ]
+  }
+ }
+}
