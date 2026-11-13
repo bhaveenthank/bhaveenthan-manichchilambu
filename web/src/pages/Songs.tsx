@@ -89,7 +89,7 @@ export function SongsPage({ params }: { params: URLSearchParams }) {
                 <span className="song__title" lang="ta">{c.title}</span>
                 <span className="song__en">{c.en}</span>
                 <span className="song__meta"><span className="mono">{c.key}</span> · {c.lines} {t("lines", "வரிகள்")}{c.records.length ? ` · ${c.records.length} ${t("records", "பதிவுகள்")}` : ""}{c.echo ? ` · ${c.echo} ${t("shared", "பொது")}` : ""}</span>
-                <CoverageBar lines={c.lines} cited={c.cited} drafted={c.drafted} />
+                <CoverageBar lines={c.lines} cited={c.cited} reviewed={c.reviewed} drafted={c.drafted} />
                 <span className="coverage__text">{t(`${Math.round((c.cited / c.lines) * 100)}% of lines in the graph · ${Math.round((c.drafted / c.lines) * 100)}% with drafts`, `${Math.round((c.cited / c.lines) * 100)}% வரிகள் வரைபடத்தில் · ${Math.round((c.drafted / c.lines) * 100)}% வரைவுகளுடன்`)}</span>
               </a></li>
             ))}

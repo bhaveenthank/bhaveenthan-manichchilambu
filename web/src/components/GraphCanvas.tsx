@@ -100,6 +100,8 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
   const overlay = useRef<HTMLCanvasElement>(null);
   const sigmaRef = useRef<Sigma | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
+  // Sigma needs WebGL 2. Without it (some locked-down or old machines) only the drawing is lost, not the page.
+  const [noWebgl, setNoWebgl] = useState(false);
   const state = useRef({ selected, selectedEdge, hovered, lang });
   state.current = { selected, selectedEdge, hovered, lang };
   const handlers = useRef({ onNode, onEdge, edgeOf });
@@ -274,7 +276,9 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
 
   useEffect(() => {
     if (!box.current) return;
-    const sigma = new Sigma(graph, box.current, {
+    let sigma: Sigma;
+    try {
+      sigma = new Sigma(graph, box.current, {
       settings: { allowInvalidContainer: true, renderLabels: false, renderEdgeLabels: false, enableEdgeEvents: true, itemSizesReference: "screen", zoomToSizeRatioFunction: () => 1, stagePadding: compact ? 46 : 30, minCameraRatio: 0.08, maxCameraRatio: 3, gestureTarget: compact ? "shared" : "graph" },
       nodeReducer: (id, attrs) => {
         const { selected: sel, hovered: hov, selectedEdge: selE } = state.current;
@@ -291,7 +295,11 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
         if (!focus || !graph.hasNode(focus)) return attrs;
         return graph.hasExtremity(edge, focus) ? { ...attrs, size: (attrs.size ?? 1) + 0.8 } : { ...attrs, opacity: 0.1 };
       },
-    });
+      });
+    } catch {
+      setNoWebgl(true);
+      return;
+    }
     sigmaRef.current = sigma;
     sigma.on("afterRender", () => drawLabels.current());
     sigma.on("clickNode", ({ node }) => handlers.current.onNode?.(node));
@@ -314,6 +322,13 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
 
   useEffect(() => { sigmaRef.current?.refresh(); }, [selected, selectedEdge, hovered, lang, dark]);
 
+  if (noWebgl) {
+    return (
+      <div className={compact ? "graph graph--compact graph--off" : "graph graph--off"} role="note">
+        <p>{lang === "ta" ? "இந்த உலாவியால் வரைபடத்தை வரைய முடியவில்லை (WebGL 2 இல்லை). அதே தகவல் பதிவுகளிலும் வரைபடப் பக்கத்தின் பட்டியல் பார்வையிலும் உள்ளது." : "This browser can't draw the graph (WebGL 2 is switched off or missing). The same information is in the records on this page, and in the List view of the Graph page."}</p>
+      </div>
+    );
+  }
   return (
     <div className={compact ? "graph graph--compact" : "graph"} role="img" aria-label={ariaLabel}>
       <div ref={box} className="graph__stage" />

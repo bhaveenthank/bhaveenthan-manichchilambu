@@ -37,6 +37,9 @@ export interface HybridAnswer extends Answer {
   ranks: Record<string, { rule?: number; graph?: number; words?: number; lines?: number; fused: number; coverage: number }>;
 }
 
+// A question that asks for something other than yes or no: English, Tamil and Thanglish question words.
+const WH_QUESTION = /^\s*(why|who|whom|whose|what|where|when|how|which)\b|(ஏன்|யார்|என்ன|எங்கே|எங்கு|எப்போது|எப்படி|எவ்வாறு|எது|எதற்கு|யாருக்கு|யாரை)|\b(yen|een|yaar|yar|enna|epdi|eppadi|enga|engae|eppo|ethukku)\b/i;
+
 // ---- normalising words ----
 
 const nfc = (s: string) => s.normalize("NFC");
@@ -259,11 +262,15 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
   const recIndex = new Map(c.records.map((r, i) => [r.id, i]));
   const ruleCov = rule.records.length ? Math.max(...rule.records.map((id) => coverage(recIndex.get(id)!))) : 0;
   const bestOther = lists.words.length ? Math.max(...lists.words.slice(0, 5).map((id) => coverage(recIndex.get(id)!))) : 0;
-  const trustRule = rule.found && !generic && rule.records.length > 0 && (content.length === 0 || ruleCov >= 0.34 || ruleCov >= bestOther);
+  // The yes/no rule answers "did X happen?". Asked "why", "who" or "how", a bare "Yes." is the wrong shape of answer,
+  // though its records may still be the right evidence.
+  const wrongShape = rule.type === "yes" && WH_QUESTION.test(question);
+  const trustRule = rule.found && !generic && !wrongShape && rule.records.length > 0 && (content.length === 0 || ruleCov >= 0.34 || ruleCov >= bestOther);
   if (rule.records.length && !generic) lists.rule = rule.records;
 
   // Reciprocal rank fusion. A rule that fits the question counts double; one that doesn't still gets a say.
-  const weight: Record<string, number> = { rule: trustRule ? 2 : 0.5, graph: 1, words: 1, lines: 0.8 };
+  // A rule whose only fault is the shape of its answer still found the right records, so they keep their weight.
+  const weight: Record<string, number> = { rule: trustRule || wrongShape ? 2 : 0.5, graph: 1, words: 1, lines: 0.8 };
   const fused = new Map<string, number>();
   const ranks: HybridAnswer["ranks"] = {};
   for (const [name, ids] of Object.entries(lists)) {

@@ -147,6 +147,13 @@ def build_cantos():
     for key, rows in build_machine().items():
         for row in rows:
             drafted[key] |= {l["id"] for l in row["lines"]}
+    # Drafts a reader has accepted on a review sheet (scripts/draft_sheets.py --ingest). Checked, but not hand records.
+    reviewed = defaultdict(set)
+    rpath = ROOT / "data/candidates/reviewed.jsonl"
+    if rpath.exists():
+        for raw in open(rpath, encoding="utf-8"):
+            for l in json.loads(raw)["lines"]:
+                reviewed[canto_key(l)].add(l)
     formula = json.loads((ROOT / "reports/formula_pairs.json").read_text(encoding="utf-8"))
     echo = Counter()
     for f in formula:
@@ -165,7 +172,7 @@ def build_cantos():
                     "metres": [m for m in row["metres"].split(" | ") if m], "setting": info["setting"], "themes": info["themes"],
                     "kandam": next((r["kandam"] for r in ROWS if r["id"].startswith(key)), ""), "people": [e for e, _ in people[key].most_common(8)],
                     "events": dict(events[key].most_common(4)), "records": recs[key], "echo": echo[key],
-                    "cited": len(cited[key]), "drafted": len(drafted[key] | cited[key]),
+                    "cited": len(cited[key]), "reviewed": len(reviewed[key] | cited[key]), "drafted": len(drafted[key] | cited[key]),
                     "length": "Short, under 100 lines" if n < 100 else "Medium, 100 to 199 lines" if n < 200 else "Long, 200 lines or more"})
     return out
 
@@ -294,10 +301,18 @@ def build_retrieval(machine):
             n = json.loads(raw)
             if n.get("type") == "line_note" and n.get("line") in TEXT and n.get("gist"):
                 notes.setdefault(n["line"], [n["gist"], n.get("what", ""), n.get("sense", ""), n.get("categories") or []])
+    # Draft names point at graph ids once resolve_names.py has matched them, so a draft about `sathuvan` is found
+    # by a question about Saduvan. Names not matched to the graph stay as the draft wrote them.
+    nmap_path = ROOT / "data/candidates/name_map.json"
+    nmap = json.loads(nmap_path.read_text(encoding="utf-8")) if nmap_path.exists() else {}
+    def resolved(name, canto):
+        got = (nmap.get(f"{name}|{canto}") or {}).get("id")
+        return got if got and not got.startswith("new:") else name
     drafts = []
     for rows in machine.values():
         for d in rows:
-            people = sorted({v for vals in (d.get("roles") or {}).values() for v in values(vals) if isinstance(v, str)})
+            canto = d["lines"][0]["id"][:6]
+            people = sorted({resolved(v, canto) for vals in (d.get("roles") or {}).values() for v in values(vals) if isinstance(v, str)})
             drafts.append([d["lines"][0]["id"], d.get("kind") or "", people, d.get("mood") or "", d.get("quote") or "", [l["id"] for l in d["lines"]]])
     return {"notes": notes, "drafts": drafts}
 

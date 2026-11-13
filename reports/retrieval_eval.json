@@ -82,28 +82,28 @@
   },
   "lines (BM25 via verse)": {
    "all": {
-    "recall@5": 0.336,
-    "mrr@10": 0.252
+    "recall@5": 0.475,
+    "mrr@10": 0.346
    },
    "open": {
-    "recall@5": 0.367,
-    "mrr@10": 0.253
+    "recall@5": 0.467,
+    "mrr@10": 0.369
    },
    "open_2_heldout": {
-    "recall@5": 0.211,
-    "mrr@10": 0.181
+    "recall@5": 0.526,
+    "mrr@10": 0.319
    },
    "fresh_1": {
-    "recall@5": 0.375,
-    "mrr@10": 0.278
+    "recall@5": 0.406,
+    "mrr@10": 0.288
    },
    "fresh_2": {
-    "recall@5": 0.348,
-    "mrr@10": 0.278
+    "recall@5": 0.435,
+    "mrr@10": 0.382
    },
    "fresh_3": {
-    "recall@5": 0.333,
-    "mrr@10": 0.248
+    "recall@5": 0.611,
+    "mrr@10": 0.391
    }
   },
   "chars (n-gram TF-IDF)": {
@@ -134,80 +134,80 @@
   },
   "RRF words+graph+lines": {
    "all": {
-    "recall@5": 0.795,
-    "mrr@10": 0.55
+    "recall@5": 0.811,
+    "mrr@10": 0.581
    },
    "open": {
     "recall@5": 0.9,
-    "mrr@10": 0.643
+    "mrr@10": 0.656
    },
    "open_2_heldout": {
-    "recall@5": 0.842,
-    "mrr@10": 0.607
+    "recall@5": 0.895,
+    "mrr@10": 0.693
    },
    "fresh_1": {
-    "recall@5": 0.625,
+    "recall@5": 0.594,
     "mrr@10": 0.391
    },
    "fresh_2": {
     "recall@5": 0.826,
-    "mrr@10": 0.535
+    "mrr@10": 0.555
    },
    "fresh_3": {
-    "recall@5": 0.833,
-    "mrr@10": 0.639
+    "recall@5": 0.944,
+    "mrr@10": 0.707
    }
   },
   "RRF words+graph+lines+chars": {
    "all": {
-    "recall@5": 0.803,
-    "mrr@10": 0.58
+    "recall@5": 0.828,
+    "mrr@10": 0.614
    },
    "open": {
     "recall@5": 0.933,
-    "mrr@10": 0.681
-   },
-   "open_2_heldout": {
-    "recall@5": 0.789,
-    "mrr@10": 0.616
-   },
-   "fresh_1": {
-    "recall@5": 0.625,
-    "mrr@10": 0.456
-   },
-   "fresh_2": {
-    "recall@5": 0.826,
-    "mrr@10": 0.586
-   },
-   "fresh_3": {
-    "recall@5": 0.889,
-    "mrr@10": 0.586
-   }
-  },
-  "the Ask page (all routes + evidence checks)": {
-   "all": {
-    "recall@5": 0.902,
-    "mrr@10": 0.739
-   },
-   "open": {
-    "recall@5": 0.9,
     "mrr@10": 0.711
    },
    "open_2_heldout": {
     "recall@5": 0.895,
-    "mrr@10": 0.636
+    "mrr@10": 0.708
+   },
+   "fresh_1": {
+    "recall@5": 0.594,
+    "mrr@10": 0.458
+   },
+   "fresh_2": {
+    "recall@5": 0.87,
+    "mrr@10": 0.592
+   },
+   "fresh_3": {
+    "recall@5": 0.944,
+    "mrr@10": 0.656
+   }
+  },
+  "the Ask page (all routes + evidence checks)": {
+   "all": {
+    "recall@5": 0.91,
+    "mrr@10": 0.739
+   },
+   "open": {
+    "recall@5": 0.933,
+    "mrr@10": 0.717
+   },
+   "open_2_heldout": {
+    "recall@5": 0.947,
+    "mrr@10": 0.697
    },
    "fresh_1": {
     "recall@5": 0.906,
-    "mrr@10": 0.802
+    "mrr@10": 0.748
    },
    "fresh_2": {
     "recall@5": 0.913,
-    "mrr@10": 0.798
+    "mrr@10": 0.816
    },
    "fresh_3": {
-    "recall@5": 0.889,
-    "mrr@10": 0.706
+    "recall@5": 0.833,
+    "mrr@10": 0.704
    }
   }
  }

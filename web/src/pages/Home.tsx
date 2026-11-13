@@ -47,11 +47,12 @@ function Coverage() {
   const lines = corpus.cantos.reduce((n, c) => n + c.lines, 0);
   const cited = corpus.cantos.reduce((n, c) => n + c.cited, 0);
   const drafted = corpus.cantos.reduce((n, c) => n + c.drafted, 0);
+  const reviewed = corpus.cantos.reduce((n, c) => n + (c.reviewed ?? c.cited), 0);
   const pct = (x: number) => `${Math.round((x / lines) * 100)}%`;
   return (
     <section className="panel home-coverage" aria-label={t("How much of the text is covered", "நூலில் எவ்வளவு உள்ளடக்கப்பட்டது")}>
       <h2>{t(`The graph rests on ${pct(cited)} of the lines so far`, `வரைபடம் இதுவரை ${pct(cited)} வரிகளை மட்டுமே சார்ந்துள்ளது`)}</h2>
-      <CoverageBar lines={lines} cited={cited} drafted={drafted} big />
+      <CoverageBar lines={lines} cited={cited} reviewed={reviewed} drafted={drafted} big />
       <p className="fine">{lang === "ta"
         ? `${corpus.records.length} கைப்பதிவுகள் ${lines.toLocaleString()} வரிகளில் ${cited.toLocaleString()} வரிகளைச் சுட்டுகின்றன. சரிபார்க்கப்படாத இயந்திர வரைவுகள் ${pct(drafted)} வரை செல்கின்றன; அவை வரைபடத்திலோ விடைகளிலோ இல்லை, ஒவ்வொரு பாடல் பக்கத்திலும் மட்டும்.`
         : `${corpus.records.length} hand-made records cite ${cited.toLocaleString()} of ${lines.toLocaleString()} lines. Unchecked machine drafts reach ${pct(drafted)}. Those stay out of the graph and the answers, and show only on each song's page.`}</p>
@@ -59,7 +60,8 @@ function Coverage() {
   );
 }
 
-export function CoverageBar({ lines, cited, drafted, big }: { lines: number; cited: number; drafted: number; big?: boolean }) {
+export function CoverageBar({ lines, cited, reviewed, drafted, big }: { lines: number; cited: number; reviewed?: number; drafted: number; big?: boolean }) {
+  const checked = reviewed && reviewed > cited ? reviewed : 0;
   const t = useT();
   const w = (x: number) => `${Math.max(x ? 1.5 : 0, (x / lines) * 100)}%`;
   const pct = (x: number) => `${Math.round((x / lines) * 100)}%`;
@@ -67,9 +69,10 @@ export function CoverageBar({ lines, cited, drafted, big }: { lines: number; cit
     <div className={big ? "coverage coverage--big" : "coverage"}>
       <div className="coverage__bar" role="img" aria-label={t(`${cited} of ${lines} lines in the graph, ${drafted} with drafts`, `${lines} இல் ${cited} வரிகள் வரைபடத்தில், ${drafted} வரைவுகளுடன்`)}>
         <span className="coverage__draft" style={{ width: w(drafted) }} />
+        {checked > 0 && <span className="coverage__reviewed" style={{ width: w(checked) }} />}
         <span className="coverage__graph" style={{ width: w(cited) }} />
       </div>
-      {big && <p className="coverage-key"><span><i className="key-hand" />{t("in the graph", "வரைபடத்தில்")} · {pct(cited)}</span><span><i className="key-draft" />{t("unchecked machine drafts", "சரிபார்க்காத இயந்திர வரைவுகள்")} · {pct(drafted)}</span><span><i className="key-none" />{t("not read into records yet", "இன்னும் பதியப்படாதவை")}</span></p>}
+      {big && <p className="coverage-key"><span><i className="key-hand" />{t("in the graph", "வரைபடத்தில்")} · {pct(cited)}</span>{checked > 0 && <span><i className="key-reviewed" />{t("drafts checked by a reader", "வாசகர் சரிபார்த்த வரைவுகள்")} · {pct(checked)}</span>}<span><i className="key-draft" />{t("unchecked machine drafts", "சரிபார்க்காத இயந்திர வரைவுகள்")} · {pct(drafted)}</span><span><i className="key-none" />{t("not read into records yet", "இன்னும் பதியப்படாதவை")}</span></p>}
     </div>
   );
 }

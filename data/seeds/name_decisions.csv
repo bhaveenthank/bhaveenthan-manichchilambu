@@ -1,0 +1,116 @@
+name,decision,decided_by,note
+aravan,aravanan,claude,short form of Aravana Adikal
+sangadharman,sankatharuman,claude,spelling
+tirumavalavan,chola_conqueror,claude,Karikalan's name Tirumavalavan
+ilango_vendan,udayakumaran,claude,MAN-18: the prince is Udayakumaran
+mapperundevi,chola_queen,claude,MAN-23: the great queen
+vengai_woman,kannagi,claude,the woman who lost a breast under the vengai tree
+sankari,korravai,claude,SIL-12 epithet of the goddess
+aryan_kings,northern_kings,claude,the Arya kings Cenkuttuvan defeats
+naga_kings,two_naga_kings,claude,MAN-08/09 the two Naga kings
+hill_people,hill_people_25,claude,the hill people of SIL-24/25
+aticari_husband,saduvan,claude,Atirai's husband is Saduvan
+nagan,naga_chief,claude,MAN-16 the Naga chief
+cannibal_chief,naga_chief,claude,MAN-16 the Naga chief
+begging_bowl,amudasurabhi,claude,the bowl in MAN-05/13/15 is the Amudasurabhi
+woman_with_bowl,manimekalai,claude,MAN-20/25 Manimekalai with the bowl
+kaveri,new:kaveri,claude,river
+buddha,new:buddha,claude,
+tirumal,new:tirumal,claude,kept apart from Krishna until a reader decides
+murugan,new:murugan,claude,
+kama,new:kama,claude,
+shiva,new:shiva,claude,
+ganga,new:ganga,claude,river
+vaiyai,new:vaiyai,claude,river; not Aiyai
+maruti,new:maruti,claude,MAN-22 the brahmin woman
+sampapati,new:campapati,claude,goddess of Puhar
+sambapati,new:campapati,claude,spelling
+kothamai,new:kotamai,claude,Gotami of MAN-06
+kotamai,new:kotamai,claude,spelling
+kothamai_son,new:kotamai_son,claude,
+sathusakkaran,new:sadhuchakkaran,claude,
+sadhuchakkaran,new:sadhuchakkaran,claude,
+uvavanam,new:uvavanam,claude,the grove in Puhar
+tuvathikan,new:tuvatikan,claude,the pillar deity who speaks in MAN-21
+ulaka_aravi,new:ulaka_aravi,claude,the public hall
+public_hall,new:ulaka_aravi,claude,MAN-20 to 22 the hall is Ulaka Aravi
+ambalam,new:ambalam,claude,
+ampalam,new:ambalam,claude,spelling; not mango
+chakkaravala_kottam,new:chakkaravala_kottam,claude,
+crystal_chamber,new:crystal_chamber,claude,
+dharma_pedestal,new:dharma_seat,claude,the Buddha's seat on Manipallavam
+buddha_seat,new:dharma_seat,claude,
+pedestal,new:dharma_seat,claude,
+jambu_fruit,new:jambu_fruit,claude,
+pattini_temple,new:pattini_temple,claude,
+vengai_tree,new:vengai_tree,claude,
+parasaran,new:parasaran,claude,SIL-23
+vartikan,new:vartikan,claude,SIL-23
+takkinan,new:takkinan,claude,SIL-23
+pasandan,new:pasandan,claude,SIL-30 deity
+sanjayan,new:sanjayan,claude,SIL-26
+nurruvar_kannar,new:nurruvar_kannar,claude,SIL-26 the Satakarnis
+malathi,new:malathi,claude,SIL-09; not garland
+pinnai,new:pinnai,claude,SIL-17
+karikala_daughter,new:karikala_daughter,claude,SIL-21 Atimanti
+brahmadharman,new:brahmadharman,claude,
+oviyachenan,new:oviyachenan,claude,
+kakandan,new:kakandan,claude,
+kakandan_son,new:kakandan_son,claude,
+tucayan,new:tucayan,claude,MAN-10 king of Kachayam
+arantanam_ascetic,new:arantanam_ascetic,claude,
+vidyadhara,per canto,claude,SIL-06 and MAN-17 are different vidyadharas
+vinjaiyan,per canto,claude,MAN-17 is Kayasandikai's husband; SIL-06 another
+chera_king,per canto,claude,SIL-17 may be an earlier Chera
+vetrivel_king,per canto,claude,
+kumari,per canto,claude,place or goddess depending on canto
+vanavan,per canto,claude,Chera epithet
+devas,new:devas,claude,group
+gods,new:devas,claude,
+celestials,new:devas,claude,
+yazh,new:yazh,claude,instrument
+flute,new:flute,claude,instrument
+sword,new:sword,claude,object kind
+ship,new:ship,claude,object kind
+chariot,new:chariot,claude,object kind
+drums,festival_drum,claude,
+poongodi,ignore,claude,epithet: creeper-like woman
+poongkodi,ignore,claude,epithet
+nangai,ignore,claude,epithet: lady
+anangu,ignore,claude,a spirit in general
+unnamed_speaker,ignore,claude,someone the draft didn't name
+speaker,ignore,claude,someone the draft didn't name
+narrator,ignore,claude,someone the draft didn't name
+questioner,ignore,claude,someone the draft didn't name
+listeners,ignore,claude,someone the draft didn't name
+listener,ignore,claude,someone the draft didn't name
+speaker_unnamed,ignore,claude,someone the draft didn't name
+speaker_he,ignore,claude,someone the draft didn't name
+speaker_i,ignore,claude,someone the draft didn't name
+speaker_group,ignore,claude,someone the draft didn't name
+narrator_i,ignore,claude,someone the draft didn't name
+first_speaker,ignore,claude,someone the draft didn't name
+respondent,ignore,claude,someone the draft didn't name
+proponent,ignore,claude,someone the draft didn't name
+unnamed_listener,ignore,claude,someone the draft didn't name
+onlookers,ignore,claude,someone the draft didn't name
+crowd,ignore,claude,someone the draft didn't name
+men,ignore,claude,someone the draft didn't name
+people,ignore,claude,someone the draft didn't name
+townspeople,ignore,claude,someone the draft didn't name
+city_people,ignore,claude,someone the draft didn't name
+audience,ignore,claude,someone the draft didn't name
+dharma,concept,claude,an idea or doctrine; not an entity
+atoms,concept,claude,an idea or doctrine; not an entity
+sound,concept,claude,an idea or doctrine; not an entity
+akasam,concept,claude,an idea or doctrine; not an entity
+space,concept,claude,an idea or doctrine; not an entity
+fate,concept,claude,an idea or doctrine; not an entity
+death,concept,claude,an idea or doctrine; not an entity
+soul,concept,claude,an idea or doctrine; not an entity
+wealth,concept,claude,an idea or doctrine; not an entity
+love_sickness,concept,claude,an idea or doctrine; not an entity
+past_birth,concept,claude,an idea or doctrine; not an entity
+dependent_origination,concept,claude,an idea or doctrine; not an entity
+sect_doctrines,concept,claude,an idea or doctrine; not an entity
+mantra,concept,claude,an idea or doctrine; not an entity

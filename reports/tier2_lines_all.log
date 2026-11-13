@@ -1,3 +1,2 @@
 10209 lines to account for, 493 model calls (notes only)
-stopped at 262 of 493 calls: usage limit reached. You've hit your limit · resets 2:20am (Asia/Colombo)
-Saved answers are kept. Run the same command again and it picks up from here.
+done {'calls': 493, 'notes': 9996, 'records': 0, 'rejected': 89} lines with no note: 213

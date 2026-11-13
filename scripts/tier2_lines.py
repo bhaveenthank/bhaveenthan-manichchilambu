@@ -32,6 +32,9 @@ from tier2_llm import LINES, SCHEMA, known_entities, parse_answer  # noqa: E402
 
 CATEGORIES = [t["id"] for t in yaml.safe_load((ROOT / "data/seeds/catalogue.yaml").read_text(encoding="utf-8"))["taxonomy"]]
 WHAT = ["event", "speech", "description", "list", "comparison", "address", "doctrine", "frame", "other"]
+WHAT_ALIAS = {"claim": "speech", "act": "event", "action": "event", "dialogue": "speech", "simile": "comparison", "metaphor": "comparison"}
+# Lines the model passes over, noted by hand. Each is a one-word link, so there was nothing to read into.
+HAND_NOTES = {"SIL-07-0315": {"type": "line_note", "line": "SIL-07-0315", "what": "frame", "categories": [], "sense": "literal", "gist": "'there': a one-word link between verses"}}
 CONTEXT, SIZE = 2, 22  # targets per call, plus two lines either side so a sentence isn't cut off
 
 NOTE_RULES = f"""For EVERY line marked with >, give exactly one line note:
@@ -84,19 +87,43 @@ def prompt_for(part, wanted, notes_only):
     return "\n\n".join([head, "Known ids: " + known_entities(part), "Worked line notes:\n" + ex, "Verse:\n" + body, ask])
 
 
+def read_items(answer):
+    """The JSON objects in an answer. The whole array is tried first. Failing that, each object is read on its own,
+    because the model sometimes corrects itself with a second array, or slips once inside an otherwise good one.
+    A note that can't be read as JSON is rebuilt from its fields, so one bad comma doesn't lose 22 lines."""
+    import re
+    match = re.search(r"\[.*?\]\s*$", answer.strip(), re.S) or re.search(r"\[.*\]", answer, re.S)
+    try:
+        items = json.loads(match.group(0)) if match else None
+        if isinstance(items, list):
+            return items
+    except json.JSONDecodeError:
+        pass
+    items = []
+    for chunk in re.findall(r"\{[^{}]*\}", answer):
+        try:
+            items.append(json.loads(chunk))
+            continue
+        except json.JSONDecodeError:
+            pass
+        field = lambda k: (re.search(rf'"{k}"\s*:\s*"([^"]*)"', chunk) or [None, None])[1]
+        cats = re.search(r'"categories"\s*:\s*\[([^\]]*)\]', chunk)
+        if field("type") == "line_note" and field("line"):
+            items.append({"type": "line_note", "line": field("line"), "what": field("what"), "sense": field("sense"), "gist": field("gist") or "",
+                          "categories": sorted(set(re.findall(r'"([A-Z_]+)"', cats.group(1)))) if cats else []})
+    return items
+
+
 def check(answer, part, wanted, notes_only):
     """Split notes from records, keep what checks out, and say which marked lines got no note."""
-    import re
-    match = re.search(r"\[.*\]", answer, re.S)
-    try:
-        items = json.loads(match.group(0)) if match else []
-    except json.JSONDecodeError:
-        items = []
+    items = read_items(answer)
     notes, recs, bad = [], [], []
     for it in items if isinstance(items, list) else []:
         if not isinstance(it, dict):
             continue
         if it.get("type") == "line_note":
+            if it.get("what") in WHAT_ALIAS:  # near-misses the model uses; the original label is kept on the note
+                it["what_raw"], it["what"] = it["what"], WHAT_ALIAS[it["what"]]
             if it.get("line") in wanted and it.get("what") in WHAT and it.get("sense") in ("literal", "figurative", "mixed"):
                 it["categories"] = [c for c in it.get("categories") or [] if c in CATEGORIES]
                 notes.append(it)
@@ -105,6 +132,7 @@ def check(answer, part, wanted, notes_only):
         elif not notes_only:
             recs.append(it)
     kept, rejected = parse_answer(json.dumps(recs, ensure_ascii=False), part) if recs else ([], [])
+    notes = list({n["line"]: n for n in notes}.values())  # a later note for the same line is the model's correction
     got = {n["line"] for n in notes}
     return notes, kept, bad + rejected, sorted(wanted - got)
 
@@ -151,6 +179,10 @@ def main():
         except RuntimeError as stop:
             sys.exit(f"stopped at {tally['calls']} of {len(jobs)} calls: {stop}\n"
                      "Saved answers are kept. Run the same command again and it picks up from here.")
+        for lid in [m for m in missed if m in HAND_NOTES and m in targets]:
+            f.write(json.dumps({**HAND_NOTES[lid], "model": "hand", "tier": 2}, ensure_ascii=False) + "\n")
+            tally["notes"] += 1
+            missed.remove(lid)
     partial.replace(final)
     (ROOT / f"reports/{out_name}_missed.json").write_text(json.dumps(missed, indent=1), encoding="utf-8")
     print("done", tally, f"lines with no note: {len(missed)}")

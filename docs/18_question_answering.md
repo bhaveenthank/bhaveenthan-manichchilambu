@@ -118,15 +118,15 @@ Eight tests in `tests/test_ask_llm.py` check the checker with hand-written bad a
 
 ## How well it does
 
-These are the answers' own records, first five shown. For a question the graph can't answer, "right" means it didn't present anything as an answer. The figures are written to `reports/ask_hybrid.json` by `npm --prefix web test`.
+Figures as of 13 November 2026, after the every-line pass finished. These are the answers' own records, first five shown. For a question the graph can't answer, "right" means it didn't present anything as an answer. The figures are written to `reports/ask_hybrid.json` by `npm --prefix web test`.
 
 | Question set | Rules alone | Hybrid |
 |---|---|---|
-| Open questions, written before the hybrid existed (32) | 16 | 29 |
+| Open questions, written before the hybrid existed (32) | 16 | 30 |
 | Fresh round 1 (34) | 29 | 31 |
 | Fresh round 2 (25) | 20 | 23 |
-| Fresh round 3 (20) | 14 | 18 |
-| **Held-out, written after tuning and scored once (20)** | **12** | **18** |
+| Fresh round 3 (20) | 14 | 17 |
+| **Held-out, written after tuning and scored once (20)** | **12** | **19** |
 
 **Only the held-out row is a fair test.** I tuned the hybrid while looking at the other four sets.
 
@@ -139,21 +139,22 @@ Six of the open-question misses by rules alone were worse than misses: a rule fi
 | rule | 0.47 | 0.41 | 0.21 |
 | graph | 0.73 | 0.56 | 0.68 |
 | words (BM25) | 0.83 | 0.66 | **0.95** |
-| lines (BM25 via verse) | 0.34 | 0.25 | 0.21 |
+| lines (BM25 via verse) | 0.48 | 0.35 | 0.53 |
 | chars (n-gram TF-IDF) | 0.80 | 0.63 | 0.84 |
-| RRF words + graph + lines | 0.80 | 0.55 | 0.84 |
-| RRF + chars | 0.80 | 0.58 | 0.79 |
-| **The Ask page** (all routes plus the evidence checks) | **0.90** | **0.74** | 0.89 |
+| RRF words + graph + lines | 0.81 | 0.58 | 0.89 |
+| RRF + chars | 0.83 | 0.61 | 0.89 |
+| **The Ask page** (all routes plus the evidence checks) | **0.91** | **0.74** | **0.95** |
 
 **What it shows:**
 - **Overall:** the full page is best. Plain rank fusion is no better than BM25 alone. The gain comes from weighting by coverage and checking the rules, not from adding retrievers.
-- **On the held-out set:** BM25 over the records alone did slightly better than the full page (18 of 19 against 17 of 19). That's a small set, but the next tuning should start from it. It wasn't tuned on here, because that would spoil the held-out set.
+- **On the held-out set:** the full page now ties BM25 over the records alone (18 of 19). Before every line had a note it was one behind. Nothing was tuned on the held-out set; the gain came from more data, not from changing the method.
 
 **Dense embeddings haven't been run.** The script supports them once `sentence-transformers` is installed (commands in the script's header).
 
 ## Limits
 
-- **Cross-language reach:** an English question reaches only lines with a machine note. That's 5,649 of 10,209 until the every-line pass finishes. The notes are unchecked, so a line found through one is labelled a pointer.
+- **Cross-language reach:** every one of the 10,209 lines now has a machine note, so an English question can reach any verse. The notes are unchecked, so a line found through one is labelled a pointer. A check of 50 random notes against the Tamil found 48 right, 1 partly right and 1 wrong (`reports/line_notes_spotcheck.json`). That check was done by Claude, not by a scholar.
 - **Paraphrase:** rewording that shares no words with a record still fails. That is exactly what dense embeddings are for, once they've been measured.
-- **Who wrote the tests:** every benchmark question was written by me, from the records. A fair test needs questions written by someone who hasn't seen the records, ideally by Tamil scholars and students, as CultureBot's experts did.
+- **Who wrote the tests:** every benchmark question was written by me, from the records. A fair test needs questions written by someone who hasn't seen the records, ideally by Tamil scholars and students, as CultureBot's experts did. `evaluation/` has the form, the runner and the scorer for that.
+- **"Why" questions** get the most relevant record as the headline, not a cause. **The family rule ignores direction:** "Who was Madhavi's mother?" gets her daughter. Both were left unfixed so the fair test measures them.
 - **The written answers:** the model's answers haven't been run, so there are no figures for them yet.

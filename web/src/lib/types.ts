@@ -23,6 +23,7 @@ export interface Canto {
   key: string; epic: "SIL" | "MAN"; n: number; title: string; en: string; lines: number; form: string; metres: string[];
   setting: string[]; themes: string[]; kandam: string; people: string[]; events: Record<string, number>; records: string[]; echo: number; length: string;
   cited: number;   // lines the graph's records cite
+  reviewed?: number; // lines cited by those or by drafts a reader accepted on a review sheet
   drafted: number; // lines cited by those or by the unchecked machine drafts
 }
 export interface CantoLine { id: string; n: number; text: string; who: string[]; rec: string[] }

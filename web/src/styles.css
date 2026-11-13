@@ -490,6 +490,7 @@ tr:hover td { background: var(--surface); }
 .coverage__bar > span { position: absolute; top: 0; bottom: 0; left: 0; }
 .coverage__draft { background: repeating-linear-gradient(135deg, var(--copper) 0 2px, transparent 2px 6px); }
 .coverage__graph { background: var(--copper); }
+.coverage__reviewed { background: color-mix(in srgb, var(--copper) 55%, transparent); }
 .coverage__text { font-size: 0.8125rem; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
 .coverage--big .coverage__bar { height: 20px; border-radius: 4px; }
 .coverage--big .coverage__text { font-size: 0.9375rem; color: var(--ink-soft); }
@@ -499,6 +500,7 @@ tr:hover td { background: var(--surface); }
 .key-hand { background: var(--copper); border-color: var(--copper) !important; }
 .key-draft { background: repeating-linear-gradient(135deg, var(--copper) 0 2px, transparent 2px 5px); border-color: var(--copper) !important; }
 .key-none { background: var(--bg); }
+.key-reviewed { background: color-mix(in srgb, var(--copper) 55%, transparent); border-color: var(--copper) !important; }
 .home-coverage { margin: 0; }
 .link-key { margin: 0 0 24px; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
 .link-key h3 { font: 600 1rem var(--sans); margin-bottom: 10px; }
@@ -619,3 +621,5 @@ tr:hover td { background: var(--surface); }
   .line-hits li { grid-template-columns: minmax(0, 1fr); }
   .line-hits__gist { grid-column: 1; }
 }
+.graph--off { display: grid; place-items: center; padding: 24px; text-align: center; color: var(--ink-soft); border: 1px dashed var(--line-strong); border-radius: 8px; min-height: 160px; height: auto; }
+.graph--off p { max-width: 48ch; font-size: 0.9375rem; }

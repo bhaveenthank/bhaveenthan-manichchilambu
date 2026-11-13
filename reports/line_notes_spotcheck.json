@@ -1,0 +1,408 @@
+{
+ "how": "50 notes drawn at random (seed 20261113) from data/candidates/tier2_lines_all.jsonl. Each read against its Tamil line and the lines either side. Checked by Claude, not by a Tamil scholar: treat it as a first estimate, and have a scholar check a fresh sample before quoting it.",
+ "right": 48,
+ "partly_right": 1,
+ "wrong": 1,
+ "rows": [
+  {
+   "line": "SIL-16-0163",
+   "gist": "he is not fit to be killed",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-03-0044",
+   "gist": "eloquent poet skilled in treatises",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-13-0009",
+   "gist": "land guarded by just Pandya kings",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": "labelled speech; it's part of the city's fame as reported, so 'description' fits as well"
+  },
+  {
+   "line": "MAN-05-0073",
+   "gist": "one who lives for others, not himself",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-01-0067",
+   "gist": "tiger emblem set on the Himalaya",
+   "what": "description",
+   "sense": "mixed",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-18-0089",
+   "gist": "even gods fell to lust, many cases",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-07-0137",
+   "gist": "punnai shade and surf-washed shore",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-24-0015",
+   "gist": "nearly six score women of the lineage",
+   "what": "list",
+   "sense": "literal",
+   "verdict": "partly right",
+   "why": "ஒன்று கடை நின்ற ஆறு இருபதின்மர் is six twenties and one more, 121 women. The note says 'nearly six score'."
+  },
+  {
+   "line": "SIL-13-0039",
+   "gist": "reaching a Brahmin village",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-10-0091",
+   "gist": "crabs and snails heedlessly trodden",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-06-0032",
+   "gist": "reaching flowery Puhar region",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-08-0032",
+   "gist": "bird flocks like kings' army camp",
+   "what": "comparison",
+   "sense": "figurative",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-06-0092",
+   "gist": "painted bangles, red-gold wristlets",
+   "what": "list",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-27-0114",
+   "gist": "atoms are known by touch and sight",
+   "what": "doctrine",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-11-0060",
+   "gist": "like land when king and officials are gone",
+   "what": "comparison",
+   "sense": "figurative",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-29-0362",
+   "gist": "further, it is existent or non-existent",
+   "what": "doctrine",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-29-0068",
+   "gist": "Manaikan's renunciation asked about",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": "name spelled Manaikan; the text's Mānāykan is Kannagi's father"
+  },
+  {
+   "line": "SIL-04-0076",
+   "gist": "kuvalai flowers open like eyes",
+   "what": "description",
+   "sense": "figurative",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-28-0215",
+   "gist": "kings don't abandon fierce anger",
+   "what": "doctrine",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-22-0121",
+   "gist": "southern Madurai left empty",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-02-0069",
+   "gist": "besides painted breast patterns",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-29-0047",
+   "gist": "going to harsh forest with dry wells",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-22-0196",
+   "gist": "she is taken up into the hall",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-15-0018",
+   "gist": "it never left him, steadfast",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "wrong",
+   "why": "ஒழியான் means he would not leave the cow that kept him alive. The note says 'it never left him', the other way round."
+  },
+  {
+   "line": "SIL-26-0104",
+   "gist": "they bless and depart",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-06-0007",
+   "gist": "fierce asura hordes assemble",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-21-0116",
+   "gist": "painted or carved figures do not speak",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-09-0018",
+   "gist": "in seven days people of two lands",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-00-0095",
+   "gist": "Ilango king graciously asks to hear it",
+   "what": "frame",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-27-0196",
+   "gist": "sun rising over eastern hill",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-13-0068",
+   "gist": "Madhavi's body pales with love-sickness",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-15-0172",
+   "gist": "steadfast sage looks on with favor",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-07-0234",
+   "gist": "sea makes a smile of pearls",
+   "what": "description",
+   "sense": "figurative",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-04-0088",
+   "gist": "bolts the door, hides her inside",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-21-0018",
+   "gist": "told all your births without omission",
+   "what": "speech",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-09-0012",
+   "gist": "the vast land of Gandhara",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-26-0237",
+   "gist": "battle that churned the sea",
+   "what": "event",
+   "sense": "mixed",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-09-0031",
+   "gist": "addresses the sage about his earlier words",
+   "what": "address",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-30-0025",
+   "gist": "bodiless Kama with great bow",
+   "what": "description",
+   "sense": "figurative",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-24-0172",
+   "gist": "rain never fails from the sky",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-06-0057",
+   "gist": "Kama dances the pedi dance",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-24-0054",
+   "gist": "fearless ruler of the Naga land",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-16-0022",
+   "gist": "Adirai hears the news",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-12-0091",
+   "gist": "winds blow auspiciously, regions prosper",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-03-0167",
+   "gist": "like skilled artisans' handwork",
+   "what": "comparison",
+   "sense": "figurative",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-26-0052",
+   "gist": "countless world systems everywhere",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "MAN-19-0056",
+   "gist": "entered blossoming flower garden",
+   "what": "event",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-10-0151",
+   "gist": "sugarcane mill smoke spreading",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-27-0253",
+   "gist": "king under white umbrella, victory crown",
+   "what": "description",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  },
+  {
+   "line": "SIL-27-0070",
+   "gist": "was it fruit of past karma",
+   "what": "doctrine",
+   "sense": "literal",
+   "verdict": "right",
+   "why": null
+  }
+ ]
+}
