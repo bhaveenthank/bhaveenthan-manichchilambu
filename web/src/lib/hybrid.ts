@@ -24,8 +24,21 @@ export interface RetrievalData {
   notes: Record<string, [string, string, string, string[]]>;
   drafts: [string, string, string[], string, string, string[]][];
 }
-export interface LineHit { id: string; text: string; gist: string | null; score: number }
-export interface DraftHit { line: string; kind: string; people: string[]; mood: string; quote: string; lines: string[]; score: number }
+export interface LineHit {
+  id: string;
+  text: string;
+  gist: string | null;
+  score: number;
+}
+export interface DraftHit {
+  line: string;
+  kind: string;
+  people: string[];
+  mood: string;
+  quote: string;
+  lines: string[];
+  score: number;
+}
 export type EvidenceClass = Family | "belief";
 export interface HybridAnswer extends Answer {
   plan: QueryPlan;
@@ -38,42 +51,181 @@ export interface HybridAnswer extends Answer {
 }
 
 // A question that asks for something other than yes or no: English, Tamil and Thanglish question words.
-const WH_QUESTION = /^\s*(why|who|whom|whose|what|where|when|how|which)\b|(ஏன்|யார்|என்ன|எங்கே|எங்கு|எப்போது|எப்படி|எவ்வாறு|எது|எதற்கு|யாருக்கு|யாரை)|\b(yen|een|yaar|yar|enna|epdi|eppadi|enga|engae|eppo|ethukku)\b/i;
+const WH_QUESTION =
+  /^\s*(why|who|whom|whose|what|where|when|how|which)\b|(ஏன்|யார்|என்ன|எங்கே|எங்கு|எப்போது|எப்படி|எவ்வாறு|எது|எதற்கு|யாருக்கு|யாரை)|\b(yen|een|yaar|yar|enna|epdi|eppadi|enga|engae|eppo|ethukku)\b/i;
 
 // ---- normalising words ----
 
 const nfc = (s: string) => s.normalize("NFC");
 const TAMIL = /[஀-௿]/;
 const IRREGULAR: Record<string, string> = {
-  struck: "strike", strikes: "strike", took: "take", taken: "take", made: "make", sang: "sing", sung: "sing", built: "build", went: "go", gone: "go",
-  gave: "give", given: "give", ate: "eat", eaten: "eat", hid: "hide", hidden: "hide", said: "say", says: "say", told: "tell", saw: "see", seen: "see", came: "come",
-  left: "leave", found: "find", brought: "bring", fought: "fight", flew: "fly", wept: "weep", sat: "sit", knew: "know", known: "know", fell: "fall", broke: "break",
-  broken: "break", spoke: "speak", stole: "steal", stolen: "steal", killed: "kill", died: "die", dead: "die", death: "die", thought: "think", held: "hold", kept: "keep",
-  bought: "buy", sold: "sell", met: "meet", ran: "run", became: "become", children: "child", women: "woman", men: "man", feet: "foot", wives: "wife", lives: "life",
-  hungry: "hunger", hurt: "hurt", consoled: "console", gossiping: "gossip", sacrificed: "sacrifice", travellers: "travel", abandoned: "abandon", carried: "carry",
+  struck: "strike",
+  strikes: "strike",
+  took: "take",
+  taken: "take",
+  made: "make",
+  sang: "sing",
+  sung: "sing",
+  built: "build",
+  went: "go",
+  gone: "go",
+  gave: "give",
+  given: "give",
+  ate: "eat",
+  eaten: "eat",
+  hid: "hide",
+  hidden: "hide",
+  said: "say",
+  says: "say",
+  told: "tell",
+  saw: "see",
+  seen: "see",
+  came: "come",
+  left: "leave",
+  found: "find",
+  brought: "bring",
+  fought: "fight",
+  flew: "fly",
+  wept: "weep",
+  sat: "sit",
+  knew: "know",
+  known: "know",
+  fell: "fall",
+  broke: "break",
+  broken: "break",
+  spoke: "speak",
+  stole: "steal",
+  stolen: "steal",
+  killed: "kill",
+  died: "die",
+  dead: "die",
+  death: "die",
+  thought: "think",
+  held: "hold",
+  kept: "keep",
+  bought: "buy",
+  sold: "sell",
+  met: "meet",
+  ran: "run",
+  became: "become",
+  children: "child",
+  women: "woman",
+  men: "man",
+  feet: "foot",
+  wives: "wife",
+  lives: "life",
+  hungry: "hunger",
+  hurt: "hurt",
+  consoled: "console",
+  gossiping: "gossip",
+  sacrificed: "sacrifice",
+  travellers: "travel",
+  abandoned: "abandon",
+  carried: "carry",
 };
 // Thanglish content words, glossed into English so they meet the records' English text.
 const THANGLISH: Record<string, string> = {
-  kanavu: "dream", kanavil: "dream", pasi: "hunger", olinjaa: "hide", olinjan: "hide", kettaan: "ask", kettaal: "ask", kuduthaan: "give", kuduthaal: "give", kuduthathu: "give",
-  sonnaan: "say", sonnaal: "say", sonnaala: "say", varuven: "come", vandhaan: "come", ponaan: "go", ponaal: "go", kondraan: "kill", kondra: "kill", udaithaan: "break",
-  udaithathu: "break", thirudinaan: "steal", thirudu: "steal", saapadu: "food", unavu: "food", kovil: "temple", koyil: "temple", nagaram: "city", ooru: "town", raja: "king",
-  rani: "queen", arasi: "queen", mannan: "king", arasan: "king", magal: "daughter", magan: "son", manaivi: "wife", kanavan: "husband", appa: "father", amma: "mother",
-  theeravillai: "end", theerndhadhu: "end", azhudhaal: "weep", sabam: "curse", vazhakku: "case", silambu: "anklet", muthu: "pearl", maani: "gem", kappal: "ship",
-  kadal: "sea", thee: "fire", eriththaal: "burn", erithaal: "burn", letter: "letter", kaditham: "letter", vittaan: "leave", vittaal: "leave", eduthaan: "take",
+  kanavu: "dream",
+  kanavil: "dream",
+  pasi: "hunger",
+  olinjaa: "hide",
+  olinjan: "hide",
+  kettaan: "ask",
+  kettaal: "ask",
+  kuduthaan: "give",
+  kuduthaal: "give",
+  kuduthathu: "give",
+  sonnaan: "say",
+  sonnaal: "say",
+  sonnaala: "say",
+  varuven: "come",
+  vandhaan: "come",
+  ponaan: "go",
+  ponaal: "go",
+  kondraan: "kill",
+  kondra: "kill",
+  udaithaan: "break",
+  udaithathu: "break",
+  thirudinaan: "steal",
+  thirudu: "steal",
+  saapadu: "food",
+  unavu: "food",
+  kovil: "temple",
+  koyil: "temple",
+  nagaram: "city",
+  ooru: "town",
+  raja: "king",
+  rani: "queen",
+  arasi: "queen",
+  mannan: "king",
+  arasan: "king",
+  magal: "daughter",
+  magan: "son",
+  manaivi: "wife",
+  kanavan: "husband",
+  appa: "father",
+  amma: "mother",
+  theeravillai: "end",
+  theerndhadhu: "end",
+  azhudhaal: "weep",
+  sabam: "curse",
+  vazhakku: "case",
+  silambu: "anklet",
+  muthu: "pearl",
+  maani: "gem",
+  kappal: "ship",
+  kadal: "sea",
+  thee: "fire",
+  eriththaal: "burn",
+  erithaal: "burn",
+  letter: "letter",
+  kaditham: "letter",
+  vittaan: "leave",
+  vittaal: "leave",
+  eduthaan: "take",
 };
-const STOP = new Set(("who whom whose what which where when why how is was are were did do does doing done a an the of to in on at by for from with and or about tell me us please it its his her their they he she this that there have has had can could would will be been so really actually into onto then than " +
-  "yaar yar yaru yaaru enna en epdi eppadi ah da di la le ku kku oda nu kitta than thaan yen een ethukku enga " +
-  // the epics' own names say where to look, not what to find
-  "people someone anyone thing things happen happened " +
-  "silappathikaram silappatikaram silapathikaram cilappatikaram manimekalai's epic epics poem poems seyyum seydhan panna pannan aachu").split(" "));
+const STOP = new Set(
+  (
+    "who whom whose what which where when why how is was are were did do does doing done a an the of to in on at by for from with and or about tell me us please it its his her their they he she this that there have has had can could would will be been so really actually into onto then than " +
+    "yaar yar yaru yaaru enna en epdi eppadi ah da di la le ku kku oda nu kitta than thaan yen een ethukku enga " +
+    // the epics' own names say where to look, not what to find
+    "people someone anyone thing things happen happened " +
+    "silappathikaram silappatikaram silapathikaram cilappatikaram manimekalai's epic epics poem poems seyyum seydhan panna pannan aachu"
+  ).split(" "),
+);
 // Words that answer each other: "husband" is answered by a record saying "wife", "die" by one saying "killed".
 const RELATED: string[][] = [
   ["husband", "wife", "marry", "kanavan", "manaivi", "கணவன்", "மனைவி", "மணந்தான்"],
   ["father", "mother", "parent", "son", "daughter", "child", "தந்தை", "தாய்", "மகள்", "மகன்", "குழந்தை", "பெற்றோர்"],
   // Tamil past and present forms of "kill" don't share a stem (கொன்றது, கொல்கிறான்), so they're listed.
-  ["die", "kill", "slay", "murder", "pyre", "burn herself", "இறந்தாள்", "இறந்தான்", "கொன்றான்", "கொன்றாள்", "கொன்றது", "கொன்றனர்", "கொல்கிறான்", "கொல்கிறாள்", "கொல்ல", "கொலை", "வெட்டினான்"],
-  ["hunger", "hungry", "starve", "famine", "food"], ["hide", "conceal", "secret"], ["build", "make", "craft", "construct"], ["burn", "fire", "flame"],
-  ["steal", "thief", "theft", "rob"], ["accuse", "blame", "charge"], ["curse", "sabam"], ["king", "monarch", "ruler"], ["queen", "consort"],
+  [
+    "die",
+    "kill",
+    "slay",
+    "murder",
+    "pyre",
+    "burn herself",
+    "இறந்தாள்",
+    "இறந்தான்",
+    "கொன்றான்",
+    "கொன்றாள்",
+    "கொன்றது",
+    "கொன்றனர்",
+    "கொல்கிறான்",
+    "கொல்கிறாள்",
+    "கொல்ல",
+    "கொலை",
+    "வெட்டினான்",
+  ],
+  ["hunger", "hungry", "starve", "famine", "food"],
+  ["hide", "conceal", "secret"],
+  ["build", "make", "craft", "construct"],
+  ["burn", "fire", "flame"],
+  ["steal", "thief", "theft", "rob"],
+  ["accuse", "blame", "charge"],
+  ["curse", "sabam"],
+  ["king", "monarch", "ruler"],
+  ["queen", "consort"],
 ];
 // Stemmed on first use: the stemmer needs the suffix lists below.
 let relatedStems: string[][] | null = null;
@@ -81,28 +233,103 @@ const related = (w: string) => {
   relatedStems ??= RELATED.map((g) => g.flatMap((x) => tokens(x)));
   return [w, ...(relatedStems.find((g) => g.includes(w)) ?? [])];
 };
-const TA_STOP = new Set(["யார்", "என்ன", "ஏன்", "எப்படி", "எங்கே", "எது", "எந்த", "எவ்வாறு", "அவன்", "அவள்", "தன்", "என்று", "சிலப்பதிகாரத்தில்", "சிலப்பதிகாரம்", "காப்பியம்", "காப்பியத்தில்"]);
+const TA_STOP = new Set([
+  "யார்",
+  "என்ன",
+  "ஏன்",
+  "எப்படி",
+  "எங்கே",
+  "எது",
+  "எந்த",
+  "எவ்வாறு",
+  "அவன்",
+  "அவள்",
+  "தன்",
+  "என்று",
+  "சிலப்பதிகாரத்தில்",
+  "சிலப்பதிகாரம்",
+  "காப்பியம்",
+  "காப்பியத்தில்",
+]);
 // Tamil case and plural endings, longest first, so சிலம்பை, சிலம்பில், சிலம்புகள் all come down to சிலம்ப்.
 // Tamil endings are vowel signs on the last consonant (சிலம்பை is சிலம்ப + ை), so that's how they're written here.
 const TA_SUFFIXES = [
   // verb endings, so எரித்தாள் and எரிக்கிறாள் both come down to எரி
-  "க்கிறார்கள்", "க்கிறாள்", "க்கிறான்", "க்கிறது", "கிறாள்", "கிறான்", "கிறது", "த்தார்கள்", "த்தாள்", "த்தான்", "த்தது", "த்தார்", "ந்தாள்", "ந்தான்", "ந்தது", "ந்தார்",
-  "ினாள்", "ினான்", "ினது", "ினார்", "ப்பாள்", "ப்பான்", "வாள்", "வான்", "டாள்", "டான்",
+  "க்கிறார்கள்",
+  "க்கிறாள்",
+  "க்கிறான்",
+  "க்கிறது",
+  "கிறாள்",
+  "கிறான்",
+  "கிறது",
+  "த்தார்கள்",
+  "த்தாள்",
+  "த்தான்",
+  "த்தது",
+  "த்தார்",
+  "ந்தாள்",
+  "ந்தான்",
+  "ந்தது",
+  "ந்தார்",
+  "ினாள்",
+  "ினான்",
+  "ினது",
+  "ினார்",
+  "ப்பாள்",
+  "ப்பான்",
+  "வாள்",
+  "வான்",
+  "டாள்",
+  "டான்",
   // case and plural endings
-  "களுக்கு", "த்தில்", "த்தின்", "த்தை", "களில்", "களை", "கள்", "ுக்கு", "க்கு", "யில்", "வில்", "னில்", "யின்", "வின்", "ில்", "ின்", "ுடன்", "ோடு", "ால்", "யை", "வை", "ை",
+  "களுக்கு",
+  "த்தில்",
+  "த்தின்",
+  "த்தை",
+  "களில்",
+  "களை",
+  "கள்",
+  "ுக்கு",
+  "க்கு",
+  "யில்",
+  "வில்",
+  "னில்",
+  "யின்",
+  "வின்",
+  "ில்",
+  "ின்",
+  "ுடன்",
+  "ோடு",
+  "ால்",
+  "யை",
+  "வை",
+  "ை",
 ].map(nfc);
 
 export function stem(word: string): string {
-  let w = nfc(word).toLowerCase().replace(/'s$|’s$/, "");
+  let w = nfc(word)
+    .toLowerCase()
+    .replace(/'s$|’s$/, "");
   if (TAMIL.test(w)) {
-    for (const s of TA_SUFFIXES) if (w.length > s.length + 2 && w.endsWith(s)) { w = w.slice(0, -s.length); break; }
+    for (const s of TA_SUFFIXES)
+      if (w.length > s.length + 2 && w.endsWith(s)) {
+        w = w.slice(0, -s.length);
+        break;
+      }
     // Drop a trailing vowel sign or pulli (கனவு, கனவில் → கனவ), unless that would leave too little to mean anything.
     const bare = w.replace(/[்ுைாிீூெேொோௌ]+$/u, "");
     return [...bare].length >= 3 ? bare : w;
   }
   if (IRREGULAR[w]) return IRREGULAR[w];
   if (THANGLISH[w]) return THANGLISH[w];
-  for (const [end, keep] of [["ies", "y"], ["ing", ""], ["ed", ""], ["es", ""], ["s", ""], ["ly", ""]] as const) {
+  for (const [end, keep] of [
+    ["ies", "y"],
+    ["ing", ""],
+    ["ed", ""],
+    ["es", ""],
+    ["s", ""],
+    ["ly", ""],
+  ] as const) {
     if (w.endsWith(end) && w.length - end.length >= 3) {
       w = w.slice(0, -end.length) + keep;
       // "stopped" → "stopp" → "stop", but "killed" keeps its double l
@@ -114,10 +341,16 @@ export function stem(word: string): string {
 }
 
 export function tokens(text: string): string[] {
-  return nfc(text).toLowerCase().replace(/[_?!.,;:'"“”‘’()\-–—/]/g, " ").split(/\s+/)
-    // செய் ("do") in a question is like "did" in English: it asks, it isn't asked about.
-    .filter((w) => w.length >= 2 && !STOP.has(w) && !TA_STOP.has(w) && !/^செய்[^ய]/.test(w) && !/^pann/.test(w))
-    .map(stem).filter((w) => w.length >= 2);
+  return (
+    nfc(text)
+      .toLowerCase()
+      .replace(/[_?!.,;:'"“”‘’()\-–—/]/g, " ")
+      .split(/\s+/)
+      // செய் ("do") in a question is like "did" in English: it asks, it isn't asked about.
+      .filter((w) => w.length >= 2 && !STOP.has(w) && !TA_STOP.has(w) && !/^செய்[^ய]/.test(w) && !/^pann/.test(w))
+      .map(stem)
+      .filter((w) => w.length >= 2)
+  );
 }
 
 // ---- BM25, with Tamil query words matching as prefixes because Tamil glues its endings on ----
@@ -145,7 +378,9 @@ class Bm25 {
   }
   /** Each query word carries a weight, so the question's own words count for more than the names added to it. */
   search(query: [string, number][], limit = 50): [number, number][] {
-    const n = this.tf.length, k1 = 1.2, b = 0.75;
+    const n = this.tf.length,
+      k1 = 1.2,
+      b = 0.75;
     const scores = new Map<number, number>();
     const weights = new Map<string, number>();
     query.forEach(([q, w]) => weights.set(q, Math.max(w, weights.get(q) ?? 0)));
@@ -153,7 +388,9 @@ class Bm25 {
       const forms = this.expand(q);
       if (!forms.length) continue;
       const hit: number[] = [];
-      this.tf.forEach((m, i) => { if (forms.some((f) => m.has(f))) hit.push(i); });
+      this.tf.forEach((m, i) => {
+        if (forms.some((f) => m.has(f))) hit.push(i);
+      });
       const idf = Math.log(1 + (n - hit.length + 0.5) / (hit.length + 0.5));
       for (const i of hit) {
         const f = forms.reduce((s, w) => s + (this.tf[i].get(w) ?? 0), 0);
@@ -162,12 +399,21 @@ class Bm25 {
     }
     return [...scores.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit);
   }
-  has(doc: number, q: string) { return this.expand(q).some((f) => this.tf[doc].has(f)); }
+  has(doc: number, q: string) {
+    return this.expand(q).some((f) => this.tf[doc].has(f));
+  }
 }
 
 // ---- the indexes, built once per corpus ----
 
-interface Index { records: LedgerRecord[]; rec: Bm25; lines: Bm25; drafts: Bm25; data: RetrievalData; citedBy: Map<string, string[]> }
+interface Index {
+  records: LedgerRecord[];
+  rec: Bm25;
+  lines: Bm25;
+  drafts: Bm25;
+  data: RetrievalData;
+  citedBy: Map<string, string[]>;
+}
 const built = new WeakMap<Corpus, Map<RetrievalData | null, Index>>();
 
 function names(c: Corpus, id: string) {
@@ -175,8 +421,14 @@ function names(c: Corpus, id: string) {
   return n ? [n.en, n.ta, ...n.also].join(" ") : id.replace(/_/g, " ");
 }
 function recordText(c: Corpus, r: LedgerRecord) {
-  const people = Object.values(r.roles).flatMap(roleValues).map((id) => names(c, id)).join(" ");
-  return `${r.en} ${r.ta} ${r.kind.replace(/_/g, " ")} ${people} ${r.voice.filter((v) => v !== "poet").map((v) => names(c, v)).join(" ")}`;
+  const people = Object.values(r.roles)
+    .flatMap(roleValues)
+    .map((id) => names(c, id))
+    .join(" ");
+  return `${r.en} ${r.ta} ${r.kind.replace(/_/g, " ")} ${people} ${r.voice
+    .filter((v) => v !== "poet")
+    .map((v) => names(c, v))
+    .join(" ")}`;
 }
 
 export function buildIndex(c: Corpus, data: RetrievalData | null): Index {
@@ -190,7 +442,11 @@ export function buildIndex(c: Corpus, data: RetrievalData | null): Index {
     records: c.records,
     rec: new Bm25(c.records.map((r) => tokens(recordText(c, r)))),
     lines: new Bm25(d.lines.map(([id, text]) => tokens(`${text} ${d.notes[id]?.[0] ?? ""} ${(d.notes[id]?.[3] ?? []).join(" ")}`))),
-    drafts: new Bm25(d.drafts.map(([, kind, people, , quote]) => tokens(`${kind.replace(/_/g, " ")} ${people.map((p) => names(c, p)).join(" ")} ${quote}`))),
+    drafts: new Bm25(
+      d.drafts.map(([, kind, people, , quote]) =>
+        tokens(`${kind.replace(/_/g, " ")} ${people.map((p) => names(c, p)).join(" ")} ${quote}`),
+      ),
+    ),
     data: d,
     citedBy,
   };
@@ -204,7 +460,7 @@ const RRF_K = 60;
 const capital = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export function evidenceClass(r: LedgerRecord): EvidenceClass {
-  if (r.kind === "believe" || r.layer === "belief" && r.mood !== "asserted" && r.mood !== "claimed") return "belief";
+  if (r.kind === "believe" || (r.layer === "belief" && r.mood !== "asserted" && r.mood !== "claimed")) return "belief";
   return familyOf(r.mood);
 }
 
@@ -212,7 +468,8 @@ export function evidenceClass(r: LedgerRecord): EvidenceClass {
 function contentTerms(c: Corpus, plan: QueryPlan): string[] {
   const nameWords = plan.entities.flatMap((e) => tokens(names(c, e.id)));
   // A name spelt another way ("amudhasurabi") is still the name, not something being asked about.
-  const isName = (w: string) => nameWords.some((n) => n === w || (TAMIL.test(w) ? n.startsWith(w) || w.startsWith(n) : w.length >= 6 && editDistance(n, w) <= 2));
+  const isName = (w: string) =>
+    nameWords.some((n) => n === w || (TAMIL.test(w) ? n.startsWith(w) || w.startsWith(n) : w.length >= 6 && editDistance(n, w) <= 2));
   return [...new Set(tokens(plan.question))].filter((w) => !isName(w));
 }
 function editDistance(a: string, b: string) {
@@ -235,11 +492,16 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
   const own = tokens(question);
   const query: [string, number][] = [
     ...own.map((w): [string, number] => [w, content.includes(w) ? 2 : 1]),
-    ...content.flatMap((w) => related(w).filter((x) => x !== w).map((x): [string, number] => [x, 0.8])),
+    ...content.flatMap((w) =>
+      related(w)
+        .filter((x) => x !== w)
+        .map((x): [string, number] => [x, 0.8]),
+    ),
     ...ents.flatMap((id) => tokens(names(c, id)).map((w): [string, number] => [w, 0.4])),
   ];
 
-  const coverage = (i: number) => (content.length ? content.filter((w) => related(w).some((x) => idx.rec.has(i, x))).length / content.length : 1);
+  const coverage = (i: number) =>
+    content.length ? content.filter((w) => related(w).some((x) => idx.rec.has(i, x))).length / content.length : 1;
   const lists: Record<string, string[]> = {};
 
   // Words: BM25 over the records themselves.
@@ -254,7 +516,11 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
   // Lines: search every line, then credit the records that cite the lines found.
   const lineHits = idx.lines.search(query, 60);
   const viaLines: string[] = [];
-  lineHits.forEach(([i]) => (idx.citedBy.get(idx.data.lines[i][0]) ?? []).forEach((id) => { if (!viaLines.includes(id)) viaLines.push(id); }));
+  lineHits.forEach(([i]) =>
+    (idx.citedBy.get(idx.data.lines[i][0]) ?? []).forEach((id) => {
+      if (!viaLines.includes(id)) viaLines.push(id);
+    }),
+  );
   if (viaLines.length) lists.lines = viaLines;
   // Rule: the hand-written rules, trusted only when their answer is about what the question asks.
   const rule = ask(c, question);
@@ -266,7 +532,8 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
   // The yes/no rule answers "did X happen?". Asked "why", "who" or "how", a bare "Yes." is the wrong shape of answer,
   // though its records may still be the right evidence.
   const wrongShape = rule.type === "yes" && WH_QUESTION.test(question);
-  const trustRule = rule.found && !generic && !wrongShape && rule.records.length > 0 && (content.length === 0 || ruleCov >= 0.34 || ruleCov >= bestOther);
+  const trustRule =
+    rule.found && !generic && !wrongShape && rule.records.length > 0 && (content.length === 0 || ruleCov >= 0.34 || ruleCov >= bestOther);
   if (rule.records.length && !generic) lists.rule = rule.records;
 
   // Reciprocal rank fusion. A rule that fits the question counts double; one that doesn't still gets a say.
@@ -287,10 +554,22 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
     // Agreement between routes decides the order, scaled by how much of the question a record actually covers.
     .sort((a, b) => b[1] * (0.5 + ranks[b[0]].coverage) - a[1] * (0.5 + ranks[a[0]].coverage))
     .map(([id]) => id);
-  order.forEach((id) => { ranks[id].fused = Math.round((fused.get(id) ?? 0) * 10000) / 10000; });
+  order.forEach((id) => {
+    ranks[id].fused = Math.round((fused.get(id) ?? 0) * 10000) / 10000;
+  });
 
-  const lines: LineHit[] = lineHits.slice(0, 8).map(([i, s]) => ({ id: idx.data.lines[i][0], text: idx.data.lines[i][1], gist: idx.data.notes[idx.data.lines[i][0]]?.[0] ?? null, score: Math.round(s * 100) / 100 }));
-  const drafts: DraftHit[] = idx.drafts.search(query, 6).map(([i, s]) => { const [line, kind, people, mood, quote, ls] = idx.data.drafts[i]; return { line, kind, people, mood, quote, lines: ls, score: Math.round(s * 100) / 100 }; });
+  const lines: LineHit[] = lineHits
+    .slice(0, 8)
+    .map(([i, s]) => ({
+      id: idx.data.lines[i][0],
+      text: idx.data.lines[i][1],
+      gist: idx.data.notes[idx.data.lines[i][0]]?.[0] ?? null,
+      score: Math.round(s * 100) / 100,
+    }));
+  const drafts: DraftHit[] = idx.drafts.search(query, 6).map(([i, s]) => {
+    const [line, kind, people, mood, quote, ls] = idx.data.drafts[i];
+    return { line, kind, people, mood, quote, lines: ls, score: Math.round(s * 100) / 100 };
+  });
 
   const top = order.slice(0, 10);
   const classes = (["happened", "said", "wanted", "imagined", "belief"] as EvidenceClass[])
@@ -303,8 +582,19 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
   if (open.length) {
     const opts = open[0].options.map((id) => c.nodeById.get(id)!);
     return {
-      ...base, route: "hybrid", type: "ambiguous", lang: plan.lang, found: false, records: [], classes: [], focus: open[0].options, entities: ents,
-      headline: { en: `“${open[0].surface}” could be ${opts.map((n) => n.en).join(" or ")}. Which one do you mean?`, ta: `“${open[0].surface}” என்பது ${opts.map((n) => n.ta).join(" அல்லது ")} ஆக இருக்கலாம். யாரைக் கேட்கிறீர்கள்?` },
+      ...base,
+      route: "hybrid",
+      type: "ambiguous",
+      lang: plan.lang,
+      found: false,
+      records: [],
+      classes: [],
+      focus: open[0].options,
+      entities: ents,
+      headline: {
+        en: `“${open[0].surface}” could be ${opts.map((n) => n.en).join(" or ")}. Which one do you mean?`,
+        ta: `“${open[0].surface}” என்பது ${opts.map((n) => n.ta).join(" அல்லது ")} ஆக இருக்கலாம். யாரைக் கேட்கிறீர்கள்?`,
+      },
     };
   }
 
@@ -316,24 +606,59 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
   const best = top[0] ? c.byId.get(top[0])! : null;
   const bestCov = best ? ranks[best.id].coverage : 0;
   // One shared word out of two isn't an answer: the moon question shares "moon" with a line and nothing else.
-  const strong = best && (bestCov >= 0.66 || (content.length >= 4 && bestCov >= 0.5) || (content.length === 0 && ents.length > 0 && ents.every((e) => recordMentions(best, e))));
+  const strong =
+    best &&
+    (bestCov >= 0.66 ||
+      (content.length >= 4 && bestCov >= 0.5) ||
+      (content.length === 0 && ents.length > 0 && ents.every((e) => recordMentions(best, e))));
   if (best && strong) {
     const cls = evidenceClass(best);
     const label = MOOD_LABEL[best.mood];
-    const headline: Bilingual = cls === "happened"
-      ? { en: best.en, ta: best.ta }
-      : { en: `${capital(label.en)}, not told as fact: ${best.en}`, ta: `${label.ta}, நிகழ்ந்ததாக அல்ல: ${best.ta}` };
+    const headline: Bilingual =
+      cls === "happened"
+        ? { en: best.en, ta: best.ta }
+        : { en: `${capital(label.en)}, not told as fact: ${best.en}`, ta: `${label.ta}, நிகழ்ந்ததாக அல்ல: ${best.ta}` };
     return {
-      ...base, route: "hybrid", type: "hybrid", lang: plan.lang, found: true, headline, records: top, focus: ents.length ? ents : Object.values(best.roles).flatMap(roleValues).slice(0, 3), entities: ents,
-      note: { en: "Found by searching the records, not by a rule written for this kind of question. Read the verses below before relying on it.", ta: "இவ்வகைக் கேள்விக்கான விதியால் அல்ல, பதிவுகளைத் தேடிக் கண்டது. நம்புவதற்கு முன் கீழே உள்ள வரிகளைப் படியுங்கள்." },
+      ...base,
+      route: "hybrid",
+      type: "hybrid",
+      lang: plan.lang,
+      found: true,
+      headline,
+      records: top,
+      focus: ents.length ? ents : Object.values(best.roles).flatMap(roleValues).slice(0, 3),
+      entities: ents,
+      note: {
+        en: "Found by searching the records, not by a rule written for this kind of question. Read the verses below before relying on it.",
+        ta: "இவ்வகைக் கேள்விக்கான விதியால் அல்ல, பதிவுகளைத் தேடிக் கண்டது. நம்புவதற்கு முன் கீழே உள்ள வரிகளைப் படியுங்கள்.",
+      },
     };
   }
   if (best || lines.length) {
-    const marked = best && evidenceClass(best) !== "happened" ? { en: `(${MOOD_LABEL[best.mood].en}, not told as fact) `, ta: `(${MOOD_LABEL[best.mood].ta}, நிகழ்ந்ததாக அல்ல) ` } : { en: "", ta: "" };
+    const marked =
+      best && evidenceClass(best) !== "happened"
+        ? { en: `(${MOOD_LABEL[best.mood].en}, not told as fact) `, ta: `(${MOOD_LABEL[best.mood].ta}, நிகழ்ந்ததாக அல்ல) ` }
+        : { en: "", ta: "" };
     const headline: Bilingual = best
-      ? { en: `No record answers this directly. The closest thing the graph records: ${marked.en}${best.en}`, ta: `இதற்கு நேரடியாக விடை தரும் பதிவு இல்லை. வரைபடத்தில் மிக நெருக்கமானது: ${marked.ta}${best.ta}` }
-      : { en: "No record answers this. The lines below share words with the question, found through unchecked machine notes.", ta: "இதற்கு விடை தரும் பதிவு இல்லை. கீழே உள்ள வரிகள் கேள்வியுடன் சொற்களைப் பகிர்கின்றன (சரிபார்க்காத இயந்திரக் குறிப்புகள் வழியாக)." };
-    return { ...base, route: "hybrid", type: "closest", lang: plan.lang, found: true, headline, records: top.slice(0, 4), focus: ents, entities: ents };
+      ? {
+          en: `No record answers this directly. The closest thing the graph records: ${marked.en}${best.en}`,
+          ta: `இதற்கு நேரடியாக விடை தரும் பதிவு இல்லை. வரைபடத்தில் மிக நெருக்கமானது: ${marked.ta}${best.ta}`,
+        }
+      : {
+          en: "No record answers this. The lines below share words with the question, found through unchecked machine notes.",
+          ta: "இதற்கு விடை தரும் பதிவு இல்லை. கீழே உள்ள வரிகள் கேள்வியுடன் சொற்களைப் பகிர்கின்றன (சரிபார்க்காத இயந்திரக் குறிப்புகள் வழியாக).",
+        };
+    return {
+      ...base,
+      route: "hybrid",
+      type: "closest",
+      lang: plan.lang,
+      found: true,
+      headline,
+      records: top.slice(0, 4),
+      focus: ents,
+      entities: ents,
+    };
   }
   return { ...rule, ...base, route: "hybrid", records: [] };
 }
@@ -343,16 +668,48 @@ export function evidencePackage(c: Corpus, a: HybridAnswer) {
   const record = (id: string) => {
     const r = c.byId.get(id)!;
     return {
-      evidence_id: r.id, source_status: "hand record (quotes checked by script, no scholar review yet)", epic: r.epic, canto: r.lines[0]?.id.slice(0, 6),
-      lines: r.lines, voice_chain: r.voice, mood: r.mood, evidence_class: evidenceClass(r), story_time: r.t, relation: r.kind, roles: r.roles,
-      supported_proposition: { en: r.en, ta: r.ta }, caveat: r.unresolved ?? r.inferred ?? null, ranks: a.ranks[id] ?? null,
+      evidence_id: r.id,
+      source_status: "hand record (quotes checked by script, no scholar review yet)",
+      epic: r.epic,
+      canto: r.lines[0]?.id.slice(0, 6),
+      lines: r.lines,
+      voice_chain: r.voice,
+      mood: r.mood,
+      evidence_class: evidenceClass(r),
+      story_time: r.t,
+      relation: r.kind,
+      roles: r.roles,
+      supported_proposition: { en: r.en, ta: r.ta },
+      caveat: r.unresolved ?? r.inferred ?? null,
+      ranks: a.ranks[id] ?? null,
     };
   };
   return {
-    question: a.plan.question, plan: a.plan, route: a.route, answer_kind: a.type, headline: a.headline,
+    question: a.plan.question,
+    plan: a.plan,
+    route: a.route,
+    answer_kind: a.type,
+    headline: a.headline,
     records: a.records.map(record),
-    lines: a.lines.map((l) => ({ evidence_id: l.id, source_status: "verse line; the English gist is an unchecked machine note", text: l.text, gist: l.gist })),
-    drafts: a.drafts.map((d, i) => ({ evidence_id: `draft:${d.line}:${i}`, source_status: "unchecked machine draft, may point but may not answer", relation: d.kind, people: d.people, mood: d.mood, quote: d.quote, lines: d.lines })),
-    rules: ["Only records told as fact may be stated as fact.", "A claim, order, dream or belief stays attributed to whoever holds it.", "Lines and drafts may point to evidence but never answer on their own."],
+    lines: a.lines.map((l) => ({
+      evidence_id: l.id,
+      source_status: "verse line; the English gist is an unchecked machine note",
+      text: l.text,
+      gist: l.gist,
+    })),
+    drafts: a.drafts.map((d, i) => ({
+      evidence_id: `draft:${d.line}:${i}`,
+      source_status: "unchecked machine draft, may point but may not answer",
+      relation: d.kind,
+      people: d.people,
+      mood: d.mood,
+      quote: d.quote,
+      lines: d.lines,
+    })),
+    rules: [
+      "Only records told as fact may be stated as fact.",
+      "A claim, order, dream or belief stays attributed to whoever holds it.",
+      "Lines and drafts may point to evidence but never answer on their own.",
+    ],
   };
 }

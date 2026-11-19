@@ -15,8 +15,10 @@ function tracePath(ctx: CanvasRenderingContext2D, shape: Shape, x: number, y: nu
   const poly = (n: number, turn: number, scale = 1) => {
     for (let i = 0; i < n; i++) {
       const a = turn + (i / n) * Math.PI * 2;
-      const px = x + Math.cos(a) * r * scale, py = y + Math.sin(a) * r * scale;
-      if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py);
+      const px = x + Math.cos(a) * r * scale,
+        py = y + Math.sin(a) * r * scale;
+      if (i) ctx.lineTo(px, py);
+      else ctx.moveTo(px, py);
     }
     ctx.closePath();
   };
@@ -48,7 +50,11 @@ interface Props {
 }
 
 /** Stable start positions, so the same data lays out the same way every time. */
-function hash(s: string) { let h = 7; for (const ch of s) h = (h * 31 + ch.charCodeAt(0)) | 0; return h; }
+function hash(s: string) {
+  let h = 7;
+  for (const ch of s) h = (h * 31 + ch.charCodeAt(0)) | 0;
+  return h;
+}
 
 /**
  * Force layouts fling unconnected pieces far apart, and the camera then shrinks the main cluster to fit them.
@@ -65,22 +71,30 @@ function packComponents(g: Graph) {
     while (queue.length) {
       const cur = queue.pop()!;
       part.push(cur);
-      g.forEachNeighbor(cur, (n) => { if (!seen.has(n)) { seen.add(n); queue.push(n); } });
+      g.forEachNeighbor(cur, (n) => {
+        if (!seen.has(n)) {
+          seen.add(n);
+          queue.push(n);
+        }
+      });
     }
     parts.push(part);
   });
   if (parts.length < 2) return;
   parts.sort((a, b) => b.length - a.length);
   const boxes = parts.map((part) => {
-    const xs = part.map((n) => g.getNodeAttribute(n, "x")), ys = part.map((n) => g.getNodeAttribute(n, "y"));
-    const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+    const xs = part.map((n) => g.getNodeAttribute(n, "x")),
+      ys = part.map((n) => g.getNodeAttribute(n, "y"));
+    const cx = (Math.min(...xs) + Math.max(...xs)) / 2,
+      cy = (Math.min(...ys) + Math.max(...ys)) / 2;
     return { part, cx, cy, r: Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys)) / 2 };
   });
   const main = boxes[0];
   const ring = main.r * 1.12 + Math.max(...boxes.slice(1).map((b) => b.r)) + 10;
   boxes.forEach((b, i) => {
     const angle = i === 0 ? 0 : ((i - 1) / (boxes.length - 1)) * Math.PI * 2 + 0.6;
-    const tx = i === 0 ? 0 : Math.cos(angle) * ring, ty = i === 0 ? 0 : Math.sin(angle) * ring;
+    const tx = i === 0 ? 0 : Math.cos(angle) * ring,
+      ty = i === 0 ? 0 : Math.sin(angle) * ring;
     b.part.forEach((n) => {
       g.setNodeAttribute(n, "x", g.getNodeAttribute(n, "x") - b.cx + tx);
       g.setNodeAttribute(n, "y", g.getNodeAttribute(n, "y") - b.cy + ty);
@@ -101,7 +115,10 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
   state.current = { selected, selectedEdge, hovered, lang };
   const handlers = useRef({ onNode, onEdge, edgeOf });
   handlers.current = { onNode, onEdge, edgeOf };
-  const key = useMemo(() => JSON.stringify([data.nodes.slice().sort(), data.edges.map((e) => e.rec + e.s + e.t).sort(), data.suggested.length]), [data]);
+  const key = useMemo(
+    () => JSON.stringify([data.nodes.slice().sort(), data.edges.map((e) => e.rec + e.s + e.t).sort(), data.suggested.length]),
+    [data],
+  );
 
   const graph = useMemo(() => {
     const g = new Graph({ multi: true, type: "undirected" });
@@ -113,16 +130,34 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       const angle = ((h % 360) * Math.PI) / 180;
       const radius = 10 + Math.abs(h % 90);
       // Sigma draws a surface-coloured disc (for hit testing and a halo over the edges); the shape on top is ours.
-      g.addNode(id, { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius, size: 4, color: surface, fill: classColour(n?.cls ?? "Other", dark), shape: classStyle(n?.cls ?? "Other").shape, isKind: !!n?.kind, bridge: (n?.epics.length ?? 0) > 1 });
+      g.addNode(id, {
+        x: Math.cos(angle) * radius,
+        y: Math.sin(angle) * radius,
+        size: 4,
+        color: surface,
+        fill: classColour(n?.cls ?? "Other", dark),
+        shape: classStyle(n?.cls ?? "Other").shape,
+        isKind: !!n?.kind,
+        bridge: (n?.epics.length ?? 0) > 1,
+      });
     });
     data.edges.forEach((e, i) => {
       if (g.hasNode(e.s) && g.hasNode(e.t) && e.s !== e.t) {
         const done = e.mood === "asserted";
         // Anything not told as fact gets a faint base line here and its family's dash on the overlay.
-        g.addEdgeWithKey(`${e.rec}:${i}`, e.s, e.t, { size: done ? 2.4 : 1.6, color: done ? edgeColour.done : edgeColour.under, rec: e.rec, kind: e.kind, done, family: familyOf(e.mood) });
+        g.addEdgeWithKey(`${e.rec}:${i}`, e.s, e.t, {
+          size: done ? 2.4 : 1.6,
+          color: done ? edgeColour.done : edgeColour.under,
+          rec: e.rec,
+          kind: e.kind,
+          done,
+          family: familyOf(e.mood),
+        });
       }
     });
-    data.suggested.forEach((s, i) => { if (g.hasNode(s.s) && g.hasNode(s.t)) g.addEdgeWithKey(`hint:${i}`, s.s, s.t, { size: 0.8, color: edgeColour.hint, hint: true }); });
+    data.suggested.forEach((s, i) => {
+      if (g.hasNode(s.s) && g.hasNode(s.t)) g.addEdgeWithKey(`hint:${i}`, s.s, s.t, { size: 0.8, color: edgeColour.hint, hint: true });
+    });
     g.forEachNode((id) => {
       const base = 6; // big enough to tell the shapes apart at a glance
       const mentions = corpus.nodeById.get(id)?.mentions ?? 0;
@@ -130,8 +165,21 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     });
     if (g.order > 1) {
       const settings = forceAtlas2.inferSettings(g);
-      forceAtlas2.assign(g, { iterations: g.order > 60 ? 260 : 180, settings: { ...settings, gravity: compact ? 2 : 0.5, scalingRatio: compact ? 14 : g.order > 60 ? 90 : 30, strongGravityMode: false, adjustSizes: false, linLogMode: false } });
-      noverlap.assign(g, { maxIterations: g.order > 60 ? 200 : 80, settings: { margin: compact ? 16 : g.order > 60 ? 14 : 8, ratio: 1.3 } });
+      forceAtlas2.assign(g, {
+        iterations: g.order > 60 ? 260 : 180,
+        settings: {
+          ...settings,
+          gravity: compact ? 2 : 0.5,
+          scalingRatio: compact ? 14 : g.order > 60 ? 90 : 30,
+          strongGravityMode: false,
+          adjustSizes: false,
+          linLogMode: false,
+        },
+      });
+      noverlap.assign(g, {
+        maxIterations: g.order > 60 ? 200 : 80,
+        settings: { margin: compact ? 16 : g.order > 60 ? 14 : 8, ratio: 1.3 },
+      });
       packComponents(g);
     }
     return g;
@@ -148,11 +196,15 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
   // Labels live on our own canvas. The browser shapes Tamil properly there, and we decide who gets drawn.
   const drawLabels = useRef(() => {});
   drawLabels.current = () => {
-    const sigma = sigmaRef.current, canvas = overlay.current;
+    const sigma = sigmaRef.current,
+      canvas = overlay.current;
     if (!sigma || !canvas || !box.current) return;
     const { width, height } = box.current.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
-    if (canvas.width !== width * dpr) { canvas.width = width * dpr; canvas.height = height * dpr; }
+    if (canvas.width !== width * dpr) {
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+    }
     const ctx = canvas.getContext("2d")!;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, width, height);
@@ -160,10 +212,13 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     const focus = hov ?? sel;
     const ends = edgeEnds(selEdge);
     const near = new Set<string>(ends.length && !hov ? ends : focus && graph.hasNode(focus) ? [focus, ...graph.neighbors(focus)] : []);
-    const ink = css("--ink"), halo = css("--surface"), muted = css("--ink-soft");
+    const ink = css("--ink"),
+      halo = css("--surface"),
+      muted = css("--ink-soft");
     const family = `"Source Sans 3","Noto Sans Tamil",system-ui,sans-serif`;
     const placed: [number, number, number, number][] = [];
-    const clash = (x: number, y: number, w: number, h: number) => placed.some(([a, b, c, d]) => x < a + c && a < x + w && y < b + d && b < y + h);
+    const clash = (x: number, y: number, w: number, h: number) =>
+      placed.some(([a, b, c, d]) => x < a + c && a < x + w && y < b + d && b < y + h);
 
     const faded = (id: string) => (ends.length && !hov ? !ends.includes(id) : !!focus && graph.hasNode(focus) && !near.has(id));
 
@@ -171,7 +226,8 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     graph.forEachEdge((edge, a, s, t, sa, ta) => {
       if (a.hint || a.done || a.rec === selEdge) return;
       const lit = selEdge ? false : !focus || !graph.hasNode(focus) || s === focus || t === focus;
-      const p1 = sigma.graphToViewport({ x: sa.x, y: sa.y }), p2 = sigma.graphToViewport({ x: ta.x, y: ta.y });
+      const p1 = sigma.graphToViewport({ x: sa.x, y: sa.y }),
+        p2 = sigma.graphToViewport({ x: ta.x, y: ta.y });
       ctx.beginPath();
       ctx.moveTo(p1.x, p1.y);
       ctx.lineTo(p2.x, p2.y);
@@ -186,14 +242,21 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     ctx.globalAlpha = 1;
 
     // Arrowheads at the receiving end, so the graph says who did what to whom. The tip stops at the node's edge.
-    const doneInk = css("--edge-done"), saidInk = css("--edge-said"), pickedInk = css("--copper");
+    const doneInk = css("--edge-done"),
+      saidInk = css("--edge-said"),
+      pickedInk = css("--copper");
     graph.forEachEdge((edge, a, s, t, sa, ta) => {
       if (a.hint) return;
-      const p1 = sigma.graphToViewport({ x: sa.x, y: sa.y }), p2 = sigma.graphToViewport({ x: ta.x, y: ta.y });
-      const dx = p2.x - p1.x, dy = p2.y - p1.y, len = Math.hypot(dx, dy);
+      const p1 = sigma.graphToViewport({ x: sa.x, y: sa.y }),
+        p2 = sigma.graphToViewport({ x: ta.x, y: ta.y });
+      const dx = p2.x - p1.x,
+        dy = p2.y - p1.y,
+        len = Math.hypot(dx, dy);
       if (len < ta.size * 2 + 14) return;
-      const ux = dx / len, uy = dy / len;
-      const tipX = p2.x - ux * (ta.size + 3), tipY = p2.y - uy * (ta.size + 3);
+      const ux = dx / len,
+        uy = dy / len;
+      const tipX = p2.x - ux * (ta.size + 3),
+        tipY = p2.y - uy * (ta.size + 3);
       const picked = a.rec === selEdge;
       const size = picked ? 11 : 8;
       const lit = selEdge ? picked : !focus || !graph.hasNode(focus) || s === focus || t === focus;
@@ -209,34 +272,53 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     ctx.globalAlpha = 1;
 
     // Then the nodes: a ring for "in both epics", the class shape, and a copper halo on the one picked.
-    const ringInk = css("--ink"), copper = css("--copper"), surface = css("--surface");
+    const ringInk = css("--ink"),
+      copper = css("--copper"),
+      surface = css("--surface");
     graph.forEachNode((id, a) => {
       const p = sigma.graphToViewport({ x: a.x, y: a.y });
       const r = a.size; // nodes keep their pixel size at every zoom, so the maths stays simple
       ctx.globalAlpha = faded(id) ? 0.2 : 1;
       if (id === sel) {
-        ctx.beginPath(); ctx.arc(p.x, p.y, r + 7, 0, Math.PI * 2);
-        ctx.fillStyle = css("--copper-tint"); ctx.fill();
-        ctx.strokeStyle = copper; ctx.lineWidth = 2; ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, r + 7, 0, Math.PI * 2);
+        ctx.fillStyle = css("--copper-tint");
+        ctx.fill();
+        ctx.strokeStyle = copper;
+        ctx.lineWidth = 2;
+        ctx.stroke();
       }
       if (a.bridge) {
-        ctx.beginPath(); ctx.arc(p.x, p.y, r + 3.5, 0, Math.PI * 2);
-        ctx.strokeStyle = ringInk; ctx.lineWidth = 1.5; ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, r + 3.5, 0, Math.PI * 2);
+        ctx.strokeStyle = ringInk;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
       }
       tracePath(ctx, a.shape, p.x, p.y, r);
       if (a.isKind) {
         // A kind ("a jewel") is outlined and dashed; an individual ("this jewel") is filled.
-        ctx.fillStyle = surface; ctx.fill();
-        ctx.setLineDash([3, 2]); ctx.strokeStyle = a.fill; ctx.lineWidth = 2; ctx.stroke(); ctx.setLineDash([]);
+        ctx.fillStyle = surface;
+        ctx.fill();
+        ctx.setLineDash([3, 2]);
+        ctx.strokeStyle = a.fill;
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.setLineDash([]);
       } else {
-        ctx.fillStyle = a.fill; ctx.fill();
-        ctx.strokeStyle = surface; ctx.lineWidth = 1.5; ctx.stroke();
+        ctx.fillStyle = a.fill;
+        ctx.fill();
+        ctx.strokeStyle = surface;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
       }
       ctx.globalAlpha = 1;
     });
 
     // Who gets a label first: the selected and their neighbours, then the biggest. If it would overlap, it waits for a zoom.
-    const order = graph.nodes().sort((a, b) => Number(near.has(b)) - Number(near.has(a)) || graph.getNodeAttribute(b, "size") - graph.getNodeAttribute(a, "size"));
+    const order = graph
+      .nodes()
+      .sort((a, b) => Number(near.has(b)) - Number(near.has(a)) || graph.getNodeAttribute(b, "size") - graph.getNodeAttribute(a, "size"));
     const ratio = sigma.getCamera().ratio;
     order.forEach((id) => {
       const a = graph.getNodeAttributes(id);
@@ -252,9 +334,16 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       const text = name(id).replace(/\s*\(.*\)\s*$/, ""); // the bracketed notes are for lists, too long for a label
       const w = ctx.measureText(text).width;
       // Try right, left, below, above before giving up.
-      const spots: [number, number][] = [[p.x + r + 5, p.y], [p.x - r - 5 - w, p.y], [p.x - w / 2, p.y + r + size / 2 + 3], [p.x - w / 2, p.y - r - size / 2 - 3]];
+      const spots: [number, number][] = [
+        [p.x + r + 5, p.y],
+        [p.x - r - 5 - w, p.y],
+        [p.x - w / 2, p.y + r + size / 2 + 3],
+        [p.x - w / 2, p.y - r - size / 2 - 3],
+      ];
       const fits = ([x]: [number, number]) => x >= 2 && x + w <= width - 2;
-      const spot = spots.find((s) => fits(s) && !clash(s[0] - 3, s[1] - size / 2 - 2, w + 6, size + 4)) ?? (forced ? spots.find(fits) ?? [Math.max(2, width - w - 2), p.y + r + 10] as [number, number] : null);
+      const spot =
+        spots.find((s) => fits(s) && !clash(s[0] - 3, s[1] - size / 2 - 2, w + 6, size + 4)) ??
+        (forced ? (spots.find(fits) ?? ([Math.max(2, width - w - 2), p.y + r + 10] as [number, number])) : null);
       if (!spot) return;
       placed.push([spot[0] - 3, spot[1] - size / 2 - 2, w + 6, size + 4]);
       ctx.textBaseline = "middle";
@@ -293,22 +382,37 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     let sigma: Sigma;
     try {
       sigma = new Sigma(graph, box.current, {
-      settings: { allowInvalidContainer: true, renderLabels: false, renderEdgeLabels: false, enableEdgeEvents: true, itemSizesReference: "screen", zoomToSizeRatioFunction: () => 1, stagePadding: compact ? 46 : 30, minCameraRatio: 0.08, maxCameraRatio: 3, gestureTarget: compact ? "shared" : "graph" },
-      nodeReducer: (id, attrs) => {
-        const { selected: sel, hovered: hov, selectedEdge: selE } = state.current;
-        const ends = edgeEnds(selE);
-        if (ends.length && !hov) return ends.includes(id) ? { ...attrs, zIndex: 2 } : { ...attrs, opacity: 0.22 };
-        const focus = hov ?? sel;
-        if (!focus || !graph.hasNode(focus) || id === focus || graph.areNeighbors(focus, id)) return { ...attrs, zIndex: id === focus ? 2 : 1 };
-        return { ...attrs, opacity: 0.22 };
-      },
-      edgeReducer: (edge, attrs) => {
-        const { selected: sel, hovered: hov, selectedEdge: selE } = state.current;
-        const focus = hov ?? sel;
-        if (selE) return graph.getEdgeAttribute(edge, "rec") === selE ? { ...attrs, size: 4, color: css("--copper"), zIndex: 3 } : { ...attrs, opacity: 0.08 };
-        if (!focus || !graph.hasNode(focus)) return attrs;
-        return graph.hasExtremity(edge, focus) ? { ...attrs, size: (attrs.size ?? 1) + 0.8 } : { ...attrs, opacity: 0.1 };
-      },
+        settings: {
+          allowInvalidContainer: true,
+          renderLabels: false,
+          renderEdgeLabels: false,
+          enableEdgeEvents: true,
+          itemSizesReference: "screen",
+          zoomToSizeRatioFunction: () => 1,
+          stagePadding: compact ? 46 : 30,
+          minCameraRatio: 0.08,
+          maxCameraRatio: 3,
+          gestureTarget: compact ? "shared" : "graph",
+        },
+        nodeReducer: (id, attrs) => {
+          const { selected: sel, hovered: hov, selectedEdge: selE } = state.current;
+          const ends = edgeEnds(selE);
+          if (ends.length && !hov) return ends.includes(id) ? { ...attrs, zIndex: 2 } : { ...attrs, opacity: 0.22 };
+          const focus = hov ?? sel;
+          if (!focus || !graph.hasNode(focus) || id === focus || graph.areNeighbors(focus, id))
+            return { ...attrs, zIndex: id === focus ? 2 : 1 };
+          return { ...attrs, opacity: 0.22 };
+        },
+        edgeReducer: (edge, attrs) => {
+          const { selected: sel, hovered: hov, selectedEdge: selE } = state.current;
+          const focus = hov ?? sel;
+          if (selE)
+            return graph.getEdgeAttribute(edge, "rec") === selE
+              ? { ...attrs, size: 4, color: css("--copper"), zIndex: 3 }
+              : { ...attrs, opacity: 0.08 };
+          if (!focus || !graph.hasNode(focus)) return attrs;
+          return graph.hasExtremity(edge, focus) ? { ...attrs, size: (attrs.size ?? 1) + 0.8 } : { ...attrs, opacity: 0.1 };
+        },
       });
     } catch {
       setNoWebgl(true);
@@ -330,22 +434,40 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       if (!pick || !rec || (only && graph.order > 60 && !graph.hasExtremity(edge, only))) return;
       pick(rec);
     });
-    sigma.on("enterNode", ({ node }) => { setHovered(node); if (box.current) box.current.style.cursor = "pointer"; });
-    sigma.on("leaveNode", () => { setHovered(null); if (box.current) box.current.style.cursor = ""; });
+    sigma.on("enterNode", ({ node }) => {
+      setHovered(node);
+      if (box.current) box.current.style.cursor = "pointer";
+    });
+    sigma.on("leaveNode", () => {
+      setHovered(null);
+      if (box.current) box.current.style.cursor = "";
+    });
     sigma.on("enterEdge", ({ edge }) => {
       const { onEdge: pick, edgeOf: only } = handlers.current;
       if (pick && !(only && graph.order > 60 && !graph.hasExtremity(edge, only)) && box.current) box.current.style.cursor = "pointer";
     });
-    sigma.on("leaveEdge", () => { if (box.current) box.current.style.cursor = ""; });
-    return () => { resized.disconnect(); sigma.kill(); sigmaRef.current = null; };
+    sigma.on("leaveEdge", () => {
+      if (box.current) box.current.style.cursor = "";
+    });
+    return () => {
+      resized.disconnect();
+      sigma.kill();
+      sigmaRef.current = null;
+    };
   }, [graph, compact]);
 
-  useEffect(() => { sigmaRef.current?.refresh(); }, [selected, selectedEdge, hovered, lang, dark]);
+  useEffect(() => {
+    sigmaRef.current?.refresh();
+  }, [selected, selectedEdge, hovered, lang, dark]);
 
   if (noWebgl) {
     return (
       <div className={compact ? "graph graph--compact graph--off" : "graph graph--off"} role="note">
-        <p>{lang === "ta" ? "இந்த உலாவியால் வரைபடத்தை வரைய முடியவில்லை (WebGL 2 இல்லை). அதே தகவல் பதிவுகளிலும் வரைபடப் பக்கத்தின் பட்டியல் பார்வையிலும் உள்ளது." : "This browser can't draw the graph (WebGL 2 is switched off or missing). The same information is in the records on this page, and in the List view of the Graph page."}</p>
+        <p>
+          {lang === "ta"
+            ? "இந்த உலாவியால் வரைபடத்தை வரைய முடியவில்லை (WebGL 2 இல்லை). அதே தகவல் பதிவுகளிலும் வரைபடப் பக்கத்தின் பட்டியல் பார்வையிலும் உள்ளது."
+            : "This browser can't draw the graph (WebGL 2 is switched off or missing). The same information is in the records on this page, and in the List view of the Graph page."}
+        </p>
       </div>
     );
   }
@@ -355,9 +477,15 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       <canvas ref={overlay} className="graph__labels" aria-hidden="true" />
       {!compact && (
         <div className="graph__zoom">
-          <button aria-label="Zoom in" onClick={() => sigmaRef.current?.getCamera().zoomIn({ duration: 200 })}><Plus size={16} aria-hidden="true" /></button>
-          <button aria-label="Zoom out" onClick={() => sigmaRef.current?.getCamera().zoomOut({ duration: 200 })}><Minus size={16} aria-hidden="true" /></button>
-          <button aria-label="Fit" onClick={() => sigmaRef.current?.getCamera().reset({ duration: 200 })}><Maximize size={16} aria-hidden="true" /></button>
+          <button aria-label="Zoom in" onClick={() => sigmaRef.current?.getCamera().zoomIn({ duration: 200 })}>
+            <Plus size={16} aria-hidden="true" />
+          </button>
+          <button aria-label="Zoom out" onClick={() => sigmaRef.current?.getCamera().zoomOut({ duration: 200 })}>
+            <Minus size={16} aria-hidden="true" />
+          </button>
+          <button aria-label="Fit" onClick={() => sigmaRef.current?.getCamera().reset({ duration: 200 })}>
+            <Maximize size={16} aria-hidden="true" />
+          </button>
         </div>
       )}
     </div>

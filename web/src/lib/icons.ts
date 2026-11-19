@@ -4,7 +4,22 @@
  * Shape and colour always travel together, and the text label always goes with them, so colour never works alone.
  */
 import {
-  Box, CircleCheck, CircleHelp, CircleSlash, Cloud, Dot, Gem, MapPin, MessageSquareQuote, SearchX, Sun, Target, TriangleAlert, User, Users, Wheat,
+  Box,
+  CircleCheck,
+  CircleHelp,
+  CircleSlash,
+  Cloud,
+  Dot,
+  Gem,
+  MapPin,
+  MessageSquareQuote,
+  SearchX,
+  Sun,
+  Target,
+  TriangleAlert,
+  User,
+  Users,
+  Wheat,
   type LucideIcon,
 } from "lucide-react";
 import type { Mood } from "./types";
@@ -34,9 +49,18 @@ export const isAnklet = (id: string) => /^ank_|anklet/.test(id);
 export type Family = "happened" | "said" | "wanted" | "imagined";
 export const MOOD_FAMILY: Record<Mood, Family> = {
   asserted: "happened",
-  claimed: "said", predicted: "said", address: "said", question: "said", negated: "said",
-  command: "wanted", intended: "wanted", wish: "wanted",
-  metaphor: "imagined", dreamed: "imagined", conditional: "imagined", thought: "imagined",
+  claimed: "said",
+  predicted: "said",
+  address: "said",
+  question: "said",
+  negated: "said",
+  command: "wanted",
+  intended: "wanted",
+  wish: "wanted",
+  metaphor: "imagined",
+  dreamed: "imagined",
+  conditional: "imagined",
+  thought: "imagined",
 };
 export const familyOf = (mood: string): Family => MOOD_FAMILY[mood as Mood] ?? "said";
 export const FAMILY: Record<Family, { icon: LucideIcon; dash: number[]; en: string; ta: string }> = {
@@ -50,4 +74,9 @@ export const dashArray = (f: Family) => FAMILY[f].dash.join(" ");
 export const CautionIcon = TriangleAlert;
 
 export type AnswerKind = "answered" | "not_stated" | "closest" | "none";
-export const ANSWER_ICON: Record<AnswerKind, LucideIcon> = { answered: CircleCheck, not_stated: CircleHelp, closest: SearchX, none: CircleSlash };
+export const ANSWER_ICON: Record<AnswerKind, LucideIcon> = {
+  answered: CircleCheck,
+  not_stated: CircleHelp,
+  closest: SearchX,
+  none: CircleSlash,
+};

@@ -5,31 +5,55 @@ import type { Corpus, LedgerRecord, PathStep } from "./types";
 
 const SKIP = new Set(["poet", "unnamed", "knowledge", "birth", "risen_kovalan", "sword", "mantra", "unknown"]);
 
-export interface SearchOptions { said?: boolean; weak?: boolean; places?: boolean; banned?: string[]; maxHops?: number }
-interface Edge { to: string; rec: string | null; w: string }
+export interface SearchOptions {
+  said?: boolean;
+  weak?: boolean;
+  places?: boolean;
+  banned?: string[];
+  maxHops?: number;
+}
+interface Edge {
+  to: string;
+  rec: string | null;
+  w: string;
+}
 
 export class GuardedGraph {
   adj = new Map<string, Edge[]>();
   constructor(private corpus: Corpus) {
-    const add = (a: string, e: Edge) => { (this.adj.get(a) ?? this.adj.set(a, []).get(a)!).push(e); };
+    const add = (a: string, e: Edge) => {
+      (this.adj.get(a) ?? this.adj.set(a, []).get(a)!).push(e);
+    };
     for (const r of corpus.records) {
       const told = r.mood === "asserted";
-      const people = Object.values(r.roles).flatMap(roleValues).filter((v) => !SKIP.has(v));
+      const people = Object.values(r.roles)
+        .flatMap(roleValues)
+        .filter((v) => !SKIP.has(v));
       const seen = new Set<string>();
-      people.forEach((a, i) => people.slice(i + 1).forEach((b) => {
-        if (a === b || seen.has(`${a}|${b}`)) return;
-        seen.add(`${a}|${b}`);
-        add(a, { to: b, rec: r.id, w: told ? "event" : "said" });
-        add(b, { to: a, rec: r.id, w: told ? "event" : "said" });
-      }));
+      people.forEach((a, i) =>
+        people.slice(i + 1).forEach((b) => {
+          if (a === b || seen.has(`${a}|${b}`)) return;
+          seen.add(`${a}|${b}`);
+          add(a, { to: b, rec: r.id, w: told ? "event" : "said" });
+          add(b, { to: a, rec: r.id, w: told ? "event" : "said" });
+        }),
+      );
     }
     for (const n of corpus.graph.nodes) {
-      if (n.broader) { add(n.id, { to: n.broader, rec: null, w: "wider" }); add(n.broader, { to: n.id, rec: null, w: "wider" }); }
-      if (n.gloss) { add(n.id, { to: n.gloss.of, rec: null, w: "gloss" }); add(n.gloss.of, { to: n.id, rec: null, w: "gloss" }); }
+      if (n.broader) {
+        add(n.id, { to: n.broader, rec: null, w: "wider" });
+        add(n.broader, { to: n.id, rec: null, w: "wider" });
+      }
+      if (n.gloss) {
+        add(n.id, { to: n.gloss.of, rec: null, w: "gloss" });
+        add(n.gloss.of, { to: n.id, rec: null, w: "gloss" });
+      }
     }
   }
 
-  degree(id: string) { return new Set((this.adj.get(id) ?? []).map((e) => e.to)).size; }
+  degree(id: string) {
+    return new Set((this.adj.get(id) ?? []).map((e) => e.to)).size;
+  }
 
   through(id: string): "kind" | "place" | "same" {
     const n = this.corpus.nodeById.get(id);
@@ -63,7 +87,12 @@ export class GuardedGraph {
         const spent = weak + (entering ? 1 : 0);
         if (spent > limit) continue;
         const price = e.to === goal ? 1 : 1 + Math.log1p(this.degree(e.to));
-        open.push({ cost: cost + price, node: e.to, weak: spent, path: [...path, { from: node, to: e.to, rec: e.rec, w: e.w, via: passing }] });
+        open.push({
+          cost: cost + price,
+          node: e.to,
+          weak: spent,
+          path: [...path, { from: node, to: e.to, rec: e.rec, w: e.w, via: passing }],
+        });
       }
     }
     return null;
@@ -73,7 +102,10 @@ export class GuardedGraph {
 /** Warrants a path leans on, for showing beside it. */
 export function warrants(steps: PathStep[]) {
   const out = new Set<string>();
-  for (const s of steps) { out.add(s.w); if (s.via) out.add(s.via); }
+  for (const s of steps) {
+    out.add(s.w);
+    if (s.via) out.add(s.via);
+  }
   return [...out];
 }
 
@@ -82,20 +114,45 @@ export function limits(corpus: Corpus, steps: PathStep[]) {
   const out: { en: string; ta: string }[] = [];
   const name = (id: string) => corpus.nodeById.get(id) ?? { en: id, ta: id };
   for (const s of steps) {
-    if (s.via === "kind") out.push({ en: `Both records mention ${name(s.from).en} as a kind of thing. Nothing here shows the same ${name(s.from).en} in both, or that any moved between them.`, ta: `இரு பதிவுகளும் ${name(s.from).ta} என்ற வகையைக் குறிப்பிடுகின்றன. ஒரே பொருளோ இடமாற்றமோ இதனால் நிறுவப்படவில்லை.` });
-    if (s.via === "place") out.push({ en: `Both things happen at ${name(s.from).en}. That doesn't mean anything here was made or grown there, or that the people met.`, ta: `இரண்டும் ${name(s.from).ta} இல் நிகழ்கின்றன. அங்கு விளைந்ததாகவோ, செய்யப்பட்டதாகவோ, அவர்கள் சந்தித்ததாகவோ பொருள் இல்லை.` });
+    if (s.via === "kind")
+      out.push({
+        en: `Both records mention ${name(s.from).en} as a kind of thing. Nothing here shows the same ${name(s.from).en} in both, or that any moved between them.`,
+        ta: `இரு பதிவுகளும் ${name(s.from).ta} என்ற வகையைக் குறிப்பிடுகின்றன. ஒரே பொருளோ இடமாற்றமோ இதனால் நிறுவப்படவில்லை.`,
+      });
+    if (s.via === "place")
+      out.push({
+        en: `Both things happen at ${name(s.from).en}. That doesn't mean anything here was made or grown there, or that the people met.`,
+        ta: `இரண்டும் ${name(s.from).ta} இல் நிகழ்கின்றன. அங்கு விளைந்ததாகவோ, செய்யப்பட்டதாகவோ, அவர்கள் சந்தித்ததாகவோ பொருள் இல்லை.`,
+      });
   }
   const used = warrants(steps);
-  if (used.includes("gloss")) out.push({ en: "One step rests on a commentator's reading of a word, not on the word itself.", ta: "ஒரு படி உரையாசிரியர் விளக்கத்தைச் சார்ந்தது; சொல்லையே அல்ல." });
-  if (used.includes("wider")) out.push({ en: "One step goes through a wider category. A sandalwood log is a fragrant wood, but 'fragrant wood' in a verse needn't be sandalwood.", ta: "ஒரு படி பரந்த வகை வழியாகச் செல்கிறது. விரை மரம் என்பது சந்தனமாகத்தான் இருக்க வேண்டும் என்பதில்லை." });
-  if (used.includes("said")) out.push({ en: "One step is only something a character said, and the graph doesn't count it as having happened.", ta: "ஒரு படி ஒரு பாத்திரத்தின் கூற்று மட்டுமே; நிகழ்ந்ததாகக் கொள்ளப்படவில்லை." });
+  if (used.includes("gloss"))
+    out.push({
+      en: "One step rests on a commentator's reading of a word, not on the word itself.",
+      ta: "ஒரு படி உரையாசிரியர் விளக்கத்தைச் சார்ந்தது; சொல்லையே அல்ல.",
+    });
+  if (used.includes("wider"))
+    out.push({
+      en: "One step goes through a wider category. A sandalwood log is a fragrant wood, but 'fragrant wood' in a verse needn't be sandalwood.",
+      ta: "ஒரு படி பரந்த வகை வழியாகச் செல்கிறது. விரை மரம் என்பது சந்தனமாகத்தான் இருக்க வேண்டும் என்பதில்லை.",
+    });
+  if (used.includes("said"))
+    out.push({
+      en: "One step is only something a character said, and the graph doesn't count it as having happened.",
+      ta: "ஒரு படி ஒரு பாத்திரத்தின் கூற்று மட்டுமே; நிகழ்ந்ததாகக் கொள்ளப்படவில்லை.",
+    });
   return out;
 }
 
 // The one set of words for links, used everywhere on the site. LinkKey explains them once.
 export const WARRANT_NAMES: Record<string, [string, string]> = {
-  event: ["told as fact", "நிகழ்ந்ததாக"], said: ["only said", "கூற்று மட்டும்"], same: ["same one", "அதே ஒன்று"],
-  place: ["same place only", "ஒரே இடம் மட்டும்"], kind: ["same kind only", "ஒரே வகை மட்டும்"], wider: ["broader kind only", "பரந்த வகை மட்டும்"], gloss: ["commentary reading", "உரை விளக்கம்"],
+  event: ["told as fact", "நிகழ்ந்ததாக"],
+  said: ["only said", "கூற்று மட்டும்"],
+  same: ["same one", "அதே ஒன்று"],
+  place: ["same place only", "ஒரே இடம் மட்டும்"],
+  kind: ["same kind only", "ஒரே வகை மட்டும்"],
+  wider: ["broader kind only", "பரந்த வகை மட்டும்"],
+  gloss: ["commentary reading", "உரை விளக்கம்"],
 };
 export const WARRANT_HELP: Record<string, [string, string]> = {
   event: ["The poem tells it as having happened.", "நிகழ்ந்ததாக நூல் கூறுகிறது."],
@@ -109,5 +166,9 @@ export const WARRANT_HELP: Record<string, [string, string]> = {
 // Strong links are plain. Anything that only suggests a link is marked as a caution.
 export const CAUTION = new Set(["said", "place", "kind", "wider", "gloss"]);
 
-export const stepRecords = (corpus: Corpus, steps: PathStep[]) => steps.map((s) => s.rec).filter((r): r is string => !!r && corpus.byId.has(r)).filter((r, i, all) => all.indexOf(r) === i);
+export const stepRecords = (corpus: Corpus, steps: PathStep[]) =>
+  steps
+    .map((s) => s.rec)
+    .filter((r): r is string => !!r && corpus.byId.has(r))
+    .filter((r, i, all) => all.indexOf(r) === i);
 export const recordEpic = (r: LedgerRecord) => r.epic;

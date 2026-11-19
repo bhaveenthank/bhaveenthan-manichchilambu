@@ -11,7 +11,17 @@ import { answerQuestion, evidenceClass, evidencePackage, stem, type RetrievalDat
 import { planQuery } from "./plan";
 
 const read = (name: string) => JSON.parse(readFileSync(resolve(__dirname, "../../public/data", name), "utf-8"));
-const corpus = assemble({ graph: read("graph.json"), records: read("records.json"), cantos: read("cantos.json"), echoes: read("echoes.json"), timelines: read("timelines.json"), gaps: read("gaps.json"), ties: read("bridges.json"), discoveries: read("discover.json"), lexicon: read("lexicon.json") });
+const corpus = assemble({
+  graph: read("graph.json"),
+  records: read("records.json"),
+  cantos: read("cantos.json"),
+  echoes: read("echoes.json"),
+  timelines: read("timelines.json"),
+  gaps: read("gaps.json"),
+  ties: read("bridges.json"),
+  discoveries: read("discover.json"),
+  lexicon: read("lexicon.json"),
+});
 const extra = read("retrieval.json");
 const data: RetrievalData = { lines: read("search.json"), notes: extra.notes, drafts: extra.drafts };
 
@@ -90,11 +100,26 @@ it("records rules-only against hybrid on every question set", () => {
     const packages = [...OPEN, ...OPEN_2].map(([q]) => evidencePackage(corpus, answerQuestion(corpus, q, data)));
     writeFileSync(resolve(target, "evidence_packages.json"), JSON.stringify(packages, null, 1));
     // Every route's own ranking per question, so experiments/run_dense_retrieval.py can add dense embeddings and refuse them.
-    const runs = Object.entries(sets).flatMap(([set, qs]) => qs.filter(([, want]) => want !== null).map(([q, want]) => {
-      const a = answerQuestion(corpus, q, data);
-      const route = (name: "rule" | "graph" | "words" | "lines") => Object.entries(a.ranks).filter(([, r]) => r[name]).sort((x, y) => x[1][name]! - y[1][name]!).map(([id]) => id);
-      return { set, q, gold: want, lists: { rule: route("rule"), graph: route("graph"), words: route("words"), lines: route("lines") }, final: a.records, kind: a.type };
-    }));
+    const runs = Object.entries(sets).flatMap(([set, qs]) =>
+      qs
+        .filter(([, want]) => want !== null)
+        .map(([q, want]) => {
+          const a = answerQuestion(corpus, q, data);
+          const route = (name: "rule" | "graph" | "words" | "lines") =>
+            Object.entries(a.ranks)
+              .filter(([, r]) => r[name])
+              .sort((x, y) => x[1][name]! - y[1][name]!)
+              .map(([id]) => id);
+          return {
+            set,
+            q,
+            gold: want,
+            lists: { rule: route("rule"), graph: route("graph"), words: route("words"), lines: route("lines") },
+            final: a.records,
+            kind: a.type,
+          };
+        }),
+    );
     writeFileSync(resolve(target, "retrieval_runs.json"), JSON.stringify(runs, null, 1));
   }
   const open = out.open as { rules_only: { right: number }; hybrid: { right: number } };

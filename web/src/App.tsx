@@ -23,12 +23,33 @@ const NEEDS_EXTRAS = new Set(["", "ask", "trace", "discover", "words", "songs-ca
 
 // Ask, Trace and Songs carry the story, so they're one click away. The rest sit under Explore.
 const NAV = [
-  { path: "", en: "Home", ta: "முகப்பு" }, { path: "ask", en: "Ask", ta: "கேள்" }, { path: "trace", en: "Trace", ta: "தடம்" }, { path: "songs", en: "Songs", ta: "பாடல்கள்" },
+  { path: "", en: "Home", ta: "முகப்பு" },
+  { path: "ask", en: "Ask", ta: "கேள்" },
+  { path: "trace", en: "Trace", ta: "தடம்" },
+  { path: "songs", en: "Songs", ta: "பாடல்கள்" },
 ];
 const EXPLORE = [
-  { path: "discover", icon: Compass, en: "Discover", ta: "கண்டறி", note: ["Unexpected paths between the epics", "இரு காப்பியங்களுக்கு இடையிலான தொடர்புகள்"] },
-  { path: "graph", icon: Network, en: "Graph", ta: "வரைபடம்", note: ["Everyone and everything, filtered", "அனைவரும் அனைத்தும், வடிகட்டலுடன்"] },
-  { path: "words", icon: Languages, en: "Words", ta: "சொற்கள்", note: ["Names, words with two senses, line search", "பெயர்கள், இருபொருள் சொற்கள், வரித் தேடல்"] },
+  {
+    path: "discover",
+    icon: Compass,
+    en: "Discover",
+    ta: "கண்டறி",
+    note: ["Unexpected paths between the epics", "இரு காப்பியங்களுக்கு இடையிலான தொடர்புகள்"],
+  },
+  {
+    path: "graph",
+    icon: Network,
+    en: "Graph",
+    ta: "வரைபடம்",
+    note: ["Everyone and everything, filtered", "அனைவரும் அனைத்தும், வடிகட்டலுடன்"],
+  },
+  {
+    path: "words",
+    icon: Languages,
+    en: "Words",
+    ta: "சொற்கள்",
+    note: ["Names, words with two senses, line search", "பெயர்கள், இருபொருள் சொற்கள், வரித் தேடல்"],
+  },
 ];
 
 function ExploreMenu({ current, lang }: { current: string; lang: Lang }) {
@@ -39,10 +60,15 @@ function ExploreMenu({ current, lang }: { current: string; lang: Lang }) {
   useEffect(() => setOpen(false), [current]);
   useEffect(() => {
     if (!open) return;
-    const close = (e: MouseEvent | KeyboardEvent) => { if (e instanceof KeyboardEvent ? e.key === "Escape" : !(e.target as HTMLElement).closest(".nav-menu, .nav-group")) setOpen(false); };
+    const close = (e: MouseEvent | KeyboardEvent) => {
+      if (e instanceof KeyboardEvent ? e.key === "Escape" : !(e.target as HTMLElement).closest(".nav-menu, .nav-group")) setOpen(false);
+    };
     window.addEventListener("mousedown", close);
     window.addEventListener("keydown", close);
-    return () => { window.removeEventListener("mousedown", close); window.removeEventListener("keydown", close); };
+    return () => {
+      window.removeEventListener("mousedown", close);
+      window.removeEventListener("keydown", close);
+    };
   }, [open]);
   const toggle = () => {
     // The nav strip scrolls sideways on small screens, so the menu hangs from the header bar, lined up with the button.
@@ -53,12 +79,28 @@ function ExploreMenu({ current, lang }: { current: string; lang: Lang }) {
   };
   return (
     <>
-      <span className="nav-group"><button ref={btn} onClick={toggle} aria-expanded={open} aria-haspopup="true" aria-current={here ? "page" : undefined}>{lang === "ta" ? "ஆராய்க" : "Explore"}<ChevronDown size={16} aria-hidden="true" /></button></span>
+      <span className="nav-group">
+        <button ref={btn} onClick={toggle} aria-expanded={open} aria-haspopup="true" aria-current={here ? "page" : undefined}>
+          {lang === "ta" ? "ஆராய்க" : "Explore"}
+          <ChevronDown size={16} aria-hidden="true" />
+        </button>
+      </span>
       {/* Outside the nav, which scrolls and fades on phones and would clip it. */}
-      {open && createPortal(
-        <div className="nav-menu" role="menu" style={spot}>
-          {EXPLORE.map((e) => <a key={e.path} role="menuitem" href={`#/${e.path}`} aria-current={current === e.path ? "page" : undefined}><e.icon size={18} aria-hidden="true" /><span><b>{lang === "ta" ? e.ta : e.en}</b><span>{lang === "ta" ? e.note[1] : e.note[0]}</span></span></a>)}
-        </div>, document.body)}
+      {open &&
+        createPortal(
+          <div className="nav-menu" role="menu" style={spot}>
+            {EXPLORE.map((e) => (
+              <a key={e.path} role="menuitem" href={`#/${e.path}`} aria-current={current === e.path ? "page" : undefined}>
+                <e.icon size={18} aria-hidden="true" />
+                <span>
+                  <b>{lang === "ta" ? e.ta : e.en}</b>
+                  <span>{lang === "ta" ? e.note[1] : e.note[0]}</span>
+                </span>
+              </a>
+            ))}
+          </div>,
+          document.body,
+        )}
     </>
   );
 }
@@ -68,28 +110,74 @@ const OLD_ROUTES: Record<string, string> = { bridges: "discover", things: "trace
 function Palette({ corpus, lang, open, setOpen }: { corpus: Corpus; lang: Lang; open: boolean; setOpen: (v: boolean) => void }) {
   const [text, setText] = useState("");
   useEffect(() => {
-    const on = (e: KeyboardEvent) => { if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); setOpen(!open); } };
+    const on = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setOpen(!open);
+      }
+    };
     window.addEventListener("keydown", on);
     return () => window.removeEventListener("keydown", on);
   }, [open, setOpen]);
-  const pick = (path: string) => { setOpen(false); setText(""); go(path); };
+  const pick = (path: string) => {
+    setOpen(false);
+    setText("");
+    go(path);
+  };
   const tamil = /[஀-௿]/.test(text);
   return (
-    <Command.Dialog open={open} onOpenChange={setOpen} label={lang === "ta" ? "தேடு" : "Search"} className="palette" overlayClassName="palette__overlay" contentClassName="palette__content">
-      <div className="palette__bar"><Search size={18} aria-hidden="true" /><Command.Input value={text} onValueChange={setText} placeholder={lang === "ta" ? "ஒருவர், பாடல் அல்லது கேள்வி..." : "A person, a song, a food, or a question..."} className="palette__input" /><kbd>Esc</kbd></div>
+    <Command.Dialog
+      open={open}
+      onOpenChange={setOpen}
+      label={lang === "ta" ? "தேடு" : "Search"}
+      className="palette"
+      overlayClassName="palette__overlay"
+      contentClassName="palette__content"
+    >
+      <div className="palette__bar">
+        <Search size={18} aria-hidden="true" />
+        <Command.Input
+          value={text}
+          onValueChange={setText}
+          placeholder={lang === "ta" ? "ஒருவர், பாடல் அல்லது கேள்வி..." : "A person, a song, a food, or a question..."}
+          className="palette__input"
+        />
+        <kbd>Esc</kbd>
+      </div>
       <Command.List className="palette__list">
         <Command.Empty>{lang === "ta" ? "ஒன்றும் கிடைக்கவில்லை" : "Nothing found"}</Command.Empty>
         {text.length > 2 && (
           <Command.Group heading={lang === "ta" ? "கேள்வி" : "Ask or search"}>
-            <Command.Item value={`ask ${text}`} onSelect={() => pick(`/ask?q=${encodeURIComponent(text)}`)}>{lang === "ta" ? "கேள்:" : "Ask:"} “{text}”</Command.Item>
-            {tamil && <Command.Item value={`verse ${text}`} onSelect={() => pick(`/words?q=${encodeURIComponent(text)}`)}>{lang === "ta" ? "வரிகளில் தேடு:" : "Search lines:"} “{text}”</Command.Item>}
+            <Command.Item value={`ask ${text}`} onSelect={() => pick(`/ask?q=${encodeURIComponent(text)}`)}>
+              {lang === "ta" ? "கேள்:" : "Ask:"} “{text}”
+            </Command.Item>
+            {tamil && (
+              <Command.Item value={`verse ${text}`} onSelect={() => pick(`/words?q=${encodeURIComponent(text)}`)}>
+                {lang === "ta" ? "வரிகளில் தேடு:" : "Search lines:"} “{text}”
+              </Command.Item>
+            )}
           </Command.Group>
         )}
         <Command.Group heading={lang === "ta" ? "நபர்கள், இடங்கள், பொருள்கள்" : "People, places, things"}>
-          {corpus.graph.nodes.filter((n) => n.cls !== "Other").map((n) => <Command.Item key={n.id} value={`${n.en} ${n.ta} ${n.also.join(" ")}`} onSelect={() => pick(`/graph?focus=${n.id}`)}><EntityIcon cls={n.cls} id={n.id} kind={n.kind} /><span>{n[lang]}</span><span className="palette__hint" lang={lang === "ta" ? "en" : "ta"}>{lang === "ta" ? n.en : n.ta}</span></Command.Item>)}
+          {corpus.graph.nodes
+            .filter((n) => n.cls !== "Other")
+            .map((n) => (
+              <Command.Item key={n.id} value={`${n.en} ${n.ta} ${n.also.join(" ")}`} onSelect={() => pick(`/graph?focus=${n.id}`)}>
+                <EntityIcon cls={n.cls} id={n.id} kind={n.kind} />
+                <span>{n[lang]}</span>
+                <span className="palette__hint" lang={lang === "ta" ? "en" : "ta"}>
+                  {lang === "ta" ? n.en : n.ta}
+                </span>
+              </Command.Item>
+            ))}
         </Command.Group>
         <Command.Group heading={lang === "ta" ? "பாடல்கள்" : "Songs"}>
-          {corpus.cantos.map((c) => <Command.Item key={c.key} value={`${c.key} ${c.title} ${c.en}`} onSelect={() => pick(`/songs/${c.key}`)}><span lang={lang === "ta" ? "ta" : "en"}>{lang === "ta" ? c.title : c.en}</span><span className="palette__hint mono">{c.key}</span></Command.Item>)}
+          {corpus.cantos.map((c) => (
+            <Command.Item key={c.key} value={`${c.key} ${c.title} ${c.en}`} onSelect={() => pick(`/songs/${c.key}`)}>
+              <span lang={lang === "ta" ? "ta" : "en"}>{lang === "ta" ? c.title : c.en}</span>
+              <span className="palette__hint mono">{c.key}</span>
+            </Command.Item>
+          ))}
         </Command.Group>
       </Command.List>
     </Command.Dialog>
@@ -99,13 +187,35 @@ function Palette({ corpus, lang, open, setOpen }: { corpus: Corpus; lang: Lang; 
 /** Fetches the extra data files the first time a page needs them, with a retry if the network drops. */
 function ExtrasGate({ failed, onLoad }: { failed: boolean; onLoad: () => void }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => { onLoad(); }, []);
-  if (failed) return <p>The data for this page didn't load. <button className="link" onClick={onLoad}>Try again</button> · இப்பக்கத்தின் தரவு ஏறவில்லை.</p>;
-  return <div className="skeleton page-loading" aria-busy="true" aria-label="Loading"><i /><i /><i /></div>;
+  useEffect(() => {
+    onLoad();
+  }, []);
+  if (failed)
+    return (
+      <p>
+        The data for this page didn't load.{" "}
+        <button className="link" onClick={onLoad}>
+          Try again
+        </button>{" "}
+        · இப்பக்கத்தின் தரவு ஏறவில்லை.
+      </p>
+    );
+  return (
+    <div className="skeleton page-loading" aria-busy="true" aria-label="Loading">
+      <i />
+      <i />
+      <i />
+    </div>
+  );
 }
 
 function savedTheme(): "light" | "dark" | null {
-  try { const v = localStorage.getItem("theme"); return v === "light" || v === "dark" ? v : null; } catch { return null; }
+  try {
+    const v = localStorage.getItem("theme");
+    return v === "light" || v === "dark" ? v : null;
+  } catch {
+    return null;
+  }
 }
 
 export function App() {
@@ -113,13 +223,24 @@ export function App() {
   const [extras, setExtras] = useState<Extras | null>(null);
   const [failed, setFailed] = useState(false);
   const [extrasFailed, setExtrasFailed] = useState(false);
-  const [lang, setLangState] = useState<Lang>(() => { try { return (localStorage.getItem("lang") as Lang) || "en"; } catch { return "en"; } });
+  const [lang, setLangState] = useState<Lang>(() => {
+    try {
+      return (localStorage.getItem("lang") as Lang) || "en";
+    } catch {
+      return "en";
+    }
+  });
   // Paper is the default look. Dark is a click away, and the choice sticks.
   const [dark, setDark] = useState(() => savedTheme() === "dark");
   const [palette, setPalette] = useState(false);
   const route = useRoute();
   const [attempt, setAttempt] = useState(0);
-  useEffect(() => { setFailed(false); loadCore().then(setCore).catch(() => setFailed(true)); }, [attempt]);
+  useEffect(() => {
+    setFailed(false);
+    loadCore()
+      .then(setCore)
+      .catch(() => setFailed(true));
+  }, [attempt]);
   const corpus = useMemo(() => (core ? assemble({ ...core, ...(extras ?? NO_EXTRAS) }) : null), [core, extras]);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -127,7 +248,8 @@ export function App() {
       if (!tab || !["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
       const tabs = [...(tab.closest('[role="tablist"]')?.querySelectorAll<HTMLElement>('[role="tab"]') ?? [])];
       const at = tabs.indexOf(tab as HTMLElement);
-      const next = e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : (at + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+      const next =
+        e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : (at + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
       e.preventDefault();
       tabs[next]?.focus();
       tabs[next]?.click();
@@ -135,56 +257,172 @@ export function App() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, []);
-  const setLang = (l: Lang) => { setLangState(l); try { localStorage.setItem("lang", l); } catch { /* private window, it just won't be remembered */ } };
-  const toggleTheme = () => setDark((d) => { const next = !d; try { localStorage.setItem("theme", next ? "dark" : "light"); } catch { /* same */ } return next; });
-  useEffect(() => { document.documentElement.lang = lang; }, [lang]);
-  useEffect(() => { document.documentElement.dataset.theme = dark ? "dark" : "light"; }, [dark]);
+  const setLang = (l: Lang) => {
+    setLangState(l);
+    try {
+      localStorage.setItem("lang", l);
+    } catch {
+      /* private window, it just won't be remembered */
+    }
+  };
+  const toggleTheme = () =>
+    setDark((d) => {
+      const next = !d;
+      try {
+        localStorage.setItem("theme", next ? "dark" : "light");
+      } catch {
+        /* same */
+      }
+      return next;
+    });
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+  useEffect(() => {
+    document.documentElement.dataset.theme = dark ? "dark" : "light";
+  }, [dark]);
   const value = useMemo(() => (corpus ? { corpus, lang, setLang, go, dark, toggleTheme } : null), [corpus, lang, dark]);
 
-  if (failed) return <main className="page"><p>The data files didn't load. Check the connection and <button className="link" onClick={() => setAttempt((n) => n + 1)}>try again</button>. If you opened this from disk, run <code>npm run dev</code> instead.</p></main>;
-  if (!value || !corpus) return <main className="splash" aria-busy="true"><p className="splash__name">Maṇichchilambu</p><span className="splash__bar" /><p className="fine">Loading the two epics · இரு காப்பியங்களை ஏற்றுகிறது</p></main>;
+  if (failed)
+    return (
+      <main className="page">
+        <p>
+          The data files didn't load. Check the connection and{" "}
+          <button className="link" onClick={() => setAttempt((n) => n + 1)}>
+            try again
+          </button>
+          . If you opened this from disk, run <code>npm run dev</code> instead.
+        </p>
+      </main>
+    );
+  if (!value || !corpus)
+    return (
+      <main className="splash" aria-busy="true">
+        <p className="splash__name">Maṇichchilambu</p>
+        <span className="splash__bar" />
+        <p className="fine">Loading the two epics · இரு காப்பியங்களை ஏற்றுகிறது</p>
+      </main>
+    );
 
   const [rawSection, sub] = route.parts;
   const current = OLD_ROUTES[rawSection ?? ""] ?? rawSection ?? "";
-  const needsExtras = NEEDS_EXTRAS.has(current === "songs" && sub ? "songs-canto" : current) || !NAV.concat(EXPLORE).some((n) => n.path === current) && current !== "about" && current !== "record";
-  const page = current === "ask" ? <AskPage question={route.params.get("q") ?? ""} />
-    : current === "graph" ? <GraphPage params={route.params} />
-    : current === "songs" ? (sub ? <CantoPage key={sub} cantoKey={sub} line={route.params.get("line")} /> : <SongsPage params={route.params} />)
-    : current === "discover" ? <DiscoverPage params={route.params} />
-    : current === "trace" ? <TracePage />
-    : current === "words" ? <WordsPage key={route.params.get("q") ?? ""} params={route.params} />
-    : current === "about" ? <AboutPage />
-    : current === "record" && sub ? <RecordPage id={sub} />
-    : <HomePage />;
+  const needsExtras =
+    NEEDS_EXTRAS.has(current === "songs" && sub ? "songs-canto" : current) ||
+    (!NAV.concat(EXPLORE).some((n) => n.path === current) && current !== "about" && current !== "record");
+  const page =
+    current === "ask" ? (
+      <AskPage question={route.params.get("q") ?? ""} />
+    ) : current === "graph" ? (
+      <GraphPage params={route.params} />
+    ) : current === "songs" ? (
+      sub ? (
+        <CantoPage key={sub} cantoKey={sub} line={route.params.get("line")} />
+      ) : (
+        <SongsPage params={route.params} />
+      )
+    ) : current === "discover" ? (
+      <DiscoverPage params={route.params} />
+    ) : current === "trace" ? (
+      <TracePage />
+    ) : current === "words" ? (
+      <WordsPage key={route.params.get("q") ?? ""} params={route.params} />
+    ) : current === "about" ? (
+      <AboutPage />
+    ) : current === "record" && sub ? (
+      <RecordPage id={sub} />
+    ) : (
+      <HomePage />
+    );
 
   return (
     <AppContext.Provider value={value}>
-      <header className="top"><div className="top__row">
-        <a href="#/" className="brand"><span className="brand__en" lang="en">Maṇichchilambu</span><span className="brand__ta" lang="ta">மணிச்சிலம்பு</span></a>
-        <nav aria-label="Main">
-          {NAV.map((n) => <a key={n.path} href={`#/${n.path}`} aria-current={current === n.path ? "page" : undefined}>{lang === "ta" ? n.ta : n.en}</a>)}
-          <ExploreMenu current={current} lang={lang} />
-          <a href="#/about" aria-current={current === "about" ? "page" : undefined}>{lang === "ta" ? "பற்றி" : "About"}</a>
-        </nav>
-        <div className="top__tools">
-          <button className="tool-btn" onClick={() => setPalette(true)} aria-label={lang === "ta" ? "தேடு" : "Search"}><Search size={16} aria-hidden="true" /><span className="tool-btn__label">{lang === "ta" ? "தேடு" : "Search"}</span><kbd>{isMac ? "⌘K" : "Ctrl K"}</kbd></button>
-          <div className="lang-toggle" role="group" aria-label="Language · மொழி">
-            <button onClick={() => setLang("en")} aria-pressed={lang === "en"} lang="en">EN</button>
-            <button onClick={() => setLang("ta")} aria-pressed={lang === "ta"} lang="ta" aria-label="தமிழ்">த</button>
+      <header className="top">
+        <div className="top__row">
+          <a href="#/" className="brand">
+            <span className="brand__en" lang="en">
+              Maṇichchilambu
+            </span>
+            <span className="brand__ta" lang="ta">
+              மணிச்சிலம்பு
+            </span>
+          </a>
+          <nav aria-label="Main">
+            {NAV.map((n) => (
+              <a key={n.path} href={`#/${n.path}`} aria-current={current === n.path ? "page" : undefined}>
+                {lang === "ta" ? n.ta : n.en}
+              </a>
+            ))}
+            <ExploreMenu current={current} lang={lang} />
+            <a href="#/about" aria-current={current === "about" ? "page" : undefined}>
+              {lang === "ta" ? "பற்றி" : "About"}
+            </a>
+          </nav>
+          <div className="top__tools">
+            <button className="tool-btn" onClick={() => setPalette(true)} aria-label={lang === "ta" ? "தேடு" : "Search"}>
+              <Search size={16} aria-hidden="true" />
+              <span className="tool-btn__label">{lang === "ta" ? "தேடு" : "Search"}</span>
+              <kbd>{isMac ? "⌘K" : "Ctrl K"}</kbd>
+            </button>
+            <div className="lang-toggle" role="group" aria-label="Language · மொழி">
+              <button onClick={() => setLang("en")} aria-pressed={lang === "en"} lang="en">
+                EN
+              </button>
+              <button onClick={() => setLang("ta")} aria-pressed={lang === "ta"} lang="ta" aria-label="தமிழ்">
+                த
+              </button>
+            </div>
+            <button
+              className="tool-btn tool-btn--icon"
+              onClick={toggleTheme}
+              aria-label={dark ? "Use the light theme" : "Use the dark theme"}
+              title={dark ? "Use the light theme" : "Use the dark theme"}
+            >
+              <Contrast size={18} aria-hidden="true" />
+            </button>
           </div>
-          <button className="tool-btn tool-btn--icon" onClick={toggleTheme} aria-label={dark ? "Use the light theme" : "Use the dark theme"} title={dark ? "Use the light theme" : "Use the dark theme"}><Contrast size={18} aria-hidden="true" /></button>
         </div>
-      </div></header>
+      </header>
       <main key={current + (sub ?? "")} className={current === "graph" ? "page page--full" : "page"}>
-        {needsExtras && !extras ? <ExtrasGate failed={extrasFailed} onLoad={() => { setExtrasFailed(false); loadExtras().then(setExtras).catch(() => setExtrasFailed(true)); }} />
-          : <Suspense fallback={<div className="skeleton page-loading" aria-busy="true"><i /><i /><i /></div>}>{page}</Suspense>}
+        {needsExtras && !extras ? (
+          <ExtrasGate
+            failed={extrasFailed}
+            onLoad={() => {
+              setExtrasFailed(false);
+              loadExtras()
+                .then(setExtras)
+                .catch(() => setExtrasFailed(true));
+            }}
+          />
+        ) : (
+          <Suspense
+            fallback={
+              <div className="skeleton page-loading" aria-busy="true">
+                <i />
+                <i />
+                <i />
+              </div>
+            }
+          >
+            {page}
+          </Suspense>
+        )}
       </main>
       <Palette corpus={corpus} lang={lang} open={palette} setOpen={setPalette} />
       {current !== "graph" && (
-        <footer className="foot"><div className="foot__row">
-          <p>{lang === "ta" ? "தமிழ் உரை: மதுரைத் திட்டம் (Project Madurai). வரைபடப் பதிவுகள் வரைவு நிலையில் உள்ளன; அறிஞர் சரிபார்ப்பு நடைபெறவில்லை." : "Tamil text from Project Madurai. Graph records are drafts and haven't been checked by a scholar yet."} <a href="#/about">{lang === "ta" ? "மேலும்" : "More"}</a></p>
-          <p className="contact">{lang === "ta" ? "திருத்தங்களும் கருத்துகளும்:" : "Corrections and comments:"} <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
-        </div></footer>
+        <footer className="foot">
+          <div className="foot__row">
+            <p>
+              {lang === "ta"
+                ? "தமிழ் உரை: மதுரைத் திட்டம் (Project Madurai). வரைபடப் பதிவுகள் வரைவு நிலையில் உள்ளன; அறிஞர் சரிபார்ப்பு நடைபெறவில்லை."
+                : "Tamil text from Project Madurai. Graph records are drafts and haven't been checked by a scholar yet."}{" "}
+              <a href="#/about">{lang === "ta" ? "மேலும்" : "More"}</a>
+            </p>
+            <p className="contact">
+              {lang === "ta" ? "திருத்தங்களும் கருத்துகளும்:" : "Corrections and comments:"}{" "}
+              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            </p>
+          </div>
+        </footer>
       )}
     </AppContext.Provider>
   );

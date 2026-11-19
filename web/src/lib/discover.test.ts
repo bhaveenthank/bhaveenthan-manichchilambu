@@ -6,7 +6,17 @@ import { assemble } from "./data";
 import { GuardedGraph, limits, warrants } from "./discover";
 
 const read = (name: string) => JSON.parse(readFileSync(resolve(__dirname, "../../public/data", name), "utf8"));
-const corpus = assemble({ graph: read("graph.json"), records: read("records.json"), cantos: read("cantos.json"), echoes: read("echoes.json"), timelines: read("timelines.json"), gaps: read("gaps.json"), ties: read("bridges.json"), discoveries: read("discover.json"), lexicon: read("lexicon.json") });
+const corpus = assemble({
+  graph: read("graph.json"),
+  records: read("records.json"),
+  cantos: read("cantos.json"),
+  echoes: read("echoes.json"),
+  timelines: read("timelines.json"),
+  gaps: read("gaps.json"),
+  ties: read("bridges.json"),
+  discoveries: read("discover.json"),
+  lexicon: read("lexicon.json"),
+});
 const graph = new GuardedGraph(corpus);
 
 describe("guarded paths", () => {
@@ -20,10 +30,16 @@ describe("guarded paths", () => {
   it("marks a shared fruit as a shared kind, and warns", () => {
     const found = graph.search("cowherd_women", "hill_people_25")!;
     expect(warrants(found.steps)).toContain("kind");
-    expect(limits(corpus, found.steps).map((l) => l.en).join(" ")).toMatch(/moved between/);
+    expect(
+      limits(corpus, found.steps)
+        .map((l) => l.en)
+        .join(" "),
+    ).toMatch(/moved between/);
   });
   it("refuses that path once weak links are off", () => {
-    expect(graph.search("cowherd_women", "hill_people_25", { weak: false, places: false })?.steps.some((s) => s.via === "kind") ?? false).toBe(false);
+    expect(
+      graph.search("cowherd_women", "hill_people_25", { weak: false, places: false })?.steps.some((s) => s.via === "kind") ?? false,
+    ).toBe(false);
   });
   it("won't walk through what was only said unless asked", () => {
     const found = graph.search("goldsmith", "pandya_king");
@@ -34,7 +50,13 @@ describe("guarded paths", () => {
 describe("questions about things", () => {
   const type = (q: string) => ask(corpus, q).type;
   it("won't name a maker the text doesn't give", () => {
-    for (const q of ["Who made Kannagi's anklet?", "கண்ணகியின் சிலம்பைச் செய்தவர் யார்?", "kannagi silambu yaar senjathu", "Who made the Amudasurabhi?"]) expect(type(q), q).toBe("not_stated");
+    for (const q of [
+      "Who made Kannagi's anklet?",
+      "கண்ணகியின் சிலம்பைச் செய்தவர் யார்?",
+      "kannagi silambu yaar senjathu",
+      "Who made the Amudasurabhi?",
+    ])
+      expect(type(q), q).toBe("not_stated");
   });
   it("names the maker where the text does", () => {
     const a = ask(corpus, "Who made the debate hall?");

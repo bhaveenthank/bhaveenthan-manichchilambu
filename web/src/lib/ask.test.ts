@@ -7,7 +7,17 @@ import { assemble } from "./data";
 import type { Corpus } from "./types";
 
 const read = (name: string) => JSON.parse(readFileSync(resolve(__dirname, "../../public/data", name), "utf-8"));
-const corpus: Corpus = assemble({ graph: read("graph.json"), records: read("records.json"), cantos: read("cantos.json"), echoes: read("echoes.json"), timelines: read("timelines.json"), gaps: read("gaps.json"), ties: read("bridges.json"), discoveries: read("discover.json"), lexicon: read("lexicon.json") });
+const corpus: Corpus = assemble({
+  graph: read("graph.json"),
+  records: read("records.json"),
+  cantos: read("cantos.json"),
+  echoes: read("echoes.json"),
+  timelines: read("timelines.json"),
+  gaps: read("gaps.json"),
+  ties: read("bridges.json"),
+  discoveries: read("discover.json"),
+  lexicon: read("lexicon.json"),
+});
 
 // [question, type of answer, record that must be first or present, text that must be in the English headline]
 const CASES: [string, string, string, string?][] = [
@@ -100,7 +110,16 @@ describe("it refuses instead of guessing", () => {
 });
 
 describe("understanding names and language", () => {
-  it.each([["kannaki", "kannagi"], ["கண்ணகியின்", "kannagi"], ["கோவலனை", "kovalan"], ["manimegalai", "manimekalai"], ["பாத்திரத்தை", "amudasurabhi"], ["udhayakumaran", "udayakumaran"], ["senguttuvan", "cenkuttuvan"], ["mathari", "matari"]])("%s means %s", (word, id) => {
+  it.each([
+    ["kannaki", "kannagi"],
+    ["கண்ணகியின்", "kannagi"],
+    ["கோவலனை", "kovalan"],
+    ["manimegalai", "manimekalai"],
+    ["பாத்திரத்தை", "amudasurabhi"],
+    ["udhayakumaran", "udayakumaran"],
+    ["senguttuvan", "cenkuttuvan"],
+    ["mathari", "matari"],
+  ])("%s means %s", (word, id) => {
     expect(findEntities(corpus, word)).toContain(id);
   });
   it("keeps the girl and the goddess apart", () => {

@@ -1,7 +1,14 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import type { Corpus, Lang } from "./types";
 
-interface AppState { corpus: Corpus; lang: Lang; setLang: (l: Lang) => void; go: (path: string) => void; dark: boolean; toggleTheme: () => void }
+interface AppState {
+  corpus: Corpus;
+  lang: Lang;
+  setLang: (l: Lang) => void;
+  go: (path: string) => void;
+  dark: boolean;
+  toggleTheme: () => void;
+}
 export const AppContext = createContext<AppState | null>(null);
 export const useApp = () => useContext(AppContext)!;
 
@@ -13,7 +20,13 @@ export function useT() {
 
 export function useName() {
   const { corpus, lang } = useApp();
-  return useCallback((id: string) => { const n = corpus.nodeById.get(id); return n ? n[lang] : id.replace(/_/g, " "); }, [corpus, lang]);
+  return useCallback(
+    (id: string) => {
+      const n = corpus.nodeById.get(id);
+      return n ? n[lang] : id.replace(/_/g, " ");
+    },
+    [corpus, lang],
+  );
 }
 
 /** Hash routes, so links survive a refresh on GitHub Pages with no server rewriting. */
@@ -25,11 +38,16 @@ export function useRoute() {
   };
   const [route, setRoute] = useState(read);
   useEffect(() => {
-    const on = () => { setRoute(read()); window.scrollTo(0, 0); };
+    const on = () => {
+      setRoute(read());
+      window.scrollTo(0, 0);
+    };
     window.addEventListener("hashchange", on);
     return () => window.removeEventListener("hashchange", on);
   }, []);
   return route;
 }
 
-export const go = (path: string) => { window.location.hash = path; };
+export const go = (path: string) => {
+  window.location.hash = path;
+};

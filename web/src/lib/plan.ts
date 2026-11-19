@@ -5,14 +5,40 @@ import { detectLang, findEntities, type AskLang } from "./ask";
 import type { Corpus, GraphNode } from "./types";
 
 export type Intent =
-  | "who_is" | "fact" | "event" | "object_history" | "claim_check" | "viewpoint" | "causal"
-  | "cross_epic" | "provenance" | "thematic" | "comparative" | "locate" | "open";
+  | "who_is"
+  | "fact"
+  | "event"
+  | "object_history"
+  | "claim_check"
+  | "viewpoint"
+  | "causal"
+  | "cross_epic"
+  | "provenance"
+  | "thematic"
+  | "comparative"
+  | "locate"
+  | "open";
 
 /** Which kinds of evidence a question may rest on. Drafts and machine notes are never allowed to answer, only to point. */
-export interface SourcePolicy { records: boolean; drafts: "point_only" | "off"; notes: "point_only" | "off"; commentary: "attributed" | "off" }
+export interface SourcePolicy {
+  records: boolean;
+  drafts: "point_only" | "off";
+  notes: "point_only" | "off";
+  commentary: "attributed" | "off";
+}
 
-export interface Grounded { id: string; surface: string; cls: string; confidence: "high" | "low" }
-export interface Ambiguity { surface: string; options: string[]; resolvedTo?: string; why?: { en: string; ta: string } }
+export interface Grounded {
+  id: string;
+  surface: string;
+  cls: string;
+  confidence: "high" | "low";
+}
+export interface Ambiguity {
+  surface: string;
+  options: string[];
+  resolvedTo?: string;
+  why?: { en: string; ta: string };
+}
 
 export interface QueryPlan {
   question: string;
@@ -30,18 +56,32 @@ export interface QueryPlan {
 }
 
 const nfc = (s: string) => s.normalize("NFC");
-const clean = (s: string) => nfc(s).toLowerCase().replace(/[?!.,;:'"“”‘’()\-–—]/g, " ").replace(/\s+/g, " ").trim();
+const clean = (s: string) =>
+  nfc(s)
+    .toLowerCase()
+    .replace(/[?!.,;:'"“”‘’()\-–—]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 
 // Cue words for each kind of question, in English, Tamil and Thanglish. The first match in this order wins.
 const CUES: [Intent, RegExp][] = [
-  ["claim_check", /\b(really|actually|truly|did .* (really|actually)|is it true|was .* guilty|innocent|unmaiya|nijama|lie|lied|false|falsely)\b|உண்மையில்|உண்மையா|பொய்/],
+  [
+    "claim_check",
+    /\b(really|actually|truly|did .* (really|actually)|is it true|was .* guilty|innocent|unmaiya|nijama|lie|lied|false|falsely)\b|உண்மையில்|உண்மையா|பொய்/,
+  ],
   ["viewpoint", /\b(believe|believed|thought|think|suspect|suspected|convinced|nambi|nambina|ninaithaan|ninaicha)\b|நம்ப|எண்ணி|நினைத்/],
   ["causal", /\b(why|because|cause|caused|led to|reason|ethukku|yen|een)\b|ஏன்|காரணம்|எதனால்/],
   ["object_history", /\b(who (had|held|has|kept|took|carried)|passed|hands?|custody|where is the|kitta irundhuchu)\b|யாரிடம்|கையில்/],
   ["cross_epic", /\b(both epics|both poems|in both|between the (two )?epics|rendilum|irandilum)\b|இரு காப்பிய|இரண்டிலும்/],
   ["comparative", /\b(compare|comparison|difference|differ|similar|versus|vs)\b|ஒப்பிடு|வேறுபாடு/],
-  ["provenance", /\b(made|maker|built|crafted|grown|from where|come from|came from|origin|supplied|enga irundhu)\b|செய்தவர்|செய்யப்பட்ட|உருவாக்கிய|விளைந்|எங்கிருந்து/],
-  ["thematic", /\b(theme|themes|portray|portrayed|represent|represented|describe|described|depict|motif|compassion|renunciation|karma|justice|chastity)\b|அறம்|ஊழ்|கற்பு|துறவு/],
+  [
+    "provenance",
+    /\b(made|maker|built|crafted|grown|from where|come from|came from|origin|supplied|enga irundhu)\b|செய்தவர்|செய்யப்பட்ட|உருவாக்கிய|விளைந்|எங்கிருந்து/,
+  ],
+  [
+    "thematic",
+    /\b(theme|themes|portray|portrayed|represent|represented|describe|described|depict|motif|compassion|renunciation|karma|justice|chastity)\b|அறம்|ஊழ்|கற்பு|துறவு/,
+  ],
   ["locate", /\b(which line|which canto|where in the|find the line|verse where|occurrence|occurrences)\b|எந்த வரி|எந்தக் காதை/],
   // "Who killed...", "கொன்றது யார்": a doer asked about, so it's an event, not who someone is.
   ["event", /^who (?!is\b|was\b|are\b|were\b)[a-z]+\b|\S+(து|தான்|தாள்|னான்|னாள்|ந்தார்|த்தார்) யார்\??$/],
@@ -54,8 +94,12 @@ const EPIC_CUES: ["SIL" | "MAN", RegExp][] = [
   ["MAN", /\b(manimekalai epic|manimegalai epic|in manimekalai|in manimegalai)\b|மணிமேகலையில்|மணிமேகலைக் காப்பிய/],
 ];
 
-const STOP = new Set(("who whom whose what which where when why how is was are were did do does doing done a an the of to in on at by for from with and or about tell me us please it its his her their they he she this that there have has had can could would will be been so really actually " +
-  "yaar yar yaru yaaru enna en epdi eppadi ah da di la le ku kku oda nu kitta than thaan").split(" "));
+const STOP = new Set(
+  (
+    "who whom whose what which where when why how is was are were did do does doing done a an the of to in on at by for from with and or about tell me us please it its his her their they he she this that there have has had can could would will be been so really actually " +
+    "yaar yar yaru yaaru enna en epdi eppadi ah da di la le ku kku oda nu kitta than thaan"
+  ).split(" "),
+);
 
 function editDistance(a: string, b: string, limit: number) {
   if (Math.abs(a.length - b.length) > limit) return limit + 1;
@@ -74,7 +118,9 @@ function editDistance(a: string, b: string, limit: number) {
  * Otherwise both are offered rather than one picked silently.
  */
 export function findAmbiguities(corpus: Corpus, question: string, found: string[], epic: "SIL" | "MAN" | null): Ambiguity[] {
-  const words = clean(question).split(" ").filter((w) => w.length >= 4 && !STOP.has(w));
+  const words = clean(question)
+    .split(" ")
+    .filter((w) => w.length >= 4 && !STOP.has(w));
   const out: Ambiguity[] = [];
   const others = found.map((id) => corpus.nodeById.get(id)).filter(Boolean) as GraphNode[];
   for (const w of words) {
@@ -87,7 +133,14 @@ export function findAmbiguities(corpus: Corpus, question: string, found: string[
       for (const form of [n.en.replace(/^the /i, ""), n.ta, ...n.also].map(clean).filter(Boolean)) {
         const parts = form.split(" ");
         if (parts[1] === "s") continue;
-        const st = form === w ? 3 : parts[0] === w && parts.length > 1 ? 2 : parts.length === 1 && w.length >= 6 && editDistance(form, w, 1) <= 1 ? 1 : 0;
+        const st =
+          form === w
+            ? 3
+            : parts[0] === w && parts.length > 1
+              ? 2
+              : parts.length === 1 && w.length >= 6 && editDistance(form, w, 1) <= 1
+                ? 1
+                : 0;
         if (st > (strength.get(n.id) ?? 0)) strength.set(n.id, st);
       }
     }
@@ -97,9 +150,21 @@ export function findAmbiguities(corpus: Corpus, question: string, found: string[
     // One whole-name match beats namesakes found by a first word or a typo: Kovalan is Kovalan.
     if (best === 3 && [...strength.values()].filter((v) => v === 3).length === 1) continue;
     const byEpic = epic ? options.filter((id) => corpus.nodeById.get(id)!.epics.includes(epic)) : options;
-    const byCompany = others.length ? byEpic.filter((id) => others.some((o) => o.id !== id && !options.includes(o.id) && o.epics.some((e) => corpus.nodeById.get(id)!.epics.includes(e)))) : [];
+    const byCompany = others.length
+      ? byEpic.filter((id) =>
+          others.some((o) => o.id !== id && !options.includes(o.id) && o.epics.some((e) => corpus.nodeById.get(id)!.epics.includes(e))),
+        )
+      : [];
     const left = byCompany.length === 1 ? byCompany : byEpic;
-    if (left.length === 1) out.push({ surface: w, options, resolvedTo: left[0], why: epic ? { en: "settled by the epic named in the question", ta: "கேள்வியில் உள்ள காப்பியத்தால் தீர்ந்தது" } : { en: "settled by who else the question names", ta: "கேள்வியில் உள்ள மற்றவரால் தீர்ந்தது" } });
+    if (left.length === 1)
+      out.push({
+        surface: w,
+        options,
+        resolvedTo: left[0],
+        why: epic
+          ? { en: "settled by the epic named in the question", ta: "கேள்வியில் உள்ள காப்பியத்தால் தீர்ந்தது" }
+          : { en: "settled by who else the question names", ta: "கேள்வியில் உள்ள மற்றவரால் தீர்ந்தது" },
+      });
     else out.push({ surface: w, options });
   }
   return out;
@@ -113,14 +178,31 @@ export function planQuery(corpus: Corpus, question: string): QueryPlan {
   const ambiguous = findAmbiguities(corpus, question, found, epic);
   // An unresolved ambiguity means the matcher's pick is only a guess, so it's marked low.
   const unsure = new Set(ambiguous.filter((a) => !a.resolvedTo).flatMap((a) => a.options));
-  const entities: Grounded[] = found.map((id) => ({ id, surface: corpus.nodeById.get(id)?.en ?? id, cls: corpus.nodeById.get(id)?.cls ?? "Other", confidence: unsure.has(id) ? "low" : "high" }));
-  for (const a of ambiguous) if (a.resolvedTo) for (let i = entities.length - 1; i >= 0; i--) if (a.options.includes(entities[i].id) && entities[i].id !== a.resolvedTo) entities.splice(i, 1);
-  for (const a of ambiguous) if (a.resolvedTo && !entities.some((e) => e.id === a.resolvedTo)) entities.push({ id: a.resolvedTo, surface: a.surface, cls: corpus.nodeById.get(a.resolvedTo)?.cls ?? "Other", confidence: "high" });
+  const entities: Grounded[] = found.map((id) => ({
+    id,
+    surface: corpus.nodeById.get(id)?.en ?? id,
+    cls: corpus.nodeById.get(id)?.cls ?? "Other",
+    confidence: unsure.has(id) ? "low" : "high",
+  }));
+  for (const a of ambiguous)
+    if (a.resolvedTo)
+      for (let i = entities.length - 1; i >= 0; i--)
+        if (a.options.includes(entities[i].id) && entities[i].id !== a.resolvedTo) entities.splice(i, 1);
+  for (const a of ambiguous)
+    if (a.resolvedTo && !entities.some((e) => e.id === a.resolvedTo))
+      entities.push({ id: a.resolvedTo, surface: a.surface, cls: corpus.nodeById.get(a.resolvedTo)?.cls ?? "Other", confidence: "high" });
   const intent: Intent = CUES.find(([, re]) => re.test(q))?.[0] ?? (entities.length && q.split(" ").length <= 3 ? "who_is" : "open");
-  const viewpoint = intent === "viewpoint" ? entities.find((e) => e.cls === "Person" || e.cls === "Group")?.id ?? null : null;
+  const viewpoint = intent === "viewpoint" ? (entities.find((e) => e.cls === "Person" || e.cls === "Group")?.id ?? null) : null;
   const terms = q.split(" ").filter((w) => w.length >= 3 && !STOP.has(w));
   return {
-    question, lang, intent, entities, ambiguous, viewpoint, epic, terms,
+    question,
+    lang,
+    intent,
+    entities,
+    ambiguous,
+    viewpoint,
+    epic,
+    terms,
     compareModes: intent === "claim_check" || intent === "viewpoint",
     policy: { records: true, drafts: "point_only", notes: "point_only", commentary: "attributed" },
   };

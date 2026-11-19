@@ -2,7 +2,8 @@
 // can change the world, and everything else stays something somebody said.
 import type { Corpus, GraphEdge, LedgerRecord, RoleValue } from "./types";
 
-export const roleValues = (v: RoleValue | undefined): string[] => (v === undefined ? [] : typeof v === "string" ? [v] : Array.isArray(v) ? v : v.one_of);
+export const roleValues = (v: RoleValue | undefined): string[] =>
+  v === undefined ? [] : typeof v === "string" ? [v] : Array.isArray(v) ? v : v.one_of;
 export const happened = (r: LedgerRecord) => r.mood === "asserted";
 
 export function recordMentions(r: LedgerRecord, id: string) {
@@ -19,7 +20,8 @@ export function holdersAt(corpus: Corpus, obj: string, t: number): string[] {
       if (!m || m[2] !== "holds") continue;
       const [who, what] = m[3].split(",").map((x) => x.trim());
       if (what !== obj) continue;
-      if (m[1] === "+") now.add(who); else now.delete(who);
+      if (m[1] === "+") now.add(who);
+      else now.delete(who);
     }
   }
   return [...now];
@@ -37,7 +39,13 @@ export function beliefAt(corpus: Corpus, holder: string, content: string, t: num
 export function acceptedClaims(corpus: Corpus, viewer: string, t: number): Set<string> {
   const out = new Set<string>();
   for (const r of corpus.records) {
-    if (r.kind === "believe" && r.content && roleValues(r.roles.holder).includes(viewer) && beliefAt(corpus, viewer, r.content, t) === "accept") out.add(r.content);
+    if (
+      r.kind === "believe" &&
+      r.content &&
+      roleValues(r.roles.holder).includes(viewer) &&
+      beliefAt(corpus, viewer, r.content, t) === "accept"
+    )
+      out.add(r.content);
   }
   return out;
 }
@@ -60,7 +68,20 @@ export interface GraphFilter {
 export const CLASSES = ["Person", "Deity", "Place", "Object", "Group", "Food", "Material"];
 
 export function defaultFilter(): GraphFilter {
-  return { epic: "both", reading: "happened", episode: "all", maxT: Infinity, viewer: "", classes: new Set(CLASSES), focus: "", hops: 2, bridgesOnly: false, suggestions: false, earlierBirths: true, layer: "all" };
+  return {
+    epic: "both",
+    reading: "happened",
+    episode: "all",
+    maxT: Infinity,
+    viewer: "",
+    classes: new Set(CLASSES),
+    focus: "",
+    hops: 2,
+    bridgesOnly: false,
+    suggestions: false,
+    earlierBirths: true,
+    layer: "all",
+  };
 }
 
 export function edgeVisible(corpus: Corpus, e: GraphEdge, f: GraphFilter, accepted: Set<string>) {
@@ -74,7 +95,11 @@ export function edgeVisible(corpus: Corpus, e: GraphEdge, f: GraphFilter, accept
   return true;
 }
 
-export interface Subgraph { nodes: string[]; edges: GraphEdge[]; suggested: { s: string; t: string; n: number }[] }
+export interface Subgraph {
+  nodes: string[];
+  edges: GraphEdge[];
+  suggested: { s: string; t: string; n: number }[];
+}
 
 export function subgraph(corpus: Corpus, f: GraphFilter): Subgraph {
   const accepted = f.viewer ? acceptedClaims(corpus, f.viewer, f.maxT) : new Set<string>();
@@ -100,9 +125,17 @@ export function subgraph(corpus: Corpus, f: GraphFilter): Subgraph {
     edges = edges.filter((e) => seen.has(e.s) && seen.has(e.t));
   }
   const nodes = new Set<string>(f.focus ? [f.focus] : []);
-  edges.forEach((e) => { nodes.add(e.s); nodes.add(e.t); });
-  const suggested = f.suggestions ? corpus.graph.suggested.filter((s) => kept(s.s) && kept(s.t) && (!f.focus || (nodes.has(s.s) && nodes.has(s.t)))) : [];
-  suggested.forEach((s) => { nodes.add(s.s); nodes.add(s.t); });
+  edges.forEach((e) => {
+    nodes.add(e.s);
+    nodes.add(e.t);
+  });
+  const suggested = f.suggestions
+    ? corpus.graph.suggested.filter((s) => kept(s.s) && kept(s.t) && (!f.focus || (nodes.has(s.s) && nodes.has(s.t))))
+    : [];
+  suggested.forEach((s) => {
+    nodes.add(s.s);
+    nodes.add(s.t);
+  });
   return { nodes: [...nodes], edges, suggested };
 }
 
@@ -110,7 +143,10 @@ export function recordsToSubgraph(corpus: Corpus, ids: string[], extraNodes: str
   const want = new Set(ids);
   const edges = corpus.graph.edges.filter((e) => want.has(e.rec));
   const nodes = new Set(extraNodes);
-  edges.forEach((e) => { nodes.add(e.s); nodes.add(e.t); });
+  edges.forEach((e) => {
+    nodes.add(e.s);
+    nodes.add(e.t);
+  });
   return { nodes: [...nodes], edges, suggested: [] };
 }
 
@@ -130,21 +166,36 @@ export function findPath(corpus: Corpus, from: string, to: string, onlyHappened 
     if (cur === to) {
       const out: GraphEdge[] = [];
       let at = to;
-      while (at !== from) { const p = prev.get(at)!; out.unshift(p.e); at = p.from; }
+      while (at !== from) {
+        const p = prev.get(at)!;
+        out.unshift(p.e);
+        at = p.from;
+      }
       return out;
     }
     for (const { to: nxt, e } of adj.get(cur) ?? []) {
-      if (!seen.has(nxt)) { seen.add(nxt); prev.set(nxt, { from: cur, e }); queue.push(nxt); }
+      if (!seen.has(nxt)) {
+        seen.add(nxt);
+        prev.set(nxt, { from: cur, e });
+        queue.push(nxt);
+      }
     }
   }
   return null;
 }
 
 export const MOOD_LABEL: Record<string, { en: string; ta: string }> = {
-  asserted: { en: "told as fact", ta: "நிகழ்ந்ததாக" }, claimed: { en: "only claimed", ta: "கூற்று மட்டுமே" },
-  thought: { en: "a thought", ta: "மனத்தில் எண்ணியது" }, command: { en: "an order or request", ta: "ஆணை / வேண்டுகோள்" },
-  conditional: { en: "conditional", ta: "நிபந்தனைக்கு உட்பட்டது" }, intended: { en: "a plan", ta: "திட்டம்" },
-  predicted: { en: "foretold", ta: "முன்னுரைக்கப்பட்டது" }, wish: { en: "a wish or curse", ta: "விருப்பம் / சாபம்" },
-  metaphor: { en: "a figure of speech", ta: "உருவகம்" }, address: { en: "a way of addressing", ta: "விளிப்பு" },
-  dreamed: { en: "in a dream", ta: "கனவில்" }, question: { en: "asked, not stated", ta: "கேள்வி மட்டுமே" }, negated: { en: "denied", ta: "மறுக்கப்பட்டது" },
+  asserted: { en: "told as fact", ta: "நிகழ்ந்ததாக" },
+  claimed: { en: "only claimed", ta: "கூற்று மட்டுமே" },
+  thought: { en: "a thought", ta: "மனத்தில் எண்ணியது" },
+  command: { en: "an order or request", ta: "ஆணை / வேண்டுகோள்" },
+  conditional: { en: "conditional", ta: "நிபந்தனைக்கு உட்பட்டது" },
+  intended: { en: "a plan", ta: "திட்டம்" },
+  predicted: { en: "foretold", ta: "முன்னுரைக்கப்பட்டது" },
+  wish: { en: "a wish or curse", ta: "விருப்பம் / சாபம்" },
+  metaphor: { en: "a figure of speech", ta: "உருவகம்" },
+  address: { en: "a way of addressing", ta: "விளிப்பு" },
+  dreamed: { en: "in a dream", ta: "கனவில்" },
+  question: { en: "asked, not stated", ta: "கேள்வி மட்டுமே" },
+  negated: { en: "denied", ta: "மறுக்கப்பட்டது" },
 };

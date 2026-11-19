@@ -11,8 +11,14 @@ export { MoodTag };
 export function Voice({ record }: { record: LedgerRecord }) {
   const { corpus, lang } = useApp();
   const t = useT();
-  const steps = record.voice.map((v) => (v === "poet" ? t("the poet", "புலவர்") : corpus.nodeById.get(v)?.[lang] ?? v.replace(/_/g, " ")));
-  return <span className="voice" title={t("Who tells us this, outermost first", "யார் வழியாக இது வருகிறது")}>{steps.join(" → ")}</span>;
+  const steps = record.voice.map((v) =>
+    v === "poet" ? t("the poet", "புலவர்") : (corpus.nodeById.get(v)?.[lang] ?? v.replace(/_/g, " ")),
+  );
+  return (
+    <span className="voice" title={t("Who tells us this, outermost first", "யார் வழியாக இது வருகிறது")}>
+      {steps.join(" → ")}
+    </span>
+  );
 }
 
 export function VerseLines({ lines }: { lines: LedgerRecord["lines"] }) {
@@ -20,7 +26,22 @@ export function VerseLines({ lines }: { lines: LedgerRecord["lines"] }) {
   return (
     <blockquote className="verse" lang="ta">
       {lines.map((l) => (
-        <a key={l.id} className="verse__line" href={`#/songs/${l.id.slice(0, 6)}?line=${l.id}`} onClick={inspect ? (e) => { e.preventDefault(); inspect(l.id); } : undefined}><span className="verse__id">{l.id}</span><span className="verse__text">{l.text}</span></a>
+        <a
+          key={l.id}
+          className="verse__line"
+          href={`#/songs/${l.id.slice(0, 6)}?line=${l.id}`}
+          onClick={
+            inspect
+              ? (e) => {
+                  e.preventDefault();
+                  inspect(l.id);
+                }
+              : undefined
+          }
+        >
+          <span className="verse__id">{l.id}</span>
+          <span className="verse__text">{l.text}</span>
+        </a>
       ))}
     </blockquote>
   );
@@ -30,7 +51,13 @@ export function VerseLines({ lines }: { lines: LedgerRecord["lines"] }) {
 export function ReadLink({ line }: { line: string }) {
   const { lang } = useApp();
   const t = useT();
-  return <a className="read-link" href={`#/songs/${line.slice(0, 6)}?line=${line}`}><BookOpen size={15} aria-hidden="true" />{t(`Read in ${cantoName(line, "en")}`, `${cantoName(line, lang)} இல் படிக்க`)}<ArrowRight size={15} aria-hidden="true" /></a>;
+  return (
+    <a className="read-link" href={`#/songs/${line.slice(0, 6)}?line=${line}`}>
+      <BookOpen size={15} aria-hidden="true" />
+      {t(`Read in ${cantoName(line, "en")}`, `${cantoName(line, lang)} இல் படிக்க`)}
+      <ArrowRight size={15} aria-hidden="true" />
+    </a>
+  );
 }
 
 export function RecordCard({ record, compact }: { record: LedgerRecord; compact?: boolean }) {
@@ -41,17 +68,59 @@ export function RecordCard({ record, compact }: { record: LedgerRecord; compact?
   const caveat = record.unresolved ?? record.inferred;
   return (
     <article className="record">
-      <div className="record__tags"><MoodTag mood={record.mood} /><EpicMark epic={record.epic} /><StatusBadge review={record.review} />{record.birth !== "main" && <span className="tag">{t("earlier birth", "முற்பிறப்பு")}</span>}</div>
-      <p className="record__text" lang={lang}>{main}</p>
-      {!compact && <p className="record__other" lang={lang === "ta" ? "en" : "ta"}>{other}</p>}
-      <p className="record__meta"><Voice record={record} /></p>
+      <div className="record__tags">
+        <MoodTag mood={record.mood} />
+        <EpicMark epic={record.epic} />
+        <StatusBadge review={record.review} />
+        {record.birth !== "main" && <span className="tag">{t("earlier birth", "முற்பிறப்பு")}</span>}
+      </div>
+      <p className="record__text" lang={lang}>
+        {main}
+      </p>
+      {!compact && (
+        <p className="record__other" lang={lang === "ta" ? "en" : "ta"}>
+          {other}
+        </p>
+      )}
+      <p className="record__meta">
+        <Voice record={record} />
+      </p>
       <VerseLines lines={record.lines} />
-      {caveat && <p className="record__caveat"><CautionIcon size={14} aria-hidden="true" />{caveat}</p>}
-      {record.review?.status === "disputed" && record.review.note && <p className="record__review"><CautionIcon size={14} aria-hidden="true" /><span>{t("Reviewer's note: ", "மதிப்பாய்வாளர் குறிப்பு: ")}{record.review.note}</span></p>}
+      {caveat && (
+        <p className="record__caveat">
+          <CautionIcon size={14} aria-hidden="true" />
+          {caveat}
+        </p>
+      )}
+      {record.review?.status === "disputed" && record.review.note && (
+        <p className="record__review">
+          <CautionIcon size={14} aria-hidden="true" />
+          <span>
+            {t("Reviewer's note: ", "மதிப்பாய்வாளர் குறிப்பு: ")}
+            {record.review.note}
+          </span>
+        </p>
+      )}
       <div className="record__foot">
-        <a className="record__id" href={`#/record/${record.id}`} title={t("A link to this record, and how to cite it", "இப்பதிவுக்கான இணைப்பும் மேற்கோள் முறையும்")}><Link2 size={13} aria-hidden="true" />{t(`record ${record.id}`, `பதிவு ${record.id}`)}</a>
+        <a
+          className="record__id"
+          href={`#/record/${record.id}`}
+          title={t("A link to this record, and how to cite it", "இப்பதிவுக்கான இணைப்பும் மேற்கோள் முறையும்")}
+        >
+          <Link2 size={13} aria-hidden="true" />
+          {t(`record ${record.id}`, `பதிவு ${record.id}`)}
+        </a>
         {record.lines.length > 0 && <ReadLink line={record.lines[0].id} />}
-        <a className="flag-link" href={correctionLink(`record ${record.id}`, record.lines.map((l) => l.id))}><Flag size={14} aria-hidden="true" />{t("Suggest a correction", "திருத்தம் பரிந்துரை")}</a>
+        <a
+          className="flag-link"
+          href={correctionLink(
+            `record ${record.id}`,
+            record.lines.map((l) => l.id),
+          )}
+        >
+          <Flag size={14} aria-hidden="true" />
+          {t("Suggest a correction", "திருத்தம் பரிந்துரை")}
+        </a>
       </div>
     </article>
   );
@@ -59,7 +128,16 @@ export function RecordCard({ record, compact }: { record: LedgerRecord; compact?
 
 export function RecordList({ ids, compact }: { ids: string[]; compact?: boolean }) {
   const { corpus } = useApp();
-  return <div className="record-list">{ids.map((id) => corpus.byId.get(id)).filter(Boolean).map((r) => <RecordCard key={r!.id} record={r!} compact={compact} />)}</div>;
+  return (
+    <div className="record-list">
+      {ids
+        .map((id) => corpus.byId.get(id))
+        .filter(Boolean)
+        .map((r) => (
+          <RecordCard key={r!.id} record={r!} compact={compact} />
+        ))}
+    </div>
+  );
 }
 
 export const openEntity = (id: string) => go(`/graph?focus=${id}`);

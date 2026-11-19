@@ -13,7 +13,10 @@ const read = (name: string) => JSON.parse(readFileSync(resolve(DIR, name), "utf-
 function check<T extends z.ZodTypeAny>(schema: T, name: string): z.infer<T> {
   const got = schema.safeParse(read(name));
   if (!got.success) {
-    const first = got.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; ");
+    const first = got.error.issues
+      .slice(0, 5)
+      .map((i) => `${i.path.join(".")}: ${i.message}`)
+      .join("; ");
     throw new Error(`${name} doesn't match its schema: ${first}`);
   }
   return got.data;
