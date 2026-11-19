@@ -5,5 +5,6 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   base: "./",
   plugins: [react()],
-  test: { environment: "node" },
+  // e2e/ is Playwright's, run with `npx playwright test`.
+  test: { environment: "node", include: ["src/**/*.test.ts"] },
 });

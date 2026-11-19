@@ -13,3 +13,7 @@ data/llm_cache/
 # Local only: the design package and the backup made before the redesign
 design_handoff_manichchilambu_redesign/
 web_before_redesign/
+
+# Playwright output
+web/test-results/
+web/playwright-report/
