@@ -4,7 +4,13 @@ A knowledge graph of Silappatikāram and Maṇimēkalai that keeps track of who 
 
 The name means "the gem anklet". Kannagi's case is settled by what's inside her anklet: gems, not the queen's pearls (மணியுடை அரியே, SIL-20-0078). மணி also opens the name of the second epic, Maṇimēkalai. In code and file names it's `manichchilambu`. The folder stays `Twin_Epics`.
 
-**Status:** foundations and a web app, built and tested on a hand-written pilot of 163 records from both epics, plus 196 more drafted across food, crafts, cameos and every remaining canto ([docs/13](docs/13_material_and_discovery.md), [docs/14](docs/14_full_epics.md)). Every canto now has records, though unevenly. Nothing has been reviewed by a scholar, and the LLM pilot has finished with mixed results ([docs/14](docs/14_full_epics.md)). What's needed from you: [docs/07_what_you_need_to_do.md](docs/07_what_you_need_to_do.md). To publish: [docs/12_publishing.md](docs/12_publishing.md).
+**Live site:** <https://bhaveenthank.github.io/bhaveenthan-manichchilambu/>
+
+**Status:**
+- **Records:** 359 hand records cite 7% of the 10,209 lines, and every canto has some.
+- **Machine reading:** every line has a machine note. 7,177 machine drafts cover 91% of the lines, kept apart from the graph until reviewed.
+- **Ask page:** answers in Tamil, English and Thanglish, by rules plus search, and keeps claims apart from facts ([docs/18](docs/18_question_answering.md)).
+- **Review:** nothing has been checked by a scholar yet. What's left is in [docs/19](docs/19_steps_to_finish.md).
 
 ## Short version of what's been found
 
@@ -28,6 +34,16 @@ The name means "the gem anklet". Kannagi's case is settled by what's inside her 
 10. [Status against your plan](docs/10_status.md)
 11. [The web app](docs/11_web_app.md)
 12. [Putting it on GitHub and hosting it](docs/12_publishing.md)
+13. [Material culture and the discovery engine](docs/13_material_and_discovery.md)
+14. [Records for the full epics](docs/14_full_epics.md)
+15. [The every-line pass](docs/15_every_line.md)
+16. [The brief for the interface redesign](docs/16_ui_redesign_prompt.md)
+17. [The interface redesign](docs/17_ui_redesign.md)
+18. [Answering questions: the hybrid layer](docs/18_question_answering.md)
+19. [Steps to finish](docs/19_steps_to_finish.md)
+20. [Two decisions for the reviewer: licence and romanisation](docs/20_decisions_for_review.md)
+
+There's also a 21-page overview with examples and screenshots: [docs/Manichchilambu_project_report.pdf](docs/Manichchilambu_project_report.pdf).
 
 ## What's where
 
@@ -40,7 +56,8 @@ The name means "the gem anklet". Kannagi's case is settled by what's inside her 
 | `data/candidates/` | Tier output: the verb-stem inventory, and Tier 2 and 3 once they run |
 | `data/llm_cache/` | Every model prompt and answer, once it runs |
 | `data/graph/` | Generated for the web app: nodes, edges, timelines, RDF |
-| `annotation/` | The sheet for the scholar |
+| `annotation/` | Review sheets: the ledger for the scholar, and the machine drafts one canto at a time |
+| `evaluation/` | The fair test: a question form for outside readers, a runner and a scorer |
 | `ontology/` | Core, 20 modules, SHACL shapes |
 | `web/` | The site: React and Sigma.js, static, no server |
 | `src/manichchilambu/` | The method: ledger, composer, validator, standards baseline, paths, echoes, scorer |
@@ -50,6 +67,34 @@ The name means "the gem anklet". Kannagi's case is settled by what's inside her 
 | `reports/` | Experiment outputs |
 
 ## Running it
+
+Every command runs from the project folder.
+
+### The web app
+
+Needs Node 20 or later. The site is static and fully offline: fonts and icons come from npm, with no CDN.
+
+```bash
+cd web && npm install && npm run dev
+```
+
+Then open the address it prints, usually <http://localhost:5173>. Other commands, all from `web/`:
+
+- `npm test`: the rule and question-answering tests, which also write the scores to `reports/`
+- `npm run build`: the static site in `web/dist`, the folder GitHub Pages serves
+- `npx tsc --noEmit`: strict type-checking
+- `npm run lint` and `npm run format:check`: oxlint and Prettier
+- `npx playwright test`: opens every page in a browser and clicks a graph filter. Locally, point it at a Chromium-based browser you have, for example `PW_BROWSER="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser" npx playwright test`
+
+For a scholar's review of the hand records: `.venv/bin/python scripts/make_review_sheet.py` writes `annotation/review_ledger.csv`, and `.venv/bin/python scripts/ingest_reviews.py --by "Name"` reads it back. Each record then shows as reviewed or disputed on the site.
+
+The site reads the JSON in `web/public/data/`. After changing anything under `data/`, rebuild it:
+
+```bash
+.venv/bin/python scripts/build_web_data.py
+```
+
+### The pipeline
 
 Setup, if `.venv` is ever missing:
 

@@ -3,13 +3,13 @@
 Everything's in `web/`. It's a static site, no server and no API keys, so it can live on GitHub Pages for free. To run it on your machine:
 
 ```bash
-cd ~/Documents/Twin_Epics/web && npm install && npm run dev
+cd web && npm install && npm run dev
 ```
 
 If the graph data changes, regenerate what the site reads:
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/build_web_data.py
+.venv/bin/python scripts/build_web_data.py
 ```
 
 ## What's in it

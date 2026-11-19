@@ -65,7 +65,7 @@ The pilot says the model is promising on famous cantos. It doesn't say so for th
 **1. Run the stage test. Done.** It covers five less famous cantos, with my new hand records as the answer key, which the model's examples never draw on. It's 102 calls, about 2.5 hours and about one limit window.
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/tier2_llm.py --cantos SIL-10,SIL-14,MAN-13,MAN-23,MAN-28 --modes few,notext --samples 1 --out tier2_stage 2>&1 | tee reports/tier2_stage.log
+.venv/bin/python scripts/tier2_llm.py --cantos SIL-10,SIL-14,MAN-13,MAN-23,MAN-28 --modes few,notext --samples 1 --out tier2_stage 2>&1 | tee reports/tier2_stage.log
 ```
 
 **2. Score it. Done: it's a GO.** The test was frozen before any output existed (`experiments/run_tier2_stage.py`, hash in `reports/tier2_stage_freeze.sha256`, checked unchanged). It needed all four of these:
@@ -92,7 +92,7 @@ I also read 30 random `few` proposals against the verse (`annotation/tier2_stage
 **3. Run everything:**
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/tier2_llm.py --cantos ALL --modes few --samples 1 --out tier2_full 2>&1 | tee reports/tier2_full.log
+.venv/bin/python scripts/tier2_llm.py --cantos ALL --modes few --samples 1 --out tier2_full 2>&1 | tee reports/tier2_full.log
 ```
 
 That's 525 calls. I checked the cache and 74 are already saved, so 451 are left. A `few` call took about 52 seconds in the stage test, so that's about 6.5 hours of running. The pilot reached about 170 calls before a limit, so expect at least 3 limit windows, likely 1 to 3 days. It resumes the same way if it stops.
@@ -115,7 +115,7 @@ The full design of 4 modes and 3 samples would be 6,300 calls, about two weeks o
 **4. Build the site data.** Done:
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/build_web_data.py
+.venv/bin/python scripts/build_web_data.py
 ```
 
 Each song page then gets a "Machine-read drafts" panel. They stay out of the graph, out of the question box and out of every score, because nothing has checked them except that the quoted words exist. I tried the panel on 205 pilot answers, then removed that test data.

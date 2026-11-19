@@ -7,13 +7,13 @@ In order of how much each one blocks.
 **1. Run the LLM pilot.** It can't start from inside this app, even from the Terminal panel, the login only works in the window where your test printed ok. In that window:
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/tier2_llm.py 2>&1 | tee reports/tier2_pilot.log
+.venv/bin/python scripts/tier2_llm.py 2>&1 | tee reports/tier2_pilot.log
 ```
 
 That's 276 calls on three cantos, now with a no-text control added. It can stop at a Pro usage limit, and that's fine: answers are saved, so run it again later and it carries on. To check it's really working, this number should climb in a second window:
 
 ```bash
-ls ~/Documents/Twin_Epics/data/llm_cache | wc -l
+ls data/llm_cache | wc -l
 ```
 
 When it finishes, tell me and I'll score it. The scoring rules are already fixed and hashed, so they can't be tuned to the results. Going over all 64 cantos would be 6,300 calls, which probably won't fit on Pro, so decide after the pilot.

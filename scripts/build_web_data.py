@@ -77,13 +77,24 @@ def canto_key(line_id):
     return line_id[:6]
 
 
+def reviews():
+    """Who has checked which record, from data/seeds/reviews.csv (scripts/ingest_reviews.py writes it)."""
+    path = SEEDS / "reviews.csv"
+    if not path.exists():
+        return {}
+    return {row["id"]: {k: row[k] for k in ("status", "by", "on", "note") if row.get(k)} for row in csv.DictReader(open(path, encoding="utf-8"))}
+
+
 def build_records():
     out = []
+    checked = reviews()
     for r in RECORDS:
         out.append({
             "id": r["id"], "ep": r["ep"], "kind": r["kind"], "en": GLOSS[r["id"]][0], "ta": GLOSS[r["id"]][1], "roles": r["roles"],
             "voice": r["voice"], "mood": r["mood"], "t": r["t"], "birth": r["life"], "epic": r["lines"][0][:3], "layer": layer_of(r),
             "lines": [{"id": l, "text": TEXT[l]} for l in r["lines"]], "quote": r["check"],
+            # Every hand record says whether a scholar has checked it. Until then it's a draft, and the site says so.
+            "review": checked.get(r["id"], {"status": "draft"}),
             **{k: r[k] for k in ("does", "because", "carries", "content", "stance", "contradicts", "conflicts", "retells", "condition", "inferred", "unresolved", "note", "purpose", "after_death") if k in r},
         })
     return out

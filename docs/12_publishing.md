@@ -23,11 +23,7 @@ gh repo create bhaveenthank/bhaveenthan-manichchilambu --public --description "M
 
 ## 2. Commit and push to main
 
-Do this between runs of the line pass, not while it's writing. The pass's half-finished file (`*.partial`) is ignored anyway.
-
-```bash
-cd ~/Documents/Twin_Epics
-```
+Do this between runs of the line pass, not while it's writing. The pass's half-finished file (`*.partial`) is ignored anyway. Every command in this guide runs from the project folder (the one holding this `docs/` folder).
 
 Your name and email, as they'll show on every commit. Change them if you want something else:
 
@@ -90,7 +86,7 @@ gh workflow disable pages.yml --repo bhaveenthank/bhaveenthan-manichchilambu
 ## 4. Updating later
 
 ```bash
-cd ~/Documents/Twin_Epics && ./run_all.sh > reports/last_run.log 2>&1 && git add . && git commit -m "Update the graph" && git push
+./run_all.sh > reports/last_run.log 2>&1 && git add . && git commit -m "Update the graph" && git push
 ```
 
 ## If something goes wrong

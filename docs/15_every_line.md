@@ -73,19 +73,19 @@ Three ideas weren't, and the every-line pass adds them:
 **1. The 924 unread lines** get notes and records. That's 131 calls, about two hours, likely one usage window:
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/tier2_lines.py --scope unread 2>&1 | tee reports/tier2_lines.log
+.venv/bin/python scripts/tier2_lines.py --scope unread 2>&1 | tee reports/tier2_lines.log
 ```
 
 **2. Every line in both epics** gets notes only. That's 493 calls, likely 2 to 4 days at your limit:
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/tier2_lines.py --scope all 2>&1 | tee reports/tier2_lines_all.log
+.venv/bin/python scripts/tier2_lines.py --scope all 2>&1 | tee reports/tier2_lines_all.log
 ```
 
 Both resume the same way the other runs do. When either prints `done`, tell me, and run:
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/build_line_index.py
+.venv/bin/python scripts/build_line_index.py
 ```
 
 **This pass hasn't been tested on gold like the drafts were.** The line notes are a new kind of output, and no answer key exists for them yet. Before trusting them, read a random 50 against the verse. A second model family checking them would be better.

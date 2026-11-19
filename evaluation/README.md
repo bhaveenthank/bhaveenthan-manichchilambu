@@ -13,7 +13,7 @@ Ask them not to look at the website first.
 Put every returned file in this folder, then run:
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python - <<'PY'
+.venv/bin/python - <<'PY'
 import csv, glob
 rows = []
 for p in sorted(glob.glob("evaluation/questions_*.csv")):
@@ -28,7 +28,7 @@ PY
 ## 3. Answer them
 
 ```bash
-cd ~/Documents/Twin_Epics/web && npx vitest run src/lib/eval_external.test.ts
+cd web && npx vitest run src/lib/eval_external.test.ts
 ```
 
 This runs the Ask page's own code on every question and writes:
@@ -49,7 +49,7 @@ Send `answers_to_mark.csv` back to each person, or mark it together. For each ro
 ## 5. Score
 
 ```bash
-cd ~/Documents/Twin_Epics && .venv/bin/python scripts/score_external.py
+.venv/bin/python scripts/score_external.py
 ```
 
 The score is written to `reports/external_eval.json`, overall and broken down by asker, by kind of question, and by whether the page found an answer.

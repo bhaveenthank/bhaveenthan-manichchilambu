@@ -414,7 +414,7 @@ wrote annotation/review_ledger.csv
 > vitest run
 
 
- RUN  v4.1.12 /Users/bhaveenthankajanikanth/Documents/Twin_Epics/web
+ RUN  v4.1.12 web
 
 
  Test Files  3 passed (3)

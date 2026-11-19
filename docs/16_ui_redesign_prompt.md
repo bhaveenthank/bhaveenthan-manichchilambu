@@ -12,8 +12,8 @@ The app's one idea, which the design has to carry: **it separates what the poem 
 
 ### Where everything is
 
-- Project root: `/Users/bhaveenthankajanikanth/Documents/Twin_Epics`
-- The web app: `/Users/bhaveenthankajanikanth/Documents/Twin_Epics/web`
+- Project root: the repository folder
+- The web app: `web/`
 - Source you'll mostly change:
   - `web/src/styles.css`: one stylesheet, about 490 lines. Colour tokens are on `:root`, with dark mode under `[data-theme="dark"]` and `prefers-color-scheme`.
   - `web/src/App.tsx`: the header, nav, Explore menu, search palette (cmdk), footer, and language and theme toggles.
@@ -38,12 +38,12 @@ The app's one idea, which the design has to carry: **it separates what the poem 
 ### Done means all of these pass
 
 ```bash
-cd /Users/bhaveenthankajanikanth/Documents/Twin_Epics/web && npm test
+cd web && npm test
 ```
 All 82 tests must pass. They're in `src/lib/*.test.ts`. Don't edit or delete them to make them pass.
 
 ```bash
-cd /Users/bhaveenthankajanikanth/Documents/Twin_Epics/web && npm run build
+cd web && npm run build
 ```
 This must finish with no TypeScript errors. Keep `base: "./"` in `vite.config.ts` and keep hash routes (`#/graph`), because the site is served as a plain static folder.
 
@@ -304,7 +304,7 @@ Every icon appears **with a text label**, or at least with an `aria-label` and a
 ## Deliverables
 
 1. **The redesigned app** in `web/`, with every check under "Done means" passing.
-2. **A design note:** `/Users/bhaveenthankajanikanth/Documents/Twin_Epics/docs/17_ui_redesign.md`, in plain, casual English with short paragraphs. It should cover:
+2. **A design note:** `docs/17_ui_redesign.md`, in plain, casual English with short paragraphs. It should cover:
    - what changed, page by page
    - the fonts chosen, why, and the glyph checks you ran
    - the icon map as a table: key, icon and meaning

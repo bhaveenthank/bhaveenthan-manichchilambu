@@ -1,24 +1,23 @@
-# Steps to finish (from 13 November 2026)
+# Steps to finish: the quick route (about a week)
 
-**Done:**
+**The idea:** you don't read all 7,177 drafts. You mark a random sample of 200, and the sample says how far the drafts the second model agreed on can be trusted. If they can, they're all accepted at once, labelled "sample-verified" with the accuracy figure. Model runs happen overnight, and waiting on other people happens alongside your own work.
 
-- Every one of the 10,209 lines has a note. The 213 gaps were a parser problem, not a problem with the model's answers.
-- The search is rebuilt.
-- 50 random notes were checked against the Tamil: 48 right, 1 partly right, 1 wrong.
-- The names in the drafts are partly matched to the graph: 40% of mentions point at an existing entity, and 51% are accounted for.
-- The draft review sheets and the fair-test kit are built.
+| Day | You | The computer (overnight) |
+|---|---|---|
+| 1 | Finish step 3. Send `evaluation/question_form.html` to your supervisor and 2–3 scholars, with a 4-day deadline | `tier3_judge.py --source full --per-call 16` (about 670 calls) |
+| 2 | Spot-check 20 of Claude's rows in `data/seeds/name_decisions.csv` (10 min) | judge continues if needed |
+| 3 | Mark `annotation/drafts/SAMPLE.csv`, 200 drafts (about 3 hours) | `ask_llm.py --batch --audit` (optional) |
+| 4 | Review `annotation/drafts/SIL-20.csv`, 79 drafts (about 1.5 hours). Ingest and promote | |
+| 5 | Questions come back: combine, run, send back for marking | dense retrieval (local, no usage) |
+| 6–7 | Marks come back. Score. A scholar checks 30 of your sample decisions during the same visit. Choose a licence; Claude drafts the write-up | |
 
-What's left, in order:
+Everything is still covered:
 
-| # | Step | Who | Time | Command or file |
-|---|---|---|---|---|
-| 1 | Commit and push | you | 2 min | `git add . && git commit && git push` |
-| 2 | Check Claude's name decisions | you | 30 min | `data/seeds/name_decisions.csv` |
-| 3 | Settle the long tail of names | the computer | 1 evening | `scripts/name_batch.py` |
-| 4 | Second model checks every draft | the computer | 2–3 days | `scripts/tier3_judge.py --source full` |
-| 5 | Review the drafts, one canto a day | you, then a scholar | 3–6 weeks | `annotation/drafts/*.csv` |
-| 6 | Fair test with outside questions | supervisor and scholars | 1–2 weeks | `evaluation/README.md` |
-| 7 | Optional extras: meaning-based search, written answers | the computer | 1 evening | `run_dense_retrieval.py --dense`, `ask_llm.py --batch --audit` |
-| 8 | Licence and write-up | you and Claude | 1–2 weeks | after step 6 |
+- **Every line:** has a note.
+- **Every draft:** checked by a second model.
+- **Drafts the judge agreed on:** accepted with a measured accuracy.
+- **The court scene:** reviewed in full.
+- **The question answering:** tested by outside readers.
+- **The scholar's check:** gives your accuracy figure.
 
-Steps 5 and 6 run side by side. The full commands are in the conversation and in each script's header.
+What stays a draft: the careful pile outside canto 20. It's labelled as drafts, which is honest.

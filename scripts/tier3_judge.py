@@ -6,7 +6,8 @@ different model family from Tier 2, or it's just marking its own homework. Right
 family is set up, so anything produced with the default model below is a stand-in and has to be
 labelled as such in the results. Point --model at another family's wrapper when you have one.
 
-  .venv/bin/python scripts/tier3_judge.py --source full     the 7,177 drafts of the full run, eight per call (about 1,120 calls)
+  .venv/bin/python scripts/tier3_judge.py --source full     the 7,177 drafts of the full run, eight per call (about 1,120 calls);
+                                                            add --per-call 16 for about 670 calls
   .venv/bin/python scripts/tier3_judge.py                   the older 4,041-draft run
 
 Every answer is cached, so after a stop (usage limit, lost connection) the same command picks up where it was.
@@ -61,14 +62,14 @@ def span(recs, around=3):
     return "\n".join(f"{l['id']}: {l['text']}" for l in LINES[lo:hi])
 
 
-def batches(rows):
+def batches(rows, per_call=PER_CALL):
     """Drafts from the same window, in calls of PER_CALL, so the judge reads each stretch of verse once."""
     by_window = {}
     for i, r in enumerate(rows):
         by_window.setdefault(r.get("window") or r["lines"][0], []).append(i)
     for idx in by_window.values():
-        for k in range(0, len(idx), PER_CALL):
-            yield idx[k:k + PER_CALL]
+        for k in range(0, len(idx), per_call):
+            yield idx[k:k + per_call]
 
 
 def parse_many(answer, n):
@@ -105,6 +106,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="claude-haiku-5-5")
     ap.add_argument("--source", choices=["stage", "full"], default="stage", help="full: data/candidates/tier2_full.jsonl")
+    ap.add_argument("--per-call", type=int, default=PER_CALL, help="drafts per call for --source full; 16 halves the calls")
     args = ap.parse_args()
     from manichchilambu.llm import ask
     src = ROOT / ("data/candidates/tier2_full.jsonl" if args.source == "full" else "data/candidates/tier2.jsonl")
@@ -115,7 +117,7 @@ def main():
                   for rec in rows)
     else:
         def judged_full():
-            groups = list(batches(rows))
+            groups = list(batches(rows, args.per_call))
             for g, idx in enumerate(groups):
                 recs = [rows[i] for i in idx]
                 shown = "\n".join(f"{n + 1}. " + json.dumps({k2: r[k2] for k2 in ("kind", "roles", "voice", "mood", "lines")}, ensure_ascii=False) for n, r in enumerate(recs))

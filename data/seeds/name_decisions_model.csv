@@ -1,0 +1,3158 @@
+name,canto,decision,decided_by,note
+agastya,MAN-00,new:agastya,model,"sage Agastya, absent from graph"
+agastya_kamandalam,MAN-00,new:agastya_kamandalam,model,specific pot of Agastya
+akasaganga,MAN-00,new:akasaganga,model,"named celestial Ganga, not in graph"
+alms_bowl,MAN-00,amudasurabhi,model,bowl held by Manimekalai is the Amudasurabhi
+alms_food,MAN-00,ignore,model,generic shared food
+aputhiran_land,MAN-00,savakam,model,Aputhiran's country is Savakam
+ascetic,MAN-00,ignore,model,"generic ascetic form, unidentified"
+ascetic_form,MAN-00,ignore,model,generic disguise form
+brahma,MAN-00,new:brahma,model,"god Brahma, the lotus-seated creator"
+chola_dynasty,MAN-00,new:chola_dynasty,model,"Chola lineage as a group, not in graph"
+demons,MAN-00,ignore,model,generic group
+divine_and_brahma_essences,MAN-00,concept,model,abstract essences
+divine_voice,MAN-00,ignore,model,unnamed voice
+drought,MAN-00,concept,model,abstract condition
+earth_distress,MAN-00,concept,model,abstract
+east,MAN-00,ignore,model,direction only
+elephant_fire,MAN-00,concept,model,"hunger disease, abstraction"
+end_of_rebirth,MAN-00,concept,model,doctrinal idea
+false_form,MAN-00,concept,model,abstract disguise
+flawless_truth,MAN-00,concept,model,doctrinal idea
+flower_garden,MAN-00,flower_grove,model,garden where Manimekalai plucked flowers
+flowers,MAN-00,ignore,model,generic flowers
+garland_woman,MAN-00,ignore,model,quote does not identify her
+garlanded_woman,MAN-00,ignore,model,quote does not identify her
+golden_mountain,MAN-00,new:golden_mountain,model,"specific mountain, not in graph"
+great_street,MAN-00,ignore,model,generic street
+high_deity,MAN-00,manimekhala_deity,model,deity who appeared and gave the mantra
+jambu_tree,MAN-00,new:jambu_tree,model,"specific tree, not in graph"
+jeweled_pedestal,MAN-00,seat_of_buddha,model,seat where past births were recalled
+kantan,MAN-00,new:kantan,model,"named king Kantan, not in graph"
+king,MAN-00,ignore,model,unnamed king
+king_prison,MAN-00,prison_site,model,prison converted into dharma hall
+main_street,MAN-00,ignore,model,generic street
+manimekalai_renunciation,MAN-00,concept,model,the work/theme itself
+old_woman,MAN-00,ignore,model,unidentified
+pattini_women,MAN-00,ignore,model,generic group of women
+rumour,MAN-00,concept,model,abstract
+samaya_kanakkar,MAN-00,ignore,model,generic group of sect teachers
+sectarian_doctrines,MAN-00,concept,model,doctrines
+south,MAN-00,ignore,model,direction only
+tamil_maiden,MAN-00,ignore,model,unidentified maiden
+agastya,MAN-01,new:agastya,model,"அருந்தவன் is the sage Agastya in the Indra festival proclamation, which the grap"
+assembled_groups,MAN-01,ignore,model,generic assembled people
+banners_and_flags,MAN-01,ignore,model,generic festival objects
+bhuta,MAN-01,new:bhuta,model,the bhuta spirits are a named class of being that the graph lacks
+debaters,MAN-01,ignore,model,generic addressees
+decorations,MAN-01,ignore,model,generic decorations
+elephant,MAN-01,ignore,model,generic elephant carrying the drum
+festival,MAN-01,indra_festival,model,the festival being proclaimed is the Indra festival
+festival_decorations,MAN-01,ignore,model,generic decorations
+festival_plants,MAN-01,ignore,model,generic plants
+four_aims,MAN-01,concept,model,"doctrinal abstraction (aram, porul, inbam, vidu)"
+gold_pillars,MAN-01,ignore,model,generic festival objects
+golden_city,MAN-01,new:golden_city,model,"பொன்நகர் is a specific city, not in the graph (Indra's city or Puhar), and the q"
+hell_dwellers,MAN-01,ignore,model,"mistaken label for the bhuta spirits, generic"
+inner_city,MAN-01,ignore,model,generic place
+karikalavalavan,MAN-01,new:karikalavalavan,model,a named Chola king not in the graph; it is not Killi
+king,MAN-01,ignore,model,generic ruler in a wish about just rule
+learned_preachers,MAN-01,ignore,model,generic group
+mansions_and_gateways,MAN-01,ignore,model,generic architecture
+opponents,MAN-01,ignore,model,generic debaters
+pearl_garlands,MAN-01,ignore,model,generic decoration
+religious_scholars,MAN-01,ignore,model,generic group
+ritual_experts,MAN-01,ignore,model,generic group
+sand,MAN-01,ignore,model,generic material
+sand_hills_groves_islets_ports,MAN-01,ignore,model,generic list of places
+sand_mounds_groves_and_ghats,MAN-01,ignore,model,generic list of places
+sand_pavilion,MAN-01,ignore,model,generic place
+streets_and_halls,MAN-01,ignore,model,generic places
+varied_rites,MAN-01,concept,model,abstract rites
+abundant_sorrow,MAN-02,concept,model,abstract suffering
+ascetics_abode,MAN-02,ignore,model,generic dwelling
+beloved,MAN-02,ignore,model,"unnamed, generic"
+bereaved_partners,MAN-02,ignore,model,generic group
+born_beings,MAN-02,concept,model,abstract category
+city_gossip,MAN-02,concept,model,abstract rumor
+dark_eyed_women,MAN-02,ignore,model,unnamed women
+dvipa_shanti_ritual,MAN-02,new:dvipa_shanti_ritual,model,specific named ritual
+fate_of_those_free_of_attachment,MAN-02,concept,model,doctrinal idea
+five_precepts,MAN-02,concept,model,doctrine
+flower_mandapam,MAN-02,new:flower_mandapam,model,specific hall not in graph
+great_city,MAN-02,puhar,model,gossip spreads in the city of Puhar
+great_joy,MAN-02,concept,model,abstract bliss
+great_sorrow,MAN-02,concept,model,abstract emotion
+her_words,MAN-02,ignore,model,unidentified speech
+husband_grief,MAN-02,concept,model,abstract emotion
+jambu_island,MAN-02,new:jambudvipa,model,named island
+kannagi_breast,MAN-02,ignore,model,"body part, not an entity"
+kings_city,MAN-02,madurai,model,city burned by Kannagi
+life,MAN-02,concept,model,abstraction
+lover_grief,MAN-02,concept,model,abstract emotion
+lovers_suffering,MAN-02,concept,model,abstract emotion
+madhavi_renunciation,MAN-02,concept,model,abstract event/theme
+pattini_women,MAN-02,ignore,model,generic group
+pattini_women_custom,MAN-02,concept,model,"custom, abstract"
+pond,MAN-02,ignore,model,generic pond
+priceless_gem,MAN-02,ignore,model,simile object
+shame,MAN-02,concept,model,abstract quality
+suffering_of_birth_and_joy_of_release,MAN-02,concept,model,doctrine
+the_teaching,MAN-02,concept,model,abstract message
+unborn_beings,MAN-02,concept,model,abstract category
+bangled_women,MAN-03,ignore,model,unnamed women
+bhagavan_command,MAN-03,ignore,model,"generic command, deity not identified"
+bliss_in_this_and_next_life,MAN-03,concept,model,abstract benefit
+blossom_cloth,MAN-03,ignore,model,generic object
+blossoms,MAN-03,ignore,model,generic flowers
+chariot_on_elephant,MAN-03,ignore,model,generic
+chariot_street,MAN-03,ignore,model,generic street
+coconut_toddy,MAN-03,toddy,model,drunk's talk of toddy and killing
+crystal_mandapam,MAN-03,crystal_room,model,crystal chamber in the garden
+crystal_pavilion,MAN-03,crystal_room,model,same crystal chamber
+deed_bears_fruit_without_intent,MAN-03,concept,model,karma doctrine
+deed_without_intent_bears_no_fruit,MAN-03,concept,model,karma doctrine
+deity_feet,MAN-03,ignore,model,unspecified deity
+deniers,MAN-03,ignore,model,generic group
+details_of_lotus_seat,MAN-03,new:lotus_seat_garden,model,the lotus seat in the garden
+devotees,MAN-03,ignore,model,generic
+drunkards_leader,MAN-03,ignore,model,unnamed
+elephant_on_golden_chariot,MAN-03,ignore,model,generic
+festival_inauguration,MAN-03,indra_festival,model,festival being announced
+festival_start,MAN-03,indra_festival,model,festival being announced
+festival_street,MAN-03,ignore,model,generic place
+fierce_ascetics,MAN-03,ignore,model,generic group
+flower_garden,MAN-03,flower_grove,model,the garden where flowers are picked
+flowering_trees,MAN-03,ignore,model,generic trees
+flowers,MAN-03,ignore,model,generic
+gait,MAN-03,concept,model,abstract quality
+garden,MAN-03,flower_grove,model,garden where Manimekalai picks flowers
+garlands,MAN-03,ignore,model,generic
+garlands_and_rag_clothes,MAN-03,ignore,model,generic attire
+grace,MAN-03,concept,model,abstract quality
+his_city,MAN-03,ignore,model,owner unclear
+humans,MAN-03,ignore,model,generic
+ilavantikai,MAN-03,new:ilavantikai,model,"named garden, not in graph"
+ilavantikai_outside,MAN-03,new:ilavantikai,model,same garden
+informed_people,MAN-03,ignore,model,generic
+jeweled_chariot_street,MAN-03,ignore,model,generic street
+kaman,MAN-03,new:kaman,model,named god of love
+kavera_vanam,MAN-03,new:kavera_vanam,model,named grove
+kaveran,MAN-03,new:kaveran,model,named person
+kings_attendants,MAN-03,ignore,model,generic attendants
+lotus_seat,MAN-03,new:lotus_seat_garden,model,the lotus seat in the garden
+madhavi_words,MAN-03,ignore,model,"utterance, not an entity"
+matching_flowers,MAN-03,ignore,model,generic
+mother_of_manimekalai,MAN-03,madhavi,model,Manimekalai's mother is Madhavi
+noose_demon,MAN-03,new:noose_demon,model,specific guardian demon with a noose
+old_town,MAN-03,ignore,model,generic place
+oleander_and_erukku_garlands,MAN-03,ignore,model,generic garlands
+parents_suffering,MAN-03,concept,model,abstract theme
+parrots,MAN-03,ignore,model,generic birds in simile
+pavilion_and_seat,MAN-03,ignore,model,not clearly a graph item
+peacocks,MAN-03,ignore,model,generic birds in simile
+pedi_dancer,MAN-03,new:pedu_dance,model,the pedu dance performer
+pedu,MAN-03,new:pedu_dance,model,named dance in Vanan's city
+plaster_paintings,MAN-03,ignore,model,generic artwork
+sampati,MAN-03,new:sampati,model,named mythic bird
+sampati_vanam,MAN-03,new:sampati_vanam,model,named place
+shadow,MAN-03,ignore,model,generic image
+shame_and_clothing,MAN-03,concept,model,abstract theme
+skilled_artisans,MAN-03,ignore,model,generic craftsmen
+some_women,MAN-03,ignore,model,unnamed women
+son_of_vishnu,MAN-03,new:kama,model,Tirumal's son is Kama
+spectators_of_children,MAN-03,ignore,model,generic spectators
+spectators_of_paintings,MAN-03,ignore,model,generic spectators
+spectators_of_pedi_dance,MAN-03,ignore,model,generic spectators
+speech,MAN-03,ignore,model,generic simile
+sun_heat,MAN-03,ignore,model,"part of the Sampati story, not an entity"
+tall_clay_houses,MAN-03,ignore,model,generic buildings
+tear_from_eye,MAN-03,ignore,model,not an identifiable entity
+tears,MAN-03,ignore,model,generic tears
+tirumal_son,MAN-03,new:kama,model,"same as Tirumal's son, Kama"
+toddlers,MAN-03,ignore,model,generic children
+trees,MAN-03,ignore,model,generic trees
+unabating_sorrow,MAN-03,concept,model,abstract quality
+uyyanam,MAN-03,new:uyyanam,model,named garden
+vanan_city,MAN-03,new:vanan_city,model,"Vanan's city, named place"
+white_sandal_paste,MAN-03,ignore,model,generic substance
+wings,MAN-03,ignore,model,"part of the Sampati story, not an entity"
+young_swans,MAN-03,ignore,model,generic birds in simile
+addressee_eyes,MAN-04,ignore,model,body part of an unnamed addressee
+addressee_face,MAN-04,ignore,model,body part of an unnamed addressee
+afflicted_folk,MAN-04,ignore,model,generic people
+bee_swarm,MAN-04,ignore,model,generic animals
+beetle,MAN-04,ignore,model,generic animal
+branch,MAN-04,ignore,model,generic object
+carp,MAN-04,ignore,model,generic animal
+chariot_kodunji,MAN-04,ignore,model,generic chariot part
+chariot_sound,MAN-04,ignore,model,generic sound
+city_streets,MAN-04,ignore,model,generic place
+darkness,MAN-04,concept,model,abstraction
+distress,MAN-04,concept,model,abstract quality
+distressed_folk,MAN-04,ignore,model,generic people
+elephant,MAN-04,ignore,model,generic animal
+flower,MAN-04,ignore,model,generic simile object
+flower_bed_mansion,MAN-04,ignore,model,unnamed generic building
+flower_garden,MAN-04,flower_grove,model,the flower garden Manimekalai enters
+garden,MAN-04,ignore,model,vague gate reference
+grove,MAN-04,flower_grove,model,the garden scene with flute and darkness
+grove_and_pond,MAN-04,ignore,model,combined generic scenery
+grove_scene,MAN-04,ignore,model,generic scenery
+hand,MAN-04,ignore,model,body part
+her_circumstance,MAN-04,concept,model,abstract situation
+kadamban,MAN-04,new:murukan,model,Kadamban is an epithet of the god Murukan
+kingfisher,MAN-04,ignore,model,generic animal
+koel,MAN-04,ignore,model,generic bird
+koel_calling,MAN-04,ignore,model,generic bird action
+koel_thicket,MAN-04,ignore,model,generic place
+lotus,MAN-04,ignore,model,generic flower
+lotus_pond,MAN-04,ignore,model,generic pond
+makara_yazh,MAN-04,ignore,model,generic instrument
+manimekalai_speech,MAN-04,ignore,model,"speech, not an entity"
+mansion_street,MAN-04,ignore,model,generic place
+monkey,MAN-04,ignore,model,generic animal
+peacock,MAN-04,ignore,model,generic bird
+peacock_dance,MAN-04,ignore,model,generic scene
+pollen_dusted_lotus,MAN-04,ignore,model,generic simile object
+pond_bank,MAN-04,ignore,model,generic place
+prince_question,MAN-04,ignore,model,"utterance, not an entity"
+red_carp,MAN-04,ignore,model,generic fish
+royal_swan,MAN-04,ignore,model,generic bird
+screwpine_blossom,MAN-04,ignore,model,generic flower
+storm_tossed_ship,MAN-04,ignore,model,simile object
+sun_rays,MAN-04,ignore,model,generic natural phenomenon
+sunlight,MAN-04,ignore,model,generic natural phenomenon
+takarakuzhalal,MAN-04,ignore,model,epithet 'woman with fragrant tagara-scented hair'; quote doesn't identify her
+vayantamalai_words,MAN-04,ignore,model,"an utterance ('I heard'), not an entity; speaker not clearly Vayantamalai from q"
+waterhen_cock,MAN-04,ignore,model,"generic bird in nature imagery, a drum simile, not a named entity"
+white_pollen,MAN-04,ignore,model,generic white powder in a scene; not a specific named thing
+anril_cock,MAN-05,ignore,model,generic bird in imagery
+anril_hen,MAN-05,ignore,model,generic bird in imagery
+arantanam,MAN-05,ignore,model,"vague wilderness, not clearly a named place"
+ascetics_abode,MAN-05,ignore,model,generic dwelling
+bird_grove,MAN-05,ignore,model,generic grove
+bowl_bearer,MAN-05,ignore,model,unnamed in quote
+brahmin_elder,MAN-05,kausikan_campai,model,the father who lost his wife and tends the fire
+buddha_qualities,MAN-05,concept,model,abstract qualities
+coconut_palm,MAN-05,ignore,model,generic tree
+cow,MAN-05,ignore,model,unnamed cow
+cutamati_father,MAN-05,kausikan_campai,model,Cutamati's father's suffering
+departing_man,MAN-05,ignore,model,unnamed man
+entrails,MAN-05,ignore,model,simile object
+evening,MAN-05,concept,model,time of day
+garden,MAN-05,ignore,model,generic place
+gem_pedestal,MAN-05,ignore,model,not clearly the graph's seat
+great_city,MAN-05,ignore,model,unspecified city
+herdsmen,MAN-05,ignore,model,generic group
+husband_simile,MAN-05,ignore,model,"simile, unnamed"
+jain_ascetics,MAN-05,ignore,model,generic group addressed
+jeweled_woman,MAN-05,ignore,model,unnamed woman
+king,MAN-05,ignore,model,unnamed king
+kumari_port,MAN-05,new:kumari,model,named place of the search
+lotus,MAN-05,ignore,model,simile imagery
+moon_and_sun,MAN-05,ignore,model,imagery
+narrator_mother,MAN-05,ignore,model,unnamed mother
+paintings,MAN-05,ignore,model,generic artworks
+sacred_fire,MAN-05,ignore,model,generic ritual fire
+sanskrit_speakers,MAN-05,ignore,model,generic group
+swan_cock,MAN-05,ignore,model,simile imagery
+swan_hen,MAN-05,ignore,model,simile imagery
+vidyadhara,MAN-05,ignore,model,unnamed Vidyadhara
+village_common,MAN-05,ignore,model,generic place
+wanderer,MAN-05,kausikan_campai,model,"begging man gored by cow, Cutamati's father"
+widow_simile,MAN-05,ignore,model,"simile, unnamed"
+woman_form,MAN-05,ignore,model,unnamed assumed form
+yazh_players,MAN-05,ignore,model,generic musicians
+andalai_bird,MAN-06,ignore,model,"generic bird, unnamed"
+ascetics_grove,MAN-06,ignore,model,"generic grove, not specific"
+ascetics_rich_mothers_children_old_and_young,MAN-06,ignore,model,generic victims
+birds,MAN-06,ignore,model,generic birds
+blind_husband,MAN-06,ignore,model,"unnamed, not identified"
+body_is_bones_flesh_blood,MAN-06,concept,model,doctrine of body's impurity
+boon_granting_beings,MAN-06,ignore,model,generic group of deities
+boon_granting_deities,MAN-06,ignore,model,generic group of deities
+boy,MAN-06,ignore,model,unnamed boy
+boy_life,MAN-06,concept,model,abstract life of the boy
+burial_ground,MAN-06,new:burial_ground_puhar,model,specific burial ground beside the city
+burier_group,MAN-06,ignore,model,generic burying people
+burners,MAN-06,ignore,model,generic cremators
+burning_ground,MAN-06,new:burial_ground_puhar,model,same burial/cremation ground
+burning_ground_devouring_the_dead,MAN-06,concept,model,descriptive scene
+cakkaravalam_temple,MAN-06,new:chakkaravala_kottam,model,"named temple, not in graph"
+chakkaravala_kottam_origin,MAN-06,concept,model,abstract account of origin
+chakravalam,MAN-06,new:chakkaravala_kottam,model,"same named place, spelling variant"
+corpse_breast,MAN-06,ignore,model,"body part, generic"
+corpse_eaters,MAN-06,ignore,model,generic scavengers
+corpse_foot,MAN-06,ignore,model,"body part, generic"
+corpse_hand,MAN-06,ignore,model,"body part, generic"
+corpse_waist,MAN-06,ignore,model,"body part, generic"
+cosmos_model,MAN-06,concept,model,abstract model of universe
+cremation_ascetics,MAN-06,ignore,model,generic ascetics
+cremation_ground,MAN-06,new:burial_ground_puhar,model,same cremation ground
+cremation_ground_gate,MAN-06,ignore,model,generic gate
+cruel_one,MAN-06,ignore,model,unnamed killer
+dead_ascetics,MAN-06,ignore,model,generic dead
+dead_others,MAN-06,ignore,model,generic dead
+deities,MAN-06,ignore,model,generic deities
+deities_gathering,MAN-06,ignore,model,generic gathering
+demon_and_ghost,MAN-06,ignore,model,generic spirits
+demons,MAN-06,ignore,model,generic spirits
+dog,MAN-06,ignore,model,generic animal
+eminent_people,MAN-06,ignore,model,generic people
+eyes,MAN-06,ignore,model,"body part, generic"
+eyes_of_head,MAN-06,ignore,model,"body part, generic"
+fat_and_flesh,MAN-06,ignore,model,generic food
+fine_jeweled_lady,MAN-06,ignore,model,"unnamed speaker, not identified by quote"
+flower_groves,MAN-06,ignore,model,generic groves
+four_gates,MAN-06,ignore,model,generic gates
+fox,MAN-06,ignore,model,generic animal
+funeral_mounds,MAN-06,ignore,model,generic memorials
+funeral_remains,MAN-06,ignore,model,generic remains
+gate_paintings,MAN-06,ignore,model,generic painted gate decoration
+ghoul_woman,MAN-06,new:pey_magal,model,the ghoul who carries the head and dances
+golden_woman,MAN-06,ignore,model,"unnamed speaker, quote doesn't identify her"
+great_ascetics,MAN-06,ignore,model,generic group
+guard_huts,MAN-06,ignore,model,generic place
+guarded_gate,MAN-06,ignore,model,generic place
+head_features,MAN-06,ignore,model,generic body-part comparison
+heads,MAN-06,ignore,model,generic objects
+heedless_people,MAN-06,ignore,model,generic group
+hungry_demons,MAN-06,ignore,model,generic group
+hungry_eagle,MAN-06,ignore,model,generic animal
+irathi_mandram,MAN-06,new:irathi_mandram,model,named shrine hall in the graveyard
+jackal,MAN-06,ignore,model,generic animal
+jeweled_woman,MAN-06,ignore,model,unnamed woman
+kali_temple,MAN-06,new:kali_temple,model,specific temple of the forest goddess
+killing_trade_people,MAN-06,ignore,model,generic group
+kural_bird,MAN-06,ignore,model,generic bird
+living_beings_and_their_places,MAN-06,ignore,model,generic clay figures
+loving_people,MAN-06,ignore,model,generic group
+moonlight,MAN-06,ignore,model,natural imagery
+mournful_sounds,MAN-06,ignore,model,generic sounds
+old_woman,MAN-06,ignore,model,unnamed old woman
+open_mandram,MAN-06,ignore,model,generic feast hall
+open_space_gate,MAN-06,ignore,model,generic gate
+outer_streets,MAN-06,ignore,model,generic place
+owl,MAN-06,ignore,model,generic bird
+people_unnamed,MAN-06,ignore,model,unnamed people
+pey_magal,MAN-06,new:pey_magal,model,the ghoul woman who eats eyes and dances
+pey_magal_dance,MAN-06,new:pey_magal,model,same ghoul woman's dance
+pit_group,MAN-06,ignore,model,generic group
+poet,MAN-06,ignore,model,narrator not named in quote
+profession_folk,MAN-06,ignore,model,generic group
+sacrificial_fire,MAN-06,ignore,model,generic feature
+sacrificial_post,MAN-06,ignore,model,generic feature
+sarngalan,MAN-06,new:sarngalan,model,named man who walked alone
+self_sacrificers,MAN-06,ignore,model,generic group
+severed_head,MAN-06,ignore,model,generic object
+skulls,MAN-06,ignore,model,generic objects
+smoke_flags_toranas_funeral_pavilions,MAN-06,ignore,model,generic scenery
+stone_platforms_and_junctions,MAN-06,ignore,model,generic places
+survivors,MAN-06,ignore,model,generic group
+tall_trees,MAN-06,ignore,model,generic trees
+the_dead,MAN-06,ignore,model,generic dead
+trees,MAN-06,ignore,model,generic trees
+unnamed_woman,MAN-06,ignore,model,unnamed addressee
+urn_group,MAN-06,ignore,model,generic unnamed people who cover bodies with urns
+vakai_assembly_tree,MAN-06,ignore,model,generic assembly tree in the burial ground description
+vakai_mandram,MAN-06,ignore,model,"generic assembly ground, not a specific named place"
+vanni_mandram,MAN-06,ignore,model,generic assembly ground in the burial ground description
+vault_group,MAN-06,ignore,model,unnamed people who shut bodies in vaults
+vellil_assembly,MAN-06,ignore,model,generic assembly ground and feasting
+vellil_mandram,MAN-06,ignore,model,generic assembly ground where birds perch
+visitors,MAN-06,ignore,model,unnamed generic crowd
+vow_ascetics,MAN-06,ignore,model,unnamed generic ascetics
+vulture,MAN-06,ignore,model,generic bird
+woman_of_city,MAN-06,ignore,model,quote does not identify her
+world_kings,MAN-06,ignore,model,"generic kings, unnamed"
+afflicted_people,MAN-07,ignore,model,generic sufferers
+ancient_city,MAN-07,puhar,model,the sleeping city of this canto is Puhar
+bali,MAN-07,concept,model,ritual offering
+bali_offering,MAN-07,concept,model,ritual offering
+bali_sounds,MAN-07,ignore,model,generic sounds
+bhuta_chatukkam,MAN-07,new:bhuta_chatukkam,model,named Puhar shrine/square not in graph
+birds,MAN-07,ignore,model,generic
+chakkaravalakkottam,MAN-07,new:chakkaravalakkottam,model,named place not in graph
+city_street,MAN-07,ignore,model,generic place
+couples,MAN-07,ignore,model,generic
+dance_hall,MAN-07,ignore,model,generic place
+deity_account,MAN-07,ignore,model,not an entity
+deity_altar,MAN-07,ignore,model,generic altar
+discerning_folk,MAN-07,ignore,model,generic
+divine_voice,MAN-07,manimekhala_deity,model,goddess speaks to Sutamati
+elephants,MAN-07,ignore,model,generic
+events_of_the_night,MAN-07,ignore,model,not an entity
+festival_revelry,MAN-07,ignore,model,generic event
+garden,MAN-07,flower_grove,model,the garden where the women were
+givers,MAN-07,ignore,model,generic
+grove_birds,MAN-07,ignore,model,generic
+guardian_women,MAN-07,ignore,model,generic
+harbor_craftsmen,MAN-07,ignore,model,generic
+horses,MAN-07,ignore,model,generic
+iravivarman,MAN-07,new:iravivarman,model,"named father (Ravivarman), not in graph"
+karmic_cause,MAN-07,concept,model,karma
+king_palace,MAN-07,ignore,model,generic place
+lover,MAN-07,ignore,model,unnamed
+magic,MAN-07,concept,model,abstract power
+mantra_men,MAN-07,ignore,model,generic
+mantrapey_magal,MAN-07,ignore,model,generic ghoul-woman
+many_events,MAN-07,ignore,model,not an entity
+market_altar,MAN-07,ignore,model,generic altar
+musical_instruments,MAN-07,ignore,model,generic
+musicians,MAN-07,ignore,model,generic
+mustard_and_snake_mouth_sticks_smoke,MAN-07,ignore,model,generic ritual items
+night_watchmen,MAN-07,ignore,model,generic
+palace_timekeepers,MAN-07,ignore,model,generic
+past_births,MAN-07,concept,model,idea of past lives
+pey_magal,MAN-07,ignore,model,generic ghoul-woman
+puhar_king,MAN-07,chola_king,model,king of Puhar is the Chola king
+sea_deity,MAN-07,manimekhala_deity,model,sea goddess is Manimekhala
+small_west_gate,MAN-07,ignore,model,generic gate
+speckled_fowl,MAN-07,ignore,model,generic
+spellcasters,MAN-07,ignore,model,generic
+spotted_elephant,MAN-07,ignore,model,"generic elephant, unnamed"
+stage_instruments,MAN-07,ignore,model,generic musical instruments
+sulking_women,MAN-07,ignore,model,generic group of women
+tank,MAN-07,ignore,model,"generic tank, not a named place"
+temple_conch,MAN-07,ignore,model,generic conch
+thudi_drum,MAN-07,ignore,model,generic drum of the guards
+tiger_like_warriors,MAN-07,ignore,model,generic warriors
+town_guards,MAN-07,ignore,model,"generic guards, unnamed"
+toy_chariot,MAN-07,ignore,model,generic toy object
+tuccayan,MAN-07,new:tuccayan,model,named man whose wife is mentioned; not in graph
+valampuri_conch,MAN-07,ignore,model,generic conch
+vinjai_magic,MAN-07,concept,model,"magic or vidyā, an abstraction"
+women_after_childbirth,MAN-07,ignore,model,generic group of women
+women_hands,MAN-07,ignore,model,body part of unnamed women
+women_in_labor_children_and_wounded,MAN-07,ignore,model,generic group of people
+wondrous_image,MAN-07,ignore,model,unnamed painted figure; quote does not identify it
+younger_sister,MAN-07,ignore,model,unnamed relation; quote does not identify her
+armies,MAN-08,ignore,model,generic armies
+attachment,MAN-08,concept,model,abstract quality
+birds,MAN-08,ignore,model,generic birds
+companions,MAN-08,ignore,model,"generic, unnamed"
+exalted_ones,MAN-08,ignore,model,generic group of praisers
+foreign_land,MAN-08,ignore,model,unspecified land
+former_kin_and_city,MAN-08,ignore,model,"generic, unnamed"
+lord_of_gods,MAN-08,indra,model,"தேவர் கோன் means Indra, who placed the seat"
+loved_kin,MAN-08,ignore,model,generic kin
+manimekalai_hair,MAN-08,ignore,model,"a body part, not an entity"
+other_things,MAN-08,ignore,model,generic things
+radiant_light,MAN-08,ignore,model,"generic light, not a named entity"
+sage,MAN-08,new:buddha,model,the sage who preaches dharma on the seat is the Buddha; the graph has no Buddha 
+trees,MAN-08,ignore,model,generic trees
+unfamiliar_things,MAN-08,ignore,model,generic things
+vinjai_maiden,MAN-08,manimekhala_deity,model,"விஞ்சை maiden is the goddess Manimekala, who carried her off"
+addressee_birth,MAN-09,ignore,model,unnamed addressee
+addressee_you,MAN-09,ignore,model,unnamed addressee
+attipati,MAN-09,new:attipati,model,"named person, not in graph"
+beloved_birth,MAN-09,ignore,model,unnamed beloved
+brahmadharman_words,MAN-09,new:brahmadharman,model,named sage whose words are meant
+cattle_and_animals,MAN-09,ignore,model,generic animals
+cattle_and_horses,MAN-09,ignore,model,generic animals
+citizens,MAN-09,ignore,model,generic group
+death_grief,MAN-09,concept,model,abstract grief
+deity_appearance_prophecy,MAN-09,concept,model,abstract prophecy
+dharma_seat,MAN-09,seat_of_buddha,model,dharma seat worshipped
+great_deity,MAN-09,ignore,model,unnamed deity
+ground,MAN-09,ignore,model,generic ground
+hands,MAN-09,ignore,model,body part
+her_birth,MAN-09,ignore,model,unnamed person
+her_past_birth,MAN-09,ignore,model,unnamed person
+husband,MAN-09,ignore,model,unnamed husband
+idavayam,MAN-09,new:idavayam,model,named city
+kayankarai,MAN-09,new:kayankarai,model,named place
+kayankarai_river,MAN-09,new:kayankarai,model,same place spelling
+king,MAN-09,ignore,model,unnamed king
+king_and_people,MAN-09,ignore,model,generic group
+naga_nadu,MAN-09,new:naga_nadu,model,named Naga land
+naga_netherworld,MAN-09,new:naga_nadu,model,same Naga land
+navalam_island,MAN-09,new:navalam_island,model,named island
+people_two_lands,MAN-09,ignore,model,generic people
+pulavan,MAN-09,ignore,model,"generic title, unnamed"
+revered_one,MAN-09,ignore,model,unnamed speaker
+seat,MAN-09,seat_of_buddha,model,"seat worshipped, the great seat"
+snake_venom,MAN-09,concept,model,abstract/generic substance
+this_city,MAN-09,ignore,model,city not clearly identified
+words_spoken_today,MAN-09,concept,model,abstract speech
+young_woman,MAN-09,ignore,model,unnamed woman
+adi_mudalvan,MAN-10,new:buddha,model,Adi Mudalvan is the Buddha; the graph has no Buddha entity
+all_beings,MAN-10,ignore,model,generic group
+animals,MAN-10,ignore,model,generic group
+divine_grace,MAN-10,concept,model,abstract quality
+enmity,MAN-10,concept,model,abstract quality
+faultless_ones,MAN-10,ignore,model,"unnamed, generic addressees"
+flight_mantra,MAN-10,concept,model,"a generic mantra, not a named entity"
+flower_garden,MAN-10,flower_grove,model,the garden where Rahulan and Tara quarrelled; matches the flower grove
+foot_lotus,MAN-10,ignore,model,only a descriptive epithet in the mountain's name
+fragrant_flowers,MAN-10,ignore,model,generic offering
+ganga_bank,MAN-10,new:ganga_bank,model,"specific place on the Ganga, not in the graph"
+hunger_mantra,MAN-10,concept,model,"a generic mantra, not a named entity"
+kacchayam,MAN-10,new:kacchayam,model,"named place, not in the graph"
+merit_of_giving,MAN-10,concept,model,abstract doctrine
+mountain,MAN-10,ignore,model,generic; the quote doesn't name it
+padapankaya_malai,MAN-10,new:padapankaya_malai,model,"named mountain, not in the graph"
+padapankaya_malai_name,MAN-10,new:padapankaya_malai,model,"same mountain, spelled differently"
+past_births,MAN-10,concept,model,abstract idea
+quoted_speaker,MAN-10,ignore,model,unnamed speaker
+ratnadvipa,MAN-10,new:ratnadvipa,model,"named island, not in the graph"
+sage,MAN-10,ignore,model,"unnamed, generic"
+tarai_and_virai,MAN-10,ignore,model,"names two people; the graph lists Tara and Vira separately, so one id doesn't fi"
+water_and_food,MAN-10,ignore,model,generic offering
+amudapati,MAN-11,new:amudapati,model,"Aputhiran's mother, named in the quote"
+aravi_boat,MAN-11,concept,model,metaphorical boat of dharma
+bangled_women,MAN-11,ignore,model,generic addressed women
+brahmin,MAN-11,ignore,model,unnamed wandering brahmin
+buddha_feet,MAN-11,new:buddha_footprint,model,"Buddha's feet or footprint at Samantam, not in graph"
+celestial_lord,MAN-11,indra,model,great lord of the gods who gives rain
+distraught_woman,MAN-11,ignore,model,unnamed woman
+dog_flesh,MAN-11,ignore,model,unnamed dog-flesh eater
+faultless_ascetic,MAN-11,ignore,model,"unnamed epithet, unclear referent"
+festival_performer,MAN-11,ignore,model,unnamed festival performer
+giving_food,MAN-11,concept,model,principle that giving food gives life
+harvest,MAN-11,concept,model,abstract yield
+hunger_relief,MAN-11,concept,model,abstract remedy
+hungry_poor,MAN-11,ignore,model,generic hungry people
+ilankodi,MAN-11,ignore,model,generic 'young woman'
+jewel_pedestal,MAN-11,seat_of_buddha,model,Buddha's seat by the Gomukhi pond
+komakan_pedestal,MAN-11,seat_of_buddha,model,lord's (Buddha's) pedestal worshipped
+manimekalai_birth_knowledge,MAN-11,concept,model,abstract knowledge of births
+marvel,MAN-11,concept,model,abstraction
+past_lover,MAN-11,rahulan,model,past-life beloved who died of snake venom
+plants,MAN-11,ignore,model,generic plants
+praising_women,MAN-11,ignore,model,generic women
+pure_dharma,MAN-11,concept,model,doctrine
+ratna_island,MAN-11,new:ratnadvipa,model,"the island where the Buddha's foot lies, not in graph"
+samantam,MAN-11,new:samantam,model,"named mountain with Buddha's foot, not in graph"
+snake_venom,MAN-11,concept,model,"instrument of death, not an entity"
+speaker1,MAN-11,ignore,model,unnamed speaker
+speaker2,MAN-11,ignore,model,unnamed speaker
+tarai_veerai,MAN-11,ignore,model,"two women (Tara and Vira) in one name, so no single id fits"
+their_confusion,MAN-11,concept,model,abstract delusion
+worshippers,MAN-11,ignore,model,generic group
+account_of_sisters,MAN-12,ignore,model,"narrative address, not an entity"
+animals_and_people,MAN-12,ignore,model,generic group
+aputhiran_story,MAN-12,ignore,model,"a story, not an entity"
+cakkaravalam_devas,MAN-12,ignore,model,unnamed generic gods
+cold_mist,MAN-12,concept,model,"natural phenomenon, figurative"
+deformed_beings,MAN-12,ignore,model,generic beings
+dharma_lord,MAN-12,new:buddha,model,dharma lord means the Buddha
+former_husband,MAN-12,ignore,model,unnamed
+good_dharma,MAN-12,concept,model,doctrine
+grass_and_thorns,MAN-12,concept,model,metaphor for obstruction
+great_path,MAN-12,concept,model,abstract path
+great_path_of_life,MAN-12,concept,model,abstract path
+great_sorrow,MAN-12,concept,model,abstraction
+great_wise_one,MAN-12,new:buddha,model,epithet of the Buddha who appears
+grove,MAN-12,ignore,model,unspecified grove
+hell_beings_and_ghosts,MAN-12,ignore,model,generic beings
+island,MAN-12,seat_of_buddha,model,the dharma-teller's seat gives birth-knowledge
+king,MAN-12,ignore,model,"unnamed king, not identified by quote"
+madhavi_and_cutamati,MAN-12,ignore,model,two entities combined
+maiden_addressed,MAN-12,ignore,model,unnamed addressee
+mathavan,MAN-12,ignore,model,generic ascetic title
+newly_captured_elephant,MAN-12,ignore,model,generic simile
+old_ascetic_dwelling,MAN-12,ignore,model,unnamed place
+padapankaya_hill,MAN-12,new:padapankaya_hill,model,"named hill, Buddha's footprint"
+path_of_evil_destiny,MAN-12,concept,model,abstract path
+path_to_good_destiny,MAN-12,concept,model,abstract path
+speaker_words,MAN-12,ignore,model,generic
+sun_and_moon,MAN-12,ignore,model,"natural bodies, generic"
+sun_disc,MAN-12,ignore,model,natural image
+supreme_one,MAN-12,new:buddha,model,devas supplicate the Buddha's feet
+tarai_and_virai,MAN-12,ignore,model,two persons combined
+terrace,MAN-12,ignore,model,unspecified place
+the_two_present,MAN-12,ignore,model,unnamed pair
+those_born_then_who_heard,MAN-12,ignore,model,generic group
+three_mantras,MAN-12,concept,model,teaching content
+tuchayan,MAN-12,new:tuchayan,model,named person Tuchayan
+tusita_world,MAN-12,new:tusita_world,model,"named heaven, Tusita"
+womens_affair,MAN-12,ignore,model,generic matter
+asalan,MAN-13,new:acalan,model,"named son of a cow, in a list of sages"
+bhuti,MAN-13,ilambuti,model,"same name as Ilambuti, the brahmin who expelled someone from his house"
+brahmin_house,MAN-13,ignore,model,generic place
+brahmin_one,MAN-13,brahmin_13,model,the brahmin who says he knows this child's birth
+brahmin_teacher,MAN-13,brahmin_teacher_13,model,the teacher the cow gored
+brahmin_villages,MAN-13,ignore,model,generic places
+brahmins_and_youths,MAN-13,brahmins,model,the brahmins who seized the cow
+cow,MAN-13,nursing_cow,model,the cow that came and licked the infant
+cow_distress,MAN-13,ignore,model,"an event, not an entity"
+deer,MAN-13,ignore,model,animal named only as the parent of a sage
+divine_courtesan,MAN-13,ignore,model,unnamed
+driving_staff,MAN-13,ignore,model,generic object
+forest,MAN-13,ignore,model,generic place
+forest_path,MAN-13,ignore,model,generic place
+four_sages,MAN-13,ignore,model,unnamed group
+fox,MAN-13,ignore,model,animal named only as the parent of a sage
+goad,MAN-13,ignore,model,generic object
+grove,MAN-13,ignore,model,generic place
+guarded_gate,MAN-13,ignore,model,generic place
+hidden_grove,MAN-13,ignore,model,generic place
+home_town,MAN-13,ignore,model,generic place
+horns,MAN-13,ignore,model,body part
+husband,MAN-13,vaidika_teacher,model,the teacher whose wife speaks
+ilampudi_kin,MAN-13,ignore,model,generic kin group
+ilampudi_town,MAN-13,new:ilampudi_town,model,named town the group returned to
+infant,MAN-13,aputhiran,model,the abandoned infant raised by the cow
+kesakambalan,MAN-13,new:kesakambalan,model,named teacher said to be a fox's son
+kumari,MAN-13,new:kumari,model,"the goddess Kumari, who is worshipped"
+leftover_food,MAN-13,ignore,model,generic object
+mother,MAN-13,sali,model,the wife of the teacher who tells her story
+needy,MAN-13,ignore,model,generic group
+public_hall_platform,MAN-13,ignore,model,generic place
+punishment,MAN-13,concept,model,abstraction
+puti,MAN-13,ilambuti,model,spelling variant of Bhuti
+rocky_path,MAN-13,ignore,model,generic place
+sringi,MAN-13,new:sringi,model,named sage said to be a deer's son
+stones,MAN-13,ignore,model,generic object
+tiger,MAN-13,ignore,model,animal named only as the parent of a sage
+tongue,MAN-13,ignore,model,body part
+two_brahmin_sages,MAN-13,ignore,model,unnamed pair
+varanasi,MAN-13,ignore,model,mis-tagged; the quote does not name a place
+veda,MAN-13,concept,model,scripture or doctrine
+vedic_learning,MAN-13,concept,model,"learning, an abstraction"
+vedic_teacher,MAN-13,vaidika_teacher,model,the Vedic teacher whose wife speaks
+virinji,MAN-13,new:virinji,model,named sage said to be a tiger's son
+vishnus_son,MAN-13,ignore,model,Epithet only; the quote doesn't identify a specific graph entity.
+wasteland,MAN-13,concept,model,"Generic wilderness or terrain, not a named place."
+wilderness,MAN-13,concept,model,"Generic wilderness or forest tract, not a named place."
+all_creatures,MAN-14,ignore,model,generic beings
+compassionate_protector,MAN-14,righteous_person,model,quote says to enter the hands of compassionate people
+deva_land,MAN-14,ignore,model,"generic heaven, not a named place"
+diners,MAN-14,ignore,model,generic group
+feeding_noise,MAN-14,concept,model,abstract sound
+fruit_of_giving,MAN-14,concept,model,abstract merit
+goddess_talaivi,MAN-14,ignore,model,'lady' is ambiguous in the quote
+hungry_folk,MAN-14,ignore,model,generic group
+idlers,MAN-14,ignore,model,generic group
+kalai_niyamam,MAN-14,chintadevi,model,quote names the goddess Chintadevi appearing
+needy_visitors,MAN-14,ignore,model,generic group
+pandukambalam,MAN-14,new:pandukambalam,model,"named stone seat of Indra, not in graph"
+pandya_nadu,MAN-14,new:pandya_nadu,model,"named Pandya country, not in graph"
+people_animals_birds,MAN-14,ignore,model,generic crowd
+prosperity,MAN-14,concept,model,abstract quality
+rogues_and_idlers,MAN-14,ignore,model,generic group
+seafarers,MAN-14,ignore,model,generic group
+travelers,MAN-14,ignore,model,generic group
+water_and_prosperity,MAN-14,concept,model,abstract wish
+world_folk,MAN-14,ignore,model,generic people
+alms,MAN-15,concept,model,act of giving
+aticari_house,MAN-15,new:atirai_house,model,"house of Atirai, a place not in graph"
+begging,MAN-15,concept,model,abstract judgment about begging
+birth_of_life_protector,MAN-15,concept,model,"event or prophecy, not an entity"
+cakkaravala_sages,MAN-15,ignore,model,generic unnamed group
+cakkaravalakkottam,MAN-15,new:cakkaravalakkottam,model,named place not in graph
+chaste_wives,MAN-15,ignore,model,generic women
+child,MAN-15,punyarasan,model,"son found and raised by the foster father, who is the life protector"
+cow_womb,MAN-15,ignore,model,generic place of birth
+divine_bowl,MAN-15,amudasurabhi,model,the divine bowl is the Amudasurabhi
+foster_father,MAN-15,bhumichandran,model,the king who obtained and raised the son
+golden_cow,MAN-15,nursing_cow,model,the good cow that protected him
+great_one,MAN-15,aputhiran,model,died at Manipallavam; the cow protected him
+heaven_king,MAN-15,indra,model,king of heaven
+holy_water_with_flowers,MAN-15,ignore,model,generic ritual item
+just_king,MAN-15,ignore,model,unnamed king
+leftover_nectar,MAN-15,concept,model,simile
+life_protector,MAN-15,punyarasan,model,the foretold protector of lives born from the cow
+main_street,MAN-15,ignore,model,generic street
+mathavan,MAN-15,ignore,model,"title 'great ascetic', not identified"
+navalam_island,MAN-15,new:navalam_island,model,named place (Jambudvipa) not in graph
+pillar_image,MAN-15,pillar,model,the pillar goddess shows grace
+podhiyil_river_bank,MAN-15,new:pothiyil,model,named place Pothiyil
+pothiyil_riverbank,MAN-15,new:pothiyil,model,"same place, different spelling"
+punya_mudalvan,MAN-15,ignore,model,"epithet, referent unclear"
+sage,MAN-15,ignore,model,unnamed sage
+savakam_mountain,MAN-15,savakam,model,the cow went to Savakam
+son,MAN-15,punyarasan,model,same son as 'child'
+three_times,MAN-15,concept,model,"knowledge of past, present and future"
+ujjain,MAN-15,new:ujjain,model,named city not in graph
+vatsa,MAN-15,new:vatsa_king,model,"the Vatsa king who was deceived, not in graph"
+vidyadhara_city,MAN-15,new:vidyadhara_city,model,"northern Vidyadhara city, not in graph"
+vidyadhara_northern_city,MAN-15,new:vidyadhara_city,model,"same city, different spelling"
+young_woman,MAN-15,ignore,model,addressee not clearly identified
+yugi,MAN-15,new:yugi,model,"Yugi the Brahmin from Ujjain, not in graph"
+yuki,MAN-15,new:yugi,model,spelling variant of Yugi
+afterlife_dwelling,MAN-16,concept,model,abstract idea of a next abode
+all_beings,MAN-16,ignore,model,generic group
+aticari_house,MAN-16,new:aticari_house,model,specific house the graph lacks
+bed_clothes_garland,MAN-16,ignore,model,generic objects
+birth_and_death,MAN-16,concept,model,doctrine of rebirth cycle
+cannibal_dwelling,MAN-16,ignore,model,unnamed generic dwelling
+cannibals,MAN-16,new:sarana_cannibals,model,same cannibal group
+chaste_wives,MAN-16,ignore,model,generic women
+chetti,MAN-16,ignore,model,unnamed merchant title
+courtesan,MAN-16,ignore,model,unnamed generic
+cremation_ground,MAN-16,ignore,model,generic place
+demon_mountain,MAN-16,new:naga_mountain,model,same mountain approached
+departing_entity,MAN-16,concept,model,the soul as idea
+dice_gambling,MAN-16,concept,model,"vice, abstraction"
+evil_doers,MAN-16,ignore,model,generic group
+firewood,MAN-16,ignore,model,generic material
+flower_vine_lady,MAN-16,ignore,model,unidentified addressee
+funeral_pyre,MAN-16,ignore,model,generic pyre
+good_doers,MAN-16,ignore,model,generic group
+good_world,MAN-16,concept,model,abstract heaven
+goods,MAN-16,ignore,model,generic goods
+heavenly_voice,MAN-16,ignore,model,unnamed voice
+house,MAN-16,new:aticari_house,model,same house entered
+intoxicating_toddy_and_killing,MAN-16,concept,model,vices renounced
+killing_trade,MAN-16,concept,model,"practice, abstraction"
+liquor_and_killing,MAN-16,concept,model,vices renounced
+liquor_and_meat,MAN-16,concept,model,vices renounced
+naga_mountain,MAN-16,new:naga_mountain,model,specific mountain not in graph
+naga_ways,MAN-16,concept,model,"customs, abstraction"
+new_body,MAN-16,concept,model,rebirth doctrine
+offered_woman_toddy_meat,MAN-16,ignore,model,generic offering
+own_house,MAN-16,ignore,model,unidentified owner
+pool,MAN-16,ignore,model,generic simile pool
+pyre,MAN-16,ignore,model,generic pyre
+rebirth,MAN-16,concept,model,doctrine
+report_of_sathuvan_death,MAN-16,ignore,model,"event, not entity"
+sarana_cannibals,MAN-16,new:sarana_cannibals,model,specific cannibal group
+sarana_guru_son,MAN-16,ignore,model,unnamed person
+sarana_language,MAN-16,ignore,model,generic language
+sathuvan_story,MAN-16,ignore,model,"narrative, not entity"
+sea_ordeal,MAN-16,ignore,model,"event, not entity"
+shipwrecked_people,MAN-16,shipwrecked_men,model,wrecked-ship people devoured
+soul_journey,MAN-16,concept,model,doctrine of soul
+soul_passage,MAN-16,concept,model,doctrine of soul
+soul_rebirth,MAN-16,concept,model,doctrine of soul
+teller,MAN-16,ignore,model,"unnamed narrator, generic"
+their_wealth,MAN-16,ignore,model,"generic wealth, not a specific entity"
+timber,MAN-16,ignore,model,generic broken wood
+tree_shade_on_shore,MAN-16,ignore,model,generic place
+vinjaiyar,MAN-16,new:vinjaiyar,model,"named group of celestial beings (vidyadharas), not in graph"
+voice_in_sky,MAN-16,ignore,model,unnamed disembodied voice
+waves,MAN-16,ignore,model,generic natural element
+wise_people,MAN-16,ignore,model,generic unnamed group
+worldly_benefit,MAN-16,concept,model,abstract idea of worldly gain
+all_receivers,MAN-17,ignore,model,generic invitation to all who want food
+ascetics,MAN-17,ignore,model,generic group
+disease,MAN-17,concept,model,abstract illness
+eater,MAN-17,ignore,model,unnamed generic
+elephant_fire_disease,MAN-17,concept,model,"a disease, not an entity"
+flying_mantra,MAN-17,concept,model,magical power/spell
+forest_river,MAN-17,ignore,model,unnamed generic place
+fruits_and_roots,MAN-17,ignore,model,generic items
+great_city,MAN-17,ignore,model,unnamed place of ascetics
+helpless_people,MAN-17,ignore,model,generic group
+hungry_people,MAN-17,ignore,model,generic group
+jambu_tree,MAN-17,new:jambu_tree,model,specific fruit tree of the story
+kanchanapuram,MAN-17,new:kanchanapuram,model,"named city, not in graph"
+mountains,MAN-17,ignore,model,generic mountains in sea-bridging allusion
+mutiyol_kottam,MAN-17,new:mutiyol_kottam,model,named temple of the old woman
+nediyon,MAN-17,new:nediyon,model,named deity who bridged the sea
+paya_malai,MAN-17,new:payamalai,model,"named hill, not in graph"
+pillar_doll,MAN-17,ignore,model,unclear which figure is meant
+podiyil,MAN-17,new:pothiyil,model,named Pothiyil hill
+pothiyil,MAN-17,new:pothiyil,model,named Pothiyil hill
+pond,MAN-17,ignore,model,unnamed pond
+ripe_fruit,MAN-17,ignore,model,generic object
+sage_curse,MAN-17,concept,model,curse as an abstraction
+sage_fruit,MAN-17,ignore,model,generic object
+street,MAN-17,ignore,model,generic place
+tanti_fire,MAN-17,concept,model,the disease as an abstraction
+teak_leaf,MAN-17,ignore,model,generic object
+vinjaiyan,MAN-17,ignore,model,vidyadhara; the quote doesn't clearly identify Kanchanan
+wealthy_people,MAN-17,ignore,model,generic group
+young_woman,MAN-17,ignore,model,unnamed woman addressed by the sage
+agni_wife,MAN-18,new:svaha,model,Agni's wife taking sages' wives' forms is Svaha
+ascetic_garb,MAN-18,ignore,model,generic clothing
+ascetic_monastery,MAN-18,ignore,model,generic place
+attendant_women,MAN-18,ignore,model,unnamed women
+beggar_folk,MAN-18,ignore,model,generic people
+chamara,MAN-18,ignore,model,generic object
+chariot_street,MAN-18,ignore,model,generic street
+courtesans,MAN-18,ignore,model,unnamed group
+crystal_hall,MAN-18,ignore,model,quote does not identify it
+dance_song_beauty,MAN-18,concept,model,abstract arts and qualities
+dancers_houses,MAN-18,ignore,model,generic places
+dancing_women,MAN-18,ignore,model,generic group
+desire,MAN-18,concept,model,abstraction
+doll_woman,MAN-18,ignore,model,unnamed figure
+forearm,MAN-18,ignore,model,body part
+forest_goddess,MAN-18,ignore,model,"unnamed, simile"
+garland_lady,MAN-18,ignore,model,unnamed woman
+golden_chariot,MAN-18,ignore,model,generic object
+golden_woman,MAN-18,ignore,model,unnamed woman
+hands,MAN-18,ignore,model,body part
+her heart,MAN-18,ignore,model,"body part, unnamed"
+her_breasts,MAN-18,ignore,model,body part
+human body as a vessel of suffering,MAN-18,concept,model,doctrine
+hungry_people,MAN-18,ignore,model,generic group
+ilango_vendan_residence,MAN-18,new:ilanko_residence,model,"specific place, not in graph"
+illusion_mantra,MAN-18,concept,model,"spell, abstract"
+kama_arrows,MAN-18,concept,model,"Kama's arrows, figurative"
+king,MAN-18,ignore,model,unnamed king
+kuccharak_kudikai,MAN-18,new:kuccharak_kutikai,model,named Gujarati dwelling
+kuccharak_kutikai,MAN-18,new:kuccharak_kutikai,model,"same place, other spelling"
+listener_she,MAN-18,ignore,model,unnamed listener
+old_proverbs,MAN-18,concept,model,sayings
+old_woman,MAN-18,ignore,model,unnamed old woman
+old_woman_quarters,MAN-18,ignore,model,generic place
+penance_woman,MAN-18,ignore,model,unnamed
+penitent_woman,MAN-18,ignore,model,unnamed
+raft,MAN-18,ignore,model,generic object
+sage_wife,MAN-18,new:ahalya,model,"Indra's thousand eyes story, Ahalya"
+sages_wives,MAN-18,new:seven_sages_wives,model,specific group from Agni/Svaha story
+saravanam,MAN-18,new:saravanam,model,named reed-forest place
+shipwrecked_man,MAN-18,ignore,model,unnamed man
+speaker_heart,MAN-18,ignore,model,unnamed speaker
+stage,MAN-18,ignore,model,generic place
+tales_of_desire,MAN-18,concept,model,abstract stories
+that_matter,MAN-18,ignore,model,generic reference
+virtue,MAN-18,concept,model,"abstract quality, good dharma"
+visitor,MAN-18,ignore,model,"unnamed approacher, not identified by quote"
+woman_eyes,MAN-18,ignore,model,"generic unnamed woman, quote doesn't identify"
+worship of his feet,MAN-18,concept,model,"act of worship, abstract"
+artisans,MAN-19,ignore,model,generic craftsmen
+ascetics,MAN-19,ignore,model,generic virtuous ones
+cirtti,MAN-19,new:cirtti,model,named companion who enters
+city_men,MAN-19,ignore,model,generic musicians
+dance_experts,MAN-19,ignore,model,generic group
+drama_scholars,MAN-19,ignore,model,generic group
+drum_experts,MAN-19,ignore,model,generic group
+drum_players,MAN-19,ignore,model,generic group
+elephant_fire_disease,MAN-19,concept,model,"disease, abstraction"
+elephant_fire_hunger,MAN-19,concept,model,hunger as a condition
+enemy_forces,MAN-19,ignore,model,generic foes
+female_monkey,MAN-19,ignore,model,generic animal
+festive_old_city,MAN-19,ignore,model,quote does not identify the city
+flower_pavilion,MAN-19,ignore,model,generic structure
+flower_weavers,MAN-19,ignore,model,generic group
+flowering_groves,MAN-19,ignore,model,generic scenery
+flute_and_voice_musicians,MAN-19,ignore,model,generic group
+garden,MAN-19,ignore,model,generic garden
+garland_wearer,MAN-19,ignore,model,unnamed speaker
+gem_swing,MAN-19,ignore,model,generic object
+golden_hall,MAN-19,gold_pavilion,model,hall built by Magadha/Maratha/etc. artisans
+golden_mirror,MAN-19,ignore,model,generic object
+hair,MAN-19,ignore,model,generic
+hair_perfumers,MAN-19,ignore,model,generic group
+helpless_people,MAN-19,ignore,model,generic
+hostile_army,MAN-19,ignore,model,generic foes
+ilangon,MAN-19,new:ilangon,model,"named prince/king, not clearly a graph entity"
+indra_tiruvan,MAN-19,new:indra_tiruvan,model,named person ascending the hall
+informer,MAN-19,ignore,model,unnamed speaker
+kariyaru,MAN-19,new:kariyaru,model,named place of the battle
+killi_enemies,MAN-19,ignore,model,generic enemies
+kings_son,MAN-19,ignore,model,unnamed prince
+kumkum,MAN-19,ignore,model,generic substance
+kumkum_painters,MAN-19,ignore,model,generic group
+kuravai_dance,MAN-19,ignore,model,generic dance
+lotus_pond,MAN-19,ignore,model,generic pond
+lute_players,MAN-19,ignore,model,generic group
+magadha_maratta_avanti_yavana_tamil_artisans,MAN-19,ignore,model,composite of several groups
+makara_veena,MAN-19,ignore,model,generic instrument
+male_monkey,MAN-19,ignore,model,generic animal
+mango_tree,MAN-19,ignore,model,generic tree
+manimekalai_feeding,MAN-19,concept,model,"an event or act, not an entity"
+many_people,MAN-19,ignore,model,generic
+maram_tree_and_bamboo,MAN-19,ignore,model,generic trees
+mavali_descendant,MAN-19,new:mavali_descendant,model,"epithet of a specific person, not clearly in graph"
+melody,MAN-19,concept,model,"musical tune, abstract"
+mirror_gazers,MAN-19,ignore,model,generic group of workers
+muthiyal_kottam,MAN-19,new:muthiyal_kottam,model,named place; the quote itself only mentions the bowl
+nediyon,MAN-19,new:vishnu,model,"the Tall One, epithet of Vishnu"
+offenders,MAN-19,ignore,model,generic wrongdoers
+old_woman,MAN-19,ignore,model,"unnamed, quote doesn't identify her"
+painting,MAN-19,ignore,model,"generic artwork, makers unnamed"
+painting_deity,MAN-19,ignore,model,deity not clearly identified
+peacock_and_parrot,MAN-19,ignore,model,generic birds/simile
+pearl_stringers,MAN-19,ignore,model,generic workers
+prison_guards,MAN-19,ignore,model,"generic, unnamed"
+prison_house,MAN-19,prison_site,model,the prison converted into a hall
+red_water_lily_petals,MAN-19,ignore,model,generic workers weaving petals
+sandal_paste,MAN-19,ignore,model,generic substance
+sandal_smearers,MAN-19,ignore,model,generic workers
+sceptre_deity,MAN-19,ignore,model,unclear who is meant
+scholars,MAN-19,ignore,model,generic group
+sky_like_garden,MAN-19,ignore,model,generic garden simile
+starving_prisoners,MAN-19,prisoners,model,prisoners being fed
+swan_and_peafowl,MAN-19,ignore,model,generic birds
+swans_peahens_peacocks,MAN-19,ignore,model,generic birds
+thannumai_drum,MAN-19,ignore,model,generic instrument
+vishnu,MAN-19,new:vishnu,model,Vishnu measuring the earth; not in graph
+white_umbrella,MAN-19,ignore,model,"regalia, owner unclear"
+yazh_players,MAN-19,ignore,model,generic musicians
+yazh_strings,MAN-19,ignore,model,generic instrument part
+adornment_deceit,MAN-20,concept,model,abstract idea of deceit
+city_public_places,MAN-20,ignore,model,"generic places, unnamed"
+cruel_deed,MAN-20,concept,model,abstract deed/karma
+desire,MAN-20,concept,model,abstract quality
+golden_chariot,MAN-20,ignore,model,"generic object, not identified"
+her_learned_knowledge_and_wise_words,MAN-20,concept,model,abstract knowledge
+kayasandikai_form,MAN-20,kayasandikai,model,form assumed is Kayasandikai's
+king,MAN-20,ignore,model,unnamed king
+old_city,MAN-20,ignore,model,unnamed city
+old_woman,MAN-20,ignore,model,unnamed old woman
+painted_doll,MAN-20,ignore,model,unclear identity
+podhiyil_hill,MAN-20,new:podhiyil_hill,model,"named hill, not in graph"
+prison_conversion_account,MAN-20,concept,model,"an account, not an entity"
+sage,MAN-20,viruchikan,model,sage who cursed Kayasandikai
+sky_travelers,MAN-20,ignore,model,generic travelers
+speaker_body,MAN-20,ignore,model,body of unnamed speaker
+speaker_breasts,MAN-20,ignore,model,body part of speaker
+speaker_calves,MAN-20,ignore,model,body part of speaker
+speaker_ears,MAN-20,ignore,model,body part of speaker
+speaker_eyebrows,MAN-20,ignore,model,body part of speaker
+speaker_eyes,MAN-20,ignore,model,body part of speaker
+speaker_fingers,MAN-20,ignore,model,body part of speaker
+speaker_forehead,MAN-20,ignore,model,body part of speaker
+speaker_hair,MAN-20,ignore,model,body part of speaker
+speaker_lips,MAN-20,ignore,model,body part of speaker
+speaker_nose,MAN-20,ignore,model,body part of speaker
+speaker_shoulders,MAN-20,ignore,model,body part of speaker
+speaker_teeth,MAN-20,ignore,model,body part of speaker
+speaker_thighs,MAN-20,ignore,model,body part of speaker
+temple_monastery_kitchen_dining_hall,MAN-20,ignore,model,generic buildings
+that_mountain,MAN-20,new:vindhya_mountain,model,the Vindhya mountain that swallows
+ulaga_aravi,MAN-20,new:ulaga_aravi,model,"named public rest-house, not in graph"
+vindhya_mountain,MAN-20,new:vindhya_mountain,model,"named mountain, not in graph"
+woman,MAN-20,ignore,model,generic woman cursed
+addressee_woman,MAN-21,ignore,model,"only an epithet, addressee not identified"
+all_beings,MAN-21,ignore,model,generic group
+ancient_city,MAN-21,ignore,model,unnamed city
+ascetic_form,MAN-21,ignore,model,generic form
+ascetics,MAN-21,ignore,model,unnamed generic group
+atheist_speaker,MAN-21,ignore,model,unnamed speaker
+bhuta_elements,MAN-21,concept,model,doctrine of elements
+birth_death_karma_teaching,MAN-21,concept,model,teaching
+births_and_virtue,MAN-21,concept,model,abstract idea
+city_protection,MAN-21,concept,model,abstraction
+confusion,MAN-21,concept,model,delusion
+cruel_deed_done_for_the_lord,MAN-21,concept,model,abstract deed/karma
+deity_showers,MAN-21,ignore,model,generic
+deluded_people,MAN-21,ignore,model,generic group
+divine_words,MAN-21,concept,model,abstract
+evil_deeds,MAN-21,concept,model,karma
+feast,MAN-21,ignore,model,generic event
+flowers_incense,MAN-21,ignore,model,generic offerings
+funeral_pyre,MAN-21,ignore,model,generic
+future_events,MAN-21,concept,model,abstract
+grace,MAN-21,concept,model,quality
+great_teacher,MAN-21,ignore,model,not clearly identified
+her_birth,MAN-21,concept,model,abstract
+husband,MAN-21,ignore,model,not named in quote
+inanimate_things,MAN-21,ignore,model,generic
+inanimate_things_do_not_speak,MAN-21,ignore,model,generic
+iraivan,MAN-21,concept,model,doctrinal creator god
+kayankarai_bank,MAN-21,ignore,model,generic place
+king,MAN-21,ignore,model,"unnamed king, not safely matched"
+king_son,MAN-21,ignore,model,unnamed prince
+knowledgeable_ones,MAN-21,ignore,model,generic group
+learned_men,MAN-21,ignore,model,generic group
+madhavan_pedestal,MAN-21,ignore,model,unclear which seat
+muthiyal_temple,MAN-21,new:muthiyal_kottam,model,named shrine of the old goddess
+noble_ones,MAN-21,ignore,model,generic
+old_woman,MAN-21,new:muthiyal,model,the old goddess of the shrine
+ordinary_people,MAN-21,ignore,model,generic
+other_forms,MAN-21,ignore,model,generic
+pillar_image,MAN-21,pillar,model,"painted image speaking, the pillar goddess"
+rare_deity,MAN-21,ignore,model,unnamed deity
+sadhu_chakkaran,MAN-21,new:sadhu_chakkaran,model,named sage not in graph
+sage,MAN-21,ignore,model,unnamed sage
+sage_words,MAN-21,ignore,model,speaker not identified
+savaka_king,MAN-21,ignore,model,king not clearly identified
+talaimagal,MAN-21,manimekhala_deity,model,goddess who conveyed her to Manipallavam
+the_dead,MAN-21,concept,model,doctrine that the dead are not reborn
+the_pair,MAN-21,ignore,model,unnamed speakers cooking a feast
+those_who_say,MAN-21,ignore,model,generic claimants
+tuvatikan,MAN-21,new:tuvatikan,model,named figure (Tushita deity) not in graph
+unbeliever,MAN-21,ignore,model,unnamed mocker
+unnamed_claimers,MAN-21,ignore,model,generic claimants
+uravon,MAN-21,ignore,model,quote doesn't identify who was rescued
+uttara_magadha,MAN-21,ignore,model,"quote is about male rebirth, names no place"
+vidyadhara,MAN-21,kanchanan,model,the vidyadhara whose sword killed Udayakumaran
+vidyadharan,MAN-21,kanchanan,model,the vidyadhara in the killing episode
+viper_venom,MAN-21,ignore,model,"generic cause of death, not a named entity"
+your_births,MAN-21,concept,model,abstract reference to past births
+addressed_woman,MAN-22,ignore,model,unnamed woman addressed by the bhuta
+alms,MAN-22,concept,model,abstract practice of receiving alms
+amaran_grace,MAN-22,concept,model,abstract grace or relief from slander
+ascetic,MAN-22,ignore,model,"generic 'great ascetic', not identified"
+ascetic_women,MAN-22,ignore,model,generic group
+ascetics,MAN-22,ignore,model,generic group
+ascetics_monastery,MAN-22,ignore,model,generic monastery
+axe_bearer,MAN-22,new:parasurama,model,"axe-wielding warrior who cut down kings, an epithet of Parasurama"
+bhuta,MAN-22,new:bhuta_chaturam_bhuta,model,"the guardian bhuta of the Bhuta Chaturam, not in graph"
+bhuta_chaturam,MAN-22,new:bhuta_chaturam,model,named Bhuta Chaturam shrine not in graph
+bhutam,MAN-22,new:bhuta_chaturam_bhuta,model,same bhuta of the Chaturam
+brahmin,MAN-22,ignore,model,unnamed brahmin
+chaste_wives,MAN-22,ignore,model,generic group
+cholika_enathi,MAN-22,new:cholika_enathi,model,"named official Cholika Enathi, not in graph"
+cozhika_enathi,MAN-22,new:cholika_enathi,model,spelling variant of Cholika Enathi
+dark_night,MAN-22,concept,model,"darkness of night, abstract"
+darkness,MAN-22,concept,model,abstract darkness
+devoted_wife,MAN-22,ignore,model,generic chaste wife
+dharmadattan_and_parents,MAN-22,ignore,model,"group, unclear and not matched to a single entity"
+dharmadattan_arrival,MAN-22,ignore,model,"an event, not an entity"
+dharmadattan_city,MAN-22,ignore,model,unnamed city
+dharmadattan_father,MAN-22,ignore,model,unnamed father
+dharmadattan_mother,MAN-22,ignore,model,unnamed mother
+elder_brother,MAN-22,ignore,model,unnamed brother
+ettippu_title,MAN-22,concept,model,"title or honor, abstract"
+evil_karma,MAN-22,concept,model,karma
+festival,MAN-22,ignore,model,"generic festival, not identified"
+five_vices,MAN-22,concept,model,doctrinal list of vices
+flag_decked_street,MAN-22,ignore,model,generic street
+flower_garland,MAN-22,ignore,model,generic garland
+great_city,MAN-22,ignore,model,unnamed city
+great_wealth,MAN-22,ignore,model,generic wealth
+grief_causing_deed,MAN-22,concept,model,abstract deed or fate
+guardian_courtesan,MAN-22,ignore,model,unnamed courtesan
+hall,MAN-22,ignore,model,generic hall
+her_fault,MAN-22,concept,model,abstract fault
+her_house,MAN-22,ignore,model,generic house
+his_father,MAN-22,new:kakanthan,model,the father who strikes his son with a sword is Kakanthan
+home,MAN-22,ignore,model,generic home
+house,MAN-22,ignore,model,generic house
+households,MAN-22,ignore,model,generic households
+husband,MAN-22,ignore,model,unnamed husband
+kakandi_name,MAN-22,new:kakandi,model,"the town named Kakandi, not in graph"
+kakanthan,MAN-22,new:kakanthan,model,"named man Kakanthan, not in graph"
+kanni,MAN-22,ignore,model,"'maiden', generic, unnamed"
+kanni_madam,MAN-22,ignore,model,generic maidens' quarters
+kantha_king,MAN-22,new:kakanthan,model,"Kakanthan, king named in the quote"
+kaveri_gate,MAN-22,ignore,model,"generic gate, not a named place"
+kaveri_river,MAN-22,new:kaveri,model,"Kaveri river, not in graph"
+kayasandikai_form,MAN-22,ignore,model,"a disguise form, not the person"
+king,MAN-22,chola_king,model,king approached in this Puhar canto
+king_addressed,MAN-22,chola_king,model,sage blesses the Chola king
+king_discus,MAN-22,ignore,model,"king's emblem, not an entity"
+king_umbrella,MAN-22,ignore,model,"king's emblem, not an entity"
+kings,MAN-22,ignore,model,generic kings cut off by Parasurama
+kumari_woman,MAN-22,manimekalai,model,"woman freed from blame, walking the street"
+manimekalai_experience,MAN-22,concept,model,abstract account of events
+mayari,MAN-22,new:kakanthan,model,quote names Kakanthan as the one who punishes
+mother,MAN-22,ignore,model,unnamed mother
+noose,MAN-22,ignore,model,"an object, not a named entity"
+offenders,MAN-22,ignore,model,generic wrongdoers
+old_woman_shrine,MAN-22,new:mutiyol_kottam,model,named shrine of the old goddess
+other_men,MAN-22,ignore,model,generic
+parasurama,MAN-22,new:parasurama,model,named sage-warrior Parasurama
+past_offenders,MAN-22,ignore,model,generic
+petitioners,MAN-22,ignore,model,generic group
+pillar_doll,MAN-22,pillar,model,doll carved on the pillar is the pillar goddess
+poets_meaning,MAN-22,concept,model,abstract
+poets_teaching,MAN-22,concept,model,abstract
+public_blame,MAN-22,concept,model,abstract
+riddles,MAN-22,concept,model,abstract
+right_to_rule,MAN-22,concept,model,abstract
+sage,MAN-22,ignore,model,unnamed sage
+sage_account,MAN-22,concept,model,abstract
+sages,MAN-22,ignore,model,generic group
+sages_penance_and_womens_chastity,MAN-22,concept,model,abstract
+saying_about_wifeless_men,MAN-22,concept,model,abstract saying
+spear_and_scepter,MAN-22,concept,model,symbols of kingship
+suffering,MAN-22,concept,model,abstract
+that_man,MAN-22,ignore,model,unnamed man in the quote
+this_city,MAN-22,puhar,model,the city in which the Chola king rules
+tongued_doll,MAN-22,pillar,model,speaking pillar doll
+trade,MAN-22,concept,model,abstract
+udayakumaran_came_to_vijjai_woman,MAN-22,ignore,model,"event, not an entity"
+udayakumaran_death,MAN-22,concept,model,event
+udayakumaran_fate,MAN-22,concept,model,event
+unnamed_king,MAN-22,chola_king,model,king addressed by sage in Puhar
+unnamed_sage,MAN-22,ignore,model,unnamed
+vidyadhara,MAN-22,kanchanan,model,Vidyadhara who struck with sword in the hall is Kanchanan
+virtuous_deeds,MAN-22,concept,model,abstract
+visakha,MAN-22,visakai,model,spelling variant of Visakai; the quote is about her beauty
+vow,MAN-22,concept,model,"abstract vow, not an entity"
+wifeless_men,MAN-22,ignore,model,generic unnamed group
+women_other_than_visakai,MAN-22,ignore,model,"generic, unnamed women"
+worshippers,MAN-22,ignore,model,generic unnamed group
+younger_brother,MAN-22,ignore,model,unnamed brother; the quote doesn't identify him
+addressed_woman,MAN-23,ignore,model,unnamed addressee
+all_beings,MAN-23,concept,model,generic all living beings
+arrow,MAN-23,ignore,model,generic object
+brahmin_guardian,MAN-23,ignore,model,unnamed guardian
+burial_ground,MAN-23,ignore,model,generic place
+coins,MAN-23,ignore,model,"generic coins, not clearly the graph's"
+desert,MAN-23,ignore,model,generic forest/wilderness
+doe,MAN-23,ignore,model,unnamed animal
+drunkards,MAN-23,ignore,model,generic group
+dungeon,MAN-23,prison_site,model,"confinement in a cell, the prison"
+elephant,MAN-23,ignore,model,unnamed animal
+false_conduct,MAN-23,concept,model,abstract conduct
+fasting_mantra,MAN-23,concept,model,abstract mantra power
+fawn,MAN-23,ignore,model,unnamed animal
+fire_of_grief_for_son,MAN-23,concept,model,metaphor of grief
+food-abstaining mantra,MAN-23,concept,model,abstract mantra power
+grief,MAN-23,concept,model,emotion
+her_son,MAN-23,ignore,model,unnamed son in a story
+hunter,MAN-23,ignore,model,unnamed hunter
+ignorant_wretch,MAN-23,hired_youth_23,model,"unlearned man coming in the dark, the hired youth"
+jewelled_woman,MAN-23,ignore,model,unnamed woman
+karuka_husband,MAN-23,ignore,model,unnamed husband
+karuka_lady_husband,MAN-23,ignore,model,unnamed husband
+karuka_land,MAN-23,ignore,model,unclear place reference
+karuka_woman,MAN-23,ignore,model,unnamed woman
+keeping_the_woman,MAN-23,concept,model,abstract question
+male_form,MAN-23,concept,model,"a shape, not an entity"
+mother_of_beloved,MAN-23,ignore,model,unnamed
+next_birth,MAN-23,concept,model,abstract rebirth
+palace,MAN-23,ignore,model,generic palace
+palace_of_fragrant_haired_woman,MAN-23,ignore,model,unnamed place
+people_of_the_world,MAN-23,ignore,model,generic people
+queen_plot,MAN-23,concept,model,abstract deceit
+queen_son,MAN-23,ignore,model,unnamed son
+serpent,MAN-23,ignore,model,unnamed animal
+sky_travel_and_shape_change,MAN-23,concept,model,abstract powers
+snake,MAN-23,ignore,model,unnamed animal
+suffering_arrivals,MAN-23,ignore,model,generic group
+suffering_causing_things,MAN-23,concept,model,abstract things
+the_wise,MAN-23,ignore,model,generic group
+thief_deed,MAN-23,concept,model,abstract deed
+those_who_follow_false_river_path,MAN-23,ignore,model,generic group
+those_who_take_false_ways,MAN-23,ignore,model,generic group
+unlearned_youth,MAN-23,hired_youth_23,model,"unlearned youth summoned, the hired youth"
+vidyadhara,MAN-23,ignore,model,unnamed in quote
+wisdom_water,MAN-23,concept,model,"metaphorical 'water of wisdom', an abstraction"
+youth,MAN-23,ignore,model,"unnamed 'unlearned youth' summoned; quote doesn't identify him, and hired_youth_"
+abundance,MAN-24,concept,model,abstract yield of land
+account_of_punyarasan,MAN-24,concept,model,"a narrative, not an entity"
+addressee_house,MAN-24,ignore,model,generic house
+all_born,MAN-24,ignore,model,generic beings
+animal_ghost_hell_being,MAN-24,concept,model,rebirth realms
+aputhiran_country,MAN-24,savakam,model,Aputhiran's land is Savakam
+ascetic,MAN-24,ignore,model,unnamed sage
+astrologer,MAN-24,ignore,model,unnamed
+attendants,MAN-24,ignore,model,generic group
+birth_aging_sickness_death,MAN-24,concept,model,natural law doctrine
+causal_links,MAN-24,concept,model,twelve-link doctrine
+courtesans,MAN-24,ignore,model,generic group
+covetousness_anger_wrong_views,MAN-24,concept,model,evil mental deeds
+deep_hell,MAN-24,concept,model,abstract realm
+deva_human_brahma,MAN-24,concept,model,rebirth realms
+devi_addressed,MAN-24,ignore,model,addressee not identified
+devi_ayam_and_cittirapati,MAN-24,ignore,model,"composite group, unclear"
+doctrines,MAN-24,concept,model,teachings
+evil_deed,MAN-24,concept,model,doctrinal term
+flower_arrows,MAN-24,ignore,model,generic weapon of Kama
+flower_garden_outside_city,MAN-24,ignore,model,"generic grove, not clearly the graph one"
+good_and_bad_deeds,MAN-24,concept,model,karma categories
+good_deed,MAN-24,concept,model,doctrinal term
+grove,MAN-24,ignore,model,generic place
+grove_sage,MAN-24,ignore,model,unnamed sage
+inner_wasting_disease,MAN-24,concept,model,abstract
+joy,MAN-24,concept,model,abstract quality
+joy_and_sorrow,MAN-24,concept,model,abstract
+kaman,MAN-24,new:kaman,model,"god of love, not in graph"
+karma_result,MAN-24,concept,model,karma fruit
+karmic_result,MAN-24,concept,model,karma fruit
+killing_theft_lust,MAN-24,concept,model,evil bodily deeds
+king,MAN-24,ignore,model,"unnamed king, not identified"
+king_and_queen_and_women,MAN-24,ignore,model,generic group
+king_city,MAN-24,puhar,model,city swallowed by the sea is Puhar
+king_queen_and_ladies,MAN-24,ignore,model,generic group
+land_and_trees,MAN-24,concept,model,generic nature
+lying_slander_harsh_speech_idle_talk,MAN-24,concept,model,evil speech deeds
+merit_of_rajamadevi,MAN-24,concept,model,merit is abstract
+monastery,MAN-24,ignore,model,generic place
+mutiyal_kutikai,MAN-24,ignore,model,"old woman's hut, owner unclear"
+naga_nadu,MAN-24,savakam,model,Naga country of the Savakam episode
+nallai_addressed,MAN-24,ignore,model,addressee 'good lady' unidentified
+news_of_manimekalai,MAN-24,concept,model,abstract report
+pedaimai,MAN-24,concept,model,"ignorance, a doctrinal term"
+prophesied_son,MAN-24,ignore,model,unnamed son
+queen,MAN-24,ignore,model,"title only, not clearly identified"
+rebirth,MAN-24,concept,model,doctrine
+rival_kings,MAN-24,ignore,model,generic kings
+sage_words,MAN-24,concept,model,abstract teaching
+saranan,MAN-24,ignore,model,"generic charana sage, unidentified"
+seat,MAN-24,ignore,model,unclear which seat
+shining_pillar,MAN-24,ignore,model,unclear; not the pillar goddess
+six_kinds_of_beings,MAN-24,concept,model,doctrinal classification
+solar_race_man,MAN-24,ignore,model,unnamed man
+stage_courtesans,MAN-24,ignore,model,generic group
+stage_dancer,MAN-24,ignore,model,unnamed
+teacher,MAN-24,ignore,model,unnamed speaker
+the_born,MAN-24,ignore,model,generic beings
+those_who_do_evil,MAN-24,ignore,model,generic group
+those_who_give_up_ten_evils,MAN-24,ignore,model,generic group
+three_sacred_sites,MAN-24,ignore,model,"generic, unspecified places"
+tivaka_shanti,MAN-24,concept,model,a rite
+tivinai,MAN-24,concept,model,"evil deed, abstract"
+twelve_nidanas,MAN-24,concept,model,doctrine
+valaivanan,MAN-24,new:valaivanan,model,named Naga king
+vasamayilai,MAN-24,new:vasamayilai,model,"named woman, mother of the prince"
+vices,MAN-24,concept,model,abstract
+victor_of_many,MAN-24,ignore,model,"epithet, unidentified king"
+vidyadharan,MAN-24,ignore,model,quote does not identify him
+wise_ones,MAN-24,ignore,model,generic
+woman,MAN-24,ignore,model,unnamed woman
+women_of_lineage,MAN-24,ignore,model,generic group
+young_woman,MAN-24,ignore,model,unnamed addressee
+amarasundari,MAN-25,new:amarasundari,model,"personal name, not in graph"
+ancient_body,MAN-25,ignore,model,"unclear, unnamed form"
+aputhiran_sign,MAN-25,ignore,model,generic dead people
+aravanan_account,MAN-25,aravanan,model,speaker 'I told you' is Aravana Adikal
+ascetic,MAN-25,ignore,model,generic ascetics
+births_of_the_born,MAN-25,concept,model,doctrine of births
+buddha_pedestal,MAN-25,seat_of_buddha,model,Buddha's seat worshipped
+chamberlain,MAN-25,ignore,model,"generic attendant, unidentified"
+chetti_companions,MAN-25,ignore,model,generic group
+chetti_remains,MAN-25,ignore,model,generic remains
+child,MAN-25,ignore,model,generic child
+compassionate_dharma,MAN-25,concept,model,abstract doctrine
+counsel,MAN-25,ignore,model,generic hearer
+departing_followers,MAN-25,ignore,model,generic group
+dharma_teaching,MAN-25,concept,model,"teaching, abstraction"
+dharmasavakan,MAN-25,new:dharmasavakan,model,"named teacher, not in graph"
+distress,MAN-25,concept,model,abstract state
+divine_city,MAN-25,ignore,model,unclear which city
+drama,MAN-25,concept,model,generic performance
+elders,MAN-25,ignore,model,generic group
+enlightened_lord,MAN-25,new:buddha,model,"the Buddha, not in graph"
+evil_deeds,MAN-25,concept,model,karma/abstraction
+flower_arrows,MAN-25,new:kama,model,arrows of the cane-bowed god Kama
+food_clothing_shelter,MAN-25,concept,model,abstract definition
+garden,MAN-25,ignore,model,unspecified grove
+goddess_unnamed,MAN-25,ignore,model,unnamed goddess
+gods_humans_brahmas,MAN-25,ignore,model,generic beings
+golden_egg,MAN-25,concept,model,cosmological idea
+good_deeds,MAN-25,concept,model,karma
+good_dharma,MAN-25,concept,model,abstraction
+grove,MAN-25,ignore,model,unspecified grove
+guardian_deity,MAN-25,ignore,model,unnamed deity
+harsh_words,MAN-25,concept,model,abstract speech
+hearers_of_his_teaching,MAN-25,ignore,model,generic hearers
+higher_world,MAN-25,concept,model,abstract realm
+his_birth_story,MAN-25,concept,model,"story, not entity"
+indra_pedestal,MAN-25,seat_of_buddha,model,the great pedestal worshipped
+infant,MAN-25,royal_infant,model,"king's son, the infant"
+inner_city,MAN-25,ignore,model,generic place
+island,MAN-25,manipallavam,model,island circumambulated
+island_goddess,MAN-25,tivatilakai,model,goddess of the island
+kariyavan,MAN-25,ignore,model,"epithet 'dark one', unclear"
+kayankarai_river_bank,MAN-25,ignore,model,"generic place, bowing to sage"
+killivalavan,MAN-25,killi,model,Killivalavan the Chola king
+king,MAN-25,ignore,model,"generic king, unidentified"
+king_addressed,MAN-25,ignore,model,king not identified by name
+king_country,MAN-25,ignore,model,unnamed king's country
+king_land,MAN-25,ignore,model,unnamed king's land
+king_next_birth,MAN-25,concept,model,abstract rebirth
+king_party,MAN-25,ignore,model,unnamed group entering Vanci
+king_rebirth,MAN-25,concept,model,abstract rebirth
+king_unnamed,MAN-25,ignore,model,unnamed king
+kingdom,MAN-25,concept,model,generic duty of rule
+land,MAN-25,ignore,model,generic land
+lord_of_beings,MAN-25,new:buddha,model,Buddha who ruled with dharma
+manimekalai_birth,MAN-25,concept,model,abstract revealing of birth
+merchants_remains,MAN-25,ignore,model,generic remains
+mother,MAN-25,ignore,model,unnamed mother
+mother_past_deeds_and_his_birth,MAN-25,concept,model,abstract past-life deeds
+music,MAN-25,ignore,model,generic
+naga_king,MAN-25,naga_chief,model,father of Pilivalai
+navalam_island,MAN-25,new:navalam_island,model,named island (Jambudvipa)
+nine_chettis,MAN-25,new:nine_merchants,model,specific group of nine merchants who died
+nine_merchants,MAN-25,new:nine_merchants,model,same group of nine merchants
+omniscient_one,MAN-25,new:buddha,model,the Buddha appearing
+painful_birth,MAN-25,concept,model,abstract rebirth suffering
+past_and_present_births,MAN-25,concept,model,abstract births
+people_unnamed,MAN-25,ignore,model,unnamed people
+perumakan,MAN-25,ignore,model,"title only, unclear who"
+proclaimers,MAN-25,ignore,model,unnamed proclaimers
+queens,MAN-25,ignore,model,unnamed queens
+rain_cloud,MAN-25,ignore,model,simile only
+rain_wealth,MAN-25,concept,model,abstract rain bounty
+realm,MAN-25,concept,model,abstract realm
+rebirth_as_gods_humans_brahmas,MAN-25,concept,model,abstract rebirth
+renunciation,MAN-25,concept,model,abstract doctrine
+revealing_birth,MAN-25,concept,model,abstract act
+ruling_kings,MAN-25,ignore,model,generic kings
+sage,MAN-25,ignore,model,unnamed sage
+sailors,MAN-25,ignore,model,unnamed sailors
+sanamitran,MAN-25,new:sanamitran,model,named person
+sea_waves,MAN-25,ignore,model,generic natural feature
+seashore,MAN-25,ignore,model,generic shore
+seed,MAN-25,concept,model,metaphor of teaching
+sensual_pleasure,MAN-25,concept,model,abstract quality
+shipwrights,MAN-25,ignore,model,generic craftsmen
+shore,MAN-25,ignore,model,generic shore
+speaker_birth,MAN-25,concept,model,abstract revealing of birth
+vanavan,MAN-25,ignore,model,"title, referent unclear"
+vanavan_king,MAN-25,ignore,model,"simile, referent unclear"
+warring_kings,MAN-25,ignore,model,generic kings awaiting audience; not identified
+wide_city,MAN-25,ignore,model,"generic 'wide city', no specific city named in quote"
+woman_birth,MAN-25,concept,model,"abstract theme: her birth/past lives, not an entity"
+worthy_ones,MAN-25,ignore,model,"generic 'the worthy/noble ones', unnamed group"
+all_people,MAN-26,ignore,model,generic group
+anger_sin,MAN-26,concept,model,abstract moral idea
+army,MAN-26,ignore,model,"generic army, unnamed"
+ascetic_form,MAN-26,ignore,model,unnamed disguise form
+bodhi_tree,MAN-26,new:bodhi_tree,model,"specific sacred place, not in graph"
+buddha_dharma,MAN-26,concept,model,doctrine
+buddha_path,MAN-26,concept,model,doctrine/path
+chakkaravalam,MAN-26,new:chakkaravalam,model,"named place, not in graph"
+cliff,MAN-26,ignore,model,generic landscape
+four_noble_truths,MAN-26,concept,model,doctrine
+four_truths,MAN-26,concept,model,doctrine
+ganga_bank,MAN-26,new:ganga,model,"Ganges river, not in graph"
+ganga_north_bank,MAN-26,new:ganga,model,"Ganges river, not in graph"
+golden_vakai_wreath,MAN-26,new:vakai_wreath,model,"specific wreath, not in graph"
+good_cause,MAN-26,concept,model,abstract idea
+himalaya_divine_stone,MAN-26,himalaya_stone,model,the divine Himalayan stone
+indra_viharas,MAN-26,new:indra_viharas,model,"seven named viharas, not in graph"
+jewels,MAN-26,ignore,model,unclear generic
+kanaka_vijaya_and_kings,MAN-26,new:kanaka_vijayan,model,"named defeated kings, not in graph"
+king,MAN-26,ignore,model,"generic king, unidentified"
+liberation,MAN-26,concept,model,abstract goal
+other_form,MAN-26,ignore,model,generic
+our_lord,MAN-26,ignore,model,unidentified lord
+paramitas,MAN-26,concept,model,Buddhist perfections
+past_karma,MAN-26,concept,model,karma doctrine
+sangaman_wife,MAN-26,new:sangaman_wife,model,"specific person, not in graph"
+twelve_links_arising_and_cessation,MAN-26,concept,model,doctrine
+vanci_flower,MAN-26,ignore,model,generic flower
+vasu_and_kumaran,MAN-26,new:vasu_and_kumaran,model,"named pair, not in graph"
+wise_men,MAN-26,ignore,model,generic group
+woman,MAN-26,ignore,model,unnamed addressee
+adharmastikaya,MAN-27,concept,model,Jain/Ajivika doctrinal category
+ahamkara,MAN-27,concept,model,Samkhya principle
+air,MAN-27,concept,model,element in doctrine
+aiyam,MAN-27,concept,model,"doubt, epistemological term"
+ajivaka_scholar,MAN-27,new:ajivaka_scholar,model,"specific Ajivaka teacher in the debate, unnamed in graph"
+akasa,MAN-27,concept,model,ether element
+all_substances,MAN-27,concept,model,abstract category
+aranya_veda,MAN-27,concept,model,"Veda doctrine, text"
+atom_divine_eyed_ones,MAN-27,concept,model,atom doctrine
+atom_pudgala,MAN-27,concept,model,atom doctrine
+aykkudi,MAN-27,new:aykkudi,model,named place on the Ganga
+aykkudi_settlement,MAN-27,new:aykkudi,model,same place as Aykkudi
+bhuta_vada,MAN-27,concept,model,materialist doctrine
+bhuta_vadi,MAN-27,new:bhutavadi,model,materialist debater
+bhutavadi,MAN-27,new:bhutavadi,model,materialist debater
+brahma_vadi,MAN-27,new:brahmavadi,model,Brahmanical debater in the canto
+brahmin_rule,MAN-27,concept,model,abstract doctrine
+buddhi,MAN-27,concept,model,Samkhya principle
+cuttunarvu,MAN-27,concept,model,definition of perception
+datura_flower_and_jaggery,MAN-27,concept,model,illustrative example in argument
+dharmastikaya,MAN-27,concept,model,doctrinal category
+ear_and_sound,MAN-27,concept,model,doctrinal evolute
+earth_atom,MAN-27,concept,model,atom doctrine
+earth_qualities,MAN-27,concept,model,qualities abstraction
+earth_water_fire_wind,MAN-27,concept,model,elements
+elements,MAN-27,concept,model,elements
+elephant,MAN-27,concept,model,generic inference example
+elephant_rider,MAN-27,ignore,model,generic unnamed figure
+elephant_sound,MAN-27,ignore,model,unnamed hearer in example
+eye_and_light,MAN-27,concept,model,doctrinal evolute
+five_kinds_of_religion,MAN-27,concept,model,religious systems
+forest,MAN-27,ignore,model,generic example place
+gain_loss_pain_pleasure_birth_death,MAN-27,concept,model,abstract experiences
+gavaya_like_cow,MAN-27,concept,model,analogy example
+ghost,MAN-27,ignore,model,generic example
+god_and_text_contents,MAN-27,concept,model,abstract subject of question
+gram_pulse,MAN-27,concept,model,illustrative example
+il_vazhakku,MAN-27,concept,model,definition of testimony
+indras,MAN-27,ignore,model,"generic plural, not the graph's Indra"
+inference,MAN-27,concept,model,epistemological term
+intended_matter,MAN-27,concept,model,abstraction
+intoxication_from_mixture,MAN-27,concept,model,analogy example
+iron_needle,MAN-27,concept,model,illustrative example
+isan,MAN-27,new:isan,model,"Isan (Shiva) as declared god, not in graph"
+jaimini,MAN-27,new:jaimini,model,named Mimamsa sage Jaimini
+jain_exponent,MAN-27,ignore,model,unnamed speaker
+jiva,MAN-27,concept,model,soul doctrine
+kandu_unaraamai,MAN-27,concept,model,"abstract notion, non-perception"
+kavaya_ox,MAN-27,concept,model,"analogy example, gavaya ox"
+kritakoti,MAN-27,ignore,model,generic 'they'; no clear named person
+learner,MAN-27,ignore,model,generic learner
+liberation,MAN-27,concept,model,moksha doctrine
+life,MAN-27,concept,model,definition of soul/life
+limitless_knower,MAN-27,concept,model,"descriptor of God, doctrine"
+logician,MAN-27,ignore,model,unnamed speaker
+magnet,MAN-27,concept,model,illustrative example
+makkali_doctrine,MAN-27,concept,model,Ajivika doctrine
+manas,MAN-27,concept,model,Samkhya principle
+monist_debater,MAN-27,ignore,model,unnamed debater
+mountains_trees_world,MAN-27,concept,model,evolutes of nature
+mula_prakriti,MAN-27,concept,model,Samkhya primal nature
+narayanan,MAN-27,new:narayanan,model,"deity Narayana, not in graph"
+narayanan_purana,MAN-27,concept,model,Vaishnava text/doctrine
+neem,MAN-27,concept,model,illustrative example
+neem_tree,MAN-27,concept,model,illustrative example
+nigantavadi,MAN-27,ignore,model,unnamed Jain debater
+nigantha_categories,MAN-27,concept,model,doctrinal categories
+nigantha_lord,MAN-27,new:arhat_jina,model,"Jain Lord worshipped by Indras, unnamed in graph"
+nigantha_text,MAN-27,concept,model,scripture
+ninaippu,MAN-27,concept,model,abstract idea of recollection/parents
+nine_substances,MAN-27,concept,model,Vaisheshika categories
+nose_and_smell,MAN-27,concept,model,Samkhya evolutes
+object_unnamed,MAN-27,ignore,model,unnamed object
+observer,MAN-27,ignore,model,generic observer
+one_god,MAN-27,concept,model,creator god in egg doctrine
+organs_of_action,MAN-27,concept,model,Samkhya principles
+origin_persistence_destruction,MAN-27,concept,model,doctrine of threefold nature
+other_beings,MAN-27,ignore,model,generic beings
+outer_form,MAN-27,concept,model,atom doctrine
+parents,MAN-27,ignore,model,generic parents in argument
+perception,MAN-27,concept,model,pramana
+pogabhuvanam,MAN-27,concept,model,"world of enjoyment, doctrine"
+pramanas,MAN-27,concept,model,means of knowledge
+previous_birth,MAN-27,concept,model,rebirth doctrine
+previous_philosopher,MAN-27,ignore,model,unnamed speaker
+primal_matter,MAN-27,concept,model,Samkhya prakriti
+prior_fate,MAN-27,concept,model,karma/fate doctrine
+purusha,MAN-27,concept,model,Samkhya principle
+rain_upstream,MAN-27,concept,model,inference example
+ravanan,MAN-27,new:ravanan,model,Named Ravana in logic example; not in graph
+reasoner,MAN-27,ignore,model,generic inferring person
+river_bank,MAN-27,ignore,model,generic example place in inference
+sage_text,MAN-27,concept,model,"scripture of a sage, generic text"
+samaya_teachers,MAN-27,ignore,model,generic doctrinal teachers addressed
+sankhya_doctrine,MAN-27,concept,model,doctrine
+sankhya_exponent,MAN-27,ignore,model,unnamed Sankhya speaker
+sankhya_teacher,MAN-27,ignore,model,unnamed Sankhya teacher
+second_speaker,MAN-27,ignore,model,unnamed speaker
+semmokku_and_mandalam,MAN-27,concept,model,doctrinal notion of natural course
+sense_objects,MAN-27,concept,model,abstract sense objects
+shaiva_vadi,MAN-27,ignore,model,unnamed Shaiva debater
+shell,MAN-27,concept,model,example of illusion
+six_births,MAN-27,concept,model,doctrinal classification
+six_categories,MAN-27,concept,model,Vaisesika categories
+skin_and_touch,MAN-27,concept,model,abstract principle
+soul_and_body,MAN-27,concept,model,abstract doctrine
+substance_and_quality_enable_action,MAN-27,concept,model,doctrinal idea
+substance_qualities,MAN-27,concept,model,abstract qualities
+substances,MAN-27,concept,model,abstract category
+terathu_telital,MAN-27,concept,model,logical fallacy definition
+those_born_in_order,MAN-27,ignore,model,generic group of souls
+tiriyakkotal,MAN-27,concept,model,type of false cognition
+tongue_and_taste,MAN-27,concept,model,abstract principle
+tree,MAN-27,ignore,model,generic example object
+twenty_five_principles,MAN-27,concept,model,Sankhya tattvas
+unarnthathai_unartal,MAN-27,concept,model,type of false cognition
+vaisesika_debater,MAN-27,ignore,model,unnamed Vaisesika debater
+vaisesika_doctrine,MAN-27,concept,model,doctrine
+vaisesika_exponent,MAN-27,ignore,model,unnamed Vaisesika speaker
+valid_means_of_knowledge,MAN-27,concept,model,"pramanas, abstract"
+vayu,MAN-27,concept,model,"element principle, air"
+veda,MAN-27,concept,model,scripture
+vedic_brahmin,MAN-27,ignore,model,unnamed Vedic teacher
+vedic_brahmin_teaching,MAN-27,concept,model,"teaching, abstract"
+vedic_logician,MAN-27,ignore,model,unnamed Vedic debater
+vedic_teaching,MAN-27,concept,model,"teaching, abstract"
+vyasa,MAN-27,new:vyasa,model,Vyasa named as sage in quote context; not in graph
+water_atom,MAN-27,concept,model,atom doctrine
+water_principle,MAN-27,concept,model,element principle
+world_of_enjoyment,MAN-27,concept,model,abstract realm
+addressee_parents,MAN-28,ignore,model,"generic, unnamed"
+all_beings,MAN-28,ignore,model,generic addressees
+alms_bowl,MAN-28,amudasurabhi,model,bowl that serves food
+ancients,MAN-28,ignore,model,generic
+aravanan_and_mothers,MAN-28,aravanan,model,feet worshipped and washed are Aravana's
+aravanan_arrival,MAN-28,ignore,model,just a hearing event
+artificial_hill,MAN-28,ignore,model,generic place description
+arundavan,MAN-28,ignore,model,unclear speaker
+ascetics,MAN-28,ignore,model,generic group
+avan_aranery,MAN-28,concept,model,his dharma path
+bangle_cutters_and_gem_workers_streets,MAN-28,ignore,model,generic street
+brahmin_street,MAN-28,ignore,model,generic street
+buddha_dharma,MAN-28,concept,model,doctrine
+buddha_shrine,MAN-28,ignore,model,unnamed shrine
+cause_of_distress,MAN-28,concept,model,abstract
+chaitya,MAN-28,ignore,model,unnamed shrine
+chamberlain,MAN-28,kanjukan_28,model,attendant going to the king at Kanchi
+charities,MAN-28,concept,model,abstract
+charity_hall,MAN-28,ignore,model,unnamed hall
+city_gate,MAN-28,ignore,model,generic
+city_ruin,MAN-28,ignore,model,"event, not entity"
+city_streets,MAN-28,ignore,model,generic
+city_tradespeople,MAN-28,ignore,model,generic
+city_wall,MAN-28,ignore,model,generic
+court_bards_streets,MAN-28,ignore,model,generic street
+dancers_streets,MAN-28,ignore,model,generic street
+deity,MAN-28,ignore,model,unnamed deity
+deva_world,MAN-28,ignore,model,generic realm
+dharma_caranar,MAN-28,charanas_28,model,charanas of this canto
+dharma_grove,MAN-28,new:dharmavana,model,named grove
+dharmadhavana,MAN-28,new:dharmavana,model,"same grove, other spelling"
+dvipa_pedestal,MAN-28,seat_of_buddha,model,Buddha seat showing births
+elephant_and_horse_trainers_street,MAN-28,ignore,model,generic street
+fragrant_groves,MAN-28,ignore,model,generic
+gate_guards,MAN-28,ignore,model,generic
+gem_merchants_street,MAN-28,ignore,model,generic street
+gold_assayers_street,MAN-28,ignore,model,generic street
+golden_city,MAN-28,puhar,model,city left desolate by the sea
+grain_merchants_street,MAN-28,ignore,model,generic street
+great_ascetics,MAN-28,ignore,model,generic
+great_city,MAN-28,puhar,model,great city swallowed by sea
+great_deity,MAN-28,ignore,model,unnamed deity
+grove,MAN-28,ignore,model,unnamed grove
+her_vow_of_charity,MAN-28,concept,model,abstract vow
+herdsmen_street,MAN-28,ignore,model,generic street
+here,MAN-28,manipallavam,model,quote names Manipallavam and Gomukhi pond
+household_life,MAN-28,concept,model,abstract theme
+impermanence_of_wealth_and_body,MAN-28,concept,model,doctrine
+indra_vihara,MAN-28,new:indra_vihara,model,"specific monastery, not in graph"
+kantirpavai_words,MAN-28,pillar,model,Kantirpavai is the pillar goddess
+kapilai_city,MAN-28,new:kapilavastu,model,"city where the Buddha taught, distinct from the person Kapilai"
+killi_and_ilankilli,MAN-28,new:killi_and_ilankilli,model,"named pair of kings, not a single graph entity"
+kovalan_father,MAN-28,ignore,model,quote does not identify the person
+land,MAN-28,concept,model,generic land in distress
+land_distress,MAN-28,concept,model,abstract question about the sceptre
+lotus_pedestal,MAN-28,seat_of_buddha,model,seat that showed past births
+mechanical_pool,MAN-28,ignore,model,generic city feature
+minstrel_streets,MAN-28,ignore,model,generic street description
+mixed_waters,MAN-28,ignore,model,generic water
+moat,MAN-28,ignore,model,generic city feature
+mothers,MAN-28,ignore,model,"unnamed, not identified by the quote"
+mountain_cleft,MAN-28,new:himalaya,model,mountain where the bow emblem was carved
+needy,MAN-28,ignore,model,generic recipients
+other_craftsmen_streets,MAN-28,ignore,model,generic street
+outer_settlement,MAN-28,ignore,model,generic suburb
+own_land,MAN-28,savakam,model,the Savaka king's own country
+penance,MAN-28,concept,model,abstract practice
+pond_and_garden,MAN-28,ignore,model,generic festival decoration
+public_gathering_places,MAN-28,ignore,model,generic places
+puhar_engulfed,MAN-28,puhar,model,the sea's flooding of Puhar
+royal_and_minister_streets,MAN-28,ignore,model,generic streets
+samanoli_hill,MAN-28,new:samanoli_hill,model,"named hill, not in graph"
+savaka_king,MAN-28,punyarasan,model,Punyarasan is the Savaka king in the graph
+savaka_land,MAN-28,savakam,model,Savakam is the Savaka king's land
+seers,MAN-28,charanas_28,model,those who foretold the flood
+shrine,MAN-28,ignore,model,generic building
+six_taste_food,MAN-28,ignore,model,generic food
+sky_travellers,MAN-28,ignore,model,"generic sky-goers, not clearly the charanas"
+this_city,MAN-28,kanchi,model,city entered after leaving the island
+tivakam,MAN-28,manipallavam,model,Tivakam is the island of Manipallavam
+truth_of_birth_suffering_and_release,MAN-28,concept,model,doctrine
+tuvatikan_words,MAN-28,new:tuvatikan,model,named speaker not in graph
+upasakas,MAN-28,ignore,model,generic lay devotees
+water_creatures,MAN-28,ignore,model,generic
+water_places,MAN-28,ignore,model,generic
+weavers_street,MAN-28,ignore,model,generic street
+wonder_knowers,MAN-28,charanas_28,model,same 'those who knew' who foretold
+world_ruling_wealth,MAN-28,concept,model,abstract wealth
+youths_and_women,MAN-28,ignore,model,generic group
+adi_sinendran,MAN-29,new:adi_sinendran,model,"Named Jina, 'Adi Sinendran', not in graph"
+agama_viruddha,MAN-29,concept,model,logical fallacy term
+agama_viruddham,MAN-29,concept,model,logical fallacy term
+akasam_denier,MAN-29,ignore,model,unnamed generic opponent
+ananvaya_fallacy,MAN-29,concept,model,logic term
+ananvaya_proof,MAN-29,concept,model,logic term
+annuvayam,MAN-29,concept,model,logic term
+anumana_viruddham,MAN-29,concept,model,logic fallacy term
+aprasiddha_sambandha,MAN-29,concept,model,logic fallacy term
+aprasiddha_ubhaya,MAN-29,concept,model,logic fallacy term
+aprasiddha_visesana,MAN-29,concept,model,logic fallacy term
+aprasiddha_visesiya,MAN-29,concept,model,logic fallacy term
+asiddha_fallacy,MAN-29,concept,model,logic fallacy classification
+atman,MAN-29,concept,model,doctrinal notion of self
+atom,MAN-29,concept,model,doctrinal example of atoms
+atom_example,MAN-29,concept,model,logic example about atoms
+atom_is_eternal_and_corporeal,MAN-29,concept,model,doctrinal proposition
+bad_thesis_bad_reason_bad_example,MAN-29,concept,model,logic classification
+bauddhan,MAN-29,ignore,model,"generic Buddhist debater, unnamed"
+bhava_is_not_substance_action_or_quality,MAN-29,concept,model,doctrinal proposition
+bodhisattva,MAN-29,ignore,model,"generic Bodhisattva in a story, not identified with a graph person"
+bodhisattva_ship,MAN-29,ignore,model,generic ship in an illustrative tale
+bodiless_reason,MAN-29,concept,model,logic reason
+bodiless_things,MAN-29,concept,model,abstract category
+both_reasons,MAN-29,concept,model,logic abstraction
+buddhist,MAN-29,ignore,model,"generic debater, unnamed"
+charanas,MAN-29,charanas_28,model,"charanas explaining the cause, as in the graph's charanas, though a different ca"
+contradictory_proof,MAN-29,concept,model,logic classification
+contradictory_reason,MAN-29,concept,model,logic fallacy
+curse,MAN-29,concept,model,abstract cause
+defective_example_both_lacking,MAN-29,concept,model,logic term
+defective_example_probandum_lacking,MAN-29,concept,model,logic term
+deity_name,MAN-29,ignore,model,"generic, name not given in quote"
+dharma_svarupa_viparita_sadhana,MAN-29,concept,model,logic fallacy term
+dharma_visesha_viparita_sadhana,MAN-29,concept,model,logic fallacy term
+dharmi_svarupa_viparita_sadhana,MAN-29,concept,model,logic fallacy term
+distress,MAN-29,concept,model,abstract quality
+doctrines_of_schools,MAN-29,concept,model,abstract doctrines
+dog_tail,MAN-29,concept,model,logic illustration
+donkey_courtesan_inference,MAN-29,concept,model,logic illustration
+drishtanta,MAN-29,concept,model,logic term for example
+drishtanta_abhasa,MAN-29,concept,model,logic term
+example,MAN-29,concept,model,logic term
+existence_advocate,MAN-29,ignore,model,unnamed generic disputant
+existence_distinct_among_substance_quality_action,MAN-29,concept,model,doctrinal proposition
+fallacious_reasons,MAN-29,concept,model,logical fallacy categories
+faulty_reason,MAN-29,concept,model,inference fallacy
+festival,MAN-29,ignore,model,"generic festival, not identified"
+five_part_syllogism,MAN-29,concept,model,logic doctrine
+five_schools,MAN-29,concept,model,doctrines/schools in the abstract
+five_sects,MAN-29,concept,model,doctrines/schools in the abstract
+formless_is_eternal_like_space,MAN-29,concept,model,logic argument
+formless_is_non_eternal_like_pleasure,MAN-29,concept,model,logic argument
+fox_tail,MAN-29,concept,model,logic example
+future_buddha,MAN-29,new:future_buddha,model,Bodhisattva who rescues from the sea
+hill_fire_argument,MAN-29,concept,model,logic example
+imperishability,MAN-29,concept,model,doctrinal view
+impermanent_is_permanent,MAN-29,concept,model,fallacy statement
+impermanent_pot_is_permanent,MAN-29,concept,model,fallacy example
+infant,MAN-29,royal_infant,model,"infant handed to the merchant, Pilivalai's son"
+inference,MAN-29,concept,model,means of knowledge
+inference_reasons,MAN-29,concept,model,logic doctrine
+intellect_example,MAN-29,concept,model,logic example
+karma_example,MAN-29,concept,model,logic example
+karma_is_incorporeal_yet_non_eternal,MAN-29,concept,model,logic example
+knowability,MAN-29,concept,model,logic abstraction
+lightning_and_space_examples,MAN-29,concept,model,logic examples
+loka_viruddha,MAN-29,concept,model,fallacy type
+loka_viruddham,MAN-29,concept,model,fallacy type
+manimekalais_mothers,MAN-29,ignore,model,"unnamed 'your mothers', not clearly identified"
+merchant_ship,MAN-29,ignore,model,generic ship in the story
+moon_is_not_candra,MAN-29,concept,model,fallacy example
+moon_is_not_moon,MAN-29,concept,model,fallacy example
+mother_is_barren,MAN-29,concept,model,fallacy example
+my_mother_is_barren,MAN-29,concept,model,fallacy example
+nigamana,MAN-29,concept,model,syllogism part
+nine_thesis_fallacies,MAN-29,concept,model,logic doctrine
+no_self,MAN-29,concept,model,doctrinal view
+no_smoke_without_fire,MAN-29,concept,model,logic principle
+nonexistence_advocate,MAN-29,ignore,model,unnamed debater
+ocean,MAN-29,ignore,model,generic sea
+opponent,MAN-29,ignore,model,unnamed debater
+other_means_of_knowledge,MAN-29,concept,model,logic doctrine
+pakshadharma_statement,MAN-29,concept,model,syllogism part
+pandu_kambalam,MAN-29,new:pandu_kambalam,model,Indra's stone seat that trembles
+part_occurring_reason,MAN-29,concept,model,fallacy type
+perception,MAN-29,concept,model,means of knowledge
+pleasure_and_self,MAN-29,concept,model,doctrinal abstraction
+pot,MAN-29,concept,model,logic example
+pratyaksha_viruddham,MAN-29,concept,model,fallacy type
+produced_reason,MAN-29,concept,model,logic doctrine about reasons
+proposition,MAN-29,concept,model,abstract logical term
+reason_reverses_the_subject,MAN-29,concept,model,fallacy concept
+renunciation,MAN-29,concept,model,abstract idea
+sadhana_dharma_vikala,MAN-29,concept,model,fallacy term
+sadhana_vyavritti_fallacy,MAN-29,concept,model,fallacy term
+sadharmya_drishtanta_abhasa,MAN-29,concept,model,fallacy category
+sadhya_vyavritti_fallacy,MAN-29,concept,model,fallacy term
+samkhya,MAN-29,concept,model,philosophical school
+sankhyan,MAN-29,concept,model,generic school adherent in debate
+sapaksha_connection,MAN-29,concept,model,logic term
+sapaksha_example,MAN-29,concept,model,logic term
+sattam,MAN-29,concept,model,sound as debate topic
+self_is_cause_of_pleasure_aggregate,MAN-29,concept,model,doctrinal claim
+self_is_sentient,MAN-29,concept,model,doctrinal claim
+senses_serve_another,MAN-29,concept,model,doctrinal argument
+siddha_asiddha_fallacy,MAN-29,concept,model,fallacy term
+smoke,MAN-29,concept,model,"logic example, not a story entity"
+sound_eternal,MAN-29,concept,model,doctrinal thesis
+sound_eternal_because_corporeal,MAN-29,concept,model,doctrinal thesis
+sound_eternal_because_not_made,MAN-29,concept,model,doctrinal thesis
+sound_impermanent,MAN-29,concept,model,doctrinal thesis
+sound_impermanent_produced,MAN-29,concept,model,doctrinal thesis
+sound_impermanent_visible,MAN-29,concept,model,doctrinal thesis
+sound_is_eternal,MAN-29,concept,model,doctrinal thesis
+sound_is_eternal_because_incorporeal,MAN-29,concept,model,doctrinal thesis
+sound_is_perishable,MAN-29,concept,model,doctrinal thesis
+sound_non_eternal_reason,MAN-29,concept,model,logic argument
+sound_noneternal_because_corporeal,MAN-29,concept,model,doctrinal thesis
+sound_not_sensed_by_ear,MAN-29,concept,model,doctrinal thesis
+space_atoms_pot_and_pleasure_examples,MAN-29,concept,model,logic examples
+space_is_not_a_substance,MAN-29,concept,model,doctrinal thesis
+space_nonexistence_voids_probandum_and_probans,MAN-29,concept,model,logic argument
+svavacana_viruddham,MAN-29,concept,model,fallacy term
+thesis_fallacy,MAN-29,concept,model,fallacy category
+three_reasons,MAN-29,concept,model,logic term
+tivakam,MAN-29,ignore,model,"unclear; hand-over to merchant, not identifiable"
+true_doctrine,MAN-29,concept,model,abstract teaching
+two_valid_means_of_knowledge,MAN-29,concept,model,epistemology doctrine
+ubaya_dharma_vikala_asat,MAN-29,concept,model,fallacy term
+ubaya_dharma_vikala_sat,MAN-29,concept,model,fallacy term
+ubhaya_vyavritti,MAN-29,concept,model,fallacy term
+ubhaya_vyavritti_fallacy,MAN-29,concept,model,fallacy term
+ubhayaikadesa_vritti_hetu,MAN-29,concept,model,fallacy term
+upanaya,MAN-29,concept,model,syllogism step
+upanaya_and_nigamana,MAN-29,concept,model,logic term (syllogism parts)
+vaidharmya_drishtanta_abhasa,MAN-29,concept,model,logic fallacy category
+vaidharmya_example,MAN-29,concept,model,logic term
+vaisesika,MAN-29,concept,model,"philosophical school, not a graph entity"
+vaisesikan,MAN-29,ignore,model,"generic Vaisesika debater, unnamed"
+valid_reason,MAN-29,concept,model,logic abstraction
+vikala_fallacy,MAN-29,concept,model,logic fallacy
+vipaksha_connection,MAN-29,concept,model,logic term
+vipakshaikadesa_vritti_hetu,MAN-29,concept,model,logic fallacy
+viparita_fallacy,MAN-29,concept,model,logic fallacy
+viparita_vyatireka,MAN-29,concept,model,logic term
+virtue,MAN-29,concept,model,"quality, virtuous conduct"
+vyapakam_vyapyam,MAN-29,concept,model,logic terms
+vyatireka,MAN-29,concept,model,logic term
+where_not_eternal_not_corporeal,MAN-29,concept,model,logic statement
+aggregate_and_continuity_usage,MAN-30,concept,model,doctrinal usage idea
+animals_ghosts_hell_beings,MAN-30,concept,model,"rebirth realms, generic"
+aruvuru,MAN-30,concept,model,name-and-form doctrine term
+attachment,MAN-30,concept,model,doctrinal link
+becoming,MAN-30,concept,model,doctrinal link
+birth,MAN-30,concept,model,doctrinal link
+birth_age_sickness_death_grief,MAN-30,concept,model,abstract suffering
+birth_and_disease,MAN-30,concept,model,doctrinal grouping
+birth_sickness_age_death_and_grief,MAN-30,concept,model,doctrinal grouping
+bodhi_tree,MAN-30,new:bodhi_tree,model,"specific named place/thing, Buddha's tree"
+charity_and_virtue,MAN-30,concept,model,virtues
+combined_speech,MAN-30,concept,model,rhetorical/grammatical term
+consciousness_name_form_senses_contact_feeling,MAN-30,concept,model,doctrinal grouping
+consciousness_to_becoming_links,MAN-30,concept,model,doctrinal grouping
+contact,MAN-30,concept,model,doctrinal link
+covetousness_anger_wrong_view,MAN-30,concept,model,mental sins
+craving_and_attachment,MAN-30,concept,model,doctrinal grouping
+craving_attachment_ignorance,MAN-30,concept,model,doctrinal terms
+deep_hell,MAN-30,concept,model,abstract realm of rebirth
+dependent_origination_chain,MAN-30,concept,model,doctrine
+dependent_origination_discourse,MAN-30,concept,model,discourse on doctrine
+devas_humans_brahmas,MAN-30,concept,model,generic rebirth classes
+disease,MAN-30,concept,model,doctrinal term
+does_the_dead_man_get_reborn,MAN-30,concept,model,question type/doctrine
+does_what_arises_perish,MAN-30,concept,model,question type/doctrine
+egg_or_palm_first,MAN-30,concept,model,logical question example
+evil_deed,MAN-30,concept,model,abstract notion
+exaggerated_speech,MAN-30,concept,model,rhetorical term
+explanatory_discourse,MAN-30,concept,model,literary form
+faults_actions_and_results_are_suffering,MAN-30,concept,model,doctrine
+five_aggregates,MAN-30,concept,model,doctrine
+four_kinds_of_answer,MAN-30,concept,model,doctrine/logic
+four_noble_truths,MAN-30,concept,model,doctrine
+four_truths,MAN-30,concept,model,doctrine
+free_of_attachment_or_not,MAN-30,concept,model,question example
+gnana_lamp,MAN-30,concept,model,metaphor for knowledge
+great_benefit,MAN-30,concept,model,abstract
+ignorance,MAN-30,concept,model,doctrinal link
+ignorance_action_craving_attachment_karma,MAN-30,concept,model,doctrinal grouping
+ignorance_and_karma_formations,MAN-30,concept,model,doctrinal grouping
+ignorance_and_karmic_formation,MAN-30,concept,model,doctrinal grouping
+ignorance_formations_craving_attachment_karma,MAN-30,concept,model,doctrinal grouping
+ignorance_to_craving_chain,MAN-30,concept,model,doctrine
+karma_aggregate,MAN-30,concept,model,doctrine
+karma_and_rebirth,MAN-30,concept,model,doctrine
+karmic_formations,MAN-30,concept,model,doctrinal term (sankhara)
+killing_theft_lust,MAN-30,concept,model,list of bodily sins
+life_and_body,MAN-30,concept,model,name and form doctrine
+lying_slander_harsh_speech_idle_talk,MAN-30,concept,model,list of verbal sins
+mara,MAN-30,new:mara,model,named deity Mara defeated by the Buddha
+modes_of_usage,MAN-30,concept,model,doctrinal classification
+nel_vithu_nel_mulai,MAN-30,concept,model,doctrinal analogy
+no_self,MAN-30,concept,model,doctrine of non-self
+old_age,MAN-30,concept,model,abstract link of dependent origination
+past_buddhas,MAN-30,ignore,model,"generic, unnamed speakers"
+purivinmai_nayam,MAN-30,concept,model,doctrinal method
+self,MAN-30,concept,model,abstract self
+sensation,MAN-30,concept,model,doctrinal term (vedana)
+six_gates,MAN-30,concept,model,"six sense gates, doctrine"
+sorrow_grief_anxiety_despair,MAN-30,concept,model,list of afflictions
+suffering_arising_from_attachment,MAN-30,concept,model,doctrinal teaching
+there_is_destruction,MAN-30,concept,model,"doctrinal answer, abstract"
+those_born,MAN-30,ignore,model,generic beings
+those_who_follow_evil_paths,MAN-30,ignore,model,generic group
+those_who_renounce_the_ten_sins,MAN-30,ignore,model,generic group
+three_faults,MAN-30,concept,model,doctrinal faults
+triple_gem,MAN-30,concept,model,"Buddha, Dharma, Sangha as doctrine/object of refuge"
+tushita_heaven,MAN-30,new:tushita_heaven,model,named heaven realm
+twelve_links,MAN-30,concept,model,dependent origination doctrine
+unarvu,MAN-30,concept,model,"consciousness, doctrinal term"
+unaware_perception,MAN-30,concept,model,"consciousness, doctrinal term"
+unnamed_woman,MAN-30,ignore,model,addressee unnamed in quote
+vetrumai_nayam,MAN-30,concept,model,doctrinal method
+adigal,SIL-00,ilanko,model,Cattan asks Ilanko Adigal to speak
+breast,SIL-00,ignore,model,"body part, not a named entity"
+courtesan,SIL-00,madhavi,model,dancing courtesan Kovalan revels with
+earlier_anklet,SIL-00,ignore,model,quote doesn't identify which anklet
+gods_kin,SIL-00,ignore,model,"generic divine kin, unnamed"
+killing_ground,SIL-00,ignore,model,generic place of death
+kunavayil_temple,SIL-00,new:kunavayil_kottam,model,temple where Ilanko renounced the throne
+kuravar,SIL-00,hill_folk,model,hill Kuravar who report to the king
+madurapati_speech,SIL-00,madurapati,model,"speech is that of Madurapati, the goddess of Madurai"
+nine_verse_cantos,SIL-00,concept,model,literary structure
+padikam_tradition,SIL-00,concept,model,literary convention
+sangaman_wife,SIL-00,neeli,model,"Neeli, Sangaman's wife, laid the curse"
+three_crowned_kings,SIL-00,new:three_crowned_kings,model,"named group: Chera, Chola and Pandya kings"
+velliyambalam,SIL-00,new:velliyambalam,model,named public hall where Cattan lay at night
+verse_interspersed_with_prose,SIL-00,concept,model,genre description
+adorned_women,SIL-01,ignore,model,"generic ladies, unnamed"
+arundhati,SIL-01,new:arundhati,model,"vadameen is the star Arundhati, a named figure"
+austerity,SIL-01,concept,model,abstract quality (nōnpu)
+brahmin_priest,SIL-01,ignore,model,unnamed generic priest; brahmin_11 is a different one
+bride,SIL-01,ignore,model,"unnamed in the quote; the canto's bride is Kannagi, but this quote does not name"
+conches_and_white_umbrellas,SIL-01,ignore,model,generic wedding items
+elephant_neck,SIL-01,ignore,model,generic place on an elephant
+flowers,SIL-01,ignore,model,generic flowers
+great_city,SIL-01,puhar,model,the great city of the wedding is Puhar in SIL-01
+ladies,SIL-01,ignore,model,generic ladies
+lamps_and_sprouted_pots,SIL-01,ignore,model,generic wedding items
+learned_elders,SIL-01,ignore,model,generic unnamed elders
+meru,SIL-01,new:meru,model,"Mount Meru, a named mountain"
+pearl_canopy,SIL-01,ignore,model,generic wedding canopy
+sembiyan,SIL-01,chola_conqueror,model,Chola who set the tiger emblem on the Himalaya
+tiger_emblem,SIL-01,ignore,model,generic emblem; not a graph entity
+two_elders,SIL-01,ignore,model,unnamed elders; could be the two fathers but the quote does not name them
+vedic_rite,SIL-01,concept,model,"ritual practice, abstraction"
+wedding,SIL-01,ignore,model,"an event, not a named entity"
+wedding_adornment,SIL-01,ignore,model,generic decoration
+wedding_bed,SIL-01,ignore,model,generic object
+champaka_grove,SIL-02,ignore,model,generic grove
+cool_forest,SIL-02,ignore,model,generic forest
+crescent_moon,SIL-02,new:crescent_moon,model,the moon given as her forehead
+divine_weapon,SIL-02,new:indra_vajra,model,weapon given by Indra for her waist
+eyes,SIL-02,ignore,model,body part
+flower_pollen,SIL-02,ignore,model,generic
+flowering_pool,SIL-02,ignore,model,generic pool
+forehead,SIL-02,ignore,model,body part
+great_city,SIL-02,puhar,model,"the city of the merchants, Puhar, in this canto"
+her_hand,SIL-02,ignore,model,body part
+lattice_window,SIL-02,ignore,model,generic architecture
+mansion_middle_floor,SIL-02,ignore,model,generic place
+murugan_vel,SIL-02,new:murugan_vel,model,Murugan's spear that gave the eyes
+other_ornaments,SIL-02,ignore,model,generic
+paratar_merchants,SIL-02,new:paratar,model,the Paratar merchant community
+parrots,SIL-02,ignore,model,generic birds
+peacocks,SIL-02,ignore,model,generic birds
+periyon,SIL-02,new:periyon,model,"the Great One, a deity who gave the forehead"
+shoulders,SIL-02,ignore,model,body part
+south_breeze,SIL-02,new:southern_breeze,model,the southern breeze
+southern_breeze,SIL-02,new:southern_breeze,model,same entity as south_breeze
+sugarcane_and_vine_designs,SIL-02,concept,model,painted design motif
+sugarcane_bow,SIL-02,new:kama_sugarcane_bow,model,Kama's sugarcane bow given as brows
+swans,SIL-02,ignore,model,generic birds
+trade_goods,SIL-02,ignore,model,generic goods
+upper_terrace,SIL-02,ignore,model,generic place
+wealthy_merchants,SIL-02,ignore,model,generic group; quote doesn't name them
+window,SIL-02,ignore,model,generic architecture
+woman_addressed,SIL-02,kannagi,model,"the beauty described is Kannagi's, on whom the gods bestow features"
+amanthirikai,SIL-03,new:amanthirikai,model,specific instrument named in quote
+arangu,SIL-03,concept,model,"generic stage/arena, not a graph entity"
+arts,SIL-03,concept,model,abstract skills
+bamboo_rod,SIL-03,ignore,model,"generic object, not a named entity"
+canopy,SIL-03,ignore,model,"generic canopy, not the victory canopy specifically"
+celestial_women,SIL-03,ignore,model,"generic group, unnamed"
+citra_karanam,SIL-03,concept,model,a drumming technique
+curtains,SIL-03,ignore,model,generic stage curtains
+dance_song_music_tamil_pan_pani_tukku_mutam_desikam,SIL-03,concept,model,list of art-form concepts
+dance_teacher,SIL-03,ignore,model,unnamed generic teacher
+elephant,SIL-03,ignore,model,generic animal
+enemy_slander,SIL-03,concept,model,abstract idea
+figures,SIL-03,ignore,model,generic painted figures
+five_councils,SIL-03,ignore,model,generic group of officials
+flautist,SIL-03,ignore,model,unnamed musician role
+gold_1008_kalanju,SIL-03,ignore,model,generic prize amount
+holy_water,SIL-03,ignore,model,generic ritual water
+indra_son,SIL-03,new:jayanta,model,"Indra's son is Jayanta, same entity as the jayanta name"
+instruments,SIL-03,ignore,model,generic instruments
+isaiyon,SIL-03,ignore,model,unnamed musician role
+jayanta,SIL-03,new:jayanta,model,"named deity, Indra's son"
+kaikkilai,SIL-03,concept,model,musical string/note term
+kilai,SIL-03,concept,model,musical term for related note
+king_palace,SIL-03,ignore,model,"generic palace, not clearly identified"
+lamps,SIL-03,ignore,model,generic lamps
+learned_experts,SIL-03,ignore,model,generic group of experts
+left_pillar,SIL-03,ignore,model,generic stage pillar
+madhavi_house,SIL-03,ignore,model,"generic house in the quote, unnamed"
+mandalam,SIL-03,concept,model,dance/musical circle term
+meikkilai_string,SIL-03,concept,model,musical string term
+muni,SIL-03,ignore,model,unnamed sage
+music_master,SIL-03,ignore,model,unnamed teacher
+musicians,SIL-03,ignore,model,generic group
+muzhavu,SIL-03,new:muzhavu,model,named drum instrument
+muzhavu_drum,SIL-03,new:muzhavu,model,same drum as muzhavu
+nine_gems,SIL-03,ignore,model,"generic gems, not a specific graph item"
+other_women,SIL-03,ignore,model,generic women
+own_home,SIL-03,ignore,model,generic home
+palai_scales,SIL-03,concept,model,musical mode
+patterned_notes,SIL-03,concept,model,musical notion
+pearl_garlands,SIL-03,ignore,model,generic garlands
+poet_teacher,SIL-03,ignore,model,unnamed teacher
+praisers,SIL-03,ignore,model,generic group
+pulamaiyon,SIL-03,ignore,model,unnamed musician role
+pulavan,SIL-03,ignore,model,unnamed learned person
+right_pillar,SIL-03,ignore,model,generic stage fixture
+royal_elephant,SIL-03,ignore,model,unnamed elephant
+sacred_mountain,SIL-03,ignore,model,mountain not named in quote
+sea_king,SIL-03,ignore,model,"title only, king not identified by the quote"
+sempalai,SIL-03,concept,model,musical mode
+seven_palai,SIL-03,concept,model,set of musical modes
+song,SIL-03,ignore,model,generic song
+stage,SIL-03,new:arangam_stage,model,"the specific debut stage, not in graph"
+stage_site,SIL-03,ignore,model,generic plot of land
+street,SIL-03,ignore,model,generic street
+talaikkol,SIL-03,new:talaikkol,model,"the ceremonial staff, not in graph"
+tannumai_master,SIL-03,ignore,model,unnamed drummer role
+thalaikkol,SIL-03,new:talaikkol,model,spelling variant of talaikkol
+thannumai_drum,SIL-03,new:tannumai_drum,model,"specific instrument, not in graph"
+tharam,SIL-03,concept,model,musical note
+toriya_women,SIL-03,ignore,model,generic group of stage singers
+two_varams,SIL-03,concept,model,musical term
+umbrella_staff,SIL-03,new:talaikkol,model,bamboo staff adorned with gems is the talaikkol
+vakkiritta_composition,SIL-03,concept,model,musical composition type
+vannap_pattadai,SIL-03,concept,model,musical technique
+vilari,SIL-03,concept,model,musical note
+yazh_player,SIL-03,ignore,model,unnamed lute player
+bangled_women,SIL-04,ignore,model,generic women
+bees,SIL-04,ignore,model,generic insects
+breeze,SIL-04,ignore,model,generic natural phenomenon
+bud_fragrance,SIL-04,ignore,model,generic scent
+conches_and_drums,SIL-04,ignore,model,generic instruments
+dusk_gloom,SIL-04,concept,model,abstract gloom
+earth_maiden,SIL-04,new:earth_maiden,model,personified earth goddess speaking
+evening,SIL-04,concept,model,time of day
+evening_sky,SIL-04,ignore,model,generic scenery
+evening_sorrow,SIL-04,concept,model,abstract sorrow
+flower_arrows_and_cane_bow,SIL-04,new:kama_bow,model,"Kama's weapons, not in graph"
+flower_arrows_and_sugarcane_bow,SIL-04,new:kama_bow,model,"same weapons, different spelling"
+flower_bed,SIL-04,ignore,model,generic object
+flower_bed_chamber,SIL-04,ignore,model,generic room
+husbands,SIL-04,ignore,model,generic husbands
+king_white_umbrella,SIL-04,ignore,model,king not identified by quote
+lamps,SIL-04,ignore,model,generic lamps
+moonlit_terrace,SIL-04,ignore,model,generic place
+mullai_blossoms,SIL-04,ignore,model,generic flowers
+old_town,SIL-04,ignore,model,unnamed town
+pandya_clan,SIL-04,new:pandya_lineage,model,"Pandya dynasty, not a graph entity"
+pandya_lineage,SIL-04,new:pandya_lineage,model,same lineage as pandya_clan
+sandal_and_pearl_garlands,SIL-04,ignore,model,generic ornaments
+separated_lovers,SIL-04,ignore,model,generic lovers
+separated_women,SIL-04,ignore,model,generic women
+streets,SIL-04,ignore,model,generic streets
+union_and_lovers_quarrel,SIL-04,concept,model,abstract love states
+united_lovers,SIL-04,ignore,model,generic lovers
+winter_chamber_windows,SIL-04,ignore,model,generic windows
+wives,SIL-04,ignore,model,generic wives
+wives_with_husbands,SIL-04,ignore,model,generic couples
+afflicted_by_demon,SIL-05,ignore,model,generic victims
+afflicted_people,SIL-05,ignore,model,generic people
+airavata_temple,SIL-05,new:airavata_temple,model,named temple of Indra's elephant in Puhar
+ancestors,SIL-05,ignore,model,generic group
+arched_gateway,SIL-05,arched_gate,model,gift of the Avanti king
+assembly_hall,SIL-05,debate_hall,model,pattimandapam given as gift
+auspicious_flag,SIL-05,ignore,model,generic festival object
+bali_altar,SIL-05,ignore,model,generic altar
+battlefield,SIL-05,ignore,model,generic place
+bhuta_altar,SIL-05,new:bhuta_chathukkam,model,the bhuta square of Puhar
+bhuta_chathukkam,SIL-05,new:bhuta_chathukkam,model,the bhuta square of Puhar
+bitten_people,SIL-05,ignore,model,generic people
+city_notables,SIL-05,ignore,model,generic group
+cowherd_chariot_and_pedestal_streets,SIL-05,ignore,model,generic streets
+dancing_women,SIL-05,ignore,model,generic women
+darkness,SIL-05,concept,model,abstraction
+elder_women,SIL-05,ignore,model,generic women
+elephant,SIL-05,ignore,model,unnamed elephant
+enemies,SIL-05,ignore,model,generic group
+famed_king,SIL-05,ignore,model,unnamed king
+farmers_physicians_and_astrologers,SIL-05,ignore,model,generic groups
+festival_decorations,SIL-05,ignore,model,generic things
+festival_final_stage,SIL-05,concept,model,abstract stage of festival
+five_mandrams,SIL-05,new:five_mandrams,model,the five named civic halls of Puhar
+flute_and_yazh,SIL-05,ignore,model,generic instruments
+food_and_drink_sellers,SIL-05,ignore,model,generic group
+food_and_fish_and_salt_sellers,SIL-05,ignore,model,generic group
+food_flowers_incense,SIL-05,ignore,model,generic offerings
+foreign_merchants,SIL-05,ignore,model,generic group
+fragrance_sellers,SIL-05,ignore,model,generic group
+gold_and_gems,SIL-05,ignore,model,generic materials
+golden_pot,SIL-05,ignore,model,generic object
+grain_traders,SIL-05,ignore,model,generic group
+great_merchant_families,SIL-05,ignore,model,generic group
+guardian_bhuta,SIL-05,new:guardian_bhuta,model,the bhuta sent by Indra to guard Puhar
+hostile_kings,SIL-05,ignore,model,generic kings
+householder_women,SIL-05,ignore,model,generic women
+ilanji_mandram,SIL-05,new:ilanji_mandram,model,named hall of Puhar
+ilanji_manram,SIL-05,new:ilanji_mandram,model,"same place, spelling variant"
+jewel_and_cloth_bazaar,SIL-05,ignore,model,generic street
+kaveri_water,SIL-05,new:kaveri,model,water of the river Kaveri
+king_affliction,SIL-05,concept,model,abstract affliction
+king_land,SIL-05,ignore,model,generic land
+kuli_demon,SIL-05,ignore,model,generic demon type
+learned_elders,SIL-05,ignore,model,generic group
+lotus,SIL-05,concept,model,"poetic image, not an entity"
+malaya_breeze,SIL-05,concept,model,natural wind imagery
+malaya_wind,SIL-05,concept,model,natural wind imagery
+mansion_street,SIL-05,ignore,model,generic street of merchants' houses
+mansions_and_lovers_quarters,SIL-05,ignore,model,generic residential area
+maruvur_pattinam_warriors,SIL-05,ignore,model,generic group of warriors
+maruvurpakkam,SIL-05,new:maruvurpakkam,model,named quarter of Puhar
+meat_rich_quarter,SIL-05,ignore,model,generic quarter
+merchant_bundles,SIL-05,ignore,model,generic goods
+metal_wood_and_craft_workers,SIL-05,ignore,model,generic craftsmen
+mountain_peak,SIL-05,ignore,model,unnamed peak
+nedungal_mandram,SIL-05,new:nedungal_mandram,model,named public hall or shrine
+non_allied_kings,SIL-05,ignore,model,"generic kings, not identified"
+noose,SIL-05,ignore,model,generic object
+pattimandapam_and_torana_gate,SIL-05,new:pattimandapam,model,"named debating hall given by ancestors, made by Mayan"
+pavai_mandram,SIL-05,new:pavai_mandram,model,named hall of the weeping statue
+pavai_statue,SIL-05,new:pavai_statue,model,specific weeping statue
+perfumes_flowers_incense,SIL-05,ignore,model,generic goods
+perumpanar_musicians,SIL-05,ignore,model,generic musicians
+poisoned_people,SIL-05,ignore,model,generic people
+rays,SIL-05,ignore,model,unnamed light rays
+sacrificial_offering,SIL-05,ignore,model,generic ritual item
+sages,SIL-05,ignore,model,generic group
+serpent,SIL-05,ignore,model,generic animal
+severed_heads,SIL-05,ignore,model,generic offering
+sky_creeper,SIL-05,ignore,model,"poetic image, unidentified"
+spirit,SIL-05,ignore,model,unnamed spirit
+street,SIL-05,ignore,model,generic street
+streets,SIL-05,ignore,model,generic streets
+tarunilai_temple,SIL-05,new:tarunilai_temple,model,named temple where flag is raised
+thieves,SIL-05,ignore,model,generic group
+tiger_emblem,SIL-05,ignore,model,generic emblem
+torana_gate,SIL-05,arched_gate,model,gate given by the Avanti king
+vajra_kottam,SIL-05,vachira_temple,model,Vajra temple is Vachirakottam
+vajra_temple_drum,SIL-05,festival_drum,model,drum mounted on elephant to announce festival
+velliyidai_manram,SIL-05,new:velliyidai_manram,model,named hall
+vetrivel_king,SIL-05,ignore,model,"unnamed king, not clearly a graph entity"
+victorious_king,SIL-05,ignore,model,unnamed king
+victory,SIL-05,concept,model,abstraction
+victory_pavilion,SIL-05,victory_canopy,model,canopy given by a king
+war_drum,SIL-05,ignore,model,generic drum
+warriors,SIL-05,ignore,model,generic group
+weavers,SIL-05,ignore,model,generic group
+white_elephant_kottam,SIL-05,new:white_elephant_kottam,model,named temple of the white elephant
+wrongdoers,SIL-05,ignore,model,generic unnamed group of offenders; not a graph entity
+amaravati,SIL-06,new:amaravati,model,"Indra's city, named"
+asuras,SIL-06,new:asuras,model,named group defeated in myth
+auspicious_women,SIL-06,ignore,model,generic group
+ayirani,SIL-06,new:indrani,model,"Indrani, spelling variant"
+bed_chamber,SIL-06,ignore,model,generic place
+bharati,SIL-06,new:bharati,model,"goddess Bharati, named dancer"
+bharati_arangam,SIL-06,new:pandarangam,model,named dance of Bharati
+bhuta_offering_place,SIL-06,ignore,model,unclear generic place
+blue_bee,SIL-06,ignore,model,poetic image
+bracelets,SIL-06,ignore,model,"generic ornament, not tied to graph item"
+brahma,SIL-06,new:brahma,model,Tisaimukan is Brahma
+canopied_couch,SIL-06,ignore,model,generic furniture
+capital_guarding_king,SIL-06,new:indra,model,king guarding Amaravati is Indra
+carriage,SIL-06,ignore,model,generic object
+city_street,SIL-06,ignore,model,generic place
+cursed_woman,SIL-06,new:urvasi,model,Urvasi cursed to live on earth
+cursed_woman_dance,SIL-06,concept,model,abstract dance
+dance_of_snake_hipped_woman,SIL-06,concept,model,abstract dance
+dance_performance,SIL-06,concept,model,abstract performance
+deceit,SIL-06,concept,model,abstract quality
+drama,SIL-06,concept,model,abstract art
+earrings,SIL-06,ignore,model,generic ornament
+eleven_dances,SIL-06,concept,model,category of dances
+evening_quarter,SIL-06,ignore,model,generic place
+feet,SIL-06,ignore,model,body part
+festival,SIL-06,ignore,model,generic festival
+festival_crowds,SIL-06,ignore,model,generic crowd
+festival_ground,SIL-06,ignore,model,generic place
+field_north_gate,SIL-06,ignore,model,generic place
+five_assemblies,SIL-06,concept,model,institution/idea
+flowering_grove,SIL-06,ignore,model,generic place
+flowers_grass_and_rice,SIL-06,ignore,model,generic offerings
+flowers_grass_rice,SIL-06,ignore,model,generic offerings
+four_castes,SIL-06,ignore,model,generic groups
+gem_strand,SIL-06,ignore,model,generic ornament
+girdle_and_cloth,SIL-06,ignore,model,generic clothing
+great_bhuta,SIL-06,new:great_bhuta,model,specific mythic being
+hair,SIL-06,ignore,model,body part
+harbor_lights,SIL-06,ignore,model,generic lights
+head_ornaments,SIL-06,ignore,model,generic ornament
+himalaya_ganga_ujjain_vindhya_venkata_kaveri,SIL-06,chola_country,model,quote shows the Kaveri land
+indrani,SIL-06,new:indrani,model,"Indrani, named goddess"
+jewel_lamps,SIL-06,ignore,model,generic lamps
+kadaiyam_dance,SIL-06,new:kadaiyam,model,named dance
+kama_god,SIL-06,ignore,model,"quote names a vidyadhara hero, not Kama"
+karikal_valavan,SIL-06,new:karikal_valavan,model,"named Chola king, not clearly the graph's conqueror"
+kinsmen,SIL-06,ignore,model,generic
+kodukotti_dance,SIL-06,new:kodukotti_dance,model,named Shiva dance
+lac_dye,SIL-06,lac,model,lac dye for the feet
+lamps,SIL-06,ignore,model,generic objects
+lord_of_gods,SIL-06,new:indra,model,"lord of the gods, Indra"
+market_and_craft_lamps,SIL-06,ignore,model,generic
+mayaval,SIL-06,new:mayaval,model,named goddess dancer
+mayon_varuna_four_songs_and_moon_song,SIL-06,ignore,model,generic songs
+mountain_and_sea_goods,SIL-06,ignore,model,generic goods
+mule,SIL-06,ignore,model,generic animal
+musk_paste,SIL-06,new:musk_paste,model,named substance not in graph
+musk_paste_and_lac_dye,SIL-06,new:musk_paste,model,"same musk paste, plus lac"
+narada_song,SIL-06,new:narada,model,Narada's lute song
+necklaces,SIL-06,new:madhavi_necklaces,model,ornament not in graph
+north_gate,SIL-06,new:kadaiyam_dance,model,"Indrani's kadaiyam dance, not a gate"
+offering,SIL-06,ignore,model,generic
+painted_curtain,SIL-06,ignore,model,generic object
+pandarangam_dance,SIL-06,new:pandarangam_dance,model,named dance
+pavai_dance,SIL-06,new:pavai_dance,model,named dance
+pedikai_street,SIL-06,new:pidikai_street,model,same street as pidikai spelling
+pidikai_street,SIL-06,new:pidikai_street,model,named street not in graph
+pollen,SIL-06,ignore,model,generic
+punnai_shade_sand,SIL-06,ignore,model,generic setting
+rings,SIL-06,finger_rings,model,rings on the fingers
+scented_water,SIL-06,ignore,model,generic
+sea_and_foreign_lamps,SIL-06,ignore,model,generic
+sea_play,SIL-06,concept,model,"activity, not an entity"
+seaside_dwellings,SIL-06,ignore,model,generic
+seaside_grove,SIL-06,new:seaside_grove,model,named seaside grove
+shoulder_bangles,SIL-06,new:madhavi_shoulder_bangles,model,ornament not in graph
+silver_mountain,SIL-06,new:silver_mountain,model,named mountain
+slender_waisted_one,SIL-06,ignore,model,unnamed addressee
+southern_city,SIL-06,puhar,model,city where the Indra festival begins
+sulking_man,SIL-06,kovalan,model,"the man pleased by Madhavi, given union and sulking"
+sun_chariot,SIL-06,sun,model,chariot of the Sun
+thazhai_flower,SIL-06,ignore,model,generic flower
+thigh_ornaments,SIL-06,new:madhavi_thigh_ornaments,model,ornament not in graph
+thirumal,SIL-06,new:thirumal,model,"Vishnu, dark-hued dancer; graph has only Krishna"
+tiruvin_seyyol,SIL-06,new:tiruvin_seyyol,model,named goddess dancer
+toe_ornaments,SIL-06,new:toe_ornaments,model,ornament not in graph
+toes,SIL-06,ignore,model,body part
+toriya_madantai_song,SIL-06,new:toriya_madantai,model,named goddess song
+tripura,SIL-06,new:tripura,model,the three cities burned by Shiva
+union_and_sulking,SIL-06,concept,model,abstract states
+urvasi,SIL-06,new:urvasi,model,"Named celestial dancer Urvasi, not in graph"
+vanan_city,SIL-06,new:vanan_city,model,"Place where Vishnu danced the pot dance (Vanan's city), not in graph"
+vidyadhara,SIL-06,ignore,model,"Unnamed Vidyadhara hero, only a generic title"
+vinjaiyan,SIL-06,ignore,model,Same unnamed Vidyadhara hero
+vinjaiyan_beloved,SIL-06,ignore,model,Unnamed beloved of the Vidyadhara
+yazh_lute,SIL-06,ignore,model,"Generic lute, not a specifically named object"
+adumpu_creepers,SIL-07,ignore,model,generic addressed plants
+anangu_dwelling,SIL-07,ignore,model,generic 'I do not know' clause
+anangu_spirit,SIL-07,concept,model,"anangu is an afflicting spirit or divine presence, not a named figure"
+attendants,SIL-07,ignore,model,unnamed companions
+bangles_loosening,SIL-07,concept,model,image of grief at dusk
+bangles_slipping,SIL-07,concept,model,image of grief
+bees,SIL-07,ignore,model,generic animals
+beloved,SIL-07,ignore,model,unnamed lover in song
+birds,SIL-07,ignore,model,generic animals
+blue_lily,SIL-07,ignore,model,generic flower
+boat,SIL-07,ignore,model,generic object
+brows,SIL-07,ignore,model,body part metaphor
+carriage,SIL-07,ignore,model,generic vehicle
+chariot_track,SIL-07,ignore,model,generic track
+chariot_tracks,SIL-07,ignore,model,generic tracks
+chola_land,SIL-07,chola_country,model,prosperous land of the Chola king
+company,SIL-07,ignore,model,unnamed group
+conch,SIL-07,ignore,model,generic shell
+coral_pestle,SIL-07,ignore,model,generic object in simile
+crab,SIL-07,ignore,model,generic animal
+crab_pair,SIL-07,ignore,model,generic animals
+creek_mouth,SIL-07,ignore,model,generic shore location
+cruelty,SIL-07,concept,model,abstract quality
+curly_haired_woman,SIL-07,ignore,model,unnamed addressee
+dark_eyed_woman,SIL-07,ignore,model,unnamed woman
+darkness,SIL-07,concept,model,abstraction of dusk
+departed_one,SIL-07,ignore,model,unnamed absent lover
+desired_form,SIL-07,concept,model,abstract notion
+dried_meat,SIL-07,ignore,model,generic item
+drying_fish,SIL-07,ignore,model,generic item
+dusk_distress,SIL-07,concept,model,abstract emotion
+evening,SIL-07,concept,model,time of day personified
+eye_net,SIL-07,ignore,model,metaphor for eyes
+eyes_as_net,SIL-07,ignore,model,metaphor for eyes
+faded_flowers,SIL-07,ignore,model,generic flowers
+false_oath,SIL-07,concept,model,abstract notion of broken vow
+fisher_girl,SIL-07,ignore,model,unnamed persona
+fisher_girl_face,SIL-07,ignore,model,body part of unnamed girl
+fisher_hamlet,SIL-07,ignore,model,generic place
+flower_haired_woman,SIL-07,ignore,model,unnamed addressee
+flower_scent,SIL-07,ignore,model,generic scent
+forgetful_ones,SIL-07,ignore,model,unnamed generic group
+full_moon,SIL-07,ignore,model,generic natural object
+gift,SIL-07,ignore,model,generic item
+girl,SIL-07,ignore,model,unnamed girl in song
+girl_brothers,SIL-07,ignore,model,unnamed brothers of song's girl
+girl_father,SIL-07,ignore,model,unnamed father in song
+girl_in_song,SIL-07,ignore,model,unnamed girl in song
+girl_kin,SIL-07,ignore,model,unnamed kin
+gnazhal_flower,SIL-07,ignore,model,"generic flower, not a named entity"
+great_help,SIL-07,ignore,model,"epithet of Kaveri's help, not a distinct entity"
+grove,SIL-07,ignore,model,generic seaside grove
+grove_backwater,SIL-07,ignore,model,generic place in song
+her_state,SIL-07,concept,model,abstract condition
+heroine,SIL-07,ignore,model,"unnamed song persona, not identified as Madhavi"
+heron,SIL-07,ignore,model,generic bird addressed
+inflicting_lovesickness,SIL-07,concept,model,abstraction
+kanal_grove,SIL-07,ignore,model,generic seaside grove
+kanalvari,SIL-07,new:kanalvari,model,"named song type, seagrove song"
+kanalvari_song,SIL-07,new:kanalvari,model,same seagrove song
+kanni,SIL-07,ignore,model,generic maiden
+kaveri_and_seagrove_songs,SIL-07,new:kanalvari,model,"seagrove songs, same slug"
+kaveri_chastity,SIL-07,concept,model,quality
+kings,SIL-07,ignore,model,"generic kings, unidentified"
+koorram_dwelling,SIL-07,ignore,model,generic dwelling of death
+koorram_figure,SIL-07,new:koorram,model,Death personified (Kūṟṟam)
+kuvalai_garland,SIL-07,ignore,model,generic garland
+life_oppression,SIL-07,concept,model,abstraction
+love_pain,SIL-07,concept,model,abstract pain
+love_persona,SIL-07,ignore,model,unnamed speaker addressing the shore lord
+lover,SIL-07,ignore,model,unnamed lover in song
+madhavi_house,SIL-07,madhavi,model,"clearly Madhavi's house, closest to her entity"
+maiden,SIL-07,ignore,model,unnamed maiden in song
+man_one,SIL-07,ignore,model,unnamed man in song
+mother,SIL-07,ignore,model,unnamed mother in song
+narcissus_flower,SIL-07,ignore,model,generic flower
+neithal_flower,SIL-07,ignore,model,generic flower
+net,SIL-07,ignore,model,generic object
+oath,SIL-07,concept,model,abstract vow
+pann,SIL-07,concept,model,"musical mode, generic"
+passers_by,SIL-07,ignore,model,"generic, though Puhar is addressed"
+pearl_bearing_water,SIL-07,ignore,model,generic address of the shore
+play_sand_houses,SIL-07,ignore,model,generic children's play objects
+puhar_singer,SIL-07,ignore,model,unnamed singer persona
+punnai_flowers,SIL-07,ignore,model,generic flowers
+punnai_grove,SIL-07,ignore,model,generic grove
+punnai_shade,SIL-07,ignore,model,generic place
+sand_play,SIL-07,ignore,model,generic activity
+sea_deity,SIL-07,new:sea_deity,model,specific sea god worshipped in song
+sea_goddess,SIL-07,new:sea_deity,model,same sea deity
+sea_tide,SIL-07,ignore,model,generic tide addressed in song
+seashore,SIL-07,ignore,model,generic shore
+seashore_grove,SIL-07,ignore,model,generic grove
+seashore_lord,SIL-07,ignore,model,unnamed lord of the shore
+seaside_grove,SIL-07,ignore,model,generic grove
+shore_lord,SIL-07,ignore,model,unnamed lord of the shore
+speaker_woman,SIL-07,ignore,model,unnamed singer persona
+sun_like_ruler,SIL-07,ignore,model,unnamed ruler; quote doesn't name him
+swan,SIL-07,ignore,model,generic bird addressed
+swan_pair,SIL-07,ignore,model,generic birds
+swans,SIL-07,ignore,model,generic birds
+tide,SIL-07,ignore,model,generic tide
+unnamed_man,SIL-07,ignore,model,unnamed man
+unnamed_sir,SIL-07,ignore,model,unnamed addressee
+waist,SIL-07,ignore,model,body part
+water_lily,SIL-07,ignore,model,generic flower
+wave,SIL-07,ignore,model,generic wave
+waves,SIL-07,ignore,model,generic waves
+white_pearls,SIL-07,ignore,model,"generic imagery, not a specific entity"
+white_umbrella,SIL-07,ignore,model,generic royal emblem
+woman_beloved,SIL-07,ignore,model,unnamed beloved
+woman_of_song,SIL-07,ignore,model,unnamed woman in the song
+wounds,SIL-07,ignore,model,generic
+ஐய,SIL-07,ignore,model,"address word 'sir', unnamed"
+arrival_of_dusk,SIL-08,concept,model,abstract time of day
+attendants,SIL-08,ignore,model,"generic, unnamed"
+cuckoo,SIL-08,ignore,model,generic bird
+dark_eyed_woman,SIL-08,ignore,model,"unnamed woman, not identified by quote"
+face,SIL-08,ignore,model,"body part, not an entity"
+flower_arrows,SIL-08,concept,model,metaphorical weapon of love
+flower_bed,SIL-08,ignore,model,generic object
+four_castes,SIL-08,concept,model,social category
+four_marudam_modes,SIL-08,concept,model,"mistaken label, abstract"
+fourteen_note_series,SIL-08,concept,model,musical scheme
+her_own_sorrow,SIL-08,concept,model,abstract feeling
+kama_command,SIL-08,concept,model,abstract command of love
+kin,SIL-08,ignore,model,generic relatives
+koel,SIL-08,ignore,model,generic bird
+kural_and_ili_strings,SIL-08,concept,model,musical notes
+letter_message,SIL-08,madhavi_letter,model,Madhavi's letter message to Kovalan
+madhura_geetam,SIL-08,concept,model,a type of song
+madura_geetham,SIL-08,concept,model,"a type of song, spelling variant"
+manmatha_army,SIL-08,new:kama,model,god of love Manmatha's host
+market_street,SIL-08,ignore,model,generic place
+parrot_speech_swan_gait_peacock_grace,SIL-08,ignore,model,"descriptive simile, not an entity"
+pitthikai_bud_stylus,SIL-08,ignore,model,generic object
+sandy_shore_ground,SIL-08,ignore,model,generic place
+seaside_grove,SIL-08,ignore,model,generic place
+separated_lovers,SIL-08,ignore,model,generic group
+soft_flower_letter,SIL-08,ignore,model,"likely spring melody, unclear"
+south_breeze,SIL-08,concept,model,personified wind
+speaker_kin,SIL-08,ignore,model,generic relatives
+spring,SIL-08,concept,model,"season, personified"
+spring_blossoms,SIL-08,ignore,model,generic flowers
+spring_prince,SIL-08,concept,model,personified season
+sulking_lovers,SIL-08,ignore,model,generic group
+summer_chamber,SIL-08,ignore,model,generic place
+their_mates,SIL-08,ignore,model,generic
+united_lovers,SIL-08,ignore,model,generic group
+words_of_both_sides,SIL-08,ignore,model,generic
+arugu_cirupulai_paddy,SIL-09,ignore,model,generic ritual offering
+bedchamber,SIL-09,ignore,model,generic place
+bereaved_mother,SIL-09,ignore,model,unnamed mother
+brahmin_and_wife,SIL-09,ignore,model,"unnamed, generic"
+cemetery_shrine,SIL-09,ignore,model,generic shrine
+child,SIL-09,ignore,model,unnamed child
+city_harm,SIL-09,ignore,model,"abstract, unidentified"
+co_wife_child,SIL-09,ignore,model,unnamed child
+cuckoo_grove,SIL-09,ignore,model,generic grove
+door,SIL-09,ignore,model,generic place
+doorway,SIL-09,ignore,model,generic place
+dream,SIL-09,concept,model,"abstract thing, not an entity"
+dream_king,SIL-09,ignore,model,unnamed king in dream
+enjoyment_lands,SIL-09,concept,model,afterlife realm in general
+family_wealth,SIL-09,ignore,model,generic wealth
+foster_parents,SIL-09,ignore,model,unnamed people
+grass_and_rice,SIL-09,ignore,model,generic ritual offering
+great_city,SIL-09,ignore,model,quote does not name the city
+house,SIL-09,ignore,model,generic place
+household_women,SIL-09,ignore,model,generic women
+idakini,SIL-09,new:idakini,model,named Idakini demon
+idakini_lap,SIL-09,ignore,model,"body part, generic"
+kamavel_kottam,SIL-09,new:kamavel_kottam,model,named temple of Kamavel
+kinsmen,SIL-09,ignore,model,generic group
+living_child,SIL-09,ignore,model,unnamed child
+lost_wealth,SIL-09,ignore,model,generic wealth
+madhavi_words,SIL-09,ignore,model,"words, not an entity"
+magic_child,SIL-09,ignore,model,unnamed child
+people_without_penance,SIL-09,ignore,model,generic people
+tevanti_husband,SIL-09,ignore,model,unnamed husband
+tirtha_places,SIL-09,ignore,model,generic holy waters
+vow_for_husband,SIL-09,concept,model,abstract vow
+women_of_world,SIL-09,ignore,model,generic women
+young_maid,SIL-09,ignore,model,unnamed maid
+arhat,SIL-10,new:arhat,model,the Jina/Arhat praised in the canto; not in graph
+arhat_assembly_ground,SIL-10,new:arhat_stone_slab,model,specific stone slab laid by sages
+ascetics,SIL-10,ignore,model,unnamed addressees
+bird_clamor,SIL-10,ignore,model,"generic sound, not an entity"
+black_buffalo,SIL-10,ignore,model,generic animal
+bodhi_tree_shade,SIL-10,new:bodhi_tree,model,"specific tree/place, not in graph"
+bond,SIL-10,concept,model,abstract attachment
+bond_of_rebirth,SIL-10,concept,model,abstract doctrine
+buddha_teaching,SIL-10,concept,model,doctrine
+buffalo,SIL-10,ignore,model,generic animal
+careless_travellers,SIL-10,ignore,model,generic group
+charana_ascetics,SIL-10,charana_10,model,charanas of this canto
+charanar,SIL-10,charana_10,model,charanas who appear and preach
+charanas,SIL-10,charana_10,model,same charanas on the road
+charanas_arrival,SIL-10,ignore,model,"an event, not an entity"
+chola_lineage_glories,SIL-10,concept,model,abstract glories
+courtesan,SIL-10,wanton_woman_10,model,"vambap parattai, the wanton woman"
+drummers,SIL-10,ignore,model,generic group
+farm_laborers,SIL-10,ignore,model,generic group
+farm_women,SIL-10,ignore,model,generic group
+farm_workers,SIL-10,ignore,model,generic group
+fields,SIL-10,ignore,model,generic place
+glib_man,SIL-10,idle_man_10,model,"vaṟumoḻi yāḷan, the idle talker"
+great_sages,SIL-10,ignore,model,generic group of sages
+ilavanthigai,SIL-10,new:ilavantikai,model,named garden/rampart place
+indra_vihara,SIL-10,new:indra_vihara,model,named Buddhist monastery in Puhar
+irrigation_devices,SIL-10,ignore,model,generic things
+jackal_form,SIL-10,concept,model,rebirth state
+jackfruit_pebbles,SIL-10,ignore,model,generic road hazard
+jina,SIL-10,new:arhat,model,epithets of the Arhat
+kaveri_gate,SIL-10,new:kaveri_gate,model,named gate of Puhar
+kaveri_north_grove,SIL-10,new:kaveri_north_grove,model,specific flowering grove
+kaveri_south_bank,SIL-10,new:kaveri_south_bank,model,specific riverbank place
+kavunti_pali,SIL-10,kavunti,model,quote says seeing Kavunti Aiyai herself
+kavunti_pali_grove,SIL-10,new:kavunti_pali,model,"Kavunti's retreat grove, not in graph"
+king,SIL-10,ignore,model,king not identified by the quote
+life_in_body,SIL-10,concept,model,abstract idea
+long_gate,SIL-10,ignore,model,"generic gate, unclear which"
+low_born_ones,SIL-10,ignore,model,generic group
+mansions,SIL-10,ignore,model,generic buildings
+mockers,SIL-10,ignore,model,unnamed group
+muddied_pond_water,SIL-10,ignore,model,generic water
+new_water,SIL-10,new:kaveri,model,"Kaveri river flood, not in graph"
+oblation_smoke,SIL-10,ignore,model,generic smoke
+old_enemy_honey,SIL-10,ignore,model,"generic, from a hazard list"
+old_karma,SIL-10,concept,model,"past deeds, doctrine"
+ominous_signs,SIL-10,concept,model,abstract omens
+paddy_fields,SIL-10,ignore,model,generic landscape
+passersby,SIL-10,ignore,model,"generic, unnamed"
+path_hazards,SIL-10,concept,model,abstract dangers
+pattinappakkam,SIL-10,new:pattinappakkam,model,named seaside quarter of Puhar
+pilgrim_gear,SIL-10,ignore,model,generic items
+plough,SIL-10,ignore,model,generic object
+ploughmen,SIL-10,ignore,model,generic group
+pond,SIL-10,ignore,model,generic place
+purancirai_varanam,SIL-10,new:purancirai_varanam,model,named place at Uraiyur outskirts
+rain_clouds,SIL-10,ignore,model,generic nature
+reapers,SIL-10,ignore,model,generic group
+reason_for_arrival,SIL-10,concept,model,abstraction
+retreat,SIL-10,ignore,model,unnamed place
+saranar,SIL-10,charana_10,model,charanas appear on the road
+saranar_speech,SIL-10,charana_10,model,speech of the charanas
+seedlings,SIL-10,ignore,model,generic crop
+sheaf_stack,SIL-10,ignore,model,generic object
+shining_rock,SIL-10,new:charana_stone_slab,model,the slab where charanas appear
+sky_travellers,SIL-10,charana_10,model,sky-going charanas
+stone_platform,SIL-10,new:charana_stone_slab,model,same slab placed by ascetics
+stone_slab,SIL-10,new:charana_stone_slab,model,same slab worshipped
+threshing_floor,SIL-10,ignore,model,generic place
+tuber_pit,SIL-10,ignore,model,generic hazard
+uraiyur_nochchi,SIL-10,new:uraiyur_nochchi_grove,model,named nochchi grove at Uraiyur
+valai_fish,SIL-10,ignore,model,generic animal
+villages_and_countryside,SIL-10,ignore,model,generic landscape
+virtuous_ones,SIL-10,ignore,model,generic travellers
+vishnu_temple,SIL-10,new:manivannan_kottam,model,named Vishnu temple on the way
+warring_kings,SIL-10,ignore,model,generic simile
+waterbirds,SIL-10,ignore,model,generic animals
+word_meaning_god,SIL-10,new:mozhipporul_deivam,model,invoked Jain deity of scripture
+world_ascetics,SIL-10,ignore,model,generic group
+arivan,SIL-11,new:arivan,model,"the Arhat, a named deity worshipped"
+bhavakarani,SIL-11,new:pavakaranam,model,"the Pavakaranam pool, same as pavakaranam"
+bow_farmers,SIL-11,ignore,model,"generic group, not named"
+brahmin_visitor,SIL-11,brahmin_11,model,the Mangadu brahmin who blesses the Pandya and speaks in this canto
+caravan,SIL-11,ignore,model,generic group of travellers
+cave,SIL-11,ignore,model,generic description
+cave_cleft,SIL-11,ignore,model,unnamed woman
+charanas,SIL-11,ignore,model,generic title; not clearly the same as the charana in canto 10
+desert_path,SIL-11,ignore,model,generic wasteland
+desired_deity,SIL-11,ignore,model,unspecified deity
+desired_object,SIL-11,ignore,model,unspecified object
+doorways,SIL-11,ignore,model,generic
+forest,SIL-11,ignore,model,generic forest
+forest_and_eyinar_territory,SIL-11,ignore,model,generic territory
+forest_deity,SIL-11,forest_deity_11,model,the forest spirit of this canto
+forest_goddess,SIL-11,forest_deity_11,model,the forest-dwelling deity
+ganga_and_himalaya,SIL-11,new:ganga_himalaya,model,Ganga and Himalaya taken by conquest
+ganga_himalaya,SIL-11,new:ganga_himalaya,model,same as ganga_and_himalaya
+good_path,SIL-11,ignore,model,generic road
+good_words,SIL-11,ignore,model,generic speech
+grove,SIL-11,ignore,model,generic place
+harsh_forest,SIL-11,ignore,model,generic forest
+hill_deity,SIL-11,new:tirumal_venkatam,model,"the Lord on the hill, worshipped"
+hill_deity_banner,SIL-11,new:garuda_banner,model,the bird-marked banner of the hill deity
+indra_necklace,SIL-11,ignore,model,unclear referent
+indra_text,SIL-11,new:indra_treatise,model,Indra's treatise
+indra_treatise,SIL-11,new:indra_treatise,model,Indra's treatise
+ishta_siddhi,SIL-11,new:ittasiddhi,model,the Ittasiddhi pool
+ittasiddhi,SIL-11,new:ittasiddhi,model,the Ittasiddhi pool
+joined_doorway,SIL-11,ignore,model,generic
+kaveri_island,SIL-11,new:srirangam,model,Kaveri island where the Lord reclines
+kings,SIL-11,ignore,model,generic kings
+lotus_leaf_water,SIL-11,ignore,model,generic
+mankadu,SIL-11,new:mankadu,model,the place Mangadu
+mountain,SIL-11,new:venkatam_hill,model,the sacred hill circumambulated
+mountain_lord,SIL-11,new:tirumal_venkatam,model,"the Lord on the hill, same as hill_deity"
+mullai_kurinji_lands,SIL-11,concept,model,landscape types changing nature
+outside_long_path,SIL-11,ignore,model,generic
+pahruli_river_and_kumari_peaks,SIL-11,new:pahruli_kumari,model,lost lands swallowed by the sea
+pandya_country,SIL-11,sirumalai,model,Pandya's Sirumalai hill appears
+past_birth_knowledge,SIL-11,concept,model,knowledge of past births
+past_births,SIL-11,concept,model,abstraction
+pavakaranam,SIL-11,new:pavakaranam,model,the Pavakaranam pool
+pearl_string,SIL-11,ignore,model,unspecified object
+pool,SIL-11,ignore,model,generic pool
+punya_saravanam,SIL-11,new:punya_saravanam,model,named sacred pool on the hill
+rare_town,SIL-11,ignore,model,unnamed town
+right_hand_path,SIL-11,ignore,model,generic path
+road_to_madurai,SIL-11,ignore,model,"a route, not a named entity"
+road_travelers,SIL-11,ignore,model,generic passers-by
+roadside,SIL-11,ignore,model,generic resting spot
+south_region,SIL-11,ignore,model,generic direction or region
+spear,SIL-11,ignore,model,unnamed weapon of an unnamed king
+three_pools,SIL-11,new:three_pools_tirumal,model,the specific three pools on the hill
+tirumal_hill,SIL-11,new:venkatam_hill,model,Tirumal hill is the same as Venkatam hill
+travelers,SIL-11,ignore,model,generic travelers
+travellers,SIL-11,ignore,model,generic travelers
+truthful_protectors,SIL-11,ignore,model,generic group
+ultimate_bliss,SIL-11,concept,model,abstract idea
+varottamai,SIL-11,new:varottamai,model,named woman who appears and speaks
+vast_land,SIL-11,ignore,model,"simile, not a specific place"
+vattikai_poonkodi,SIL-11,new:varottamai,model,"same woman who appears, unnamed in graph"
+venkatam_hill,SIL-11,new:venkatam_hill,model,"named sacred hill, not in graph"
+victory_offering,SIL-11,concept,model,abstract idea
+vine_woman,SIL-11,new:varottamai,model,same woman as the painted-vine figure
+vishnu,SIL-11,new:vishnu,model,"reclining and standing god of the hill, not in graph"
+vow_debt,SIL-11,concept,model,abstract idea
+wayside_town,SIL-11,ignore,model,unnamed stopping place
+wishes_fulfilled,SIL-11,concept,model,abstract idea
+aiyai_tiru_ornaments,SIL-12,ignore,model,"ornaments, not a named entity"
+altar,SIL-12,ignore,model,generic place
+angry_bull,SIL-12,new:mahisha_buffalo_demon,model,the buffalo demon the goddess stands on
+asura,SIL-12,new:mahisha_buffalo_demon,model,the asura under the goddess's foot is the buffalo demon
+asuras,SIL-12,ignore,model,generic group
+bee_swarm,SIL-12,ignore,model,generic
+birds,SIL-12,ignore,model,generic omen birds
+blacksmith,SIL-12,ignore,model,unnamed
+blood,SIL-12,ignore,model,offering item
+bow,SIL-12,ignore,model,generic object
+buffalo_demon,SIL-12,new:mahisha_buffalo_demon,model,the demon slain by the goddess
+cattle,SIL-12,ignore,model,generic
+cattle_herds,SIL-12,ignore,model,generic
+conch_and_discus,SIL-12,ignore,model,"attributes, not an entity"
+drums_and_horns,SIL-12,ignore,model,generic instruments
+elephant_hide,SIL-12,ignore,model,generic object
+enemy_cattle,SIL-12,ignore,model,generic
+enemy_lands,SIL-12,ignore,model,generic
+eyinar_courtyards,SIL-12,ignore,model,generic places
+eyinar_girl,SIL-12,hunter_girl_12,model,the hunter girl addressed as the goddess
+eyinar_hall,SIL-12,ignore,model,generic place
+eyinar_offering,SIL-12,ignore,model,offering
+eyinar_village_square,SIL-12,ignore,model,generic place
+eyitti,SIL-12,hunter_girl_12,model,young huntress addressed in this canto
+eyitti_fathers,SIL-12,eyinar,model,hunter men of the clan
+flag,SIL-12,ignore,model,generic object
+flowers,SIL-12,ignore,model,generic
+foreign_land,SIL-12,ignore,model,generic place
+forest_buffalo_head,SIL-12,new:mahisha_buffalo_demon,model,head of the buffalo demon
+forester,SIL-12,ignore,model,unnamed
+foresters,SIL-12,ignore,model,unnamed group
+girl_in_aiyai_ornaments,SIL-12,hunter_girl_12,model,the girl dressed as the goddess
+girl_in_korravai_ornaments,SIL-12,hunter_girl_12,model,the girl dressed as the goddess
+girl_in_pavai_ornaments,SIL-12,hunter_girl_12,model,the girl dressed as the goddess
+girl_kin,SIL-12,eyinar,model,her hunter kinsmen
+goddess,SIL-12,korravai,model,the goddess in elephant hide worshipped by hunters
+goddess_shrine,SIL-12,ignore,model,generic place
+horns_flutes_bells,SIL-12,ignore,model,generic instruments
+hunter_clan,SIL-12,eyinar,model,the Eyinar clan
+hunter_women_attendants,SIL-12,ignore,model,unnamed group
+hunters_offering,SIL-12,ignore,model,offering
+kari_bird,SIL-12,ignore,model,generic omen bird
+karantai_defenders,SIL-12,ignore,model,unnamed group
+kayamalar_girl,SIL-12,hunter_girl_12,model,the girl addressed in the same speech
+kayamalar_girl_fathers,SIL-12,eyinar,model,hunter men raiding cattle
+konrai_tulasi_garland,SIL-12,ignore,model,generic garland
+korravai_ornaments,SIL-12,ignore,model,generic ornaments
+korravai_shrine,SIL-12,ignore,model,generic shrine; quote only shows scattered petals
+kumari,SIL-12,korravai,model,Kumari is the goddess's epithet in the hunters' song
+kurava_and_kongu_flowers,SIL-12,ignore,model,generic flowers
+lady,SIL-12,korravai,model,the goddess praised by the celestials
+lavangam_buds,SIL-12,ignore,model,generic flower buds
+liquor_seller,SIL-12,ignore,model,unnamed woman
+maruda_trees,SIL-12,ignore,model,mislabelled; the quote is about a cart
+matted_hair,SIL-12,ignore,model,"body feature, not a named entity"
+neighbouring_villages,SIL-12,ignore,model,generic places
+offerings,SIL-12,ignore,model,generic offerings
+omen_reader,SIL-12,ignore,model,unnamed omen-reader
+oracle_woman,SIL-12,ignore,model,unnamed possessed woman
+pavai_ornaments,SIL-12,ignore,model,generic ornaments
+podiyil_lord,SIL-12,new:podiyil_lord,model,lord of Podiyil hill; not clearly the graph's Pandya king
+poison,SIL-12,ignore,model,generic object
+red_petals,SIL-12,ignore,model,generic petals
+rolling_cart,SIL-12,ignore,model,generic object
+sacrificial_food,SIL-12,ignore,model,generic offering
+serpent_and_crescent,SIL-12,ignore,model,generic ornaments
+skin_girdle,SIL-12,animal_skin,model,girdle of skin clothing the goddess
+snake_cub,SIL-12,ignore,model,generic animal
+stag,SIL-12,ignore,model,generic animal mount
+stag_mounted_deity,SIL-12,korravai,model,the goddess on the stag
+tiger,SIL-12,ignore,model,generic animal
+toys_and_birds,SIL-12,ignore,model,generic items
+tunjur,SIL-12,new:tunjur,model,named place that is raided
+uzhathi,SIL-12,ignore,model,generic class of woman
+vanor,SIL-12,ignore,model,generic celestials
+vari_song,SIL-12,concept,model,the song form
+vengai_blossoms,SIL-12,ignore,model,generic flowers
+vengai_trees,SIL-12,ignore,model,generic trees
+vetchi_flowers,SIL-12,ignore,model,generic flowers
+vetchi_garland,SIL-12,ignore,model,generic garland
+village_man,SIL-12,ignore,model,unnamed man
+warrior,SIL-12,ignore,model,unnamed man
+white_blossoms,SIL-12,ignore,model,generic flowers
+white_snake_cub,SIL-12,ignore,model,generic animal
+wooden_leg,SIL-12,ignore,model,generic object
+yazh_singers,SIL-12,ignore,model,generic group of singers
+young_girl,SIL-12,hunter_girl_12,model,the girl dressed as the goddess
+aravi_ascetic,SIL-13,ignore,model,unnamed female ascetic; the graph has no matching entity
+ayodhya,SIL-13,new:ayodhya,model,"specific named city, not in graph"
+ayodhya_prince,SIL-13,rama_unnamed,model,Rama went to the forest when Ayodhya was bereft; matches the hero who left home 
+bards,SIL-13,ignore,model,generic group
+brahmin_scholars,SIL-13,ignore,model,generic group of Vedic brahmins
+brahmin_village,SIL-13,ignore,model,unnamed place
+clay_seal,SIL-13,ignore,model,generic object
+couple_sorrow,SIL-13,concept,model,abstract sorrow
+distance_to_madurai,SIL-13,concept,model,abstract distance
+elders,SIL-13,ignore,model,generic elders
+female_ascetic,SIL-13,ignore,model,unnamed ascetic
+festive_drum,SIL-13,festival_drum,model,same festival drum
+flower_garland,SIL-13,ignore,model,generic ornament
+flower_garment,SIL-13,ignore,model,generic poetic image
+flowering_trees_and_creepers,SIL-13,ignore,model,generic plants
+forest,SIL-13,ignore,model,unnamed forest
+fort_banners,SIL-13,ignore,model,generic banners
+great_ascetics,SIL-13,ignore,model,generic group
+great_ferry,SIL-13,ignore,model,unnamed ferry
+hair_oil_scent,SIL-13,ignore,model,generic object
+horses,SIL-13,ignore,model,generic animals
+hot_gravel_forest,SIL-13,ignore,model,unnamed terrain
+incense_and_oblation_smoke,SIL-13,ignore,model,generic smoke
+kitchen_and_sweetmaker_smoke,SIL-13,ignore,model,generic smoke
+kovalan_parents,SIL-13,ignore,model,"graph has only the mother separately; this is a joint group, so not a clear matc"
+leaf_wreath_and_sprigs,SIL-13,ignore,model,generic ornament
+madurai_breeze,SIL-13,ignore,model,natural phenomenon
+madurai_outskirts,SIL-13,madurai,model,"the outskirts of Madurai, the city in the graph"
+mansions,SIL-13,ignore,model,generic buildings
+men_and_women,SIL-13,ignore,model,generic people
+mingled_smoke,SIL-13,ignore,model,generic smoke
+moat_flowers,SIL-13,ignore,model,generic flowers
+night_travel,SIL-13,concept,model,abstract activity
+night_travel_plan,SIL-13,concept,model,abstract plan
+pandya_kings,SIL-13,ignore,model,"generic dynasty reference, not a specific king"
+pandya_land,SIL-13,new:pandya_country,model,"named region, not in graph"
+pandya_land_reputation,SIL-13,concept,model,abstract fame
+pandya_palace,SIL-13,ignore,model,generic palace reference
+parents,SIL-13,ignore,model,"unnamed parents, speaker unclear"
+pearl_strand_and_sandal_paste,SIL-13,ignore,model,generic ornaments
+relatives,SIL-13,ignore,model,generic group
+servants,SIL-13,ignore,model,generic servants
+singing_bards,SIL-13,ignore,model,generic group
+song_modes,SIL-13,concept,model,"musical modes, abstract"
+spring_moon,SIL-13,ignore,model,natural object addressed poetically
+stars,SIL-13,ignore,model,"generic sky image, not a named entity"
+summer_heat,SIL-13,concept,model,abstract season or heat theme
+temple_and_palace_sounds,SIL-13,ignore,model,"generic sounds, not a named entity"
+those_who_approach,SIL-13,ignore,model,generic unnamed refugees
+upper_chamber_bed,SIL-13,ignore,model,generic furniture or place
+vaigai_river,SIL-13,new:vaigai_river,model,named river not in graph
+vaigai_river_bank,SIL-13,new:vaigai_river,model,bank of the Vaigai river
+vaiyai_south_bank,SIL-13,new:vaigai_river,model,"spelling variant, south bank of Vaigai"
+virtuous_lady,SIL-13,ignore,model,quote does not identify her clearly
+waiting_party,SIL-13,ignore,model,unnamed group or person in the quote
+war_elephants,SIL-13,ignore,model,generic animals
+warriors,SIL-13,ignore,model,generic unnamed soldiers
+wild_beasts,SIL-13,ignore,model,generic animals
+women_adornment,SIL-13,ignore,model,"generic attire, not a named entity"
+wooden_raft,SIL-13,ignore,model,generic object
+you_plural,SIL-13,ignore,model,unnamed addressees
+1008_kalanju,SIL-14,concept,model,"a sum of money, not an entity"
+aromatic_cargo,SIL-14,ignore,model,generic goods
+ascetics,SIL-14,ignore,model,generic group
+birds,SIL-14,ignore,model,generic
+celiyan,SIL-14,vetrivel_celiyan,model,Pandya king whose rule makes kings tremble
+city_women,SIL-14,madurai_women,model,women of the city adorned with Korkai pearls
+couples,SIL-14,ignore,model,generic
+courtesans,SIL-14,ignore,model,generic group
+courtyard,SIL-14,ignore,model,generic place
+dance_song_music_arts,SIL-14,concept,model,arts
+desire,SIL-14,concept,model,abstraction
+dew_king,SIL-14,concept,model,personified season
+dice_king,SIL-14,nala_unnamed,model,king who lost his kingdom at dice
+dice_king_wife,SIL-14,ignore,model,unnamed in quote
+elephant_herds,SIL-14,ignore,model,generic
+exile_prince,SIL-14,rama_unnamed,model,exile at his father's command
+exile_prince_father,SIL-14,ignore,model,unnamed in quote
+exile_prince_wife,SIL-14,ignore,model,unnamed in quote
+flower_garlands_and_pearls,SIL-14,ignore,model,generic ornaments
+foreign_lands,SIL-14,ignore,model,generic
+forest,SIL-14,ignore,model,generic place
+fort_gate,SIL-14,ignore,model,not clearly a listed gate
+fort_interior,SIL-14,ignore,model,generic
+fresh_flowers,SIL-14,ignore,model,generic
+gold_cups,SIL-14,ignore,model,generic
+golden_bangled_women,SIL-14,ignore,model,generic women
+groves_and_forests,SIL-14,ignore,model,generic
+honey_wine,SIL-14,ignore,model,generic drink
+household_women_and_men,SIL-14,ignore,model,generic
+householder_women_and_children,SIL-14,ignore,model,generic
+ignorant_people,SIL-14,ignore,model,generic
+inseparable_life,SIL-14,concept,model,abstraction
+kama_bow_festival,SIL-14,new:kama_bow_festival,model,specific named festival
+king,SIL-14,ignore,model,unidentified king
+kingdom,SIL-14,ignore,model,generic
+kings,SIL-14,ignore,model,generic
+kings_city,SIL-14,ignore,model,city unnamed
+kings_descendants,SIL-14,ignore,model,generic
+kovalan_plight,SIL-14,concept,model,abstract condition
+later_kings,SIL-14,ignore,model,generic
+learned_people,SIL-14,ignore,model,generic
+lotus_buds,SIL-14,ignore,model,generic
+love_desire,SIL-14,concept,model,abstraction
+love_distress,SIL-14,concept,model,abstraction
+madhavi_creeper,SIL-14,concept,model,"metaphor for flowering creeper/flag, not a named entity"
+mansion,SIL-14,ignore,model,"generic dwelling, unnamed"
+many_people,SIL-14,ignore,model,"generic, unnamed people"
+married_men,SIL-14,ignore,model,generic group
+measurers,SIL-14,ignore,model,generic grain measurers
+moat_and_drain_street,SIL-14,ignore,model,"generic street, unnamed"
+moonlit_courtyard,SIL-14,ignore,model,generic place
+moonlit_courtyard_bed,SIL-14,ignore,model,generic furniture/place
+morning_drum,SIL-14,ignore,model,"generic drum, not the graph's festival drum"
+morning_sunlight,SIL-14,concept,model,"natural phenomenon, not an entity"
+naive_lovers,SIL-14,ignore,model,generic group
+old_city,SIL-14,ignore,model,unnamed city in quote
+other_kings,SIL-14,ignore,model,generic unnamed kings
+palanquins_couches_fans_sword,SIL-14,ignore,model,generic gift items
+pond,SIL-14,ignore,model,generic place
+rainy_season_lord,SIL-14,concept,model,personified season
+rare_wisdom,SIL-14,concept,model,abstract quality
+ships,SIL-14,ignore,model,generic ships
+small_windows,SIL-14,ignore,model,generic objects
+spring_season,SIL-14,concept,model,personified season
+street,SIL-14,ignore,model,generic street
+summer_king,SIL-14,concept,model,personified season
+sunlight,SIL-14,concept,model,natural phenomenon
+thondi_people,SIL-14,tondi_shippers,model,தொண்டியோர் are the Tondi shippers
+vaigai,SIL-14,new:vaigai,model,"named river of Madurai, not in graph"
+virtuous_people,SIL-14,the_virtuous,model,virtuous proclaiming warning by drum
+worldly_people,SIL-14,ignore,model,generic people
+young_men,SIL-14,ignore,model,generic group
+young_wives,SIL-14,ignore,model,generic group
+young_women,SIL-14,ignore,model,generic group
+ascetics,SIL-15,ignore,model,generic group
+ascetics_refuge,SIL-15,concept,model,abstract refuge/joy
+barren_ground,SIL-15,ignore,model,generic place
+barren_land,SIL-15,ignore,model,generic place
+base_man,SIL-15,ignore,model,"unnamed, generic"
+bhuta,SIL-15,new:bhuta_demon,model,specific demon in the story
+bodhi_tree,SIL-15,ignore,model,"mislabelled, no identification"
+brahmin,SIL-15,new:aged_brahmin,model,"gift-seeking brahmin of the story, not the Mangadu brahmin"
+brahmin_aged,SIL-15,new:aged_brahmin,model,same gift-seeking brahmin
+caranas,SIL-15,new:caranas,model,Jain sages as a group
+celestial_being,SIL-15,ignore,model,unnamed celestial
+charanas,SIL-15,new:caranas,model,spelling variant of caranas
+chaste_woman,SIL-15,ignore,model,unnamed generic woman
+chastity,SIL-15,concept,model,abstract quality
+cowherds,SIL-15,ignore,model,generic group
+demon,SIL-15,new:bhuta_demon,model,same demon as bhuta
+deva_kumaran,SIL-15,new:deva_kumaran,model,named person in the story
+duty_knowing_people,SIL-15,ignore,model,generic
+elder_courtesans,SIL-15,ignore,model,generic group
+elephant,SIL-15,ignore,model,unnamed animal
+etti,SIL-15,new:ettichayalan,model,Ettichayalan the donor
+etti_cayalan_house,SIL-15,new:ettichayalan_house,model,his house
+etti_wife,SIL-15,new:ettichayalan_wife,model,wife of Ettichayalan
+ettichayalan_house,SIL-15,new:ettichayalan_house,model,same house
+fasting_ascetics,SIL-15,ignore,model,generic group
+flower_arrow,SIL-15,ignore,model,generic arrow
+forest,SIL-15,ignore,model,generic place
+fort_gate,SIL-15,ignore,model,"generic gate, not identified"
+good_life,SIL-15,concept,model,abstraction
+great_gift,SIL-15,concept,model,abstraction
+great_sorrow,SIL-15,concept,model,abstraction
+hand_fed_life,SIL-15,concept,model,abstraction
+horned_beast,SIL-15,ignore,model,unnamed animal
+housewife,SIL-15,ignore,model,unnamed woman
+iraiyon,SIL-15,ignore,model,"unnamed 'lord', not identified"
+irayon,SIL-15,ignore,model,"unnamed 'lord', not identified"
+karma_expiation_fruit,SIL-15,concept,model,doctrine
+karma_remedy,SIL-15,concept,model,doctrine
+kavunti_place,SIL-15,kavunti,model,arrival at Kavunti's presence
+kin,SIL-15,ignore,model,generic
+kkovalan_placeholder,SIL-15,kovalan,model,quote names Kovalan speaking
+kovalan_kin,SIL-15,ignore,model,generic relatives
+kumari_ghat,SIL-15,new:kumari_ghat,model,named bathing place at Kumari
+lady,SIL-15,ignore,model,unnamed woman
+lady_grief,SIL-15,concept,model,abstraction
+land_of_chaste_women,SIL-15,ignore,model,generic phrase about rain not failing
+leftover_food_and_water,SIL-15,ignore,model,generic offering
+lore_woman,SIL-15,ignore,model,unnamed woman
+magic,SIL-15,concept,model,abstract: spell or lore
+mansion_streets,SIL-15,ignore,model,generic streets
+matari_house,SIL-15,ignore,model,unclear whose house; not a named entity
+merchants,SIL-15,ignore,model,generic group
+milk_offering,SIL-15,ignore,model,generic ritual item
+mongoose,SIL-15,ignore,model,unnamed animal in a story
+monkey,SIL-15,ignore,model,unnamed animal
+noose,SIL-15,ignore,model,generic object
+other_deity,SIL-15,ignore,model,unnamed
+our_lord,SIL-15,ignore,model,quote does not identify him
+outer_shelter,SIL-15,ignore,model,generic place
+outskirts_grove,SIL-15,ignore,model,generic grove
+poor_man,SIL-15,ignore,model,unnamed
+purainjirai_town,SIL-15,new:purainjirai,model,named town
+rain_wealth_and_kings_victory,SIL-15,concept,model,abstract blessing
+sage,SIL-15,ignore,model,unnamed sage
+sage_words,SIL-15,ignore,model,words of an unnamed sage
+sanskrit_document,SIL-15,ignore,model,generic document
+savaka_laity,SIL-15,new:savakas,model,"Jain lay followers, same as savakas"
+savakas,SIL-15,new:savakas,model,Jain lay followers
+sayalan_wife,SIL-15,new:sayalan_wife,model,specific named person
+share_of_alms,SIL-15,concept,model,abstract merit share
+sinful_woman,SIL-15,ignore,model,unnamed
+staff,SIL-15,ignore,model,generic object
+tavvai,SIL-15,new:tavvai,model,named person
+tavvai_life,SIL-15,ignore,model,"her life, not an entity"
+the_arrival,SIL-15,ignore,model,abstract event
+the_saying,SIL-15,ignore,model,abstract
+thousand_courtesans,SIL-15,ignore,model,generic group
+uttara_kauttan,SIL-15,new:uttara_kauttan,model,named person
+varanam,SIL-15,new:varanam,model,named place
+viruttakopala,SIL-15,new:viruttakopala,model,named person
+wealthy_one,SIL-15,ignore,model,unnamed address
+yakshi,SIL-15,ignore,model,unnamed spirit
+aiyai_and_tavvai,SIL-16,ignore,model,unnamed lamp/dark-hued one wonder; Aiyai not clearly meant
+bull,SIL-16,ignore,model,generic animal confronted
+chisel,SIL-16,ignore,model,generic instrument
+city_guards,SIL-16,guards,model,guards summoned to kill
+courtesan_street,SIL-16,new:courtesan_street_madurai,model,"specific street, not in graph"
+cowherds_house,SIL-16,new:cowherds_house,model,specific dwelling left by Kovalan
+devakottam_prison,SIL-16,new:devakottam_prison,model,specific named place
+door_guards,SIL-16,guards,model,guards put to sleep
+drunk_executioner,SIL-16,new:drunk_executioner,model,"specific unnamed killer, not in graph"
+dung_heap_common,SIL-16,new:tateru_mandram,model,named common ground place
+earth_goddess,SIL-16,new:earth_goddess,model,"named deity, not in graph"
+elder_parents,SIL-16,ignore,model,"generic elders, no graph match"
+elders,SIL-16,ignore,model,generic elders
+faultless_place,SIL-16,ignore,model,generic safe spot
+gatekeepers,SIL-16,guards,model,guards put to sleep
+goldsmith_craftsmen,SIL-16,goldsmiths_100,model,hundred smiths follow
+grief,SIL-16,concept,model,abstract emotion
+ground,SIL-16,ignore,model,generic ground
+guarded_house,SIL-16,ignore,model,generic house
+herdswomen,SIL-16,cowherd_women,model,cowherd women give provisions
+householder_charity,SIL-16,concept,model,duty/virtue abstraction
+ilanko_vendan,SIL-16,ilanko,model,Ilanko the king/poet name
+indra_garland,SIL-16,new:indra,model,"Indra named, not in graph"
+kin_and_attendants,SIL-16,ignore,model,generic group
+kitchen,SIL-16,ignore,model,generic place
+knife,SIL-16,ignore,model,generic instrument
+koodal_dancers,SIL-16,ignore,model,generic dancers
+matari_house,SIL-16,new:matari_house,model,specific dwelling of Matari
+mighty_men,SIL-16,ignore,model,generic men
+pandya_scepter,SIL-16,sceptre,model,the sceptre bending
+past_karma,SIL-16,karma,model,past deeds ripening
+pidikai_street,SIL-16,new:pitikai_street,model,specific street not in graph
+pitikai_street,SIL-16,new:pitikai_street,model,"same street, spelling variant"
+plantain_leaf,SIL-16,plantain,model,plantain leaf for meal
+provisions,SIL-16,ignore,model,generic items
+queen_palace,SIL-16,new:queen_palace,model,specific palace not in graph
+queen_palace_gate,SIL-16,palace_gate,model,gate of palace
+ritual_dues,SIL-16,concept,model,duty abstraction
+royal_jewelry,SIL-16,royal_ornaments,model,crowns and ornaments
+small_hut,SIL-16,ignore,model,generic hut
+soldiers,SIL-16,ignore,model,generic soldiers
+street,SIL-16,ignore,model,generic street
+sulking_resentment,SIL-16,concept,model,emotion
+tateru_mandram,SIL-16,new:tateru_mandram,model,named common ground
+thief,SIL-16,kovalan,model,Kovalan accused as thief of anklet
+thieves,SIL-16,ignore,model,"generic group of thieves, unnamed"
+unknown_thief,SIL-16,ignore,model,unnamed man who appears and draws sword
+woven_seat,SIL-16,ignore,model,generic seat; the quote names no specific thing
+young_guard,SIL-16,ignore,model,unnamed young man; not identified in the quote
+young_spearman,SIL-16,ignore,model,unnamed young spearman; not identified in the quote
+asotai,SIL-17,new:yashoda,model,"Yashoda, Krishna's foster mother, bound him with the churning rope"
+ayar_girls,SIL-17,ignore,model,generic group of cowherd girls
+ayar_makal,SIL-17,ignore,model,unnamed cowherd girl
+ayarpadi,SIL-17,new:ayarpadi,model,the cowherd hamlet where Krishna danced
+balarama,SIL-17,new:balarama,model,"Krishna's elder brother, stood beside in the dance"
+bangles_and_garment,SIL-17,ignore,model,generic items a girl loses
+bell,SIL-17,ignore,model,generic omen object
+bull_tamer,SIL-17,ignore,model,"generic, unnamed"
+bulls,SIL-17,ignore,model,generic animals
+butter,SIL-17,ignore,model,generic item
+calf,SIL-17,ignore,model,generic animal in a Krishna tale
+chera_king,SIL-17,ignore,model,"king not named in the quote, so not clearly Cenkuttuvan"
+chest,SIL-17,ignore,model,"body part, generic"
+chorus,SIL-17,ignore,model,generic group
+churning_rope,SIL-17,ignore,model,generic object
+churning_rope_and_churn,SIL-17,ignore,model,generic objects
+coming_misfortune,SIL-17,concept,model,abstract omen of trouble
+coming_sorrow,SIL-17,concept,model,abstract omen of trouble
+cow_herd,SIL-17,ignore,model,generic animals
+cowherd_girl,SIL-17,ignore,model,unnamed singer
+cowherd_girls,SIL-17,ignore,model,generic group
+cows_and_calves,SIL-17,ignore,model,generic animals
+daughter,SIL-17,aiyai_daughter,model,Matari looks at her daughter and tells her not to despair after the omens
+deceiver,SIL-17,krishna,model,"the deceiving lover in the kuravai songs is Mayavan, Krishna"
+discus,SIL-17,ignore,model,generic weapon epithet
+distressed_man,SIL-17,ignore,model,"generic, unnamed"
+elder_brother,SIL-17,new:balarama,model,Krishna's elder brother in the dance
+face,SIL-17,ignore,model,body part
+fallen_bell,SIL-17,ignore,model,generic omen
+fish_emblem,SIL-17,ignore,model,"emblem, no person named"
+flower_garlanded_girl,SIL-17,ignore,model,unnamed girl
+flute_music,SIL-17,ignore,model,generic sound
+friend,SIL-17,ignore,model,unnamed companion
+fruit,SIL-17,ignore,model,generic item
+garlands,SIL-17,ignore,model,generic items
+garments,SIL-17,ignore,model,generic items
+garments_and_bangles,SIL-17,ignore,model,generic items
+ghee_duty_today,SIL-17,ignore,model,generic announcement
+hands,SIL-17,ignore,model,body part
+hill_slope,SIL-17,ignore,model,generic place
+humped_bull,SIL-17,ignore,model,generic animal
+hundred_kauravas,SIL-17,new:kauravas,model,the hundred Kauravas Krishna's side defeated
+ili_note,SIL-17,ignore,model,"musical note, generic"
+indra_necklace,SIL-17,ignore,model,generic ornament
+kadamba_tree,SIL-17,ignore,model,generic tree
+kamsa,SIL-17,new:kamsa,model,named Krishna's enemy Kamsa (கஞ்சன்)
+kauravas,SIL-17,new:kauravas,model,the hundred defeated; named group not in graph
+konrai_flower_woman,SIL-17,ignore,model,unnamed girl assigned a flower
+kural_girl,SIL-17,ignore,model,unnamed girl speaker
+kural_note,SIL-17,concept,model,musical note
+kuravai_dance,SIL-17,concept,model,dance form
+kuravai_deity,SIL-17,ignore,model,deity not identified in quote
+kurundu_tree,SIL-17,new:kurundu_tree,model,specific tree Krishna broke
+lady,SIL-17,ignore,model,generic woman
+lanka_fort,SIL-17,new:lanka,model,"Lanka, not in graph"
+left_side,SIL-17,ignore,model,"position, not entity"
+mandara_mountain,SIL-17,new:mandara_mountain,model,mountain used to churn the sea
+morning_drum,SIL-17,ignore,model,generic drum
+mullai_tune,SIL-17,concept,model,musical mode
+muttai,SIL-17,new:muttai,model,named girl in the dance
+narada,SIL-17,new:narada,model,named sage Narada
+narayana,SIL-17,krishna,model,"envoy to Pandavas, slayer of the hundred"
+navalam_kings,SIL-17,ignore,model,generic kings
+note_names,SIL-17,concept,model,musical note names
+old_herdswoman,SIL-17,matari,model,old herdswoman who calls Aiyai's daughter
+other_girls,SIL-17,ignore,model,unnamed girls
+our_cattle_herd,SIL-17,ignore,model,generic herd
+our_herd,SIL-17,ignore,model,generic herd
+pandavas,SIL-17,new:pandavas,model,named group not in graph
+pandya_palace,SIL-17,ignore,model,generic place
+pavai_flower_woman,SIL-17,ignore,model,unnamed girl assigned a flower
+pinnai_and_taram,SIL-17,new:pinnai,model,"Pinnai, Krishna's consort"
+pollen_common,SIL-17,ignore,model,generic common ground
+pot_milk,SIL-17,ignore,model,"omen, generic"
+remaining_notes,SIL-17,concept,model,musical notes
+right_side,SIL-17,ignore,model,"position, not entity"
+serpent,SIL-17,ignore,model,unnamed serpent in myth
+seven_girls,SIL-17,ignore,model,unnamed group
+strings,SIL-17,ignore,model,instrument strings
+tennavan,SIL-17,pandya_king,model,Tennavan is the Pandya king
+tennavan_drum,SIL-17,ignore,model,generic drum
+three_worlds,SIL-17,concept,model,cosmological abstraction
+tiger_and_bow_emblems,SIL-17,ignore,model,generic emblems
+tiger_emblem,SIL-17,ignore,model,generic emblem
+tulasi_garland,SIL-17,ignore,model,generic garland
+tuttam_note,SIL-17,concept,model,musical note
+tuvarai,SIL-17,new:tuvarai,model,"Dvaraka, named place"
+two_feet,SIL-17,ignore,model,body part
+ulvari_song,SIL-17,concept,model,song type
+vanavan,SIL-17,new:vanavan,model,"Chera king title, no graph entry"
+vasuki,SIL-17,new:vasuki,model,"serpent used as churning rope, named"
+vellai,SIL-17,new:balarama,model,"the white one, Krishna's elder brother"
+vilari_girl,SIL-17,ignore,model,"unnamed singer, only a role"
+vilari_note,SIL-17,concept,model,musical note name
+vishnu,SIL-17,krishna,model,bird-riding god praised; canto's Krishna hymn
+woman_at_yamuna,SIL-17,ignore,model,unnamed woman
+woman_face,SIL-17,concept,model,"abstract attribute, her face"
+woman_modesty,SIL-17,concept,model,"abstract quality, modesty"
+yamuna_lord,SIL-17,krishna,model,he who hid garments at the Yamuna
+yamuna_lord_beauty,SIL-17,concept,model,"abstract attribute, his beauty"
+yamuna_lord_form,SIL-17,concept,model,"abstract attribute, his form"
+yamuna_water,SIL-17,new:yamuna_river,model,the named river Yamuna
+aram,SIL-18,concept,model,dharma/virtue addressed abstractly
+cowherd_dancer,SIL-18,ignore,model,unnamed generic cowherd woman
+detractors,SIL-18,ignore,model,generic unnamed speakers
+flowers_incense_paste_garland,SIL-18,ignore,model,"generic offering items, not a named entity"
+friend,SIL-18,ignore,model,"unnamed addressee, 'O friend'"
+herd_women,SIL-18,cowherd_women,model,addressed cowherd girls of the canto
+strangers,SIL-18,ignore,model,generic unnamed speakers
+town_uproar,SIL-18,concept,model,abstract noise of the town
+vaigai_ford,SIL-18,new:vaigai_ford,model,"specific river ford, Vaigai, not in graph"
+cruel_deed,SIL-19,concept,model,abstract idea of cruelty/violent deed
+ground,SIL-19,ignore,model,"generic place, she falls to the ground"
+hand,SIL-19,ignore,model,"body part, not a named entity"
+hands,SIL-19,ignore,model,"body part, not a named entity"
+king,SIL-19,pandya_king,model,Kovalan's king at Madurai is the Pandya king in this canto
+king_palace_gate,SIL-19,palace_gate,model,gate of the king's palace
+kovalan_words,SIL-19,ignore,model,generic words; not a named entity
+madurai_people,SIL-19,madurai_women,model,Madurai folk who speak and show the husband; closest group in graph
+pandya_umbrella,SIL-19,concept,model,royal umbrella as omen; no graph entity for it
+pandya_victory,SIL-19,concept,model,abstract victory/sovereignty of the Pandya
+pattini_women,SIL-19,chaste_women,model,"chaste wives addressed, matches chaste women"
+scepter,SIL-19,sceptre,model,"the Pandya sceptre bending, in graph"
+umbrella,SIL-19,concept,model,royal umbrella as omen; no graph entity for it
+aged_attendants,SIL-20,ignore,model,generic unnamed attendants
+attendant_women,SIL-20,ignore,model,generic women
+attendants,SIL-20,ignore,model,generic attendants
+bad_dream,SIL-20,concept,model,"omen, not a named entity"
+bell,SIL-20,new:gate_bell,model,the justice bell at the gate
+bird,SIL-20,ignore,model,generic dove in the Sibi allusion
+cow,SIL-20,new:chola_cow,model,the cow that rang the bell in the Chola story
+darkness,SIL-20,concept,model,omen imagery
+dharma_becomes_death_to_wrongdoers,SIL-20,concept,model,maxim
+dove,SIL-20,ignore,model,generic bird in the allusion
+dove_relieving_one,SIL-20,new:sibi_chola,model,Chola who saved the dove
+eight_directions,SIL-20,ignore,model,generic directions
+execution_ground,SIL-20,ignore,model,"generic place, unnamed"
+gate_bell,SIL-20,new:gate_bell,model,same gate bell as above
+gatekeeper,SIL-20,ignore,model,unnamed gatekeeper
+his_son,SIL-20,new:manuneedhi_son,model,son killed by the Chola king's wheel
+hunchbacks_dwarfs_mutes,SIL-20,ignore,model,generic attendants
+kali,SIL-20,korravai,model,Kannagi says she is not the goddess who tore the chest
+kannagi_words,SIL-20,ignore,model,not an entity
+lion_throne,SIL-20,ignore,model,generic throne
+mirrors_jewels_flags_silks_unguents_garlands_incense,SIL-20,ignore,model,generic items carried
+night_rainbow_and_daytime_falling_star,SIL-20,concept,model,omens
+paints_powders_sandal_garlands_chowries_incense,SIL-20,ignore,model,generic items carried
+palace,SIL-20,new:pandya_palace,model,the Pandya king's palace
+protection_of_southern_land,SIL-20,concept,model,abstract duty
+puhar_ancestor,SIL-20,ignore,model,"quote mixes Sibi and the son-killer, two figures"
+umbrella_and_scepter,SIL-20,ignore,model,"two objects, not the single sceptre entity"
+umbrella_and_sceptre,SIL-20,ignore,model,"two objects, not the single sceptre entity"
+victory,SIL-20,concept,model,abstraction
+wheel,SIL-20,ignore,model,generic instrument
+breast,SIL-21,new:kannagi_left_breast,model,"Kannagi's breast, which she whirls and hurls"
+cowife_child,SIL-21,ignore,model,unnamed child in a tale
+elephants,SIL-21,ignore,model,generic
+father,SIL-21,ignore,model,unnamed figure in a tale
+golden_doll_woman,SIL-21,ignore,model,unnamed woman in a tale
+hand,SIL-21,ignore,model,"body part, generic"
+innocent_groups,SIL-21,ignore,model,composite generic group
+kannagi_left_breast,SIL-21,new:kannagi_left_breast,model,"Kannagi's left breast, which she twists off and hurls"
+king_women,SIL-21,ignore,model,generic women
+madurai_assembly,SIL-21,ignore,model,"generic audience, not clearly identified"
+monkey_face_husband,SIL-21,ignore,model,unnamed in a tale
+monkey_face_woman,SIL-21,ignore,model,unnamed in a tale
+mother,SIL-21,ignore,model,unnamed in a tale
+pandya_army,SIL-21,new:pandya_army,model,"the Pandya army, not in the graph"
+river,SIL-21,ignore,model,generic river in a tale
+sand_image,SIL-21,ignore,model,unnamed object in a tale
+sand_play_friend,SIL-21,ignore,model,unnamed
+seashore_grove,SIL-21,ignore,model,generic place in a tale
+stone_wife,SIL-21,ignore,model,unnamed tale figure
+stranger,SIL-21,ignore,model,unnamed
+subtle_scholars,SIL-21,ignore,model,generic group
+vanci_king,SIL-21,ignore,model,not clearly identified in the quote
+vanni_tree_and_temple_bench,SIL-21,ignore,model,unnamed witnesses in a tale
+vanni_witness_woman,SIL-21,ignore,model,unnamed tale woman
+well,SIL-21,ignore,model,generic
+well_woman,SIL-21,ignore,model,unnamed tale woman
+wise_ones,SIL-21,ignore,model,generic
+women_group,SIL-21,ignore,model,generic
+womens_wisdom,SIL-21,concept,model,abstract idea
+wrongdoers,SIL-21,ignore,model,generic group
+anjumakan,SIL-22,ignore,model,"possibly a title, not identified by the quote"
+arasa_bhuta_god,SIL-22,new:arasa_bhuta,model,"a specific bhuta deity of the kingdom, absent from the graph"
+bhuta_chief,SIL-22,new:arasa_bhuta,model,the same bhuta figure as the other bhuta entries
+bhuta_leader,SIL-22,new:arasa_bhuta,model,the same bhuta figure speaking in the quote
+brahmin,SIL-22,ignore,model,"a generic brahmin, not identified"
+breast,SIL-22,ignore,model,"a body part, not a named entity"
+buyers,SIL-22,ignore,model,generic group
+chest,SIL-22,ignore,model,a body part
+command_deities,SIL-22,new:command_deities,model,a specific group of deities guarding the gate
+court_people,SIL-22,ignore,model,generic group
+cowherds,SIL-22,ignore,model,generic group; the graph has only cowherd women
+dancing_women,SIL-22,ignore,model,generic group
+drum_umbrella_fly_whisk_banner_goad_spear_rope,SIL-22,ignore,model,"a list of regalia items, not one entity"
+earth_goddess,SIL-22,new:earth_goddess,model,a named deity not in the graph
+earth_ruler,SIL-22,ignore,model,unnamed king; the quote does not identify him
+elephants_and_horses,SIL-22,ignore,model,generic animals
+evening_rites,SIL-22,concept,model,an abstract practice
+farmer_lord,SIL-22,ignore,model,generic figure
+fine_cloth,SIL-22,ignore,model,generic garment
+flower_garland,SIL-22,ignore,model,"generic item, not Madhavi's garland"
+four_classes_of_spirits,SIL-22,new:four_classes_of_bhutas,model,a specific group of spirits
+four_regions,SIL-22,ignore,model,generic geographic phrase
+garlands_and_flowers,SIL-22,ignore,model,generic items
+gate,SIL-22,ignore,model,a generic gate
+gem_jewels_and_crown_ornaments,SIL-22,ignore,model,generic items
+golden_garment,SIL-22,ignore,model,generic item
+golden_vessel,SIL-22,ignore,model,generic item
+goods,SIL-22,ignore,model,generic items
+goods_from_mountain_and_sea,SIL-22,ignore,model,generic items
+grain_offering,SIL-22,ignore,model,generic offering
+guardian_deities,SIL-22,new:guardian_deities,model,a specific group of gate-guarding deities
+guests,SIL-22,ignore,model,generic group
+honey_milk_jaggery_offerings,SIL-22,ignore,model,generic offerings
+kannagi_breast,SIL-22,ignore,model,a body part
+king_and_queen_death,SIL-22,concept,model,"an event, not an entity"
+kings,SIL-22,ignore,model,generic group
+kumkum,SIL-22,ignore,model,generic substance
+land,SIL-22,ignore,model,generic place
+madurai_fire,SIL-22,agni,model,the fire that burns Madurai
+madurai_streets,SIL-22,madurai,model,the streets of the city
+merchant_seat_under_kanchi_tree,SIL-22,ignore,model,a generic seat
+necklaces,SIL-22,ignore,model,generic items
+nediyon,SIL-22,krishna,model,Nediyon is a standard epithet of Vishnu/Krishna
+ornaments,SIL-22,ignore,model,generic items
+palace,SIL-22,ignore,model,"generic place, not identified"
+plough,SIL-22,ignore,model,generic object held by a bhuta
+plough_and_scales,SIL-22,ignore,model,generic attributes of the Vaishya bhuta
+plough_weapon_scales_and_instruments,SIL-22,ignore,model,generic attributes of the Vaishya bhuta
+rare_goods,SIL-22,ignore,model,generic goods
+rice_offering,SIL-22,ignore,model,generic offering
+righteous_people,SIL-22,the_virtuous,model,the fire is told to spare the virtuous
+river_bank_temple_and_veda_school,SIL-22,ignore,model,generic unnamed places
+sacred_thread,SIL-22,ignore,model,generic attribute
+sandal_paste,SIL-22,ignore,model,generic adornment of a bhuta
+second_god,SIL-22,new:kshatriya_bhuta,model,"second of the four guardian bhutas, the Kshatriya one"
+seekers,SIL-22,ignore,model,generic recipients
+shiva_form_bhuta,SIL-22,new:shudra_bhuta,model,"the fourth bhuta, crescent-wearing, Shiva-like"
+teri_mukam,SIL-22,ignore,model,generic reference to the faces of the commanding deities
+throne,SIL-22,ignore,model,generic place of the king's death
+umbrella_staff_water_pot_darbha_grass,SIL-22,ignore,model,generic attributes of the Brahmin bhuta
+vaishya_bhuta,SIL-22,new:vaishya_bhuta,model,"third guardian bhuta, the Vaishya one"
+warriors_quarter,SIL-22,ignore,model,"generic district, no specific name"
+aryan_army,SIL-23,new:aryan_army,model,specific northern Aryan host defeated
+assembly_and_streets,SIL-23,ignore,model,generic places
+bangle,SIL-23,ignore,model,generic object
+bodhi_mandram,SIL-23,new:bodhi_mandram,model,named Buddhist seat/place
+brahmin_boys,SIL-23,ignore,model,unnamed group
+brahmin_victory_wreath,SIL-23,ignore,model,generic object
+breast,SIL-23,ignore,model,body part
+bundle,SIL-23,ignore,model,generic object
+celestial_retinue,SIL-23,ignore,model,unnamed gods
+celestial_vehicle,SIL-23,ignore,model,generic vehicle
+celestial_women,SIL-23,ignore,model,unnamed women
+chera_generosity,SIL-23,concept,model,quality
+chera_king,SIL-23,new:cheralatan,model,Chera king Cheralatan named in quote
+cheralatan,SIL-23,new:cheralatan,model,named Chera king
+cheralatan_generosity,SIL-23,concept,model,quality
+cow,SIL-23,ignore,model,generic animal
+door,SIL-23,ignore,model,generic object
+dove,SIL-23,ignore,model,generic animal
+earth_lady,SIL-23,ignore,model,"personified earth, unnamed"
+earthly_women,SIL-23,ignore,model,generic women
+east_gate,SIL-23,new:east_gate,model,specific gate of Madurai
+evil_deed,SIL-23,concept,model,karma-like idea
+face,SIL-23,ignore,model,body part
+fine_ornaments,SIL-23,ignore,model,generic items
+heaven_dwelling,SIL-23,concept,model,abstract gift
+heavenly_women,SIL-23,ignore,model,unnamed women
+hill,SIL-23,new:neduvel_hill,model,hill Kannagi climbed
+kannagi_sorrow,SIL-23,concept,model,emotion
+karttikai,SIL-23,kannagi,model,quote is Kannagi weeping on ground
+keerantai_wife,SIL-23,new:keerantai_wife,model,specific named woman
+killing_ground,SIL-23,ignore,model,generic place
+king_fence,SIL-23,concept,model,metaphor of protection
+kotravai_gate,SIL-23,new:korravai_gate,model,gate of Korravai shrine
+kottravai_gate,SIL-23,new:korravai_gate,model,"same gate, variant spelling"
+learners,SIL-23,ignore,model,unnamed group
+lotus,SIL-23,ignore,model,generic object
+malaya_hills,SIL-23,new:malaya_hills,model,named hills
+mantaram_ceral,SIL-23,new:cheralatan,model,Chera king being blessed
+mikkon,SIL-23,ignore,model,unidentified generic 'eminent one'
+mountain_crags,SIL-23,ignore,model,generic place
+mountain_top,SIL-23,new:neduvel_hill,model,hill climbed by Kannagi
+neduvel_hill,SIL-23,new:neduvel_hill,model,named hill
+noble_family_born,SIL-23,ignore,model,generic
+opponents,SIL-23,ignore,model,unnamed enemies
+ornaments,SIL-23,ignore,model,generic items
+own_city,SIL-23,ignore,model,"generic, unnamed city"
+pandya_land,SIL-23,new:pandya_country,model,the Pandya realm nourished by the Vaigai
+pandya_line,SIL-23,pandya_queen,model,chief lady of the royal line
+petition_bell,SIL-23,new:justice_bell,model,specific bell of petition
+puhar_king,SIL-23,new:sibi_chola,model,Puhar king who entered the scale for the dove
+royal_attendants,SIL-23,ignore,model,unnamed attendants
+royal_justice,SIL-23,concept,model,abstraction of justice
+royal_line,SIL-23,concept,model,abstract notion of royal descent
+royal_officers,SIL-23,ignore,model,unnamed officers
+royal_throne,SIL-23,ignore,model,"generic throne, not in graph"
+rule_of_fate,SIL-23,concept,model,doctrine of fate
+single_anklet,SIL-23,ank_k2,model,Kannagi's remaining lone anklet
+slain_man,SIL-23,kovalan,model,Kannagi joined her slain husband
+sorrow,SIL-23,concept,model,abstract emotion
+staff_waterpot_umbrella_bundle_sandals,SIL-23,ignore,model,generic ascetic items
+tamil_brahmin,SIL-23,new:vartikan,model,"Vartikan, recipient of Vanurai"
+tamil_land_people,SIL-23,ignore,model,generic people
+tankal,SIL-23,new:tankal,model,named town
+temple_door,SIL-23,ignore,model,unclear generic door
+those_who_harmed_us,SIL-23,ignore,model,unnamed wrongdoers
+throne,SIL-23,ignore,model,"generic throne, not in graph"
+unfading_flowers,SIL-23,ignore,model,"simile, not a named thing"
+vaigai,SIL-23,new:vaigai,model,named river Vaigai
+vaigai_bank,SIL-23,new:vaigai,model,bank of the river Vaigai
+vanurai,SIL-23,new:vanurai,model,named village granted to the brahmin
+vayalur_village,SIL-23,new:vayalur,model,named village Vayalur
+vedas,SIL-23,concept,model,scripture/tradition
+victorious_king,SIL-23,ignore,model,"ambiguous, mixes different kings"
+warrior_anklet,SIL-23,ignore,model,generic warrior's anklet
+west_gate,SIL-23,new:madurai_west_gate,model,specific gate of the city
+young_elephant,SIL-23,ignore,model,"simile, unnamed"
+young_officials,SIL-23,ignore,model,unnamed officials
+addressed_friend,SIL-24,ignore,model,unnamed addressee
+asura_king,SIL-24,new:sura_demon,model,the demon Sura slain by the vel; same as sura_demon
+beloved,SIL-24,ignore,model,"generic lover, unnamed"
+beloved_mountain,SIL-24,ignore,model,generic mountain of the beloved
+blue_peacock,SIL-24,new:murugan_peacock,model,"Murugan's peacock mount, not in graph"
+breast,SIL-24,ignore,model,body part; the woman refers to Kannagi but is not named in this quote
+cause_of_illness,SIL-24,concept,model,abstract cause
+chaste_wives,SIL-24,ignore,model,generic group of women
+companion,SIL-24,ignore,model,unnamed companion
+flood,SIL-24,ignore,model,generic fresh flood water
+flowers,SIL-24,ignore,model,generic flowers
+friend,SIL-24,ignore,model,unnamed friend
+girl_speaker,SIL-24,ignore,model,unnamed speaker
+great_mountain,SIL-24,ignore,model,generic mountain
+hill_chieftain,SIL-24,ignore,model,unnamed hill lord
+hill_dwellers,SIL-24,ignore,model,generic villagers
+hill_lord,SIL-24,ignore,model,unnamed hill lord
+hill_lord_mountain,SIL-24,ignore,model,generic mountain
+hill_town,SIL-24,ignore,model,unnamed town
+hill_women,SIL-24,ignore,model,generic women
+kolli,SIL-24,new:kolli,model,"named hill, Kolli, not in graph"
+kraunch_hill,SIL-24,new:krauncha_mountain,model,Krauncha hill slain by Murugan
+krauncha_mountain,SIL-24,new:krauncha_mountain,model,Krauncha hill slain by Murugan
+malainadan,SIL-24,ignore,model,"title for the hill lord, unnamed"
+millet_field,SIL-24,ignore,model,generic place
+mother,SIL-24,ignore,model,"unnamed mother of the speaker, not Kannagi's mother"
+mother_plan,SIL-24,ignore,model,unnamed
+mountain_stream,SIL-24,ignore,model,generic stream
+murugan_attributes,SIL-24,concept,model,attributes abstraction
+new_flood,SIL-24,ignore,model,generic flood water
+parambu_hill,SIL-24,new:parambu_hill,model,named hill Parambu
+pattini_women,SIL-24,ignore,model,generic group
+saravana_pond,SIL-24,new:saravana_pond,model,named pond where Murugan was nursed
+speaker_and_companion,SIL-24,ignore,model,unnamed
+speaker_friend,SIL-24,ignore,model,unnamed
+sura_demon,SIL-24,new:sura_demon,model,demon Sura slain by Murugan
+this_town,SIL-24,ignore,model,unnamed town
+vel,SIL-24,new:murugan_vel,model,"Murugan's spear, not in graph"
+vel_spear,SIL-24,new:murugan_vel,model,Murugan's spear
+velan_priest,SIL-24,ignore,model,generic priest title
+veriyadal_ground,SIL-24,ignore,model,generic ritual ground
+veriyadal_rite,SIL-24,concept,model,ritual practice
+villagers,SIL-24,ignore,model,generic group
+visitor,SIL-24,ignore,model,unnamed
+wedding_adornment,SIL-24,ignore,model,generic item
+woman_in_field,SIL-24,ignore,model,Unnamed woman in the field; the quote doesn't identify her by name. Even if she 
