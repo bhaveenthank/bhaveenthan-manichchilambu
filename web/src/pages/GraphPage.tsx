@@ -1,12 +1,12 @@
 import * as Slider from "@radix-ui/react-slider";
 import { Clock, Download, Eye, Layers, List, Network, RotateCcw, X } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { GraphCanvas } from "../components/GraphCanvas";
-import { EntityIcon, EpicMark, LineSample, MoodTag } from "../components/Marks";
+import { EpicMark, EntityIcon, LineSample, MoodTag } from "../components/Marks";
+import { NodePicker } from "../components/NodePicker";
 import { RecordCard, RecordList } from "../components/RecordCard";
 import { go, useApp, useName, useT } from "../lib/app";
 import { CLASSES, defaultFilter, recordMentions, subgraph, type GraphFilter } from "../lib/model";
-import type { GraphNode } from "../lib/types";
 
 const EPISODES: [string, string, string][] = [
   ["anklet", "The anklets", "சிலம்புகள்"], ["curse", "Neeli's curse", "நீலியின் சாபம்"], ["fire", "Madurai burns", "மதுரை எரிதல்"], ["disguise", "The disguise", "மாறுவேடம்"], ["bowl", "The bowl", "அமுதசுரபி"],
@@ -30,53 +30,65 @@ const CLASS_NAMES: Record<string, [string, string]> = { Person: ["People", "ந�
 const START = "kannagi";
 const startFilter = (): GraphFilter => ({ ...defaultFilter(), focus: START, hops: 1 });
 
-/** Type a name, pick from what matches. A 260-item dropdown is no way to find one person. */
-function NodePicker({ nodes, value, onPick }: { nodes: GraphNode[]; value: string; onPick: (id: string) => void }) {
-  const { lang } = useApp();
-  const t = useT();
-  const [text, setText] = useState("");
-  const [open, setOpen] = useState(false);
-  const [at, setAt] = useState(0);
-  const box = useRef<HTMLDivElement>(null);
-  const current = nodes.find((n) => n.id === value);
-  const q = text.trim().toLowerCase();
-  const hits = (q ? nodes.filter((n) => n.en.toLowerCase().includes(q) || n.ta.includes(text.trim()) || n.also.some((a) => a.toLowerCase().includes(q))) : nodes).slice(0, 40);
-  const choose = (id: string) => { onPick(id); setText(""); setOpen(false); };
-  return (
-    <div className="combo" ref={box} onBlur={(e) => { if (!box.current?.contains(e.relatedTarget as Node)) setOpen(false); }}>
-      <input value={open ? text : current?.[lang] ?? t("Everyone", "அனைவரும்")} onFocus={() => { setOpen(true); setText(""); setAt(0); }} onChange={(e) => { setText(e.target.value); setAt(0); }}
-        onKeyDown={(e) => {
-          if (e.key === "ArrowDown") { e.preventDefault(); setAt((i) => Math.min(i + 1, hits.length)); }
-          if (e.key === "ArrowUp") { e.preventDefault(); setAt((i) => Math.max(i - 1, 0)); }
-          if (e.key === "Enter") { e.preventDefault(); choose(at === 0 ? "" : hits[at - 1]?.id ?? ""); }
-          if (e.key === "Escape") setOpen(false);
-        }}
-        role="combobox" aria-expanded={open} aria-controls="node-picker" aria-label={t("Centre on someone or something", "மையமாக ஒருவரைத் தேர்ந்தெடு")} placeholder={t("Type a name", "பெயரைத் தட்டச்சிடுக")} />
-      {open && (
-        <ul className="combo__list" id="node-picker" role="listbox">
-          <li><button type="button" role="option" aria-selected={at === 0} onMouseDown={(e) => e.preventDefault()} onClick={() => choose("")}>{t("Everyone (the whole graph)", "அனைவரும் (முழு வரைபடம்)")}</button></li>
-          {hits.map((n, i) => <li key={n.id}><button type="button" role="option" aria-selected={at === i + 1} onMouseDown={(e) => e.preventDefault()} onClick={() => choose(n.id)}><EntityIcon cls={n.cls} id={n.id} kind={n.kind} size={14} />{n[lang]} <span className="fine" lang={lang === "ta" ? "en" : "ta"}>{lang === "ta" ? n.en : n.ta}</span></button></li>)}
-          {!hits.length && <li className="fine" style={{ padding: "6px 10px" }}>{t("No one by that name", "அப்பெயரில் யாரும் இல்லை")}</li>}
-        </ul>
-      )}
-    </div>
-  );
+/**
+ * The view lives in the URL, so a filtered graph can be shared or bookmarked. Only what differs from the opening
+ * view is written, which keeps links short: #/graph?focus=madhavi&reading=said&epic=MAN
+ */
+function filterFromParams(params: URLSearchParams): GraphFilter {
+  const f = startFilter();
+  const get = (k: string) => params.get(k);
+  if (params.has("focus")) f.focus = get("focus") ?? "";
+  if (get("hops")) f.hops = Math.min(3, Math.max(1, Number(get("hops")) || 1));
+  if (get("episode")) { f.episode = get("episode")!; if (!params.has("focus")) f.focus = ""; }
+  if (get("epic") === "SIL" || get("epic") === "MAN") f.epic = get("epic") as GraphFilter["epic"];
+  if (get("reading") === "said") f.reading = "said";
+  if (get("viewer")) f.viewer = get("viewer")!;
+  if (["event", "material", "belief", "cause"].includes(get("layer") ?? "")) f.layer = get("layer") as GraphFilter["layer"];
+  if (get("classes")) f.classes = new Set(get("classes")!.split(",").filter((c) => CLASSES.includes(c)));
+  if (get("bridges") === "1") f.bridgesOnly = true;
+  if (get("pairs") === "1") f.suggestions = true;
+  if (get("births") === "0") f.earlierBirths = false;
+  return f;
+}
+function paramsFromFilter(f: GraphFilter, tick: number, last: number): string {
+  const p = new URLSearchParams();
+  const s = startFilter();
+  if (f.focus !== s.focus) p.set("focus", f.focus);
+  if (f.hops !== s.hops) p.set("hops", String(f.hops));
+  if (f.episode !== "all") p.set("episode", f.episode);
+  if (f.epic !== "both") p.set("epic", f.epic);
+  if (f.reading !== "happened") p.set("reading", f.reading);
+  if (f.viewer) p.set("viewer", f.viewer);
+  if (f.layer !== "all") p.set("layer", f.layer);
+  if (f.classes.size !== CLASSES.length) p.set("classes", [...f.classes].join(","));
+  if (f.bridgesOnly) p.set("bridges", "1");
+  if (f.suggestions) p.set("pairs", "1");
+  if (!f.earlierBirths) p.set("births", "0");
+  if (tick !== last) p.set("t", String(tick));
+  return p.toString();
 }
 
 export function GraphPage({ params }: { params: URLSearchParams }) {
   const { corpus, lang } = useApp();
   const t = useT();
   const name = useName();
-  const [clusters, setClusters] = useState(false);
   const ticks = useMemo(() => [...new Set(corpus.records.map((r) => r.t))].sort((a, b) => a - b), [corpus]);
-  const [filter, setFilter] = useState<GraphFilter>(() => ({ ...startFilter(), ...(params.get("focus") ? { focus: params.get("focus")!, hops: 2 } : {}), ...(params.get("episode") ? { episode: params.get("episode")!, focus: "" } : {}) }));
-  const [tick, setTick] = useState(ticks.length - 1);
+  const [filter, setFilter] = useState<GraphFilter>(() => filterFromParams(params));
+  const [tick, setTick] = useState(() => { const t = Number(params.get("t")); return params.has("t") && t >= 0 && t < ticks.length ? t : ticks.length - 1; });
+  // Write the view back to the address bar without a navigation, so the page doesn't reload or lose its layout.
+  useEffect(() => {
+    const q = paramsFromFilter(filter, tick, ticks.length - 1);
+    const next = `#/graph${q ? `?${q}` : ""}`;
+    if (location.hash !== next) history.replaceState(null, "", next);
+  }, [filter, tick, ticks.length]);
   // On a phone the detail sheet would cover the graph, so it waits for a tap there.
   const narrow = () => window.innerWidth < 860;
   const [selected, setSelected] = useState<string | null>(narrow() ? null : params.get("focus"));
   const [rec, setRec] = useState<string | null>(null);
   const [panel, setPanel] = useState(true);
   const [view, setView] = useState<"graph" | "list">("graph");
+  // The key can fold away, since next to the detail column the graph needs every pixel.
+  const [keyOpen, setKeyOpen] = useState(true);
   useEffect(() => {
     const focus = params.get("focus");
     if (focus) { setFilter((f) => ({ ...f, focus })); if (!narrow()) setSelected(focus); }
@@ -103,10 +115,10 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
     a.href = url; a.download = "manichchilambu-graph.csv"; a.click();
     URL.revokeObjectURL(url);
   };
-  const toggleClass = (c: string) => { const next = new Set(filter.classes); next.has(c) ? next.delete(c) : next.add(c); set({ classes: next }); };
+  const toggleClass = (c: string) => { const next = new Set(filter.classes); if (next.has(c)) next.delete(c); else next.add(c); set({ classes: next }); };
 
   return (
-    <div className={panel ? "explore" : "explore explore--wide"}>
+    <div className={`explore${panel ? "" : " explore--wide"}${selectedNode || rec ? " explore--detail" : ""}`}>
       <aside className="filters" aria-label={t("Filters", "வடிகட்டிகள்")}>
         <div className="filters__head"><h1>{t("The graph", "வரைபடம்")}</h1><button className="link" onClick={() => setPanel(!panel)} aria-expanded={panel}>{panel ? t("Hide", "மறை") : t("Filters", "வடிகட்டி")}</button></div>
         {panel && (
@@ -120,7 +132,7 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
             </div>
 
             <fieldset><legend>{t("Small graph around", "இதைச் சுற்றிய சிறு வரைபடம்")}</legend>
-              <NodePicker nodes={allNodes} value={filter.focus} onPick={(id) => { set({ focus: id }); setSelected(id || null); }} />
+              <NodePicker nodes={allNodes} value={filter.focus} onPick={(id) => { set({ focus: id }); setSelected(id || null); }} empty={[t("Everyone", "அனைவரும்"), t("Everyone (the whole graph)", "அனைவரும் (முழு வரைபடம்)")]} label={t("Centre on someone or something", "மையமாக ஒருவரைத் தேர்ந்தெடு")} />
               {!filter.focus && <p className="fine" style={{ marginTop: 6 }}>{t("The whole graph is dense. Zoom in, or pick someone to see their part of it.", "முழு வரைபடம் அடர்த்தியானது. பெரிதாக்குங்கள், அல்லது ஒருவரைத் தேர்ந்தெடுங்கள்.")}</p>}
               {filter.focus && <div className="segmented" role="group" aria-label={t("How far out", "எவ்வளவு தூரம்")}>{[1, 2, 3].map((h) => <button key={h} aria-pressed={filter.hops === h} onClick={() => set({ hops: h })}>{h} {t(h === 1 ? "step" : "steps", "படி")}</button>)}</div>}
             </fieldset>
@@ -180,7 +192,6 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
               <label className="check"><input type="checkbox" checked={filter.bridgesOnly} onChange={(e) => set({ bridgesOnly: e.target.checked })} />{t("Only links touching someone in both", "இரண்டிலும் வருபவர் தொடர்பானவை மட்டும்")}</label>
               <label className="check"><input type="checkbox" checked={filter.earlierBirths} onChange={(e) => set({ earlierBirths: e.target.checked })} />{t("Include earlier births", "முற்பிறப்புகளையும் சேர்")}</label>
               <label className="check"><input type="checkbox" checked={filter.suggestions} onChange={(e) => set({ suggestions: e.target.checked })} />{t("Pairs that only appear together", "அருகருகே மட்டும் வரும் இணைகள்")}</label>
-              <label className="check" style={{ marginBottom: 8 }}><input type="checkbox" checked={clusters} onChange={(e) => setClusters(e.target.checked)} />{t("Colour by clusters it finds itself", "தானே கண்ட கொத்துகளால் நிறம்")}</label>
             </details>
             <button className="link" style={{ marginTop: 14 }} onClick={exportCsv}><Download size={15} aria-hidden="true" />{t("Download this view as CSV", "இந்தப் பார்வையை CSV ஆகப் பதிவிறக்கு")}</button>
           </div>
@@ -191,13 +202,18 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
         {data.nodes.length === 0 ? (
           <p className="empty" style={{ margin: 24 }}>{t("No links left with these filters. Turn a filter off, or reset.", "இந்த வடிகட்டிகளுடன் இணைப்புகள் இல்லை. ஒரு வடிகட்டியை நீக்குங்கள், அல்லது மீட்டமையுங்கள்.")} <button className="link" onClick={reset}>{t("Reset", "மீட்டமை")}</button></p>
         ) : view === "graph" ? (
-          <><GraphCanvas data={data} clusters={clusters} selected={selected} selectedEdge={rec} edgeLabels={data.nodes.length <= 16} onNode={(id) => { setSelected(id); setRec(null); }} onEdge={data.nodes.length <= 60 || selected ? setRec : undefined} edgeOf={selected} ariaLabel={t(`Graph with ${data.nodes.length} nodes. The list view has the same content as text.`, `${data.nodes.length} முனைகள் உள்ள வரைபடம். பட்டியல் பார்வையில் இதே உள்ளடக்கம் உள்ளது.`)} />
-          <div className="graph__legend" aria-hidden="true">
-            {(clusters ? [] : CLASSES.filter((c) => filter.classes.has(c) && data.nodes.some((id) => corpus.nodeById.get(id)?.cls === c))).map((c) => <span key={c}><EntityIcon cls={c} size={12} />{lang === "ta" ? CLASS_NAMES[c][1] : CLASS_NAMES[c][0]}</span>)}
+          <><GraphCanvas data={data} selected={selected} selectedEdge={rec} edgeLabels={data.nodes.length <= 16} onNode={(id) => { setSelected(id); setRec(null); if (id) setKeyOpen(false); }} onEdge={data.nodes.length <= 60 || selected ? setRec : undefined} edgeOf={selected} ariaLabel={t(`Graph with ${data.nodes.length} nodes. The list view has the same content as text.`, `${data.nodes.length} முனைகள் உள்ள வரைபடம். பட்டியல் பார்வையில் இதே உள்ளடக்கம் உள்ளது.`)} />
+          <button className="graph__key-toggle" onClick={() => setKeyOpen(!keyOpen)} aria-expanded={keyOpen}>{keyOpen ? t("Hide key", "குறிப்பை மறை") : t("Key", "குறிப்பு")}</button>
+          {keyOpen && <div className="graph__legend" aria-hidden="true">
+            {(CLASSES.filter((c) => filter.classes.has(c) && data.nodes.some((id) => corpus.nodeById.get(id)?.cls === c))).map((c) => <span key={c}><EntityIcon cls={c} size={12} />{lang === "ta" ? CLASS_NAMES[c][1] : CLASS_NAMES[c][0]}</span>)}
             <span><i className="ring" />{t("in both epics", "இரு காப்பியங்களிலும்")}</span>
-            <span><LineSample mood="asserted" />{t("told as fact", "நிகழ்ந்ததாக")}</span>
-            {filter.reading === "said" && <span style={{ color: "var(--edge-said)" }}><LineSample mood="claimed" /><span style={{ color: "var(--ink-soft)" }}>{t("said, wanted or imagined", "கூற்று, விருப்பம், கற்பனை")}</span></span>}
-          </div></>
+            {/* All four line styles, always, so a dashed line never has to be guessed at. */}
+            <span className="line-key line-key--done"><LineSample mood="asserted" />{t("told as fact", "நிகழ்ந்ததாக")}</span>
+            <span className="line-key"><LineSample mood="claimed" />{t("said or claimed", "கூறப்பட்டது")}</span>
+            <span className="line-key"><LineSample mood="command" />{t("wanted or ordered", "விரும்பியது / ஆணை")}</span>
+            <span className="line-key"><LineSample mood="dreamed" />{t("imagined or believed", "கற்பனை / நம்பிக்கை")}</span>
+            {filter.reading !== "said" && !filter.viewer && <span className="fine">{t("(dashed lines show with 'also what was said')", "(புள்ளிக்கோடுகள் 'கூற்றுகளும்' இயக்கினால்)")}</span>}
+          </div>}</>
         ) : (
           <div className="list-view">
             <table><thead><tr><th>{t("Who", "யார்")}</th><th>{t("Links", "இணைப்புகள்")}</th><th>{t("Epics", "காப்பியம்")}</th></tr></thead>

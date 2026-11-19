@@ -70,7 +70,8 @@ const STOP = new Set(("who whom whose what which where when why how is was are w
 const RELATED: string[][] = [
   ["husband", "wife", "marry", "kanavan", "manaivi", "கணவன்", "மனைவி", "மணந்தான்"],
   ["father", "mother", "parent", "son", "daughter", "child", "தந்தை", "தாய்", "மகள்", "மகன்", "குழந்தை", "பெற்றோர்"],
-  ["die", "kill", "slay", "murder", "pyre", "burn herself", "இறந்தாள்", "கொன்றான்"],
+  // Tamil past and present forms of "kill" don't share a stem (கொன்றது, கொல்கிறான்), so they're listed.
+  ["die", "kill", "slay", "murder", "pyre", "burn herself", "இறந்தாள்", "இறந்தான்", "கொன்றான்", "கொன்றாள்", "கொன்றது", "கொன்றனர்", "கொல்கிறான்", "கொல்கிறாள்", "கொல்ல", "கொலை", "வெட்டினான்"],
   ["hunger", "hungry", "starve", "famine", "food"], ["hide", "conceal", "secret"], ["build", "make", "craft", "construct"], ["burn", "fire", "flame"],
   ["steal", "thief", "theft", "rob"], ["accuse", "blame", "charge"], ["curse", "sabam"], ["king", "monarch", "ruler"], ["queen", "consort"],
 ];

@@ -11,6 +11,15 @@ import { THEMES } from "./Songs";
 
 interface MachineRow { kind: string; mood: string; voice: string[]; roles: Record<string, unknown>; lines: { id: string; text: string }[]; quote: string }
 
+// The first whole Tamil letter: கோ for கோவலன், not the bare க that slice(0, 1) would give. A grapheme cluster
+// keeps the consonant with its vowel sign.
+const segmenter = typeof Intl !== "undefined" && "Segmenter" in Intl ? new Intl.Segmenter("ta", { granularity: "grapheme" }) : null;
+export function firstLetter(word: string) {
+  const w = word.replace(/^(the|a)\s+/i, "").trim();
+  if (segmenter) return segmenter.segment(w)[Symbol.iterator]().next().value?.segment ?? "";
+  return w.match(/^[\u0B80-\u0BFF][\u0BBE-\u0BCD\u0BD7]*/)?.[0] ?? w.slice(0, 1);
+}
+
 /** Split a canto into blocks where the recorded speaker changes, or every 16 lines. There's no stanza data, so that's a reading aid and no more. */
 function toBlocks(rows: CantoLine[], speakerOf: (r: CantoLine) => string | null) {
   const blocks: { who: string | null; rows: CantoLine[] }[] = [];
@@ -28,7 +37,10 @@ export function CantoPage({ cantoKey, line }: { cantoKey: string; line: string |
   const t = useT();
   const name = useName();
   const [rows, setRows] = useState<CantoLine[] | null>(null);
-  const [openRec, setOpenRec] = useState<string | null>(null);
+  const [openRec, setOpenRec] = useState<string | null>(line);
+  // Wide screens show the records in the side column, beside the verse. Narrow ones, under the line.
+  const [wide, setWide] = useState(() => window.innerWidth > 980);
+  useEffect(() => { const on = () => setWide(window.innerWidth > 980); window.addEventListener("resize", on); return () => window.removeEventListener("resize", on); }, []);
   const [person, setPerson] = useState("");
   const [machine, setMachine] = useState<MachineRow[]>([]);
   useEffect(() => { fetch(`${import.meta.env.BASE_URL}data/machine/${cantoKey}.json`).then((r) => (r.ok ? r.json() : [])).then(setMachine).catch(() => setMachine([])); }, [cantoKey]);
@@ -69,14 +81,16 @@ export function CantoPage({ cantoKey, line }: { cantoKey: string; line: string |
             <ol className="lyric">
               {blocks.map((b) => (
                 <li key={b.rows[0].id} className="lyric__block">
-                  <span>{b.who && <span className="lyric__who" title={name(b.who)} aria-label={t(`Spoken by ${name(b.who)}`, `கூறுபவர்: ${name(b.who)}`)}>{(corpus.nodeById.get(b.who)?.ta ?? "").slice(0, 1)}</span>}</span>
+                  <span>{b.who && <span className="lyric__who" title={name(b.who)} aria-label={t(`Spoken by ${name(b.who)}`, `கூறுபவர்: ${name(b.who)}`)}>{firstLetter(corpus.nodeById.get(b.who)?.ta ?? "")}</span>}</span>
                   <ol className="lines" lang="ta">
                     {b.rows.map((r) => (
-                      <li key={r.id} ref={r.id === line ? target : undefined} className={[r.id === line ? "line--target" : "", person && r.who.includes(person) ? "line--who" : "", r.rec.length ? "line--rec" : ""].join(" ")}>
-                        <span className="line__text">{r.text}</span>
+                      <li key={r.id} ref={r.id === line ? target : undefined} className={[r.id === line ? "line--target" : "", person && r.who.includes(person) ? "line--who" : "", r.rec.length ? "line--rec" : "", openRec === r.id ? "line--open" : ""].join(" ")}>
+                        {r.rec.length > 0
+                          ? <button className="line__text line__text--btn" onClick={() => setOpenRec(openRec === r.id ? null : r.id)} aria-expanded={openRec === r.id} title={t("Show what the graph records on this line", "இவ்வரியில் உள்ள பதிவுகளைக் காட்டு")}>{r.text}</button>
+                          : <span className="line__text">{r.text}</span>}
                         {r.rec.length > 0 ? <button className="line__rec" onClick={() => setOpenRec(openRec === r.id ? null : r.id)} aria-expanded={openRec === r.id} aria-label={t("Show what the graph records here", "இங்கு உள்ள பதிவுகளைக் காட்டு")}>{r.rec.length}</button> : <span />}
                         <span className={r.n % 5 === 0 ? "line__n line__n--mark" : "line__n"} aria-hidden="true">{r.n}</span>
-                        {openRec === r.id && <div className="line__records" lang={lang}>{r.rec.map((id) => <RecordCard key={id} record={corpus.byId.get(id)!} compact />)}</div>}
+                        {openRec === r.id && !wide && <div className="line__records" lang={lang}>{r.rec.map((id) => <RecordCard key={id} record={corpus.byId.get(id)!} compact />)}</div>}
                       </li>
                     ))}
                   </ol>
@@ -90,6 +104,16 @@ export function CantoPage({ cantoKey, line }: { cantoKey: string; line: string |
           </nav>
         </div>
         <aside className="canto__side">
+          {wide && (() => {
+            const at = rows?.find((r) => r.id === openRec);
+            return at && at.rec.length ? (
+              <section className="line-panel" aria-live="polite">
+                <p className="group-label"><b>{t("On this line", "இவ்வரியில்")}</b><span className="verse__id">{at.id}</span><button className="link" onClick={() => setOpenRec(null)}>{t("Close", "மூடு")}</button></p>
+                <p className="line-panel__verse" lang="ta">{at.text}</p>
+                <div lang={lang}>{at.rec.map((id) => corpus.byId.get(id)).filter(Boolean).map((rec) => <RecordCard key={rec!.id} record={rec!} compact />)}</div>
+              </section>
+            ) : <p className="fine line-panel__hint">{t("Click a numbered line to see what the graph records on it, here beside the verse.", "எண்ணிட்ட வரியை அழுத்தினால் அதன் பதிவுகள் இங்கே, பாடலின் அருகே தெரியும்.")}</p>;
+          })()}
           {small && small.nodes.length > 0 ? (
             <section><h2 className="sub">{t("This song's graph", "இப்பாடலின் வரைபடம்")}</h2><GraphCanvas data={small} compact edgeLabels={small.nodes.length <= 14} ariaLabel={t("Small graph of the records in this song", "இப்பாடலின் பதிவுகளின் சிறு வரைபடம்")} /><a className="link" href={`#/graph`}>{t("Open the full graph", "முழு வரைபடம்")}<ArrowRight size={15} aria-hidden="true" /></a></section>
           ) : <p className="fine">{t("The graph has no records from this song yet.", "இப்பாடலில் இருந்து வரைபடப் பதிவுகள் இன்னும் இல்லை.")}</p>}

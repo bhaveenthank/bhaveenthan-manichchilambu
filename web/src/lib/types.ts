@@ -13,7 +13,10 @@ export interface LedgerRecord {
   does?: string[]; because?: Reason[]; carries?: string; content?: string; stance?: "accept" | "reject";
   contradicts?: string; conflicts?: string; retells?: string;
   condition?: string; inferred?: string; unresolved?: string; note?: string; purpose?: string; after_death?: boolean;
+  /** Whether a scholar has checked it: draft until someone has, then reviewed or disputed, with who, when and why. */
+  review?: Review;
 }
+export interface Review { status: "draft" | "reviewed" | "disputed"; by?: string; on?: string; note?: string }
 
 export interface GraphNode { id: string; en: string; ta: string; also: string[]; cls: string; epics: string[]; mentions: number; first: string | null; unnamed?: boolean; kind?: boolean; broader?: string; gloss?: { of: string; by: string; note: string } }
 export interface GraphEdge { s: string; t: string; kind: string; role: string; rec: string; mood: Mood; tm: number; birth: string; ep: string; epic: string; layer: string; cause: boolean }

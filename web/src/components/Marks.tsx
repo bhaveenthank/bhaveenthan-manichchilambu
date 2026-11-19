@@ -1,7 +1,8 @@
-import { BadgeCheck, CircleDashed } from "lucide-react";
+import { BadgeCheck, CircleDashed, TriangleAlert } from "lucide-react";
 import { useApp, useT } from "../lib/app";
 import { classStyle, dashArray, FAMILY, familyOf, isAnklet } from "../lib/icons";
 import { MOOD_LABEL } from "../lib/model";
+import type { Review } from "../lib/types";
 
 /** Drawn on the same 24px grid and 2px stroke as the Lucide set, which has no anklet. */
 export function AnkletIcon({ size = 16 }: { size?: number }) {
@@ -28,7 +29,7 @@ export function EntityIcon({ cls, id, kind, size = 16 }: { cls: string; id?: str
 
 /** A short line sample in the mood family's dash, the same pattern the edges use. */
 export function LineSample({ mood }: { mood: string }) {
-  return <svg className="line-sample" width="22" height="8" aria-hidden="true"><line x1="2" y1="4" x2="20" y2="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray={dashArray(familyOf(mood))} /></svg>;
+  return <svg className="line-sample" width="28" height="8" aria-hidden="true"><line x1="2" y1="4" x2="26" y2="4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeDasharray={dashArray(familyOf(mood))} /></svg>;
 }
 
 export function MoodTag({ mood }: { mood: string }) {
@@ -43,10 +44,19 @@ export function EpicMark({ epic }: { epic: string }) {
   return <span className={`epic epic--${epic.toLowerCase()}`}>{epic === "MAN" ? t("Maṇimēkalai", "மணிமேகலை") : t("Silappatikāram", "சிலப்பதிகாரம்")}</span>;
 }
 
-/** Checked records and unchecked machine drafts must never look alike. */
-export function StatusBadge({ draft }: { draft?: boolean }) {
+/**
+ * Checked records and unchecked machine drafts must never look alike. A hand record also says whether a scholar has
+ * checked it: not yet, checked (with who and when), or disputed (with the reviewer's note).
+ */
+export function StatusBadge({ draft, review }: { draft?: boolean; review?: Review }) {
   const t = useT();
-  return draft
-    ? <span className="status status--draft"><CircleDashed size={13} aria-hidden="true" />{t("unchecked draft", "சரிபார்க்காத வரைவு")}</span>
-    : <span className="status status--record"><BadgeCheck size={13} aria-hidden="true" />{t("hand record", "கைப்பதிவு")}</span>;
+  if (draft) return <span className="status status--draft"><CircleDashed size={13} aria-hidden="true" />{t("unchecked draft", "சரிபார்க்காத வரைவு")}</span>;
+  if (review?.status === "reviewed") {
+    const who = [review.by, review.on].filter(Boolean).join(", ");
+    return <span className="status status--reviewed" title={review.note || undefined}><BadgeCheck size={13} aria-hidden="true" />{t(`reviewed${who ? ` by ${who}` : ""}`, `சரிபார்த்தவர்: ${who || "அறிஞர்"}`)}</span>;
+  }
+  if (review?.status === "disputed") {
+    return <span className="status status--disputed" title={review.note || undefined}><TriangleAlert size={13} aria-hidden="true" />{t(`disputed${review.by ? ` by ${review.by}` : ""}`, `மறுப்பு: ${review.by ?? "அறிஞர்"}`)}</span>;
+  }
+  return <span className="status status--record" title={t("Made by hand and checked against the verse by a script. No scholar has reviewed it yet.", "கையால் செய்து நிரலால் வரியுடன் சரிபார்க்கப்பட்டது. அறிஞர் இன்னும் பார்க்கவில்லை.")}><BadgeCheck size={13} aria-hidden="true" />{t("hand record · not yet reviewed", "கைப்பதிவு · இன்னும் சரிபார்க்கவில்லை")}</span>;
 }

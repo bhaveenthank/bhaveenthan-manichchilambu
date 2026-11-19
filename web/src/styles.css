@@ -181,7 +181,15 @@ select { width: 100%; background: var(--surface); border: 1px solid var(--line-s
 .epic--sil { color: var(--sil); }
 .epic--man { color: var(--man); }
 .status { display: inline-flex; align-items: center; gap: 4px; padding: 0 8px; border-radius: 10px; font-size: 0.8125rem; font-weight: 600; white-space: nowrap; }
-.status--record { border: 1px solid var(--ok); color: var(--ok); }
+.status--record { border: 1px solid var(--line-strong); color: var(--ink-soft); }
+.status--reviewed { border: 1px solid var(--ok); color: var(--ok); background: var(--ok-tint); }
+.status--disputed { border: 1px solid var(--caution-line); color: var(--caution); background: var(--caution-tint); }
+.record__review { font-size: 0.875rem; color: var(--caution); display: flex; gap: 6px; align-items: baseline; margin: 6px 0 0; }
+.record__id { font: 400 0.8125rem var(--mono); color: var(--ink-soft); display: inline-flex; align-items: center; gap: 4px; }
+.record__id:hover { color: var(--copper); }
+.cite { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; font-size: 0.9375rem; overflow-wrap: anywhere; }
+.cite + .cite { margin-top: 8px; }
+.cite pre { white-space: pre-wrap; margin: 0; font: 400 0.8125rem/1.5 var(--mono); }
 .status--draft { border: 1px dashed var(--line-strong); color: var(--ink-soft); }
 
 /* ---- home ---- */
@@ -239,6 +247,15 @@ select { width: 100%; background: var(--surface); border: 1px solid var(--line-s
 .graph__zoom button:hover { border-color: var(--ink); }
 .explore { display: grid; grid-template-columns: 320px minmax(0, 1fr); flex: 1; height: calc(100dvh - 57px); position: relative; width: 100%; }
 .explore--wide { grid-template-columns: 180px minmax(0, 1fr); }
+/* The detail opens as a third column and the graph shrinks to make room, so it never covers the node just clicked. */
+@media (min-width: 861px) {
+  .explore--detail { grid-template-columns: 320px minmax(0, 1fr) 400px; }
+  .explore--wide.explore--detail { grid-template-columns: 180px minmax(0, 1fr) 400px; }
+  .explore--detail .detail { position: relative; inset: auto; width: auto; box-shadow: none; z-index: auto; }
+}
+/* In narrow panels the line id goes above its verse, so the Tamil keeps its whole width and doesn't break into fragments. */
+.detail .verse__line, .inspector .verse__line, .line-panel .verse__line { grid-template-columns: minmax(0, 1fr); gap: 0; font-size: 1.0625rem; line-height: 1.7; }
+.detail .verse__line + .verse__line { margin-top: 4px; }
 .filters { border-right: 1px solid var(--line); background: var(--surface); overflow-y: auto; padding: 20px; }
 .filters__head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .filters h1 { font-size: 1.75rem; }
@@ -275,6 +292,11 @@ tr:hover td { background: var(--surface); }
 .detail__close:hover { border-color: var(--line-strong); color: var(--ink); }
 .graph__legend { position: absolute; left: 12px; bottom: 12px; display: flex; flex-wrap: wrap; gap: 4px 12px; max-width: calc(100% - 80px); padding: 8px 12px; background: color-mix(in srgb, var(--surface) 94%, transparent); border: 1px solid var(--line); border-radius: 6px; font-size: 0.8125rem; color: var(--ink-soft); pointer-events: none; }
 .graph__legend span { display: inline-flex; align-items: center; gap: 6px; }
+.graph__legend { bottom: 48px; }
+.graph__key-toggle { position: absolute; left: 12px; bottom: 12px; z-index: 2; font-size: 0.8125rem; padding: 4px 10px; min-height: 30px; background: var(--surface); color: var(--ink-soft); border: 1px solid var(--line-strong); border-radius: 6px; }
+.graph__key-toggle:hover { color: var(--ink); }
+.graph__legend .line-key svg { color: var(--edge-said); }
+.graph__legend .line-key--done svg { color: var(--edge-done); }
 .graph__legend i { display: inline-block; flex: none; }
 .graph__legend .entity-icon { width: 20px; height: 20px; border-radius: 4px; }
 
@@ -290,6 +312,18 @@ tr:hover td { background: var(--surface); }
 .record__caveat { display: flex; gap: 6px; align-items: flex-start; font-size: 0.875rem; color: var(--caution); background: var(--caution-tint); border-radius: 4px; padding: 6px 10px; }
 .record__caveat svg { margin-top: 3px; }
 .voice { color: var(--ink-faint); }
+.line__text--btn { all: unset; cursor: pointer; text-decoration: underline dotted var(--copper); text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.line__text--btn:hover, .line__text--btn:focus-visible { color: var(--copper); }
+.line__text--btn:focus-visible { outline: 2px solid var(--copper); outline-offset: 2px; border-radius: 2px; }
+.line--open { background: var(--copper-tint); border-radius: 4px; }
+.line-panel { border: 1px solid var(--copper); border-radius: 8px; padding: 12px 14px; margin-bottom: 20px; background: var(--surface); }
+.line-panel .group-label { display: flex; gap: 10px; align-items: center; }
+.line-panel .group-label .link { margin-left: auto; }
+.line-panel__verse { font: 400 1.0625rem/1.7 var(--tamil-serif); margin: 4px 0 10px; }
+.line-panel__hint { margin-bottom: 18px; }
+.line-panel .verse__line { font-size: 0.9375rem; line-height: 1.6; }
+.line-panel .verse { padding: 6px 10px; }
+.line-panel .record { padding: 12px; }
 .verse { margin: 0; padding: 8px 12px; background: var(--bg); border-radius: 4px; display: grid; gap: 2px; }
 .verse__line { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: baseline; text-decoration: none; color: var(--ink); font: 400 1.1875rem/1.85 var(--tamil-serif); }
 .verse__line:hover { color: var(--ink); }
@@ -310,17 +344,23 @@ tr:hover td { background: var(--surface); }
 .answer__head { background: var(--ok-tint); border: 2px solid var(--ok); border-radius: 8px; padding: 20px 24px; margin-bottom: 24px; display: grid; gap: 8px; }
 .answer__head--gap { background: var(--surface); border: 1px solid var(--line-strong); }
 .answer__head--closest { background: var(--caution-tint); border: 2px dashed var(--caution-line); }
+/* Found by search, not by a rule: amber like a near miss, with a solid border, since it may answer and may not. */
+.answer__head--searched { background: var(--caution-tint); border: 2px solid var(--caution-line); }
+.answer__head--searched .answer__kind { color: var(--caution); }
 .answer__head--none { background: transparent; border: 1px solid var(--line); }
 .answer__kind { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--ok); }
 .answer__head--gap .answer__kind, .answer__head--none .answer__kind { color: var(--ink-soft); }
 .answer__head--closest .answer__kind { color: var(--caution); }
 .answer__main { font: 400 1.4375rem/1.45 var(--serif); }
 .answer__main:lang(ta) { font: 400 1.25rem/1.75 var(--tamil-serif); }
-.answer__head--gap .answer__main, .answer__head--closest .answer__main, .answer__head--none .answer__main { font: 400 1.1875rem/1.6 var(--sans); }
-.answer__head--gap .answer__main:lang(ta), .answer__head--closest .answer__main:lang(ta), .answer__head--none .answer__main:lang(ta) { font: 400 1.25rem/1.7 var(--tamil); }
+.answer__head--gap .answer__main, .answer__head--closest .answer__main, .answer__head--none .answer__main, .answer__head--searched .answer__main { font: 400 1.1875rem/1.6 var(--sans); }
+.answer__head--gap .answer__main:lang(ta), .answer__head--closest .answer__main:lang(ta), .answer__head--none .answer__main:lang(ta), .answer__head--searched .answer__main:lang(ta) { font: 400 1.25rem/1.7 var(--tamil); }
 .answer__second { color: var(--ink-soft); font-size: 1rem; }
 .answer__note { font-size: 0.875rem; color: var(--ink-soft); }
 .answer__graph { margin-bottom: 8px; }
+.answer__graph--top { margin: -8px 0 24px; }
+.answer__graph--top .sub { margin-top: 0; }
+.answer__graph--top .graph--compact { height: 260px; }
 .examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 8px 40px; margin-top: 8px; }
 .examples .sub { font-size: 1rem; margin: 20px 0 6px; }
 .example { display: block; width: 100%; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--line); padding: 10px 2px; min-height: 44px; color: var(--ink); }

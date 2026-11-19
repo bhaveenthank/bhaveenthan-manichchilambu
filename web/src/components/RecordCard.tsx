@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, Flag } from "lucide-react";
+import { ArrowRight, BookOpen, Flag, Link2 } from "lucide-react";
 import { go, useApp, useT } from "../lib/app";
 import { CautionIcon } from "../lib/icons";
 import { cantoName, correctionLink } from "../lib/site";
@@ -41,13 +41,15 @@ export function RecordCard({ record, compact }: { record: LedgerRecord; compact?
   const caveat = record.unresolved ?? record.inferred;
   return (
     <article className="record">
-      <div className="record__tags"><MoodTag mood={record.mood} /><EpicMark epic={record.epic} /><StatusBadge />{record.birth !== "main" && <span className="tag">{t("earlier birth", "முற்பிறப்பு")}</span>}</div>
+      <div className="record__tags"><MoodTag mood={record.mood} /><EpicMark epic={record.epic} /><StatusBadge review={record.review} />{record.birth !== "main" && <span className="tag">{t("earlier birth", "முற்பிறப்பு")}</span>}</div>
       <p className="record__text" lang={lang}>{main}</p>
       {!compact && <p className="record__other" lang={lang === "ta" ? "en" : "ta"}>{other}</p>}
       <p className="record__meta"><Voice record={record} /></p>
       <VerseLines lines={record.lines} />
       {caveat && <p className="record__caveat"><CautionIcon size={14} aria-hidden="true" />{caveat}</p>}
+      {record.review?.status === "disputed" && record.review.note && <p className="record__review"><CautionIcon size={14} aria-hidden="true" /><span>{t("Reviewer's note: ", "மதிப்பாய்வாளர் குறிப்பு: ")}{record.review.note}</span></p>}
       <div className="record__foot">
+        <a className="record__id" href={`#/record/${record.id}`} title={t("A link to this record, and how to cite it", "இப்பதிவுக்கான இணைப்பும் மேற்கோள் முறையும்")}><Link2 size={13} aria-hidden="true" />{t(`record ${record.id}`, `பதிவு ${record.id}`)}</a>
         {record.lines.length > 0 && <ReadLink line={record.lines[0].id} />}
         <a className="flag-link" href={correctionLink(`record ${record.id}`, record.lines.map((l) => l.id))}><Flag size={14} aria-hidden="true" />{t("Suggest a correction", "திருத்தம் பரிந்துரை")}</a>
       </div>

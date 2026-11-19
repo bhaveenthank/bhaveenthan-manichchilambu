@@ -12,16 +12,17 @@ import type { Mood } from "./types";
 export const CLASS_ORDER = ["Person", "Group", "Deity", "Place", "Object", "Material", "Food", "Other"] as const;
 export type Shape = "circle" | "square" | "hexagon" | "triangle" | "diamond" | "pentagon" | "down" | "dot";
 
-// Light and dark values, each checked against its own background (docs/17_ui_redesign.md has the ratios).
+// Light and dark values, each at least 3:1 against its own background. They differ in lightness as well as hue
+// (light mode, L* from 30 for Person to 60 for Deity; dark mode the reverse), so the classes still part in greyscale.
 export const CLASS_STYLE: Record<string, { icon: LucideIcon; shape: Shape; light: string; dark: string }> = {
-  Person: { icon: User, shape: "circle", light: "#1F6F8B", dark: "#6FB7D3" },
-  Group: { icon: Users, shape: "square", light: "#4E7D2E", dark: "#9CC67A" },
+  Person: { icon: User, shape: "circle", light: "#154C60", dark: "#BADDEA" },
+  Group: { icon: Users, shape: "square", light: "#5F9838", dark: "#689941" },
   // A plain radiant disc: the epics are Jain and Buddhist works with Hindu gods in them, so no one tradition's symbol.
-  Deity: { icon: Sun, shape: "hexagon", light: "#957000", dark: "#E0BC4A" },
-  Place: { icon: MapPin, shape: "triangle", light: "#6E4C96", dark: "#B79BDB" },
-  Object: { icon: Box, shape: "diamond", light: "#A3395A", dark: "#E58AA6" },
-  Material: { icon: Gem, shape: "pentagon", light: "#5D6A73", dark: "#A9B4BC" },
-  Food: { icon: Wheat, shape: "down", light: "#8A5A2B", dark: "#D3A273" },
+  Deity: { icon: Sun, shape: "hexagon", light: "#B58800", dark: "#9A7B1A" },
+  Place: { icon: MapPin, shape: "triangle", light: "#65468A", dark: "#D1BFE8" },
+  Object: { icon: Box, shape: "diamond", light: "#AA3C5E", dark: "#EAA2B8" },
+  Material: { icon: Gem, shape: "pentagon", light: "#65747E", dark: "#9BA8B1" },
+  Food: { icon: Wheat, shape: "down", light: "#AD7136", dark: "#C88B51" },
   Other: { icon: Dot, shape: "dot", light: "#7A756D", dark: "#A39D93" },
 };
 export const classStyle = (cls: string) => CLASS_STYLE[cls] ?? CLASS_STYLE.Other;

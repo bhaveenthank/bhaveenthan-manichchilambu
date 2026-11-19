@@ -43,6 +43,8 @@ const CUES: [Intent, RegExp][] = [
   ["provenance", /\b(made|maker|built|crafted|grown|from where|come from|came from|origin|supplied|enga irundhu)\b|செய்தவர்|செய்யப்பட்ட|உருவாக்கிய|விளைந்|எங்கிருந்து/],
   ["thematic", /\b(theme|themes|portray|portrayed|represent|represented|describe|described|depict|motif|compassion|renunciation|karma|justice|chastity)\b|அறம்|ஊழ்|கற்பு|துறவு/],
   ["locate", /\b(which line|which canto|where in the|find the line|verse where|occurrence|occurrences)\b|எந்த வரி|எந்தக் காதை/],
+  // "Who killed...", "கொன்றது யார்": a doer asked about, so it's an event, not who someone is.
+  ["event", /^who (?!is\b|was\b|are\b|were\b)[a-z]+\b|\S+(து|தான்|தாள்|னான்|னாள்|ந்தார்|த்தார்) யார்\??$/],
   ["who_is", /^(who is|who was|who are|what is|tell me about)\b|^\S+ (yaar|yaaru|yar)$|யார்\??$/],
   ["event", /\b(what happened|what did|what does|how did|what was done|enna pannan|enna aachu)\b|என்ன ஆனது|என்ன செய்த|எப்படி/],
 ];

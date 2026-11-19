@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { List, Network } from "lucide-react";
 import { ReadLink, RecordCard, RecordList } from "../components/RecordCard";
 import { useApp, useName, useT } from "../lib/app";
 import { roleValues } from "../lib/model";
@@ -30,6 +31,8 @@ function Trails() {
   const t = useT();
   const [id, setId] = useState("meal");
   const [pick, setPick] = useState<string | null>(null);
+  // One view at a time: the diagram, or the same steps as a list. Not both stacked.
+  const [asList, setAsList] = useState(false);
   const trail = TRAILS.find((x) => x.id === id)!;
   const recs = trail.recs.filter((r) => corpus.byId.has(r));
   const gaps = corpus.gaps.filter((g) => trail.gaps.includes(g.id));
@@ -48,10 +51,14 @@ function Trails() {
       <p style={{ marginBottom: 20, maxWidth: 760 }}>{lang === "ta" ? trail.lead[1] : trail.lead[0]}</p>
       <div className="split">
         <div>
-          <Suspense fallback={<div className="flow" />}><FlowChain recs={recs} selected={pick} onPick={setPick} /></Suspense>
-          <p className="flow__key"><span><span className="key-line" />{t("the text gives this as a cause", "காரணமாகக் கூறப்பட்டது")}</span><span><span className="key-line key-line--then" />{t("only comes next, no cause claimed", "அடுத்து வருவது மட்டும்")}</span><span>{t("Tinted box: said, planned or imagined, not told as fact.", "நிறப் பெட்டி: கூற்று அல்லது கற்பனை.")}</span></p>
-          <h2 className="sub">{t("Every step, in order", "எல்லாப் படிகளும், வரிசையில்")}</h2>
-          <RecordList ids={recs} compact />
+          <div className="segmented" role="group" aria-label={t("View", "பார்வை")} style={{ marginBottom: 12, maxWidth: 320 }}>
+            <button aria-pressed={!asList} onClick={() => setAsList(false)}><Network size={15} aria-hidden="true" />{t("Diagram", "படம்")}</button>
+            <button aria-pressed={asList} onClick={() => setAsList(true)}><List size={15} aria-hidden="true" />{t("Steps in order", "வரிசைப் படிகள்")}</button>
+          </div>
+          {asList ? <RecordList ids={recs} compact /> : <>
+            <Suspense fallback={<div className="flow" />}><FlowChain recs={recs} selected={pick} onPick={setPick} /></Suspense>
+            <p className="flow__key"><span><span className="key-line" />{t("the text gives this as a cause", "காரணமாகக் கூறப்பட்டது")}</span><span><span className="key-line key-line--then" />{t("only comes next, no cause claimed", "அடுத்து வருவது மட்டும்")}</span><span>{t("Tinted box: said, planned or imagined, not told as fact.", "நிறப் பெட்டி: கூற்று அல்லது கற்பனை.")}</span></p>
+          </>}
         </div>
         <aside className="guide">
           <div ref={detail} style={{ scrollMarginTop: 90 }}>

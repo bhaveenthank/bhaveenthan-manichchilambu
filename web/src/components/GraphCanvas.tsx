@@ -1,6 +1,5 @@
 import Graph from "graphology";
 import forceAtlas2 from "graphology-layout-forceatlas2";
-import louvain from "graphology-communities-louvain";
 import noverlap from "graphology-layout-noverlap";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Maximize, Minus, Plus } from "lucide-react";
@@ -10,8 +9,6 @@ import { classColour, classStyle, FAMILY, familyOf, type Shape } from "../lib/ic
 import type { Subgraph } from "../lib/model";
 
 export { classColour };
-// Louvain clusters get their colours from the same list. They change between filters, so they never mean "this class".
-const CLUSTER_ORDER = ["Person", "Deity", "Place", "Object", "Group", "Material", "Food"];
 
 /** Class shapes, drawn on our own canvas so a class reads by shape as well as by colour (Bertin: two channels, one meaning). */
 function tracePath(ctx: CanvasRenderingContext2D, shape: Shape, x: number, y: number, r: number) {
@@ -47,8 +44,6 @@ interface Props {
   compact?: boolean;
   /** Spread the small graphs out and name every edge, since there's room. */
   edgeLabels?: boolean;
-  /** Colour by clusters the graph finds for itself, instead of by class. */
-  clusters?: boolean;
   ariaLabel: string;
 }
 
@@ -93,7 +88,7 @@ function packComponents(g: Graph) {
   });
 }
 
-export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edgeOf, compact, edgeLabels, clusters, ariaLabel }: Props) {
+export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edgeOf, compact, edgeLabels, ariaLabel }: Props) {
   const { corpus, lang, dark } = useApp();
   const name = useName();
   const box = useRef<HTMLDivElement>(null);
@@ -124,12 +119,12 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       if (g.hasNode(e.s) && g.hasNode(e.t) && e.s !== e.t) {
         const done = e.mood === "asserted";
         // Anything not told as fact gets a faint base line here and its family's dash on the overlay.
-        g.addEdgeWithKey(`${e.rec}:${i}`, e.s, e.t, { size: done ? 1.6 : 1.4, color: done ? edgeColour.done : edgeColour.under, rec: e.rec, kind: e.kind, done, family: familyOf(e.mood) });
+        g.addEdgeWithKey(`${e.rec}:${i}`, e.s, e.t, { size: done ? 2.4 : 1.6, color: done ? edgeColour.done : edgeColour.under, rec: e.rec, kind: e.kind, done, family: familyOf(e.mood) });
       }
     });
     data.suggested.forEach((s, i) => { if (g.hasNode(s.s) && g.hasNode(s.t)) g.addEdgeWithKey(`hint:${i}`, s.s, s.t, { size: 0.8, color: edgeColour.hint, hint: true }); });
     g.forEachNode((id) => {
-      const base = compact ? 5 : 4;
+      const base = 6; // big enough to tell the shapes apart at a glance
       const mentions = corpus.nodeById.get(id)?.mentions ?? 0;
       g.setNodeAttribute(id, "size", Math.min(compact ? 10 : 15, base + Math.sqrt(g.degree(id)) * 1.3 + Math.sqrt(mentions) * 0.25));
     });
@@ -139,14 +134,10 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       noverlap.assign(g, { maxIterations: g.order > 60 ? 200 : 80, settings: { margin: compact ? 16 : g.order > 60 ? 14 : 8, ratio: 1.3 } });
       packComponents(g);
     }
-    if (clusters && g.size > 0) {
-      const found = louvain(g, { randomWalk: false });
-      g.forEachNode((id) => g.setNodeAttribute(id, "fill", classColour(CLUSTER_ORDER[found[id] % CLUSTER_ORDER.length], dark)));
-    }
     return g;
     // The key stands in for data: rebuilding on every parent render would throw the layout away.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key, corpus, compact, dark, clusters]);
+  }, [key, corpus, compact, dark]);
 
   const edgeEnds = (rec: string | null | undefined): string[] => {
     if (!rec) return [];
@@ -187,11 +178,34 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       ctx.setLineDash(FAMILY[a.family as keyof typeof FAMILY]?.dash ?? [6, 4]);
       ctx.lineCap = "round";
       ctx.strokeStyle = css("--edge-said");
-      ctx.lineWidth = focus && lit ? 2.2 : 1.6;
+      ctx.lineWidth = focus && lit ? 3 : 2.4;
       ctx.globalAlpha = lit ? 0.95 : 0.12;
       ctx.stroke();
     });
     ctx.setLineDash([]);
+    ctx.globalAlpha = 1;
+
+    // Arrowheads at the receiving end, so the graph says who did what to whom. The tip stops at the node's edge.
+    const doneInk = css("--edge-done"), saidInk = css("--edge-said"), pickedInk = css("--copper");
+    graph.forEachEdge((edge, a, s, t, sa, ta) => {
+      if (a.hint) return;
+      const p1 = sigma.graphToViewport({ x: sa.x, y: sa.y }), p2 = sigma.graphToViewport({ x: ta.x, y: ta.y });
+      const dx = p2.x - p1.x, dy = p2.y - p1.y, len = Math.hypot(dx, dy);
+      if (len < ta.size * 2 + 14) return;
+      const ux = dx / len, uy = dy / len;
+      const tipX = p2.x - ux * (ta.size + 3), tipY = p2.y - uy * (ta.size + 3);
+      const picked = a.rec === selEdge;
+      const size = picked ? 11 : 8;
+      const lit = selEdge ? picked : !focus || !graph.hasNode(focus) || s === focus || t === focus;
+      ctx.beginPath();
+      ctx.moveTo(tipX, tipY);
+      ctx.lineTo(tipX - ux * size - uy * size * 0.5, tipY - uy * size + ux * size * 0.5);
+      ctx.lineTo(tipX - ux * size + uy * size * 0.5, tipY - uy * size - ux * size * 0.5);
+      ctx.closePath();
+      ctx.globalAlpha = lit ? 0.95 : 0.12;
+      ctx.fillStyle = picked ? pickedInk : a.done ? doneInk : saidInk;
+      ctx.fill();
+    });
     ctx.globalAlpha = 1;
 
     // Then the nodes: a ring for "in both epics", the class shape, and a copper halo on the one picked.
@@ -229,7 +243,7 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       const forced = near.has(id);
       if (focus && !forced && !compact) return;
       // In a big graph small nodes wait for a zoom. A small graph has room to name everyone.
-      if (!forced && !compact && graph.order > 26 && a.size < 5.5 && ratio > 0.8) return;
+      if (!forced && !compact && graph.order >= 40 && a.size < 7.5 && ratio > 0.8) return;
       const p = sigma.graphToViewport({ x: a.x, y: a.y });
       const r = a.size;
       if (p.x < -40 || p.y < -20 || p.x > width + 40 || p.y > height + 20) return;
@@ -302,6 +316,12 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     }
     sigmaRef.current = sigma;
     sigma.on("afterRender", () => drawLabels.current());
+    // Sigma has already drawn once by now, before this listener existed, so draw again or the shapes and labels
+    // stay on the previous graph until the first zoom.
+    sigma.refresh();
+    // The detail column opening or closing changes the stage's width, not the window's.
+    const resized = new ResizeObserver(() => sigma.refresh());
+    resized.observe(box.current);
     sigma.on("clickNode", ({ node }) => handlers.current.onNode?.(node));
     sigma.on("clickStage", () => handlers.current.onNode?.(null));
     sigma.on("clickEdge", ({ edge }) => {
@@ -310,14 +330,14 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       if (!pick || !rec || (only && graph.order > 60 && !graph.hasExtremity(edge, only))) return;
       pick(rec);
     });
-    sigma.on("enterNode", ({ node }) => { setHovered(node); box.current && (box.current.style.cursor = "pointer"); });
-    sigma.on("leaveNode", () => { setHovered(null); box.current && (box.current.style.cursor = ""); });
+    sigma.on("enterNode", ({ node }) => { setHovered(node); if (box.current) box.current.style.cursor = "pointer"; });
+    sigma.on("leaveNode", () => { setHovered(null); if (box.current) box.current.style.cursor = ""; });
     sigma.on("enterEdge", ({ edge }) => {
       const { onEdge: pick, edgeOf: only } = handlers.current;
       if (pick && !(only && graph.order > 60 && !graph.hasExtremity(edge, only)) && box.current) box.current.style.cursor = "pointer";
     });
-    sigma.on("leaveEdge", () => { box.current && (box.current.style.cursor = ""); });
-    return () => { sigma.kill(); sigmaRef.current = null; };
+    sigma.on("leaveEdge", () => { if (box.current) box.current.style.cursor = ""; });
+    return () => { resized.disconnect(); sigma.kill(); sigmaRef.current = null; };
   }, [graph, compact]);
 
   useEffect(() => { sigmaRef.current?.refresh(); }, [selected, selectedEdge, hovered, lang, dark]);

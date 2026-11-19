@@ -72,7 +72,7 @@ export function CoverageBar({ lines, cited, reviewed, drafted, big }: { lines: n
         {checked > 0 && <span className="coverage__reviewed" style={{ width: w(checked) }} />}
         <span className="coverage__graph" style={{ width: w(cited) }} />
       </div>
-      {big && <p className="coverage-key"><span><i className="key-hand" />{t("in the graph", "வரைபடத்தில்")} · {pct(cited)}</span>{checked > 0 && <span><i className="key-reviewed" />{t("drafts checked by a reader", "வாசகர் சரிபார்த்த வரைவுகள்")} · {pct(checked)}</span>}<span><i className="key-draft" />{t("unchecked machine drafts", "சரிபார்க்காத இயந்திர வரைவுகள்")} · {pct(drafted)}</span><span><i className="key-none" />{t("not read into records yet", "இன்னும் பதியப்படாதவை")}</span></p>}
+      {big && <p className="coverage-key"><span><i className="key-hand" />{t("in the graph", "வரைபடத்தில்")} · {pct(cited)}</span>{checked > 0 && <span><i className="key-reviewed" />{t("checked drafts", "சரிபார்த்த வரைவுகள்")} · {pct(checked)}</span>}<span><i className="key-draft" />{t("unchecked machine drafts", "சரிபார்க்காத இயந்திர வரைவுகள்")} · {pct(drafted)}</span><span><i className="key-none" />{t("not read into records yet", "இன்னும் பதியப்படாதவை")}</span></p>}
     </div>
   );
 }

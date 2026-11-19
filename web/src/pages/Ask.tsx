@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Search, Users } from "lucide-react";
+import { ArrowRight, Download, Search, SearchCheck, Users } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { GraphCanvas } from "../components/GraphCanvas";
 import { InspectContext } from "../components/inspectContext";
@@ -21,12 +21,15 @@ const EXAMPLES = [
   { group: ["Anything else in the text", "நூலில் உள்ள வேறு எதுவும்"], items: ["Where did Aputhiran leave the bowl?", "What was sold in the cloth street?", "நீலி தெருக்களில் என்ன செய்தாள்?", "What did Kannagi ask the Sun?"] },
 ];
 
-type Kind = "answered" | "not_stated" | "closest" | "none" | "ambiguous";
-const kindOf = (a: HybridAnswer): Kind => (a.type === "ambiguous" ? "ambiguous" : !a.found ? "none" : a.type === "not_stated" ? "not_stated" : a.type === "closest" ? "closest" : "answered");
+type Kind = "answered" | "searched" | "not_stated" | "closest" | "none" | "ambiguous";
+// Only a rule written for the question earns the green box. An answer the search found may be right or wrong,
+// so it gets amber, like a near miss, and says how it was found.
+const kindOf = (a: HybridAnswer): Kind => (a.type === "ambiguous" ? "ambiguous" : !a.found ? "none" : a.type === "not_stated" ? "not_stated" : a.type === "closest" ? "closest" : a.route === "hybrid" ? "searched" : "answered");
 
 // A different mark, border and colour for each kind of reply, so a near miss never looks like an answer.
 const KIND_LABEL: Record<Kind, [string, string]> = {
   answered: ["Answer, from the records", "பதிவுகளிலிருந்து விடை"],
+  searched: ["Found by search: check the verses below", "தேடலில் கிடைத்தது: கீழுள்ள வரிகளைச் சரிபாருங்கள்"],
   not_stated: ["Not stated in the passages read", "படித்த பகுதிகளில் கூறப்படவில்லை"],
   closest: ["Closest match, not an answer", "நெருக்கமானது மட்டும், விடை அல்ல"],
   none: ["No answer in the graph", "வரைபடத்தில் விடை இல்லை"],
@@ -83,7 +86,7 @@ export function AskPage({ question }: { question: string }) {
     a.href = url; a.download = "manichchilambu-evidence.json"; a.click();
     URL.revokeObjectURL(url);
   };
-  const KindIcon = kind === "ambiguous" ? Users : ANSWER_ICON[kind];
+  const KindIcon = kind === "ambiguous" ? Users : kind === "searched" ? SearchCheck : ANSWER_ICON[kind];
 
   return (
     <InspectContext.Provider value={openLine}>
@@ -114,7 +117,7 @@ export function AskPage({ question }: { question: string }) {
             </div>
 
             <section className="answer" aria-live="polite">
-              <div className={`answer__head${kind === "answered" ? "" : kind === "not_stated" || kind === "ambiguous" ? " answer__head--gap" : kind === "closest" ? " answer__head--closest" : " answer__head--none"}`}>
+              <div className={`answer__head${kind === "answered" ? "" : kind === "not_stated" || kind === "ambiguous" ? " answer__head--gap" : kind === "closest" ? " answer__head--closest" : kind === "searched" ? " answer__head--searched" : " answer__head--none"}`}>
                 <p className="answer__kind"><KindIcon size={20} aria-hidden="true" />{lang === "ta" ? KIND_LABEL[kind][1] : KIND_LABEL[kind][0]}</p>
                 {kind === "closest" && <p className="answer__note">{t("No rule or record fits this question exactly. This shares words with it, and may not answer it at all.", "இக்கேள்விக்குச் சரியாகப் பொருந்தும் விதியோ பதிவோ இல்லை. இது சில சொற்களைப் பகிர்கிறது; விடையாக இல்லாமலும் இருக்கலாம்.")}</p>}
                 <p className="answer__main" lang={taFirst ? "ta" : "en"}>{show(taFirst ? "ta" : "en")}</p>
@@ -129,6 +132,13 @@ export function AskPage({ question }: { question: string }) {
                 {answer.note && kind !== "closest" && <p className="answer__note">{lang === "ta" ? answer.note.ta : answer.note.en}</p>}
               </div>
 
+              {small && small.nodes.length > 0 && (
+                <div className="answer__graph answer__graph--top"><h2 className="sub">{t("The answer as a graph", "விடை வரைபடமாக")}</h2>
+                  {/* Keyed by the question so a new question always gets a freshly built graph. */}
+                  <GraphCanvas key={question} data={small} compact edgeLabels ariaLabel={t("Small graph of the people and things in this answer", "இந்த விடையில் உள்ளவர்களின் சிறு வரைபடம்")} />
+                  <a className="link" href={`#/graph?focus=${answer.focus[0] ?? answer.entities[0] ?? ""}`}>{t("Open in the full graph", "முழு வரைபடத்தில் திறக்க")}<ArrowRight size={15} aria-hidden="true" /></a>
+                </div>
+              )}
               {answer.records.length > 0 && <h2 className="sub">{kind === "closest" ? t("Records that share words with the question", "கேள்வியுடன் சொற்களைப் பகிரும் பதிவுகள்") : t("Where this comes from", "இது எங்கிருந்து வருகிறது")} <span className="count-badge">{Math.min(answer.records.length, shown)}</span></h2>}
               {answer.groups?.length ? (
                 <>
@@ -173,13 +183,6 @@ export function AskPage({ question }: { question: string }) {
                 </section>
               )}
 
-              {small && small.nodes.length > 0 && mode !== "read" && (
-                <div className="answer__graph"><h2 className="sub">{t("The answer as a graph", "விடை வரைபடமாக")}</h2>
-                  {/* Keyed by the question so a new question always gets a freshly built graph. */}
-                  <GraphCanvas key={question} data={small} compact edgeLabels ariaLabel={t("Small graph of the people and things in this answer", "இந்த விடையில் உள்ளவர்களின் சிறு வரைபடம்")} />
-                  <a className="link" href={`#/graph?focus=${answer.focus[0] ?? answer.entities[0] ?? ""}`}>{t("Open in the full graph", "முழு வரைபடத்தில் திறக்க")}<ArrowRight size={15} aria-hidden="true" /></a>
-                </div>
-              )}
 
               <FollowUps answer={answer} />
 

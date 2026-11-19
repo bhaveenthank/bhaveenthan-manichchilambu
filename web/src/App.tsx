@@ -1,21 +1,25 @@
 import { Command } from "cmdk";
 import { ChevronDown, Compass, Contrast, Languages, Network, Search } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { AppContext, go, useRoute } from "./lib/app";
-import { loadCorpus } from "./lib/data";
+import { assemble, loadCore, loadExtras, NO_EXTRAS, type Extras } from "./lib/data";
 import { EntityIcon } from "./components/Marks";
 import { CONTACT_EMAIL, isMac } from "./lib/site";
 import type { Corpus, Lang } from "./lib/types";
-import { AboutPage } from "./pages/About";
-import { AskPage } from "./pages/Ask";
-import { CantoPage } from "./pages/Canto";
-import { DiscoverPage } from "./pages/Discover";
-import { GraphPage } from "./pages/GraphPage";
-import { HomePage } from "./pages/Home";
-import { SongsPage } from "./pages/Songs";
-import { TracePage } from "./pages/Trace";
-import { WordsPage } from "./pages/Words";
+// Each page is its own download, so the About page doesn't fetch the graph drawing code or the flow charts.
+const AboutPage = lazy(() => import("./pages/About").then((m) => ({ default: m.AboutPage })));
+const AskPage = lazy(() => import("./pages/Ask").then((m) => ({ default: m.AskPage })));
+const CantoPage = lazy(() => import("./pages/Canto").then((m) => ({ default: m.CantoPage })));
+const DiscoverPage = lazy(() => import("./pages/Discover").then((m) => ({ default: m.DiscoverPage })));
+const GraphPage = lazy(() => import("./pages/GraphPage").then((m) => ({ default: m.GraphPage })));
+const HomePage = lazy(() => import("./pages/Home").then((m) => ({ default: m.HomePage })));
+const SongsPage = lazy(() => import("./pages/Songs").then((m) => ({ default: m.SongsPage })));
+const TracePage = lazy(() => import("./pages/Trace").then((m) => ({ default: m.TracePage })));
+const RecordPage = lazy(() => import("./pages/Record").then((m) => ({ default: m.RecordPage })));
+const WordsPage = lazy(() => import("./pages/Words").then((m) => ({ default: m.WordsPage })));
+// Pages that read the echoes, timelines, gaps, ties, discoveries or lexicon. The rest open on the three core files.
+const NEEDS_EXTRAS = new Set(["", "ask", "trace", "discover", "words", "songs-canto"]);
 
 // Ask, Trace and Songs carry the story, so they're one click away. The rest sit under Explore.
 const NAV = [
@@ -92,19 +96,31 @@ function Palette({ corpus, lang, open, setOpen }: { corpus: Corpus; lang: Lang; 
   );
 }
 
+/** Fetches the extra data files the first time a page needs them, with a retry if the network drops. */
+function ExtrasGate({ failed, onLoad }: { failed: boolean; onLoad: () => void }) {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { onLoad(); }, []);
+  if (failed) return <p>The data for this page didn't load. <button className="link" onClick={onLoad}>Try again</button> · இப்பக்கத்தின் தரவு ஏறவில்லை.</p>;
+  return <div className="skeleton page-loading" aria-busy="true" aria-label="Loading"><i /><i /><i /></div>;
+}
+
 function savedTheme(): "light" | "dark" | null {
   try { const v = localStorage.getItem("theme"); return v === "light" || v === "dark" ? v : null; } catch { return null; }
 }
 
 export function App() {
-  const [corpus, setCorpus] = useState<Corpus | null>(null);
+  const [core, setCore] = useState<Omit<Corpus, keyof Extras | "byId" | "nodeById"> | null>(null);
+  const [extras, setExtras] = useState<Extras | null>(null);
   const [failed, setFailed] = useState(false);
+  const [extrasFailed, setExtrasFailed] = useState(false);
   const [lang, setLangState] = useState<Lang>(() => { try { return (localStorage.getItem("lang") as Lang) || "en"; } catch { return "en"; } });
   // Paper is the default look. Dark is a click away, and the choice sticks.
   const [dark, setDark] = useState(() => savedTheme() === "dark");
   const [palette, setPalette] = useState(false);
   const route = useRoute();
-  useEffect(() => { loadCorpus().then(setCorpus).catch(() => setFailed(true)); }, []);
+  const [attempt, setAttempt] = useState(0);
+  useEffect(() => { setFailed(false); loadCore().then(setCore).catch(() => setFailed(true)); }, [attempt]);
+  const corpus = useMemo(() => (core ? assemble({ ...core, ...(extras ?? NO_EXTRAS) }) : null), [core, extras]);
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const tab = (e.target as HTMLElement).closest?.('[role="tab"]');
@@ -125,11 +141,12 @@ export function App() {
   useEffect(() => { document.documentElement.dataset.theme = dark ? "dark" : "light"; }, [dark]);
   const value = useMemo(() => (corpus ? { corpus, lang, setLang, go, dark, toggleTheme } : null), [corpus, lang, dark]);
 
-  if (failed) return <main className="page"><p>The data files didn't load. If you opened this from disk, run <code>npm run dev</code> instead.</p></main>;
+  if (failed) return <main className="page"><p>The data files didn't load. Check the connection and <button className="link" onClick={() => setAttempt((n) => n + 1)}>try again</button>. If you opened this from disk, run <code>npm run dev</code> instead.</p></main>;
   if (!value || !corpus) return <main className="splash" aria-busy="true"><p className="splash__name">Maṇichchilambu</p><span className="splash__bar" /><p className="fine">Loading the two epics · இரு காப்பியங்களை ஏற்றுகிறது</p></main>;
 
   const [rawSection, sub] = route.parts;
   const current = OLD_ROUTES[rawSection ?? ""] ?? rawSection ?? "";
+  const needsExtras = NEEDS_EXTRAS.has(current === "songs" && sub ? "songs-canto" : current) || !NAV.concat(EXPLORE).some((n) => n.path === current) && current !== "about" && current !== "record";
   const page = current === "ask" ? <AskPage question={route.params.get("q") ?? ""} />
     : current === "graph" ? <GraphPage params={route.params} />
     : current === "songs" ? (sub ? <CantoPage key={sub} cantoKey={sub} line={route.params.get("line")} /> : <SongsPage params={route.params} />)
@@ -137,6 +154,7 @@ export function App() {
     : current === "trace" ? <TracePage />
     : current === "words" ? <WordsPage key={route.params.get("q") ?? ""} params={route.params} />
     : current === "about" ? <AboutPage />
+    : current === "record" && sub ? <RecordPage id={sub} />
     : <HomePage />;
 
   return (
@@ -157,7 +175,10 @@ export function App() {
           <button className="tool-btn tool-btn--icon" onClick={toggleTheme} aria-label={dark ? "Use the light theme" : "Use the dark theme"} title={dark ? "Use the light theme" : "Use the dark theme"}><Contrast size={18} aria-hidden="true" /></button>
         </div>
       </div></header>
-      <main key={current + (sub ?? "")} className={current === "graph" ? "page page--full" : "page"}>{page}</main>
+      <main key={current + (sub ?? "")} className={current === "graph" ? "page page--full" : "page"}>
+        {needsExtras && !extras ? <ExtrasGate failed={extrasFailed} onLoad={() => { setExtrasFailed(false); loadExtras().then(setExtras).catch(() => setExtrasFailed(true)); }} />
+          : <Suspense fallback={<div className="skeleton page-loading" aria-busy="true"><i /><i /><i /></div>}>{page}</Suspense>}
+      </main>
       <Palette corpus={corpus} lang={lang} open={palette} setOpen={setPalette} />
       {current !== "graph" && (
         <footer className="foot"><div className="foot__row">

@@ -19,7 +19,7 @@ export function holdersAt(corpus: Corpus, obj: string, t: number): string[] {
       if (!m || m[2] !== "holds") continue;
       const [who, what] = m[3].split(",").map((x) => x.trim());
       if (what !== obj) continue;
-      m[1] === "+" ? now.add(who) : now.delete(who);
+      if (m[1] === "+") now.add(who); else now.delete(who);
     }
   }
   return [...now];

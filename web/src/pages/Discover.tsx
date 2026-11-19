@@ -1,5 +1,6 @@
 import { EntityIcon } from "../components/Marks";
 import { useMemo, useState } from "react";
+import { NodePicker } from "../components/NodePicker";
 import { LinkKey } from "../components/LinkKey";
 import { PathCard } from "../components/PathCard";
 import { RecordList } from "../components/RecordCard";
@@ -76,18 +77,18 @@ function ConnectTab() {
       <h2>{t("Connect any two", "எவையேனும் இரண்டை இணை")}</h2>
       <div style={{ marginTop: 18 }}><LinkKey /></div>
       <div className="find-path__row">
-        <label className="field"><span>{t("From", "இருந்து")}</span><select value={a} onChange={(e) => setA(e.target.value)}>{options.map((n) => <option key={n.id} value={n.id}>{n[lang]}</option>)}</select></label>
+        <div className="field"><span>{t("From", "இருந்து")}</span><NodePicker nodes={options} value={a} onPick={(id) => id && setA(id)} label={t("From", "இருந்து")} /></div>
         <span aria-hidden="true">↔</span>
-        <label className="field"><span>{t("To", "வரை")}</span><select value={b} onChange={(e) => setB(e.target.value)}>{options.map((n) => <option key={n.id} value={n.id}>{n[lang]}</option>)}</select></label>
+        <div className="field"><span>{t("To", "வரை")}</span><NodePicker nodes={options} value={b} onPick={(id) => id && setB(id)} label={t("To", "வரை")} /></div>
       </div>
       <div className="chips">
         <label className="check"><input type="checkbox" checked={weak} onChange={(e) => setWeak(e.target.checked)} />{t("Allow 'same kind of thing'", "'ஒரே வகை' அனுமதி")}</label>
         <label className="check"><input type="checkbox" checked={places} onChange={(e) => setPlaces(e.target.checked)} />{t("Allow 'same place'", "'ஒரே இடம்' அனுமதி")}</label>
         <label className="check"><input type="checkbox" checked={said} onChange={(e) => setSaid(e.target.checked)} />{t("Include things only said", "கூற்றுகளையும் சேர்")}</label>
       </div>
-      <label className="field" style={{ maxWidth: 340, margin: "20px 0" }}><span>{t("Find a way around", "இதைத் தவிர்த்து")}</span>
-        <select value={avoid} onChange={(e) => setAvoid(e.target.value)}><option value="">{t("Nobody", "யாரையும் இல்லை")}</option>{options.filter((n) => n.id !== a && n.id !== b).map((n) => <option key={n.id} value={n.id}>{n[lang]}</option>)}</select>
-      </label>
+      <div className="field" style={{ maxWidth: 340, margin: "20px 0" }}><span>{t("Find a way around", "இதைத் தவிர்த்து")}</span>
+        <NodePicker nodes={options.filter((n) => n.id !== a && n.id !== b)} value={avoid} onPick={setAvoid} empty={[t("Nobody", "யாரையும் இல்லை"), t("Nobody", "யாரையும் இல்லை")]} label={t("Find a way around", "இதைத் தவிர்த்து")} />
+      </div>
       {a === b ? <p className="fine">{t("Pick two different ones.", "இரண்டு வெவ்வேறானவற்றைத் தேர்ந்தெடுங்கள்.")}</p>
         : found ? <><p className="find-path__sum">{t(`${found.steps.length} step${found.steps.length > 1 ? "s" : ""}.`, `${found.steps.length} படிகள்.`)}</p><PathCard key={a + b + said + weak + places + avoid} steps={found.steps} startOpen /></>
         : <p className="fine">{t("No path under these rules. Loosen them, or it may just not be recorded yet: this is a pilot.", "இந்த விதிகளில் தொடர்பு இல்லை. விதிகளைத் தளர்த்துங்கள், அல்லது இன்னும் பதியப்படாமல் இருக்கலாம்.")}</p>}
