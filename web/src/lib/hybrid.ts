@@ -558,14 +558,12 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
     ranks[id].fused = Math.round((fused.get(id) ?? 0) * 10000) / 10000;
   });
 
-  const lines: LineHit[] = lineHits
-    .slice(0, 8)
-    .map(([i, s]) => ({
-      id: idx.data.lines[i][0],
-      text: idx.data.lines[i][1],
-      gist: idx.data.notes[idx.data.lines[i][0]]?.[0] ?? null,
-      score: Math.round(s * 100) / 100,
-    }));
+  const lines: LineHit[] = lineHits.slice(0, 8).map(([i, s]) => ({
+    id: idx.data.lines[i][0],
+    text: idx.data.lines[i][1],
+    gist: idx.data.notes[idx.data.lines[i][0]]?.[0] ?? null,
+    score: Math.round(s * 100) / 100,
+  }));
   const drafts: DraftHit[] = idx.drafts.search(query, 6).map(([i, s]) => {
     const [line, kind, people, mood, quote, ls] = idx.data.drafts[i];
     return { line, kind, people, mood, quote, lines: ls, score: Math.round(s * 100) / 100 };
