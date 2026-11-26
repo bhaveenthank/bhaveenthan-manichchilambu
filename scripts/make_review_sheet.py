@@ -17,6 +17,13 @@ TEXT = line_text()
 LEDGERS = ("ledger.yaml", "ledger_heldout.yaml", "ledger_ext.yaml", "ledger_material.yaml", "ledger_coverage.yaml")
 SHEET = ROOT / "annotation" / "review_ledger.csv"
 MARK, COMMENT = "CORRECT? (yes/no/unsure)", "your_comment"
+# Checked first: the anklet case the first epic turns on, and every record not told as fact, since keeping claims,
+# beliefs, orders and dreams apart from events is the project's central promise.
+FIRST_EPISODES = {"anklet", "queen", "fire"}
+
+
+def check_first(r):
+    return r["mood"] != "asserted" or r["ep"] in FIRST_EPISODES or r["kind"] in ("believe", "accuse", "claim")
 
 
 def main():
@@ -29,12 +36,12 @@ def main():
     n = 0
     with open(SHEET, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
-        w.writerow(["id", "episode", "what_it_says", "who_tells_it", "mood", "birth", "story_time", "lines", "tamil", "note", MARK, COMMENT])
-        for r in load(*LEDGERS):
+        w.writerow(["check_first", "id", "episode", "what_it_says", "who_tells_it", "mood", "birth", "story_time", "lines", "tamil", "note", MARK, COMMENT])
+        for r in sorted(load(*LEDGERS), key=lambda r: not check_first(r)):
             roles = ", ".join(f"{k}={'/'.join(v['one_of']) if isinstance(v, dict) else v}" for k, v in r["roles"].items())
             note = "; ".join(str(r[k]) for k in ("inferred", "unresolved", "note", "condition", "purpose") if k in r)
             mark, comment = kept.get(r["id"], ("", ""))
-            w.writerow([r["id"], r["ep"], f"{r['kind']} ({roles})", " > ".join(r["voice"]), r["mood"], r["life"], r["t"], " ".join(r["lines"]),
+            w.writerow(["yes" if check_first(r) else "", r["id"], r["ep"], f"{r['kind']} ({roles})", " > ".join(r["voice"]), r["mood"], r["life"], r["t"], " ".join(r["lines"]),
                         " / ".join(TEXT[l] for l in r["lines"]), note, mark, comment])
             n += 1
     print(f"wrote {SHEET.relative_to(ROOT)}: {n} records, kept {len(kept)} marks already made")
