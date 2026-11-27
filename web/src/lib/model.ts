@@ -63,6 +63,8 @@ export interface GraphFilter {
   suggestions: boolean;
   earlierBirths: boolean;
   layer: "all" | "event" | "material" | "belief" | "cause";
+  /** Also show links from machine drafts a second model agrees with. Off by default. */
+  checked: boolean;
 }
 
 export const CLASSES = ["Person", "Deity", "Place", "Object", "Group", "Food", "Material"];
@@ -81,6 +83,7 @@ export function defaultFilter(): GraphFilter {
     suggestions: false,
     earlierBirths: true,
     layer: "all",
+    checked: false,
   };
 }
 
@@ -106,6 +109,11 @@ export function subgraph(corpus: Corpus, f: GraphFilter): Subgraph {
   const classOf = (id: string) => corpus.nodeById.get(id)?.cls ?? "Other";
   const kept = (id: string) => classOf(id) === "Other" || f.classes.has(classOf(id));
   let edges = corpus.graph.edges.filter((e) => edgeVisible(corpus, e, f, accepted) && kept(e.s) && kept(e.t));
+  if (f.checked && corpus.graph.checked) {
+    // Machine links follow the epic, kind and reading filters. Story time doesn't apply: drafts have none.
+    const told = (e: GraphEdge) => f.reading === "said" || e.mood === "asserted";
+    edges = edges.concat(corpus.graph.checked.filter((e) => (f.epic === "both" || e.epic === f.epic) && told(e) && kept(e.s) && kept(e.t)));
+  }
   if (f.bridgesOnly) {
     const both = (id: string) => (corpus.nodeById.get(id)?.epics.length ?? 0) > 1;
     edges = edges.filter((e) => both(e.s) || both(e.t));

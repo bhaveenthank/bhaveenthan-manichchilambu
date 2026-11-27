@@ -1,0 +1,6361 @@
+# Entities the machine drafts name that the hand-made list (entities.yaml) didn't have.
+# Written by scripts/describe_new_entities.py: a model described each one, and its answers were checked by rule.
+# review: draft until a Tamil scholar checks them. The site marks these nodes as machine-described.
+- id: kaveri
+  cls: Place
+  en: Kaveri
+  ta: காவிரி
+  also:
+  - Cauvery
+  - Kaviri
+  - காவேரி
+  - காவிரி ஆறு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 56
+  draft_names:
+  - kaveri
+  - kaveri_river
+  - kaveri_water
+  - new_water
+  source: machine-described from the drafts
+  review: draft
+- id: buddha
+  cls: Deity
+  en: the Buddha
+  ta: புத்தன்
+  also:
+  - Buddha
+  - Aatimudalvan
+  - அறவோன்
+  - ஆதிமுதல்வன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 56
+  draft_names:
+  - adi_mudalvan
+  - buddha
+  - dharma_lord
+  - enlightened_lord
+  - great_wise_one
+  - lord_of_beings
+  - omniscient_one
+  - sage
+  - supreme_one
+  source: machine-described from the drafts
+  review: draft
+- id: dharma_seat
+  cls: Object
+  en: the Dharma seat
+  ta: தரும பீடிகை
+  also:
+  - Buddha pedestal
+  - Dharma pedestal
+  - Pidikai
+  - பீடிகை
+  kind: false
+  same_as: seat_of_buddha
+  epics:
+  - MAN
+  mentions_in_drafts: 33
+  draft_names:
+  - buddha_seat
+  - dharma_pedestal
+  - pedestal
+  source: machine-described from the drafts
+  review: draft
+- id: devas
+  cls: Group
+  en: the devas
+  ta: தேவர்
+  also:
+  - devas
+  - gods
+  - celestials
+  - தேவர்கள்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 30
+  draft_names:
+  - celestials
+  - devas
+  - gods
+  source: machine-described from the drafts
+  review: draft
+- id: kama
+  cls: Deity
+  en: Kama
+  ta: காமன்
+  also:
+  - Kamadeva
+  - Manmatha
+  - Manmathan
+  - மன்மதன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 26
+  draft_names:
+  - flower_arrows
+  - kama
+  - manmatha_army
+  - son_of_vishnu
+  - tirumal_son
+  source: machine-described from the drafts
+  review: draft
+- id: tirumal
+  cls: Deity
+  en: Tirumal
+  ta: திருமால்
+  also:
+  - Thirumal
+  - Vishnu
+  - Tirumaal
+  - விஷ்ணு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 25
+  draft_names:
+  - tirumal
+  source: machine-described from the drafts
+  review: draft
+- id: ship
+  cls: Object
+  en: the ship
+  ta: வங்கம்
+  also:
+  - ships
+  - vessel
+  - கப்பல்
+  - இதை
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 25
+  draft_names:
+  - ship
+  source: machine-described from the drafts
+  review: draft
+- id: campapati
+  cls: Deity
+  en: Campapati
+  ta: சம்பாபதி
+  also:
+  - Sampapati
+  - Sambapati
+  - Champapathi
+  - சம்பாபதி தெய்வம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 24
+  draft_names:
+  - sambapati
+  - sampapati
+  source: machine-described from the drafts
+  review: draft
+- id: sword
+  cls: Object
+  en: the sword
+  ta: வாள்
+  also:
+  - swords
+  - vaal
+  - உடைவாள்
+  - வாள்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 23
+  draft_names:
+  - sword
+  source: machine-described from the drafts
+  review: draft
+- id: kotamai
+  cls: Person
+  en: Kotamai
+  ta: கோதமை
+  also:
+  - Kothamai
+  - Gotamai
+  - கோதமை
+  - கோடமை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 23
+  draft_names:
+  - kotamai
+  - kothamai
+  source: machine-described from the drafts
+  review: draft
+- id: maruti
+  cls: Person
+  en: Maruti
+  ta: மருதி
+  also:
+  - Maruthi
+  - Marudhi
+  - மருதி
+  - மாருதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 23
+  draft_names:
+  - maruti
+  source: machine-described from the drafts
+  review: draft
+- id: tuvatikan
+  cls: Person
+  en: Tuvatikan
+  ta: துவதிகன்
+  also:
+  - Tuvathikan
+  - Thuvathikan
+  - Duvadikan
+  - துவதிகன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 22
+  draft_names:
+  - tuvathikan
+  - tuvatikan
+  - tuvatikan_words
+  source: machine-described from the drafts
+  review: draft
+- id: murugan
+  cls: Deity
+  en: Murugan
+  ta: முருகன்
+  also:
+  - Murukan
+  - Cevvel
+  - Skanda
+  - செவ்வேள்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 20
+  draft_names:
+  - murugan
+  source: machine-described from the drafts
+  review: draft
+- id: uvavanam
+  cls: Place
+  en: Uvavanam
+  ta: உவவனம்
+  also:
+  - Uvavana garden
+  - Uvavanam grove
+  - Uvavana
+  - உவவனம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 20
+  draft_names:
+  - uvavanam
+  source: machine-described from the drafts
+  review: draft
+- id: ambalam
+  cls: Place
+  en: the public hall
+  ta: அம்பலம்
+  also:
+  - Ambalam
+  - Ampalam
+  - village hall
+  - அம்பலம்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 20
+  draft_names:
+  - ambalam
+  - ampalam
+  source: machine-described from the drafts
+  review: draft
+- id: yazh
+  cls: Object
+  en: the yazh
+  ta: யாழ்
+  also:
+  - yaal
+  - yazh lute
+  - Tamil lute
+  - யாழ்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 17
+  draft_names:
+  - yazh
+  source: machine-described from the drafts
+  review: draft
+- id: ganga
+  cls: Place
+  en: the Ganga
+  ta: கங்கை
+  also:
+  - Ganges
+  - Ganga river
+  - Gangai
+  - கங்கை ஆறு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 16
+  draft_names:
+  - ganga
+  - ganga_bank
+  - ganga_north_bank
+  source: machine-described from the drafts
+  review: draft
+- id: varottamai
+  cls: Person
+  en: Varottamai
+  ta: வரோத்தமை
+  also:
+  - Varothamai
+  - Varottama
+  - Vattikai Poonkodi
+  - வரோத்தமை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 14
+  draft_names:
+  - varottamai
+  - vattikai_poonkodi
+  - vine_woman
+  source: machine-described from the drafts
+  review: draft
+- id: sadhuchakkaran
+  cls: Person
+  en: Sadhuchakkaran
+  ta: சாதுசக்கரன்
+  also:
+  - Sathusakkaran
+  - Sadhu Chakkaran
+  - Sathuchakkaran
+  - சாதுசக்கரன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 14
+  draft_names:
+  - sadhuchakkaran
+  - sathusakkaran
+  source: machine-described from the drafts
+  review: draft
+- id: vaishya_bhuta
+  cls: Deity
+  en: the Vaishya bhuta
+  ta: வணிக பூதம்
+  also:
+  - Vaisya bhuta
+  - merchant spirit
+  - Vaishya spirit
+  - வைசிய பூதம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 13
+  draft_names:
+  - vaishya_bhuta
+  source: machine-described from the drafts
+  review: draft
+- id: arantanam_ascetic
+  cls: Person
+  en: the naked ascetic
+  ta: அறந்தனம் துறவி
+  also:
+  - Arantanam ascetic
+  - Arandanam
+  - naked ascetic
+  - ஆருகத துறவி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 13
+  draft_names:
+  - arantanam_ascetic
+  source: machine-described from the drafts
+  review: draft
+- id: burial_ground_puhar
+  cls: Place
+  en: the burial ground of Puhar
+  ta: ஈமப் புறங்காடு
+  also:
+  - burning ground
+  - cremation ground
+  - Sudukadu
+  - சுடுகாடு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 13
+  draft_names:
+  - burial_ground
+  - burning_ground
+  - cremation_ground
+  source: machine-described from the drafts
+  review: draft
+- id: ulaka_aravi
+  cls: Place
+  en: Ulaka Aravi
+  ta: உலக அறவி
+  also:
+  - Ulaga Aravi
+  - public hall
+  - Ulaka Aravi hall
+  - உலகவறவி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 13
+  draft_names:
+  - public_hall
+  - ulaka_aravi
+  source: machine-described from the drafts
+  review: draft
+- id: parasaran
+  cls: Person
+  en: Parasaran
+  ta: பராசரன்
+  also:
+  - Parasaran the brahmin
+  - Parasara
+  - Parasharan
+  - பராசரன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 12
+  draft_names:
+  - parasaran
+  source: machine-described from the drafts
+  review: draft
+- id: chakkaravala_kottam
+  cls: Place
+  en: Chakkaravala Kottam
+  ta: சக்கரவாளக் கோட்டம்
+  also:
+  - Cakkaravalam temple
+  - Chakravalam
+  - Chakkaravalakottam
+  - சக்கரவாளம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 12
+  draft_names:
+  - cakkaravalam_temple
+  - chakkaravala_kottam
+  - chakravalam
+  source: machine-described from the drafts
+  review: draft
+- id: malathi
+  cls: Person
+  en: Malati
+  ta: மாலதி
+  also:
+  - Malathi
+  - Maalathi
+  - மாலதீ
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 11
+  draft_names:
+  - malathi
+  source: machine-described from the drafts
+  review: draft
+- id: arasa_bhuta
+  cls: Deity
+  en: the Bhuta chief
+  ta: பூதத் தலைவன்
+  also:
+  - Arasa Bhuta
+  - Bhuta leader
+  - அரச பூதம்
+  - பூதத் தலைவன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 11
+  draft_names:
+  - arasa_bhuta_god
+  - bhuta_chief
+  - bhuta_leader
+  source: machine-described from the drafts
+  review: draft
+- id: pasandan
+  cls: Person
+  en: Pasandan
+  ta: பாசண்டன்
+  also:
+  - Pasandar
+  - Pashandan
+  - Pasanda
+  - பாசண்ட
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 11
+  draft_names:
+  - pasandan
+  source: machine-described from the drafts
+  review: draft
+- id: sarana_cannibals
+  cls: Group
+  en: the cannibals
+  ta: நரமாமிசம் உண்போர்
+  also:
+  - Sarana cannibals
+  - man-eaters
+  - ஊன் உண்போர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 11
+  draft_names:
+  - cannibals
+  - sarana_cannibals
+  source: machine-described from the drafts
+  review: draft
+- id: sanjayan
+  cls: Person
+  en: Sanjayan
+  ta: சஞ்சயன்
+  also:
+  - Sanjaya
+  - Sanjayan
+  - Canjayan
+  - சஞ்சயன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 10
+  draft_names:
+  - sanjayan
+  source: machine-described from the drafts
+  review: draft
+- id: brahmadharman
+  cls: Person
+  en: Brahmadharman
+  ta: பிரமதருமன்
+  also:
+  - Brahmadharma
+  - Piramatarumar
+  - Brahma Dharman
+  - பிரமதருமன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 10
+  draft_names:
+  - brahmadharman
+  - brahmadharman_words
+  source: machine-described from the drafts
+  review: draft
+- id: charana_stone_slab
+  cls: Object
+  en: the charanas' stone slab
+  ta: சிலாதலம்
+  also:
+  - stone slab
+  - shining rock
+  - stone platform
+  - சிலாதலம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 9
+  draft_names:
+  - shining_rock
+  - stone_platform
+  - stone_slab
+  source: machine-described from the drafts
+  review: draft
+- id: pinnai
+  cls: Deity
+  en: Pinnai
+  ta: பின்னை
+  also:
+  - Nappinnai
+  - Pinjai
+  - Pinnai and Taram
+  - பிஞ்ஞை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 9
+  draft_names:
+  - pinnai
+  - pinnai_and_taram
+  source: machine-described from the drafts
+  review: draft
+- id: vartikan
+  cls: Person
+  en: Vartikan
+  ta: வார்த்திகன்
+  also:
+  - Varthikan
+  - Vartthikan
+  - the Tamil brahmin
+  - வார்த்திகன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 9
+  draft_names:
+  - tamil_brahmin
+  - vartikan
+  source: machine-described from the drafts
+  review: draft
+- id: pey_magal
+  cls: Other
+  en: the ghoul woman
+  ta: பேய்மகள்
+  also:
+  - Pey Magal
+  - ghoul
+  - she-ghoul
+  - பேய் மகள்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 9
+  draft_names:
+  - ghoul_woman
+  - pey_magal
+  - pey_magal_dance
+  source: machine-described from the drafts
+  review: draft
+- id: arangam_stage
+  cls: Place
+  en: the stage
+  ta: அரங்கம்
+  also:
+  - arangam
+  - arangu
+  - dance stage
+  - அரங்கு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 8
+  draft_names:
+  - stage
+  source: machine-described from the drafts
+  review: draft
+- id: shiva
+  cls: Deity
+  en: Shiva
+  ta: சிவன்
+  also:
+  - Siva
+  - Sivan
+  - Civan
+  - சிவபெருமான்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 8
+  draft_names:
+  - shiva
+  source: machine-described from the drafts
+  review: draft
+- id: arhat
+  cls: Deity
+  en: the Arhat
+  ta: அருகன்
+  also:
+  - Arihant
+  - Jina
+  - Arugan
+  - அருகதேவன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 8
+  draft_names:
+  - arhat
+  - jina
+  source: machine-described from the drafts
+  review: draft
+- id: bhuta_demon
+  cls: Other
+  en: the demon
+  ta: பூதம்
+  also:
+  - bhuta
+  - demon
+  - spirit
+  - பூதம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 8
+  draft_names:
+  - bhuta
+  - demon
+  source: machine-described from the drafts
+  review: draft
+- id: nurruvar_kannar
+  cls: Group
+  en: the Nurruvar Kannar
+  ta: நூற்றுவர் கன்னர்
+  also:
+  - Hundred Kannars
+  - Nuruvar Kannar
+  - Nurruvar Kannan
+  - நூற்றுவர் கன்னர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 8
+  draft_names:
+  - nurruvar_kannar
+  source: machine-described from the drafts
+  review: draft
+- id: pattini_temple
+  cls: Place
+  en: the Pattini temple
+  ta: பத்தினிக் கோட்டம்
+  also:
+  - Pattini shrine
+  - Pathini Kottam
+  - Pattini Kottam
+  - பத்தினி கோயில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 8
+  draft_names:
+  - pattini_temple
+  source: machine-described from the drafts
+  review: draft
+- id: crystal_chamber
+  cls: Place
+  en: the crystal chamber
+  ta: பளிக்கறை
+  also:
+  - crystal room
+  - Palikkarai
+  - Palikkarai
+  - பளிக்கறை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 8
+  draft_names:
+  - crystal_chamber
+  source: machine-described from the drafts
+  review: draft
+- id: kotamai_son
+  cls: Person
+  en: Kotamai's son
+  ta: கோதமையின் மகன்
+  also:
+  - Kothamai's son
+  - son of Kotamai
+  - Kotamai ​son
+  - கோதமை மகன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 8
+  draft_names:
+  - kothamai_son
+  source: machine-described from the drafts
+  review: draft
+- id: isan
+  cls: Deity
+  en: Isan
+  ta: ஈசன்
+  also:
+  - Isa
+  - Esan
+  - Isvara
+  - ஈசுவரன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 8
+  draft_names:
+  - isan
+  source: machine-described from the drafts
+  review: draft
+- id: bhutavadi
+  cls: Person
+  en: the Bhutavadi
+  ta: பூதவாதி
+  also:
+  - Bhuta Vadi
+  - materialist
+  - Bhutavaadi
+  - பூத வாதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 8
+  draft_names:
+  - bhuta_vadi
+  - bhutavadi
+  source: machine-described from the drafts
+  review: draft
+- id: talaikkol
+  cls: Object
+  en: the Talaikkol
+  ta: தலைக்கோல்
+  also:
+  - Thalaikkol
+  - umbrella staff
+  - Talaikol
+  - தலைக்கோல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 7
+  draft_names:
+  - talaikkol
+  - thalaikkol
+  - umbrella_staff
+  source: machine-described from the drafts
+  review: draft
+- id: flute
+  cls: Object
+  en: flute
+  ta: குழல்
+  also:
+  - kuzhal
+  - kulal
+  - pipe
+  - குழல்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 7
+  draft_names:
+  - flute
+  source: machine-described from the drafts
+  review: draft
+- id: tucayan
+  cls: Person
+  en: Tucayan
+  ta: துச்சயன்
+  also:
+  - Tuchayan
+  - Thucayan
+  - Duchayan
+  - துச்சயன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 7
+  draft_names:
+  - tucayan
+  source: machine-described from the drafts
+  review: draft
+- id: padapankaya_malai
+  cls: Place
+  en: Padapankaya Hill
+  ta: பாதபங்கய மலை
+  also:
+  - Padapankaya Malai
+  - Padapankaya Mountain
+  - Pathapankaya Malai
+  - பாதபங்கயமலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 7
+  draft_names:
+  - padapankaya_malai
+  - padapankaya_malai_name
+  source: machine-described from the drafts
+  review: draft
+- id: jambu_fruit
+  cls: Food
+  en: jambu fruit
+  ta: நாவல் பழம்
+  also:
+  - jamun
+  - naval fruit
+  - java plum
+  - நாவற்பழம்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 7
+  draft_names:
+  - jambu_fruit
+  source: machine-described from the drafts
+  review: draft
+- id: kakanthan
+  cls: Person
+  en: Kakandan
+  ta: காகந்தன்
+  also:
+  - Kakanthan
+  - Kakandhan
+  - காகந்தன்
+  - காகந்தி
+  kind: false
+  same_as: kakandan
+  epics:
+  - MAN
+  mentions_in_drafts: 7
+  draft_names:
+  - his_father
+  - kakanthan
+  - kantha_king
+  - mayari
+  source: machine-described from the drafts
+  review: draft
+- id: bhuta_chaturam_bhuta
+  cls: Deity
+  en: the Bhuta of the Chaturam
+  ta: பூதம்
+  also:
+  - Bhutam
+  - Bhuta
+  - Chaturam spirit
+  - பூதம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 7
+  draft_names:
+  - bhuta
+  - bhutam
+  source: machine-described from the drafts
+  review: draft
+- id: ajivaka_scholar
+  cls: Person
+  en: the Ajivaka scholar
+  ta: ஆசீவகன்
+  also:
+  - Ajivika teacher
+  - Ajivaka
+  - ஆசீவக நூலறிந்தவன்
+  - ஆசீவகன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 7
+  draft_names:
+  - ajivaka_scholar
+  source: machine-described from the drafts
+  review: draft
+- id: vengai_tree
+  cls: Material
+  en: the vengai tree
+  ta: வேங்கை
+  also:
+  - Vengai
+  - Pterocarpus
+  - kino tree
+  - வேங்கை மரம்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - vengai_tree
+  source: machine-described from the drafts
+  review: draft
+- id: chariot
+  cls: Object
+  en: chariot
+  ta: தேர்
+  also:
+  - chariots
+  - car
+  - ther
+  - தேர்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - chariot
+  source: machine-described from the drafts
+  review: draft
+- id: venkatam_hill
+  cls: Place
+  en: Venkatam hill
+  ta: வேங்கடம்
+  also:
+  - Venkatam
+  - Tirumala
+  - Tirupati hill
+  - திருமால் குன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - mountain
+  - tirumal_hill
+  - venkatam_hill
+  source: machine-described from the drafts
+  review: draft
+- id: vaiyai
+  cls: Place
+  en: Vaiyai
+  ta: வையை
+  also:
+  - Vaigai
+  - Vaiyai river
+  - Vaigai river
+  - வைகை
+  kind: false
+  same_as: vaigai_river
+  epics:
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - vaiyai
+  source: machine-described from the drafts
+  review: draft
+- id: savakas
+  cls: Group
+  en: the Savakas
+  ta: சாவகர்
+  also:
+  - Savaka laity
+  - Savakar
+  - Jain laity
+  - சாவகர்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - savaka_laity
+  - savakas
+  source: machine-described from the drafts
+  review: draft
+- id: deva_kumaran
+  cls: Person
+  en: Devakumaran
+  ta: தேவகுமரன்
+  also:
+  - Deva Kumaran
+  - Devakumara
+  - தேவகுமாரன்
+  - தேவ குமரன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - deva_kumaran
+  source: machine-described from the drafts
+  review: draft
+- id: karikala_daughter
+  cls: Person
+  en: Karikala's daughter
+  ta: காவிரி மகள்
+  also:
+  - daughter of Karikala
+  - Karikalan's daughter
+  - Karikala Chola's daughter
+  - கரிகாலன் மகள்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - karikala_daughter
+  source: machine-described from the drafts
+  review: draft
+- id: cheralatan
+  cls: Person
+  en: Cheralatan
+  ta: சேரலாதன்
+  also:
+  - Cheralathan
+  - Chera king
+  - Mantaram Ceral
+  - சேரலன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 6
+  draft_names:
+  - chera_king
+  - cheralatan
+  - mantaram_ceral
+  source: machine-described from the drafts
+  review: draft
+- id: kumari
+  cls: Place
+  en: Kumari
+  ta: குமரி
+  also:
+  - Kumari port
+  - Kanyakumari
+  - Cape Comorin
+  - குமரித்துறை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 6
+  draft_names:
+  - kumari
+  - kumari_port
+  source: machine-described from the drafts
+  review: draft
+- id: pothiyil
+  cls: Place
+  en: Pothiyil
+  ta: பொதியில்
+  also:
+  - Podiyil
+  - Pothigai
+  - Podhiyil
+  - பொதியம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 6
+  draft_names:
+  - podhiyil_river_bank
+  - podiyil
+  - pothiyil
+  - pothiyil_riverbank
+  source: machine-described from the drafts
+  review: draft
+- id: kakandan
+  cls: Person
+  en: Kakandan
+  ta: காகந்தன்
+  also:
+  - Kakanthan
+  - Kakandhan
+  - காகந்தன்
+  - காகந்தி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 6
+  draft_names:
+  - kakandan
+  source: machine-described from the drafts
+  review: draft
+- id: murugan_vel
+  cls: Object
+  en: Murugan's spear
+  ta: வேல்
+  also:
+  - Vel
+  - the vel
+  - Murugan's vel
+  - முருகன் வேல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - murugan_vel
+  - vel
+  - vel_spear
+  source: machine-described from the drafts
+  review: draft
+- id: bhuta_chathukkam
+  cls: Place
+  en: the Bhuta altar
+  ta: பூதசதுக்கம்
+  also:
+  - Bhuta Chathukkam
+  - Bhuta Chaturam
+  - Bhutha square
+  - பூத சதுக்கம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - bhuta_altar
+  - bhuta_chathukkam
+  source: machine-described from the drafts
+  review: draft
+- id: urvasi
+  cls: Person
+  en: Urvasi
+  ta: உருப்பசி
+  also:
+  - Urvashi
+  - Uruppasi
+  - Urvasi the cursed dancer
+  - ஊர்வசி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - cursed_woman
+  - urvasi
+  source: machine-described from the drafts
+  review: draft
+- id: sea_deity
+  cls: Deity
+  en: the sea goddess
+  ta: கடல்தெய்வம்
+  also:
+  - sea deity
+  - goddess of the sea
+  - Kadal Deivam
+  - கடல் தெய்வம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - sea_deity
+  - sea_goddess
+  source: machine-described from the drafts
+  review: draft
+- id: idakini
+  cls: Deity
+  en: Idakini
+  ta: இடாகினி
+  also:
+  - Idakini demon
+  - Dakini
+  - Idakinip pey
+  - இடாகினிப்பேய்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - idakini
+  source: machine-described from the drafts
+  review: draft
+- id: tirumal_venkatam
+  cls: Deity
+  en: Tirumal of Venkatam
+  ta: திருமால்
+  also:
+  - Tirumal
+  - Venkatesa
+  - Lord of the hill
+  - நெடியோன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - hill_deity
+  - mountain_lord
+  source: machine-described from the drafts
+  review: draft
+- id: mahisha_buffalo_demon
+  cls: Other
+  en: the buffalo demon
+  ta: எருமைத் தலையன்
+  also:
+  - Mahisha
+  - Mahishasura
+  - buffalo asura
+  - மகிடாசுரன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - angry_bull
+  - asura
+  - buffalo_demon
+  - forest_buffalo_head
+  source: machine-described from the drafts
+  review: draft
+- id: vaigai_river
+  cls: Place
+  en: Vaigai river
+  ta: வையை
+  also:
+  - Vaiyai
+  - Vaigai
+  - Vaiyai river
+  - வைகை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - vaigai_river
+  - vaigai_river_bank
+  - vaiyai_south_bank
+  source: machine-described from the drafts
+  review: draft
+- id: balarama
+  cls: Deity
+  en: Balarama
+  ta: வெள்ளை
+  also:
+  - Balaraman
+  - Vellai
+  - Baladeva
+  - பலராமன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - balarama
+  - elder_brother
+  - vellai
+  source: machine-described from the drafts
+  review: draft
+- id: takkinan
+  cls: Person
+  en: Takkinan
+  ta: தக்கினன்
+  also:
+  - Dakshinan
+  - Takkinan the Brahmin
+  - Thakkinan
+  - தக்கிணன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 5
+  draft_names:
+  - takkinan
+  source: machine-described from the drafts
+  review: draft
+- id: mavali_descendant
+  cls: Person
+  en: the descendant of Mavali
+  ta: மாவலி மரபினன்
+  also:
+  - Mavali's descendant
+  - Mahabali descendant
+  - Mavali lineage
+  - மாவலி மகன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 5
+  draft_names:
+  - mavali_descendant
+  source: machine-described from the drafts
+  review: draft
+- id: oviyachenan
+  cls: Person
+  en: Oviyachenan
+  ta: ஓவியச்சேனன்
+  also:
+  - Oviyaccenan
+  - Oviya Chenan
+  - ஓவியசேனன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 5
+  draft_names:
+  - oviyachenan
+  source: machine-described from the drafts
+  review: draft
+- id: kakandan_son
+  cls: Person
+  en: Kakandan's son
+  ta: காகந்தன் மகன்
+  also:
+  - son of Kakandan
+  - Kakandi's son
+  - காகந்தன் மைந்தன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 5
+  draft_names:
+  - kakandan_son
+  source: machine-described from the drafts
+  review: draft
+- id: cholika_enathi
+  cls: Person
+  en: Cholika Enathi
+  ta: சோழிக ஏனாதி
+  also:
+  - Colika Enathi
+  - Cozhika Enathi
+  - Cholika Yenathi
+  - சோழிய ஏனாதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 5
+  draft_names:
+  - cholika_enathi
+  - cozhika_enathi
+  source: machine-described from the drafts
+  review: draft
+- id: pidikai_street
+  cls: Place
+  en: Pidikai street
+  ta: பிடிகைத் தெரு
+  also:
+  - Pedikai street
+  - Pidikai teru
+  - பேடிகைத் தெரு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - pedikai_street
+  - pidikai_street
+  source: machine-described from the drafts
+  review: draft
+- id: kanalvari
+  cls: Other
+  en: Kanalvari (the seaside grove songs)
+  ta: கானல்வரி
+  also:
+  - Kanal vari
+  - Kaanalvari
+  - Kaveri and seagrove songs
+  - கானல் வரி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - kanalvari
+  - kanalvari_song
+  - kaveri_and_seagrove_songs
+  source: machine-described from the drafts
+  review: draft
+- id: indra_vihara
+  cls: Place
+  en: Indra Vihara
+  ta: இந்திர விகாரம்
+  also:
+  - Indra viharam
+  - Indra Vihaaram
+  - Indira Vihara
+  - இந்திர விகாரங்கள்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - indra_vihara
+  source: machine-described from the drafts
+  review: draft
+- id: ilavantikai
+  cls: Place
+  en: Ilavantikai
+  ta: இலவந்திகை
+  also:
+  - Ilavanthigai
+  - Ilavantigai
+  - Ilavandikai
+  - இலவந்திகை உய்யானம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - ilavanthigai
+  - ilavantikai
+  - ilavantikai_outside
+  source: machine-described from the drafts
+  review: draft
+- id: vishnu
+  cls: Deity
+  en: Vishnu
+  ta: திருமால்
+  also:
+  - Tirumal
+  - Thirumal
+  - Nediyon
+  - நெடியோன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - nediyon
+  - vishnu
+  source: machine-described from the drafts
+  review: draft
+- id: tavvai
+  cls: Person
+  en: Tavvai
+  ta: தவ்வை
+  also:
+  - Thavvai
+  - Tavai
+  - தவ்வையர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - tavvai
+  source: machine-described from the drafts
+  review: draft
+- id: caranas
+  cls: Group
+  en: the Charanas
+  ta: சாரணர்
+  also:
+  - Caranas
+  - Saranar
+  - Charanar
+  - சாரணர்கள்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - caranas
+  - charanas
+  source: machine-described from the drafts
+  review: draft
+- id: sibi_chola
+  cls: Person
+  en: Sibi, the Chola king
+  ta: சிபி
+  also:
+  - Sibi Chola
+  - Sibi the dove-saver
+  - Puhar king
+  - சிபிச் சோழன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - dove_relieving_one
+  - puhar_king
+  source: machine-described from the drafts
+  review: draft
+- id: neduvel_hill
+  cls: Place
+  en: Neduvel Hill
+  ta: நெடுவேள் குன்றம்
+  also:
+  - Neduvel Kunram
+  - Neduvelkunram
+  - Neduvel hill
+  - நெடுவேள் குன்று
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 4
+  draft_names:
+  - hill
+  - mountain_top
+  - neduvel_hill
+  source: machine-described from the drafts
+  review: draft
+- id: attipati
+  cls: Person
+  en: Attipati
+  ta: அத்திபதி
+  also:
+  - Atipati
+  - Adhipati
+  - Athipathi
+  - அதிபதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 4
+  draft_names:
+  - attipati
+  source: machine-described from the drafts
+  review: draft
+- id: tuchayan
+  cls: Person
+  en: Tuchayan
+  ta: துச்சயன்
+  also:
+  - Tuccayan
+  - Duchayan
+  - Tucchayan
+  - துச்சையன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 4
+  draft_names:
+  - tuchayan
+  source: machine-described from the drafts
+  review: draft
+- id: yugi
+  cls: Person
+  en: Yugi
+  ta: யூகி
+  also:
+  - Yuki
+  - Yugi the brahmin of Ujjain
+  - Yugi Antanan
+  - யூகி அந்தணன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 4
+  draft_names:
+  - yugi
+  - yuki
+  source: machine-described from the drafts
+  review: draft
+- id: naga_mountain
+  cls: Place
+  en: the Naga mountain
+  ta: நாக மலை
+  also:
+  - demon mountain
+  - Naga hill
+  - Nagamalai
+  - நாகமலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 4
+  draft_names:
+  - demon_mountain
+  - naga_mountain
+  source: machine-described from the drafts
+  review: draft
+- id: kuccharak_kutikai
+  cls: Place
+  en: the Kuccharak Kutikai
+  ta: குச்சரக் குடிகை
+  also:
+  - Kuccharak Kudikai
+  - Gujarat hut
+  - Kuccharakkudikai
+  - குச்சரக்குடிகை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 4
+  draft_names:
+  - kuccharak_kudikai
+  - kuccharak_kutikai
+  source: machine-described from the drafts
+  review: draft
+- id: sanamitran
+  cls: Person
+  en: Sanamitran
+  ta: சனமித்திரன்
+  also:
+  - Sanamitra
+  - Chanamitran
+  - Janamitran
+  - சநமித்திரன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 4
+  draft_names:
+  - sanamitran
+  source: machine-described from the drafts
+  review: draft
+- id: southern_breeze
+  cls: Other
+  en: the southern breeze
+  ta: தென்றல்
+  also:
+  - south breeze
+  - south wind
+  - Tenral
+  - Thendral
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - south_breeze
+  - southern_breeze
+  source: machine-described from the drafts
+  review: draft
+- id: crescent_moon
+  cls: Other
+  en: the crescent moon
+  ta: குழவித் திங்கள்
+  also:
+  - young moon
+  - new moon
+  - crescent
+  - பிறை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - crescent_moon
+  source: machine-described from the drafts
+  review: draft
+- id: muzhavu
+  cls: Object
+  en: the muzhavu drum
+  ta: முழவு
+  also:
+  - muzhavu
+  - mulavu
+  - muzhavam
+  - முழவம்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - muzhavu
+  - muzhavu_drum
+  source: machine-described from the drafts
+  review: draft
+- id: earth_maiden
+  cls: Deity
+  en: the Earth maiden
+  ta: இருநில மடந்தை
+  also:
+  - Earth goddess
+  - Bhumi Devi
+  - Bhudevi
+  - நிலமடந்தை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - earth_maiden
+  source: machine-described from the drafts
+  review: draft
+- id: guardian_bhuta
+  cls: Deity
+  en: the guardian bhuta
+  ta: காவல் பூதம்
+  also:
+  - guardian spirit
+  - Puhar bhuta
+  - bhutam
+  - பூதம்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - guardian_bhuta
+  source: machine-described from the drafts
+  review: draft
+- id: pattimandapam
+  cls: Place
+  en: Pattimandapam
+  ta: பட்டிமண்டபம்
+  also:
+  - Patti Mandapam
+  - Pattimandapam and torana gate
+  - Pattimantapam
+  - பட்டி மண்டபம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - pattimandapam_and_torana_gate
+  source: machine-described from the drafts
+  review: draft
+- id: ilanji_mandram
+  cls: Place
+  en: Ilanji Mandram
+  ta: இலஞ்சி மன்றம்
+  also:
+  - Ilanji Manram
+  - Ilanji assembly
+  - Ilanchi Mandram
+  - இலஞ்சி மன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - ilanji_mandram
+  - ilanji_manram
+  source: machine-described from the drafts
+  review: draft
+- id: indra
+  cls: Deity
+  en: Indra
+  ta: இந்திரன்
+  also:
+  - Intiran
+  - Lord of the gods
+  - Amarar Thalaivan
+  - இந்திரன்
+  kind: false
+  same_as: indra
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - capital_guarding_king
+  - indra_garland
+  - lord_of_gods
+  source: machine-described from the drafts
+  review: draft
+- id: great_bhuta
+  cls: Deity
+  en: the great bhuta
+  ta: மாபெரும் பூதம்
+  also:
+  - Maaperum Bhutham
+  - great demon
+  - Puthan
+  - பூதம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - great_bhuta
+  source: machine-described from the drafts
+  review: draft
+- id: narada
+  cls: Deity
+  en: Narada
+  ta: நாரதன்
+  also:
+  - Naratan
+  - Naradanar
+  - Narada the sage
+  - நாரதனார்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - narada
+  - narada_song
+  source: machine-described from the drafts
+  review: draft
+- id: bharati
+  cls: Deity
+  en: Bharati
+  ta: பாரதி
+  also:
+  - Bharathi
+  - Parathi
+  - Bharati the dancer
+  - பாரதி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - bharati
+  source: machine-described from the drafts
+  review: draft
+- id: brahma
+  cls: Deity
+  en: Brahma
+  ta: திசைமுகன்
+  also:
+  - Thisaimugan
+  - Cemmalar Mutiyon
+  - Four-faced god
+  - பிரம்மா
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - brahma
+  source: machine-described from the drafts
+  review: draft
+- id: pandarangam_dance
+  cls: Other
+  en: the Pandarangam dance
+  ta: பாண்டரங்கம்
+  also:
+  - Pandarangam
+  - Paandarangam
+  - Pandaranga dance
+  - பாண்டரங்கக் கூத்து
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - pandarangam_dance
+  source: machine-described from the drafts
+  review: draft
+- id: vanan_city
+  cls: Place
+  en: Vanan's city
+  ta: வாணன் பேர் ஊர்
+  also:
+  - Vanapuram
+  - City of Banasura
+  - Vaanan's city
+  - வாணபுரம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - vanan_city
+  source: machine-described from the drafts
+  review: draft
+- id: koorram
+  cls: Deity
+  en: the figure of Death
+  ta: கூற்றம்
+  also:
+  - Kootram
+  - Kuuttram
+  - Yama
+  - கூற்றுவன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - koorram_figure
+  source: machine-described from the drafts
+  review: draft
+- id: bodhi_tree
+  cls: Object
+  en: the Bodhi tree
+  ta: போதி
+  also:
+  - Bodhi
+  - Bo tree
+  - Pothi
+  - போதிமூலம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - bodhi_tree
+  - bodhi_tree_shade
+  source: machine-described from the drafts
+  review: draft
+- id: kaveri_south_bank
+  cls: Place
+  en: the south bank of the Kaveri
+  ta: காவிரியின் தென்கரை
+  also:
+  - Kaveri south bank
+  - Cauvery south bank
+  - Kaviri thenkarai
+  - காவிரித் தென்கரை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - kaveri_south_bank
+  source: machine-described from the drafts
+  review: draft
+- id: purancirai_varanam
+  cls: Place
+  en: Purancirai Varanam
+  ta: புறஞ்சிறை வாரணம்
+  also:
+  - Puranchirai
+  - Purancirai
+  - Puranjirai Varanam
+  - புறஞ்சிறை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - purancirai_varanam
+  source: machine-described from the drafts
+  review: draft
+- id: pandya_country
+  cls: Place
+  en: the Pandya country
+  ta: பாண்டிய நாடு
+  also:
+  - Pandya land
+  - Pandiya Nadu
+  - Pandi Nadu
+  - தென்னவர் நாடு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - pandya_land
+  source: machine-described from the drafts
+  review: draft
+- id: vaigai
+  cls: Place
+  en: the Vaigai river
+  ta: வையை
+  also:
+  - Vaigai
+  - Vaiyai
+  - Vaigai river
+  - வையைப் பேரியாறு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - vaigai
+  - vaigai_bank
+  source: machine-described from the drafts
+  review: draft
+- id: aged_brahmin
+  cls: Person
+  en: the aged brahmin
+  ta: தானங் கொள்ளும் அந்தணன்
+  also:
+  - old brahmin
+  - brahmin who received alms
+  - Karavan brahmin
+  - முதிய அந்தணன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - brahmin
+  - brahmin_aged
+  source: machine-described from the drafts
+  review: draft
+- id: ettichayalan_house
+  cls: Place
+  en: Ettichayalan's house
+  ta: எட்டிச் சாயலன் மனை
+  also:
+  - Etti Cayalan's house
+  - Ettichayalan home
+  - House of Ettichayalan
+  - எட்டி சாயலன் இல்லம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - etti_cayalan_house
+  - ettichayalan_house
+  source: machine-described from the drafts
+  review: draft
+- id: earth_goddess
+  cls: Deity
+  en: the Earth goddess
+  ta: மண்ணக மடந்தை
+  also:
+  - Earth maiden
+  - Mannaga Madanthai
+  - Bhumi devi
+  - இருநில மடந்தை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - earth_goddess
+  source: machine-described from the drafts
+  review: draft
+- id: kurundu_tree
+  cls: Object
+  en: the kurundu tree
+  ta: குருந்து
+  also:
+  - Kurundu
+  - kurundam tree
+  - wild lime tree
+  - குருந்த மரம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - kurundu_tree
+  source: machine-described from the drafts
+  review: draft
+- id: kannagi_left_breast
+  cls: Object
+  en: Kannagi's left breast
+  ta: இடமுலை
+  also:
+  - left breast
+  - Kannagi breast
+  - Idamulai
+  - இடது முலை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - breast
+  - kannagi_left_breast
+  source: machine-described from the drafts
+  review: draft
+- id: krauncha_mountain
+  cls: Place
+  en: Krauncha mountain
+  ta: குருகு பெயர்க்குன்றம்
+  also:
+  - Kraunch hill
+  - Krauncha hill
+  - Kurugu Peyar Kundram
+  - கிரௌஞ்ச மலை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 3
+  draft_names:
+  - kraunch_hill
+  - krauncha_mountain
+  source: machine-described from the drafts
+  review: draft
+- id: agastya
+  cls: Person
+  en: Agastya
+  ta: அகத்தியன்
+  also:
+  - Agasthya
+  - Akattiyan
+  - Agattiyar
+  - அகத்தியர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - agastya
+  source: machine-described from the drafts
+  review: draft
+- id: bhuta
+  cls: Group
+  en: bhutas
+  ta: பூதம்
+  also:
+  - bhuta
+  - Bhootham
+  - Putham
+  - பூதங்கள்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - bhuta
+  source: machine-described from the drafts
+  review: draft
+- id: kaman
+  cls: Deity
+  en: Kaman
+  ta: காமன்
+  also:
+  - Kama
+  - Kamadeva
+  - Kaaman
+  - மன்மதன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - kaman
+  source: machine-described from the drafts
+  review: draft
+- id: lotus_seat_garden
+  cls: Object
+  en: the lotus seat
+  ta: தாமரைப் பீடிகை
+  also:
+  - lotus pedestal
+  - Tamarai Pidikai
+  - lotus seat details
+  - தாமரைப் பீடம்
+  kind: false
+  same_as: kanchi_seat
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - details_of_lotus_seat
+  - lotus_seat
+  source: machine-described from the drafts
+  review: draft
+- id: pedu_dance
+  cls: Other
+  en: the Pedu dance
+  ta: பேடு
+  also:
+  - Pedi dance
+  - Pedu
+  - Pedi dancer
+  - பேடிக் கூத்து
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - pedi_dancer
+  - pedu
+  source: machine-described from the drafts
+  review: draft
+- id: navalam_island
+  cls: Place
+  en: Navalam island
+  ta: நாவலம்
+  also:
+  - Navalam
+  - Naavalam Island
+  - Jambudvipa
+  - நாவலந்தீவு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - navalam_island
+  source: machine-described from the drafts
+  review: draft
+- id: vatsa_king
+  cls: Person
+  en: the king of Vatsa
+  ta: வத்தவன்
+  also:
+  - Vatsa king
+  - Vatsa
+  - Vatsa raja
+  - வத்தவ மன்னன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - vatsa
+  source: machine-described from the drafts
+  review: draft
+- id: indra_tiruvan
+  cls: Person
+  en: Indra Tiruvan
+  ta: இந்திர திருவன்
+  also:
+  - Indira Tiruvan
+  - Indiran Tiruvan
+  - இந்திரதிருவன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - indra_tiruvan
+  source: machine-described from the drafts
+  review: draft
+- id: vindhya_mountain
+  cls: Place
+  en: the Vindhya mountain
+  ta: விந்தமலை
+  also:
+  - Vindhya
+  - Vindhya hills
+  - Vintam
+  - விந்தம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - that_mountain
+  - vindhya_mountain
+  source: machine-described from the drafts
+  review: draft
+- id: parasurama
+  cls: Person
+  en: Parasurama
+  ta: பரசுராமன்
+  also:
+  - Parashurama
+  - Parasuraman
+  - the axe-bearer
+  - மழுவாள் நெடியோன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - axe_bearer
+  - parasurama
+  source: machine-described from the drafts
+  review: draft
+- id: nine_merchants
+  cls: Group
+  en: the nine merchants
+  ta: ஒன்பது வணிகர்
+  also:
+  - nine chettis
+  - nine Chettis
+  - nine traders
+  - ஒன்பது செட்டிகள்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - nine_chettis
+  - nine_merchants
+  source: machine-described from the drafts
+  review: draft
+- id: sangaman_wife
+  cls: Person
+  en: Sangaman's wife
+  ta: சங்கமன் மனைவி
+  also:
+  - wife of Sangaman
+  - Sangamans wife
+  - Sangaman's consort
+  - சங்கமன் மனையாள்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - sangaman_wife
+  source: machine-described from the drafts
+  review: draft
+- id: pandu_kambalam
+  cls: Object
+  en: the Pandu Kambalam
+  ta: பாண்டு கம்பளம்
+  also:
+  - Pandukambalam
+  - Pandu Kambala stone
+  - Pandu Kambala Silai
+  - பண்டு கம்பளம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - pandu_kambalam
+  source: machine-described from the drafts
+  review: draft
+- id: future_buddha
+  cls: Deity
+  en: the future Buddha
+  ta: எதிர்கால புத்தர்
+  also:
+  - Buddha to be
+  - Bodhisattva
+  - Buddha-to-be
+  - போதிசத்துவன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 3
+  draft_names:
+  - future_buddha
+  source: machine-described from the drafts
+  review: draft
+- id: periyon
+  cls: Deity
+  en: Periyon (the Great One)
+  ta: பெரியோன்
+  also:
+  - Periyon
+  - Periyavan
+  - the Great One
+  - பெரியவன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - periyon
+  source: machine-described from the drafts
+  review: draft
+- id: kama_sugarcane_bow
+  cls: Object
+  en: Kama's sugarcane bow
+  ta: கருப்புவில்
+  also:
+  - sugarcane bow
+  - Kamas bow
+  - Manmatha's bow
+  - கரும்பு வில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - sugarcane_bow
+  source: machine-described from the drafts
+  review: draft
+- id: jayanta
+  cls: Person
+  en: Jayanta
+  ta: சயந்தன்
+  also:
+  - Jayantan
+  - Sayanthan
+  - Indra's son
+  - இந்திர சிறுவன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - indra_son
+  - jayanta
+  source: machine-described from the drafts
+  review: draft
+- id: tannumai_drum
+  cls: Object
+  en: the tannumai drum
+  ta: தண்ணுமை
+  also:
+  - thannumai
+  - tannumai
+  - tanumai drum
+  - தண்ணுமை முழவு
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - thannumai_drum
+  source: machine-described from the drafts
+  review: draft
+- id: amanthirikai
+  cls: Object
+  en: the amantirikai
+  ta: ஆமந்திரிகை
+  also:
+  - amanthirikai
+  - amandirikai
+  - aamanthirikai
+  - ஆமந்திரிகை இசை
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - amanthirikai
+  source: machine-described from the drafts
+  review: draft
+- id: pandya_lineage
+  cls: Group
+  en: the Pandya lineage
+  ta: தென்னர் குலம்
+  also:
+  - Pandya clan
+  - Pandiyar clan
+  - Tennar lineage
+  - பாண்டியர் குலம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - pandya_clan
+  - pandya_lineage
+  source: machine-described from the drafts
+  review: draft
+- id: kama_bow
+  cls: Object
+  en: Kama's flower arrows and cane bow
+  ta: கருப்புவில்
+  also:
+  - flower arrows and sugarcane bow
+  - Kama's bow
+  - Manmatha's bow and arrows
+  - மலர் அம்பு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - flower_arrows_and_cane_bow
+  - flower_arrows_and_sugarcane_bow
+  source: machine-described from the drafts
+  review: draft
+- id: five_mandrams
+  cls: Place
+  en: the five mandrams
+  ta: ஐவகை மன்றம்
+  also:
+  - five assembly halls
+  - five public squares of Puhar
+  - aivagai mandram
+  - ஐம்பெருமன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - five_mandrams
+  source: machine-described from the drafts
+  review: draft
+- id: asuras
+  cls: Group
+  en: the asuras
+  ta: அசுரர்
+  also:
+  - asurar
+  - demons
+  - asuras
+  - அசுரர்கள்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - asuras
+  source: machine-described from the drafts
+  review: draft
+- id: thirumal
+  cls: Deity
+  en: Tirumal
+  ta: திருமால்
+  also:
+  - Thirumal
+  - Thirumaal
+  - Vishnu
+  - விஷ்ணு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - thirumal
+  source: machine-described from the drafts
+  review: draft
+- id: indrani
+  cls: Deity
+  en: Indrani
+  ta: இந்திராணி
+  also:
+  - Ayirani
+  - Aindrani
+  - Sachi
+  - அயிராணி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - ayirani
+  - indrani
+  source: machine-described from the drafts
+  review: draft
+- id: musk_paste
+  cls: Material
+  en: musk paste
+  ta: மான்மதக் கொழுஞ்சேறு
+  also:
+  - musk
+  - musk paste and lac dye
+  - musk ointment
+  - கத்தூரி
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - musk_paste
+  - musk_paste_and_lac_dye
+  source: machine-described from the drafts
+  review: draft
+- id: toe_ornaments
+  cls: Object
+  en: toe ornaments
+  ta: கால்விரல் அணி
+  also:
+  - toe rings
+  - toe-rings
+  - toe ornament
+  - மெட்டி
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - toe_ornaments
+  source: machine-described from the drafts
+  review: draft
+- id: uraiyur_nochchi_grove
+  cls: Place
+  en: the Nochchi grove at Uraiyur
+  ta: உறையூர் நொச்சிவனம்
+  also:
+  - Uraiyur Nochchi
+  - Nochchi grove
+  - Nochi grove
+  - நொச்சிச் சோலை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - uraiyur_nochchi
+  source: machine-described from the drafts
+  review: draft
+- id: ganga_himalaya
+  cls: Place
+  en: the Ganga and the Himalaya
+  ta: கங்கையும் இமயமும்
+  also:
+  - Ganga and Himalaya
+  - Ganges and Himalaya
+  - Ganga-Himalaya
+  - கங்கை இமயம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - ganga_and_himalaya
+  - ganga_himalaya
+  source: machine-described from the drafts
+  review: draft
+- id: indra_treatise
+  cls: Object
+  en: Indra's treatise
+  ta: விண்ணவர் கோமான் விழுநூல்
+  also:
+  - Indra text
+  - Indra's text
+  - Aindra treatise
+  - இந்திர நூல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - indra_text
+  - indra_treatise
+  source: machine-described from the drafts
+  review: draft
+- id: pavakaranam
+  cls: Place
+  en: Pavakaranam
+  ta: பவகாரணம்
+  also:
+  - Bhavakarani
+  - Pavakarani
+  - Bhavakarana pond
+  - பவகாரணி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - bhavakarani
+  - pavakaranam
+  source: machine-described from the drafts
+  review: draft
+- id: ittasiddhi
+  cls: Other
+  en: Ittasiddhi
+  ta: இட்ட சித்தி
+  also:
+  - Ishta Siddhi
+  - ishta siddhi
+  - இஷ்ட சித்தி
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - ishta_siddhi
+  - ittasiddhi
+  source: machine-described from the drafts
+  review: draft
+- id: podiyil_lord
+  cls: Person
+  en: the lord of Podiyil
+  ta: பொதியில் தலைவன்
+  also:
+  - Podiyil lord
+  - Podiyil hill lord
+  - பொதியிற் செல்வன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - podiyil_lord
+  source: machine-described from the drafts
+  review: draft
+- id: viruttakopala
+  cls: Person
+  en: Viruttakopala
+  ta: விருத்தகோபாலன்
+  also:
+  - Viruddhakopala
+  - Virutta Kopalan
+  - விருத்த கோபாலன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - viruttakopala
+  source: machine-described from the drafts
+  review: draft
+- id: purainjirai
+  cls: Place
+  en: Purainjirai
+  ta: புறஞ்சிறை
+  also:
+  - Purainjirai town
+  - Puranjirai
+  - Purainjirai Nagar
+  - புறஞ்சிறை நகர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - purainjirai_town
+  source: machine-described from the drafts
+  review: draft
+- id: tateru_mandram
+  cls: Place
+  en: the dung-heap common
+  ta: தாதெரு மன்றம்
+  also:
+  - Tateru Mandram
+  - Thatheru Mandram
+  - dung heap common
+  - தாதெருமன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - dung_heap_common
+  - tateru_mandram
+  source: machine-described from the drafts
+  review: draft
+- id: pitikai_street
+  cls: Place
+  en: Pitikai Street
+  ta: பீடிகைத் தெரு
+  also:
+  - Pidikai Street
+  - Pitikai Teru
+  - Peedikai Street
+  - பீடிகைத்தெரு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - pidikai_street
+  - pitikai_street
+  source: machine-described from the drafts
+  review: draft
+- id: queen_palace
+  cls: Place
+  en: the queen's palace
+  ta: கோப்பெருந்தேவி கோயில்
+  also:
+  - queen's palace
+  - palace of the chief queen
+  - Koperundevi's palace
+  - கோப்பெருந்தேவி கோயில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - queen_palace
+  source: machine-described from the drafts
+  review: draft
+- id: drunk_executioner
+  cls: Person
+  en: the drunk executioner
+  ta: கொலையாளன்
+  also:
+  - drunken executioner
+  - executioner
+  - the executioner
+  - வெட்டியான்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - drunk_executioner
+  source: machine-described from the drafts
+  review: draft
+- id: ayarpadi
+  cls: Place
+  en: Ayarpadi
+  ta: ஆயர்பாடி
+  also:
+  - Ayarpadi
+  - Ayar Padi
+  - cowherd village
+  - ஆய்ப்பாடி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - ayarpadi
+  source: machine-described from the drafts
+  review: draft
+- id: pandavas
+  cls: Group
+  en: the Pandavas
+  ta: பஞ்சவர்
+  also:
+  - Pandavas
+  - Panchavar
+  - five Pandavas
+  - பாண்டவர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - pandavas
+  source: machine-described from the drafts
+  review: draft
+- id: kauravas
+  cls: Group
+  en: the Kauravas
+  ta: நூற்றுவர்
+  also:
+  - Kauravas
+  - hundred Kauravas
+  - Nurruvar
+  - கௌரவர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - hundred_kauravas
+  - kauravas
+  source: machine-described from the drafts
+  review: draft
+- id: vaigai_ford
+  cls: Place
+  en: the Vaigai ford
+  ta: வைகைத் துறை
+  also:
+  - Vaigai crossing
+  - Vaigai river ford
+  - Vaigai bathing ghat
+  - வையைத் துறை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - vaigai_ford
+  source: machine-described from the drafts
+  review: draft
+- id: gate_bell
+  cls: Object
+  en: the gate bell
+  ta: கடைமணி
+  also:
+  - palace gate bell
+  - bell of justice
+  - kadaimani
+  - வாயிற் கடைமணி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - bell
+  - gate_bell
+  source: machine-described from the drafts
+  review: draft
+- id: kshatriya_bhuta
+  cls: Deity
+  en: the kshatriya spirit
+  ta: அரைசு முடி ஒழிந்த பூதம்
+  also:
+  - second god
+  - Kshatriya Bhuta
+  - the second bhuta
+  - க்ஷத்திரிய பூதம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - second_god
+  source: machine-described from the drafts
+  review: draft
+- id: keerantai_wife
+  cls: Person
+  en: Keerantai's wife
+  ta: கீரந்தையின் மனைவி
+  also:
+  - wife of Keerantai
+  - Kirantai's wife
+  - Keeranthai's wife
+  - கீரந்தை மனைவி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - keerantai_wife
+  source: machine-described from the drafts
+  review: draft
+- id: bodhi_mandram
+  cls: Place
+  en: the Bodhi platform
+  ta: போதி மன்றம்
+  also:
+  - Bodhi Mandram
+  - Bodhi assembly
+  - Bodhi tree platform
+  - போதிமன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - bodhi_mandram
+  source: machine-described from the drafts
+  review: draft
+- id: korravai_gate
+  cls: Place
+  en: the Korravai gate
+  ta: கொற்றவை வாயில்
+  also:
+  - Kotravai gate
+  - Kottravai gate
+  - Korravai temple gate
+  - கொற்றவை வாசல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - kotravai_gate
+  - kottravai_gate
+  source: machine-described from the drafts
+  review: draft
+- id: sura_demon
+  cls: Person
+  en: the demon Sura
+  ta: சூர்
+  also:
+  - Sura
+  - asura king
+  - Surapadman
+  - சூரன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 2
+  draft_names:
+  - asura_king
+  - sura_demon
+  source: machine-described from the drafts
+  review: draft
+- id: jambu_tree
+  cls: Object
+  en: the jambu tree
+  ta: சம்பு
+  also:
+  - Jambu tree
+  - Naval tree
+  - jamun tree
+  - நாவல் மரம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - jambu_tree
+  source: machine-described from the drafts
+  review: draft
+- id: sampati
+  cls: Person
+  en: Sampati
+  ta: சம்பாதி
+  also:
+  - Sampathi
+  - Campati
+  - the vulture Sampati
+  - சம்பாதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - sampati
+  source: machine-described from the drafts
+  review: draft
+- id: sampati_vanam
+  cls: Place
+  en: Sampati Vanam
+  ta: சம்பாதி வனம்
+  also:
+  - Sampati forest
+  - Sampati grove
+  - Campati Vanam
+  - சம்பாதிவனம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - sampati_vanam
+  source: machine-described from the drafts
+  review: draft
+- id: kavera_vanam
+  cls: Place
+  en: Kavera Vanam
+  ta: கவேர வனம்
+  also:
+  - Kavera forest
+  - Kavera grove
+  - Kaveran's forest
+  - கவேரவனம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - kavera_vanam
+  source: machine-described from the drafts
+  review: draft
+- id: sarngalan
+  cls: Person
+  en: Sarngalan
+  ta: சார்ங்கலன்
+  also:
+  - Sarngalan
+  - Sarngalan the traveller
+  - Charngalan
+  - சாரங்கலன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - sarngalan
+  source: machine-described from the drafts
+  review: draft
+- id: kayankarai
+  cls: Place
+  en: Kayankarai
+  ta: காயங்கரை
+  also:
+  - Kayankarai river
+  - Kayankarai bank
+  - Kayamkarai
+  - காயங்கரை ஆறு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - kayankarai
+  - kayankarai_river
+  source: machine-described from the drafts
+  review: draft
+- id: naga_nadu
+  cls: Place
+  en: Naga Nadu
+  ta: நாகநாடு
+  also:
+  - Naga netherworld
+  - Nagaloka
+  - Naga land
+  - நாக நாடு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - naga_nadu
+  - naga_netherworld
+  source: machine-described from the drafts
+  review: draft
+- id: idavayam
+  cls: Place
+  en: Idavayam
+  ta: இடவயம்
+  also:
+  - Itavayam
+  - Idavayam city
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - idavayam
+  source: machine-described from the drafts
+  review: draft
+- id: ratnadvipa
+  cls: Place
+  en: Ratnadvipa
+  ta: இரத்தினத் தீவம்
+  also:
+  - Ratna Island
+  - Ratnadveepa
+  - இரத்தினத் தீவு
+  - இரத்தினதீவம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - ratna_island
+  - ratnadvipa
+  source: machine-described from the drafts
+  review: draft
+- id: tusita_world
+  cls: Place
+  en: the Tusita world
+  ta: துடித உலகம்
+  also:
+  - Tusita heaven
+  - Tushita
+  - துடிதலோகம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - tusita_world
+  source: machine-described from the drafts
+  review: draft
+- id: acalan
+  cls: Person
+  en: Acalan
+  ta: அசலன்
+  also:
+  - Asalan
+  - Achalan
+  - அசலன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - asalan
+  source: machine-described from the drafts
+  review: draft
+- id: sringi
+  cls: Person
+  en: Sringi
+  ta: சிருங்கி
+  also:
+  - Shringi
+  - Sirungi
+  - Cirungi
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - sringi
+  source: machine-described from the drafts
+  review: draft
+- id: virinji
+  cls: Person
+  en: Virinji
+  ta: விரிஞ்சி
+  also:
+  - Virinchi
+  - Virinci
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - virinji
+  source: machine-described from the drafts
+  review: draft
+- id: kesakambalan
+  cls: Person
+  en: Kesakambalan
+  ta: கேசகம்பளன்
+  also:
+  - Kesakambala
+  - Kesakambalin
+  - கேசகம்பளன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - kesakambalan
+  source: machine-described from the drafts
+  review: draft
+- id: vidyadhara_city
+  cls: Place
+  en: the Vidyadhara city of the north
+  ta: விஞ்சை மா நகர்
+  also:
+  - Vidyadhara northern city
+  - Vinjai city
+  - விஞ்சையர் நகர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - vidyadhara_city
+  - vidyadhara_northern_city
+  source: machine-described from the drafts
+  review: draft
+- id: aticari_house
+  cls: Place
+  en: Atirai's house
+  ta: ஆதிரை மனை
+  also:
+  - Aticari's house
+  - Adirai's house
+  - ஆதிரை இல்லம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - aticari_house
+  - house
+  source: machine-described from the drafts
+  review: draft
+- id: kanchanapuram
+  cls: Place
+  en: Kanchanapuram
+  ta: காஞ்சனபுரம்
+  also:
+  - Kanjanapuram
+  - Kancanapuram
+  - காஞ்சனபுரக் கடி நகர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - kanchanapuram
+  source: machine-described from the drafts
+  review: draft
+- id: mutiyol_kottam
+  cls: Place
+  en: Mutiyol Kottam
+  ta: முதியோள் கோட்டம்
+  also:
+  - Muthiyol Kottam
+  - shrine of the old woman
+  - Mudiyol Kottam
+  - முதியோள் கோயில்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - mutiyol_kottam
+  - old_woman_shrine
+  source: machine-described from the drafts
+  review: draft
+- id: svaha
+  cls: Deity
+  en: Svaha
+  ta: சுவாகை
+  also:
+  - Swaha
+  - Agni's wife
+  - சுவாகா
+  - அங்கி மனையாள்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - agni_wife
+  source: machine-described from the drafts
+  review: draft
+- id: muthiyal_kottam
+  cls: Place
+  en: Mutiyol Kottam
+  ta: முதியாள் கோட்டம்
+  also:
+  - Muthiyal Kottam
+  - Muthiyal temple
+  - Mutiyal Kottam
+  - முதியாள் கோயில்
+  kind: false
+  same_as: mutiyol_kottam
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - muthiyal_kottam
+  - muthiyal_temple
+  source: machine-described from the drafts
+  review: draft
+- id: ilangon
+  cls: Person
+  en: Ilangon
+  ta: இளங்கோன்
+  also:
+  - Ilankon
+  - Ilango
+  - இளங்கோ
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - ilangon
+  source: machine-described from the drafts
+  review: draft
+- id: ulaga_aravi
+  cls: Place
+  en: Ulaga Aravi
+  ta: உலக அறவி
+  also:
+  - Ulaka Aravi
+  - Ulaga Arali
+  - public rest house
+  - உலக அறவி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - ulaga_aravi
+  source: machine-described from the drafts
+  review: draft
+- id: bhuta_chaturam
+  cls: Place
+  en: Bhuta Chaturam
+  ta: பூத சதுக்கம்
+  also:
+  - Puta Catukkam
+  - Bhootha Chathuram
+  - Bhuta Square
+  - பூதசதுக்கம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - bhuta_chaturam
+  source: machine-described from the drafts
+  review: draft
+- id: aykkudi
+  cls: Place
+  en: Aykkudi
+  ta: ஆய்க்குடி
+  also:
+  - Aykkudi settlement
+  - Aaykudi
+  - Ayarpadi
+  - ஆயர்குடி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - aykkudi
+  - aykkudi_settlement
+  source: machine-described from the drafts
+  review: draft
+- id: arhat_jina
+  cls: Deity
+  en: the Arhat (the Jina)
+  ta: அருகன்
+  also:
+  - Arugan
+  - Arhat
+  - Jina
+  - அருகதேவன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - nigantha_lord
+  source: machine-described from the drafts
+  review: draft
+- id: dharmavana
+  cls: Place
+  en: Dharmavana
+  ta: தருமவனம்
+  also:
+  - Dharma grove
+  - Dharmadhavana
+  - Dharmavanam
+  - அறவனம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 2
+  draft_names:
+  - dharma_grove
+  - dharmadhavana
+  source: machine-described from the drafts
+  review: draft
+- id: kunavayil_kottam
+  cls: Place
+  en: Kunavayil Kottam
+  ta: குணவாயிற் கோட்டம்
+  also:
+  - Kunavayil temple
+  - Gunavayil Kottam
+  - Kunavayil Koṭṭam
+  - குணவாயில் கோட்டம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kunavayil_temple
+  source: machine-described from the drafts
+  review: draft
+- id: velliyambalam
+  cls: Place
+  en: Velliyambalam
+  ta: வெள்ளியம்பலம்
+  also:
+  - Velliambalam
+  - Silver Hall
+  - silver hall of Madurai
+  - வெள்ளி அம்பலம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - velliyambalam
+  source: machine-described from the drafts
+  review: draft
+- id: three_crowned_kings
+  cls: Group
+  en: the three crowned kings
+  ta: முடிகெழு வேந்தர் மூவர்
+  also:
+  - Muventar
+  - three Tamil kings
+  - மூவேந்தர்
+  - மூவர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - three_crowned_kings
+  source: machine-described from the drafts
+  review: draft
+- id: meru
+  cls: Place
+  en: Mount Meru
+  ta: மேரு
+  also:
+  - Meru
+  - Maha Meru
+  - மேருமலை
+  - மேரு மலை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - meru
+  source: machine-described from the drafts
+  review: draft
+- id: arundhati
+  cls: Person
+  en: Arundhati
+  ta: அருந்ததி
+  also:
+  - Arundati
+  - Arunthathi
+  - வடமீன்
+  - அருந்ததி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - arundhati
+  source: machine-described from the drafts
+  review: draft
+- id: paratar
+  cls: Group
+  en: the Paratar merchants
+  ta: பரதர்
+  also:
+  - Paratavar
+  - Paradhar
+  - Paratar
+  - பரதவர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - paratar_merchants
+  source: machine-described from the drafts
+  review: draft
+- id: indra_vajra
+  cls: Object
+  en: Indra's thunderbolt
+  ta: தெய்வக் காவல் படை
+  also:
+  - vajra
+  - vajrayudha
+  - Indra's vajra
+  - வச்சிரப்படை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - divine_weapon
+  source: machine-described from the drafts
+  review: draft
+- id: maruvurpakkam
+  cls: Place
+  en: Maruvurpakkam
+  ta: மருவூர்ப்பாக்கம்
+  also:
+  - Maruvur Pakkam
+  - Maruvur-pakkam
+  - மருவூர்ப் பாக்கம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - maruvurpakkam
+  source: machine-described from the drafts
+  review: draft
+- id: velliyidai_manram
+  cls: Place
+  en: Velliyidai Manram
+  ta: வெள்ளிடை மன்றம்
+  also:
+  - Velliyidai Mandram
+  - Velliyambalam
+  - வெள்ளிடைமன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - velliyidai_manram
+  source: machine-described from the drafts
+  review: draft
+- id: nedungal_mandram
+  cls: Place
+  en: Nedungal Mandram
+  ta: நெடுங்கல் மன்றம்
+  also:
+  - Nedungal Manram
+  - the long-stone hall
+  - நெடுங்கல்மன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - nedungal_mandram
+  source: machine-described from the drafts
+  review: draft
+- id: pavai_statue
+  cls: Object
+  en: the weeping statue
+  ta: பாவை
+  also:
+  - pavai
+  - the weeping doll
+  - the weeping image
+  - பாவை நின்று அழுஉம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - pavai_statue
+  source: machine-described from the drafts
+  review: draft
+- id: pavai_mandram
+  cls: Place
+  en: Pavai Mandram
+  ta: பாவை மன்றம்
+  also:
+  - Pavai Manram
+  - the hall of the statue
+  - பாவைமன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - pavai_mandram
+  source: machine-described from the drafts
+  review: draft
+- id: white_elephant_kottam
+  cls: Place
+  en: the White Elephant temple
+  ta: வெள்ளையானைக் கோட்டம்
+  also:
+  - Velliyanai Kottam
+  - white elephant shrine
+  - வெள்ளானைக் கோட்டம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - white_elephant_kottam
+  source: machine-described from the drafts
+  review: draft
+- id: airavata_temple
+  cls: Place
+  en: the Airavata temple
+  ta: ஐராவதக் கோட்டம்
+  also:
+  - Airavatam temple
+  - Airavata Kottam
+  - ஐராவதம் கோட்டம்
+  kind: false
+  same_as: white_elephant_kottam
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - airavata_temple
+  source: machine-described from the drafts
+  review: draft
+- id: tarunilai_temple
+  cls: Place
+  en: the Tarunilai temple
+  ta: தருநிலைக் கோட்டம்
+  also:
+  - Tarunilai Kottam
+  - Tharunilai temple
+  - தருநிலைக்கோட்டம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - tarunilai_temple
+  source: machine-described from the drafts
+  review: draft
+- id: silver_mountain
+  cls: Place
+  en: the Silver Mountain
+  ta: வெள்ளிமலை
+  also:
+  - silver hill
+  - Vellimalai
+  - Vidyadhara mountain
+  - வெள்ளிப்பொருப்பு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - silver_mountain
+  source: machine-described from the drafts
+  review: draft
+- id: amaravati
+  cls: Place
+  en: Amaravati
+  ta: அமராபதி
+  also:
+  - Amaravathi
+  - Indra's city
+  - அமரா பதி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - amaravati
+  source: machine-described from the drafts
+  review: draft
+- id: toriya_madantai
+  cls: Other
+  en: the Toriya Madantai song
+  ta: தோரிய மடந்தை வாரம்
+  also:
+  - Toriya Madandai
+  - Thoriya Madanthai
+  - தோரிய மடந்தை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - toriya_madantai_song
+  source: machine-described from the drafts
+  review: draft
+- id: pandarangam
+  cls: Other
+  en: Pandarangam
+  ta: பாண்டரங்கம்
+  also:
+  - Bharati arangam
+  - Pandaranga dance
+  - பாரதி அரங்கம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - bharati_arangam
+  source: machine-described from the drafts
+  review: draft
+- id: tripura
+  cls: Place
+  en: Tripura
+  ta: திரிபுரம்
+  also:
+  - the three cities
+  - Tiripuram
+  - முப்புரம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - tripura
+  source: machine-described from the drafts
+  review: draft
+- id: kodukotti_dance
+  cls: Other
+  en: the Kodukotti dance
+  ta: கொடுகொட்டி
+  also:
+  - Kodukotti
+  - Kotukotti
+  - கொடுகொட்டி ஆடல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kodukotti_dance
+  source: machine-described from the drafts
+  review: draft
+- id: mayaval
+  cls: Deity
+  en: Mayaval
+  ta: மாயவள்
+  also:
+  - Mayavaal
+  - the dark goddess
+  - மாயவள் ஆடிய
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - mayaval
+  source: machine-described from the drafts
+  review: draft
+- id: tiruvin_seyyol
+  cls: Deity
+  en: Tiruvin Seyyol
+  ta: திருவின் செய்யோள்
+  also:
+  - Seyyol
+  - the red goddess
+  - Tiruvin Seyyon
+  - செய்யோள்
+  kind: false
+  same_as: lakshmi
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - tiruvin_seyyol
+  source: machine-described from the drafts
+  review: draft
+- id: pavai_dance
+  cls: Other
+  en: the Pavai dance
+  ta: பாவை
+  also:
+  - Pavai koothu
+  - Pavai kuttu
+  - doll dance
+  - பாவைக்கூத்து
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - pavai_dance
+  source: machine-described from the drafts
+  review: draft
+- id: kadaiyam
+  cls: Other
+  en: the Kadaiyam dance
+  ta: கடையம்
+  also:
+  - Kataiyam
+  - Kadayam
+  - கடையம் ஆடல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kadaiyam_dance
+  source: machine-described from the drafts
+  review: draft
+- id: kadaiyam_dance
+  cls: Other
+  en: the Kadaiyam dance
+  ta: கடையம்
+  also:
+  - Kataiyam dance
+  - Kadayam dance
+  - கடையம்
+  kind: false
+  same_as: kadaiyam
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - north_gate
+  source: machine-described from the drafts
+  review: draft
+- id: madhavi_thigh_ornaments
+  cls: Object
+  en: Madhavi's thigh ornaments
+  ta: குறங்கு செறி
+  also:
+  - thigh ornaments
+  - kurangu seri
+  - குறங்கணி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - thigh_ornaments
+  source: machine-described from the drafts
+  review: draft
+- id: madhavi_shoulder_bangles
+  cls: Object
+  en: Madhavi's shoulder bangles
+  ta: தோள்வளை
+  also:
+  - shoulder bangles
+  - armlets
+  - tholvalai
+  - தோள் அணி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - shoulder_bangles
+  source: machine-described from the drafts
+  review: draft
+- id: madhavi_necklaces
+  cls: Object
+  en: Madhavi's necklaces
+  ta: ஆரம்
+  also:
+  - necklaces
+  - neck ornaments
+  - Aaram
+  - கழுத்தணி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - necklaces
+  source: machine-described from the drafts
+  review: draft
+- id: seaside_grove
+  cls: Place
+  en: the seaside grove
+  ta: நெய்தல் கானல்
+  also:
+  - neithal grove
+  - coastal grove
+  - Neytal Kanal
+  - நெய்தல்அம் கானல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - seaside_grove
+  source: machine-described from the drafts
+  review: draft
+- id: karikal_valavan
+  cls: Person
+  en: Karikal Valavan
+  ta: கரிகால் வளவன்
+  also:
+  - Karikala Chola
+  - Karikalan
+  - Karikala Valavan
+  - கரிகாலன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - karikal_valavan
+  source: machine-described from the drafts
+  review: draft
+- id: kamavel_kottam
+  cls: Place
+  en: the temple of Kamavel
+  ta: காமவேள் கோட்டம்
+  also:
+  - Kamavel Kottam
+  - Kama temple
+  - temple of Kama
+  - காமவேள் கோயில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kamavel_kottam
+  source: machine-described from the drafts
+  review: draft
+- id: manivannan_kottam
+  cls: Place
+  en: the temple of Manivannan
+  ta: மணிவண்ணன் கோட்டம்
+  also:
+  - Manivannan Kottam
+  - Vishnu temple
+  - Tirumal temple
+  - மணிவண்ணன் கோயில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - vishnu_temple
+  source: machine-described from the drafts
+  review: draft
+- id: arhat_stone_slab
+  cls: Object
+  en: the Arhat stone slab
+  ta: அறவோர் பளிங்குப் பலகை
+  also:
+  - Arhat assembly ground
+  - Arahant stone slab
+  - stone slab of the ascetics
+  - நோன்பிகள் பலகை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - arhat_assembly_ground
+  source: machine-described from the drafts
+  review: draft
+- id: kaveri_gate
+  cls: Place
+  en: the Kaveri gate
+  ta: காவிரி வாயில்
+  also:
+  - Kaveri Vayil
+  - Cauvery gate
+  - gate of the Kaveri
+  - காவிரி வாசல்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kaveri_gate
+  source: machine-described from the drafts
+  review: draft
+- id: kaveri_north_grove
+  cls: Place
+  en: the grove on the north bank of the Kaveri
+  ta: மலர்ப்பொழில்
+  also:
+  - Kaveri north grove
+  - flower grove by the Kaveri
+  - Malarppozhil
+  - காவிரி வடகரைப் பொழில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kaveri_north_grove
+  source: machine-described from the drafts
+  review: draft
+- id: kavunti_pali
+  cls: Place
+  en: Kavunti's retreat
+  ta: கவுந்திப் பள்ளி
+  also:
+  - Kavunti Palli
+  - Kavunti pali grove
+  - Kavunti's monastery
+  - கவுந்தி பள்ளி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kavunti_pali_grove
+  source: machine-described from the drafts
+  review: draft
+- id: mozhipporul_deivam
+  cls: Deity
+  en: the god of word and meaning
+  ta: மொழிப்பொருள் தெய்வம்
+  also:
+  - Mozhipporul Deivam
+  - word-meaning god
+  - deity of speech and meaning
+  - மொழிப்பொருள் கடவுள்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - word_meaning_god
+  source: machine-described from the drafts
+  review: draft
+- id: pattinappakkam
+  cls: Place
+  en: Pattinappakkam
+  ta: பட்டினப் பாக்கம்
+  also:
+  - Pattinappakkam quarter
+  - Pattinappakam
+  - seaside quarter of Puhar
+  - பட்டினப்பாக்கம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - pattinappakkam
+  source: machine-described from the drafts
+  review: draft
+- id: arivan
+  cls: Deity
+  en: Arivan
+  ta: அறிவன்
+  also:
+  - Arivan the Enlightened
+  - the Buddha
+  - Arivar
+  - அறிவர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - arivan
+  source: machine-described from the drafts
+  review: draft
+- id: pahruli_kumari
+  cls: Place
+  en: the Pahruli river and the Kumari peaks
+  ta: பஃறுளி ஆறு, குமரிக்கோடு
+  also:
+  - Pahruli
+  - Kumari peaks
+  - Pakruli river
+  - பஃறுளியாறு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - pahruli_river_and_kumari_peaks
+  source: machine-described from the drafts
+  review: draft
+- id: srirangam
+  cls: Place
+  en: Srirangam
+  ta: திருவரங்கம்
+  also:
+  - Kaveri island
+  - Sri Rangam
+  - Tiruvarangam
+  - அரங்கம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kaveri_island
+  source: machine-described from the drafts
+  review: draft
+- id: mankadu
+  cls: Place
+  en: Mankadu
+  ta: மாங்காடு
+  also:
+  - Mangadu
+  - Mankatu
+  - Mangkadu
+  - மாங்காட்டு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - mankadu
+  source: machine-described from the drafts
+  review: draft
+- id: three_pools_tirumal
+  cls: Place
+  en: the three pools of Tirumal's hill
+  ta: மூன்று சுனைகள்
+  also:
+  - three pools
+  - three sacred pools
+  - Tirumalai pools
+  - மூன்றுள சுனை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - three_pools
+  source: machine-described from the drafts
+  review: draft
+- id: punya_saravanam
+  cls: Place
+  en: Punya Saravanam
+  ta: புண்ணிய சரவணம்
+  also:
+  - Punya Saravana
+  - sacred Saravana pool
+  - Punniya Saravanam
+  - சரவணப் பொய்கை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - punya_saravanam
+  source: machine-described from the drafts
+  review: draft
+- id: garuda_banner
+  cls: Object
+  en: the Garuda banner
+  ta: புள்ளணி நீள்கொடி
+  also:
+  - Garuda flag
+  - bird banner
+  - hill deity banner
+  - கருடக்கொடி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - hill_deity_banner
+  source: machine-described from the drafts
+  review: draft
+- id: tunjur
+  cls: Place
+  en: Tunjur
+  ta: துஞ்சூர்
+  also:
+  - Thunjur
+  - Tunchur
+  - Thunjoor
+  - துஞ்சூர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - tunjur
+  source: machine-described from the drafts
+  review: draft
+- id: ayodhya
+  cls: Place
+  en: Ayodhya
+  ta: அயோத்தி
+  also:
+  - Ayotti
+  - Ayodhi
+  - Ayothya
+  - அயோத்யா
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - ayodhya
+  source: machine-described from the drafts
+  review: draft
+- id: kama_bow_festival
+  cls: Other
+  en: the festival of Kama's bow
+  ta: வில்விழா
+  also:
+  - bow festival
+  - Vil Vizha
+  - Kama bow festival
+  - வில் விழா
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kama_bow_festival
+  source: machine-described from the drafts
+  review: draft
+- id: kumari_ghat
+  cls: Place
+  en: the Kumari bathing ghat
+  ta: குமரியம் பெருந்துறை
+  also:
+  - Kumari ghat
+  - Kumari Perunthurai
+  - Kanyakumari bathing ghat
+  - குமரித்துறை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kumari_ghat
+  source: machine-described from the drafts
+  review: draft
+- id: uttara_kauttan
+  cls: Person
+  en: Uttara Kauttan
+  ta: உத்தர கௌத்தன்
+  also:
+  - Uttarakauttan
+  - Uttara Kautthan
+  - Uttara Kausthan
+  - உத்தரகௌத்தன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - uttara_kauttan
+  source: machine-described from the drafts
+  review: draft
+- id: varanam
+  cls: Place
+  en: Varanam
+  ta: வாரணம்
+  also:
+  - Varanasi
+  - Varanavasi
+  - Varanam city
+  - வாரணாசி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - varanam
+  source: machine-described from the drafts
+  review: draft
+- id: sayalan_wife
+  cls: Person
+  en: Sayalan's wife
+  ta: சாயலன் மனைவி
+  also:
+  - wife of Sayalan
+  - Chayalan's wife
+  - Sayalan Manaivi
+  - சாயலன் மனைவி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - sayalan_wife
+  source: machine-described from the drafts
+  review: draft
+- id: ettichayalan
+  cls: Person
+  en: Etti Chayalan
+  ta: எட்டிச் சாயலன்
+  also:
+  - Ettichayalan
+  - Etti Sayalan
+  - Sayalan
+  - சாயலன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - etti
+  source: machine-described from the drafts
+  review: draft
+- id: ettichayalan_wife
+  cls: Person
+  en: Etti Chayalan's wife
+  ta: எட்டிச் சாயலன் மனைவி
+  also:
+  - wife of Etti Chayalan
+  - Ettichayalan's wife
+  - Etti Sayalan's wife
+  - எட்டி மனைவி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - etti_wife
+  source: machine-described from the drafts
+  review: draft
+- id: matari_house
+  cls: Place
+  en: Matari's house
+  ta: மாதரி இல்லம்
+  also:
+  - Matari's home
+  - house of Matari
+  - Matari illam
+  - மாதரி வீடு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - matari_house
+  source: machine-described from the drafts
+  review: draft
+- id: cowherds_house
+  cls: Place
+  en: the cowherds' house
+  ta: கோவலர் இல்லம்
+  also:
+  - house of the cowherds
+  - Kovalar illam
+  - கோவலரில்லம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - cowherds_house
+  source: machine-described from the drafts
+  review: draft
+- id: courtesan_street_madurai
+  cls: Place
+  en: the courtesans' street of Madurai
+  ta: மாதர் வீதி
+  also:
+  - courtesan street
+  - street of the courtesans
+  - Madhar veedhi
+  - மாதர் வீதி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - courtesan_street
+  source: machine-described from the drafts
+  review: draft
+- id: devakottam_prison
+  cls: Place
+  en: the Devakottam prison
+  ta: தேவகோட்டம்
+  also:
+  - Devakottam
+  - Thevakottam
+  - Devakkottam
+  - தேவக்கோட்டம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - devakottam_prison
+  source: machine-described from the drafts
+  review: draft
+- id: muttai
+  cls: Person
+  en: Muttai
+  ta: முத்தை
+  also:
+  - Mutthai
+  - Muthai
+  - முத்தை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - muttai
+  source: machine-described from the drafts
+  review: draft
+- id: yamuna_river
+  cls: Place
+  en: the Yamuna
+  ta: தொழுனை
+  also:
+  - Yamuna river
+  - Jumna
+  - Kalindi
+  - யமுனை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - yamuna_water
+  source: machine-described from the drafts
+  review: draft
+- id: tuvarai
+  cls: Place
+  en: Dvaraka
+  ta: துவரை
+  also:
+  - Tuvarai
+  - Dwarka
+  - Dwaraka
+  - துவாரகை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - tuvarai
+  source: machine-described from the drafts
+  review: draft
+- id: mandara_mountain
+  cls: Place
+  en: Mount Mandara
+  ta: மந்தரம்
+  also:
+  - Mandara
+  - Mandhara mountain
+  - Mantara
+  - மந்தர மலை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - mandara_mountain
+  source: machine-described from the drafts
+  review: draft
+- id: vasuki
+  cls: Deity
+  en: Vasuki
+  ta: வாசுகி
+  also:
+  - Vasuki serpent
+  - Vasuki the snake
+  - Vaasuki
+  - வாசுகிப் பாம்பு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - vasuki
+  source: machine-described from the drafts
+  review: draft
+- id: yashoda
+  cls: Person
+  en: Yashoda
+  ta: அசோதை
+  also:
+  - Asotai
+  - Yasoda
+  - Asodhai
+  - யசோதை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - asotai
+  source: machine-described from the drafts
+  review: draft
+- id: lanka
+  cls: Place
+  en: Lanka
+  ta: இலங்கை
+  also:
+  - Ilankai
+  - Lanka fort
+  - Ceylon
+  - இலங்கைக் கோட்டை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - lanka_fort
+  source: machine-described from the drafts
+  review: draft
+- id: kamsa
+  cls: Person
+  en: Kamsa
+  ta: கஞ்சன்
+  also:
+  - Kamsan
+  - Kansa
+  - Kanjan
+  - கம்சன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kamsa
+  source: machine-described from the drafts
+  review: draft
+- id: vanavan
+  cls: Person
+  en: Vanavan
+  ta: வானவன்
+  also:
+  - Vaanavan
+  - Vanavan king
+  - வானவன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - vanavan
+  source: machine-described from the drafts
+  review: draft
+- id: pandya_palace
+  cls: Place
+  en: the Pandya palace
+  ta: கோயில்
+  also:
+  - palace of Madurai
+  - Pandya king's palace
+  - Koyil
+  - பாண்டியன் அரண்மனை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - palace
+  source: machine-described from the drafts
+  review: draft
+- id: chola_cow
+  cls: Other
+  en: the cow of the bell
+  ta: ஆ
+  also:
+  - the bereaved cow
+  - cow that rang the bell
+  - Chola cow
+  - ஆவின்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - cow
+  source: machine-described from the drafts
+  review: draft
+- id: manuneedhi_son
+  cls: Person
+  en: Manuneedhi's son
+  ta: புதல்வன்
+  also:
+  - the Chola prince
+  - son of Manuneedhi
+  - Manu Needhi Cholan's son
+  - மனுநீதிச் சோழன் மகன்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - his_son
+  source: machine-described from the drafts
+  review: draft
+- id: pandya_army
+  cls: Group
+  en: the Pandya army
+  ta: சேனை
+  also:
+  - Pandya forces
+  - Pandyan army
+  - Pandya troops
+  - பாண்டியன் சேனை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - pandya_army
+  source: machine-described from the drafts
+  review: draft
+- id: command_deities
+  cls: Deity
+  en: the command deities
+  ta: ஏவல் தெய்வம்
+  also:
+  - deities of command
+  - Eval deivam
+  - ஏவல் தெய்வங்கள்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - command_deities
+  source: machine-described from the drafts
+  review: draft
+- id: guardian_deities
+  cls: Deity
+  en: the guardian deities
+  ta: காவல் தெய்வம்
+  also:
+  - protective deities
+  - Kaaval deivam
+  - Kaval deivam
+  - காவல் தெய்வங்கள்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - guardian_deities
+  source: machine-described from the drafts
+  review: draft
+- id: shudra_bhuta
+  cls: Deity
+  en: the Shudra-class bhuta
+  ta: பூதம்
+  also:
+  - Shiva-form bhuta
+  - Shudra bhuta
+  - crescent-crowned spirit
+  - சூத்திர பூதம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - shiva_form_bhuta
+  source: machine-described from the drafts
+  review: draft
+- id: four_classes_of_bhutas
+  cls: Group
+  en: the four classes of bhutas
+  ta: நாற்பாற் பூதம்
+  also:
+  - four classes of spirits
+  - four kinds of bhuta
+  - Narpar pootham
+  - நாற்பாற் பூதங்கள்
+  kind: true
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - four_classes_of_spirits
+  source: machine-described from the drafts
+  review: draft
+- id: justice_bell
+  cls: Object
+  en: the bell of justice
+  ta: ஆராய்ச்சி மணி
+  also:
+  - petition bell
+  - justice bell
+  - Araychi mani
+  - மணி
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - petition_bell
+  source: machine-described from the drafts
+  review: draft
+- id: vanurai
+  cls: Place
+  en: Vanurai
+  ta: வானுறை
+  also:
+  - Vaanurai
+  - Vanuraiyur
+  - வானுறை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - vanurai
+  source: machine-described from the drafts
+  review: draft
+- id: malaya_hills
+  cls: Place
+  en: the Malaya hills
+  ta: மலயம்
+  also:
+  - Malaya mountains
+  - Malayam
+  - Podiyil
+  - பொதியில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - malaya_hills
+  source: machine-described from the drafts
+  review: draft
+- id: tankal
+  cls: Place
+  en: Tankal
+  ta: தங்கால்
+  also:
+  - Thankal
+  - Thangal
+  - Tangal
+  - தங்கால்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - tankal
+  source: machine-described from the drafts
+  review: draft
+- id: vayalur
+  cls: Place
+  en: Vayalur
+  ta: வயலூர்
+  also:
+  - Vayaloor
+  - Vayalur village
+  - வயலூர்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - vayalur_village
+  source: machine-described from the drafts
+  review: draft
+- id: east_gate
+  cls: Place
+  en: the east gate of Madurai
+  ta: கீழ்த்திசை வாயில்
+  also:
+  - east gate
+  - eastern gate
+  - kizhthisai vayil
+  - கீழ்த்திசை வாயிற்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - east_gate
+  source: machine-described from the drafts
+  review: draft
+- id: madurai_west_gate
+  cls: Place
+  en: the west gate of Madurai
+  ta: மேற்றிசை வாயில்
+  also:
+  - west gate
+  - western gate
+  - merthisai vayil
+  - மேற்றிசை வாயில்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - west_gate
+  source: machine-described from the drafts
+  review: draft
+- id: aryan_army
+  cls: Group
+  en: the northern Aryan army
+  ta: வடஆரியர் படை
+  also:
+  - Aryan army
+  - northern Aryans
+  - vada ariyar padai
+  - ஆரியர் படை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - aryan_army
+  source: machine-described from the drafts
+  review: draft
+- id: parambu_hill
+  cls: Place
+  en: Parambu hill
+  ta: பறம்புமலை
+  also:
+  - Parambu
+  - Parampu hill
+  - Parambu malai
+  - பறம்பு
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - parambu_hill
+  source: machine-described from the drafts
+  review: draft
+- id: saravana_pond
+  cls: Place
+  en: Saravana pond
+  ta: சரவணப் பொய்கை
+  also:
+  - Saravanam
+  - Saravana poikai
+  - Saravana lake
+  - சரவணம்
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - saravana_pond
+  source: machine-described from the drafts
+  review: draft
+- id: murugan_peacock
+  cls: Other
+  en: Murugan's blue peacock
+  ta: நீலப் பறவை
+  also:
+  - blue peacock
+  - peacock of Murugan
+  - neela paravai
+  - நீலப்பறவை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - blue_peacock
+  source: machine-described from the drafts
+  review: draft
+- id: kolli
+  cls: Place
+  en: Kolli hills
+  ta: கொல்லி
+  also:
+  - Kolli
+  - Kolli malai
+  - Kollimalai
+  - கொல்லிமலை
+  kind: false
+  same_as: null
+  epics:
+  - SIL
+  mentions_in_drafts: 1
+  draft_names:
+  - kolli
+  source: machine-described from the drafts
+  review: draft
+- id: golden_mountain
+  cls: Place
+  en: the golden mountain
+  ta: பொன்மலை
+  also:
+  - golden mountain
+  - Mount Meru
+  - Meru
+  - பொன்மலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - golden_mountain
+  source: machine-described from the drafts
+  review: draft
+- id: kantan
+  cls: Person
+  en: Kantan
+  ta: காந்தன்
+  also:
+  - Kanthan
+  - Kaanthan
+  - Kantha
+  - காந்த மன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kantan
+  source: machine-described from the drafts
+  review: draft
+- id: agastya_kamandalam
+  cls: Object
+  en: Agastya's water pot
+  ta: அகத்தியன் கரகம்
+  also:
+  - Agastya's kamandalam
+  - Agastya's pot
+  - kamandalam
+  - கமண்டலம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - agastya_kamandalam
+  source: machine-described from the drafts
+  review: draft
+- id: akasaganga
+  cls: Place
+  en: Akasaganga
+  ta: ஆகாயகங்கை
+  also:
+  - Akasa Ganga
+  - Aakaasa Gangai
+  - sky Ganga
+  - ஆகாய கங்கை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - akasaganga
+  source: machine-described from the drafts
+  review: draft
+- id: chola_dynasty
+  cls: Group
+  en: the Chola dynasty
+  ta: சோழர் குலம்
+  also:
+  - Cholas
+  - Chola lineage
+  - Chola clan
+  - சோழர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - chola_dynasty
+  source: machine-described from the drafts
+  review: draft
+- id: karikalavalavan
+  cls: Person
+  en: Karikala Valavan
+  ta: கரிகால்வளவன்
+  also:
+  - Karikala Cholan
+  - Karikalan
+  - Karikala Chola
+  - கரிகாலன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - karikalavalavan
+  source: machine-described from the drafts
+  review: draft
+- id: golden_city
+  cls: Place
+  en: the golden city
+  ta: பொன்நகர்
+  also:
+  - golden city
+  - ponnagar
+  - Pon Nagar
+  - பொன்னகர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - golden_city
+  source: machine-described from the drafts
+  review: draft
+- id: dvipa_shanti_ritual
+  cls: Other
+  en: the island propitiation rite
+  ta: தீவகச் சாந்தி
+  also:
+  - Dvipa Shanti
+  - Deevaga Santhi
+  - island ritual
+  - தீவகச்சாந்தி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - dvipa_shanti_ritual
+  source: machine-described from the drafts
+  review: draft
+- id: jambudvipa
+  cls: Place
+  en: Jambudvipa
+  ta: நாவலந்தீவு
+  also:
+  - Jambu island
+  - Navalantheevu
+  - Jambu Dvipa
+  - நாவலம் தீவு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - jambu_island
+  source: machine-described from the drafts
+  review: draft
+- id: flower_mandapam
+  cls: Place
+  en: the flower pavilion
+  ta: மலர் மண்டபம்
+  also:
+  - flower mandapam
+  - flower hall
+  - malar mandapam
+  - அணிமலர் மண்டபம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - flower_mandapam
+  source: machine-described from the drafts
+  review: draft
+- id: noose_demon
+  cls: Other
+  en: the noose-bearing demon
+  ta: பாசத்துப் பூதம்
+  also:
+  - noose demon
+  - demon with noose
+  - pasa bhutam
+  - பாசப் பூதம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - noose_demon
+  source: machine-described from the drafts
+  review: draft
+- id: uyyanam
+  cls: Place
+  en: the Uyyanam garden
+  ta: உய்யானம்
+  also:
+  - Uyyanam
+  - Uyyanam grove
+  - Uyyaanam
+  - உய்யானத்து
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - uyyanam
+  source: machine-described from the drafts
+  review: draft
+- id: kaveran
+  cls: Person
+  en: Kaveran
+  ta: கவேரன்
+  also:
+  - Kaveran
+  - Kavera
+  - Kaveran sage
+  - கவேர முனிவர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kaveran
+  source: machine-described from the drafts
+  review: draft
+- id: murukan
+  cls: Deity
+  en: Murukan
+  ta: முருகன்
+  also:
+  - Murugan
+  - Kadamban
+  - Skanda
+  - கடம்பன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kadamban
+  source: machine-described from the drafts
+  review: draft
+- id: kali_temple
+  cls: Place
+  en: the temple of the forest goddess
+  ta: காடமர் செல்வி கோட்டம்
+  also:
+  - Kali temple
+  - Kali kottam
+  - Kadu amar selvi temple
+  - காளி கோட்டம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kali_temple
+  source: machine-described from the drafts
+  review: draft
+- id: irathi_mandram
+  cls: Place
+  en: Irathi's public hall
+  ta: இரதி மன்றம்
+  also:
+  - Rati mandram
+  - Irati mandram
+  - Rati's hall
+  - இரதிமன்றம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - irathi_mandram
+  source: machine-described from the drafts
+  review: draft
+- id: bhuta_chatukkam
+  cls: Place
+  en: the Bhuta Chatukkam
+  ta: பூதசதுக்கம்
+  also:
+  - Bhuta Chaturam
+  - Bhutha Chathukkam
+  - Pootha Chathukkam
+  - பூத சதுக்கம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - bhuta_chatukkam
+  source: machine-described from the drafts
+  review: draft
+- id: chakkaravalakkottam
+  cls: Place
+  en: Chakkaravalakkottam
+  ta: சக்கரவாளக்கோட்டம்
+  also:
+  - Chakravalakottam
+  - Chakravala Kottam
+  - Sakkaravalakkottam
+  - சக்கரவாளக் கோட்டம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - chakkaravalakkottam
+  source: machine-described from the drafts
+  review: draft
+- id: iravivarman
+  cls: Person
+  en: Iravivarman
+  ta: இரவிவன்மன்
+  also:
+  - Ravivarman
+  - Ravi Varman
+  - இரவிவர்மன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - iravivarman
+  source: machine-described from the drafts
+  review: draft
+- id: tuccayan
+  cls: Person
+  en: Tuccayan
+  ta: துச்சயன்
+  also:
+  - Tuchchayan
+  - Duchchayan
+  - Tuccayan king
+  - துச்சயன் தேவி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - tuccayan
+  source: machine-described from the drafts
+  review: draft
+- id: kacchayam
+  cls: Place
+  en: Kacchayam
+  ta: கச்சயம்
+  also:
+  - Kachayam
+  - Kacchayam country
+  - கச்சையம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kacchayam
+  source: machine-described from the drafts
+  review: draft
+- id: ganga_bank
+  cls: Place
+  en: the bank of the Ganga
+  ta: கங்கைப் பேர் யாற்று அடைகரை
+  also:
+  - Ganges bank
+  - Ganga riverbank
+  - கங்கைக் கரை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - ganga_bank
+  source: machine-described from the drafts
+  review: draft
+- id: buddha_footprint
+  cls: Object
+  en: the Buddha's footprints
+  ta: புத்தபாதம்
+  also:
+  - Buddha feet
+  - Buddha pada
+  - Buddha's footprint
+  - பாதபீடிகை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - buddha_feet
+  source: machine-described from the drafts
+  review: draft
+- id: samantam
+  cls: Place
+  en: Samantam
+  ta: சமந்தம்
+  also:
+  - Samanta
+  - Samantakuta
+  - Samanthakoodam
+  - சமந்தகூடம்
+  kind: false
+  same_as: padapankaya_hill
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - samantam
+  source: machine-described from the drafts
+  review: draft
+- id: amudapati
+  cls: Person
+  en: Amudapati
+  ta: அமுதபதி
+  also:
+  - Amutapati
+  - Amuthapathi
+  - Amudhabadhi
+  - அமுதவதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - amudapati
+  source: machine-described from the drafts
+  review: draft
+- id: padapankaya_hill
+  cls: Place
+  en: Padapankaya Hill
+  ta: பாதபங்கய மலை
+  also:
+  - Padapankaya mountain
+  - Padhapankaya malai
+  - Pada Pankaya hill
+  - பாதபங்கயமலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - padapankaya_hill
+  source: machine-described from the drafts
+  review: draft
+- id: ilampudi_town
+  cls: Place
+  en: Ilampudi
+  ta: இளம்புடி
+  also:
+  - Ilambuti town
+  - Ilampudi town
+  - Ilambudi
+  - இளம்பூதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - ilampudi_town
+  source: machine-described from the drafts
+  review: draft
+- id: pandukambalam
+  cls: Object
+  en: Pandukambalam
+  ta: பாண்டு கம்பளம்
+  also:
+  - Pandu Kambalam
+  - Pandukambala
+  - Pandu kambalam stone seat
+  - பாண்டுகம்பளம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - pandukambalam
+  source: machine-described from the drafts
+  review: draft
+- id: pandya_nadu
+  cls: Place
+  en: the Pandya country
+  ta: பாண்டிய நாடு
+  also:
+  - Pandya Nadu
+  - Pandiya Nadu
+  - Pandyan kingdom
+  - பாண்டிநாடு
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - pandya_nadu
+  source: machine-described from the drafts
+  review: draft
+- id: cakkaravalakkottam
+  cls: Place
+  en: Cakkaravalakkottam
+  ta: சக்கரவாளக்கோட்டம்
+  also:
+  - Chakravalakottam
+  - Cakravalakottam
+  - Chakkaravalakkottam
+  - சக்கரவாளம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - cakkaravalakkottam
+  source: machine-described from the drafts
+  review: draft
+- id: ujjain
+  cls: Place
+  en: Ujjain
+  ta: உஞ்சை
+  also:
+  - Ujjayini
+  - Uyjain
+  - Unjai
+  - உஞ்சையம்பதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - ujjain
+  source: machine-described from the drafts
+  review: draft
+- id: atirai_house
+  cls: Place
+  en: Atirai's house
+  ta: ஆதிரை இல்லம்
+  also:
+  - Aticari's house
+  - Atirai house
+  - Adirai's home
+  - ஆதிரை மனை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - aticari_house
+  source: machine-described from the drafts
+  review: draft
+- id: vinjaiyar
+  cls: Group
+  en: the Vidyadharas
+  ta: விஞ்சையர்
+  also:
+  - Vinjaiyar
+  - Vidyadhara
+  - Vijjaiyar
+  - வித்தியாதரர்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - vinjaiyar
+  source: machine-described from the drafts
+  review: draft
+- id: nediyon
+  cls: Deity
+  en: Nediyon
+  ta: நெடியோன்
+  also:
+  - Nedumal
+  - Netiyon
+  - the tall one
+  - நெடுமால்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - nediyon
+  source: machine-described from the drafts
+  review: draft
+- id: payamalai
+  cls: Person
+  en: Payamalai
+  ta: பயமாலை
+  also:
+  - Paya malai
+  - Payamaalai
+  - Bayamalai
+  - பயமாலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - paya_malai
+  source: machine-described from the drafts
+  review: draft
+- id: ilanko_residence
+  cls: Place
+  en: Prince Ilanko's residence
+  ta: இளங்கோ வேந்தன் இருப்பிடம்
+  also:
+  - Ilango Vendan's residence
+  - Ilanko's dwelling
+  - Ilango Adigal's abode
+  - இளங்கோவடிகள் இருப்பிடம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - ilango_vendan_residence
+  source: machine-described from the drafts
+  review: draft
+- id: ahalya
+  cls: Person
+  en: Ahalya
+  ta: அகலிகை
+  also:
+  - Ahalikai
+  - Akalikai
+  - Ahalye
+  - அகல்யை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - sage_wife
+  source: machine-described from the drafts
+  review: draft
+- id: seven_sages_wives
+  cls: Group
+  en: the wives of the seven sages
+  ta: முனிவர் மனைவியர்
+  also:
+  - sages' wives
+  - Saptarishi wives
+  - Arundhati and the sages' wives
+  - எழுவர் மனைவியர்
+  kind: true
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - sages_wives
+  source: machine-described from the drafts
+  review: draft
+- id: saravanam
+  cls: Place
+  en: Saravanam
+  ta: சரவணம்
+  also:
+  - Saravana
+  - Sharavana thicket
+  - Saravana Poigai
+  - சரவணப்பொய்கை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - saravanam
+  source: machine-described from the drafts
+  review: draft
+- id: cirtti
+  cls: Person
+  en: Cirtti
+  ta: சிருட்டி
+  also:
+  - Chirtti
+  - Sirtti
+  - Cirutti
+  - சிருட்டி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - cirtti
+  source: machine-described from the drafts
+  review: draft
+- id: kariyaru
+  cls: Place
+  en: Kariyaru
+  ta: காரியாறு
+  also:
+  - Kariyar
+  - Kari river
+  - Kaariyaaru
+  - காரியாற்று
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kariyaru
+  source: machine-described from the drafts
+  review: draft
+- id: podhiyil_hill
+  cls: Place
+  en: Podhiyil Hill
+  ta: பொதியில் மலை
+  also:
+  - Podiyil
+  - Pothigai hill
+  - Podhigai
+  - பொதிகை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - podhiyil_hill
+  source: machine-described from the drafts
+  review: draft
+- id: muthiyal
+  cls: Person
+  en: the old woman
+  ta: முதியாள்
+  also:
+  - Mutiyal
+  - Mudhiyal
+  - the elderly woman
+  - முதியவள்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - old_woman
+  source: machine-described from the drafts
+  review: draft
+- id: sadhu_chakkaran
+  cls: Person
+  en: Sadhu Chakkaran
+  ta: சாதுசக்கரன்
+  also:
+  - Sathu Sakkaran
+  - Sadhuchakkaran
+  - சாதுசக்கரர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - sadhu_chakkaran
+  source: machine-described from the drafts
+  review: draft
+- id: kakandi
+  cls: Place
+  en: Kakandi
+  ta: காகந்தி
+  also:
+  - Kakanti
+  - Kaakandi
+  - காகந்தி நகரம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kakandi_name
+  source: machine-described from the drafts
+  review: draft
+- id: valaivanan
+  cls: Person
+  en: Valaivanan
+  ta: வளைவணன்
+  also:
+  - Valai Vanan
+  - Valaivannan
+  - வளைவணன் நாககன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - valaivanan
+  source: machine-described from the drafts
+  review: draft
+- id: vasamayilai
+  cls: Person
+  en: Vasamayilai
+  ta: வாசமயிலை
+  also:
+  - Vaasamayilai
+  - Vasa Mayilai
+  - வாசமயிலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - vasamayilai
+  source: machine-described from the drafts
+  review: draft
+- id: dharmasavakan
+  cls: Person
+  en: Dharmasavakan
+  ta: தருமசாவகன்
+  also:
+  - Dharma Savakan
+  - Tharumasavakan
+  - Dharmasavakar
+  - தருமசாவகர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - dharmasavakan
+  source: machine-described from the drafts
+  review: draft
+- id: amarasundari
+  cls: Person
+  en: Amarasundari
+  ta: அமரசுந்தரி
+  also:
+  - Amara Sundari
+  - Amarasuntari
+  - அமரசுந்தரி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - amarasundari
+  source: machine-described from the drafts
+  review: draft
+- id: vasu_and_kumaran
+  cls: Group
+  en: Vasu and Kumaran
+  ta: வசுவும் குமரனும்
+  also:
+  - Vasu Kumaran
+  - Vasu and Kumara
+  - வசு குமரன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - vasu_and_kumaran
+  source: machine-described from the drafts
+  review: draft
+- id: chakkaravalam
+  cls: Place
+  en: Chakkaravalam
+  ta: சக்கரவாளம்
+  also:
+  - Chakravalam
+  - Sakkaravalam
+  - Chakravala
+  - சக்கரவாளக் கோட்டம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - chakkaravalam
+  source: machine-described from the drafts
+  review: draft
+- id: indra_viharas
+  cls: Place
+  en: the seven Indra viharas
+  ta: இந்திர விகாரம் ஏழு
+  also:
+  - Indra Vihara
+  - Indra viharam
+  - seven Indra monasteries
+  - இந்திர விகாரம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - indra_viharas
+  source: machine-described from the drafts
+  review: draft
+- id: kanaka_vijayan
+  cls: Person
+  en: Kanaka Vijayan
+  ta: கனகவிசயன்
+  also:
+  - Kanakavijayan
+  - Kanaka Vijaya
+  - Kanagan and Vijayan
+  - கனகன் விசயன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kanaka_vijaya_and_kings
+  source: machine-described from the drafts
+  review: draft
+- id: vakai_wreath
+  cls: Object
+  en: the golden vakai wreath
+  ta: பொன் வாகை
+  also:
+  - vakai garland
+  - golden vagai wreath
+  - vagai flower wreath
+  - வாகை மாலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - golden_vakai_wreath
+  source: machine-described from the drafts
+  review: draft
+- id: vyasa
+  cls: Person
+  en: Vyasa
+  ta: வியாதன்
+  also:
+  - Viyasan
+  - Vyasar
+  - Vyaasa
+  - வியாசர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - vyasa
+  source: machine-described from the drafts
+  review: draft
+- id: jaimini
+  cls: Person
+  en: Jaimini
+  ta: சைமினி
+  also:
+  - Saimini
+  - Jaimini sage
+  - Jaiminiyar
+  - சைமினியர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - jaimini
+  source: machine-described from the drafts
+  review: draft
+- id: ravanan
+  cls: Person
+  en: Ravanan
+  ta: இராவணன்
+  also:
+  - Ravana
+  - Iravanan
+  - Ravanan king of Lanka
+  - இராவணர்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - ravanan
+  source: machine-described from the drafts
+  review: draft
+- id: brahmavadi
+  cls: Person
+  en: the Brahma-vadi
+  ta: பிரமவாதி
+  also:
+  - Brahmavadi
+  - Brahma vadi
+  - Piramavati
+  - பிரம்மவாதி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - brahma_vadi
+  source: machine-described from the drafts
+  review: draft
+- id: narayanan
+  cls: Deity
+  en: Narayanan
+  ta: நாரணன்
+  also:
+  - Narayana
+  - Naranan
+  - Vishnu
+  - நாராயணன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - narayanan
+  source: machine-described from the drafts
+  review: draft
+- id: himalaya
+  cls: Place
+  en: the Himalaya
+  ta: இமயம்
+  also:
+  - Himalayas
+  - Imayam
+  - Imaya hills
+  - இமயமலை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - mountain_cleft
+  source: machine-described from the drafts
+  review: draft
+- id: samanoli_hill
+  cls: Place
+  en: Samanoli Hill
+  ta: சமனொளிமலை
+  also:
+  - Samanoli
+  - Samanolippu hill
+  - Adam's Peak
+  - சமனொளி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - samanoli_hill
+  source: machine-described from the drafts
+  review: draft
+- id: kapilavastu
+  cls: Place
+  en: Kapilavastu
+  ta: கபிலை
+  also:
+  - Kapilai
+  - Kapilapuram
+  - Kapilavatthu
+  - கபிலவஸ்து
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - kapilai_city
+  source: machine-described from the drafts
+  review: draft
+- id: killi_and_ilankilli
+  cls: Group
+  en: Killi and Ilankilli
+  ta: கிள்ளியும் இளங்கிள்ளியும்
+  also:
+  - Killi Ilankilli
+  - Killi and Ilam Killi
+  - Chola kings Killi and Ilankilli
+  - கிள்ளி இளங்கிள்ளி
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - killi_and_ilankilli
+  source: machine-described from the drafts
+  review: draft
+- id: adi_sinendran
+  cls: Deity
+  en: Adi Sinendran
+  ta: ஆதி சினேந்திரன்
+  also:
+  - Adi Jinendran
+  - Adhi Sinendran
+  - Adi Jinendra
+  - ஆதிசினேந்திரன்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - adi_sinendran
+  source: machine-described from the drafts
+  review: draft
+- id: tushita_heaven
+  cls: Place
+  en: Tushita heaven
+  ta: துடிதலோகம்
+  also:
+  - Tusita
+  - Tushita loka
+  - Thudithalokam
+  - துடித உலகம்
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - tushita_heaven
+  source: machine-described from the drafts
+  review: draft
+- id: mara
+  cls: Deity
+  en: Mara
+  ta: மாரன்
+  also:
+  - Maran
+  - Mara the tempter
+  - Kama
+  - மாரனை
+  kind: false
+  same_as: null
+  epics:
+  - MAN
+  mentions_in_drafts: 1
+  draft_names:
+  - mara
+  source: machine-described from the drafts
+  review: draft

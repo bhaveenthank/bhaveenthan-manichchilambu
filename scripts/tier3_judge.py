@@ -105,13 +105,14 @@ def parse(answer):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="claude-haiku-5-5")
-    ap.add_argument("--source", choices=["stage", "full"], default="stage", help="full: data/candidates/tier2_full.jsonl")
+    ap.add_argument("--source", choices=["stage", "full", "gaps"], default="stage", help="full: data/candidates/tier2_full.jsonl; gaps: the records of the gap pass over lines nothing else cited")
     ap.add_argument("--per-call", type=int, default=PER_CALL, help="drafts per call for --source full; 16 halves the calls")
     args = ap.parse_args()
     from manichchilambu.llm import ask
-    src = ROOT / ("data/candidates/tier2_full.jsonl" if args.source == "full" else "data/candidates/tier2.jsonl")
-    dst = ROOT / ("data/candidates/tier3_full.jsonl" if args.source == "full" else "data/candidates/tier3.jsonl")
+    src = ROOT / {"full": "data/candidates/tier2_full.jsonl", "gaps": "data/candidates/tier2_lines_gaps.jsonl", "stage": "data/candidates/tier2.jsonl"}[args.source]
+    dst = ROOT / {"full": "data/candidates/tier3_full.jsonl", "gaps": "data/candidates/tier3_gaps.jsonl", "stage": "data/candidates/tier3.jsonl"}[args.source]
     rows = [json.loads(raw) for raw in src.open(encoding="utf-8")]
+    rows = [r for r in rows if r.get("type", "record") == "record" and r.get("lines")]  # the gap file also holds line notes
     if args.source == "stage":
         judged = ((rec, parse(ask(PROMPT.format(record=json.dumps({k2: rec[k2] for k2 in ("kind", "roles", "voice", "mood", "lines")}, ensure_ascii=False), lines=context(rec)), model=args.model)))
                   for rec in rows)

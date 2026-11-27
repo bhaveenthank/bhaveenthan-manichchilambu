@@ -9178,17 +9178,17 @@
 "brahmin_wife|SIL-15": {
 "name": "brahmin_wife",
 "canto": "SIL-15",
-"how": "context",
-"id": "kannagi",
-"candidates": null,
+"how": "open_role",
+"id": null,
+"candidates": [],
 "mentions": 8
 },
 "brahmin_husband|SIL-15": {
 "name": "brahmin_husband",
 "canto": "SIL-15",
-"how": "context",
-"id": "kovalan",
-"candidates": null,
+"how": "open_role",
+"id": null,
+"candidates": [],
 "mentions": 2
 },
 "hand_fed_life|SIL-15": {

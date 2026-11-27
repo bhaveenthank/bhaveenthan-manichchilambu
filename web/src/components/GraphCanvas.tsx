@@ -122,7 +122,13 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
 
   const graph = useMemo(() => {
     const g = new Graph({ multi: true, type: "undirected" });
-    const edgeColour = { done: css("--edge-done"), said: css("--edge-said"), hint: css("--edge-hint"), under: css("--line") };
+    const edgeColour = {
+      done: css("--edge-done"),
+      said: css("--edge-said"),
+      hint: css("--edge-hint"),
+      under: css("--line"),
+      machine: css("--edge-machine"),
+    };
     const surface = css("--surface");
     data.nodes.forEach((id) => {
       const n = corpus.nodeById.get(id);
@@ -143,14 +149,16 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
     });
     data.edges.forEach((e, i) => {
       if (g.hasNode(e.s) && g.hasNode(e.t) && e.s !== e.t) {
-        const done = e.mood === "asserted";
+        const done = e.mood === "asserted" && !e.machine;
         // Anything not told as fact gets a faint base line here and its family's dash on the overlay.
+        // A link from a checked machine draft is a thinner line in its own colour, so it never passes for a hand record.
         g.addEdgeWithKey(`${e.rec}:${i}`, e.s, e.t, {
-          size: done ? 2.4 : 1.6,
-          color: done ? edgeColour.done : edgeColour.under,
+          size: e.machine ? 1.4 : done ? 2.4 : 1.6,
+          color: e.machine ? edgeColour.machine : done ? edgeColour.done : edgeColour.under,
           rec: e.rec,
           kind: e.kind,
           done,
+          machine: !!e.machine,
           family: familyOf(e.mood),
         });
       }
@@ -224,7 +232,7 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
 
     // Dashed edges first: the mood family's dash over the faint base line Sigma drew.
     graph.forEachEdge((edge, a, s, t, sa, ta) => {
-      if (a.hint || a.done || a.rec === selEdge) return;
+      if (a.hint || a.done || a.machine || a.rec === selEdge) return;
       const lit = selEdge ? false : !focus || !graph.hasNode(focus) || s === focus || t === focus;
       const p1 = sigma.graphToViewport({ x: sa.x, y: sa.y }),
         p2 = sigma.graphToViewport({ x: ta.x, y: ta.y });
@@ -266,7 +274,7 @@ export function GraphCanvas({ data, selected, selectedEdge, onNode, onEdge, edge
       ctx.lineTo(tipX - ux * size + uy * size * 0.5, tipY - uy * size - ux * size * 0.5);
       ctx.closePath();
       ctx.globalAlpha = lit ? 0.95 : 0.12;
-      ctx.fillStyle = picked ? pickedInk : a.done ? doneInk : saidInk;
+      ctx.fillStyle = picked ? pickedInk : a.machine ? css("--edge-machine") : a.done ? doneInk : saidInk;
       ctx.fill();
     });
     ctx.globalAlpha = 1;

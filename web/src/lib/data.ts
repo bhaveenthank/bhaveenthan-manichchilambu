@@ -1,5 +1,5 @@
 import type { RetrievalData } from "./hybrid";
-import type { CantoLine, Corpus } from "./types";
+import type { CantoLine, Corpus, NoveltyItem } from "./types";
 
 // Files live next to the page, so this works on GitHub Pages under any repo name.
 const url = (name: string) => `${import.meta.env.BASE_URL}data/${name}`;
@@ -77,6 +77,9 @@ export function loadCanto(key: string) {
     );
   return cantoCache.get(key)!;
 }
+
+/** The Novelty page's computed examples (scripts/build_novelty.py). */
+export const loadNovelty = remembered(() => fetchJson<{ items: NoveltyItem[] }>("novelty.json"));
 
 export const loadSearch = remembered(() => fetchJson<[string, string][]>("search.json"));
 

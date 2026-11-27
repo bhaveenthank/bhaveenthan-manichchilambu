@@ -16,6 +16,8 @@ interface MachineRow {
   roles: Record<string, unknown>;
   lines: { id: string; text: string }[];
   quote: string;
+  /** The second model's verdict: fast means it agrees with the draft. */
+  pile?: "fast" | "careful" | null;
 }
 
 // The first whole Tamil letter: கோ for கோவலன், not the bare க that slice(0, 1) would give. A grapheme cluster
@@ -287,6 +289,9 @@ export function CantoPage({ cantoKey, line }: { cantoKey: string; line: string |
                   <article key={i} className="machine__row">
                     <div className="record__tags">
                       <StatusBadge draft />
+                      {m.pile === "fast" && (
+                        <span className="status status--checked">{t("a second model agrees", "இரண்டாம் மாதிரி ஏற்கிறது")}</span>
+                      )}
                       {m.mood && <MoodTag mood={m.mood} />}
                     </div>
                     <p>

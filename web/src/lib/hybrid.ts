@@ -499,6 +499,14 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
     ),
     ...ents.flatMap((id) => tokens(names(c, id)).map((w): [string, number] => [w, 0.4])),
   ];
+  // Entities only the drafts know (the Kaveri, the Buddha...) don't take part in reading the question, so they can't
+  // make a name ambiguous or pass for an answer. If the question names one, its Tamil name still widens the verse search.
+  const lower = ` ${question.toLowerCase().replace(/[?!.,;:'"()]/g, " ")} `;
+  const draftedNamed = c.graph.nodes.filter(
+    (n) =>
+      n.drafted && !n.kind && [n.en.replace(/^the /i, ""), ...n.also].some((f) => f.length > 3 && lower.includes(` ${f.toLowerCase()} `)),
+  );
+  const lineQuery: [string, number][] = [...query, ...draftedNamed.flatMap((n) => tokens(n.ta).map((w): [string, number] => [w, 0.6]))];
 
   const coverage = (i: number) =>
     content.length ? content.filter((w) => related(w).some((x) => idx.rec.has(i, x))).length / content.length : 1;
@@ -514,7 +522,7 @@ export function answerQuestion(c: Corpus, question: string, data: RetrievalData 
     lists.graph = scored.slice(0, 40).map((x) => x.r.id);
   }
   // Lines: search every line, then credit the records that cite the lines found.
-  const lineHits = idx.lines.search(query, 60);
+  const lineHits = idx.lines.search(lineQuery, 60);
   const viaLines: string[] = [];
   lineHits.forEach(([i]) =>
     (idx.citedBy.get(idx.data.lines[i][0]) ?? []).forEach((id) => {

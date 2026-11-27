@@ -106,6 +106,7 @@ function filterFromParams(params: URLSearchParams): GraphFilter {
   if (get("bridges") === "1") f.bridgesOnly = true;
   if (get("pairs") === "1") f.suggestions = true;
   if (get("births") === "0") f.earlierBirths = false;
+  if (get("checked") === "1") f.checked = true;
   return f;
 }
 function paramsFromFilter(f: GraphFilter, tick: number, last: number): string {
@@ -122,6 +123,7 @@ function paramsFromFilter(f: GraphFilter, tick: number, last: number): string {
   if (f.bridgesOnly) p.set("bridges", "1");
   if (f.suggestions) p.set("pairs", "1");
   if (!f.earlierBirths) p.set("births", "0");
+  if (f.checked) p.set("checked", "1");
   if (tick !== last) p.set("t", String(tick));
   return p.toString();
 }
@@ -219,7 +221,11 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
   const exportCsv = () => {
     const quote = (v: string) => `"${v.replace(/"/g, '""')}"`;
     const rows = data.edges.map((e) => {
-      const r = corpus.byId.get(e.rec)!;
+      const r = corpus.byId.get(e.rec);
+      if (!r)
+        return [name(e.s), name(e.t), e.kind, e.mood, "machine draft, checked by a second model", e.line ?? "", e.quote ?? ""]
+          .map((v) => quote(String(v)))
+          .join(",");
       return [name(e.s), name(e.t), e.kind, r.mood, r.voice.join(">"), r.lines.map((l) => l.id).join(" "), r.en]
         .map((v) => quote(String(v)))
         .join(",");
@@ -450,6 +456,13 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
                 <input type="checkbox" checked={filter.suggestions} onChange={(e) => set({ suggestions: e.target.checked })} />
                 {t("Pairs that only appear together", "அருகருகே மட்டும் வரும் இணைகள்")}
               </label>
+              <label className="check">
+                <input type="checkbox" checked={filter.checked} onChange={(e) => set({ checked: e.target.checked })} />
+                {t(
+                  `Also links from machine drafts a second model agrees with (${(corpus.graph.checked ?? []).length})`,
+                  `இரண்டாம் மாதிரி ஏற்ற இயந்திர வரைவுகளின் இணைப்புகளும் (${(corpus.graph.checked ?? []).length})`,
+                )}
+              </label>
             </details>
             <button className="link" style={{ marginTop: 14 }} onClick={exportCsv}>
               <Download size={15} aria-hidden="true" />
@@ -521,6 +534,12 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
                   <LineSample mood="dreamed" />
                   {t("imagined or believed", "கற்பனை / நம்பிக்கை")}
                 </span>
+                {filter.checked && (
+                  <span className="line-key line-key--machine">
+                    <LineSample mood="asserted" />
+                    {t("from a checked machine draft", "சரிபார்த்த இயந்திர வரைவிலிருந்து")}
+                  </span>
+                )}
                 {filter.reading !== "said" && !filter.viewer && (
                   <span className="fine">
                     {t("(dashed lines show with 'also what was said')", "(புள்ளிக்கோடுகள் 'கூற்றுகளும்' இயக்கினால்)")}
@@ -605,7 +624,42 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
           >
             <X size={18} aria-hidden="true" />
           </button>
-          {rec && corpus.byId.get(rec) ? (
+          {rec?.startsWith("draft:") ? (
+            (() => {
+              const e = data.edges.find((x) => x.rec === rec);
+              return e ? (
+                <>
+                  <p className="eyebrow">{t("A link from a machine draft", "இயந்திர வரைவிலிருந்து ஓர் இணைப்பு")}</p>
+                  <h2 style={{ marginBottom: 10 }}>
+                    {name(e.s)} — {name(e.t)}
+                  </h2>
+                  <article className="record">
+                    <div className="record__tags">
+                      <MoodTag mood={e.mood} />
+                      <span className="status status--draft">
+                        {t("machine draft · checked by a second model", "இயந்திர வரைவு · இரண்டாம் மாதிரி சரிபார்த்தது")}
+                      </span>
+                    </div>
+                    <p className="record__text">
+                      <b>{e.kind.replace(/_/g, " ")}</b>
+                    </p>
+                    <p lang="ta">
+                      {e.quote}{" "}
+                      <a className="verse__id" href={`#/songs/${(e.line ?? "").slice(0, 6)}?line=${e.line}`}>
+                        {e.line}
+                      </a>
+                    </p>
+                    <p className="fine">
+                      {t(
+                        "A language model proposed this and a second model agreed it matches the line. No person has checked it, so it can point you to a passage but never answers a question.",
+                        "மொழி மாதிரி முன்மொழிந்தது; இரண்டாம் மாதிரி வரியுடன் பொருந்துவதாக ஏற்றது. மனிதர் சரிபார்க்கவில்லை; பகுதியைச் சுட்டலாம், விடையாகாது.",
+                      )}
+                    </p>
+                  </article>
+                </>
+              ) : null;
+            })()
+          ) : rec && corpus.byId.get(rec) ? (
             <>
               <p className="eyebrow">
                 {t("The link you picked, shown thick on the graph", "நீங்கள் தேர்ந்த இணைப்பு, வரைபடத்தில் தடிமனாக")}
@@ -633,6 +687,14 @@ export function GraphPage({ params }: { params: URLSearchParams }) {
                     <EpicMark key={ep} epic={ep} />
                   ))}
                   {selectedNode.kind && <span className="tag">{t("a kind, not one individual", "ஒரு வகை, தனி ஒன்று அல்ல")}</span>}
+                  {selectedNode.drafted && (
+                    <span className="status status--draft">
+                      {t(
+                        "named in the machine drafts, described by a model, not yet checked",
+                        "இயந்திர வரைவுகளில் பெயர்; மாதிரி விவரித்தது; சரிபார்க்கவில்லை",
+                      )}
+                    </span>
+                  )}
                   {selectedNode.mentions ? (
                     <span>
                       {selectedNode.mentions} {t("lines name them", "வரிகளில் பெயர்")}

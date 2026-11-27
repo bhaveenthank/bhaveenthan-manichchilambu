@@ -268,7 +268,20 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-06-0095:2",
+    "evidence_id": "draft:MAN-07-0048:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "strike",
+    "people": [
+     "fingers"
+    ],
+    "mood": "asserted",
+    "quote": "வளை சேர் செங் கை மெல் விரல் உதைத்த",
+    "lines": [
+     "MAN-07-0048"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-06-0095:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "adorn_fingers",
     "people": [
@@ -284,7 +297,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-17-0023:3",
+    "evidence_id": "draft:SIL-17-0023:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "see",
     "people": [
@@ -298,7 +311,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-02-0091:4",
+    "evidence_id": "draft:SIL-02-0091:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "embrace",
     "people": [
@@ -309,19 +322,6 @@
     "lines": [
      "SIL-02-0091",
      "SIL-02-0092"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-15-0055:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "grieve",
-    "people": [
-     "kannagi"
-    ],
-    "mood": "asserted",
-    "quote": "இனைந்து",
-    "lines": [
-     "SIL-15-0055"
     ]
    }
   ],
@@ -1187,20 +1187,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-06-0161:1",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "stop_grieving",
-    "people": [
-     "kotamai"
-    ],
-    "mood": "command",
-    "quote": "நீ இரங்கல்",
-    "lines": [
-     "MAN-06-0161"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-05-0063:2",
+    "evidence_id": "draft:MAN-05-0063:1",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "console",
     "people": [
@@ -1215,7 +1202,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-05-0063:3",
+    "evidence_id": "draft:MAN-05-0063:2",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "console",
     "people": [
@@ -1226,6 +1213,19 @@
     "lines": [
      "MAN-05-0063",
      "MAN-05-0064"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-06-0161:3",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "stop_grieving",
+    "people": [
+     "kotamai"
+    ],
+    "mood": "command",
+    "quote": "நீ இரங்கல்",
+    "lines": [
+     "MAN-06-0161"
     ]
    },
    {
@@ -2330,31 +2330,34 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-19-0116:2",
+    "evidence_id": "draft:MAN-03-0063:2",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "ascend",
+    "relation": "exist",
     "people": [
-     "gold_pavilion",
-     "indra_tiruvan"
+     "crystal_room",
+     "uvavanam"
     ],
     "mood": "asserted",
-    "quote": "இந்திர திருவன் சென்று இனிது ஏறலும்",
+    "quote": "பளிக்கறை மண்டபம் உண்டு",
     "lines": [
-     "MAN-19-0116"
+     "MAN-03-0063",
+     "MAN-03-0064"
     ]
    },
    {
-    "evidence_id": "draft:MAN-28-0205:3",
+    "evidence_id": "draft:MAN-03-0062:3",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "build",
+    "relation": "exist",
     "people": [
-     "grove"
+     "crystal_room",
+     "uvavanam"
     ],
     "mood": "asserted",
-    "quote": "செய்து யாம் அமைத்தது",
+    "quote": "பளிக்கறை மண்டபம் உண்டு",
     "lines": [
-     "MAN-28-0205",
-     "MAN-28-0206"
+     "MAN-03-0062",
+     "MAN-03-0063",
+     "MAN-03-0064"
     ]
    },
    {
@@ -2373,18 +2376,17 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-03-0063:5",
+    "evidence_id": "draft:MAN-28-0205:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "exist",
+    "relation": "build",
     "people": [
-     "crystal_room",
-     "uvavanam"
+     "grove"
     ],
     "mood": "asserted",
-    "quote": "பளிக்கறை மண்டபம் உண்டு",
+    "quote": "செய்து யாம் அமைத்தது",
     "lines": [
-     "MAN-03-0063",
-     "MAN-03-0064"
+     "MAN-28-0205",
+     "MAN-28-0206"
     ]
    }
   ],
@@ -2669,7 +2671,21 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-24-0020:1",
+    "evidence_id": "draft:SIL-00-0036:1",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "praise",
+    "people": [
+     "kannagi",
+     "many_people"
+    ],
+    "mood": "asserted",
+    "quote": "பலர்புகழ் பத்தினி யாகும்",
+    "lines": [
+     "SIL-00-0036"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-24-0020:2",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "offer_flower_sacrifice",
     "people": [
@@ -2680,19 +2696,6 @@
     "quote": "பூப்பலி செய்ம்மின் காப்புக்கடை நிறுமின்",
     "lines": [
      "SIL-24-0020"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-28-0008:2",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "worship",
-    "people": [
-     "many_people"
-    ],
-    "mood": "asserted",
-    "quote": "பலர்தொழ வந்த",
-    "lines": [
-     "SIL-28-0008"
     ]
    },
    {
@@ -2994,21 +2997,7 @@
   ],
   "drafts": [
    {
-    "evidence_id": "draft:SIL-14-0217:0",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "rejoice",
-    "people": [
-     "kings_city",
-     "kovalan"
-    ],
-    "mood": "asserted",
-    "quote": "மகிழ் வெய்திக்",
-    "lines": [
-     "SIL-14-0217"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-00-0024:1",
+    "evidence_id": "draft:SIL-00-0024:0",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "order_wait",
     "people": [
@@ -3019,6 +3008,20 @@
     "quote": "ஈங்கு இருக்கயென்று",
     "lines": [
      "SIL-00-0024"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-14-0217:1",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "rejoice",
+    "people": [
+     "kings_city",
+     "kovalan"
+    ],
+    "mood": "asserted",
+    "quote": "மகிழ் வெய்திக்",
+    "lines": [
+     "SIL-14-0217"
     ]
    },
    {
@@ -3674,7 +3677,23 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-09-0031:3",
+    "evidence_id": "draft:SIL-13-0100:3",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "send",
+    "people": [
+     "kosikan",
+     "kovalan",
+     "kovalan_parents"
+    ],
+    "mood": "asserted",
+    "quote": "இடுக்கண் களைதற் கீண்டெனப் போக்கி",
+    "lines": [
+     "SIL-13-0100",
+     "SIL-13-0101"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-09-0031:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "perform_rites",
     "people": [
@@ -3689,7 +3708,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-27-0284:4",
+    "evidence_id": "draft:MAN-27-0284:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "ask_how_parents_are_known",
     "people": [
@@ -3701,20 +3720,6 @@
     "lines": [
      "MAN-27-0284",
      "MAN-27-0285"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-13-0057:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "grieve",
-    "people": [
-     "kovalan_parents"
-    ],
-    "mood": "asserted",
-    "quote": "அருமணி இழந்த நாகம் போன்றதும்",
-    "lines": [
-     "SIL-13-0057",
-     "SIL-13-0058"
     ]
    }
   ],
@@ -4257,36 +4262,33 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-30-0151:4",
+    "evidence_id": "draft:MAN-06-0052:4",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "endow",
+    "relation": "stand",
     "people": [
-     "cenkuttuvan",
-     "kannagi_temple"
+     "kali_temple"
     ],
     "mood": "asserted",
-    "quote": "கோட்டப் படிப்புறம் வகுத்து",
+    "quote": "காடு அமர் செல்வி கழி பெருங் கோட்டமும்",
     "lines": [
-     "SIL-30-0151"
+     "MAN-06-0052",
+     "MAN-06-0053"
     ]
    },
    {
-    "evidence_id": "draft:MAN-29-0312:5",
+    "evidence_id": "draft:MAN-12-0021:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "refute",
+    "relation": "teach",
     "people": [
-     "three_reasons"
+     "manimekalai",
+     "manimekhala_deity",
+     "three_mantras"
     ],
     "mood": "asserted",
-    "quote": "அபாவம் ஆக்குதலான் விபரீதம்",
+    "quote": "ஒரு மூன்று மந்திரம் தனக்கு உரைசெய்து",
     "lines": [
-     "MAN-29-0312",
-     "MAN-29-0313",
-     "MAN-29-0314",
-     "MAN-29-0315",
-     "MAN-29-0316",
-     "MAN-29-0317",
-     "MAN-29-0318"
+     "MAN-12-0021",
+     "MAN-12-0022"
     ]
    }
   ],
@@ -4406,9 +4408,9 @@
     },
     "caveat": null,
     "ranks": {
-     "fused": 0.0283,
+     "fused": 0.0278,
      "coverage": 0.3333333333333333,
-     "words": 6,
+     "words": 8,
      "lines": 1
     }
    },
@@ -5567,21 +5569,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-13-0022:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "return_to_town",
-    "people": [
-     "aputhiran",
-     "home_town"
-    ],
-    "mood": "asserted",
-    "quote": "தம் பதிப் பெயர்ந்து தமரொடும் கூடி",
-    "lines": [
-     "MAN-13-0022"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-13-0010:5",
+    "evidence_id": "draft:MAN-13-0010:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "abandon",
     "people": [
@@ -5593,6 +5581,20 @@
     "quote": "தோன்றாத் துடவையின் இட்டனள் நீங்க",
     "lines": [
      "MAN-13-0010"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-13-0022:5",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "return_to_town",
+    "people": [
+     "aputhiran",
+     "home_town"
+    ],
+    "mood": "asserted",
+    "quote": "தம் பதிப் பெயர்ந்து தமரொடும் கூடி",
+    "lines": [
+     "MAN-13-0022"
     ]
    }
   ],
@@ -6165,7 +6167,22 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-19-0039:4",
+    "evidence_id": "draft:SIL-18-0015:4",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "ask",
+    "people": [
+     "kannagi"
+    ],
+    "mood": "question",
+    "quote": "சொன்ன தெவன்வாழி யோதோழீ",
+    "lines": [
+     "SIL-18-0015",
+     "SIL-18-0019",
+     "SIL-18-0023"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-19-0039:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "ask",
     "people": [
@@ -6179,19 +6196,6 @@
      "SIL-19-0040",
      "SIL-19-0041",
      "SIL-19-0042"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-15-0064:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "ask",
-    "people": [
-     "kannagi"
-    ],
-    "mood": "question",
-    "quote": "யாதுநீ யுற்ற இடர்ஈ தென்னென",
-    "lines": [
-     "SIL-15-0064"
     ]
    }
   ],
@@ -7049,7 +7053,22 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-25-0071:4",
+    "evidence_id": "draft:SIL-22-0145:4",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "defeat",
+    "people": [
+     "ank_pair",
+     "kannagi",
+     "pandya_king"
+    ],
+    "mood": "claimed",
+    "quote": "தேரா மன்னனைச் சிலம்பின் வென்றிவ்",
+    "lines": [
+     "SIL-22-0145"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-25-0071:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "go_with_anklet",
     "people": [
@@ -7062,22 +7081,6 @@
     "lines": [
      "SIL-25-0071",
      "SIL-25-0072"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-16-0122:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "report",
-    "people": [
-     "ank_pair",
-     "goldsmith",
-     "pandya_king"
-    ],
-    "mood": "intended",
-    "quote": "வேந்தற்கு விளம்பியான் வர",
-    "lines": [
-     "SIL-16-0122",
-     "SIL-16-0123"
     ]
    }
   ],
@@ -8219,7 +8222,36 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-05-0028:1",
+    "evidence_id": "draft:MAN-05-0011:1",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "abound",
+    "people": [
+     "gold_pavilion",
+     "paintings"
+    ],
+    "mood": "asserted",
+    "quote": "சித்திரக் கைவினை திசைதொறும் செறிந்தன",
+    "lines": [
+     "MAN-05-0011"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-03-0078:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "build",
+    "people": [
+     "mayan",
+     "pavilion_and_seat"
+    ],
+    "mood": "asserted",
+    "quote": "மயன் பண்டு இழைத்த மரபினது",
+    "lines": [
+     "MAN-03-0078",
+     "MAN-03-0079"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-05-0028:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "reside",
     "people": [
@@ -8241,50 +8273,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-05-0011:2",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "abound",
-    "people": [
-     "gold_pavilion",
-     "paintings"
-    ],
-    "mood": "asserted",
-    "quote": "சித்திரக் கைவினை திசைதொறும் செறிந்தன",
-    "lines": [
-     "MAN-05-0011"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-19-0116:3",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "ascend",
-    "people": [
-     "gold_pavilion",
-     "indra_tiruvan"
-    ],
-    "mood": "asserted",
-    "quote": "இந்திர திருவன் சென்று இனிது ஏறலும்",
-    "lines": [
-     "MAN-19-0116"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-03-0078:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "build",
-    "people": [
-     "mayan",
-     "pavilion_and_seat"
-    ],
-    "mood": "asserted",
-    "quote": "மயன் பண்டு இழைத்த மரபினது",
-    "lines": [
-     "MAN-03-0078",
-     "MAN-03-0079"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-05-0009:5",
+    "evidence_id": "draft:MAN-05-0009:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "walk_around",
     "people": [
@@ -8296,6 +8285,20 @@
     "lines": [
      "MAN-05-0009",
      "MAN-05-0010"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-19-0116:5",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "ascend",
+    "people": [
+     "gold_pavilion",
+     "indra_tiruvan"
+    ],
+    "mood": "asserted",
+    "quote": "இந்திர திருவன் சென்று இனிது ஏறலும்",
+    "lines": [
+     "MAN-19-0116"
     ]
    }
   ],
@@ -10123,17 +10126,16 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-02-0091:5",
+    "evidence_id": "draft:SIL-01-0029:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "embrace",
+    "relation": "be named",
     "people": [
      "kannagi"
     ],
     "mood": "asserted",
-    "quote": "கைகலந்து",
+    "quote": "கண்ணகிஎன் பாள்",
     "lines": [
-     "SIL-02-0091",
-     "SIL-02-0092"
+     "SIL-01-0029"
     ]
    }
   ],
@@ -10678,7 +10680,20 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-16-0198:2",
+    "evidence_id": "draft:SIL-14-0218:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "depart",
+    "people": [
+     "kovalan"
+    ],
+    "mood": "asserted",
+    "quote": "கோவலன் பெயர்ந்தனன் கொடிமதிற் புறத்தென்",
+    "lines": [
+     "SIL-14-0218"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-16-0198:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "escape",
     "people": [
@@ -10692,45 +10707,34 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-15-0056:3",
+    "evidence_id": "draft:SIL-11-0194:4",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "depart_north",
+    "relation": "identify",
     "people": [
-     "kovalan"
+     "forest_deity_11",
+     "kovalan",
+     "mantra"
     ],
-    "mood": "asserted",
-    "quote": "வடதிசைப் பெயரும் மாமறை யாளன்",
+    "mood": "intended",
+    "quote": "வஞ்சம் பெயர்க்கும் மந்திரத் தால்",
     "lines": [
-     "SIL-15-0056"
+     "SIL-11-0194",
+     "SIL-11-0195"
     ]
    },
    {
-    "evidence_id": "draft:SIL-16-0104:4",
+    "evidence_id": "draft:SIL-21-0009:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "walk",
+    "relation": "stand_firm",
     "people": [
-     "kovalan",
-     "pitikai_street"
+     "karikala_daughter"
     ],
     "mood": "asserted",
-    "quote": "பீடிகைத் தெருவிற் பெயர்வோன்",
+    "quote": "அழியாது சூழ்போக",
     "lines": [
-     "SIL-16-0104"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-16-0103:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "walk",
-    "people": [
-     "kovalan",
-     "pidikai_street"
-    ],
-    "mood": "asserted",
-    "quote": "பீடிகைத் தெருவிற் பெயர்வோன்",
-    "lines": [
-     "SIL-16-0103",
-     "SIL-16-0104"
+     "SIL-21-0009",
+     "SIL-21-0010",
+     "SIL-21-0011"
     ]
    }
   ],
@@ -13100,7 +13104,21 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-10-0058:1",
+    "evidence_id": "draft:SIL-13-0196:1",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "enter",
+    "people": [
+     "kavunti",
+     "madurai"
+    ],
+    "mood": "asserted",
+    "quote": "புக்கனர்",
+    "lines": [
+     "SIL-13-0196"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-10-0058:2",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "go",
     "people": [
@@ -13113,20 +13131,6 @@
      "SIL-10-0058",
      "SIL-10-0059",
      "SIL-10-0060"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-10-0042:2",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "say_near",
-    "people": [
-     "madurai"
-    ],
-    "mood": "asserted",
-    "quote": "நணித்துஎன நக்கு",
-    "lines": [
-     "SIL-10-0042",
-     "SIL-10-0043"
     ]
    },
    {
@@ -13152,34 +13156,33 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-15-0009:4",
+    "evidence_id": "draft:SIL-10-0042:4",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "tell",
+    "relation": "say_near",
     "people": [
-     "kavunti",
-     "kovalan",
      "madurai"
     ],
     "mood": "asserted",
-    "quote": "கோவலன் கூறுழித்",
+    "quote": "நணித்துஎன நக்கு",
     "lines": [
-     "SIL-15-0009",
-     "SIL-15-0010"
+     "SIL-10-0042",
+     "SIL-10-0043"
     ]
    },
    {
-    "evidence_id": "draft:SIL-14-0056:5",
+    "evidence_id": "draft:SIL-13-0128:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "invite_to_say",
+    "relation": "come",
     "people": [
-     "kavunti",
-     "kovalan"
+     "madurai",
+     "madurai_breeze"
     ],
-    "mood": "question",
-    "quote": "சொல்லலும் உண்டேற் சொல்லா யோநீ",
+    "mood": "asserted",
+    "quote": "புலவர் செந்நாப் பொருந்திய நிவப்பின்",
     "lines": [
-     "SIL-14-0056",
-     "SIL-14-0057"
+     "SIL-13-0128",
+     "SIL-13-0129",
+     "SIL-13-0130"
     ]
    }
   ],
@@ -13736,7 +13739,22 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-19-0039:3",
+    "evidence_id": "draft:SIL-18-0015:3",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "ask",
+    "people": [
+     "kannagi"
+    ],
+    "mood": "question",
+    "quote": "சொன்ன தெவன்வாழி யோதோழீ",
+    "lines": [
+     "SIL-18-0015",
+     "SIL-18-0019",
+     "SIL-18-0023"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-19-0039:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "ask",
     "people": [
@@ -13750,19 +13768,6 @@
      "SIL-19-0040",
      "SIL-19-0041",
      "SIL-19-0042"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-15-0064:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "ask",
-    "people": [
-     "kannagi"
-    ],
-    "mood": "question",
-    "quote": "யாதுநீ யுற்ற இடர்ஈ தென்னென",
-    "lines": [
-     "SIL-15-0064"
     ]
    },
    {
@@ -14344,7 +14349,22 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-06-0109:4",
+    "evidence_id": "draft:SIL-15-0074:4",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "give wealth",
+    "people": [
+     "kovalan",
+     "wealth"
+    ],
+    "mood": "asserted",
+    "quote": "ஒல்காச் செல்வத் துறுபொருள் கொடுத்து",
+    "lines": [
+     "SIL-15-0074",
+     "SIL-15-0075"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-06-0109:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "give_union_and_sulking",
     "people": [
@@ -14356,22 +14376,6 @@
     "quote": "கூடலும் ஊடலும் கோவலற்கு அளித்துப்",
     "lines": [
      "SIL-06-0109"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-08-0070:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "give",
-    "people": [
-     "garland",
-     "kovalan",
-     "vayantamalai"
-    ],
-    "mood": "command",
-    "quote": "கோவலற்கு அளித்துக்",
-    "lines": [
-     "SIL-08-0070",
-     "SIL-08-0071"
     ]
    }
   ],
@@ -15288,7 +15292,21 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-07-0054:3",
+    "evidence_id": "draft:SIL-16-0043:3",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "invite_to_eat",
+    "people": [
+     "kannagi",
+     "kovalan"
+    ],
+    "mood": "command",
+    "quote": "அமுத முண்க அடிக ளீங்கென",
+    "lines": [
+     "SIL-16-0043"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-07-0054:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "declare_hometown",
     "people": [
@@ -15302,7 +15320,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-07-0062:4",
+    "evidence_id": "draft:SIL-07-0062:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "declare_hometown",
     "people": [
@@ -15313,22 +15331,6 @@
     "quote": "புகாரே எம்மூர்",
     "lines": [
      "SIL-07-0062"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-10-0268:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "flourish",
-    "people": [
-     "puhar"
-    ],
-    "mood": "wish",
-    "quote": "வாழியரோ",
-    "lines": [
-     "SIL-10-0268",
-     "SIL-10-0269",
-     "SIL-10-0270",
-     "SIL-10-0271"
     ]
    }
   ],
@@ -15446,7 +15448,21 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-26-0030:2",
+    "evidence_id": "draft:MAN-28-0230:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "sow",
+    "people": [
+     "water, land, time and tools"
+    ],
+    "mood": "metaphor",
+    "quote": "நீரும் நிலமும் காலமும் கருவியும்",
+    "lines": [
+     "MAN-28-0230",
+     "MAN-28-0231"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-26-0030:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "declare_auspicious_time",
     "people": [
@@ -17112,12 +17128,12 @@
    {
     "evidence_id": "draft:MAN-26-0023:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "see",
+    "relation": "report",
     "people": [
      "sangaman"
     ],
-    "mood": "claimed",
-    "quote": "சங்கமன் தன்னைக் கண்டனர்",
+    "mood": "asserted",
+    "quote": "கண்டனர் கூற",
     "lines": [
      "MAN-26-0023",
      "MAN-26-0024"
@@ -17405,7 +17421,36 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-02-0073:1",
+    "evidence_id": "draft:SIL-16-0039:1",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "revere",
+    "people": [
+     "kannagi",
+     "kovalan"
+    ],
+    "mood": "asserted",
+    "quote": "தொழுதனள்",
+    "lines": [
+     "SIL-16-0039"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-01-0053:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "circle the fire",
+    "people": [
+     "kannagi",
+     "kovalan"
+    ],
+    "mood": "asserted",
+    "quote": "தீவலம் செய்வது",
+    "lines": [
+     "SIL-01-0053",
+     "SIL-01-0055"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-02-0073:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "praise",
     "people": [
@@ -17422,7 +17467,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-02-0077:2",
+    "evidence_id": "draft:SIL-02-0077:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "praise",
     "people": [
@@ -17439,47 +17484,17 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-09-0044:3",
+    "evidence_id": "draft:SIL-02-0036:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "regain_husband",
-    "people": [
-     "kannagi",
-     "kovalan"
-    ],
-    "mood": "predicted",
-    "quote": "பெறுகேன்",
-    "lines": [
-     "SIL-09-0044"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-09-0072:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "smile",
+    "relation": "look at",
     "people": [
      "kannagi",
      "kovalan"
     ],
     "mood": "asserted",
-    "quote": "நகைமுகம் காட்டி",
+    "quote": "திருமுகம் நோக்கிக்",
     "lines": [
-     "SIL-09-0072",
-     "SIL-09-0073"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-09-0076:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "command_rise",
-    "people": [
-     "kannagi",
-     "kovalan"
-    ],
-    "mood": "command",
-    "quote": "எழுகென்று",
-    "lines": [
-     "SIL-09-0076",
-     "SIL-09-0077"
+     "SIL-02-0036"
     ]
    }
   ],
@@ -17764,7 +17779,22 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-08-0123:2",
+    "evidence_id": "draft:MAN-00-0073:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "approach",
+    "people": [
+     "kanchanan",
+     "manimekalai"
+    ],
+    "mood": "asserted",
+    "quote": "ஆய் இழை தன்னை அகலாது அணுகலும்",
+    "lines": [
+     "MAN-00-0073",
+     "MAN-00-0074"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-08-0123:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "unite",
     "people": [
@@ -17778,7 +17808,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-08-0123:3",
+    "evidence_id": "draft:SIL-08-0123:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "unite",
     "people": [
@@ -17789,21 +17819,6 @@
     "lines": [
      "SIL-08-0123",
      "SIL-08-0124"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-00-0073:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "approach",
-    "people": [
-     "kanchanan",
-     "manimekalai"
-    ],
-    "mood": "asserted",
-    "quote": "ஆய் இழை தன்னை அகலாது அணுகலும்",
-    "lines": [
-     "MAN-00-0073",
-     "MAN-00-0074"
     ]
    },
    {
@@ -18722,52 +18737,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-26-0047:1",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "arrive",
-    "people": [
-     "bodhi_tree",
-     "buddha"
-    ],
-    "mood": "predicted",
-    "quote": "போதிமூலம் பொருந்தி வந்தருளி",
-    "lines": [
-     "MAN-26-0047"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-30-0010:2",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "sit",
-    "people": [
-     "bodhi_tree",
-     "buddha"
-    ],
-    "mood": "asserted",
-    "quote": "போதி மூலம் பொருந்தியிருந்து",
-    "lines": [
-     "MAN-30-0010"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-22-0076:3",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "eat",
-    "people": [
-     "merchant_seat_under_kanchi_tree",
-     "vaishya_bhuta"
-    ],
-    "mood": "asserted",
-    "quote": "உள்மகிழ்ந் துண்ணு வோனே",
-    "lines": [
-     "SIL-22-0076",
-     "SIL-22-0077",
-     "SIL-22-0078",
-     "SIL-22-0079"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-15-0103:4",
+    "evidence_id": "draft:SIL-15-0103:1",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "give",
     "people": [
@@ -18784,20 +18754,64 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-10-0011:5",
+    "evidence_id": "draft:MAN-26-0047:2",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "proclaim",
+    "relation": "arrive",
     "people": [
-     "bodhi_tree_shade",
-     "buddha_teaching",
-     "charana_10"
+     "bodhi_tree",
+     "buddha"
+    ],
+    "mood": "predicted",
+    "quote": "போதிமூலம் பொருந்தி வந்தருளி",
+    "lines": [
+     "MAN-26-0047"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-30-0010:3",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "sit",
+    "people": [
+     "bodhi_tree",
+     "buddha"
     ],
     "mood": "asserted",
-    "quote": "அந்தர சாரிகள் அறைந்தனர் சாற்றும்",
+    "quote": "போதி மூலம் பொருந்தியிருந்து",
     "lines": [
-     "SIL-10-0011",
-     "SIL-10-0012",
-     "SIL-10-0013"
+     "MAN-30-0010"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-23-0076:4",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "stay",
+    "people": [
+     "bodhi_mandram",
+     "parasaran"
+    ],
+    "mood": "asserted",
+    "quote": "களைந்தனன் இருப்போன்",
+    "lines": [
+     "SIL-23-0076",
+     "SIL-23-0079"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-23-0076:5",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "put_aside",
+    "people": [
+     "bodhi_mandram",
+     "parasaran",
+     "staff_waterpot_umbrella_bundle_sandals"
+    ],
+    "mood": "asserted",
+    "quote": "தண்டே குண்டிகை வெண்குடை",
+    "lines": [
+     "SIL-23-0076",
+     "SIL-23-0077",
+     "SIL-23-0078",
+     "SIL-23-0079"
     ]
    }
   ],
@@ -19053,37 +19067,7 @@
   ],
   "drafts": [
    {
-    "evidence_id": "draft:MAN-03-0098:0",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "ask_about_killing",
-    "people": [
-     "arantanam_ascetic",
-     "drunk_man",
-     "toddy"
-    ],
-    "mood": "question",
-    "quote": "கொலையும் உண்டோ",
-    "lines": [
-     "MAN-03-0098",
-     "MAN-03-0099"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-03-0102:1",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "swear",
-    "people": [
-     "arantanam_ascetic",
-     "drunk_man"
-    ],
-    "mood": "asserted",
-    "quote": "சூளுற்று",
-    "lines": [
-     "MAN-03-0102"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-03-0103:2",
+    "evidence_id": "draft:MAN-03-0103:0",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "beg",
     "people": [
@@ -19096,7 +19080,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-03-0113:3",
+    "evidence_id": "draft:MAN-03-0113:1",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "quarrel",
     "people": [
@@ -19110,7 +19094,21 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-05-0026:4",
+    "evidence_id": "draft:MAN-03-0101:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "swear",
+    "people": [
+     "drunk_man"
+    ],
+    "mood": "asserted",
+    "quote": "உண்ணா நோன்பி தன்னொடும் சூளுற்று",
+    "lines": [
+     "MAN-03-0101",
+     "MAN-03-0102"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-05-0026:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "ask",
     "people": [
@@ -19124,17 +19122,33 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-03-0101:5",
+    "evidence_id": "draft:MAN-03-0110:4",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "swear",
+    "relation": "behave_madly",
     "people": [
      "drunk_man"
     ],
     "mood": "asserted",
-    "quote": "உண்ணா நோன்பி தன்னொடும் சூளுற்று",
+    "quote": "அழூஉம் விழூஉம் அரற்றும் கூஉம்",
     "lines": [
-     "MAN-03-0101",
-     "MAN-03-0102"
+     "MAN-03-0110",
+     "MAN-03-0111",
+     "MAN-03-0112"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-03-0114:5",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "watch",
+    "people": [
+     "drunk_man",
+     "onlookers"
+    ],
+    "mood": "asserted",
+    "quote": "கையறு துன்பம் கண்டு நிற்குநரும்",
+    "lines": [
+     "MAN-03-0114",
+     "MAN-03-0115"
     ]
    }
   ],
@@ -19359,10 +19373,10 @@
     },
     "caveat": null,
     "ranks": {
-     "fused": 0.0403,
+     "fused": 0.0407,
      "coverage": 0.5,
-     "words": 9,
-     "graph": 9,
+     "words": 8,
+     "graph": 8,
      "lines": 11
     }
    }
@@ -20071,34 +20085,29 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-11-0103:4",
+    "evidence_id": "draft:MAN-14-0090:4",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "feed",
+    "relation": "worship",
     "people": [
-     "sadhuchakkaran",
-     "speaker2"
+     "aputhiran"
     ],
     "mood": "asserted",
-    "quote": "சாதுசக்கரன் தனை யான் ஊட்டிய",
+    "quote": "தொழுது",
     "lines": [
-     "MAN-11-0103"
+     "MAN-14-0090"
     ]
    },
    {
-    "evidence_id": "draft:MAN-14-0057:5",
+    "evidence_id": "draft:MAN-25-0161:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "cease",
+    "relation": "come",
     "people": [
-     "ambalam",
-     "feeding_noise"
+     "aputhiran"
     ],
     "mood": "asserted",
-    "quote": "ஊண் ஒலி அரவம் ஒடுங்கியது",
+    "quote": "வந்தனை",
     "lines": [
-     "MAN-14-0057",
-     "MAN-14-0058",
-     "MAN-14-0059",
-     "MAN-14-0060"
+     "MAN-25-0161"
     ]
    }
   ],
@@ -21238,20 +21247,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-28-0051:2",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "describe_street",
-    "people": [
-     "herdsmen_street"
-    ],
-    "mood": "asserted",
-    "quote": "பொதுவர் பொலி மறுகும்",
-    "lines": [
-     "MAN-28-0051"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-05-0087:3",
+    "evidence_id": "draft:MAN-05-0087:2",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "sell_self",
     "people": [
@@ -21261,6 +21257,19 @@
     "quote": "பொருள் விலையாட்டி",
     "lines": [
      "MAN-05-0087"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-28-0051:3",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "describe_street",
+    "people": [
+     "herdsmen_street"
+    ],
+    "mood": "asserted",
+    "quote": "பொதுவர் பொலி மறுகும்",
+    "lines": [
+     "MAN-28-0051"
     ]
    },
    {
@@ -21737,9 +21746,9 @@
     },
     "caveat": "the pillar tells him, his change of mind is not narrated",
     "ranks": {
-     "fused": 0.0318,
+     "fused": 0.032,
      "coverage": 0,
-     "words": 4,
+     "words": 3,
      "graph": 2
     }
    },
@@ -22151,36 +22160,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-19-0005:3",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "make_painting",
-    "people": [
-     "artisans",
-     "painting"
-    ],
-    "mood": "asserted",
-    "quote": "வித்தகர் இயற்றிய",
-    "lines": [
-     "MAN-19-0005",
-     "MAN-19-0006"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-28-0203:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "clear_dues_or_release",
-    "people": [
-     "everywhere"
-    ],
-    "mood": "command",
-    "quote": "கறைவீடு செய்ம்",
-    "lines": [
-     "SIL-28-0203",
-     "SIL-28-0204"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-15-0033:5",
+    "evidence_id": "draft:MAN-15-0033:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "show_grace",
     "people": [
@@ -22191,6 +22171,35 @@
     "lines": [
      "MAN-15-0033",
      "MAN-15-0034"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-15-0033:4",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "learn",
+    "people": [
+     "cakkaravala_sages",
+     "pillar"
+    ],
+    "mood": "conditional",
+    "quote": "அறிகுவம்",
+    "lines": [
+     "MAN-15-0033",
+     "MAN-15-0034",
+     "MAN-15-0035"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-21-0103:5",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "not_exist",
+    "people": [
+     "pillar"
+    ],
+    "mood": "claimed",
+    "quote": "இறைவனும் இல்லை",
+    "lines": [
+     "MAN-21-0103"
     ]
    }
   ],
@@ -23030,13 +23039,27 @@
      "sangaman"
     ],
     "mood": "asserted",
+    "quote": "குற்றம் இலோனைக் கொலைபுரிந்திட்டனன்",
+    "lines": [
+     "MAN-26-0028"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-26-0028:1",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "kill",
+    "people": [
+     "bharatan",
+     "sangaman"
+    ],
+    "mood": "asserted",
     "quote": "கொலைபுரிந்திட்டனன்",
     "lines": [
      "MAN-26-0028"
     ]
    },
    {
-    "evidence_id": "draft:SIL-23-0154:1",
+    "evidence_id": "draft:SIL-23-0154:2",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "seize",
     "people": [
@@ -23052,7 +23075,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-26-0026:2",
+    "evidence_id": "draft:MAN-26-0026:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "seize",
     "people": [
@@ -23066,47 +23089,32 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-26-0027:3",
+    "evidence_id": "draft:MAN-26-0025:4",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "seize",
+    "people": [
+     "bharatan",
+     "sangaman"
+    ],
+    "mood": "asserted",
+    "quote": "தெற்றெனப் பற்றி",
+    "lines": [
+     "MAN-26-0025",
+     "MAN-26-0026"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-26-0027:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "accuse",
     "people": [
      "bharatan",
-     "king",
      "sangaman"
     ],
     "mood": "asserted",
     "quote": "ஒற்றன் இவன் என உரைத்து",
     "lines": [
-     "MAN-26-0027",
-     "MAN-26-0028"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-26-0028:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "blameless",
-    "people": [
-     "sangaman"
-    ],
-    "mood": "asserted",
-    "quote": "குற்றம் இலோனை",
-    "lines": [
-     "MAN-26-0028"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-23-0157:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "show",
-    "people": [
-     "bharatan",
-     "sangaman",
-     "vetrivel_celiyan"
-    ],
-    "mood": "asserted",
-    "quote": "வெற்றிவேல் மன்னற்குக் காட்டிக்",
-    "lines": [
-     "SIL-23-0157"
+     "MAN-26-0027"
     ]
    }
   ],
@@ -23372,24 +23380,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-23-0101:3",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "imprison",
-    "people": [
-     "prison_site",
-     "vartikan",
-     "young_officials"
-    ],
-    "mood": "asserted",
-    "quote": "இடுசிறைக் கோட்டத் திட்டன ராக",
-    "lines": [
-     "SIL-23-0101",
-     "SIL-23-0102",
-     "SIL-23-0103"
-    ]
-   },
-   {
-    "evidence_id": "draft:MAN-19-0045:4",
+    "evidence_id": "draft:MAN-19-0045:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "suffer_hunger",
     "people": [
@@ -23400,6 +23391,23 @@
     "quote": "பசியுறும் ஆர் உயிர் மாக்களை",
     "lines": [
      "MAN-19-0045"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-19-0160:4",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "convert prison into charity hall",
+    "people": [
+     "aravor",
+     "mavankilli",
+     "prison_site"
+    ],
+    "mood": "asserted",
+    "quote": "அறவோர்க்கு ஆக்கினன் அரசு ஆள் வேந்து",
+    "lines": [
+     "MAN-19-0160",
+     "MAN-19-0161",
+     "MAN-19-0162"
     ]
    },
    {
@@ -23697,7 +23705,36 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-02-0073:1",
+    "evidence_id": "draft:SIL-16-0039:1",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "revere",
+    "people": [
+     "kannagi",
+     "kovalan"
+    ],
+    "mood": "asserted",
+    "quote": "தொழுதனள்",
+    "lines": [
+     "SIL-16-0039"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-01-0053:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "circle the fire",
+    "people": [
+     "kannagi",
+     "kovalan"
+    ],
+    "mood": "asserted",
+    "quote": "தீவலம் செய்வது",
+    "lines": [
+     "SIL-01-0053",
+     "SIL-01-0055"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-02-0073:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "praise",
     "people": [
@@ -23714,7 +23751,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-02-0077:2",
+    "evidence_id": "draft:SIL-02-0077:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "praise",
     "people": [
@@ -23731,47 +23768,17 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-09-0044:3",
+    "evidence_id": "draft:SIL-02-0036:5",
     "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "regain_husband",
-    "people": [
-     "kannagi",
-     "kovalan"
-    ],
-    "mood": "predicted",
-    "quote": "பெறுகேன்",
-    "lines": [
-     "SIL-09-0044"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-09-0072:4",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "smile",
+    "relation": "look at",
     "people": [
      "kannagi",
      "kovalan"
     ],
     "mood": "asserted",
-    "quote": "நகைமுகம் காட்டி",
+    "quote": "திருமுகம் நோக்கிக்",
     "lines": [
-     "SIL-09-0072",
-     "SIL-09-0073"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-09-0076:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "command_rise",
-    "people": [
-     "kannagi",
-     "kovalan"
-    ],
-    "mood": "command",
-    "quote": "எழுகென்று",
-    "lines": [
-     "SIL-09-0076",
-     "SIL-09-0077"
+     "SIL-02-0036"
     ]
    }
   ],
@@ -24061,7 +24068,21 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-14-0025:2",
+    "evidence_id": "draft:SIL-11-0092:2",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "exist",
+    "people": [
+     "cave",
+     "tirumal_hill"
+    ],
+    "mood": "asserted",
+    "quote": "பெருமால் கெடுக்கும் பிலமுண் டாங்கு",
+    "lines": [
+     "SIL-11-0092"
+    ]
+   },
+   {
+    "evidence_id": "draft:SIL-14-0025:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "speak",
     "people": [
@@ -24074,7 +24095,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-27-0079:3",
+    "evidence_id": "draft:SIL-27-0079:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "rage",
     "people": [
@@ -24087,7 +24108,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-10-0044:4",
+    "evidence_id": "draft:SIL-10-0044:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "see",
     "people": [
@@ -24098,20 +24119,6 @@
     "lines": [
      "SIL-10-0044",
      "SIL-10-0045"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-11-0092:5",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "exist",
-    "people": [
-     "cave",
-     "tirumal_hill"
-    ],
-    "mood": "asserted",
-    "quote": "பெருமால் கெடுக்கும் பிலமுண் டாங்கு",
-    "lines": [
-     "SIL-11-0092"
     ]
    }
   ],

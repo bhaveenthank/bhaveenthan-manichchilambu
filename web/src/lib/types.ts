@@ -77,6 +77,8 @@ export interface GraphNode {
   kind?: boolean;
   broader?: string;
   gloss?: { of: string; by: string; note: string };
+  /** Named by the machine drafts and described by a model, not yet in the hand list. Never used to read a question. */
+  drafted?: boolean;
 }
 export interface GraphEdge {
   s: string;
@@ -91,11 +93,17 @@ export interface GraphEdge {
   epic: string;
   layer: string;
   cause: boolean;
+  /** A link from a machine draft that a second model agrees with: shown only on request, never an answer. */
+  machine?: boolean;
+  line?: string;
+  quote?: string;
 }
 export interface GraphData {
   nodes: GraphNode[];
   edges: GraphEdge[];
   suggested: { s: string; t: string; n: number }[];
+  /** Links from drafts a second model checked (scripts/tier3_judge.py), kept apart from the hand-record edges. */
+  checked?: GraphEdge[];
 }
 
 export interface Canto {
@@ -117,6 +125,7 @@ export interface Canto {
   length: string;
   cited: number; // lines the graph's records cite
   reviewed?: number; // lines cited by those or by drafts a reader accepted on a review sheet
+  checked?: number; // lines cited by those, or by drafts a second model agrees with
   drafted: number; // lines cited by those or by the unchecked machine drafts
 }
 export interface CantoLine {
@@ -210,3 +219,41 @@ export interface Corpus {
   nodeById: Map<string, GraphNode>;
 }
 export type Lang = "en" | "ta";
+
+/** One innovation on the Novelty page, with its numbers computed from the data at build time. */
+export interface NoveltyItem {
+  id: string;
+  icon: string;
+  title: Pair;
+  problem: Pair;
+  answer: Pair;
+  how: Pair;
+  figure: { value: number | string; label: Pair };
+  records?: string[];
+  link?: string;
+  naive_only?: string[];
+  beliefs?: {
+    record: string;
+    holder: string;
+    claim: string;
+    stance: string;
+    t: number;
+    claim_mood: string;
+    object?: string;
+    in_the_text?: string[];
+    in_their_view?: string[];
+  }[];
+  representations?: Record<string, { accuracy: number; claims_as_fact: number; statements: number }>;
+  depth?: Record<string, number>;
+  families?: Record<string, number>;
+  mutations?: { mutations: number; caught: number; missed: string[]; false_alarms: number };
+  warrants?: Record<string, number>;
+  tempting?: { pair: string[]; false_reading: string; warrants: string[]; flagged: boolean }[];
+  lives?: Record<string, number>;
+  gaps?: { q: Pair; a: Pair; tempting: Pair }[];
+  kinds?: number;
+  senses?: Record<string, number>;
+  figurative?: { line: string; gist: string }[];
+  pairs?: { a: string; b: string; ta: string; tb: string }[];
+  tiers?: { hand: number; reviewed: number; checked: number; drafted: number; noted: number; lines: number };
+}

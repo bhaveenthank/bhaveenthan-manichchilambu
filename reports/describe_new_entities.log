@@ -1,0 +1,16 @@
+348 new entities, 1391 mentions, 14 model calls
+25/348
+50/348
+75/348
+100/348
+125/348
+150/348
+175/348
+200/348
+225/348
+250/348
+275/348
+300/348
+325/348
+348/348
+done {'described': 348, 'same_as_existing_or_other': 10, 'rejected': 0} -> data/seeds/entities_drafted.yaml

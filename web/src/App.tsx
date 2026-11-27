@@ -16,6 +16,7 @@ const GraphPage = lazy(() => import("./pages/GraphPage").then((m) => ({ default:
 const HomePage = lazy(() => import("./pages/Home").then((m) => ({ default: m.HomePage })));
 const SongsPage = lazy(() => import("./pages/Songs").then((m) => ({ default: m.SongsPage })));
 const TracePage = lazy(() => import("./pages/Trace").then((m) => ({ default: m.TracePage })));
+const NoveltyPage = lazy(() => import("./pages/Novelty").then((m) => ({ default: m.NoveltyPage })));
 const RecordPage = lazy(() => import("./pages/Record").then((m) => ({ default: m.RecordPage })));
 const WordsPage = lazy(() => import("./pages/Words").then((m) => ({ default: m.WordsPage })));
 // Pages that read the echoes, timelines, gaps, ties, discoveries or lexicon. The rest open on the three core files.
@@ -27,6 +28,7 @@ const NAV = [
   { path: "ask", en: "Ask", ta: "கேள்" },
   { path: "trace", en: "Trace", ta: "தடம்" },
   { path: "songs", en: "Songs", ta: "பாடல்கள்" },
+  { path: "novelty", en: "Novelty", ta: "புதுமைகள்" },
 ];
 const EXPLORE = [
   {
@@ -330,6 +332,8 @@ export function App() {
       <AboutPage />
     ) : current === "record" && sub ? (
       <RecordPage id={sub} />
+    ) : current === "novelty" ? (
+      <NoveltyPage />
     ) : (
       <HomePage />
     );

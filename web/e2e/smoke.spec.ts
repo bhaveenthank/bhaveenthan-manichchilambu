@@ -22,6 +22,8 @@ const PAGES: [string, RegExp][] = [
   ["#/words", /words|names/i],
   ["#/about", /About this project/i],
   ["#/record/a15", /How to cite it/i],
+  ["#/novelty", /What someone believes is not what happened/i],
+  ["#/graph?focus=manimekalai&checked=1", /The graph/i],
 ];
 
 for (const [path, expected] of PAGES) {

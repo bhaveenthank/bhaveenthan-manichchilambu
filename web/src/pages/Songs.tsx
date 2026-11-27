@@ -216,7 +216,12 @@ export function SongsPage({ params }: { params: URLSearchParams }) {
                     {c.records.length ? ` · ${c.records.length} ${t("records", "பதிவுகள்")}` : ""}
                     {c.echo ? ` · ${c.echo} ${t("shared", "பொது")}` : ""}
                   </span>
-                  <CoverageBar lines={c.lines} cited={c.cited} reviewed={c.reviewed} drafted={c.drafted} />
+                  <CoverageBar
+                    lines={c.lines}
+                    cited={c.cited}
+                    reviewed={Math.max(c.checked ?? 0, c.reviewed ?? c.cited)}
+                    drafted={c.drafted}
+                  />
                   <span className="coverage__text">
                     {t(
                       `${Math.round((c.cited / c.lines) * 100)}% of lines in the graph · ${Math.round((c.drafted / c.lines) * 100)}% with drafts`,

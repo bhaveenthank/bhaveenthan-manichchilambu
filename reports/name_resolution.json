@@ -13,11 +13,11 @@
   "decided_ignore": 277,
   "alias": 259,
   "common": 235,
-  "context": 199,
+  "context": 189,
   "decided": 139,
   "decided_concept": 135,
   "spelling": 60,
-  "open_role": 10
+  "open_role": 20
  },
  "name_canto_pairs_by_step": {
   "model_ignore": 1778,
@@ -31,14 +31,14 @@
   "alias": 86,
   "decided_ignore": 81,
   "decided_concept": 54,
-  "context": 32,
+  "context": 30,
   "decided": 30,
   "spelling": 21,
-  "open_role": 5
+  "open_role": 7
  },
- "names_resolved_somewhere": 402,
- "share_of_mentions_resolved": 0.442,
- "share_of_mentions_accounted_for": 0.935,
+ "names_resolved_somewhere": 400,
+ "share_of_mentions_resolved": 0.441,
+ "share_of_mentions_accounted_for": 0.934,
  "new_entities_proposed": [
   "new:acalan",
   "new:adi_sinendran",
@@ -389,5 +389,5 @@
   "new:yazh",
   "new:yugi"
  ],
- "left_to_decide": 522
+ "left_to_decide": 524
 }

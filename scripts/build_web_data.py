@@ -132,9 +132,54 @@ def build_graph():
         nodes.append({"id": eid, "en": n["en"], "ta": n["ta"], "also": n.get("also", []) + ent.get("names", []), "cls": class_of(eid, ents),
                       "epics": sorted(epics[eid] or set(ent.get("epics", []))), "mentions": counts[eid], "first": first.get(eid), **({"unnamed": True} if n.get("unnamed") else {}),
                       **({"kind": True} if eid in GENERIC or n.get("type") else {}), **({"broader": n["broader"]} if n.get("broader") else {}), **({"gloss": n["gloss"]} if n.get("gloss") else {})})
+    # Entities the drafts name that the hand list doesn't have, described by a model (describe_new_entities.py).
+    # They're marked drafted, so the site never shows them as checked.
+    known = {n["id"] for n in nodes}
+    dpath = SEEDS / "entities_drafted.yaml"
+    drafted_ents = yaml.safe_load(dpath.read_text(encoding="utf-8")) if dpath.exists() else []
+    same = {e["id"]: e["same_as"] for e in drafted_ents if e.get("same_as")}
+    for e in drafted_ents:
+        if e.get("same_as") or e["id"] in known:
+            continue
+        nodes.append({"id": e["id"], "en": e["en"], "ta": e["ta"], "also": e.get("also", []), "cls": e["cls"], "epics": e.get("epics", []), "mentions": 0, "first": None,
+                      "drafted": True, **({"kind": True} if e.get("kind") else {})})
+        known.add(e["id"])
+    checked = checked_edges(known, same)
     coo = json.loads((ROOT / "reports/tier1_cooccur.json").read_text())
     suggestions = [{"s": c["a"], "t": c["b"], "n": c["count"]} for c in coo["candidates"] if not c["in_ledger"] and c["a"] in used | set(ents) and c["b"] in used | set(ents)]
-    return {"nodes": nodes, "edges": edges, "suggested": suggestions}
+    return {"nodes": nodes, "edges": edges, "suggested": suggestions, "checked": checked}
+
+
+def checked_edges(known, same):
+    """Links from drafts a second model agrees with, once their names resolve to graph nodes. Kept apart from the
+    hand-record edges: the Graph page shows them only when asked, drawn differently, and they never answer questions."""
+    nmap_path = ROOT / "data/candidates/name_map.json"
+    nmap = json.loads(nmap_path.read_text(encoding="utf-8")) if nmap_path.exists() else {}
+    piles = judged()
+
+    def resolve(name, canto):
+        got = (nmap.get(f"{name}|{canto}") or {}).get("id") or (name if name in known else None)
+        if got and got.startswith("new:"):
+            got = got[4:]
+        got = same.get(got, got)
+        return got if got in known else None
+
+    out = []
+    for d in all_drafts():
+        if piles.get(draft_key(d)) != "fast":
+            continue
+        canto = d["lines"][0][:6]
+        names = []
+        for role in list(ROLE_ORDER) + [r for r in (d.get("roles") or {}) if r not in ROLE_ORDER]:
+            for v in values((d.get("roles") or {}).get(role, [])):
+                got = resolve(v, canto) if isinstance(v, str) else None
+                if got and got not in [n for _, n in names]:
+                    names.append((role, got))
+        for role, other in names[1:]:
+            out.append({"s": names[0][1], "t": other, "kind": d.get("kind") or "", "role": role, "rec": f"draft:{d['draft']}", "mood": d.get("mood") or "asserted",
+                        "epic": canto[:3], "machine": True, "line": d["lines"][0], "quote": d.get("quote") or "",
+                        "tm": -1, "birth": "main", "ep": "", "layer": "event", "cause": False})
+    return out
 
 
 def build_cantos():
@@ -151,13 +196,15 @@ def build_cantos():
         for key in {canto_key(l) for l in r["lines"]}:
             recs[key].append(r["id"])
     # How much of each canto the records actually cite, so the site can show coverage instead of implying it.
-    cited, drafted = defaultdict(set), defaultdict(set)
+    cited, drafted, checked = defaultdict(set), defaultdict(set), defaultdict(set)
     for r in RECORDS:
         for l in r["lines"]:
             cited[canto_key(l)].add(l)
     for key, rows in build_machine().items():
         for row in rows:
             drafted[key] |= {l["id"] for l in row["lines"]}
+            if row.get("pile") == "fast":  # a second model agrees with it: checked, though not by a person
+                checked[key] |= {l["id"] for l in row["lines"]}
     # Drafts a reader has accepted on a review sheet (scripts/draft_sheets.py --ingest). Checked, but not hand records.
     reviewed = defaultdict(set)
     rpath = ROOT / "data/candidates/reviewed.jsonl"
@@ -183,7 +230,7 @@ def build_cantos():
                     "metres": [m for m in row["metres"].split(" | ") if m], "setting": info["setting"], "themes": info["themes"],
                     "kandam": next((r["kandam"] for r in ROWS if r["id"].startswith(key)), ""), "people": [e for e, _ in people[key].most_common(8)],
                     "events": dict(events[key].most_common(4)), "records": recs[key], "echo": echo[key],
-                    "cited": len(cited[key]), "reviewed": len(reviewed[key] | cited[key]), "drafted": len(drafted[key] | cited[key]),
+                    "cited": len(cited[key]), "reviewed": len(reviewed[key] | cited[key]), "checked": len(checked[key] | reviewed[key] | cited[key]), "drafted": len(drafted[key] | cited[key]),
                     "length": "Short, under 100 lines" if n < 100 else "Medium, 100 to 199 lines" if n < 200 else "Long, 200 lines or more"})
     return out
 
@@ -285,14 +332,50 @@ def build_catalogue():
     return {"taxonomy": cat["taxonomy"], "items": items}
 
 
-def build_machine():
-    """Records a model proposed in the full run, by canto. Nobody has checked these, and the site says so."""
-    path = ROOT / "data/candidates/tier2_full.jsonl"
-    out = defaultdict(list)
-    if path.exists():
+def draft_key(r):
+    return json.dumps([r.get("kind"), r.get("roles"), r.get("voice"), r.get("mood"), r["lines"], r.get("quote")], ensure_ascii=False, sort_keys=True)
+
+
+def judged():
+    """The second model's pile for each draft (tier3_judge.py), keyed by content. A run still going counts as far as it got."""
+    piles = {}
+    for name in ("tier3_full.jsonl", "tier3_full.jsonl.partial", "tier3_gaps.jsonl", "tier3_gaps.jsonl.partial"):
+        path = ROOT / "data/candidates" / name
+        if path.exists():
+            for raw in open(path, encoding="utf-8"):
+                try:
+                    j = json.loads(raw)
+                except json.JSONDecodeError:  # the last line of a file still being written
+                    continue
+                piles.setdefault(draft_key(j), j.get("pile"))
+    return piles
+
+
+def all_drafts():
+    """Every machine draft: the full run, then the gap pass over lines the full run didn't cite. Ids are stable:
+    d00000... for the full run (as on the review sheets), g00000... for the gap pass."""
+    out = []
+    for name, prefix in (("tier2_full.jsonl", "d"), ("tier2_lines_gaps.jsonl", "g")):
+        path = ROOT / "data/candidates" / name
+        if not path.exists():
+            continue
+        n = 0
         for raw in open(path, encoding="utf-8"):
             c = json.loads(raw)
-            out[c["lines"][0][:6]].append({"kind": c.get("kind"), "roles": c.get("roles"), "voice": c.get("voice"), "mood": c.get("mood"), "lines": [{"id": l, "text": TEXT[l]} for l in c["lines"]], "quote": c.get("quote")})
+            if c.get("type", "record") != "record" or not c.get("lines") or any(l not in TEXT for l in c["lines"]):
+                continue
+            out.append({**c, "draft": f"{prefix}{n:05d}"})
+            n += 1
+    return out
+
+
+def build_machine():
+    """Machine drafts by canto, each with the second model's verdict if it has one. Nobody has checked these by hand, and the site says so."""
+    piles = judged()
+    out = defaultdict(list)
+    for c in all_drafts():
+        out[c["lines"][0][:6]].append({"id": c["draft"], "kind": c.get("kind"), "roles": c.get("roles"), "voice": c.get("voice"), "mood": c.get("mood"),
+                                       "lines": [{"id": l, "text": TEXT[l]} for l in c["lines"]], "quote": c.get("quote"), "pile": piles.get(draft_key(c))})
     return out
 
 
@@ -349,6 +432,8 @@ def main():
     dump("search.json", [[r["id"], r["text"]] for r in ROWS])
     dump("retrieval.json", build_retrieval(machine))
     dump("catalogue.json", build_catalogue())
+    from build_novelty import build as build_novelty
+    dump("novelty.json", build_novelty())
     summary = {"records": len(records), "nodes": len(graph["nodes"]), "edges": len(graph["edges"]), "lines": len(ROWS), "cantos": len(cantos),
                "crossEpicLines": sum(1 for _ in build_echoes()["lines"]), "discoveries": len(discoveries),
                "crossDiscoveries": sum(1 for d in discoveries if len(d["epics"]) > 1), "machineCantos": sorted(machine), "cantosWithRecords": sum(1 for c in cantos if c["records"])}

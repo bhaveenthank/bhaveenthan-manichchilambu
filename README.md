@@ -7,10 +7,12 @@ The name means "the gem anklet". Kannagi's case is settled by what's inside her 
 **Live site:** <https://bhaveenthank.github.io/bhaveenthan-manichchilambu/>
 
 **Status:**
-- **Records:** 359 hand records cite 7% of the 10,209 lines, and every canto has some.
-- **Machine reading:** every line has a machine note. 7,177 machine drafts cover 91% of the lines, kept apart from the graph until reviewed.
-- **Ask page:** answers in Tamil, English and Thanglish, by rules plus search, and keeps claims apart from facts ([docs/18](docs/18_question_answering.md)).
-- **Review:** nothing has been checked by a scholar yet. What's left is in [docs/19](docs/19_steps_to_finish.md).
+- **Text:** both epics in full: 10,209 lines in 64 cantos. Every line has been read and given a machine note.
+- **Hand records:** 359, citing 7% of the lines. Each keeps who says it and in what mood. A Tamil scholar's review is under way.
+- **Machine drafts:** 9,927 of 10,209 lines (97%) are in a draft. A second model is checking every draft, and the drafts it agrees with become a separate "checked" layer on the site.
+- **Entities:** 611 in the graph. 338 of them were named in the drafts and described by a model, and are marked that way.
+- **Novelty page:** what this graph does that others don't, with live figures ([docs/21](docs/21_novelty.md)).
+- **What's left:** [docs/19](docs/19_steps_to_finish.md).
 
 ## Short version of what's been found
 
@@ -42,6 +44,7 @@ The name means "the gem anklet". Kannagi's case is settled by what's inside her 
 18. [Answering questions: the hybrid layer](docs/18_question_answering.md)
 19. [Steps to finish](docs/19_steps_to_finish.md)
 20. [Two decisions for the reviewer: licence and romanisation](docs/20_decisions_for_review.md)
+21. [What's new: the Novelty page](docs/21_novelty.md)
 
 There's also a 21-page overview with examples and screenshots: [docs/Manichchilambu_project_report.pdf](docs/Manichchilambu_project_report.pdf).
 

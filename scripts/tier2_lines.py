@@ -12,6 +12,8 @@ and, unless --notes-only, records in the usual schema for anything a line tells 
 Scopes:
   unread : only the lines no record or draft cites yet (reports/line_audit.json). The default.
   all    : every line in both epics, notes only. This is the full line-by-line reading.
+  gaps   : the lines no hand record and no draft of the full run cites, with records as well as notes, so that
+           every line of both epics ends up either cited or explicitly read and found to tell nothing new.
 
 Run it from your own terminal: `claude -p` only works there. Answers are cached like the other runs,
 and anything a run misses is listed at the end and in reports/tier2_lines_missed.json.
@@ -139,19 +141,25 @@ def check(answer, part, wanted, notes_only):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--scope", choices=["unread", "all"], default="unread")
+    ap.add_argument("--scope", choices=["unread", "all", "gaps"], default="unread")
     ap.add_argument("--notes-only", action="store_true", help="only line notes, no new records. Always on for --scope all")
     ap.add_argument("--model", default="claude-sonnet-5-5")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
     notes_only = args.notes_only or args.scope == "all"
-    if args.scope == "unread":
+    if args.scope == "gaps":
+        from manichchilambu.ledger import load as load_ledger
+        cited = {l for r in load_ledger("ledger.yaml", "ledger_heldout.yaml", "ledger_ext.yaml", "ledger_material.yaml", "ledger_coverage.yaml") for l in r["lines"]}
+        for raw in open(ROOT / "data/candidates/tier2_full.jsonl", encoding="utf-8"):
+            cited |= set(json.loads(raw)["lines"])
+        targets = set(TEXT) - cited
+    elif args.scope == "unread":
         audit = json.loads((ROOT / "reports/line_audit.json").read_text(encoding="utf-8"))
         targets = {l for ls in audit["unread"].values() for l in ls}
     else:
         targets = set(TEXT)
     jobs = windows(targets)
-    out_name = "tier2_lines" if args.scope == "unread" else "tier2_lines_all"
+    out_name = {"unread": "tier2_lines", "all": "tier2_lines_all", "gaps": "tier2_lines_gaps"}[args.scope]
     print(f"{len(targets)} lines to account for, {len(jobs)} model calls ({'notes only' if notes_only else 'notes and records'})")
     if args.dry_run:
         part, wanted = jobs[0]

@@ -129,6 +129,8 @@ export function findEntities(corpus: Corpus, question: string): string[] {
   const words = q.split(" ");
   const hits: Hit[] = [];
   for (const node of corpus.graph.nodes) {
+    // Drafted entities have no hand records, so they mustn't steer the rules. They widen the verse search instead.
+    if (node.drafted) continue;
     const forms = [node.en.replace(/^the /i, ""), node.ta, ...node.also].map(clean).filter(Boolean);
     for (const form of forms) {
       // Food and material words are short and turn up inside other words (கள், மா, gold). They need a whole-word match.

@@ -129,7 +129,7 @@ export function findAmbiguities(corpus: Corpus, question: string, found: string[
     const strength = new Map<string, number>();
     for (const n of corpus.graph.nodes) {
       // Only proper names can clash: "the goldsmith" and "a woman" are descriptions, not names.
-      if (n.kind || !["Person", "Deity", "Place"].includes(n.cls) || !/^[A-Z]/.test(n.en)) continue;
+      if (n.kind || n.drafted || !["Person", "Deity", "Place"].includes(n.cls) || !/^[A-Z]/.test(n.en)) continue;
       for (const form of [n.en.replace(/^the /i, ""), n.ta, ...n.also].map(clean).filter(Boolean)) {
         const parts = form.split(" ");
         if (parts[1] === "s") continue;

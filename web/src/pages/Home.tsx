@@ -92,7 +92,8 @@ function Coverage() {
   const lines = corpus.cantos.reduce((n, c) => n + c.lines, 0);
   const cited = corpus.cantos.reduce((n, c) => n + c.cited, 0);
   const drafted = corpus.cantos.reduce((n, c) => n + c.drafted, 0);
-  const reviewed = corpus.cantos.reduce((n, c) => n + (c.reviewed ?? c.cited), 0);
+  // The middle layer: drafts a reader accepted, or a second model agrees with. Checked, though not hand records.
+  const reviewed = corpus.cantos.reduce((n, c) => n + Math.max(c.checked ?? 0, c.reviewed ?? c.cited), 0);
   const pct = (x: number) => `${Math.round((x / lines) * 100)}%`;
   return (
     <section className="panel home-coverage" aria-label={t("How much of the text is covered", "நூலில் எவ்வளவு உள்ளடக்கப்பட்டது")}>
