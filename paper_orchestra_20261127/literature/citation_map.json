@@ -1,0 +1,824 @@
+{
+ "Mccarthy1993NotesFormalizing": {
+  "citation_key": "Mccarthy1993NotesFormalizing",
+  "title": "Notes on formalizing context",
+  "authors": [
+   "John McCarthy"
+  ],
+  "venue": "CogPrints (University of Southampton)",
+  "year": 1993,
+  "abstract": "These notes discuss formalizing contexts as first class objects. The basic relation is ist(c,p). It asserts that the proposition p is true in the context c. The most important formulas relate the propositions true in different contexts. Introducing contexts as formal objects will permit axiomatizations in limited contexts to be expanded to transcend the original limitations. This seems necessary to provide AI programs using logic with certain capabilities that human fact representation and human reasoning possess. Fully implementing transcendence seems to require further extensions to mathematical logic, i.e. beyond the nonmonotonic inference methods first invented in AI and now studied as a new domain of logic. Various notations are considered, but these notes are tentative in not proposing a single language with all the desired capabilities.",
+  "citationCount": 551,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W1555476679"
+ },
+ "Kowalski1986LogicbasedCalculus": {
+  "citation_key": "Kowalski1986LogicbasedCalculus",
+  "title": "A Logic-based Calculus of Events",
+  "authors": [
+   "Robert Kowalski",
+   "Marek J. Sergot"
+  ],
+  "venue": "Oxford University Press eBooks",
+  "year": 1986,
+  "abstract": "Formal Logic can be used to represent knowledge of many kinds for many purposes. It can be used to formalize programs, program specifications, databases, legislation, and natural language in general. For many such applications of logic a representation of time is necessary. Although there have been several attempts to formalize the notion of time in classical first-order logic, it is still widely believed that classical logic is not adequate for the representation of time and that some form of non-classical Temporal Logic is needed. In this paper, we shall outline a treatment of time, based on the notion of event, formalized in the Horn clause subset of classical logic augmented with negation as failure. The resulting formalization is executable as a logic program.",
+  "citationCount": 1453,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2135319067"
+ },
+ "Hernndez2015ReifyingRdf": {
+  "citation_key": "Hernndez2015ReifyingRdf",
+  "title": "Reifying RDF: What Works Well With Wikidata?",
+  "authors": [
+   "Daniel Hern\u00e1ndez",
+   "Aidan Hogan",
+   "Markus Kr\u00f6tzsch"
+  ],
+  "venue": "CEUR Workshop Proceedings",
+  "year": 2015,
+  "abstract": "Abstract. In this paper, we compare various options for reifying RDF triples. We are motivated by the goal of representing Wikidata as RDF, which would allow legacy Semantic Web languages, techniques and tools \u2013 for example, SPARQL engines \u2013 to be used for Wikidata. However, Wikidata annotates statements with qualifiers and references, which re-quire some notion of reification to model in RDF. We thus investigate four such options: (1) standard reification, (2) n-ary relations, (3) single-ton properties, and (4) named graphs. Taking a recent dump of Wikidata, we generate the four RDF datasets pertaining to each model and discuss high-level aspects relating to data sizes, etc. To empirically compare the effect of the different models on query times, we collect a set of bench-mark queries with four model-specific versions of each query. We present the results of running these queries against five popular SPARQL imple-mentations: 4store, BlazeGraph, GraphDB, Jena TDB and Virtuoso. 1",
+  "citationCount": 178,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2406854268"
+ },
+ "Vrandei2014WikidataFree": {
+  "citation_key": "Vrandei2014WikidataFree",
+  "title": "Wikidata: a free collaborative knowledgebase",
+  "authors": [
+   "Denny Vrande\u010di\u0107",
+   "Markus Kr\u00f6tzsch"
+  ],
+  "venue": "Communications of the ACM",
+  "year": 2014,
+  "abstract": "This collaboratively edited knowledgebase provides a common source of data for Wikipedia, and everyone else.",
+  "citationCount": 5532,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2080133951"
+ },
+ "Elson2012DramabankAnnotating": {
+  "citation_key": "Elson2012DramabankAnnotating",
+  "title": "DramaBank: Annotating Agency in Narrative Discourse",
+  "authors": [
+   "David K. Elson"
+  ],
+  "venue": "Language Resources and Evaluation Conference (LREC)",
+  "year": 2012,
+  "abstract": "We describe the Story Intention Graph, a set of discourse relations designed to represent aspects of narrative.Compared to prior models, ours is a novel synthesis of the notions of goal, plan, intention, outcome, affect and time that is amenable to corpus annotation.We describe a collection project, DramaBank, which includes encodings of texts ranging from small fables to epic poetry and contemporary nonfiction.",
+  "citationCount": 67,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2252063012"
+ },
+ "Yang2025EvolvtripEnhancing": {
+  "citation_key": "Yang2025EvolvtripEnhancing",
+  "title": "EvolvTrip: Enhancing Literary Character Understanding with Temporal Theory-of-Mind Graphs",
+  "authors": [
+   "Bohao Yang",
+   "Huilin Xu",
+   "Du, Jinhua",
+   "Ze Li",
+   "Yulan He",
+   "Chenghua Lin"
+  ],
+  "venue": "arXiv",
+  "year": 2025,
+  "abstract": "A compelling portrayal of characters is essential to the success of narrative writing. For readers, appreciating a character's traits requires the ability to infer their evolving beliefs, desires, and intentions over the course of a complex storyline, a cognitive skill known as Theory-of-Mind (ToM). Performing ToM reasoning in prolonged narratives requires readers to integrate historical context with current narrative information, a task at which humans excel but Large Language Models (LLMs) often struggle. To systematically evaluate LLMs' ToM reasoning capability in long narratives, we construct LitCharToM, a benchmark of character-centric questions across four ToM dimensions from classic literature. Further, we introduce EvolvTrip, a perspective-aware temporal knowledge graph that tracks psychological development throughout narratives. Our experiments demonstrate that EvolvTrip consistently enhances performance of LLMs across varying scales, even in challenging extended-context scenarios. EvolvTrip proves to be particularly valuable for smaller models, partially bridging the performance gap with larger LLMs and showing great compatibility with lengthy narratives. Our findings highlight the importance of explicit representation of temporal character mental states in narrative comprehension and offer a foundation for more sophisticated character understanding. Our data and code are publicly available at https://github.com/Bernard-Yang/EvolvTrip.",
+  "citationCount": 3,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4415109194"
+ },
+ "Agichtein2000SnowballExtracting": {
+  "citation_key": "Agichtein2000SnowballExtracting",
+  "title": "Snowball: extracting relations from large plain-text collections",
+  "authors": [
+   "Eugene Agichtein",
+   "Luis Gravano"
+  ],
+  "venue": "arXiv",
+  "year": 2000,
+  "abstract": "Text documents often contain valuable structured data that is hidden Yin regular English sentences. This data is best exploited infavailable as arelational table that we could use for answering precise queries or running data mining tasks.We explore a technique for extracting such tables from document collections that requires only a handful of training examples from users. These examples are used to generate extraction patterns, that in turn result in new tuples being extracted from the document collection.We build on this idea and present our Snowball system. Snowball introduces novel strategies for generating patterns and extracting tuples from plain-text documents.At each iteration of the extraction process, Snowball evaluates the quality of these patterns and tuples without human intervention,and keeps only the most reliable ones for the next iteration. In this paper we also develop a scalable evaluation methodology and metrics for our task, and present a thorough experimental evaluation of Snowball and comparable techniques over a collection of more than 300,000 newspaper documents.",
+  "citationCount": 1112,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2103931177"
+ },
+ "Batista2015SemisupervisedBootstrapping": {
+  "citation_key": "Batista2015SemisupervisedBootstrapping",
+  "title": "Semi-Supervised Bootstrapping of Relationship Extractors with Distributional Semantics",
+  "authors": [
+   "David S. Batista",
+   "Bruno Martins",
+   "M\u00e1rio J. Silva"
+  ],
+  "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "year": 2015,
+  "abstract": "Semi-supervised bootstrapping techniques for relationship extraction from text iteratively expand a set of initial seed relationships while limiting the semantic drift.We research bootstrapping for relationship extraction using word embeddings to find similar relationships.Experimental results show that relying on word embeddings achieves a better performance on the task of extracting four types of relationships from a collection of newswire documents when compared with a baseline using TF-IDF to find similar relationships.",
+  "citationCount": 68,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2250560707"
+ },
+ "Edge2024FromLocal": {
+  "citation_key": "Edge2024FromLocal",
+  "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+  "authors": [
+   "Darren Edge",
+   "Ha Trinh",
+   "Newman Cheng",
+   "Joshua Bradley",
+   "Alex Chao",
+   "Apurva Mody",
+   "Steven Truitt",
+   "Dasha Metropolitansky",
+   "Robert Osazuwa Ness",
+   "Jonathan Larson"
+  ],
+  "venue": "arXiv",
+  "year": 2024,
+  "abstract": "The use of retrieval-augmented generation (RAG) to retrieve relevant information from an external knowledge source enables large language models (LLMs) to answer questions over private and/or previously unseen document collections. However, RAG fails on global questions directed at an entire text corpus, such as \"What are the main themes in the dataset?\", since this is inherently a query-focused summarization (QFS) task, rather than an explicit retrieval task. Prior QFS methods, meanwhile, do not scale to the quantities of text indexed by typical RAG systems. To combine the strengths of these contrasting methods, we propose GraphRAG, a graph-based approach to question answering over private text corpora that scales with both the generality of user questions and the quantity of source text. Our approach uses an LLM to build a graph index in two stages: first, to derive an entity knowledge graph from the source documents, then to pregenerate community summaries for all groups of closely related entities. Given a question, each community summary is used to generate a partial response, before all partial responses are again summarized in a final response to the user. For a class of global sensemaking questions over datasets in the 1 million token range, we show that GraphRAG leads to substantial improvements over a conventional RAG baseline for both the comprehensiveness and diversity of generated answers.",
+  "citationCount": 3815,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "OA:W4395686609"
+ },
+ "Cormack2009ReciprocalRank": {
+  "citation_key": "Cormack2009ReciprocalRank",
+  "title": "Reciprocal rank fusion outperforms condorcet and individual rank learning methods",
+  "authors": [
+   "Gordon V. Cormack",
+   "Charles L. A. Clarke",
+   "Stefan B\u00fcttcher"
+  ],
+  "venue": "International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+  "year": 2009,
+  "abstract": "Reciprocal Rank Fusion (RRF), a simple method for combining the document rankings from multiple IR systems, consistently yields better results than any individual system, and better results than the standard method Condorcet Fuse. This result is demonstrated by using RRF to combine the results of several TREC experiments, and to build a meta-learner that ranks the LETOR 3 dataset better than any previously reported method",
+  "citationCount": 2129,
+  "found_in_sections": [
+   "method"
+  ],
+  "hint": null,
+  "paperId": "OA:W2148972377"
+ },
+ "Lewis2020RetrievalaugmentedGeneration": {
+  "citation_key": "Lewis2020RetrievalaugmentedGeneration",
+  "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+  "authors": [
+   "Patrick Lewis",
+   "Ethan Perez",
+   "Aleksandra Piktus",
+   "Fabio Petroni",
+   "Vladimir Karpukhin",
+   "Naman Goyal",
+   "Heinrich K\u00fcttler",
+   "Mike Lewis",
+   "Wen-tau Yih",
+   "Tim Rockt\u00e4schel",
+   "Sebastian Riedel",
+   "Douwe Kiela"
+  ],
+  "venue": "arXiv",
+  "year": 2020,
+  "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we f... [Truncated]",
+  "citationCount": 9922,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "OA:W3027879771"
+ },
+ "Ji2023SurveyHallucination": {
+  "citation_key": "Ji2023SurveyHallucination",
+  "title": "Survey of Hallucination in Natural Language Generation",
+  "authors": [
+   "Ziwei Ji",
+   "Nayeon Lee",
+   "Rita Frieske",
+   "Tiezheng Yu",
+   "Dan Su",
+   "Yan Xu",
+   "Etsuko Ishii",
+   "Ye Jin Bang",
+   "Andrea Madotto",
+   "Pascale Fung"
+  ],
+  "venue": "ACM Computing Surveys",
+  "year": 2023,
+  "abstract": "Natural Language Generation (NLG) has improved exponentially in recent years thanks to the development of sequence-to-sequence deep learning technologies such as Transformer-based language models. This advancement has led to more fluent and coherent NLG, leading to improved development in downstream tasks such as abstractive summarization, dialogue generation, and data-to-text generation. However, it is also apparent that deep learning based generation is prone to hallucinate unintended text, which degrades the system performance and fails to meet user expectations in many real-world scenarios. To address this issue, many studies have been presented in measuring and mitigating hallucinated texts, but these have never been reviewed in a comprehensive manner before. In this survey, we thus provide a broad overview of the research progress and challenges in the hallucination problem in NLG. The survey is organized into two parts: (1) a general overview of metrics, mitigation methods, and future directions, and (2) an overview of task-specific research progress on hallucinations in the following downstream tasks, namely abstractive summarization, dialogue generation, generative question answering, data-to-text generation, and machine translation. This survey serves to facilitate collaborative efforts among researchers in tackling the challenge of hallucinated texts in NLG.",
+  "citationCount": 11833,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "OA:W4309674289"
+ },
+ "Pan2024UnifyingLarge": {
+  "citation_key": "Pan2024UnifyingLarge",
+  "title": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+  "authors": [
+   "Shirui Pan",
+   "Linhao Luo",
+   "Yufei Wang",
+   "Chen Chen",
+   "Jiapu Wang",
+   "Xindong Wu"
+  ],
+  "venue": "IEEE Transactions on Knowledge and Data Engineering",
+  "year": 2024,
+  "abstract": "Large language models (LLMs), such as ChatGPT and GPT4, are making new waves in the field of natural language processing and artificial intelligence, due to their emergent ability and generalizability. However, LLMs are black-box models, which often fall short of capturing and accessing factual knowledge. In contrast, Knowledge Graphs (KGs), Wikipedia and Huapu for example, are structured knowledge models that explicitly store rich factual knowledge. KGs can enhance LLMs by providing external knowledge for inference and interpretability. Meanwhile, KGs are difficult to construct and evolve by nature, which challenges the existing methods in KGs to generate new facts and represent unseen knowledge. Therefore, it is complementary to unify LLMs and KGs together and simultaneously leverage their advantages. In this article, we present a forward-looking roadmap for the unification of LLMs and KGs. Our roadmap consists of three general frameworks, namely,1) KG-enhanced LLMs,which incorporate KGs during the pre-training and inference phases of LLMs, or for the purpose of enhancing understanding of the knowledge learned by LLMs;2) LLM-augmented KGs,that leverage LLMs for different KG tasks such as embedding, completion, construction, graph-to-text generation, and question answering; and3) Synergized LLMs + KGs, in which LLMs and KGs play equal roles and work in a mutually beneficial way to enhance both LLMs and KGs for bidirectional reasoning driven by both data and knowledge. We rev... [Truncated]",
+  "citationCount": 2726,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "OA:W4390692489"
+ },
+ "Hogan2021KnowledgeGraphs": {
+  "citation_key": "Hogan2021KnowledgeGraphs",
+  "title": "Knowledge Graphs",
+  "authors": [
+   "Aidan Hogan",
+   "Eva Blomqvist",
+   "Michael Cochez",
+   "Claudia d\u2019Amato",
+   "Gerard de Melo",
+   "Claudio Guti\u00e9rrez",
+   "Sabrina Kirrane",
+   "Jos\u00e9 Emilio Labra Gayo",
+   "Roberto Navigli",
+   "Sebastian Neumaier",
+   "Axel-Cyrille Ngonga Ngomo",
+   "Axel Polleres",
+   "Sabbir M. Rashid",
+   "Anisa Rula",
+   "Lukas Schmelzeisen",
+   "Juan Sequeda",
+   "Steffen Staab",
+   "Antoine Zimmermann"
+  ],
+  "venue": "ACM Computing Surveys",
+  "year": 2021,
+  "abstract": "In this article, we provide a comprehensive introduction to knowledge graphs, which have recently garnered significant attention from both industry and academia in scenarios that require exploiting diverse, dynamic, large-scale collections of data. After some opening remarks, we motivate and contrast various graph-based data models, as well as languages used to query and validate knowledge graphs. We explain how knowledge can be represented and extracted using a combination of deductive and inductive techniques. We conclude with high-level future research directions for knowledge graphs.",
+  "citationCount": 3950,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "OA:W3010336026"
+ },
+ "Bamman2019AnnotatedDataset": {
+  "citation_key": "Bamman2019AnnotatedDataset",
+  "title": "An annotated dataset of literary entities",
+  "authors": [
+   "David Bamman",
+   "Sejal Popat",
+   "Sheng Shen"
+  ],
+  "venue": "North American Chapter of the Association for Computational Linguistics",
+  "year": 2019,
+  "abstract": "We present a new dataset comprised of 210,532 tokens evenly drawn from 100 different English-language literary texts annotated for ACE entity categories (person, location, geo-political entity, facility, organization, and vehicle). These categories include non-named entities (such as \u201cthe boy\u201d, \u201cthe kitchen\u201d) and nested structure (such as [[the cook]\u2019s sister]). In contrast to existing datasets built primarily on news (focused on geo-political entities and organizations), literary texts offer strikingly different distributions of entity categories, with much stronger emphasis on people and description of settings. We present empirical results demonstrating the performance of nested entity recognition models in this domain; training natively on in-domain literary data yields an improvement of over 20 absolute points in F-score (from 45.7 to 68.3), and mitigates a disparate impact in performance for male and female entities present in models trained on news data.",
+  "citationCount": 114,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "bd6b606acb066e2eaba0d8ece241dcfd6a106777"
+ },
+ "Sims2019LiteraryEvent": {
+  "citation_key": "Sims2019LiteraryEvent",
+  "title": "Literary Event Detection",
+  "authors": [
+   "Matthew Sims",
+   "Jong Ho Park",
+   "David Bamman"
+  ],
+  "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+  "year": 2019,
+  "abstract": "In this work we present a new dataset of literary events\u2014events that are depicted as taking place within the imagined space of a novel. While previous work has focused on event detection in the domain of contemporary news, literature poses a number of complications for existing systems, including complex narration, the depiction of a broad array of mental states, and a strong emphasis on figurative language. We outline the annotation decisions of this new dataset and compare several models for predicting events; the best performing model, a bidirectional LSTM with BERT token representations, achieves an F1 score of 73.9. We then apply this model to a corpus of novels split across two dimensions\u2014prestige and popularity\u2014and demonstrate that there are statistically significant differences in the distribution of events for prestige.",
+  "citationCount": 133,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2952411148"
+ },
+ "Elson2010AutomaticAttribution": {
+  "citation_key": "Elson2010AutomaticAttribution",
+  "title": "Automatic Attribution of Quoted Speech in Literary Narrative",
+  "authors": [
+   "David K. Elson",
+   "Kathleen R. McKeown"
+  ],
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "year": 2010,
+  "abstract": "We describe a method for identifying the speakers of quoted speech in natural-language textual stories. We have assembled a corpus of more than 3,000 quotations, whose speakers (if any) are manually identified, from a collection of 19th and 20th century literature by six authors. Using rule-based and statistical learning, our method identifies candidate characters, determines their genders, and attributes each quote to the most likely speaker. We divide the quotes into syntactic classes in order to leverage common discourse patterns, which enable rapid attribution for many quotes. We apply learning algorithms to the remainder and achieve an overall accuracy of 83%.",
+  "citationCount": 132,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4295847212"
+ },
+ "Diab2009CommittedBelief": {
+  "citation_key": "Diab2009CommittedBelief",
+  "title": "Committed belief annotation and tagging",
+  "authors": [
+   "Mona Diab",
+   "Lori S. Levin",
+   "Teruko Mitamura",
+   "Owen Rambow",
+   "Vinodkumar Prabhakaran",
+   "Weiwei Guo"
+  ],
+  "venue": "Linguistic Annotation Workshop",
+  "year": 2009,
+  "abstract": "We present a preliminary pilot study of belief annotation and automatic tagging. Our objective is to explore semantic meaning beyond surface propositions. We aim to model people's cognitive states, namely their beliefs as expressed through linguistic means. We model the strength of their beliefs and their (the human) degree of commitment to their utterance. We explore only the perspective of the author of a text. We classify predicates into one of three possibilities: committed belief, non committed belief, or not applicable. We proceed to manually annotate data to that end, then we build a supervised framework to test the feasibility of automatically predicting these belief states. Even though the data is relatively small, we show that automatic prediction of a belief class is a feasible task. Using syntactic features, we are able to obtain significant improvements over a simple baseline of 23% F-measure absolute points. The best performing automatic tagging condition is where we use POS tag, word type feature AlphaNumeric, and shallow syntactic chunk information CHUNK. Our best overall performance is 53.97% F-measure.",
+  "citationCount": 99,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2027344326"
+ },
+ "Marneffe2012DidIt": {
+  "citation_key": "Marneffe2012DidIt",
+  "title": "Did It Happen? The Pragmatic Complexity of Veridicality Assessment",
+  "authors": [
+   "Marie-Catherine de Marneffe",
+   "Christopher D. Manning",
+   "Christopher Potts"
+  ],
+  "venue": "Computational Linguistics",
+  "year": 2012,
+  "abstract": "Natural language understanding depends heavily on assessing veridicality\u2014whether events mentioned in a text are viewed as happening or not\u2014but little consideration is given to this property in current relation and event extraction systems. Furthermore, the work that has been done has generally assumed that veridicality can be captured by lexical semantic properties whereas we show that context and world knowledge play a significant role in shaping veridicality. We extend the FactBank corpus, which contains semantically driven veridicality annotations, with pragmatically informed ones. Our annotations are more complex than the lexical assumption predicts but systematic enough to be included in computational work on textual understanding. They also indicate that veridicality judgments are not always categorical, and should therefore be modeled as distributions. We build a classifier to automatically assign event veridicality distributions based on our new annotations. The classifier relies not only on lexical features like hedges or negations, but also on structural features and approximations of world knowledge, thereby providing a nuanced picture of the diverse factors that shape veridicality. \u201cAll I know is what I read in the papers\u201d \u2014Will Rogers",
+  "citationCount": 177,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2147638277"
+ },
+ "Rudinger2018NeuralModels": {
+  "citation_key": "Rudinger2018NeuralModels",
+  "title": "Neural Models of Factuality",
+  "authors": [
+   "Rachel Rudinger",
+   "Aaron Steven White",
+   "Benjamin Van Durme"
+  ],
+  "venue": "North American Chapter of the Association for Computational Linguistics",
+  "year": 2018,
+  "abstract": "We present two neural models for event factuality prediction, which yield significant performance gains over previous models on three event factuality datasets: FactBank, UW, and MEANTIME. We also present a substantial expansion of the It Happened portion of the Universal Decompositional Semantics dataset, yielding the largest event factuality dataset to date. We report model results on this extended factuality dataset as well.",
+  "citationCount": 91,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "642c4615b2cedff69db871ddda138761c44b88dc"
+ },
+ "Jiang2019DoYou": {
+  "citation_key": "Jiang2019DoYou",
+  "title": "Do You Know That Florence Is Packed with Visitors? Evaluating State-of-the-art Models of Speaker Commitment",
+  "authors": [
+   "Nanjiang Jiang",
+   "Marie-Catherine de Marneffe"
+  ],
+  "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+  "year": 2019,
+  "abstract": "When a speaker, Mary, asks \u201cDo you know that Florence is packed with visitors?\u201d, we take her to believe that Florence is packed with visitors, but not if she asks \u201cDo you think that Florence is packed with visitors?\u201d. Inferring speaker commitment (aka event factuality) is crucial for information extraction and question answering. Here, we explore the hypothesis that linguistic deficits drive the error patterns of existing speaker commitment models by analyzing the linguistic correlates of model error on a challenging naturalistic dataset. We evaluate two state-of-the-art speaker commitment models on the CommitmentBank, an English dataset of naturally occurring discourses. The CommitmentBank is annotated with speaker commitment towards the content of the complement (\u201cFlorence is packed with visitors\u201d in our example) of clause-embedding verbs (\u201cknow\u201d, \u201cthink\u201d) under four entailment-canceling environments (negation, modal, question, conditional). A breakdown of items by linguistic features reveals asymmetrical error patterns: while the models achieve good performance on some classes (e.g., negation), they fail to generalize to the diverse linguistic constructions (e.g., conditionals) in natural language, highlighting directions for improvement.",
+  "citationCount": 34,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2953206750"
+ },
+ "Pareti2016Parc30": {
+  "citation_key": "Pareti2016Parc30",
+  "title": "PARC 3.0: A Corpus of Attribution Relations",
+  "authors": [
+   "Silvia Pareti"
+  ],
+  "venue": "Language Resources and Evaluation Conference (LREC)",
+  "year": 2016,
+  "abstract": "Quotation and opinion extraction, discourse and factuality have all partly addressed the annotation and identification of Attribution Relations.However, disjoint efforts have provided a partial and partly inaccurate picture of attribution and generated small or incomplete resources, thus limiting the applicability of machine learning approaches.This paper presents PARC 3.0, a large corpus fully annotated with attribution relations (ARs).The annotation scheme was tested with an inter-annotator agreement study showing satisfactory results for the identification of ARs and high agreement on the selection of the text spans corresponding to its constitutive elements: source, cue and content.The corpus, which comprises around 20k ARs, was used to investigate the range of structures that can express attribution.The results show a complex and varied relation of which the literature has addressed only a portion.PARC 3.0 is available for research use and can be used in a range of different studies to analyse attribution and validate assumptions as well as to develop supervised attribution extraction models.",
+  "citationCount": 27,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2579658503"
+ },
+ "Nematzadeh2018EvaluatingTheory": {
+  "citation_key": "Nematzadeh2018EvaluatingTheory",
+  "title": "Evaluating Theory of Mind in Question Answering",
+  "authors": [
+   "Aida Nematzadeh",
+   "Kaylee Burns",
+   "Erin Grant",
+   "Alison Gopnik",
+   "Thomas L. Griffiths"
+  ],
+  "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "year": 2018,
+  "abstract": "We propose a new dataset for evaluating question answering models with respect to their capacity to reason about beliefs. Our tasks are inspired by theory-of-mind experiments that examine whether children are able to reason about the beliefs of others, in particular when those beliefs differ from reality. We evaluate a number of recent neural models with memory augmentation. We find that all fail on our tasks, which require keeping track of inconsistent states of the world; moreover, the models\u2019 accuracy decreases notably when random sentences are introduced to the tasks at test.",
+  "citationCount": 133,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2889107415"
+ },
+ "Sap2022NeuralTheoryofmind": {
+  "citation_key": "Sap2022NeuralTheoryofmind",
+  "title": "Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs",
+  "authors": [
+   "Maarten Sap",
+   "Ronan Joseph Le Bras",
+   "Daniel Fried",
+   "Yejin Choi"
+  ],
+  "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "year": 2022,
+  "abstract": "Social intelligence and Theory of Mind (TOM), i.e., the ability to reason about the different mental states, intents, and reactions of all people involved, allows humans to effectively navigate and understand everyday social interactions. As NLP systems are used in increasingly complex social situations, their ability to grasp social dynamics becomes crucial.In this work, we examine the open question of social intelligence and Theory of Mind in modern NLP systems from an empirical and theorybased perspective. We show that one of today\u2019s largest language models (GPT-3; Brown et al., 2020) lacks this kind of social intelligence out-of-the box, using two tasks: SocialIQa (Sap et al., 2019), which measure models\u2019 ability to understand intents and reactions of participants of social interactions, and ToMi (Le, Boureau, and Nickel, 2019), which measures whether models can infer mental states and realities of participants of situations.Our results show that models struggle substantially at these Theory of Mind tasks, with well-below-human accuracies of 55% and 60% on SocialIQa and ToMi, respectively. To conclude, we draw on theories from pragmatics to contextualize this shortcoming of large language models, by examining the limitations stemming from their data, neural architecture, and training paradigms. Challenging the prevalent narrative that only scale is needed, we posit that person-centric NLP approaches might be more effective towards neural Theory of Mind.",
+  "citationCount": 426,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4385572854"
+ },
+ "Piper2021NarrativeTheory": {
+  "citation_key": "Piper2021NarrativeTheory",
+  "title": "Narrative Theory for Computational Narrative Understanding",
+  "authors": [
+   "A. Piper",
+   "R. So",
+   "David Bamman"
+  ],
+  "venue": "Conference on Empirical Methods in Natural Language Processing",
+  "year": 2021,
+  "abstract": "Over the past decade, the field of natural language processing has developed a wide array of computational methods for reasoning about narrative, including summarization, commonsense inference, and event detection. While this work has brought an important empirical lens for examining narrative, it is by and large divorced from the large body of theoretical work on narrative within the humanities, social and cognitive sciences. In this position paper, we introduce the dominant theoretical frameworks to the NLP community, situate current research in NLP within distinct narratological traditions, and argue that linking computational work in NLP to theory opens up a range of new empirical questions that would both help advance our understanding of narrative and open up new practical applications.",
+  "citationCount": 175,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "44d2dc8e5d821c60c0adf531a55678ddf4658fcc"
+ },
+ "Chang2023SpeakMemory": {
+  "citation_key": "Chang2023SpeakMemory",
+  "title": "Speak, Memory: An Archaeology of Books Known to ChatGPT/GPT-4",
+  "authors": [
+   "Kent K. Chang",
+   "Mackenzie H\u1ea1nh Cramer",
+   "Sandeep Soni",
+   "David Bamman"
+  ],
+  "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "year": 2023,
+  "abstract": "In this work, we carry out a data archaeology to infer books that are known to ChatGPT and GPT-4 using a name cloze membership inference query. We find that OpenAI models have memorized a wide collection of copyrighted materials, and that the degree of memorization is tied to the frequency with which passages of those books appear on the web. The ability of these models to memorize an unknown set of books complicates assessments of measurement validity for cultural analytics by contaminating test data; we show that models perform much better on memorized books than on non-memorized books for downstream tasks. We argue that this supports a case for open models whose training data is known.",
+  "citationCount": 292,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4389519044"
+ },
+ "Carlini2023QuantifyingMemorization": {
+  "citation_key": "Carlini2023QuantifyingMemorization",
+  "title": "Quantifying Memorization Across Neural Language Models",
+  "authors": [
+   "Nicholas Carlini",
+   "Daphne Ippolito",
+   "Matthew Jagielski",
+   "Katherine Lee",
+   "Florian Tram\u00e8r",
+   "Chiyuan Zhang"
+  ],
+  "venue": "International Conference on Learning Representations",
+  "year": 2023,
+  "abstract": "Large language models (LMs) have been shown to memorize parts of their training data, and when prompted appropriately, they will emit the memorized training data verbatim. This is undesirable because memorization violates privacy (exposing user data), degrades utility (repeated easy-to-memorize text is often low quality), and hurts fairness (some texts are memorized over others). We describe three log-linear relationships that quantify the degree to which LMs emit memorized training data. Memorization significantly grows as we increase (1) the capacity of a model, (2) the number of times an example has been duplicated, and (3) the number of tokens of context used to prompt the model. Surprisingly, we find the situation becomes more complicated when generalizing these results across model families. On the whole, we find that memorization in LMs is more prevalent than previously believed and will likely get worse as models continues to scale, at least without active mitigations.",
+  "citationCount": 1601,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4221159672"
+ },
+ "Xu2024LargeLanguage": {
+  "citation_key": "Xu2024LargeLanguage",
+  "title": "Large language models for generative information extraction: a survey",
+  "authors": [
+   "Derong Xu",
+   "Wei Chen",
+   "Wenjun Peng",
+   "Chao Zhang",
+   "Tong Xu",
+   "Xiangyu Zhao",
+   "Xian Wu",
+   "Yefeng Zheng",
+   "Yan Wang",
+   "Enhong Chen"
+  ],
+  "venue": "Frontiers of Computer Science",
+  "year": 2024,
+  "abstract": "Information Extraction (IE) aims to extract structural knowledge from plain natural language texts. Recently, generative Large Language Models (LLMs) have demonstrated remarkable capabilities in text understanding and generation. As a result, numerous works have been proposed to integrate LLMs for IE tasks based on a generative paradigm. To conduct a comprehensive systematic review and exploration of LLM efforts for IE tasks, in this study, we survey the most recent advancements in this field. We first present an extensive overview by categorizing these works in terms of various IE subtasks and techniques, and then we empirically analyze the most advanced methods and discover the emerging trend of IE tasks with LLMs. Based on a thorough review conducted, we identify several insights in technique and promising research directions that deserve further exploration in future studies. We maintain a public repository and consistently update related works and resources on GitHub (LLM4IE repository).",
+  "citationCount": 765,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4404239715"
+ },
+ "Joshi2020StateFate": {
+  "citation_key": "Joshi2020StateFate",
+  "title": "The State and Fate of Linguistic Diversity and Inclusion in the NLP World",
+  "authors": [
+   "Pratik Joshi",
+   "Sebastin Santy",
+   "Amar Budhiraja",
+   "Kalika Bali",
+   "Monojit Choudhury"
+  ],
+  "venue": "Proceedings of the conference - Association for Computational Linguistics. Meeting",
+  "year": 2020,
+  "abstract": "Language technologies contribute to promoting multilingualism and linguistic diversity around the world. However, only a very small number of the over 7000 languages of the world are represented in the rapidly evolving language technologies and applications. In this paper we look at the relation between the types of languages, resources, and their representation in NLP conferences to understand the trajectory that different languages have followed over time. Our quantitative investigation underlines the disparity between languages, especially in terms of their resources, and calls into question the \u201clanguage agnostic\u201d status of current models and systems. Through this paper, we attempt to convince the ACL community to prioritise the resolution of the predicaments highlighted here, so that no language is left behind.",
+  "citationCount": 2305,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "OA:W3017311573"
+ },
+ "Kakwani2020IndicnlpsuiteMonolingual": {
+  "citation_key": "Kakwani2020IndicnlpsuiteMonolingual",
+  "title": "IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages",
+  "authors": [
+   "Divyanshu Kakwani",
+   "Anoop Kunchukuttan",
+   "Satish Golla",
+   "Gokul Narayanan C",
+   "Avik Bhattacharyya",
+   "Mitesh M. Khapra",
+   "Pratyush Kumar"
+  ],
+  "venue": "Findings of the Association for Computational Linguistics: EMNLP (Findings of EMNLP)",
+  "year": 2020,
+  "abstract": "In this paper, we introduce NLP resources for 11 major Indian languages from two major language families. These resources include: (a) large-scale sentence-level monolingual corpora, (b) pre-trained word embeddings, (c) pre-trained language models, and (d) multiple NLU evaluation datasets ( IndicGLUE benchmark). The monolingual corpora contains a total of 8.8 billion tokens across all 11 languages and Indian English, primarily sourced from news crawls. The word embeddings are based on FastText , hence suitable for handling morphological complexity of Indian languages. The pre-trained language models are based on the compact ALBERT model. Lastly, we compile the ( IndicGLUE benchmark for Indian language NLU. To this end, we create datasets for the following tasks: Article Genre Classification, Headline Prediction, Wikipedia Section-Title Prediction, Cloze-style Multiple choice QA, Winograd NLI and COPA. We also include publicly available datasets for some Indic languages for tasks like Named Entity Recognition, Cross-lingual Sentence Retrieval, Paraphrase detection, etc. Our embeddings are competitive or better than existing pre-trained embeddings on multiple tasks. We hope that the availability of the dataset will accelerate Indic NLP research which has the potential to impact more than a billion people. It can also help the community in evaluating advances in NLP over a more diverse pool of languages. The data and models are available at https://indicnlp.ai4bharat.org .",
+  "citationCount": 968,
+  "found_in_sections": [
+   "intro"
+  ],
+  "hint": null,
+  "paperId": "OA:W3099919888"
+ },
+ "Forstall2014ModelingScholars": {
+  "citation_key": "Forstall2014ModelingScholars",
+  "title": "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching",
+  "authors": [
+   "Christopher W. Forstall",
+   "Neil Coffee",
+   "Thomas Buck",
+   "Katherine Roache",
+   "Sarah L. Jacobson"
+  ],
+  "venue": "Digital Scholarship in the Humanities",
+  "year": 2014,
+  "abstract": "The study of intertextuality, or how authors make artistic use of other texts in their works, has a long tradition, and has in recent years benefited from a variety of applications of digital methods. This article describes an approach for detecting the sorts of intertexts that literary scholars have found most meaningful, as embodied in the free Tesserae website . Tests of Tesserae Versions 1 and 2 showed that word-level n-gram matching could recall a majority of parallels identified by scholarly commentators in a benchmark set. But these versions lacked precision, so that the meaningful parallels could be found only among long lists of those that were not meaningful. The Version 3 search described here adds a second stage scoring system that sorts the found parallels by a formula accounting for word frequency and phrase density. Testing against a benchmark set of intertexts in Latin epic poetry shows that the scoring system overall succeeds in ranking parallels of greater significance more highly, allowing site users to find meaningful parallels more quickly. Users can also choose to adjust both recall and precision by focusing only on results above given score levels. As a theoretical matter, these tests establish that lemma identity, word frequency, and phrase density are important constituents of what make a phrase parallel a meaningful intertext.",
+  "citationCount": 81,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W1987126818"
+ },
+ "Safavi2020EvaluatingCalibration": {
+  "citation_key": "Safavi2020EvaluatingCalibration",
+  "title": "Evaluating the Calibration of Knowledge Graph Embeddings for Trustworthy Link Prediction",
+  "authors": [
+   "Tara Safavi",
+   "Danai Koutra",
+   "Edgar Meij"
+  ],
+  "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "year": 2020,
+  "abstract": "Little is known about the trustworthiness of predictions made by knowledge graph embedding (KGE) models. In this paper we take initial steps toward this direction by investigating the calibration of KGE models, or the extent to which they output confidence scores that reflect the expected correctness of predicted knowledge graph triples. We first conduct an evaluation under the standard closed-world assumption (CWA), in which predicted triples not already in the knowledge graph are considered false, and show that existing calibration techniques are effective for KGE under this common but narrow assumption. Next, we introduce the more realistic but challenging open-world assumption (OWA), in which unobserved predictions are not considered true or false until ground-truth labels are obtained. Here, we show that existing calibration techniques are much less effective under the OWA than the CWA, and provide explanations for this discrepancy. Finally, to motivate the utility of calibration for KGE from a practitioner\u2019s perspective, we conduct a unique case study of human-AI collaboration, showing that calibrated predictions can improve human performance in a knowledge graph completion task.",
+  "citationCount": 58,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W3087439297"
+ },
+ "Thorne2018FeverLargescale": {
+  "citation_key": "Thorne2018FeverLargescale",
+  "title": "FEVER: a Large-scale Dataset for Fact Extraction and VERification",
+  "authors": [
+   "James Thorne",
+   "Andreas Vlachos",
+   "Christos Christodoulopoulos",
+   "Arpit Mittal"
+  ],
+  "venue": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)",
+  "year": 2018,
+  "abstract": "In this paper we introduce a new publicly available dataset for verification against textual sources, FEVER: Fact Extraction and VERification. It consists of 185,445 claims generated by altering sentences extracted from Wikipedia and subsequently verified without knowledge of the sentence they were derived from. The claims are classified as Supported, Refuted or NotEnoughInfo by annotators achieving 0.6841 in Fleiss kappa. For the first two classes, the annotators also recorded the sentence(s) forming the necessary evidence for their judgment. To characterize the challenge of the dataset presented, we develop a pipeline approach and compare it to suitably designed oracles. The best accuracy we achieve on labeling a claim accompanied by the correct evidence is 31.87%, while if we ignore the evidence we achieve 50.91%. Thus we believe that FEVER is a challenging testbed that will help stimulate progress on claim verification against textual sources.",
+  "citationCount": 3260,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W2789566302"
+ },
+ "Bohnet2022AttributedQuestion": {
+  "citation_key": "Bohnet2022AttributedQuestion",
+  "title": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+  "authors": [
+   "Bernd Bohnet",
+   "Vinh Q. Tran",
+   "Pat Verga",
+   "Roee Aharoni",
+   "Daniel Andor",
+   "Livio Baldini Soares",
+   "Ciaramita, Massimiliano",
+   "Jacob Eisenstein",
+   "Kuzman Ganchev",
+   "Jonathan Herzig",
+   "Kai Hui",
+   "Tom Kwiatkowski",
+   "Ji Ma",
+   "Jianmo Ni",
+   "Saralegui, Lierni Sestorain",
+   "Tal Schuster",
+   "William W. Cohen",
+   "Michael Collins",
+   "Dipanjan Das",
+   "Donald Metzler",
+   "Slav Petrov",
+   "Kellie Webster"
+  ],
+  "venue": "arXiv",
+  "year": 2022,
+  "abstract": "Large language models (LLMs) have shown impressive results while requiring little or no direct supervision. Further, there is mounting evidence that LLMs may have potential in information-seeking scenarios. We believe the ability of an LLM to attribute the text that it generates is likely to be crucial in this setting. We formulate and study Attributed QA as a key first step in the development of attributed LLMs. We propose a reproducible evaluation framework for the task and benchmark a broad set of architectures. We take human annotations as a gold standard and show that a correlated automatic metric is suitable for development. Our experimental work gives concrete answers to two key questions (How to measure attribution?, and How well do current state-of-the-art methods perform on attribution?), and give some hints as to how to address a third (How to build LLMs with attribution?).",
+  "citationCount": 317,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4311731003"
+ },
+ "Gao2023EnablingLarge": {
+  "citation_key": "Gao2023EnablingLarge",
+  "title": "Enabling Large Language Models to Generate Text with Citations",
+  "authors": [
+   "Tianyu Gao",
+   "Howard H Yen",
+   "Jiatong Yu",
+   "Danqi Chen"
+  ],
+  "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "year": 2023,
+  "abstract": "Large language models (LLMs) have emerged as a widely-used tool for information seeking, but their generated outputs are prone to hallucination. In this work, our aim is to allow LLMs to generate text with citations, improving their factual correctness and verifiability. Existing work mainly relies on commercial search engines and human evaluation, making it challenging to reproduce and compare different modeling approaches. We propose ALCE, the first benchmark for Automatic LLMs\u2019 Citation Evaluation. ALCE collects a diverse set of questions and retrieval corpora and requires building end-to-end systems to retrieve supporting evidence and generate answers with citations. We develop automatic metrics along three dimensions\u2014fluency, correctness, and citation quality\u2014and demonstrate their strong correlation with human judgements. Our experiments with state-of-the-art LLMs and novel prompting strategies show that current systems have considerable room for improvement\u2014For example, on the ELI5 dataset, even the best models lack complete citation support 50% of the time. Our analyses further highlight promising future directions, including developing better retrievers, advancing long-context LLMs, and improving the ability to synthesize information from multiple sources.",
+  "citationCount": 1221,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4389520670"
+ },
+ "Mihindukulasooriya2023Text2kgbenchBenchmark": {
+  "citation_key": "Mihindukulasooriya2023Text2kgbenchBenchmark",
+  "title": "Text2KGBench: A Benchmark for Ontology-Driven Knowledge Graph Generation from Text",
+  "authors": [
+   "Nandana Mihindukulasooriya",
+   "Sanju Tiwari",
+   "Carlos F. Enguix",
+   "K. Lata"
+  ],
+  "venue": "International Workshop on the Semantic Web",
+  "year": 2023,
+  "abstract": "The recent advances in large language models (LLM) and foundation models with emergent capabilities have been shown to improve the performance of many NLP tasks. LLMs and Knowledge Graphs (KG) can complement each other such that LLMs can be used for KG construction or completion while existing KGs can be used for different tasks such as making LLM outputs explainable or fact-checking in Neuro-Symbolic manner. In this paper, we present Text2KGBench, a benchmark to evaluate the capabilities of language models to generate KGs from natural language text guided by an ontology. Given an input ontology and a set of sentences, the task is to extract facts from the text while complying with the given ontology (concepts, relations, domain/range constraints) and being faithful to the input sentences. We provide two datasets (i) Wikidata-TekGen with 10 ontologies and 13,474 sentences and (ii) DBpedia-WebNLG with 19 ontologies and 4,860 sentences. We define seven evaluation metrics to measure fact extraction performance, ontology conformance, and hallucinations by LLMs. Furthermore, we provide results for two baseline models, Vicuna-13B and Alpaca-LoRA-13B using automatic prompt generation from test cases. The baseline results show that there is room for improvement using both Semantic Web and Natural Language Processing techniques.",
+  "citationCount": 163,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "70a75b05a9410198fd71c3a0fe937a77d15d6bc8"
+ },
+ "Santana2023SurveyNarrative": {
+  "citation_key": "Santana2023SurveyNarrative",
+  "title": "A survey on narrative extraction from textual data",
+  "authors": [
+   "Brenda Salenave Santana",
+   "Ricardo Campos",
+   "Evelin Carvalho Freire de Amorim",
+   "Al\u00edpio Jorge",
+   "Purifica\u00e7\u00e3o Silvano",
+   "S\u00e9rgio Nunes"
+  ],
+  "venue": "Artificial Intelligence Review",
+  "year": 2023,
+  "abstract": "Narratives are present in many forms of human expression and can be understood as a fundamental way of communication between people. Computational understanding of the underlying story of a narrative, however, may be a rather complex task for both linguists and computational linguistics. Such task can be approached using natural language processing techniques to automatically extract narratives from texts. In this paper, we present an in depth survey of narrative extraction from text, providing a establishing a basis/framework for the study roadmap to the study of this area as a whole as a means to consolidate a view on this line of research. We aim to fulfill the current gap by identifying important research efforts at the crossroad between linguists and computer scientists. In particular, we highlight the importance and complexity of the annotation process, as a crucial step for the training stage. Next, we detail methods and approaches regarding the identification and extraction of narrative components, their linkage and understanding of likely inherent relationships, before detailing formal narrative representation structures as an intermediate step for visualization and data exploration purposes. We then move into the narrative evaluation task aspects, and conclude this survey by highlighting important open issues under the domain of narratives extraction from texts that are yet to be explored.",
+  "citationCount": 107,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4313597114"
+ },
+ "Asai2024SelfragLearning": {
+  "citation_key": "Asai2024SelfragLearning",
+  "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+  "authors": [
+   "Akari Asai",
+   "Zeqiu Wu",
+   "Yizhong Wang",
+   "Avirup Sil",
+   "Hannaneh Hajishirzi"
+  ],
+  "venue": "International Conference on Learning Representations",
+  "year": 2024,
+  "abstract": "Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues. However, indiscriminately retrieving and incorporating a fixed number of retrieved passages, regardless of whether retrieval is necessary, or passages are relevant, diminishes LM versatility or can lead to unhelpful response generation. We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection. Our framework trains a single arbitrary LM that adaptively retrieves passages on-demand, and generates and reflects on retrieved passages and its own generations using special tokens, called reflection tokens. Generating reflection tokens makes the LM controllable during the inference phase, enabling it to tailor its behavior to diverse task requirements. Experiments show that Self-RAG (7B and 13B parameters) significantly outperforms state-of-the-art LLMs and retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA, reasoning and fact verification tasks, and it shows significant gains in improving factuality and citation accuracy for long-form gener... [Truncated]",
+  "citationCount": 3518,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "OA:W4387800173"
+ },
+ "Rajpurkar2018KnowWhat": {
+  "citation_key": "Rajpurkar2018KnowWhat",
+  "title": "Know What You Don\u2019t Know: Unanswerable Questions for SQuAD",
+  "authors": [
+   "Pranav Rajpurkar",
+   "Robin Jia",
+   "Percy Liang"
+  ],
+  "venue": "Annual Meeting of the Association for Computational Linguistics",
+  "year": 2018,
+  "abstract": "Extractive reading comprehension systems can often locate the correct answer to a question in a context document, but they also tend to make unreliable guesses on questions for which the correct answer is not stated in the context. Existing datasets either focus exclusively on answerable questions, or use automatically generated unanswerable questions that are easy to identify. To address these weaknesses, we present SQuADRUn, a new dataset that combines the existing Stanford Question Answering Dataset (SQuAD) with over 50,000 unanswerable questions written adversarially by crowdworkers to look similar to answerable ones. To do well on SQuADRUn, systems must not only answer questions when possible, but also determine when no answer is supported by the paragraph and abstain from answering. SQuADRUn is a challenging natural language understanding task for existing models: a strong neural system that gets 86% F1 on SQuAD achieves only 66% F1 on SQuADRUn. We release SQuADRUn to the community as the successor to SQuAD.",
+  "citationCount": 3647,
+  "found_in_sections": [
+   "related"
+  ],
+  "hint": null,
+  "paperId": "4d1c856275744c0284312a3a50efb6ca9dc4cd4c"
+ },
+ "Noy2006NaryRelations": {
+  "title": "Defining N-ary Relations on the Semantic Web",
+  "year": 2006,
+  "note": "title matched in S2/OpenAlex; rejected only for missing abstract (Noy: W3C note); added manually"
+ },
+ "Sauri2009Factbank": {
+  "title": "FactBank",
+  "year": 2009,
+  "note": "title matched in S2/OpenAlex; rejected only for missing abstract (Noy: W3C note); added manually"
+ },
+ "deKleer1986Atms": {
+  "title": "An Assumption-Based TMS",
+  "year": 1986,
+  "note": "title matched in S2/OpenAlex; rejected only for missing abstract (Noy: W3C note); added manually"
+ },
+ "Doerr2003Cidoc": {
+  "title": "CIDOC CRM",
+  "year": 2003,
+  "note": "title matched in S2/OpenAlex; rejected only for missing abstract (Noy: W3C note); added manually"
+ },
+ "Lombardo2018Drammar": {
+  "title": "Drammar",
+  "year": 2019,
+  "note": "title matched in S2/OpenAlex; rejected only for missing abstract (Noy: W3C note); added manually"
+ },
+ "Falkenhainer1989Sme": {
+  "title": "SME",
+  "year": 1989,
+  "note": "title matched in S2/OpenAlex; rejected only for missing abstract (Noy: W3C note); added manually"
+ },
+ "Robertson2009Bm25": {
+  "title": "BM25",
+  "year": 2009,
+  "note": "title matched in S2/OpenAlex; rejected only for missing abstract (Noy: W3C note); added manually"
+ }
+}

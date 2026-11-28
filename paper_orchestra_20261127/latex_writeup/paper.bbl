@@ -1,0 +1,318 @@
+\begin{thebibliography}{45}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Agichtein and Gravano(2000)}]{Agichtein2000SnowballExtracting}
+Eugene Agichtein and Luis Gravano. 2000.
+\newblock {Snowball: extracting relations from large plain-text collections}.
+\newblock In \emph{Proceedings of the Fifth ACM Conference on Digital
+  Libraries}.
+
+\bibitem[{Asai et~al.(2024)Asai, Wu, Wang, Sil, and
+  Hajishirzi}]{Asai2024SelfragLearning}
+Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, and Hannaneh Hajishirzi. 2024.
+\newblock {Self-RAG: Learning to Retrieve, Generate, and Critique through
+  Self-Reflection}.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Bamman et~al.(2019)Bamman, Popat, and
+  Shen}]{Bamman2019AnnotatedDataset}
+David Bamman, Sejal Popat, and Sheng Shen. 2019.
+\newblock {An annotated dataset of literary entities}.
+\newblock In \emph{North American Chapter of the Association for Computational
+  Linguistics}, pages 2138--2144.
+
+\bibitem[{Batista et~al.(2015)Batista, Martins, and
+  Silva}]{Batista2015SemisupervisedBootstrapping}
+David~S. Batista, Bruno Martins, and Mário~J. Silva. 2015.
+\newblock {Semi-Supervised Bootstrapping of Relationship Extractors with
+  Distributional Semantics}.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing (EMNLP)}.
+
+\bibitem[{Bohnet et~al.(2022)Bohnet, Tran, Verga, Aharoni, Andor, Soares,
+  Ciaramita, Eisenstein, Ganchev, Herzig, Hui, Kwiatkowski, Ma, Ni, Saralegui,
+  Schuster, Cohen, Collins, Das, Metzler, Petrov, and
+  Webster}]{Bohnet2022AttributedQuestion}
+Bernd Bohnet, Vinh~Q. Tran, Pat Verga, Roee Aharoni, Daniel Andor,
+  Livio~Baldini Soares, Massimiliano Ciaramita, Jacob Eisenstein, Kuzman
+  Ganchev, Jonathan Herzig, Kai Hui, Tom Kwiatkowski, Ji~Ma, Jianmo Ni,
+  Lierni~Sestorain Saralegui, Tal Schuster, William~W. Cohen, Michael Collins,
+  Dipanjan Das, and 3 others. 2022.
+\newblock {Attributed Question Answering: Evaluation and Modeling for
+  Attributed Large Language Models}.
+\newblock In \emph{arXiv preprint arXiv:2212.08037}.
+
+\bibitem[{Carlini et~al.(2023)Carlini, Ippolito, Jagielski, Lee, Tramèr, and
+  Zhang}]{Carlini2023QuantifyingMemorization}
+Nicholas Carlini, Daphne Ippolito, Matthew Jagielski, Katherine Lee, Florian
+  Tramèr, and Chiyuan Zhang. 2023.
+\newblock {Quantifying Memorization Across Neural Language Models}.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Chang et~al.(2023)Chang, Cramer, Soni, and
+  Bamman}]{Chang2023SpeakMemory}
+Kent~K. Chang, Mackenzie~Hạnh Cramer, Sandeep Soni, and David Bamman. 2023.
+\newblock {Speak, Memory: An Archaeology of Books Known to ChatGPT/GPT-4}.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing (EMNLP)}.
+
+\bibitem[{Cormack et~al.(2009)Cormack, Clarke, and
+  Büttcher}]{Cormack2009ReciprocalRank}
+Gordon~V. Cormack, Charles L.~A. Clarke, and Stefan Büttcher. 2009.
+\newblock {Reciprocal rank fusion outperforms condorcet and individual rank
+  learning methods}.
+\newblock In \emph{International ACM SIGIR Conference on Research and
+  Development in Information Retrieval (SIGIR)}.
+
+\bibitem[{de~Kleer(1986)}]{deKleer1986Atms}
+Johan de~Kleer. 1986.
+\newblock {An Assumption-Based TMS}.
+\newblock \emph{Artificial Intelligence}, 28(2):127--162.
+
+\bibitem[{de~Marneffe et~al.(2012)de~Marneffe, Manning, and
+  Potts}]{Marneffe2012DidIt}
+Marie-Catherine de~Marneffe, Christopher~D. Manning, and Christopher Potts.
+  2012.
+\newblock {Did It Happen? The Pragmatic Complexity of Veridicality Assessment}.
+\newblock \emph{Computational Linguistics}.
+
+\bibitem[{Diab et~al.(2009)Diab, Levin, Mitamura, Rambow, Prabhakaran, and
+  Guo}]{Diab2009CommittedBelief}
+Mona Diab, Lori~S. Levin, Teruko Mitamura, Owen Rambow, Vinodkumar Prabhakaran,
+  and Weiwei Guo. 2009.
+\newblock {Committed belief annotation and tagging}.
+\newblock In \emph{Linguistic Annotation Workshop}.
+
+\bibitem[{Doerr(2003)}]{Doerr2003Cidoc}
+Martin Doerr. 2003.
+\newblock {The CIDOC Conceptual Reference Module: An Ontological Approach to
+  Semantic Interoperability of Metadata}.
+\newblock \emph{AI Magazine}, 24(3):75--92.
+
+\bibitem[{Edge et~al.(2024)Edge, Trinh, Cheng, Bradley, Chao, Mody, Truitt,
+  Metropolitansky, Ness, and Larson}]{Edge2024FromLocal}
+Darren Edge, Ha~Trinh, Newman Cheng, Joshua Bradley, Alex Chao, Apurva Mody,
+  Steven Truitt, Dasha Metropolitansky, Robert~Osazuwa Ness, and Jonathan
+  Larson. 2024.
+\newblock {From Local to Global: A Graph RAG Approach to Query-Focused
+  Summarization}.
+\newblock In \emph{arXiv preprint arXiv:2404.16130}.
+
+\bibitem[{Elson(2012)}]{Elson2012DramabankAnnotating}
+David~K. Elson. 2012.
+\newblock {DramaBank: Annotating Agency in Narrative Discourse}.
+\newblock In \emph{Language Resources and Evaluation Conference (LREC)}.
+
+\bibitem[{Elson and McKeown(2010)}]{Elson2010AutomaticAttribution}
+David~K. Elson and Kathleen~R. McKeown. 2010.
+\newblock {Automatic Attribution of Quoted Speech in Literary Narrative}.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}.
+
+\bibitem[{Falkenhainer et~al.(1989)Falkenhainer, Forbus, and
+  Gentner}]{Falkenhainer1989Sme}
+Brian Falkenhainer, Kenneth~D. Forbus, and Dedre Gentner. 1989.
+\newblock {The Structure-Mapping Engine: Algorithm and Examples}.
+\newblock \emph{Artificial Intelligence}, 41(1):1--63.
+
+\bibitem[{Forstall et~al.(2014)Forstall, Coffee, Buck, Roache, and
+  Jacobson}]{Forstall2014ModelingScholars}
+Christopher~W. Forstall, Neil Coffee, Thomas Buck, Katherine Roache, and
+  Sarah~L. Jacobson. 2014.
+\newblock {Modeling the scholars: Detecting intertextuality through enhanced
+  word-level n-gram matching}.
+\newblock \emph{Digital Scholarship in the Humanities}.
+
+\bibitem[{Gao et~al.(2023)Gao, Yen, Yu, and Chen}]{Gao2023EnablingLarge}
+Tianyu Gao, Howard~H Yen, Jiatong Yu, and Danqi Chen. 2023.
+\newblock {Enabling Large Language Models to Generate Text with Citations}.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing (EMNLP)}.
+
+\bibitem[{Hernández et~al.(2015)Hernández, Hogan, and
+  Krötzsch}]{Hernndez2015ReifyingRdf}
+Daniel Hernández, Aidan Hogan, and Markus Krötzsch. 2015.
+\newblock {Reifying RDF: What Works Well With Wikidata?}
+\newblock \emph{CEUR Workshop Proceedings}.
+
+\bibitem[{Hogan et~al.(2021)Hogan, Blomqvist, Cochez, d'Amato, de~Melo,
+  Gutiérrez, Kirrane, Gayo, Navigli, Neumaier, Ngomo, Polleres, Rashid, Rula,
+  Schmelzeisen, Sequeda, Staab, and Zimmermann}]{Hogan2021KnowledgeGraphs}
+Aidan Hogan, Eva Blomqvist, Michael Cochez, Claudia d'Amato, Gerard de~Melo,
+  Claudio Gutiérrez, Sabrina Kirrane, José Emilio~Labra Gayo, Roberto
+  Navigli, Sebastian Neumaier, Axel-Cyrille~Ngonga Ngomo, Axel Polleres,
+  Sabbir~M. Rashid, Anisa Rula, Lukas Schmelzeisen, Juan Sequeda, Steffen
+  Staab, and Antoine Zimmermann. 2021.
+\newblock {Knowledge Graphs}.
+\newblock \emph{ACM Computing Surveys}.
+
+\bibitem[{Ji et~al.(2023)Ji, Lee, Frieske, Yu, Su, Xu, Ishii, Bang, Madotto,
+  and Fung}]{Ji2023SurveyHallucination}
+Ziwei Ji, Nayeon Lee, Rita Frieske, Tiezheng Yu, Dan Su, Yan Xu, Etsuko Ishii,
+  Ye~Jin Bang, Andrea Madotto, and Pascale Fung. 2023.
+\newblock {Survey of Hallucination in Natural Language Generation}.
+\newblock \emph{ACM Computing Surveys}.
+
+\bibitem[{Jiang and de~Marneffe(2019)}]{Jiang2019DoYou}
+Nanjiang Jiang and Marie-Catherine de~Marneffe. 2019.
+\newblock {Do You Know That Florence Is Packed with Visitors? Evaluating
+  State-of-the-art Models of Speaker Commitment}.
+\newblock In \emph{Proceedings of the conference - Association for
+  Computational Linguistics. Meeting}.
+
+\bibitem[{Joshi et~al.(2020)Joshi, Santy, Budhiraja, Bali, and
+  Choudhury}]{Joshi2020StateFate}
+Pratik Joshi, Sebastin Santy, Amar Budhiraja, Kalika Bali, and Monojit
+  Choudhury. 2020.
+\newblock {The State and Fate of Linguistic Diversity and Inclusion in the NLP
+  World}.
+\newblock In \emph{Proceedings of the conference - Association for
+  Computational Linguistics. Meeting}.
+
+\bibitem[{Kakwani et~al.(2020)Kakwani, Kunchukuttan, Golla, C, Bhattacharyya,
+  Khapra, and Kumar}]{Kakwani2020IndicnlpsuiteMonolingual}
+Divyanshu Kakwani, Anoop Kunchukuttan, Satish Golla, Gokul~Narayanan C, Avik
+  Bhattacharyya, Mitesh~M. Khapra, and Pratyush Kumar. 2020.
+\newblock {IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and
+  Pre-trained Multilingual Language Models for Indian Languages}.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  EMNLP (Findings of EMNLP)}.
+
+\bibitem[{Kowalski and Sergot(1986)}]{Kowalski1986LogicbasedCalculus}
+Robert Kowalski and Marek~J. Sergot. 1986.
+\newblock {A Logic-based Calculus of Events}.
+\newblock \emph{New Generation Computing}, 4:67--95.
+
+\bibitem[{Lewis et~al.(2020)Lewis, Perez, Piktus, Petroni, Karpukhin, Goyal,
+  Küttler, Lewis, tau Yih, Rocktäschel, Riedel, and
+  Kiela}]{Lewis2020RetrievalaugmentedGeneration}
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen tau Yih, Tim
+  Rocktäschel, Sebastian Riedel, and Douwe Kiela. 2020.
+\newblock {Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks}.
+\newblock In \emph{arXiv preprint arXiv:2005.11401}.
+
+\bibitem[{Lombardo et~al.(2019)Lombardo, Damiano, and
+  Pizzo}]{Lombardo2018Drammar}
+Vincenzo Lombardo, Rossana Damiano, and Antonio Pizzo. 2019.
+\newblock {Drammar: A Comprehensive Ontological Resource on Drama}.
+\newblock \emph{Applied Ontology}.
+
+\bibitem[{McCarthy(1993)}]{Mccarthy1993NotesFormalizing}
+John McCarthy. 1993.
+\newblock {Notes on formalizing context}.
+\newblock In \emph{Proceedings of the 13th International Joint Conference on
+  Artificial Intelligence (IJCAI)}.
+
+\bibitem[{Mihindukulasooriya et~al.(2023)Mihindukulasooriya, Tiwari, Enguix,
+  and Lata}]{Mihindukulasooriya2023Text2kgbenchBenchmark}
+Nandana Mihindukulasooriya, Sanju Tiwari, Carlos~F. Enguix, and K.~Lata. 2023.
+\newblock {Text2KGBench: A Benchmark for Ontology-Driven Knowledge Graph
+  Generation from Text}.
+\newblock In \emph{International Workshop on the Semantic Web}, pages 247--265.
+
+\bibitem[{Nematzadeh et~al.(2018)Nematzadeh, Burns, Grant, Gopnik, and
+  Griffiths}]{Nematzadeh2018EvaluatingTheory}
+Aida Nematzadeh, Kaylee Burns, Erin Grant, Alison Gopnik, and Thomas~L.
+  Griffiths. 2018.
+\newblock {Evaluating Theory of Mind in Question Answering}.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing (EMNLP)}.
+
+\bibitem[{Noy and Rector(2006)}]{Noy2006NaryRelations}
+Natasha Noy and Alan Rector. 2006.
+\newblock {Defining N-ary Relations on the Semantic Web}.
+\newblock W3C Working Group Note.
+
+\bibitem[{Pan et~al.(2024)Pan, Luo, Wang, Chen, Wang, and
+  Wu}]{Pan2024UnifyingLarge}
+Shirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu.
+  2024.
+\newblock {Unifying Large Language Models and Knowledge Graphs: A Roadmap}.
+\newblock \emph{IEEE Transactions on Knowledge and Data Engineering}.
+
+\bibitem[{Pareti(2016)}]{Pareti2016Parc30}
+Silvia Pareti. 2016.
+\newblock {PARC 3.0: A Corpus of Attribution Relations}.
+\newblock In \emph{Language Resources and Evaluation Conference (LREC)}.
+
+\bibitem[{Piper et~al.(2021)Piper, So, and Bamman}]{Piper2021NarrativeTheory}
+A.~Piper, R.~So, and David Bamman. 2021.
+\newblock {Narrative Theory for Computational Narrative Understanding}.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing}, pages 298--311.
+
+\bibitem[{Rajpurkar et~al.(2018)Rajpurkar, Jia, and
+  Liang}]{Rajpurkar2018KnowWhat}
+Pranav Rajpurkar, Robin Jia, and Percy Liang. 2018.
+\newblock {Know What You Don't Know: Unanswerable Questions for SQuAD}.
+\newblock \emph{ArXiv}, abs/1806.03822.
+
+\bibitem[{Robertson and Zaragoza(2009)}]{Robertson2009Bm25}
+Stephen Robertson and Hugo Zaragoza. 2009.
+\newblock {The Probabilistic Relevance Framework: BM25 and Beyond}.
+\newblock \emph{Foundations and Trends in Information Retrieval},
+  3(4):333--389.
+
+\bibitem[{Rudinger et~al.(2018)Rudinger, White, and
+  Durme}]{Rudinger2018NeuralModels}
+Rachel Rudinger, Aaron~Steven White, and Benjamin~Van Durme. 2018.
+\newblock {Neural Models of Factuality}.
+\newblock In \emph{North American Chapter of the Association for Computational
+  Linguistics}, pages 731--744.
+
+\bibitem[{Santana et~al.(2023)Santana, Campos, de~Amorim, Jorge, Silvano, and
+  Nunes}]{Santana2023SurveyNarrative}
+Brenda~Salenave Santana, Ricardo Campos, Evelin Carvalho~Freire de~Amorim,
+  Alípio Jorge, Purificação Silvano, and Sérgio Nunes. 2023.
+\newblock {A survey on narrative extraction from textual data}.
+\newblock \emph{Artificial Intelligence Review}.
+
+\bibitem[{Sap et~al.(2022)Sap, Bras, Fried, and
+  Choi}]{Sap2022NeuralTheoryofmind}
+Maarten Sap, Ronan Joseph~Le Bras, Daniel Fried, and Yejin Choi. 2022.
+\newblock {Neural Theory-of-Mind? On the Limits of Social Intelligence in Large
+  LMs}.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing (EMNLP)}.
+
+\bibitem[{Saur{\'\i} and Pustejovsky(2009)}]{Sauri2009Factbank}
+Roser Saur{\'\i} and James Pustejovsky. 2009.
+\newblock {FactBank: a corpus annotated with event factuality}.
+\newblock \emph{Language Resources and Evaluation}, 43(3):227--268.
+
+\bibitem[{Sims et~al.(2019)Sims, Park, and Bamman}]{Sims2019LiteraryEvent}
+Matthew Sims, Jong~Ho Park, and David Bamman. 2019.
+\newblock {Literary Event Detection}.
+\newblock In \emph{Proceedings of the conference - Association for
+  Computational Linguistics. Meeting}.
+
+\bibitem[{Thorne et~al.(2018)Thorne, Vlachos, Christodoulopoulos, and
+  Mittal}]{Thorne2018FeverLargescale}
+James Thorne, Andreas Vlachos, Christos Christodoulopoulos, and Arpit Mittal.
+  2018.
+\newblock {FEVER: a Large-scale Dataset for Fact Extraction and VERification}.
+\newblock In \emph{Conference of the North American Chapter of the Association
+  for Computational Linguistics: Human Language Technologies (NAACL-HLT)}.
+
+\bibitem[{Vrandečić and Krötzsch(2014)}]{Vrandei2014WikidataFree}
+Denny Vrandečić and Markus Krötzsch. 2014.
+\newblock {Wikidata: a free collaborative knowledgebase}.
+\newblock \emph{Communications of the ACM}.
+
+\bibitem[{Xu et~al.(2024)Xu, Chen, Peng, Zhang, Xu, Zhao, Wu, Zheng, Wang, and
+  Chen}]{Xu2024LargeLanguage}
+Derong Xu, Wei Chen, Wenjun Peng, Chao Zhang, Tong Xu, Xiangyu Zhao, Xian Wu,
+  Yefeng Zheng, Yan Wang, and Enhong Chen. 2024.
+\newblock {Large language models for generative information extraction: a
+  survey}.
+\newblock \emph{Frontiers of Computer Science}.
+
+\bibitem[{Yang et~al.(2025)Yang, Xu, Du, Li, He, and
+  Lin}]{Yang2025EvolvtripEnhancing}
+Bohao Yang, Huilin Xu, Jinhua Du, Ze~Li, Yulan He, and Chenghua Lin. 2025.
+\newblock {EvolvTrip: Enhancing Literary Character Understanding with Temporal
+  Theory-of-Mind Graphs}.
+\newblock In \emph{arXiv preprint arXiv:2506.13641}.
+
+\end{thebibliography}

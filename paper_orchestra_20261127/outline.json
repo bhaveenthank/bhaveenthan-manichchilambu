@@ -1,0 +1,91 @@
+{
+  "plotting_plan": [
+    {
+      "figure_id": "fig_anklet_said_vs_done",
+      "title": "The anklet case: one ledger, three worlds",
+      "plot_type": "diagram",
+      "data_source": "idea.md",
+      "objective": "Teaser diagram. Left: SIL-16 records along story time (show to goldsmith, goldsmith takes queen's anklet, accusation 'Kovalan stole it' [claimed], king accepts, conditional order, killing, king rejects at SIL-20). Right: three folds at t=16.5 — the text's world (holder = goldsmith), the king's view (holder = Kovalan), and a naive triple graph that promotes the claim. Shows that an n-ary event node for the lie is indistinguishable from a true one, while the mood gate keeps it out of state.",
+      "aspect_ratio": "21:9"
+    },
+    {
+      "figure_id": "fig_accuracy_vs_size_leak",
+      "title": "Accuracy, claim leakage and encoding size across representations",
+      "plot_type": "plot",
+      "data_source": "experimental_log.md",
+      "objective": "Scatter plot: x = statements (held-out encoding size, log scale), y = held-out accuracy; marker colour/shape encodes leak rate (0 vs >0). Seven methods. Shows event nodes leak as much as flat triples, standards and ledger tie at 1.0 but ledger uses 45% of the statements.",
+      "aspect_ratio": "4:3"
+    },
+    {
+      "figure_id": "fig_ablation_and_cross_epic",
+      "title": "What carries the load: feature ablation and cross-epic composition",
+      "plot_type": "plot",
+      "data_source": "experimental_log.md",
+      "objective": "Two-panel horizontal bar chart. Left: questions right (of 121) and false facts when each feature is removed (mood is the only one that creates false facts; birth label changes nothing). Right: cross-epic transfer, per-verb templates vs composer: right and false facts for SIL->MAN and MAN->SIL.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "figure_id": "fig_reading_not_recall",
+      "title": "Does the LLM read the verse or recall the story?",
+      "plot_type": "plot",
+      "data_source": "experimental_log.md",
+      "objective": "Grouped bar chart. Pilot (famous cantos, same-line match): few, zero, notext, masked recall with chance bands. Stage test (lesser-known cantos): few .804 vs notext .429 vs chance mean .452 (97.5th pct .554). Shows that on lesser-known cantos without verse recall falls to chance.",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "intro_related_work_plan": {
+    "introduction_strategy": {
+      "hook_hypothesis": "Knowledge graphs and graph-based retrieval are increasingly built from narrative and literary text by LLMs, and narrative is dominated by statements that are not facts (claims, lies, orders, beliefs, dreams).",
+      "problem_gap_hypothesis": "Standard KG representations, including n-ary event reification, have no notion of who says something and in what mood, so character claims are promoted to facts (epistemic leakage); this is measured here on two classical Tamil epics, a low-resource classical language with no prior structured resource.",
+      "search_directions": [
+        "Knowledge graph construction from narrative or literary text, and LLM-based knowledge graph construction",
+        "Event factuality and source-relative factuality annotation (FactBank) and belief/attribution in NLP",
+        "Computational literary studies / narrative understanding surveys",
+        "Graph-based retrieval-augmented generation (GraphRAG) and hallucination in question answering",
+        "NLP for Tamil and low-resource classical languages"
+      ]
+    },
+    "related_work_strategy": {
+      "overview": "Three clusters: (1) representing statements beyond triples, (2) narrative and literary knowledge graphs, (3) extraction and question answering with LLMs over graphs. Plus text reuse.",
+      "subsections": [
+        {
+          "subsection_title": "Beyond the triple: reification, context, provenance",
+          "methodology_cluster": "n-ary relations, qualifiers, named graphs, contexts, event calculus, CIDOC CRM / CRMinf, PROV-O, OWL-Time",
+          "sota_investigation_mission": "Find the canonical works on RDF reification comparisons, n-ary relations, Wikidata qualifiers, McCarthy contexts, ATMS, event calculus, cultural-heritage ontologies and temporal modelling in cultural heritage KGs.",
+          "limitation_hypothesis": "These can express voice and mood but require hand-written query logic per relation and much larger encodings; none decides per statement which patterns are needed.",
+          "limitation_search_queries": ["RDF reification named graphs n-ary Wikidata comparison", "temporal modelling cultural heritage knowledge graphs survey", "CIDOC CRM argumentation belief CRMinf"],
+          "bridge": "Ledger compiles to the standards; composer chooses per record; fold replaces hand-written queries."
+        },
+        {
+          "subsection_title": "Narrative knowledge graphs and story understanding",
+          "methodology_cluster": "Story intention graphs, drama ontologies, character mental-state graphs, literary KGs",
+          "sota_investigation_mission": "Find DramaBank / story intention graph, Drammar, temporal character mental-state graphs, narrative KGs for QA over long stories, BookNLP, character-centric narrative modelling.",
+          "limitation_hypothesis": "Belief or source tracked with one speaker, no nested voice chains, no query-time reader policies, no rebirth/story-time dimension, mostly English prose.",
+          "limitation_search_queries": ["story intention graph annotation", "temporal character mental state graph theory of mind LLM", "knowledge graph of a novel narrative question answering"],
+          "bridge": "Voice chains, 13 moods, viewer-relative folds, births, on classical Tamil verse."
+        },
+        {
+          "subsection_title": "LLM extraction, factuality and graph-grounded QA",
+          "methodology_cluster": "LLM information extraction, GraphRAG, hybrid retrieval with BM25 and rank fusion, faithfulness/abstention",
+          "sota_investigation_mission": "Find GraphRAG, BM25, reciprocal rank fusion, LLM KG construction surveys, hallucination surveys, text reuse detection in classical languages (Tesserae, TRACER), Snowball/bootstrapping relation extraction.",
+          "limitation_hypothesis": "Retrieval checks relevance, not what kind of statement the evidence is; extraction from famous texts may reflect memorisation.",
+          "limitation_search_queries": ["graph RAG local to global query focused summarization", "reciprocal rank fusion", "memorization contamination LLM evaluation"],
+          "bridge": "Evidence classes gate answers by mood; pre-registered stage test with no-text control separates reading from recall."
+        }
+      ]
+    }
+  },
+  "section_plan": [
+    {"section": "Abstract", "plan": "Hook (said is not done) → epistemic leakage measured → ledger+fold+composer → key numbers: event nodes leak .75; ledger ties a full standards model at 45% statements; mood ablation 26 false facts; composer cross-epic 0 false facts vs 24; 57% of plain paths refused; held-out QA 19/20 vs 12; full-coverage resource 10,209 lines with LLM drafting gated by a pre-registered test (.804 vs .429 notext)."},
+    {"section": "1 Introduction", "plan": "Open with the goldsmith's accusation SIL-16-0145 and his secret SIL-16-0127. Define epistemic leakage. Show that n-ary reification makes a lie neater. Three questions: (Q1) which representations leak, (Q2) what minimal structure prevents it, (Q3) can it scale to a whole classical text with LLMs without leaking. Contributions list. Honest framing: expressivity isn't the claim.", "citation_hints": ["Noy and Rector (Defining N-ary Relations on the Semantic Web)", "Saurí and Pustejovsky (FactBank: a corpus annotated with event factuality)"]},
+    {"section": "2 Related Work", "plan": "Three paragraphs per clusters above plus text reuse."},
+    {"section": "3 The Twin Epics and What Breaks", "plan": "Corpus, line ids, hard-case taxonomy table (condensed 8 groups with line examples). Figure 1."},
+    {"section": "4 Method", "subsections": ["4.1 Voice-scoped ledger (record tuple, 13 moods, core rule)", "4.2 Fold and viewer-relative worlds (equations)", "4.3 Composer (needs(r), hard constraint)", "4.4 Validation, guarded paths and echoes", "4.5 Tiered LLM drafting and evidence-gated QA"]},
+    {"section": "5 Experiments", "subsections": ["5.1 Which representations leak (Table: representation comparison, Fig 2)", "5.2 Composer and ablation (Table composer cross-epic, Fig 3)", "5.3 Validator and guarded paths", "5.4 Scaling: reading vs recall (Fig 4, stage test table)", "5.5 Evidence-gated QA (table)", "5.6 Negative results (facet detection, bootstrapping)"]},
+    {"section": "6 Discussion", "plan": "Three lessons: (i) truth is a property of telling, not of structure; (ii) the bottleneck is mood detection, which surface cues cannot do and LLMs can partly do; (iii) for famous texts, controls for recall are necessary."},
+    {"section": "7 Conclusion", "plan": "Short."},
+    {"section": "Limitations", "plan": "Single annotator, self-written questions, small held-out sets, same-family judge, scholar review pending, echo finder unproven, no dense retrieval, Wikidata errors."},
+    {"section": "Ethics", "plan": "Cultural heritage text, Project Madurai terms, machine drafts labelled, no claims of historical identification."},
+    {"section": "Appendix", "plan": "Full 13 moods; validator mutation list; name-finding and co-occurrence tables; QA question sets; judge distribution; formula-pair examples."}
+  ]
+}

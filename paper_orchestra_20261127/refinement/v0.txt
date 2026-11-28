@@ -1,0 +1,680 @@
+                      Said Is Not Done: Epistemic Leakage in Literary Knowledge Graphs
+                           andaVoice-ScopedLedgerfortheTwoClassicalTamilEpics
+                                                      AnonymousACLsubmission
+   001                                Abstract                            a hard case for this approach, and not mainly be-              044
+                                                                          causeitsentities are hard to 昀椀nd. Stories are full of         045
+   002                Inastory,muchofwhatissaidneverhappened.             statements that are not facts: accusations, lies, or-          046
+   003                Agoldsmithwhohassecretlytakenthequeen’s             ders, plans, wishes, dreams, beliefs and metaphors             047
+   004                anklet accuses the hero of stealing it; the king    (Piper et al., 2021; Santana et al., 2023). A graph            048
+   005                believes him, and the hero dies. A knowledge
+   006                graph built from this text stores one world, so     has one world. Once a character’s claim is written             049
+   007                the accusation becomes a fact that every later      in as a triple, nothing marks it as a claim.                   050
+   008                query trusts. We call this failure epistemic           Consider canto 16 of Silappatikāram, the 昀椀rst              051
+   009                leakage and measure it on the two classical         of the two classical Tamil epics.      A goldsmith             052
+   010                Tamil epics, Silappatikāram and Maṇimēkalai         has secretly taken the queen’s anklet: க±ந꣍த꒿°ான꧍              053
+   011                (10,209 lines). The usual 昀椀x, reifying rela-       Ïகாணꏍட காலணꎿ, “the ornament I secretly took”                   054
+   012                tions as event nodes, does not help.  Event         (SIL-16-0127).   When the hero Kovalan comes                   055
+   013                nodes state claims as facts on 75% of held-
+   014                out claim questions, exactly as often as plain      to sell his wife Kannagi’s anklet, the goldsmith               056
+   015                triples, because a node for a lie looks like a      tells the king that Kovalan stole the queen’s                  057
+   016                nodeforatruth. WeproposeMaṇichchilambu,             (SIL-16-0145). The king believes him and gives a               058
+   017                a voice-scoped ledger. Each record keeps its        conditional order: if the anklet is in the thief’s             059
+   018                chain of tellers and one of 13 moods, only as-      hand,killhimandbringit(SIL-16-0152/3). Aguard                  060
+   019                serted records change the world, and each char-     objectsthatthisisnomantobekilled(SIL-16-0163).                 061
+   020                acter’s beliefs are replayed as a separate view.    Onedrunkmanstrikestheblow(SIL-16-0212), and                    062
+   021                A carefully built CIDOC CRM + CRMinf +              the poet gives two reasons in consecutive lines:               063
+   022                PROV-O + OWL-Time model ties the ledger
+   023                on every question, so expressive power is not       the king’s sceptre bent, and Kovalan’s old karma               064
+   024                our claim. The ledger uses 45% of the state-        ripened (0216--0217). Later the king, undone, says             065
+   025                ments and needs no hand-written queries. A          °ாÐனகள돍வன꧍,“Iamthethief”(SIL-20-0086). That                    066
+   026                meaning-preserving composer transfers across        is a confession in 昀椀gure, not a theft.                        067
+   027                epics with zero false facts, where per-verb tem-       A plain triple graph stores holds(Kovalan,                  068
+   028                plates produce 24. Removing mood alone cre-         queen’s anklet). The standard repair, turning the              069
+   029                ates26falsefacts. Guardedpathsearchrefuses          relation into an n-ary event node (Noy and Rector,             070
+   030                57% of the connections a plain search 昀椀nds,
+   031                andevidence-gatedquestionansweringgets19            2006), recovers who gave what to whom. But an                  071
+   032                of 20 held-out questions right, against 12 for      event node for “Kovalan stole the queen’s anklet”              072
+   033                rules alone. An LLM drafts records for 97%          looksexactlylikeonefor“KovalantookKannagi’s                    073
+   034                of lines. A pre-registered test with a no-verse     anklet”. Rei昀椀cation makes a lie neater, not less              074
+   035                control shows it reads lesser-known cantos (re-     false. We call the general failure, a reported claim           075
+   036                call .804 vs. .429) and does not merely recall      becomingastoredfact,epistemicleakage. It is the                076
+   037                the story.                                          narrative counterpart of source-relative factuality            077
+   038            1   Introduction                                        in NLP(SauríandPustejovsky,2009;deMarne昀昀e                     078
+                                                                          et al., 2012; Diab et al., 2009), and its cost is not          079
+   039            Knowledge graphs (KGs) are increasingly built           missing knowledge. It is false knowledge that ev-              080
+   040            from text by language models and then used as           ery downstream query, path and generated answer                081
+   041            the factual backbone of retrieval and question an-      will repeat (Ji et al., 2023).                                 082
+   042            swering (Hogan et al., 2021; Pan et al., 2024; Xu          Westudythreequestionsonthefulltextofboth                    083
+   043            et al., 2024; Edge et al., 2024). Narrative text is     epics: (Q1) WhichKGrepresentationsleak,andis                   084
+                                                                       1
+   085           preventing leakage a matter of expressive power?        1986). In cultural heritage, CIDOC CRM models                 135
+   086           (Q2)Whatistheminimalstructurethatpreventsit,            events, custody and ownership (Doerr, 2003), and              136
+   087           and which parts carry the load? (Q3) Can such           its extensions add belief and provenance. These               137
+   088           a graph be scaled to a whole classical text with        formalisms can express voice and mood, and we                 138
+   089           LLMs, under controls that tell reading apart from       build the strongest such baseline ourselves (Sec-             139
+   090           recall of a famous story (Chang et al., 2023)?          tion 5.1).   What they do not provide is a per-               140
+                                                                         statement decision about which patterns a state-              141
+   091           Contributions.                                          mentneeds,orasinglereplaythatanswerscustody                   142
+   092           1. We de昀椀ne and measure epistemic leakage.             and belief questions for any verb without hand-               143
+   093              Event nodes leak exactly as often as plain           written queries.                                              144
+   094              triples, on 75% of held-out claim questions
+   095              (Section 5.1).                                       Factuality,attributionandbelief.       FactBankan-            145
+   096           2. A voice-scoped ledger. Every record carries a        notates event factuality relative to sources (Saurí           146
+   097              chain of tellers and one of 13 moods, only as-       and Pustejovsky, 2009).      Related work covers              147
+   098              serted records change state, and each charac-        committed belief (Diab et al., 2009), veridicality            148
+   099              ter’s view is replayed at query time (Section 4).    (de Marne昀昀e et al., 2012), neural factuality pre-            149
+   100              Astrong standards model ties the ledger. Our         diction (Rudinger et al., 2018) and speaker com-              150
+   101              claim is therefore economy and discipline, not       mitment (Jiang and de Marne昀昀e, 2019). PARC                   151
+   102              expressivity. The ledger needs 45% of the state-     annotates attribution relations in news (Pareti,              152
+   103              ments and no hand-written queries, and it com-       2016), and quoted-speech attribution has been                 153
+   104              piles to those same standards.                       studied for literary narrative (Elson and McKe-               154
+   105           3. A rule-based composer that stores per record         own, 2010). Story-based theory-of-mind bench-                 155
+   106              only what changes meaning. It transfers across       marks test whether models track false beliefs (Ne-            156
+   107              epics with zero false facts, where per-verb tem-     matzadeh et al., 2018; Sap et al., 2022). We carry            157
+   108              platesproduce24. Anablationshowsthatmood             these sentence-level notions into the storage and             158
+   109              is the one feature preventing false facts (Sec-      query layer, where they must survive replay, path             159
+   110              tion 5.2).                                           search and answer generation.                                 160
+   111           4. Guarded paths and evidence-gated QA, which
+   112              never present a claim as a fact (Sections 5.3        Narrative knowledge graphs.           DramaBank’s             161
+   113              and 5.5).                                            story intention graphs annotate goals, plans and              162
+   114           5. The 昀椀rst full-coverage, provenance-tiered KG        beliefs by hand (Elson, 2012).     Drammar is an              163
+   115              resource for the two epics. Its LLM drafting         OWL ontology of drama with agents, plans                      164
+   116              is gated by a pre-registered test with a no-verse    and emotions (Lombardo et al., 2019). EvolvTrip               165
+   117              control (Section 5.4). We also report negative       builds temporalgraphsofcharacters’mentalstates                166
+   118              results for classical NLP on this low-resource       to help LLMs answer theory-of-mind questions                  167
+   119              classical language (Joshi et al., 2020).             about novels (Yang et al., 2025).     LitBank and             168
+                                                                         literary event detection provide entity and realis-           169
+   120           2    Related Work                                       event annotation for English 昀椀ction (Bamman                  170
+                                                                         et al., 2019; Sims et al., 2019). These works track           171
+   121           Beyond the triple.      Relations with more than        belief or a single source. None has nested voice              172
+   122           two arguments are usually rei昀椀ed as n-ary nodes        chains, query-time reader policies, or rebirth as a           173
+   123           (Noy and Rector, 2006). Wikidata attaches quali-        dimension of identity, and most work on English               174
+   124           昀椀ers and references to statements (Vrandečić and       prose. Classical Tamil verse, with free word order            175
+   125           Krötzsch, 2014), and Hernández et al. (2015) com-       anddroppedsubjects, has no comparable resource.               176
+   126           pare rei昀椀cation, n-ary relations, singleton proper-    Indic NLP resources mostly target the modern                  177
+   127           ties and named graphs for holding such metadata.        languages (Kakwani et al., 2020).                             178
+   128           Theideaswecombineareold. McCarthy’sist(c,p)
+   129           makestruthrelativetoacontext(McCarthy,1993).            ExtractionandgroundedQA. Bootstrappedre-                      179
+   130           Theassumption-basedTMSkeepseachfacttagged               lation extraction grows patterns from seed facts              180
+   131           with the assumptions it rests on, so assumptions        (AgichteinandGravano,2000;Batistaetal.,2015),                 181
+   132           can be switched without recomputation (de Kleer,        and LLMs now drive open and ontology-guided                   182
+   133           1986). The event calculus derives state from the        KG construction (Xu et al., 2024; Mihindukula-                183
+   134           events that start and end it (Kowalski and Sergot,      sooriya et al., 2023).   Retrieval-augmented and              184
+                                                                      2
+                                                                                                                                Two cases shaped the design.                                 In MAN-20,                             215
+                             Group                     Whatgoeswrong                      Example
+                                                                                                                           Maṇimēkalai has taken another woman’s form. At                                                           216
+                             Said, not done            accusation/lie          stored theft
+                                                       as fact                            SIL-16-0145;                     the same moment Udayakumaran sees through                                                                217
+                                                                                          “spy”                            the disguise (MAN-20-0084) and Kāñchanan̲ takes                                                          218
+                                                                                          SIL-23-0156
+                                                                                                                           her for his wife (MAN-20-0033).                            The wrong man                                 219
+                             Ordered/wished, intention counts as the conditional order
+                             not done                  act                                SIL-16-0152                      kills the right one, so there is no single state                                                         220
+                             Lookslike, isn’t          disguise merges two MAN-18-0149                                     of the world, and replay must take a viewer.                                                             221
+                                                       people
+                                                                                                                           The second case is a mirror across births.                                          In                   222
+                             Di昀昀erent heads, one graph, one mind                         two      men,        one
+                             samemoment                                                   disguised woman                  a past life Kovalan was Bharatan, who falsely                                                            223
+                                                                                          MAN-20-0033/0084                 called the merchant Saṅgaman̲ a spy and had him                                                          224
+                             Whoholdswhat, “XhasY”forever                                 anklet, bowl, gar-
+                             when                                                         land                             killed (SIL-23-0156).                     The two widows are de-                                         225
+                             Earlier births            lives merge; kinship Kovalan                            was         scribed in near-identical words (SIL-00-0031/2 vs.                                                       226
+                                                       absurd                             Bharatan                         SIL-23-0158/9), and Maṇimēkalai retells the story                                                        227
+                                                                                          SIL-23-0154
+                             Nested tellers            whoactuallysaysthis? MAN-26-0027,                                   through four nested voices (MAN-26-0013--0032).                                                          228
+                                                                                          four voices deep
+                             Text      leaves      it  forced      choice looks which                           an-        4 Method                                                                                                 229
+                             open                      like knowledge                     klet              broke
+                                                                                          SIL-20-0082                      Maṇichchilambu has 昀椀ve parts: a record format                                                           230
+                                                                                                                           (the ledger), a replay (the fold), a per-record rep-                                                     231
+                              Table 1: Eight of the 14 hard-case groups, worst 昀椀rst.                                      resentation selector (the composer), a four-layer                                                        232
+                                                                                                                           validator, and two 昀椀nders for links that no record                                                      233
+     185                     graph-based generation ground answers in re-                                                  states.                                                                                                  234
+     186                     trieved evidence (Lewis et al., 2020; Edge et al.,                                            4.1       Thevoice-scoped ledger                                                                         235
+     187                     2024), often with lexical retrieval (Robertson and
+     188                     Zaragoza, 2009) and rank fusion (Cormack et al.,                                              Nothing is stored as simply true. A record says                                                          236
+     189                     2009). Attribution, citationandabstentionarewell                                              only that this chain of tellers tells us this, in this                                                   237
+     190                     studied (Bohnet et al., 2022; Gao et al., 2023; Asai                                          mood:                                                                                                    238
+     191                     et al., 2024; Rajpurkar et al., 2018), and fact ver-                                          r = ⟨what,roles,voice,mood,t,birth,∆,reasons,links,lines⟩.
+     192                     i昀椀cation asks whether evidence supports a claim                                                                                                                                 (1)                   239
+     193                     (Thorne et al., 2018). All of these check that evi-                                           Thevoiceisthechainoftellers,outermost昀椀rst,e.g.                                                          240
+     194                     denceisrelevant orsupporting. Nonecheckswhat                                                  [poet, Kannagi, Madurapati, Bharatan]. The mood                                                          241
+     195                     kind of statement the evidence is, and in a story                                             is one of 13: asserted, negated, claimed, thought, com-                                                  242
+     196                     the same words may be a fact, a lie, an order or                                              mand, conditional, intended, predicted, wish, metaphor,                                                  243
+     197                     a dream. Evaluating LLMs on famous books is                                                   address, dreamed, question.                        t is story time, not                                  244
+     198                     confounded by memorisation (Chang et al., 2023;                                               reading order.                 ∆ lists 昀氀uent changes such as                                            245
+     199                     Carlini et al., 2023), which our stage test controls                                          +holds(a,b) and −alive(a).                             reasons are typed                                 246
+     200                     for. Our formula 昀椀nder belongs to the family of                                              (causes, enables, motivates, karma, moral, ful昀椀ls,                                                      247
+     201                     lexical text-reuse detection for classical languages                                          foreshadowed), each with its own voice. links are                                                        248
+     202                     (Forstall et al., 2014), and our echo 昀椀nder adapts                                           carries, contradicts, con昀氀icts and retells. lines cite                                                  249
+     203                     structure mapping (Falkenhainer et al., 1989).                                                verse ids together with a phrase that must occur in                                                      250
+                                                                                                                           those lines. One rule does most of the work:                                                             251
+     204                     3      TheTwinEpics,andWhatBreaks                                                                      Only an asserted record can change the                                                          252
+     205                     We use the Project Madurai e-texts of Silap-                                                           state of the world.                                                                             253
+     206                     patikāram (SIL) and its sequel Maṇimēkalai                                                    Three further choices follow from the hard cases.                                                        254
+     207                     (MAN): 10,209 lines in 64 cantos. Every line has                                              Gaps are 昀椀rst-class records: “not stated” is stored                                                     255
+     208                     a stable id (SIL-16-0145: SIL, canto 16, line 145).                                           together with the tempting wrong answer, e.g.                                                            256
+     209                     Before designing anything we read the key pas-                                                “whomadeKannagi’sanklet?”. Kindsandindivid-                                                              257
+     210                     sages line by line. From that reading we grouped                                              uals are di昀昀erent nodes, and every line is labelled                                                     258
+     211                     whatbreaksaplaingraphinto14hard-casegroups.                                                   literal, 昀椀gurative or mixed, so that “coral lips”                                                       259
+     212                     They are ranked by damage: a false fact is worse                                              never yields a coral object. Births are kept apart                                                       260
+     213                     thanamissingone,andamissingoneisworsethan                                                     by giving each life its own id plus a same_person                                                        261
+     214                     a clumsy one. Table 1 shows the top groups.                                                   record that has its own teller.                                                                          262
+                                                                                                                       3
+                       Ledger records for SIL-16 and SIL-20, in story order                              Who holds the queen's anklet at story time 16.5?
+                          asserted
+                                               poet > Cattan
+                                   SIL-00-0025             takes the queen's anklet   +holds(goldsmith, ank_q)
+                                                                                                           The text's world
+                                                                                                           fold over asserted records only
+                          asserted
+                                               poet
+                                   SIL-16-0116             Kovalan shows Kannagi's anklet to the goldsmith
+                                                                                                           holder(ank_q) = goldsmith
+                                                                                                           correct: the accuser holds it
+                          claimed
+                                               poet > goldsmith
+                                   SIL-16-0145             <Kovalan stole the queen's anklet=   (changes nothing)
+                                                                                                           The king's view
+                          asserted
+                                               poet
+                                   SIL-16-0149             belief record: the king accepts the claim
+                                                                                                           fold + claims he accepts at t
+                         conditional
+                                               poet > king
+                                   SIL-16-0152
+                                                           <if it is in the thief's hand, kill him=
+                                                                                                           holder(ank_q) = Kovalan
+                                                                                                           his belief, kept as a view
+                          claimed
+                                               poet > guards
+                                   SIL-16-0163
+                                                           <he is not a man to be killed= (contradicts)
+                                                                                                           Plain triples / n-ary event nodes
+                          asserted
+                                               poet
+                                   SIL-16-0212
+                                                           one drunk man kills Kovalan   2alive(kovalan)
+                                                                                                           every record is a fact
+                                                                                                           holder(ank_q) = goldsmith AND Kovalan
+                         metaphor
+                                               poet > king
+                                   SIL-20-0086             <I am the thief= (after rejecting the claim)
+                                                                                                           the lie becomes a fact
+                                                                                                            Only an asserted record may change the state of the world.
+                      Figure 1: The anklet case. Left: ledger records in story order, each with its voice chain and mood. Right: the same
+                      ledger folded three ways at story time 16.5. Only asserted records change state, so the text’s world puts the queen’s
+                      anklet with its accuser. The king’s view adds the claim he accepts. A plain or n-ary graph treats every record as
+                      fact and holds the anklet with both men at once.
+    263               4.2    Thefold: state by replay, worlds per                                        ∪{state | ∆ ̸= ∅} ∪ {time | ∆ ̸= ∅ ∨ belief                       292
+    264                      viewer                                                                            ∨reasons∨pointedat}∪{昀椀eld | present}. 293
+    265               Followingtheeventcalculus(KowalskiandSergot,
+    266               1986), state is replayed rather than stored:                          The hard constraint is that a 昀椀eld may be dropped                             294
+                                             ⊕                                               only if its default means the same thing. This is                             295
+    267                     state(t,π) =         r:r.t≤t, π(r) r.∆                  (2)     what stops compression from turning a claim into                               296
+    268                  view(v,t,π) = {r : π(r)} ∪ Av(t) \ Rv(t) (3)                        a fact, and a test checks it. The composer is delib-                          297
+                                                                                             erately not a weighted optimiser. Under the hard                              298
+    269               Here π is a reader policy, and A (t) and R (t)                         constraint each pattern is either required or not, so                         299
+                                                                    v              v
+    270               are the claims viewer v has accepted or rejected                       a cost function would only add knobs. The ledger                              300
+    271               by time t, as given by belief records.                   In the        compiles to CIDOC CRM + CRMinf + PROV-O                                       301
+    272               spirit of the ATMS (de Kleer, 1986), policies                         +OWL-TimeinRDF.Itisawayofwritingtothe                                          302
+    273               are applied at query time and never written into                       standards, not a rival to them.                                               303
+    274               the data.     There are three: poet_only, story (any-
+    275               one speaking straight), and everything, which exists                   4.4    Validation, guarded paths and echoes                                   304
+    276               only to measure what a naive extractor gets wrong.                    The validator has four layers.              Shape (SHACL)                      305
+    277               So holder(queen’s anklet,16.5) is the goldsmith,                       checksthatrecordsarewellformed. Story(Python                                  306
+    278               while the king’s view says Kovalan. Kāñchanan̲’s                       overthefold)catchesclaimspromotedtofacts,two                                  307
+    279               view at 20.4 contains “she is Kāyasaṇṭikai” and                        holders at once and dead actors. Identity (OWL                                308
+    280               Udayakumaran’sdoesnot. Theking’sbeliefinthe                            RL) catches merges of known-distinct things. Ci-                              309
+    281               theft goes from none to accept to reject (Fig. 1).                     tation checks that the line exists and contains the                           310
+                                                                                             quotedphrase. Guardedpathssearchoverwarrant-                                  311
+    282               4.3    Thecomposer                                                     typed edges (event, same, place, kind, wider). A                              312
+    283               Afullrecordfor“Mādhavidanced”shouldnotcost                             path is as strong as its weakest step, steps through                          313
+    284               as much as one for a nested lie. For each record                       non-asserted records are refused, and no path may                             314
+    285               thecomposerworksoutfromitscontentwhichpat-                             mix births without a same_person record.                       A              315
+    286               terns it needs, and lets every other 昀椀eld fall back to                formula 昀椀nder compares every pair of lines us-                               316
+    287               a default on reading (no voice: the poet; no mood:                     ing IDF-weighted overlapping 6-character chunks                               317
+    288               told straight; no time: reading order):                               with spaces removed, which makes it robust to ed-                              318
+    289               needs(r) = {event,evidence}                                            itors’ word division. It needs no lexicon and no                              319
+                                                                                             labels.    An echo 昀椀nder looks for the longest in-                           320
+    290                           ∪{voice | voice ̸= [poet]}                                 order match of event kinds between two stretches                              321
+    291                           ∪{mood|mood̸=asserted}                                     of story under a one-to-one mapping of partici-                               322
+                                                                                         4
+   323           pants (Falkenhainer et al., 1989), scored against
+                                                                        Method                    Dev Held Third Leak(h/t) Stmts
+   324           shu昀툀ed baselines.
+                                                                        Flat, all records          .16  .42  .25   .75/1.0   180
+                                                                        Flat, asserted only        .33  .56  .53   .13/.09   144
+   325           4.5   Tiered drafting and evidence-gated QA            n-ary event nodes          .22  .42  .31   .75/.91   480
+                                                                        n-ary + quali昀椀ers         .73  .75  .72     0/0    1,132
+   326           Tiers never mix.    Hand records, drafts checked       Named-graph contexts       .53  .83  .75     0/0     643
+   327           by a second model, unchecked drafts and per-line       CRM+CRMinf+PROV+Time 1.00 1.00 1.00          0/0    2,843
+                                                                        Ledger (ours)             1.00 1.00 1.00     0/0    1,287
+   328           notes are separate layers. Drafts stay out of the
+   329           graph, the question box and every score. Tier 2 is
+                                                                        Table 2: Accuracy by question set, leak rate on held-
+   330           an LLM(claude-sonnet-5-5) prompted to propose          out/third, and encoding size (held-out). The standards
+   331           ledger records per canto window. Every proposal        model also needs 9 hand-written SPARQL queries (48
+   332           mustcitelinesandaphrasethatisveri昀椀edtooccur           lines), including a hand-written fold.
+   333           inthem. Anevery-linepassgiveseachlineitsfunc-
+   334           tion, categories, sense (literal, 昀椀gurative or mixed)
+                                                                                                        45% of the statements
+                                                                             1.0
+   335           and a short English gist. Tier 3 is a judge model                          Ledger (ours)
+   336           thatlabelseachdraftassupported,contradicted,in-
+                                                                                                          CRM+CRMinf+PROV
+                                                                                       Named graphs
+                                                                                                          +OWL-Time (SPARQL)
+   337           suﬀicient, external-only or ambiguous.                      0.8
+   338              TheQAlayerputsretrieval on top of the ledger,
+                                                                                                   n-ary + qualifiers
+                                                                                      Flat, asserted
+                                                                                      leak 12%
+                                                                             0.6
+   339           not in place of it. A typed plan records the ques-                           n-ary events
+   340           tion’s language (Tamil, English or Thanglish), its                           leak 75%
+                                                                                         Flat, all
+   341           kind, its grounded names and its evidence policy.           0.4
+                                                                                         leak 75%
+   342           Ambiguous names prompt a question back to the             Held-out accuracy (36 q.)  states claims as facts (size = rate)
+                                                                                                      no claim leakage
+   343           user instead of a merge (“Kausikan̲” is a messen-           0.2
+                                                                                 2                      3
+   344           ger in SIL and a father in MAN). Four routes rank             10                     10
+                                                                                  Statements in the encoding (held-out, log scale)
+   345           handrecords. Ruleuseshand-writtenrules,trusted
+   346           only if their records cover the question’s words.
+   347           Graph uses records naming the grounded entities.       Figure2: Held-outaccuracyagainstencodingsize. Red
+   348           WordsrunsBM25overrecordtext(Robertsonand               circles state claims as facts, with marker size propor-
+                                                                        tional to the leak rate.
+   349           Zaragoza,2009). LinesrunsBM25overall10,209
+   350           lines and their notes, crediting the records that cite
+   351           eachline. Groundednamesenterthequeryinboth             question and gold answer, and the same person                372
+   352           languages, which lets an English question reach        built the method (see Limitations).                          373
+   353           Tamil verse without a translation model. Routes
+   354           arefusedbyreciprocalrankfusion(Cormacketal.,           5.1   Q1: Whichrepresentations leak?                         374
+   355           2009)withk=60,andthefusedscoreismultiplied
+   356           by how much of the question a record covers. Fi-       Every representation encodes the same ledger and             375
+   357           nally, records are sorted into evidence classes: told  answers the same questions, each under the most              376
+   358           as fact, said, wanted, imagined, or believed. Only     generous reading we could give it.        Dev has            377
+   359           the昀椀rstclassmayanswerasfact,andotherwisethe           3 episodes and 49 questions.       Held-out has 7            378
+   360           headline reads “Only claimed, not told as fact”. A     episodes and 36 questions, written after the format          379
+   361           record must cover at least two-thirds of the ques-     wasfrozen by hash. A third batch has 12 episodes             380
+   362           tion’s words to count as an answer. Below that         and36questionsunderformatv2. Theleakrateis                   381
+   363           the system returns a closest match or abstains (Ra-    the share of questions about claims that a method            382
+   364           jpurkar et al., 2018).                                 answers by stating the claim as fact.                        383
+                                                                           Table 2 and Fig. 2 give three 昀椀ndings. (i) Event         384
+   365           5   Experiments                                        nodes do not help with truth. n-ary nodes leak               385
+                                                                        on .75 of held-out claim questions, the same as              386
+   366           Theexperimentledgerhas163records(89SIL,74              plain triples, and on .91 in the third batch.   (ii)         387
+   367           MAN) over 22 episodes and 121 questions. It is         Expressive power is not the issue. A CIDOC                   388
+   368           a sample of hard cases: 42 records are not told        CRM+CRMinf+PROV-O+OWL-Timemodel,                             389
+   369           straight, and only 14 are deliberately plain. All      given the full voice chain and every state change,           390
+   370           runs are deterministic, and repeating them gives       ties the ledger on every set.   The di昀昀erence re-           391
+   371           identical outputs. One reader wrote every record,      sampled over whole episodes is 0 (95% CI 0–0).               392
+                                                                     5
+                                                                                         search connects 2,214 pairs with or without the                            430
+                     Strategy                           Stmts Right/121 False facts
+                                                                                         birth rule. Births are already kept apart by giving                        431
+                     Everything always                  1,456       121           0
+                     Composed(ours)                     1,181       121           0      each life its own id and a same_person record. We                          432
+                     Per-verb template (all data)       1,243       121           0      therefore keep the birth label only as an interface                        433
+                     Event+mood+last speaker+time 1,227             65            0
+                                                                                         昀椀lter and do not claim it as part of the method.                          434
+                     Bare events                         722        41           24
+                     Cross-epic: learn on one epic, test on the other                    5.3    Validation and guarded paths                                        435
+                     Per-verb, SIL→MAN                    –        24/44          8
+                     Composed,SIL→MAN                     –        44/44          0      Of 28 kinds of injected damage, the validator                              436
+                     Per-verb, MAN→SIL                    –        45/77         16      catches 24: shape 9 (7 caught by that layer alone),                        437
+                     Composed,MAN→SIL                     –        77/77          0
+                                                                                         story 14 (8), identity 5 (0), citation 3 (2). It raises                    438
+                     Table 3: Composer against alternative storage strate-               nofalsealarmson6deliberatelyoddbutvalidread-                               439
+                     gies.                                                               ings. One of these is the dead Kovalan rising to                           440
+                                                                                         wipeKannagi’stears(SIL-19-0062--0067),whichre-                             441
+    393              Against the other baselines the ledger’s margin is                  quired an after_death marker. The four misses are                          442
+    394              .26 (quali昀椀ers, CI .19–.34), .31 (contexts, .18–.41),              planassale, dreamasevent, wrongkiller and doc-                             443
+    395              .55 (昀氀at-asserted, .44–.63) and .69 (n-ary, .57–                   trine as fact. Each is a wrong reading with a real                         444
+    396              .79). (iii) What is left is economy and discipline.                 citation, which no rule can see.                                           445
+    397              The ledger uses 45% of the statements (1,287 vs.                       For paths we enumerate all 3,321 pairs of the                           446
+    398              2,843 held-out; 480 vs. 1,081 dev). It needs no                     82 nodes. A plain search connects 3,084 of them,                           447
+    399              query per verb, where the standards model needs                     and 1,743 (57%) of those go through a step that                            448
+    400              a hand-written SPARQL fold. It answers in about                     did not happen. Under the reader policy 2,214                              449
+    401              0.01ms per question against 3.5–7.5ms. Because                      pairs stay connected, none through such an edge,                           450
+    402              the ledger exports to that same model, it comple-                   and no path mixes births. For example, the plain                           451
+    403              ments the standards rather than competing with                      path from Kovalan to the queen’s anklet is one                             452
+    404              them. Filtering to asserted records only reduces                    hop, “stole” (claimed, SIL-16-0145). The guarded                           453
+    405              leakage but loses about half the answers, because                   path is two hops: he showed an anklet to the gold-                         454
+    406              beliefs, orders and claims are themselves things                    smith (SIL-16-0116), who had taken the queen’s                             455
+    407              readers ask about.                                                  (SIL-00-0025). This 57% is in昀氀ated by a ledger of                         456
+                                                                                         hard episodes. The direction should hold on the                            457
+    408              5.2    Q2: Whatcarriestheload?                                      whole text, but the size will not.                                         458
+    409              Composer. Composition saves 19% of the state-                       5.4    Q3: Scaling, reading versus recall                                  459
+    410              ments overall: 43% on plain records and 17% on
+    411              hard ones (Table 3). It loses no answers and cre-                   Classical NLP cannot decide what a passage                                 460
+    412              ates no false facts. A 昀椀xed Wikidata-style template                needs.     Wetried to predict from the Tamil alone                         461
+    413              (event, mood, last speaker, time) answers only 65                   which patterns each of 161 spans needs. Leave-                             462
+    414              of 121, because one quali昀椀er holds only the last                   one-episode-out macroF1is.25forcuewordsand                                 463
+    415              speaker and MAN-26-0027 is four voices deep. Per-                   .27 for a character n-gram model, both below the                           464
+    416              verb templates match the composer when trained                      .38 of always answering yes. For mood the scores                           465
+    417              onalldata. Acrossepics,however,theymeetverbs                        are .18 and .33 against .41. Pattern bootstrapping                         466
+    418              they have never seen and produce 8 and 16 false                     (AgichteinandGravano,2000;Batistaetal.,2015)                               467
+    419              facts, while the composer produces none (Fig. 3b).                  also failed. By round 3 the kinship cues it learned                        468
+    420              Since the real epics are mostly plain, the whole-                   included “big 昀氀ower” and “long eyes”: names do                            469
+    421              text saving should be larger than on this hard-case                 notsitnearrelationwordsinfree-word-orderverse                              470
+    422              sample, but we have not measured it.                                withdroppedsubjects. Anamematcherwithcanto-                                471
+                                                                                         scoped epithets reaches F1 .82, but only about 6%                          472
+    423              Ablation.       Removing a feature costs answers in                 of lines name a known entity at all.                                       473
+    424              this order: mood (94 right), state changes (100),
+    425              story time (104), voice chain (110), belief records                 LLMdraftingreadstheverse. Apilotonthree                                    474
+    426              andreasons(113each),contradictions(118),open                        famous cantos compared four modes: zero-shot,                              475
+    427              values (119).       Only mood prevents false facts:                 few-shot, names masked, and no verse. The frozen                           476
+    428              without it, 26 appear (Fig. 3a). The birth label                    loose-match recall (.864 zero-shot, .886 few-shot)                         477
+    429              does nothing.         Answers stay at 121, and path                 turned out to measure little.           Moving each pro-                   478
+                                                                                      6
+                                                                              (a) Remove one feature                                                     (b) Learn on one epic, test on the other
+                                                          26 false facts                                              94
+                                                                                                                                                               per-verb templates           composer (ours)
+                                          2 mood
+                                                                                                                        100
+                                  2 state changes
+                                                                                                                                                                     44/44                          77/77
+                                                                                                                          104
+                                     2 story time
+                                                                                                                                                                     0 false                        0 false
+                                                                                                                            110
+                                                                                                                                              1.0
+                                    2 voice chain
+                                                                                                                             113
+                                 2 belief records
+                                                                                                                                                                                         45/77
+                                                                                                                             113
+                                                                                                                                                          24/44
+                                        2 reasons
+                                                                                                                                                                                        16 false
+                                                                                                                                                         8 false
+                                                                                                                               118
+                                 2 contradictions
+                                                                                                                                           Share right
+                                                                                                                                              0.5
+                                                                                                                                119
+                                   2 open values
+                                                                                                                                121
+                                     2 birth label
+                                                                                                                                121
+                                       full ledger
+                                                                                                                                              0.0
+                                                                                                                                                            SIL³MAN                        MAN³SIL
+                                                                                 0             40              80            120
+                                                                                                                                                               (44 q.)                        (77 q.)
+                                                                 Questions right (of 121)  |  false facts (left)
+                             Figure 3: (a) Removing one feature at a time (121 questions). Only removing mood creates false facts. Removing
+                             the birth label changes nothing. (b) Per-verb templates, which know only verbs seen in training, leak when moved
+                             to the other epic. The composer does not.
+     479                     posaltoarandomlineinitscantobarelychangedit
+                                                                                                                           Question set                                                  Rules           Hybrid
+     480                     (.841 and .832). With a post-hoc same-line match
+                                                                                                                           Open, pre-hybrid (32)                                           16               30
+     481                     (Fig. 4a), few-shot reaches .841 against chance                                               Fresh rounds 1/2/3 (34/25/20)                              29/20/14         31/23/17
+     482                     .563, and without the verse recall drops to .591.                                             Held-out, scored once (20)                                      12               19
+     483                     Few-shot 昀椀nds 10 gold records that the no-verse                                                                                                            R@5          MRR@10
+     484                     modemissesandneverthereverse (di昀昀erence .23,                                                 BM25overrecords                                                 .83              .66
+     485                     CI .11–.36). The model still beats chance with-                                               RRF(words+graph+lines)                                          .81              .58
+                                                                                                                           Full system (routes + evidence checks)                          .91              .74
+     486                     out the verse, so it partly remembers these famous
+     487                     cantos. We therefore pre-registered a GO/NO-GO
+                                                                                                                           Table 4: Top: questions answered correctly. Only the
+     488                     stage test on 昀椀ve lesser-known cantos with 56 new
+                                                                                                                           held-out set was untouched during tuning. Bottom: re-
+     489                     gold records, frozen by hash before any output ex-                                            trieval over 122 questions with a known gold record.
+     490                     isted. Few-shot recall is .804. This clears the bar
+     491                     of.60andthe97.5thchancepercentileof.554,and
+     492                     beatsno-verse(.429,nearthechancemeanof.452)                                                   5.5       Evidence-gated question answering                                                              512
+     493                     by.375. Non-factsarekeptapartfromfactsin6of                                                   Ontheheld-outquestions,whichwerewrittenafter                                                             513
+     494                     10 cases, so all four checks pass (Fig. 4b). Recall                                           tuning and scored once, the hybrid answers 19 of                                                         514
+     495                     by canto ranges from 1.00 (MAN-13) to .50 (SIL-                                               20, against 12 for the hand-written rules (Table 4).                                                     515
+     496                     14), where lists of market goods lose their roles.                                            Six of the rules’ misses on the open set were con昀椀-                                                     516
+     497                     Onlessfamoustext,then,themodel’srecallcomes                                                   dent wronganswers: arule昀椀red on a keyword and                                                           517
+     498                     from reading: without the verse it falls to chance.                                           answered a di昀昀erent question. Asked “Where did                                                          518
+                                                                                                                           Kovalan wait inside the city?”, the rules returned                                                       519
+                                                                                                                           the contents of the anklets. The coverage check                                                          520
+     499                     The full run.                525 calls produced 7,177 records                                 catches these. Plain rank fusion is no better than                                                       521
+     500                     (83rejectedforacitationthatfailedthecheck),cov-                                               BM25 alone (.81 vs. .83 R@5). The gain to .91                                                            522
+     501                     ering 91% of lines. A gap pass raised draft cov-                                              comesfromcoverageweightingandrulechecking,                                                               523
+     502                     erage to 97% (9,927 lines). 630 drafts are claims                                             not from adding retrievers. On held-out recall@5                                                         524
+     503                     and 474 commands, and no draft states the theft                                               the full system ties BM25 at .95.                                                                        525
+     504                     as fact. Every line has a note: 948 昀椀gurative, 711                                           6 Discussion                                                                                             526
+     505                     mixed. In a check of 50 random notes, 48 were
+     506                     right, 1 partly right and 1 wrong. The judge is                                               Truth is a property of the telling, not of the                                                           527
+     507                     in progress.             On the 3,650 drafts judged so far                                    structure.             Event nodes, quali昀椀ers and named                                                 528
+     508                     (of 7,177), 63.5% are supported and 2.8% contra-                                              graphs give the right shape. Only a mood gate on                                                         529
+     509                     dicted, and the mood is judged correct in 93.6%                                               whatmaychangetheworldpreventsleakage. This                                                               530
+     510                     and the roles in 74.7%. The weak point is roles,                                              explains both whyn-arynodesleakliketriplesand                                                            531
+     511                     not mood.                                                                                     why a well-built standards model ties the ledger:                                                        532
+                                                                                                                       7
+                                           (a) Pilot, three famous cantos (44 gold)                (b) Stage test, 5 lesser-known cantos
+                        1.0                                                                1.0
+                                                                      chance (shuffled lines), mean
+                                   0.84
+                                                                      chance, upper
+                                                                                                       .804
+                                                  0.77
+                        0.8                                                                0.8
+                                                                 0.59
+                                                                                                                       pre-registered bar .60
+                        0.6                                                                0.6
+                                                                                                                             chance band
+                                                                                0.41
+                        0.4                                                                0.4
+                                                                                                                          .429
+                       Same-line recall
+                        0.2                                                                0.2
+                        0.0                                                                0.0
+                                 few-shot       zero-shot      no verse     names masked              few-shot           no verse
+                   Figure 4: (a) Pilot on famous cantos, same-line recall against shu昀툀ed-line chance (mean, solid; upper, dashed).
+                   Evenwithnoversethemodelbeatschancethere,whichindicatesrecallofthestory. (b)Pre-registeredstageteston
+                   lesser-known cantos. With no verse, recall falls into the chance band, while few-shot clears the pre-registered bar.
+    533            the standards model also has the gate, written by           prevent this, while a mood gate over voice-scoped                  566
+    534            hand.                                                       records does. A full standards model can match                     567
+    535            The bottleneck is mood, and mood is hard.                   the ledger, but at more than twice the size and                    568
+    536            Theablationmakesmoodtheload-bearingfeature,                 with hand-written queries. A meaning-preserving                    569
+    537            while surface cues predict it worse than always an-         composer, guarded paths and evidence-gated an-                     570
+    538            swering yes. The composer’s input must therefore            swerskeepthegateinforcefromstoragetoanswer.                        571
+    539            comefromapersonoranLLM.Whenunsure,the                       Withpre-registered controls, LLMs can draft such                   572
+    540            safe default is to keep every 昀椀eld. The judge 昀椀nds        records for a whole classical text by reading it                   573
+    541            LLM moods mostly right (93.6%), and roles are               rather than remembering it.        The next tests are              574
+    542            the weaker part.                                            mood detection at scale and evaluation by Tamil                    575
+                                                                               scholars.                                                          576
+    543            Famoustextsneedrecallcontrols.            Foracanon-
+    544            ical work, a recall score without a no-text control         Limitations                                                        577
+    545            can measure memory rather than reading. The no-
+    546            verse mode reveals it: on famous cantos the model           One reader, not a Tamil scholar, wrote all hand                    578
+    547            beats chance without the verse, while on lesser-            records, questions and gold answers, and also built                579
+    548            knowncantos it falls to chance.                             the method. The ledger’s perfect scores therefore                  580
+                                                                               showthattheformatcanhold thesecases, not that                      581
+    549            Links nobody wrote down.          With no labels, the       it outperforms alternatives on independent data.                   582
+    550            formula 昀椀nder found 1,342 reused line pairs, 143           Whilethethirdbatchwasbeingwritten,threegold                        583
+    551            of thembetweenthetwoepics. Amongthemisthe                   answers were found wrong and 昀椀xed. A Tamil                        584
+    552            goddess’sself-introduction in near-identical words          scholar’s review of the 359 hand records is un-                    585
+    553            in both epics (SIL-15-0033, MAN-07-0018): வந꣍Ðதன꧍           der way and not 昀椀nished, and no inter-annotator                   586
+    554            அஞ黍சல닍¯ணꎿÐ¯கÑல°ான꧍. Inbothlinesthename                      agreement is available yet. The held-out sets are                  587
+    555            is the goddess, not the girl, which is a trap for en-       small (36 representation questions, 20 QA ques-                    588
+    556            tity linking.   The echo 昀椀nder recovers the right          tions). The composer is given clean records, so it                 589
+    557            participant mapping for the anklet and curse sto-           already knows each record’s mood, which is the                     590
+    558            ries (goldsmith→Bharatan, Kovalan→Saṅgaman̲,                hard part. The Tier-3 judge (claude-haiku-5-5) be-                 591
+    559            king→Kaliṅgaking),butatp=.16againstshu昀툀es                  longs to the same model family as the drafter, so it               592
+    560            onaledgerthissmall. Thatresultispromising,not               standsinforadi昀昀erent-familyjudge,andithascov-                     593
+    561            proven.                                                     eredabouthalfofthedraftssofar. Thespotchecks                       594
+    562            7   Conclusion                                              of LLMoutputweredonebythesamemodelfam-                             595
+                                                                               ily, not blind. The echo 昀椀nder is indistinguishable               596
+    563            In narrative, what is said is not what is done, and         from chance at this scale, and one record was cor-                 597
+    564            a KG that forgets this turns accusations into facts.        rected after a failure had been seen. Draft entities               598
+    565            Ontwo classical Tamil epics, rei昀椀cation does not           are not yet merged (3,467 distinct ids). Dense re-                 599
+                                                                            8
+   600            trieval and the LLM answer writer have not been            AnArchaeologyofBooksKnowntoChatGPT/GPT-                      651
+   601            run. Path statistics come from a ledger of hard            4. In Conference on Empirical Methods in Natural             652
+   602            episodes and overstate whole-text rates. Two can-          Language Processing (EMNLP).                                 653
+   603            tos di昀昀er by one line from the edition’s count.         Gordon V. Cormack, Charles L. A. Clarke, and Stefan            654
+                                                                             Büttcher. 2009. Reciprocal rank fusion outperforms           655
+   604            Ethical Considerations                                     condorcet and individual rank learning methods. In           656
+                                                                             International ACM SIGIR Conference on Research               657
+   605            The epics are cultural heritage of living Tamil            andDevelopmentinInformation Retrieval (SIGIR).               658
+   606            communities and religious traditions.       We fol-
+   607            low the terms of the Project Madurai e-texts and         JohandeKleer.1986. AnAssumption-BasedTMS. Ar-                  659
+   608            keep their headers. Machine drafts are labelled as         ti昀椀cial Intelligence, 28(2):127–162.                        660
+   609            such and never presented as text evidence. Exter-        Marie-CatherinedeMarne昀昀e,ChristopherD.Manning,                661
+   610            nal knowledge-baselinksarequarantined, because             and Christopher Potts. 2012. Did It Happen? The              662
+   611            they assert identi昀椀cations the verse does not estab-      Pragmatic Complexity of Veridicality Assessment.             663
+   612            lish, such as a modern electoral district given as a       Computational Linguistics.                                   664
+   613            birthplace. We make no historical identi昀椀cations.       Mona Diab, Lori S. Levin, Teruko Mitamura, Owen                665
+   614            All interpretive judgements are recorded as read-          Rambow, Vinodkumar Prabhakaran, and Weiwei                   666
+   615            ings, open to scholarly correction.                        Guo. 2009. Committed belief annotation and tag-              667
+                                                                             ging. In Linguistic Annotation Workshop.                     668
+   616            References                                               Martin Doerr. 2003.    The CIDOC Conceptual Ref-               669
+                                                                             erence Module: An Ontological Approach to Se-                670
+   617            Eugene Agichtein and Luis Gravano. 2000. Snowball:         mantic Interoperability of Metadata. AI Magazine,            671
+   618              extracting relations from large plain-text collections.  24(3):75–92.                                                 672
+   619              In
+                       Proceedings of the Fifth ACM Conference on Dig-
+   620              ital Libraries.                                        Darren Edge, Ha Trinh, Newman Cheng, Joshua                    673
+                                                                             Bradley, Alex Chao, Apurva Mody, Steven Truitt,              674
+   621            Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil,            Dasha Metropolitansky, Robert Osazuwa Ness, and              675
+   622              and Hannaneh Hajishirzi. 2024. Self-RAG: Learn-          Jonathan Larson. 2024. From Local to Global: A               676
+   623              ing to Retrieve, Generate, and Critique through Self-    Graph RAG Approach to Query-Focused Summa-                   677
+   624              Re昀氀ection. InInternationalConferenceonLearning          rization. In arXiv preprint arXiv:2404.16130.                678
+   625              Representations.
+                                                                           David K. Elson. 2012.      DramaBank: Annotating               679
+   626            David Bamman, Sejal Popat, and Sheng Shen. 2019.           Agency in Narrative Discourse.    In Language Re-            680
+   627              An annotated dataset of literary entities. In North      sources and Evaluation Conference (LREC).                    681
+   628              American Chapter of the Association for Computa-
+   629              tional Linguistics, pages 2138–2144.                   David K. Elson and Kathleen R. McKeown. 2010. Au-              682
+   630            David S. Batista, Bruno Martins, and Mário J. Silva.       tomatic Attribution of Quoted Speech in Literary             683
+   631              2015. Semi-Supervised Bootstrapping of Relation-         Narrative. In Proceedings of the AAAI Conference             684
+   632              ship Extractors with Distributional Semantics.  In       onArti昀椀cial Intelligence.                                   685
+   633              Conference on Empirical Methods in Natural Lan-        Brian Falkenhainer, Kenneth D. Forbus, and Dedre               686
+   634              guage Processing (EMNLP).                                Gentner. 1989.     The Structure-Mapping Engine:             687
+   635            Bernd Bohnet, Vinh Q. Tran, Pat Verga, Roee Aha-           Algorithm and Examples.      Arti昀椀cial Intelligence,        688
+   636              roni, Daniel Andor, Livio Baldini Soares, Massimil-      41(1):1–63.                                                  689
+   637              iano Ciaramita, Jacob Eisenstein, Kuzman Ganchev,      Christopher W. Forstall, Neil Co昀昀ee, Thomas Buck,             690
+   638              Jonathan Herzig, Kai Hui, Tom Kwiatkowski, Ji Ma,        Katherine Roache, and Sarah L. Jacobson. 2014.               691
+   639              Jianmo Ni, Lierni Sestorain Saralegui, Tal Schuster,     Modeling the scholars:    Detecting intertextuality          692
+   640              William W. Cohen, Michael Collins, Dipanjan Das,         throughenhancedword-leveln-grammatching. Dig-                693
+   641              and 3 others. 2022. Attributed Question Answering:       ital Scholarship in the Humanities.                          694
+   642              Evaluation and Modeling for Attributed Large Lan-
+   643              guage Models. In arXiv preprint arXiv:2212.08037.      Tianyu Gao, Howard H Yen, Jiatong Yu, and Danqi                695
+   644            Nicholas Carlini, Daphne Ippolito, Matthew Jagielski,      Chen. 2023. Enabling Large Language Models to                696
+   645              Katherine Lee, Florian Tramèr, and Chiyuan Zhang.        Generate Text with Citations.    In Conference on            697
+   646              2023.    Quantifying Memorization Across Neural          Empirical Methods in Natural Language Processing             698
+   647              Language Models. In International Conference on          (EMNLP).                                                     699
+   648              Learning Representations.
+                                                                           DanielHernández,AidanHogan,andMarkusKrötzsch.                  700
+   649            Kent K. Chang, Mackenzie Hạnh Cramer, Sandeep              2015. Reifying RDF: What Works Well With Wiki-               701
+   650              Soni, and David Bamman. 2023. Speak, Memory:             data? CEURWorkshopProceedings.                               702
+                                                                        9
+    703             Aidan Hogan, Eva Blomqvist, Michael Cochez, Clau-              Natasha Noy and Alan Rector. 2006. De昀椀ning N-ary                     760
+    704               dia d’Amato, Gerard de Melo, Claudio Gutiérrez,                 Relations on the Semantic Web.         W3C Working                 761
+    705               Sabrina Kirrane, José Emilio Labra Gayo, Roberto                GroupNote.                                                         762
+    706               Navigli, Sebastian Neumaier, Axel-Cyrille Ngonga
+    707               Ngomo, Axel Polleres, Sabbir M. Rashid, Anisa                Shirui Pan, Linhao Luo, Yufei Wang, ChenChen, Jiapu                   763
+    708               Rula, Lukas Schmelzeisen, Juan Sequeda, Ste昀昀en                 Wang,andXindongWu.2024. UnifyingLargeLan-                          764
+    709               Staab, and Antoine Zimmermann.2021. Knowledge                   guage Models and Knowledge Graphs: A Roadmap.                      765
+    710               Graphs. ACMComputingSurveys.                                    IEEE Transactions on Knowledge and Data Engi-                      766
+                                                                                      neering.                                                           767
+    711             Ziwei Ji, Nayeon Lee, Rita Frieske, Tiezheng Yu, Dan
+    712               Su, Yan Xu, Etsuko Ishii, Ye Jin Bang, Andrea                Silvia Pareti. 2016. PARC3.0: ACorpusofAttribution                    768
+    713               Madotto,andPascaleFung.2023. SurveyofHalluci-                   Relations. In Language Resources and Evaluation                    769
+    714               nation in Natural Language Generation. ACM Com-                 Conference (LREC).                                                 770
+    715               puting Surveys.
+    716             NanjiangJiangandMarie-CatherinedeMarne昀昀e.2019.                A. Piper, R. So, and David Bamman. 2021. Narrative                    771
+    717               DoYouKnowThatFlorenceIsPackedwithVisitors?                      Theory for Computational Narrative Understanding.                  772
+    718               Evaluating State-of-the-art Models of Speaker Com-              InConferenceonEmpiricalMethodsinNaturalLan-                        773
+    719               mitment. In Proceedings of the conference - Associ-             guage Processing, pages 298–311.                                   774
+    720               ation for Computational Linguistics. Meeting.                Pranav Rajpurkar, Robin Jia, and Percy Liang. 2018.                   775
+    721             Pratik Joshi, Sebastin Santy, Amar Budhiraja, Kalika              KnowWhatYouDon’tKnow: Unanswerable Ques-                           776
+    722               Bali, and Monojit Choudhury. 2020. The State and                tions for SQuAD. ArXiv, abs/1806.03822.                            777
+    723               FateofLinguisticDiversityandInclusionintheNLP                Stephen Robertson and Hugo Zaragoza. 2009.            The             778
+    724               World. In Proceedings of the conference - Associa-              Probabilistic Relevance Framework: BM25 and Be-                    779
+    725               tion for Computational Linguistics. Meeting.                    yond. Foundations and Trends in Information Re-                    780
+    726             Divyanshu Kakwani, Anoop Kunchukuttan, Satish                     trieval, 3(4):333–389.                                             781
+    727               Golla, Gokul Narayanan C, Avik Bhattacharyya,
+    728               Mitesh M. Khapra, and Pratyush Kumar. 2020.                  Rachel Rudinger, Aaron Steven White, and Ben-                         782
+    729               IndicNLPSuite: Monolingual Corpora, Evaluation                  jamin Van Durme. 2018. Neural Models of Factu-                     783
+    730               Benchmarks and Pre-trained Multilingual Language                ality. In North American Chapter of the Association                784
+    731               Models for Indian Languages. In Findings of the                 for Computational Linguistics, pages 731–744.                      785
+    732               Association for Computational Linguistics: EMNLP             BrendaSalenaveSantana,RicardoCampos,EvelinCar-                        786
+    733               (Findings of EMNLP).                                            valho Freire de Amorim, Alípio Jorge, Puri昀椀cação                  787
+    734             Robert Kowalski and Marek J. Sergot. 1986. A Logic-               Silvano, and Sérgio Nunes. 2023. A survey on nar-                  788
+    735               based Calculus of Events. New Generation Comput-                rative extraction from textual data. Arti昀椀cial Intelli-           789
+    736               ing, 4:67–95.                                                   gence Review.                                                      790
+    737             Patrick  Lewis,    Ethan Perez,      Aleksandra Piktus,        MaartenSap,RonanJosephLeBras,DanielFried,and                          791
+    738               Fabio Petroni, Vladimir Karpukhin, Naman Goyal,                 Yejin Choi. 2022. Neural Theory-of-Mind? On the                    792
+    739               Heinrich Küttler,     Mike Lewis, Wen tau Yih,                  Limits of Social Intelligence in Large LMs. In Con-                793
+    740               Tim Rocktäschel, Sebastian Riedel, and Douwe                    ference on Empirical Methods in Natural Language                   794
+    741               Kiela. 2020.    Retrieval-Augmented Generation for              Processing (EMNLP).                                                795
+    742               Knowledge-Intensive NLP Tasks. In arXiv preprint
+    743               arXiv:2005.11401.                                            Roser Saurí and James Pustejovsky. 2009. FactBank:                    796
+    744             Vincenzo Lombardo, Rossana Damiano, and Antonio                   a corpus annotated with event factuality. Language                 797
+    745               Pizzo. 2019. Drammar: A Comprehensive Ontolog-                  Resources and Evaluation, 43(3):227–268.                           798
+    746               ical Resource on Drama. Applied Ontology.                    Matthew Sims, Jong Ho Park, and David Bamman.                         799
+    747             John McCarthy. 1993. Notes on formalizing context.                2019. Literary Event Detection. In Proceedings of                  800
+    748               In Proceedings of the 13th International Joint Con-             the conference - Association for Computational Lin-                801
+    749               ference on Arti昀椀cial Intelligence (IJCAI).                     guistics. Meeting.                                                 802
+    750             Nandana Mihindukulasooriya, Sanju Tiwari, Carlos F.            James     Thorne,      Andreas      Vlachos,      Christos            803
+    751               Enguix, and K. Lata. 2023.         Text2KGBench: A              Christodoulopoulos,      and   Arpit    Mittal.   2018.            804
+    752               Benchmark for Ontology-Driven Knowledge Graph                   FEVER: a Large-scale Dataset for Fact Extraction                   805
+    753               GenerationfromText. InInternationalWorkshopon                   and VERi昀椀cation.       In Conference of the North                 806
+    754               the Semantic Web, pages 247–265.                                American Chapter of the Association for Computa-                   807
+                                                                                      tional Linguistics: Human Language Technologies                    808
+    755             Aida Nematzadeh, Kaylee Burns, Erin Grant, Alison                 (NAACL-HLT).                                                       809
+    756               Gopnik, and Thomas L. Griﬀiths. 2018.           Evaluat-
+    757               ing Theory of Mind in Question Answering. In Con-            Denny Vrandečić and Markus Krötzsch. 2014. Wiki-                      810
+    758               ference on Empirical Methods in Natural Language                data: a free collaborative knowledgebase. Communi-                 811
+    759               Processing (EMNLP).                                             cations of the ACM.                                                812
+                                                                               10
+    813           Derong Xu, Wei Chen, Wenjun Peng, Chao Zhang,              D Judgedistribution                                              850
+    814              Tong Xu, Xiangyu Zhao, Xian Wu, Yefeng Zheng,
+    815              YanWang,andEnhongChen.2024. Largelanguage               On the 608 gap drafts (complete), the judge re-                  851
+    816              models for generative information extraction: a sur-    turned 362 supported, 114 ambiguous, 91 insuﬀi-                  852
+    817              vey. Frontiers of Computer Science.                     cient, 31 contradicted and 10 external-only. On the              853
+    818           Bohao Yang, Huilin Xu, Jinhua Du, Ze Li, Yulan             3,650 full drafts judged so far: 2,318 supported,                854
+    819              He, and Chenghua Lin. 2025.         EvolvTrip:   En-    658 ambiguous, 370 insuﬀicient, 174 external-                    855
+    820              hancingLiteraryCharacterUnderstandingwithTem-           only, 101 contradicted and 29 unparsable.                        856
+    821              poral Theory-of-Mind Graphs.      In arXiv preprint
+    822              arXiv:2506.13641.
+    823           A The13moodsandreaderpolicies
+    824           asserted (told as fact; the only mood that changes
+    825           state), negated, claimed (said by a character, e.g. an
+    826           accusation), thought, command, conditional, intended,
+    827           predicted, wish, metaphor, address (e.g. “mother Kan-
+    828           nagi”,MAN-26-0002),dreamed,question. ForQAthese
+    829           group into evidence classes: happened (273 of
+    830           the 359 current hand records), said (54), wanted
+    831           (20) and imagined (12), plus belief records. Voice-
+    832           chain depth over the 359 records: 1 (180), 2 (160),
+    833           3 (18), 4 (1). 16 records are set in an earlier birth.
+    834           B AdditionalTier-1results
+                        Namematcher(87mentions)       P    R     F1
+                        Exact word                   .93   .16   .27
+                        Wordstarts with name         .95   .21   .34
+                        +canto-scoped epithets       .95   .70   .81
+                        +stop list of lookalikes     .97   .71   .82
+                  Table 5: Name 昀椀nding. The scores are optimistic, be-
+                  causetheepithets were written while reading these can-
+                  tos.
+    835              The verb-stem event inventory gave 825 candi-
+    836           dates. Abouttwo-thirdsofasampleof40werereal
+    837           events, and recall on told-straight records was .29.
+    838           Forco-occurrence, the best score was raw count in
+    839           a 3-line window (AP .572). Bootstrapping results
+    840           perround: kinshipfromhandwords1/9,1/4,none;
+    841           spouse from hand words 1/7, 0/2, none.
+    842           C Validatormutations
+    843           The 28 mutation types include dropped voice,
+    844           moodorevidence; malformed or non-existent line
+    845           ids; a phrase absent from the cited lines; a claim
+    846           promoted to fact; a contradicted claim restated as
+    847           fact; 昀氀ipped belief times; two holders at once; giv-
+    848           ingupanobjectonedoesnothold;andadeadactor.
+    849           Themissedfour are listed in Section 5.3.
+                                                                          11

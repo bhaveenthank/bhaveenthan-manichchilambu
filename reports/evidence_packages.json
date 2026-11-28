@@ -4233,21 +4233,7 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-30-0152:2",
-    "source_status": "unchecked machine draft, may point but may not answer",
-    "relation": "hold festival",
-    "people": [
-     "daily_festival",
-     "kannagi_temple"
-    ],
-    "mood": "command",
-    "quote": "நித்தல் விழாவணி நிகழ்கென்",
-    "lines": [
-     "SIL-30-0152"
-    ]
-   },
-   {
-    "evidence_id": "draft:SIL-09-0035:3",
+    "evidence_id": "draft:SIL-09-0035:2",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "summon",
     "people": [
@@ -4262,7 +4248,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-06-0052:4",
+    "evidence_id": "draft:MAN-06-0052:3",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "stand",
     "people": [
@@ -4276,7 +4262,7 @@
     ]
    },
    {
-    "evidence_id": "draft:MAN-12-0021:5",
+    "evidence_id": "draft:MAN-12-0021:4",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "teach",
     "people": [
@@ -4289,6 +4275,25 @@
     "lines": [
      "MAN-12-0021",
      "MAN-12-0022"
+    ]
+   },
+   {
+    "evidence_id": "draft:MAN-29-0312:5",
+    "source_status": "unchecked machine draft, may point but may not answer",
+    "relation": "refute",
+    "people": [
+     "three_reasons"
+    ],
+    "mood": "asserted",
+    "quote": "அபாவம் ஆக்குதலான் விபரீதம்",
+    "lines": [
+     "MAN-29-0312",
+     "MAN-29-0313",
+     "MAN-29-0314",
+     "MAN-29-0315",
+     "MAN-29-0316",
+     "MAN-29-0317",
+     "MAN-29-0318"
     ]
    }
   ],
@@ -13771,17 +13776,16 @@
     ]
    },
    {
-    "evidence_id": "draft:SIL-19-0041:5",
+    "evidence_id": "draft:SIL-15-0064:5",
     "source_status": "unchecked machine draft, may point but may not answer",
     "relation": "ask",
     "people": [
      "kannagi"
     ],
     "mood": "question",
-    "quote": "என்னுறு வினைகாணா இதுவென உரையாரோ",
+    "quote": "யாதுநீ யுற்ற இடர்ஈ தென்னென",
     "lines": [
-     "SIL-19-0041",
-     "SIL-19-0042"
+     "SIL-15-0064"
     ]
    }
   ],

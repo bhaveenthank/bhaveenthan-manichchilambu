@@ -1,0 +1,68 @@
+[
+ {
+  "round": 0,
+  "version": "v0",
+  "scores": {
+   "Originality": 3,
+   "Quality": 2,
+   "Clarity": 3,
+   "Significance": 2,
+   "Soundness": 2,
+   "Presentation": 3,
+   "Contribution": 2,
+   "Overall": 5
+  },
+  "decision": "Reject",
+  "note": "initial draft"
+ },
+ {
+  "round": 1,
+  "version": "v1",
+  "agent_plan": [
+   "report leak-rate denominators (12/8/11)",
+   "explain flat-asserted leakage (event conflation)",
+   "reframe ledger vs standards as can-hold/economy; replace 'no hand-written queries' with 45-line verb-independent fold vs 9-11 SPARQL queries",
+   "note statement units differ between tables",
+   "acknowledge mood ablation is by design; emphasise no other feature needed",
+   "acknowledge untested per-verb backoff baseline",
+   "report pilot mood accuracy equals majority baseline (29/37)",
+   "attribute held-out QA gain to answer gating, retrieval ties BM25",
+   "motivate 13 moods vs FactBank",
+   "release statement",
+   "trim to keep 8 pages"
+  ],
+  "scores_before": {
+   "Originality": 3,
+   "Quality": 2,
+   "Clarity": 3,
+   "Significance": 2,
+   "Soundness": 2,
+   "Presentation": 3,
+   "Contribution": 2,
+   "Overall": 5
+  },
+  "scores_after": {
+   "Originality": 2,
+   "Quality": 2,
+   "Clarity": 3,
+   "Significance": 2,
+   "Soundness": 2,
+   "Presentation": 3,
+   "Contribution": 2,
+   "Overall": 5
+  },
+  "deltas": {
+   "Originality": -1,
+   "Quality": 0,
+   "Clarity": 0,
+   "Significance": 0,
+   "Soundness": 0,
+   "Presentation": 0,
+   "Contribution": 0,
+   "Overall": 0
+  },
+  "total_gain": 0,
+  "total_drop": 1,
+  "outcome": "REJECTED_DEGRADATION (Overall tie, Originality -1) -> revert to v0, stop"
+ }
+]

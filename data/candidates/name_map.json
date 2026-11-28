@@ -578,8 +578,8 @@
 "himalaya|SIL-01": {
 "name": "himalaya",
 "canto": "SIL-01",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 1
 },
@@ -2122,8 +2122,8 @@
 "himalaya|SIL-05": {
 "name": "himalaya",
 "canto": "SIL-05",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 2
 },
@@ -2186,8 +2186,8 @@
 "pattimandapam|SIL-05": {
 "name": "pattimandapam",
 "canto": "SIL-05",
-"how": "alias",
-"id": "debate_hall",
+"how": "exact",
+"id": "pattimandapam",
 "candidates": null,
 "mentions": 1
 },
@@ -9178,9 +9178,9 @@
 "brahmin_wife|SIL-15": {
 "name": "brahmin_wife",
 "canto": "SIL-15",
-"how": "open_role",
-"id": null,
-"candidates": [],
+"how": "context",
+"id": "kannagi",
+"candidates": null,
 "mentions": 8
 },
 "brahmin_husband|SIL-15": {
@@ -10402,8 +10402,8 @@
 "himalaya|SIL-17": {
 "name": "himalaya",
 "canto": "SIL-17",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 3
 },
@@ -14322,8 +14322,8 @@
 "himalaya|SIL-24": {
 "name": "himalaya",
 "canto": "SIL-24",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 1
 },
@@ -14362,8 +14362,8 @@
 "himalaya|SIL-25": {
 "name": "himalaya",
 "canto": "SIL-25",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 3
 },
@@ -15210,8 +15210,8 @@
 "himalaya|SIL-26": {
 "name": "himalaya",
 "canto": "SIL-26",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 3
 },
@@ -15466,8 +15466,8 @@
 "ships|SIL-26": {
 "name": "ships",
 "canto": "SIL-26",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "ship",
 "candidates": null,
 "mentions": 2
 },
@@ -15634,8 +15634,8 @@
 "yama|SIL-26": {
 "name": "yama",
 "canto": "SIL-26",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "koorram",
 "candidates": null,
 "mentions": 1
 },
@@ -15778,8 +15778,8 @@
 "himalaya|SIL-27": {
 "name": "himalaya",
 "canto": "SIL-27",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 1
 },
@@ -15810,8 +15810,8 @@
 "ganga_bank|SIL-27": {
 "name": "ganga_bank",
 "canto": "SIL-27",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "ganga_bank",
 "candidates": null,
 "mentions": 1
 },
@@ -15898,8 +15898,8 @@
 "vakai_garland|SIL-27": {
 "name": "vakai_garland",
 "canto": "SIL-27",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "vakai_wreath",
 "candidates": null,
 "mentions": 1
 },
@@ -16050,16 +16050,16 @@
 "podiyil_hill|SIL-27": {
 "name": "podiyil_hill",
 "canto": "SIL-27",
-"how": "unknown",
-"id": null,
+"how": "spelling",
+"id": "podhiyil_hill",
 "candidates": null,
 "mentions": 1
 },
 "kumari_ghat|SIL-27": {
 "name": "kumari_ghat",
 "canto": "SIL-27",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "kumari_ghat",
 "candidates": null,
 "mentions": 1
 },
@@ -16082,8 +16082,8 @@
 "tatheru_mandram|SIL-27": {
 "name": "tatheru_mandram",
 "canto": "SIL-27",
-"how": "unknown",
-"id": null,
+"how": "spelling",
+"id": "tateru_mandram",
 "candidates": null,
 "mentions": 1
 },
@@ -16202,8 +16202,8 @@
 "indra_vihara|SIL-27": {
 "name": "indra_vihara",
 "canto": "SIL-27",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "indra_vihara",
 "candidates": null,
 "mentions": 1
 },
@@ -16466,8 +16466,8 @@
 "crescent_moon|SIL-27": {
 "name": "crescent_moon",
 "canto": "SIL-27",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "crescent_moon",
 "candidates": null,
 "mentions": 2
 },
@@ -16962,8 +16962,8 @@
 "nediyon|SIL-28": {
 "name": "nediyon",
 "canto": "SIL-28",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "nediyon",
 "candidates": null,
 "mentions": 1
 },
@@ -17242,8 +17242,8 @@
 "siva|SIL-28": {
 "name": "siva",
 "canto": "SIL-28",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "shiva",
 "candidates": null,
 "mentions": 1
 },
@@ -17426,8 +17426,8 @@
 "himalaya|SIL-28": {
 "name": "himalaya",
 "canto": "SIL-28",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 4
 },
@@ -17554,8 +17554,8 @@
 "yama|SIL-28": {
 "name": "yama",
 "canto": "SIL-28",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "koorram",
 "candidates": null,
 "mentions": 2
 },
@@ -17578,8 +17578,8 @@
 "golden_mountain|SIL-28": {
 "name": "golden_mountain",
 "canto": "SIL-28",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "golden_mountain",
 "candidates": null,
 "mentions": 2
 },
@@ -17930,8 +17930,8 @@
 "cheralathan|SIL-29": {
 "name": "cheralathan",
 "canto": "SIL-29",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "cheralatan",
 "candidates": null,
 "mentions": 1
 },
@@ -18018,8 +18018,8 @@
 "himalaya|SIL-29": {
 "name": "himalaya",
 "canto": "SIL-29",
-"how": "alias",
-"id": "himalaya_stone",
+"how": "exact",
+"id": "himalaya",
 "candidates": null,
 "mentions": 3
 },
@@ -18346,8 +18346,8 @@
 "bodhi_tree|SIL-29": {
 "name": "bodhi_tree",
 "canto": "SIL-29",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "bodhi_tree",
 "candidates": null,
 "mentions": 1
 },
@@ -18506,8 +18506,8 @@
 "vanavan|SIL-29": {
 "name": "vanavan",
 "canto": "SIL-29",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "vanavan",
 "candidates": null,
 "mentions": 3
 },
@@ -18850,8 +18850,8 @@
 "chera_king|SIL-29": {
 "name": "chera_king",
 "canto": "SIL-29",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "cheralatan",
 "candidates": null,
 "mentions": 3
 },
@@ -19309,8 +19309,8 @@
 "malati|SIL-30": {
 "name": "malati",
 "canto": "SIL-30",
-"how": "unknown",
-"id": null,
+"how": "alias",
+"id": "malathi",
 "candidates": null,
 "mentions": 4
 },
@@ -19533,8 +19533,8 @@
 "pattini_kottam|SIL-30": {
 "name": "pattini_kottam",
 "canto": "SIL-30",
-"how": "spelling",
-"id": "kannagi_temple",
+"how": "alias",
+"id": "pattini_temple",
 "candidates": null,
 "mentions": 2
 },
@@ -19917,8 +19917,8 @@
 "ganga_bank|SIL-31": {
 "name": "ganga_bank",
 "canto": "SIL-31",
-"how": "unknown",
-"id": null,
+"how": "exact",
+"id": "ganga_bank",
 "candidates": null,
 "mentions": 1
 },
@@ -20525,9 +20525,12 @@
 "ilango|MAN-00": {
 "name": "ilango",
 "canto": "MAN-00",
-"how": "alias",
-"id": "ilanko",
-"candidates": null,
+"how": "open_many",
+"id": null,
+"candidates": [
+"ilangon",
+"ilanko"
+],
 "mentions": 1
 },
 "cattan|MAN-00": {
@@ -26621,8 +26624,8 @@
 "ilampudi|MAN-13": {
 "name": "ilampudi",
 "canto": "MAN-13",
-"how": "spelling",
-"id": "ilambuti",
+"how": "alias",
+"id": "ilampudi_town",
 "candidates": null,
 "mentions": 6
 },

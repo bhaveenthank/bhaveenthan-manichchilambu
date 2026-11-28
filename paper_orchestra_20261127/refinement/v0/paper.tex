@@ -1,0 +1,333 @@
+% Compile with XeLaTeX (Tamil script): latexmk -xelatex paper.tex
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+
+\usepackage{fontspec}
+\setmainfont{texgyretermes}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmonofont{Menlo}[Scale=0.82]
+\newfontfamily\tamilfont{Tamil Sangam MN}[Script=Tamil,Scale=0.92]
+\newcommand{\ta}[1]{{\tamilfont #1}}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[capitalize]{cleveref}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+
+\newcommand{\sysname}{Ma\d{n}ichchilambu}
+\newcommand{\lid}[1]{\texttt{\small #1}}
+\newcommand{\mood}[1]{\textsf{\small #1}}
+
+\title{Said Is Not Done: Epistemic Leakage in Literary Knowledge Graphs\\and a Voice-Scoped Ledger for the Two Classical Tamil Epics}
+
+\author{Anonymous ACL submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In a story, much of what is said never happened. A goldsmith who has secretly taken the queen's anklet accuses the hero of stealing it; the king believes him, and the hero dies. A knowledge graph built from this text stores one world, so the accusation becomes a fact that every later query trusts. We call this failure \emph{epistemic leakage} and measure it on the two classical Tamil epics, Silappatik\={a}ram and Ma\d{n}im\={e}kalai (10,209 lines). The usual fix, reifying relations as event nodes, does not help. Event nodes state claims as facts on 75\% of held-out claim questions, exactly as often as plain triples, because a node for a lie looks like a node for a truth. We propose \sysname{}, a \emph{voice-scoped ledger}. Each record keeps its chain of tellers and one of 13 moods, only asserted records change the world, and each character's beliefs are replayed as a separate view. A carefully built CIDOC CRM + CRMinf + PROV-O + OWL-Time model ties the ledger on every question, so expressive power is not our claim. The ledger uses 45\% of the statements and needs no hand-written queries. A meaning-preserving composer transfers across epics with zero false facts, where per-verb templates produce 24. Removing mood alone creates 26 false facts. Guarded path search refuses 57\% of the connections a plain search finds, and evidence-gated question answering gets 19 of 20 held-out questions right, against 12 for rules alone. An LLM drafts records for 97\% of lines. A pre-registered test with a no-verse control shows it reads lesser-known cantos (recall .804 vs.\ .429) and does not merely recall the story.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+Knowledge graphs (KGs) are increasingly built from text by language models and then used as the factual backbone of retrieval and question answering \citep{Hogan2021KnowledgeGraphs,Pan2024UnifyingLarge,Xu2024LargeLanguage,Edge2024FromLocal}. Narrative text is a hard case for this approach, and not mainly because its entities are hard to find. Stories are full of statements that are \emph{not facts}: accusations, lies, orders, plans, wishes, dreams, beliefs and metaphors \citep{Piper2021NarrativeTheory,Santana2023SurveyNarrative}. A graph has one world. Once a character's claim is written in as a triple, nothing marks it as a claim.
+
+Consider canto 16 of Silappatik\={a}ram, the first of the two classical Tamil epics. A goldsmith has secretly taken the queen's anklet: \ta{கரந்தியான் கொண்ட காலணி}, ``the ornament I secretly took'' (\lid{SIL-16-0127}). When the hero Kovalan comes to sell his wife Kannagi's anklet, the goldsmith tells the king that Kovalan stole the queen's (\lid{SIL-16-0145}). The king believes him and gives a \emph{conditional} order: if the anklet is in the thief's hand, kill him and bring it (\lid{SIL-16-0152/3}). A guard objects that this is no man to be killed (\lid{SIL-16-0163}). One drunk man strikes the blow (\lid{SIL-16-0212}), and the poet gives two reasons in consecutive lines: the king's sceptre bent, and Kovalan's old karma ripened (\lid{0216--0217}). Later the king, undone, says \ta{யானே கள்வன்}, ``I am the thief'' (\lid{SIL-20-0086}). That is a confession in figure, not a theft.
+
+A plain triple graph stores \emph{holds(Kovalan, queen's anklet)}. The standard repair, turning the relation into an n-ary event node \citep{Noy2006NaryRelations}, recovers who gave what to whom. But an event node for ``Kovalan stole the queen's anklet'' looks exactly like one for ``Kovalan took Kannagi's anklet''. \textbf{Reification makes a lie neater, not less false.} We call the general failure, a reported claim becoming a stored fact, \emph{epistemic leakage}. It is the narrative counterpart of source-relative factuality in NLP \citep{Sauri2009Factbank,Marneffe2012DidIt,Diab2009CommittedBelief}, and its cost is not missing knowledge. It is false knowledge that every downstream query, path and generated answer will repeat \citep{Ji2023SurveyHallucination}.
+
+We study three questions on the full text of both epics:
+\textbf{(Q1)}~Which KG representations leak, and is preventing leakage a matter of expressive power?
+\textbf{(Q2)}~What is the minimal structure that prevents it, and which parts carry the load?
+\textbf{(Q3)}~Can such a graph be scaled to a whole classical text with LLMs, under controls that tell reading apart from recall of a famous story \citep{Chang2023SpeakMemory}?
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item We define and measure \emph{epistemic leakage}. Event nodes leak exactly as often as plain triples, on 75\% of held-out claim questions (\cref{sec:rep}).
+\item A \emph{voice-scoped ledger}. Every record carries a chain of tellers and one of 13 moods, only asserted records change state, and each character's view is replayed at query time (\cref{sec:method}). A strong standards model ties the ledger. Our claim is therefore economy and discipline, not expressivity. The ledger needs 45\% of the statements and no hand-written queries, and it compiles to those same standards.
+\item A rule-based \emph{composer} that stores per record only what changes meaning. It transfers across epics with zero false facts, where per-verb templates produce 24. An ablation shows that mood is the one feature preventing false facts (\cref{sec:composer}).
+\item \emph{Guarded paths} and \emph{evidence-gated QA}, which never present a claim as a fact (\cref{sec:paths,sec:qa}).
+\item The first full-coverage, provenance-tiered KG resource for the two epics. Its LLM drafting is gated by a pre-registered test with a no-verse control (\cref{sec:scale}). We also report negative results for classical NLP on this low-resource classical language \citep{Joshi2020StateFate}.
+\end{enumerate}
+
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Beyond the triple.} Relations with more than two arguments are usually reified as n-ary nodes \citep{Noy2006NaryRelations}. Wikidata attaches qualifiers and references to statements \citep{Vrandei2014WikidataFree}, and \citet{Hernndez2015ReifyingRdf} compare reification, n-ary relations, singleton properties and named graphs for holding such metadata. The ideas we combine are old. McCarthy's $\mathit{ist}(c,p)$ makes truth relative to a context \citep{Mccarthy1993NotesFormalizing}. The assumption-based TMS keeps each fact tagged with the assumptions it rests on, so assumptions can be switched without recomputation \citep{deKleer1986Atms}. The event calculus derives state from the events that start and end it \citep{Kowalski1986LogicbasedCalculus}. In cultural heritage, CIDOC CRM models events, custody and ownership \citep{Doerr2003Cidoc}, and its extensions add belief and provenance. These formalisms \emph{can} express voice and mood, and we build the strongest such baseline ourselves (\cref{sec:rep}). What they do not provide is a per-statement decision about which patterns a statement needs, or a single replay that answers custody and belief questions for any verb without hand-written queries.
+
+\paragraph{Factuality, attribution and belief.} FactBank annotates event factuality relative to sources \citep{Sauri2009Factbank}. Related work covers committed belief \citep{Diab2009CommittedBelief}, veridicality \citep{Marneffe2012DidIt}, neural factuality prediction \citep{Rudinger2018NeuralModels} and speaker commitment \citep{Jiang2019DoYou}. PARC annotates attribution relations in news \citep{Pareti2016Parc30}, and quoted-speech attribution has been studied for literary narrative \citep{Elson2010AutomaticAttribution}. Story-based theory-of-mind benchmarks test whether models track false beliefs \citep{Nematzadeh2018EvaluatingTheory,Sap2022NeuralTheoryofmind}. We carry these sentence-level notions into the \emph{storage and query} layer, where they must survive replay, path search and answer generation.
+
+\paragraph{Narrative knowledge graphs.} DramaBank's story intention graphs annotate goals, plans and beliefs by hand \citep{Elson2012DramabankAnnotating}. Drammar is an OWL ontology of drama with agents, plans and emotions \citep{Lombardo2018Drammar}. EvolvTrip builds temporal graphs of characters' mental states to help LLMs answer theory-of-mind questions about novels \citep{Yang2025EvolvtripEnhancing}. LitBank and literary event detection provide entity and realis-event annotation for English fiction \citep{Bamman2019AnnotatedDataset,Sims2019LiteraryEvent}. These works track belief or a single source. None has nested voice chains, query-time reader policies, or rebirth as a dimension of identity, and most work on English prose. Classical Tamil verse, with free word order and dropped subjects, has no comparable resource. Indic NLP resources mostly target the modern languages \citep{Kakwani2020IndicnlpsuiteMonolingual}.
+
+\paragraph{Extraction and grounded QA.} Bootstrapped relation extraction grows patterns from seed facts \citep{Agichtein2000SnowballExtracting,Batista2015SemisupervisedBootstrapping}, and LLMs now drive open and ontology-guided KG construction \citep{Xu2024LargeLanguage,Mihindukulasooriya2023Text2kgbenchBenchmark}. Retrieval-augmented and graph-based generation ground answers in retrieved evidence \citep{Lewis2020RetrievalaugmentedGeneration,Edge2024FromLocal}, often with lexical retrieval \citep{Robertson2009Bm25} and rank fusion \citep{Cormack2009ReciprocalRank}. Attribution, citation and abstention are well studied \citep{Bohnet2022AttributedQuestion,Gao2023EnablingLarge,Asai2024SelfragLearning,Rajpurkar2018KnowWhat}, and fact verification asks whether evidence supports a claim \citep{Thorne2018FeverLargescale}. All of these check that evidence is \emph{relevant} or \emph{supporting}. None checks what \emph{kind of statement} the evidence is, and in a story the same words may be a fact, a lie, an order or a dream. Evaluating LLMs on famous books is confounded by memorisation \citep{Chang2023SpeakMemory,Carlini2023QuantifyingMemorization}, which our stage test controls for. Our formula finder belongs to the family of lexical text-reuse detection for classical languages \citep{Forstall2014ModelingScholars}, and our echo finder adapts structure mapping \citep{Falkenhainer1989Sme}.
+
+\section{The Twin Epics, and What Breaks}
+\label{sec:data}
+
+We use the Project Madurai e-texts of Silappatik\={a}ram (SIL) and its sequel Ma\d{n}im\={e}kalai (MAN): 10,209 lines in 64 cantos. Every line has a stable id (\lid{SIL-16-0145}: SIL, canto 16, line 145). Before designing anything we read the key passages line by line. From that reading we grouped what breaks a plain graph into 14 hard-case groups. They are ranked by damage: a false fact is worse than a missing one, and a missing one is worse than a clumsy one. \Cref{tab:hard} shows the top groups.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{0.25\linewidth}p{0.33\linewidth}p{0.34\linewidth}@{}}
+\toprule
+Group & What goes wrong & Example \\
+\midrule
+Said, not done & accusation/lie stored as fact & theft \lid{SIL-16-0145}; ``spy'' \lid{SIL-23-0156} \\
+Ordered or wished & intention counts as the act & conditional order \lid{SIL-16-0152} \\
+Looks like, isn't & disguise merges two people & \lid{MAN-18-0149} \\
+Different heads, same moment & one graph, one mind & two men, one disguised woman (MAN-20) \\
+Who holds what, when & ``X has Y'' forever & anklet, bowl, garland \\
+Earlier births & lives merge; kinship absurd & Kovalan was Bharatan \lid{SIL-23-0154} \\
+Nested tellers & who actually says this? & \lid{MAN-26-0027}, four voices deep \\
+Text leaves it open & forced choice looks like knowledge & which anklet broke \lid{SIL-20-0082} \\
+\bottomrule
+\end{tabular}
+\caption{Eight of the 14 hard-case groups, worst first.}
+\label{tab:hard}
+\end{table}
+
+Two cases shaped the design. In MAN-20, Ma\d{n}im\={e}kalai has taken another woman's form. At the same moment Udayakumaran sees through the disguise (\lid{MAN-20-0084}) and K\={a}ñchana\b{n} takes her for his wife (\lid{MAN-20-0033}). The wrong man kills the right one, so there is no single state of the world, and replay must take a viewer. The second case is a mirror across births. In a past life Kovalan was Bharatan, who falsely called the merchant Sa\.{n}gama\b{n} a spy and had him killed (\lid{SIL-23-0156}). The two widows are described in near-identical words (\lid{SIL-00-0031/2} vs.\ \lid{SIL-23-0158/9}), and Ma\d{n}im\={e}kalai retells the story through four nested voices (\lid{MAN-26-0013--0032}).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_anklet_said_vs_done.pdf}
+\caption{The anklet case. Left: ledger records in story order, each with its voice chain and mood. Right: the same ledger folded three ways at story time 16.5. Only asserted records change state, so the text's world puts the queen's anklet with its accuser. The king's view adds the claim he accepts. A plain or n-ary graph treats every record as fact and holds the anklet with both men at once.}
+\label{fig:anklet}
+\end{figure*}
+
+\section{Method}
+\label{sec:method}
+
+\sysname{} has five parts: a record format (the ledger), a replay (the fold), a per-record representation selector (the composer), a four-layer validator, and two finders for links that no record states.
+
+\subsection{The voice-scoped ledger}
+Nothing is stored as simply true. A record says only that this chain of tellers tells us this, in this mood:
+\begin{equation}
+\begin{split}
+r=\langle &\textit{what},\textit{roles},\textit{voice},\textit{mood},t,\\
+&\textit{birth},\Delta,\textit{reasons},\textit{links},\textit{lines}\rangle .
+\end{split}
+\end{equation}
+The \textit{voice} is the chain of tellers, outermost first, e.g.\ [poet, Kannagi, Madurapati, Bharatan]. The \textit{mood} is one of 13: \mood{asserted, negated, claimed, thought, command, conditional, intended, predicted, wish, metaphor, address, dreamed, question}. $t$ is story time, not reading order. $\Delta$ lists fluent changes such as $+\mathit{holds}(a,b)$ and $-\mathit{alive}(a)$. \textit{reasons} are typed (causes, enables, motivates, karma, moral, fulfils, foreshadowed), each with its own voice. \textit{links} are \emph{carries}, \emph{contradicts}, \emph{conflicts} and \emph{retells}. \textit{lines} cite verse ids together with a phrase that must occur in those lines. One rule does most of the work:
+\begin{quote}\emph{Only an \mood{asserted} record can change the state of the world.}\end{quote}
+Three further choices follow from the hard cases. \emph{Gaps} are first-class records: ``not stated'' is stored together with the tempting wrong answer, e.g.\ ``who made Kannagi's anklet?''. \emph{Kinds} and \emph{individuals} are different nodes, and every line is labelled literal, figurative or mixed, so that ``coral lips'' never yields a coral object. \emph{Births} are kept apart by giving each life its own id plus a \emph{same\_person} record that has its own teller.
+
+\subsection{The fold: state by replay, worlds per viewer}
+Following the event calculus \citep{Kowalski1986LogicbasedCalculus}, state is replayed rather than stored:
+\begin{align}
+\mathit{state}(t,\pi) &= \textstyle\bigoplus_{r:\,r.t\le t,\ \pi(r)} r.\Delta \\
+\mathit{view}(v,t,\pi) &= \{r:\pi(r)\} \cup A_v(t) \setminus R_v(t)
+\end{align}
+Here $\pi$ is a \emph{reader policy}, and $A_v(t)$ and $R_v(t)$ are the claims viewer $v$ has accepted or rejected by time $t$, as given by belief records. In the spirit of the ATMS \citep{deKleer1986Atms}, policies are applied at query time and never written into the data. There are three: \mood{poet\_only}, \mood{story} (anyone speaking straight), and \mood{everything}, which exists only to measure what a naive extractor gets wrong. So $\mathit{holder}(\text{queen's anklet},16.5)$ is the goldsmith, while the king's view says Kovalan. K\={a}ñchana\b{n}'s view at 20.4 contains ``she is K\={a}yasa\d{n}\d{t}ikai'' and Udayakumaran's does not. The king's belief in the theft goes from none to accept to reject (\cref{fig:anklet}).
+
+\subsection{The composer}
+\label{sec:composer-method}
+A full record for ``M\={a}dhavi danced'' should not cost as much as one for a nested lie. For each record the composer works out from its content which patterns it needs, and lets every other field fall back to a default on reading (no voice: the poet; no mood: told straight; no time: reading order):
+\begin{align*}
+\mathit{needs}(r) &= \{\text{event},\text{evidence}\} \\
+&\cup \{\text{voice}\mid \textit{voice}\neq[\text{poet}]\} \\
+&\cup \{\text{mood}\mid \textit{mood}\neq\mood{asserted}\} \\
+&\cup \{\text{state}\mid \Delta\neq\emptyset\} \\
+&\cup \{\text{time}\mid \Delta\neq\emptyset \lor \text{belief} \\
+&\qquad\ \lor \text{reasons}\lor \text{pointed at}\} \\
+&\cup \{\text{field}\mid\text{present}\}.
+\end{align*}
+The hard constraint is that \emph{a field may be dropped only if its default means the same thing}. This is what stops compression from turning a claim into a fact, and a test checks it. The composer is deliberately not a weighted optimiser. Under the hard constraint each pattern is either required or not, so a cost function would only add knobs. The ledger compiles to CIDOC CRM + CRMinf + PROV-O + OWL-Time in RDF. It is a way of writing \emph{to} the standards, not a rival to them.
+
+\subsection{Validation, guarded paths and echoes}
+\label{sec:paths-method}
+The validator has four layers. \emph{Shape} (SHACL) checks that records are well formed. \emph{Story} (Python over the fold) catches claims promoted to facts, two holders at once and dead actors. \emph{Identity} (OWL RL) catches merges of known-distinct things. \emph{Citation} checks that the line exists and contains the quoted phrase. \emph{Guarded paths} search over warrant-typed edges (event, same, place, kind, wider). A path is as strong as its weakest step, steps through non-asserted records are refused, and no path may mix births without a \emph{same\_person} record. A \emph{formula finder} compares every pair of lines using IDF-weighted overlapping 6-character chunks with spaces removed, which makes it robust to editors' word division. It needs no lexicon and no labels. An \emph{echo finder} looks for the longest in-order match of event kinds between two stretches of story under a one-to-one mapping of participants \citep{Falkenhainer1989Sme}, scored against shuffled baselines.
+
+\subsection{Tiered drafting and evidence-gated QA}
+\label{sec:qa-method}
+\emph{Tiers never mix.} Hand records, drafts checked by a second model, unchecked drafts and per-line notes are separate layers. Drafts stay out of the graph, the question box and every score. Tier~2 is an LLM (claude-sonnet-5-5) prompted to propose ledger records per canto window. Every proposal must cite lines and a phrase that is verified to occur in them. An every-line pass gives each line its function, categories, sense (literal, figurative or mixed) and a short English gist. Tier~3 is a judge model that labels each draft as supported, contradicted, insufficient, external-only or ambiguous.
+
+The QA layer puts retrieval on top of the ledger, not in place of it. A typed plan records the question's language (Tamil, English or Thanglish), its kind, its grounded names and its evidence policy. Ambiguous names prompt a question back to the user instead of a merge (``Kausika\b{n}'' is a messenger in SIL and a father in MAN). Four routes rank hand records. \emph{Rule} uses hand-written rules, trusted only if their records cover the question's words. \emph{Graph} uses records naming the grounded entities. \emph{Words} runs BM25 over record text \citep{Robertson2009Bm25}. \emph{Lines} runs BM25 over all 10,209 lines and their notes, crediting the records that cite each line. Grounded names enter the query in both languages, which lets an English question reach Tamil verse without a translation model. Routes are fused by reciprocal rank fusion \citep{Cormack2009ReciprocalRank} with $k{=}60$, and the fused score is multiplied by how much of the question a record covers. Finally, records are sorted into \emph{evidence classes}: told as fact, said, wanted, imagined, or believed. Only the first class may answer as fact, and otherwise the headline reads ``Only claimed, not told as fact''. A record must cover at least two-thirds of the question's words to count as an answer. Below that the system returns a closest match or abstains \citep{Rajpurkar2018KnowWhat}.
+
+\section{Experiments}
+\label{sec:exp}
+
+The experiment ledger has 163 records (89 SIL, 74 MAN) over 22 episodes and 121 questions. It is a sample of hard cases: 42 records are not told straight, and only 14 are deliberately plain. All runs are deterministic, and repeating them gives identical outputs. One reader wrote every record, question and gold answer, and the same person built the method (see Limitations).
+
+\subsection{Q1: Which representations leak?}
+\label{sec:rep}
+Every representation encodes the same ledger and answers the same questions, each under the most generous reading we could give it. \emph{Dev} has 3 episodes and 49 questions. \emph{Held-out} has 7 episodes and 36 questions, written after the format was frozen by hash. A \emph{third} batch has 12 episodes and 36 questions under format v2. The \emph{leak rate} is the share of questions about claims that a method answers by stating the claim as fact.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lccccr@{}}
+\toprule
+Method & Dev & Held & Third & Leak (h/t) & Stmts \\
+\midrule
+Flat, all records & .16 & .42 & .25 & .75/1.0 & 180 \\
+Flat, asserted only & .33 & .56 & .53 & .13/.09 & 144 \\
+n-ary event nodes & .22 & .42 & .31 & .75/.91 & 480 \\
+n-ary + qualifiers & .73 & .75 & .72 & 0/0 & 1,132 \\
+Named-graph contexts & .53 & .83 & .75 & 0/0 & 643 \\
+CRM+CRMinf+PROV+Time & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & 0/0 & 2,843 \\
+Ledger (ours) & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & 0/0 & \textbf{1,287} \\
+\bottomrule
+\end{tabular}}
+\caption{Accuracy by question set, leak rate on held-out/third, and encoding size (held-out). The standards model also needs 9 hand-written SPARQL queries (48 lines), including a hand-written fold.}
+\label{tab:rep}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_accuracy_vs_size_leak.pdf}
+\caption{Held-out accuracy against encoding size. Red circles state claims as facts, with marker size proportional to the leak rate.}
+\label{fig:rep}
+\end{figure}
+
+\Cref{tab:rep} and \cref{fig:rep} give three findings. \textbf{(i) Event nodes do not help with truth.} n-ary nodes leak on .75 of held-out claim questions, the same as plain triples, and on .91 in the third batch. \textbf{(ii) Expressive power is not the issue.} A CIDOC CRM + CRMinf + PROV-O + OWL-Time model, given the full voice chain and every state change, ties the ledger on every set. The difference resampled over whole episodes is 0 (95\% CI 0--0). Against the other baselines the ledger's margin is .26 (qualifiers, CI .19--.34), .31 (contexts, .18--.41), .55 (flat-asserted, .44--.63) and .69 (n-ary, .57--.79). \textbf{(iii) What is left is economy and discipline.} The ledger uses 45\% of the statements (1,287 vs.\ 2,843 held-out; 480 vs.\ 1,081 dev). It needs no query per verb, where the standards model needs a hand-written SPARQL fold. It answers in about 0.01\,ms per question against 3.5--7.5\,ms. Because the ledger exports to that same model, it complements the standards rather than competing with them. Filtering to asserted records only reduces leakage but loses about half the answers, because beliefs, orders and claims are themselves things readers ask about.
+
+\subsection{Q2: What carries the load?}
+\label{sec:composer}
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Strategy & Stmts & Right/121 & False facts \\
+\midrule
+Everything always & 1,456 & 121 & 0 \\
+\textbf{Composed (ours)} & \textbf{1,181} & 121 & 0 \\
+Per-verb template (all data) & 1,243 & 121 & 0 \\
+Event+mood+last speaker+time & 1,227 & 65 & 0 \\
+Bare events & 722 & 41 & 24 \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{Cross-epic: learn on one epic, test on the other}} \\
+Per-verb, SIL$\to$MAN & -- & 24/44 & 8 \\
+Composed, SIL$\to$MAN & -- & 44/44 & 0 \\
+Per-verb, MAN$\to$SIL & -- & 45/77 & 16 \\
+Composed, MAN$\to$SIL & -- & 77/77 & 0 \\
+\bottomrule
+\end{tabular}}
+\caption{Composer against alternative storage strategies.}
+\label{tab:composer}
+\end{table}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_ablation_and_cross_epic.pdf}
+\caption{(a) Removing one feature at a time (121 questions). Only removing mood creates false facts. Removing the birth label changes nothing. (b) Per-verb templates, which know only verbs seen in training, leak when moved to the other epic. The composer does not.}
+\label{fig:ablation}
+\end{figure*}
+
+\paragraph{Composer.} Composition saves 19\% of the statements overall: 43\% on plain records and 17\% on hard ones (\cref{tab:composer}). It loses no answers and creates no false facts. A fixed Wikidata-style template (event, mood, last speaker, time) answers only 65 of 121, because one qualifier holds only the last speaker and \lid{MAN-26-0027} is four voices deep. Per-verb templates match the composer when trained on all data. Across epics, however, they meet verbs they have never seen and produce 8 and 16 false facts, while the composer produces none (\cref{fig:ablation}b). Since the real epics are mostly plain, the whole-text saving should be larger than on this hard-case sample, but we have not measured it.
+
+\paragraph{Ablation.} Removing a feature costs answers in this order: mood (94 right), state changes (100), story time (104), voice chain (110), belief records and reasons (113 each), contradictions (118), open values (119). \textbf{Only mood prevents false facts}: without it, 26 appear (\cref{fig:ablation}a). The \textbf{birth label does nothing.} Answers stay at 121, and path search connects 2,214 pairs with or without the birth rule. Births are already kept apart by giving each life its own id and a \emph{same\_person} record. We therefore keep the birth label only as an interface filter and do not claim it as part of the method.
+
+\subsection{Validation and guarded paths}
+\label{sec:paths}
+Of 28 kinds of injected damage, the validator catches 24: shape 9 (7 caught by that layer alone), story 14 (8), identity 5 (0), citation 3 (2). It raises no false alarms on 6 deliberately odd but valid readings. One of these is the dead Kovalan rising to wipe Kannagi's tears (\lid{SIL-19-0062--0067}), which required an \emph{after\_death} marker. The four misses are \emph{plan as sale}, \emph{dream as event}, \emph{wrong killer} and \emph{doctrine as fact}. Each is a wrong reading with a real citation, which no rule can see.
+
+For paths we enumerate all 3,321 pairs of the 82 nodes. A plain search connects 3,084 of them, and \textbf{1,743 (57\%) of those go through a step that did not happen}. Under the reader policy 2,214 pairs stay connected, none through such an edge, and no path mixes births. For example, the plain path from Kovalan to the queen's anklet is one hop, ``stole'' (claimed, \lid{SIL-16-0145}). The guarded path is two hops: he showed an anklet to the goldsmith (\lid{SIL-16-0116}), who had taken the queen's (\lid{SIL-00-0025}). This 57\% is inflated by a ledger of hard episodes. The direction should hold on the whole text, but the size will not.
+
+\subsection{Q3: Scaling, reading versus recall}
+\label{sec:scale}
+\paragraph{Classical NLP cannot decide what a passage needs.} We tried to predict from the Tamil alone which patterns each of 161 spans needs. Leave-one-episode-out macro F1 is .25 for cue words and .27 for a character n-gram model, both below the .38 of always answering yes. For mood the scores are .18 and .33 against .41. Pattern bootstrapping \citep{Agichtein2000SnowballExtracting,Batista2015SemisupervisedBootstrapping} also failed. By round 3 the kinship cues it learned included ``big flower'' and ``long eyes'': names do not sit near relation words in free-word-order verse with dropped subjects. A name matcher with canto-scoped epithets reaches F1 .82, but only about 6\% of lines name a known entity at all.
+
+\paragraph{LLM drafting reads the verse.} A pilot on three famous cantos compared four modes: zero-shot, few-shot, names masked, and no verse. The frozen loose-match recall (.864 zero-shot, .886 few-shot) turned out to measure little. Moving each proposal to a random line in its canto barely changed it (.841 and .832). With a post-hoc same-line match (\cref{fig:llm}a), few-shot reaches .841 against chance .563, and without the verse recall drops to .591. Few-shot finds 10 gold records that the no-verse mode misses and never the reverse (difference .23, CI .11--.36). The model still beats chance without the verse, so it partly \emph{remembers} these famous cantos. We therefore pre-registered a GO/NO-GO \emph{stage test} on five lesser-known cantos with 56 new gold records, frozen by hash before any output existed. Few-shot recall is .804. This clears the bar of .60 and the 97.5th chance percentile of .554, and beats no-verse (.429, near the chance mean of .452) by .375. Non-facts are kept apart from facts in 6 of 10 cases, so all four checks pass (\cref{fig:llm}b). Recall by canto ranges from 1.00 (MAN-13) to .50 (SIL-14), where lists of market goods lose their roles. On less famous text, then, the model's recall comes from reading: without the verse it falls to chance.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_reading_not_recall.pdf}
+\caption{(a) Pilot on famous cantos, same-line recall against shuffled-line chance (mean, solid; upper, dashed). Even with no verse the model beats chance there, which indicates recall of the story. (b) Pre-registered stage test on lesser-known cantos. With no verse, recall falls into the chance band, while few-shot clears the pre-registered bar.}
+\label{fig:llm}
+\end{figure*}
+
+\paragraph{The full run.} 525 calls produced 7,177 records (83 rejected for a citation that failed the check), covering 91\% of lines. A gap pass raised draft coverage to 97\% (9,927 lines). 630 drafts are claims and 474 commands, and no draft states the theft as fact. Every line has a note: 948 figurative, 711 mixed. In a check of 50 random notes, 48 were right, 1 partly right and 1 wrong. The judge is in progress. On the 3,650 drafts judged so far (of 7,177), 63.5\% are supported and 2.8\% contradicted, and the mood is judged correct in 93.6\% and the roles in 74.7\%. The weak point is roles, not mood.
+
+\subsection{Evidence-gated question answering}
+\label{sec:qa}
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Question set & Rules & Hybrid \\
+\midrule
+Open, pre-hybrid (32) & 16 & 30 \\
+Fresh rounds 1/2/3 (34/25/20) & 29/20/14 & 31/23/17 \\
+\textbf{Held-out, scored once (20)} & \textbf{12} & \textbf{19} \\
+\midrule
+ & R@5 & MRR@10 \\
+\midrule
+BM25 over records & .83 & .66 \\
+RRF (words+graph+lines) & .81 & .58 \\
+Full system (+ evidence checks) & \textbf{.91} & \textbf{.74} \\
+\bottomrule
+\end{tabular}
+\caption{Top: questions answered correctly. Only the held-out set was untouched during tuning. Bottom: retrieval over 122 questions with a known gold record.}
+\label{tab:qa}
+\end{table}
+
+On the held-out questions, which were written after tuning and scored once, the hybrid answers 19 of 20, against 12 for the hand-written rules (\cref{tab:qa}). Six of the rules' misses on the open set were \emph{confident wrong answers}: a rule fired on a keyword and answered a different question. Asked ``Where did Kovalan wait inside the city?'', the rules returned the contents of the anklets. The coverage check catches these. Plain rank fusion is no better than BM25 alone (.81 vs.\ .83 R@5). The gain to .91 comes from coverage weighting and rule checking, not from adding retrievers. On held-out recall@5 the full system ties BM25 at .95.
+
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{Truth is a property of the telling, not of the structure.} Event nodes, qualifiers and named graphs give the right shape. Only a mood gate on what may change the world prevents leakage. This explains both why n-ary nodes leak like triples and why a well-built standards model ties the ledger: the standards model also has the gate, written by hand.
+
+\paragraph{The bottleneck is mood, and mood is hard.} The ablation makes mood the load-bearing feature, while surface cues predict it worse than always answering yes. The composer's input must therefore come from a person or an LLM. When unsure, the safe default is to keep every field. The judge finds LLM moods mostly right (93.6\%), and roles are the weaker part.
+
+\paragraph{Famous texts need recall controls.} For a canonical work, a recall score without a no-text control can measure memory rather than reading. The no-verse mode reveals it: on famous cantos the model beats chance without the verse, while on lesser-known cantos it falls to chance.
+
+\paragraph{Links nobody wrote down.} With no labels, the formula finder found 1,342 reused line pairs, 143 of them between the two epics. Among them is the goddess's self-introduction in near-identical words in both epics (\lid{SIL-15-0033}, \lid{MAN-07-0018}): \ta{வந்தேன் அஞ்சல் மணிமேகலை யான்}. In both lines the name is the goddess, not the girl, which is a trap for entity linking. The echo finder recovers the right participant mapping for the anklet and curse stories (goldsmith$\to$Bharatan, Kovalan$\to$Sa\.{n}gama\b{n}, king$\to$Kali\.{n}ga king), but at $p{=}.16$ against shuffles on a ledger this small. That result is promising, not proven.
+
+\section{Conclusion}
+In narrative, what is said is not what is done, and a KG that forgets this turns accusations into facts. On two classical Tamil epics, reification does not prevent this, while a mood gate over voice-scoped records does. A full standards model can match the ledger, but at more than twice the size and with hand-written queries. A meaning-preserving composer, guarded paths and evidence-gated answers keep the gate in force from storage to answer. With pre-registered controls, LLMs can draft such records for a whole classical text by reading it rather than remembering it. The next tests are mood detection at scale and evaluation by Tamil scholars.
+
+\section*{Limitations}
+One reader, not a Tamil scholar, wrote all hand records, questions and gold answers, and also built the method. The ledger's perfect scores therefore show that the format \emph{can hold} these cases, not that it outperforms alternatives on independent data. While the third batch was being written, three gold answers were found wrong and fixed. A Tamil scholar's review of the 359 hand records is under way and not finished, and no inter-annotator agreement is available yet. The held-out sets are small (36 representation questions, 20 QA questions). The composer is given clean records, so it already knows each record's mood, which is the hard part. The Tier-3 judge (claude-haiku-5-5) belongs to the same model family as the drafter, so it stands in for a different-family judge, and it has covered about half of the drafts so far. The spot checks of LLM output were done by the same model family, not blind. The echo finder is indistinguishable from chance at this scale, and one record was corrected after a failure had been seen. Draft entities are not yet merged (3,467 distinct ids). Dense retrieval and the LLM answer writer have not been run. Path statistics come from a ledger of hard episodes and overstate whole-text rates. Two cantos differ by one line from the edition's count.
+
+\section*{Ethical Considerations}
+The epics are cultural heritage of living Tamil communities and religious traditions. We follow the terms of the Project Madurai e-texts and keep their headers. Machine drafts are labelled as such and never presented as text evidence. External knowledge-base links are quarantined, because they assert identifications the verse does not establish, such as a modern electoral district given as a birthplace. We make no historical identifications. All interpretive judgements are recorded as readings, open to scholarly correction.
+
+\label{po_refstart}
+\bibliography{references}
+
+\appendix
+\section{The 13 moods and reader policies}
+\label{app:moods}
+\mood{asserted} (told as fact; the only mood that changes state), \mood{negated}, \mood{claimed} (said by a character, e.g.\ an accusation), \mood{thought}, \mood{command}, \mood{conditional}, \mood{intended}, \mood{predicted}, \mood{wish}, \mood{metaphor}, \mood{address} (e.g.\ ``mother Kannagi'', \lid{MAN-26-0002}), \mood{dreamed}, \mood{question}. For QA these group into evidence classes: \emph{happened} (273 of the 359 current hand records), \emph{said} (54), \emph{wanted} (20) and \emph{imagined} (12), plus belief records. Voice-chain depth over the 359 records: 1 (180), 2 (160), 3 (18), 4 (1). 16 records are set in an earlier birth.
+
+\section{Additional Tier-1 results}
+\label{app:tier1}
+\begin{table}[h]
+\centering\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Name matcher (87 mentions) & P & R & F1 \\
+\midrule
+Exact word & .93 & .16 & .27 \\
+Word starts with name & .95 & .21 & .34 \\
++ canto-scoped epithets & .95 & .70 & .81 \\
++ stop list of lookalikes & .97 & .71 & .82 \\
+\bottomrule
+\end{tabular}
+\caption{Name finding. The scores are optimistic, because the epithets were written while reading these cantos.}
+\end{table}
+The verb-stem event inventory gave 825 candidates. About two-thirds of a sample of 40 were real events, and recall on told-straight records was .29. For co-occurrence, the best score was raw count in a 3-line window (AP .572). Bootstrapping results per round: kinship from hand words 1/9, 1/4, none; spouse from hand words 1/7, 0/2, none.
+
+\section{Validator mutations}
+\label{app:mut}
+The 28 mutation types include dropped voice, mood or evidence; malformed or non-existent line ids; a phrase absent from the cited lines; a claim promoted to fact; a contradicted claim restated as fact; flipped belief times; two holders at once; giving up an object one does not hold; and a dead actor. The missed four are listed in \cref{sec:paths}.
+
+\section{Judge distribution}
+\label{app:judge}
+On the 608 gap drafts (complete), the judge returned 362 supported, 114 ambiguous, 91 insufficient, 31 contradicted and 10 external-only. On the 3,650 full drafts judged so far: 2,318 supported, 658 ambiguous, 370 insufficient, 174 external-only, 101 contradicted and 29 unparsable.
+
+\end{document}

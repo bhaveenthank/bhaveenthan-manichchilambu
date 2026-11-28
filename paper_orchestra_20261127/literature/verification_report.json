@@ -1,0 +1,316 @@
+{
+  "verified": [
+    {
+      "candidate": "Defining N-ary Relations on the Semantic Web",
+      "matched_title": "Representingn-ary relations in the Semantic Web",
+      "score": 86,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Notes on Formalizing Context",
+      "matched_title": "Notes on formalizing context",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "A logic-based calculus of events",
+      "matched_title": "A Logic-based Calculus of Events",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Reifying RDF: What Works Well With Wikidata?",
+      "matched_title": "Reifying RDF: What Works Well With Wikidata?",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Wikidata: a free collaborative knowledgebase",
+      "matched_title": "Wikidata: a free collaborative knowledgebase",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "DramaBank: Annotating Agency in Narrative Discourse",
+      "matched_title": "DramaBank: Annotating Agency in Narrative Discourse",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "EvolvTrip: Enhancing Literary Character Understanding with Temporal Theory-of-Mind Graphs",
+      "matched_title": "EvolvTrip: Enhancing Literary Character Understanding with Temporal Theory-of-Mind Graphs",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Snowball: Extracting Relations from Large Plain-Text Collections",
+      "matched_title": "Snowball: extracting relations from large plain-text collections",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Semi-Supervised Bootstrapping of Relationship Extractors with Distributional Semantics",
+      "matched_title": "Semi-Supervised Bootstrapping of Relationship Extractors with Distributional Semantics",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+      "matched_title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Reciprocal rank fusion outperforms condorcet and individual rank learning methods",
+      "matched_title": "Reciprocal rank fusion outperforms condorcet and individual rank learning methods",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "matched_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Survey of Hallucination in Natural Language Generation",
+      "matched_title": "Survey of Hallucination in Natural Language Generation",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+      "matched_title": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Knowledge Graphs",
+      "matched_title": "Knowledge Graphs",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "An annotated dataset of literary entities",
+      "matched_title": "An annotated dataset of literary entities",
+      "score": 110,
+      "source": "semantic_scholar"
+    },
+    {
+      "candidate": "Literary Event Detection",
+      "matched_title": "Literary Event Detection",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Automatic Attribution of Quoted Speech in Literary Narrative",
+      "matched_title": "Automatic Attribution of Quoted Speech in Literary Narrative",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Committed Belief Annotation and Tagging",
+      "matched_title": "Committed belief annotation and tagging",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Did It Happen? The Pragmatic Complexity of Veridicality Assessment",
+      "matched_title": "Did It Happen? The Pragmatic Complexity of Veridicality Assessment",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Neural Models of Factuality",
+      "matched_title": "Neural Models of Factuality",
+      "score": 110,
+      "source": "semantic_scholar"
+    },
+    {
+      "candidate": "Do You Know That Florence Is Packed with Visitors? Evaluating State-of-the-art Models of Speaker Commitment",
+      "matched_title": "Do You Know That Florence Is Packed with Visitors? Evaluating State-of-the-art Models of Speaker Commitment",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "PARC 3.0: A Corpus of Attribution Relations",
+      "matched_title": "PARC 3.0: A Corpus of Attribution Relations",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Evaluating Theory of Mind in Question Answering",
+      "matched_title": "Evaluating Theory of Mind in Question Answering",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs",
+      "matched_title": "Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Narrative Theory for Computational Narrative Understanding",
+      "matched_title": "Narrative Theory for Computational Narrative Understanding",
+      "score": 110,
+      "source": "semantic_scholar"
+    },
+    {
+      "candidate": "Speak, Memory: An Archaeology of Books Known to ChatGPT/GPT-4",
+      "matched_title": "Speak, Memory: An Archaeology of Books Known to ChatGPT/GPT-4",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Quantifying Memorization Across Neural Language Models",
+      "matched_title": "Quantifying Memorization Across Neural Language Models",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Large Language Models for Generative Information Extraction: A Survey",
+      "matched_title": "Large language models for generative information extraction: a survey",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "The State and Fate of Linguistic Diversity and Inclusion in the NLP World",
+      "matched_title": "The State and Fate of Linguistic Diversity and Inclusion in the NLP World",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages",
+      "matched_title": "IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching",
+      "matched_title": "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching",
+      "score": 100,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Evaluating the Calibration of Knowledge Graph Embeddings for Trustworthy Link Prediction",
+      "matched_title": "Evaluating the Calibration of Knowledge Graph Embeddings for Trustworthy Link Prediction",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "FEVER: a Large-scale Dataset for Fact Extraction and VERification",
+      "matched_title": "FEVER: a Large-scale Dataset for Fact Extraction and VERification",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+      "matched_title": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Enabling Large Language Models to Generate Text with Citations",
+      "matched_title": "Enabling Large Language Models to Generate Text with Citations",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Text2KGBench: A Benchmark for Ontology-Driven Knowledge Graph Generation from Text",
+      "matched_title": "Text2KGBench: A Benchmark for Ontology-Driven Knowledge Graph Generation from Text",
+      "score": 110,
+      "source": "semantic_scholar"
+    },
+    {
+      "candidate": "A Survey on Narrative Extraction from Textual Data",
+      "matched_title": "A survey on narrative extraction from textual data",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "matched_title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "score": 110,
+      "source": "openalex"
+    },
+    {
+      "candidate": "Know What You Don't Know: Unanswerable Questions for SQuAD",
+      "matched_title": "Know What You Don\u2019t Know: Unanswerable Questions for SQuAD",
+      "score": 108,
+      "source": "semantic_scholar"
+    }
+  ],
+  "rejected": [
+    {
+      "title": "FactBank: a corpus annotated with event factuality",
+      "year": 2009,
+      "section": "intro",
+      "reason": "source-relative factuality",
+      "why": "no_abstract",
+      "s2_title": "FactBank: a corpus annotated with event factuality"
+    },
+    {
+      "title": "An Assumption-Based TMS",
+      "year": 1986,
+      "section": "related",
+      "reason": "ATMS, reader policies",
+      "why": "no_abstract",
+      "s2_title": "An assumption-based TMS"
+    },
+    {
+      "title": "The CIDOC Conceptual Reference Module: An Ontological Approach to Semantic Interoperability of Metadata",
+      "year": 2003,
+      "section": "related",
+      "reason": "CIDOC CRM",
+      "why": "no_abstract",
+      "s2_title": "The CIDOC Conceptual Reference Module: An Ontological Approach to Semantic Interoperability of Metadata"
+    },
+    {
+      "title": "Temporal Modelling in Cultural Heritage Knowledge Graphs",
+      "year": 2026,
+      "section": "related",
+      "reason": "closest to composer",
+      "why": "no_abstract",
+      "s2_title": "ArCo: The Italian Cultural Heritage Knowledge Graph"
+    },
+    {
+      "title": "Drammar: A Comprehensive Ontological Resource on Drama",
+      "year": 2019,
+      "section": "related",
+      "reason": "drama ontology",
+      "why": "no_abstract",
+      "s2_title": "Drammar: A Comprehensive Ontological Resource on Drama"
+    },
+    {
+      "title": "The Structure-Mapping Engine: Algorithm and Examples",
+      "year": 1989,
+      "section": "related",
+      "reason": "echo finder",
+      "why": "no_abstract",
+      "s2_title": "The structure-mapping engine: Algorithm and examples"
+    },
+    {
+      "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+      "year": 2009,
+      "section": "method",
+      "reason": "BM25",
+      "why": "no_abstract",
+      "s2_title": "The Probabilistic Relevance Framework: BM25 and Beyond"
+    },
+    {
+      "title": "Narrative Knowledge Weaver",
+      "year": 2026,
+      "section": "related",
+      "reason": "nearest current system",
+      "why": "no_match_or_after_cutoff (best=55)"
+    },
+    {
+      "title": "Detecting Story Analogies from Annotations of Time, Action and Agency",
+      "year": 2012,
+      "section": "related",
+      "reason": "story analogy",
+      "why": "no_match_or_after_cutoff (best=53)"
+    }
+  ]
+}

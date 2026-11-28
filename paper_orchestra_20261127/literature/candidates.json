@@ -1,0 +1,296 @@
+[
+ {
+  "title": "Defining N-ary Relations on the Semantic Web",
+  "year": 2006,
+  "section": "related",
+  "reason": "n-ary pattern"
+ },
+ {
+  "title": "FactBank: a corpus annotated with event factuality",
+  "year": 2009,
+  "section": "intro",
+  "reason": "source-relative factuality"
+ },
+ {
+  "title": "Notes on Formalizing Context",
+  "year": 1993,
+  "section": "related",
+  "reason": "contexts ist(c,p)"
+ },
+ {
+  "title": "An Assumption-Based TMS",
+  "year": 1986,
+  "section": "related",
+  "reason": "ATMS, reader policies"
+ },
+ {
+  "title": "A logic-based calculus of events",
+  "year": 1986,
+  "section": "related",
+  "reason": "event calculus fold"
+ },
+ {
+  "title": "Reifying RDF: What Works Well With Wikidata?",
+  "year": 2015,
+  "section": "related",
+  "reason": "reification comparison"
+ },
+ {
+  "title": "Wikidata: a free collaborative knowledgebase",
+  "year": 2014,
+  "section": "related",
+  "reason": "qualifiers"
+ },
+ {
+  "title": "The CIDOC Conceptual Reference Module: An Ontological Approach to Semantic Interoperability of Metadata",
+  "year": 2003,
+  "section": "related",
+  "reason": "CIDOC CRM"
+ },
+ {
+  "title": "Temporal Modelling in Cultural Heritage Knowledge Graphs",
+  "year": 2026,
+  "section": "related",
+  "reason": "closest to composer"
+ },
+ {
+  "title": "DramaBank: Annotating Agency in Narrative Discourse",
+  "year": 2012,
+  "section": "related",
+  "reason": "story intention graph"
+ },
+ {
+  "title": "Drammar: A Comprehensive Ontological Resource on Drama",
+  "year": 2019,
+  "section": "related",
+  "reason": "drama ontology"
+ },
+ {
+  "title": "EvolvTrip: Enhancing Literary Character Understanding with Temporal Theory-of-Mind Graphs",
+  "year": 2025,
+  "section": "related",
+  "reason": "character mental state graphs"
+ },
+ {
+  "title": "The Structure-Mapping Engine: Algorithm and Examples",
+  "year": 1989,
+  "section": "related",
+  "reason": "echo finder"
+ },
+ {
+  "title": "Snowball: Extracting Relations from Large Plain-Text Collections",
+  "year": 2000,
+  "section": "related",
+  "reason": "bootstrapping"
+ },
+ {
+  "title": "Semi-Supervised Bootstrapping of Relationship Extractors with Distributional Semantics",
+  "year": 2015,
+  "section": "related",
+  "reason": "BREDS"
+ },
+ {
+  "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+  "year": 2024,
+  "section": "intro",
+  "reason": "GraphRAG"
+ },
+ {
+  "title": "Reciprocal rank fusion outperforms condorcet and individual rank learning methods",
+  "year": 2009,
+  "section": "method",
+  "reason": "RRF"
+ },
+ {
+  "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+  "year": 2009,
+  "section": "method",
+  "reason": "BM25"
+ },
+ {
+  "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+  "year": 2020,
+  "section": "intro",
+  "reason": "RAG"
+ },
+ {
+  "title": "Survey of Hallucination in Natural Language Generation",
+  "year": 2023,
+  "section": "intro",
+  "reason": "hallucination"
+ },
+ {
+  "title": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+  "year": 2024,
+  "section": "intro",
+  "reason": "LLM+KG"
+ },
+ {
+  "title": "Knowledge Graphs",
+  "year": 2021,
+  "section": "intro",
+  "reason": "KG survey Hogan"
+ },
+ {
+  "title": "An annotated dataset of literary entities",
+  "year": 2019,
+  "section": "related",
+  "reason": "LitBank"
+ },
+ {
+  "title": "Literary Event Detection",
+  "year": 2019,
+  "section": "related",
+  "reason": "realis events in literature"
+ },
+ {
+  "title": "Automatic Attribution of Quoted Speech in Literary Narrative",
+  "year": 2010,
+  "section": "related",
+  "reason": "speaker attribution"
+ },
+ {
+  "title": "Committed Belief Annotation and Tagging",
+  "year": 2009,
+  "section": "related",
+  "reason": "committed belief"
+ },
+ {
+  "title": "Did It Happen? The Pragmatic Complexity of Veridicality Assessment",
+  "year": 2012,
+  "section": "related",
+  "reason": "veridicality"
+ },
+ {
+  "title": "Neural Models of Factuality",
+  "year": 2018,
+  "section": "related",
+  "reason": "factuality"
+ },
+ {
+  "title": "Do You Know That Florence Is Packed with Visitors? Evaluating State-of-the-art Models of Speaker Commitment",
+  "year": 2019,
+  "section": "related",
+  "reason": "speaker commitment"
+ },
+ {
+  "title": "PARC 3.0: A Corpus of Attribution Relations",
+  "year": 2016,
+  "section": "related",
+  "reason": "attribution"
+ },
+ {
+  "title": "Evaluating Theory of Mind in Question Answering",
+  "year": 2018,
+  "section": "related",
+  "reason": "beliefs in stories"
+ },
+ {
+  "title": "Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs",
+  "year": 2022,
+  "section": "related",
+  "reason": "ToM"
+ },
+ {
+  "title": "Narrative Theory for Computational Narrative Understanding",
+  "year": 2021,
+  "section": "intro",
+  "reason": "narrative understanding"
+ },
+ {
+  "title": "Speak, Memory: An Archaeology of Books Known to ChatGPT/GPT-4",
+  "year": 2023,
+  "section": "related",
+  "reason": "memorisation of books"
+ },
+ {
+  "title": "Quantifying Memorization Across Neural Language Models",
+  "year": 2023,
+  "section": "related",
+  "reason": "memorisation"
+ },
+ {
+  "title": "Large Language Models for Generative Information Extraction: A Survey",
+  "year": 2024,
+  "section": "related",
+  "reason": "LLM IE"
+ },
+ {
+  "title": "The State and Fate of Linguistic Diversity and Inclusion in the NLP World",
+  "year": 2020,
+  "section": "intro",
+  "reason": "low resource"
+ },
+ {
+  "title": "IndicNLPSuite: Monolingual Corpora, Evaluation Benchmarks and Pre-trained Multilingual Language Models for Indian Languages",
+  "year": 2020,
+  "section": "intro",
+  "reason": "Indic NLP"
+ },
+ {
+  "title": "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching",
+  "year": 2015,
+  "section": "related",
+  "reason": "Tesserae text reuse"
+ },
+ {
+  "title": "Evaluating the Calibration of Knowledge Graph Embeddings for Trustworthy Link Prediction",
+  "year": 2020,
+  "section": "related",
+  "reason": "calibration"
+ },
+ {
+  "title": "FEVER: a Large-scale Dataset for Fact Extraction and VERification",
+  "year": 2018,
+  "section": "related",
+  "reason": "fact verification"
+ },
+ {
+  "title": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+  "year": 2022,
+  "section": "related",
+  "reason": "attribution in QA"
+ },
+ {
+  "title": "Enabling Large Language Models to Generate Text with Citations",
+  "year": 2023,
+  "section": "related",
+  "reason": "citations"
+ },
+ {
+  "title": "Text2KGBench: A Benchmark for Ontology-Driven Knowledge Graph Generation from Text",
+  "year": 2023,
+  "section": "related",
+  "reason": "KG gen"
+ },
+ {
+  "title": "Narrative Knowledge Weaver",
+  "year": 2026,
+  "section": "related",
+  "reason": "nearest current system"
+ },
+ {
+  "title": "Detecting Story Analogies from Annotations of Time, Action and Agency",
+  "year": 2012,
+  "section": "related",
+  "reason": "story analogy"
+ },
+ {
+  "title": "A Survey on Narrative Extraction from Textual Data",
+  "year": 2023,
+  "section": "related",
+  "reason": "narrative extraction survey"
+ },
+ {
+  "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+  "year": 2024,
+  "section": "related",
+  "reason": "abstention/critique"
+ },
+ {
+  "title": "Know What You Don't Know: Unanswerable Questions for SQuAD",
+  "year": 2018,
+  "section": "related",
+  "reason": "unanswerable/abstain"
+ }
+]
